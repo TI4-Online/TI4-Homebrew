@@ -1,0 +1,10 @@
+{
+    "name": "My Custom Package",
+    "slug": "custom_package",
+    "version" : "0.0.1a",
+    "transpile": false,
+    "guid": {
+        "dev": "E5EBA97A4AABAF0A6D65A2A7A8F1A403",
+        "prd": "E5EBA97A4AABAF0A6D65A2A7A8F1A404"
+    }
+}
