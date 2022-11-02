@@ -2,6 +2,19 @@
 
 This is a collection of homebrew content for Twilight Imperium 4th Edition.
 
+Every player should subscribe to this TI4 Homebrew mod.  If a player is not, they will be prompted to download it when first used.
+
+How to add a homebrew object:
+
+1. Start a game of Twilight Imperium 4th Edition.
+2. Right click the table, open "Object Library".
+3. Click "Add Packages" at the bottom.
+4. Select "TI4 Homebrew".
+5. Click "Add selected package" at the bottom left.
+6. Click "Return to library" at the bottom right.
+
+You now have "TI4 Homebrew" as a source, poke around to find goodies.
+
 # Setup
 
 * run ``yarn install``
