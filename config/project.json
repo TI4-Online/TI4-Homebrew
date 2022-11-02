@@ -1,10 +1,10 @@
 {
-    "name": "My Custom Package",
-    "slug": "custom_package",
-    "version" : "0.0.1a",
+    "name": "TI4 Homebrew",
+    "slug": "ti4_homebrew",
+    "version" : "0.0.1",
     "transpile": false,
     "guid": {
-        "dev": "E5EBA97A4AABAF0A6D65A2A7A8F1A403",
-        "prd": "E5EBA97A4AABAF0A6D65A2A7A8F1A404"
+        "dev": "56ec3f524ed72309122bb944a6e642ae",
+        "prd": "56ec3f524ed72309122bb944a6e642af"
     }
 }
