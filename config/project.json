@@ -1,10 +1,14 @@
 {
-    "name": "TI4 Homebrew",
-    "slug": "ti4_homebrew",
-    "version" : "0.0.1",
-    "transpile": false,
-    "guid": {
-        "dev": "56ec3f524ed72309122bb944a6e642ae",
-        "prd": "56ec3f524ed72309122bb944a6e642af"
-    }
+  "name": "TI4 Homebrew",
+  "slug": "ti4_homebrew",
+  "version": "0.0.1",
+  "transpile": false,
+  "guid": {
+    "dev": "56EC3F524ED72309122BB944A6E642AE",
+    "prd": "56EC3F524ED72309122BB944A6E642AF"
+  },
+  "modId": {
+    "dev": 0,
+    "prd": 2439159
+  }
 }
