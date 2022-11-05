@@ -34,45 +34,32 @@ const setupWorkspace = (config) => {
             });
         })
         .then(() => {
-          console.log("symlinking assets to prd folder");
-          return Promise.all([
-            fs.createSymlink(
-              "./assets/Fonts",
-              `./prd/${config.slug}/Fonts`,
-              "junction"
-            ),
-            fs.createSymlink(
-              "./assets/Models",
-              `./prd/${config.slug}/Models`,
-              "junction"
-            ),
-            fs.createSymlink(
-              "./assets/Sounds",
-              `./prd/${config.slug}/Sounds`,
-              "junction"
-            ),
-            fs.createSymlink(
-              "./assets/States",
-              `./prd/${config.slug}/States`,
-              "junction"
-            ),
-            fs.createSymlink(
-              "./assets/Templates",
-              `./prd/${config.slug}/Templates`,
-              "junction"
-            ),
-            fs.createSymlink(
-              "./assets/Textures",
-              `./prd/${config.slug}/Textures`,
-              "junction"
-            ),
-            fs.createSymlink(
-              "./assets/Thumbnails",
-              `./prd/${config.slug}/Thumbnails`,
-              "junction"
-            ),
-            fs.ensureDir(`./prd/${config.slug}/Scripts/node_modules`),
-          ]);
+          console.log("copying assets to prd folder");
+          const copy = [
+            "Fonts",
+            "Models",
+            "Sounds",
+            "States",
+            "Templates",
+            "Thumbnails",
+            "Textures",
+          ];
+          return Promise.all(
+            copy.map((dirName) => {
+              console.log(
+                `./assets/${dirName}`,
+                "->",
+                `./prd/${config.slug}/${dirName}`
+              );
+              return fs.copy(
+                `./assets/${dirName}`,
+                `./prd/${config.slug}/${dirName}`
+              );
+            })
+          );
+        })
+        .then(() => {
+          return fs.ensureDir(`./prd/${config.slug}/Scripts/node_modules`);
         })
         .then(() => {
           console.log("Copying Thumbnail");
