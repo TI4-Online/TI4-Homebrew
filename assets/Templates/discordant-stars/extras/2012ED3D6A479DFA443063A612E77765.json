@@ -1,0 +1,78 @@
+{
+	"Type": "Card",
+	"GUID": "2012ED3D6A479DFA443063A612E77765",
+	"Name": "Axis Order Deck",
+	"Metadata": "",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "discordant-stars/extras/axis-order.face.jpg",
+	"BackTexture": "discordant-stars/extras/axis-order.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -1,
+	"NumHorizontal": 3,
+	"NumVertical": 3,
+	"Width": 6,
+	"Height": 9,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+		"0": "card.axis:homebrew.discordant_stars/destroyers.1",
+		"1": "card.axis:homebrew.discordant_stars/destroyers.2",
+		"2": "card.axis:homebrew.discordant_stars/cruiser.1",
+		"3": "card.axis:homebrew.discordant_stars/cruiser.2",
+		"4": "card.axis:homebrew.discordant_stars/carrier.1",
+		"5": "card.axis:homebrew.discordant_stars/carrier.2",
+		"6": "card.axis:homebrew.discordant_stars/dreadnought.1",
+		"7": "card.axis:homebrew.discordant_stars/dreadnought.2"
+	},
+	"CardTags":
+	{
+	}
+}
