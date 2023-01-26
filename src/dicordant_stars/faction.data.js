@@ -2,7 +2,7 @@ const FACTION_DATA = [{
     faction: "axis",
     abilities: ["military_industrial_complex", "arms_dealers"],
     commodities: 5,
-    home: 0,
+    home: 3209,
     leaders: {
         agents: ["shipmonger_zsknck"],
         commanders: ["designer_tckvsk"],
@@ -52,7 +52,7 @@ const FACTION_DATA = [{
     faction: "celdauri",
     abilities: ["projection_of_power", "industrialists"],
     commodities: 4,
-    home: 0,
+    home: 3219,
     leaders: {
         agents: ["george nobin"],
         commanders: ["henry storcher"],
@@ -90,7 +90,7 @@ const FACTION_DATA = [{
         "cybernetic_madness"
     ],
     commodities: 3,
-    home: 0,
+    home: 3213,
     leaders: {
         agents: ["skhot_unit_x-12"],
         commanders: ["koryl_ferax"],
@@ -120,7 +120,7 @@ const FACTION_DATA = [{
     faction: "dihmohn",
     abilities: ["capital_fleet", "migrant_fleet", "flotilla"],
     commodities: 3,
-    home: 0,
+    home: 3218,
     leaders: {
         agents: ["jgin_faru"],
         commanders: ["clona_bathru"],
@@ -154,7 +154,7 @@ const FACTION_DATA = [{
         "free_people",
     ],
     commodities: 3,
-    home: 0,
+    home: 3202,
     leaders: {
         agents: ["cordo_haved"],
         commanders: ["president_cyhn"],
@@ -192,7 +192,7 @@ const FACTION_DATA = [{
         "black_markets",
     ],
     commodities: 4,
-    home: 0,
+    home: 3217,
     leaders: {
         agents: ["sal_gavda"],
         commanders: ["quaxdol_junitas"],
@@ -223,7 +223,7 @@ const FACTION_DATA = [{
         "rule_of_two",
     ],
     commodities: 2,
-    home: 0,
+    home: 3205,
     leaders: {
         agents: ["skarvald_and_torvar"],
         commanders: ["jarl_vel_and_jarl_jotrun"],
@@ -265,7 +265,7 @@ const FACTION_DATA = [{
         "probability_algorithms",
     ],
     commodities: 3,
-    home: 0,
+    home: 3208,
     leaders: {
         agents: ["clodho"],
         commanders: ["lachis"],
@@ -297,7 +297,7 @@ const FACTION_DATA = [{
         "treasure_hunters",
     ],
     commodities: 3,
-    home: 0,
+    home: 3223,
     leaders: {
         agents: ["captain dust"],
         commanders: ["kado s’mah-qar"],
@@ -327,7 +327,7 @@ const FACTION_DATA = [{
         "ruthless",
     ],
     commodities: 3,
-    home: 0,
+    home: 3204,
     leaders: {
         agents: ["queen_lucreia"],
         commanders: ["queen_lorena"],
@@ -358,7 +358,7 @@ const FACTION_DATA = [{
         "subterfuge",
     ],
     commodities: 3,
-    home: 0,
+    home: 3203,
     leaders: {
         agents: ["vasra_ivo"],
         commanders: ["dhume_tathu"],
@@ -409,7 +409,7 @@ const FACTION_DATA = [{
         "meteor_slings",
     ],
     commodities: 2,
-    home: 0,
+    home: 3222,
     leaders: {
         agents: ["udosh_brtul"],
         commanders: ["hkot_tokal"],
@@ -441,7 +441,7 @@ const FACTION_DATA = [{
         "combat_drones",
     ],
     commodities: 3,
-    home: 0,
+    home: 3221,
     leaders: {
         agents: ["logic_machina"],
         commanders: ["assault_machina"],
@@ -474,7 +474,7 @@ const FACTION_DATA = [{
         "illusory_presence",
     ],
     commodities: 3,
-    home: 0,
+    home: 2307,
     leaders: {
         agents: ["walik"],
         commanders: ["komat"],
@@ -506,7 +506,7 @@ const FACTION_DATA = [{
         "necrophage",
     ],
     commodities: 1,
-    home: 0,
+    home: 3211,
     leaders: {
         agents: ["lactarius_indigo"],
         commanders: ["amanita_muscaria"],
@@ -557,7 +557,7 @@ const FACTION_DATA = [{
         "voidsailors",
     ],
     commodities: 3,
-    home: 0,
+    home: 3220,
     leaders: {
         agents: ["suldhan_wraeg"],
         commanders: ["thussad_krath"],
@@ -593,7 +593,7 @@ const FACTION_DATA = [{
         "policies",
     ],
     commodities: 3,
-    home: 0,
+    home: 3210,
     leaders: {
         agents: ["baggil_wildpaw"],
         commanders: ["knak_halfear"],
@@ -634,7 +634,7 @@ const FACTION_DATA = [{
         "ancient_knowledge",
     ],
     commodities: 3,
-    home: 0,
+    home: 3224,
     leaders: {
         agents: ["priestess tuh"],
         commanders: ["bishop ulin"],
@@ -666,7 +666,7 @@ const FACTION_DATA = [{
         "orbital_foundries",
     ],
     commodities: 4,
-    home: 0,
+    home: 3214,
     leaders: {
         agents: ["rond_briay"],
         commanders: ["b-unit_205643a"],
@@ -706,7 +706,7 @@ const FACTION_DATA = [{
         "stealth_insertion",
     ],
     commodities: 2,
-    home: 0,
+    home: 3212,
     leaders: {
         agents: ["davish_the_tixian_s_norri"],
         commanders: ["fillipo_the_comm-czar_rois"],
@@ -741,7 +741,7 @@ const FACTION_DATA = [{
         "binding_debts",
     ],
     commodities: 3,
-    home: 0,
+    home: 3206,
     leaders: {
         agents: ["yudri_sukhov"],
         commanders: ["komdar_borodin"],
@@ -775,7 +775,7 @@ const FACTION_DATA = [{
         "raze",
     ],
     commodities: 2,
-    home: 0,
+    home: 3216,
     leaders: {
         agents: ["yvin_korduul"],
         commanders: ["pyndil_gonsuul"],
@@ -809,7 +809,7 @@ const FACTION_DATA = [{
         "targeted_acquisition",
     ],
     commodities: 4,
-    home: 0,
+    home: 3201,
     leaders: {
         agents: ["solis_morden"],
         commanders: ["vera_khage"],
@@ -844,7 +844,7 @@ const FACTION_DATA = [{
         "paranoia",
     ],
     commodities: 3,
-    home: 0,
+    home: 3215,
     leaders: {
         agents: ["zelian_a"],
         commanders: ["zelian_b"],
