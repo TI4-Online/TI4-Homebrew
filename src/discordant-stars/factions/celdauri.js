@@ -53,8 +53,6 @@ const factions = [{
 
 
 const nsidToTemplateId = {
-  ...commonIsidToTemplateId,
-  ...{
     "sheet.faction:homebrew.discordant_stars/celdauri":
       "2F90A98E43DF2887FF05DDBB89D11120",
     "tile.system:homebrew.discordant_stars/3219":
@@ -65,7 +63,6 @@ const nsidToTemplateId = {
       "69D5464546CEC2095C626EAD65B738B6",
     "token.unit:homebrew.discordant-stars.space_dock/celdauri":
       "9FDC78FC4F42320D12E43FABE28ACFF5",
-  }
 };
 
 const technologies = [{
