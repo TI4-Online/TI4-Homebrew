@@ -31,19 +31,19 @@ const FACTION_DATA = [{
     ],
     unpackExtra: [
         {
-            tokenNsid: "card.axis:homebrew_discordant-discordant/axis_order_dreadnought",
+            tokenNsid: "card.promissory.axis:homebrew.discordant-stars/axis_order_dreadnought",
             tokenCount: 2,
         },
         {
-            tokenNsid: "card.axis:homebrew_discordant-discordant/axis_order_carrier",
+            tokenNsid: "card.promissory.axis:homebrew.discordant-stars/axis_order_carrier",
             tokenCount: 2,
         },
         {
-            tokenNsid: "card.axis:homebrew_discordant-discordant/axis_order_cruiser",
+            tokenNsid: "card.promissory.axis:homebrew.discordant-stars/axis_order_cruiser",
             tokenCount: 2,
         },
         {
-            tokenNsid: "card.axis:homebrew_discordant-discordant/axis_order_destroyers",
+            tokenNsid: "card.promissory.axis:homebrew.discordant-stars/axis_order_destroyers",
             tokenCount: 2,
         },
     ],
@@ -79,7 +79,7 @@ const FACTION_DATA = [{
     ],
     unpackExtra: [
         {
-            tokenNsid: "token.celdauri:homebrew_discordant-discordant/space_dock",
+            tokenNsid: "token.unit:homebrew.discordant-stars.space_dock/celdauri",
         },
     ],
 },
@@ -179,7 +179,7 @@ const FACTION_DATA = [{
     ],
     unpackExtra: [
         {
-            tokenNsid: "token.freesystems:homebrew_discordant-discordant/heart_of_rebellion",
+            tokenNsid: "token.attachment:homebrew.discordant-stars.heart_of_rebellion/freesystems",
             tokenCount: 0,
         },
     ],
@@ -250,10 +250,10 @@ const FACTION_DATA = [{
     ],
     unpackExtra: [
         {
-            tokenNsid: "token.ghemina:homebrew_discordant-discordant/lord_flagship",
+            tokenNsid: "token.unit:homebrew.discordant-stars.lord_flagship/ghemina",
         },
         {
-            tokenNsid: "card.ghemina:homebrew_discordant-discordant/lord_flagship",
+            tokenNsid: "card.unit:homebrew.discordant-stars.lord_flagship/ghemina",
         },
     ],
 },
@@ -318,12 +318,6 @@ const FACTION_DATA = [{
     units: [
         "nightingale_v",
         "nightshade_vanguard",
-    ],
-    unpackExtra: [
-        {
-            tokenNsid: "token.FACTION:homebrew_discordant-discordant/NAME",
-            tokenCount: 0,
-        },
     ],
 },
 {
@@ -391,19 +385,19 @@ const FACTION_DATA = [{
     ],
     unpackExtra: [
         {
-            tokenNsid: "token.lizho:homebrew_discordant-discordant/trap_interference_grid",
+            tokenNsid: "token.attachment:homebrew.discordant-stars.trap_interference_grid/lizho",
         },
         {
-            tokenNsid: "token.lizho:homebrew_discordant-discordant/trap_minefields",
+            tokenNsid: "token.attachment:homebrew.discordant-stars.trap_minefields/lizho",
         },
         {
-            tokenNsid: "token.lizho:homebrew_discordant-discordant/trap_account_siphon",
+            tokenNsid: "token.attachment:homebrew.discordant-stars.trap_account_siphon/lizho",
         },
         {
-            tokenNsid: "token.lizho:homebrew_discordant-discordant/trap_gravitic_inhibitor",
+            tokenNsid: "token.attachment:homebrew.discordant-stars.trap_gravitic_inhibitor/lizho",
         },
         {
-            tokenNsid: "token.lizho:homebrew_discordant-discordant/trap_feint",
+            tokenNsid: "token.attachment:homebrew.discordant-stars.trap_feint/lizho",
         },
     ],
 },
@@ -538,20 +532,20 @@ const FACTION_DATA = [{
     ],
     unpackExtra: [
         {
-            tokenNsid: "dice.mykomentori:homebrew_discordant-discordant/omen",
+            tokenNsid: "dice:homebrew.discordant-stars.omen/mykomentori",
             tokenCount: 4,
         },
         {
-            tokenNsid: "token.mykomentori:homebrew_discordant-discordant/commodity_2",
+            tokenNsid: "token.commodity:homebrew.discordant-stars.commodity_2/mykomentori",
         },
         {
-            tokenNsid: "token.mykomentori:homebrew_discordant-discordant/commodity_3",
+            tokenNsid: "token.commodity:homebrew.discordant-stars.commodity_3/mykomentori",
         },
         {
-            tokenNsid: "token.mykomentori:homebrew_discordant-discordant/commodity_4",
+            tokenNsid: "token.commodity:homebrew.discordant-stars.commodity_4/mykomentori",
         },
         {
-            tokenNsid: "tile.mykomentori:homebrew_discordant-discordant/nova_seed",
+            tokenNsid: "tile.system:homebrew.discordant-stars.mykomentori/nova_seed",
         },
     ],
 },
@@ -589,7 +583,7 @@ const FACTION_DATA = [{
     ],
     unpackExtra: [
         {
-            tokenNsid: "token.nivyn:homebrew_discordant-discordant/wound",
+            tokenNsid: "token.system:homebrew.discordant-stars.wound/nivyn",
         },
     ],
 },
@@ -623,13 +617,13 @@ const FACTION_DATA = [{
     ],
     unpackExtra: [
         {
-            tokenNsid: "card.olradin:homebrew_discordant-discordant/the_people",
+            tokenNsid: "card.ability:homebrew.discordant-stars.olradin/the_people",
         },
         {
-            tokenNsid: "card.olradin:homebrew_discordant-discordant/the_environment",
+            tokenNsid: "card.ability:homebrew.discordant-stars.olradin/the_environment",
         },
         {
-            tokenNsid: "card.olradin:homebrew_discordant-discordant/the_economy",
+            tokenNsid: "card.ability:homebrew.discordant-stars.olradin/the_economy",
         },
     ],
 },
@@ -700,7 +694,7 @@ const FACTION_DATA = [{
     ],
     unpackExtra: [
         {
-            tokenNsid: "token.rohdhna:homebrew_discordant-discordant/automatons",
+            tokenNsid: "token.attachment:homebrew.discordant-stars.automatons/rohdhna",
         },
     ],
 },
@@ -737,12 +731,6 @@ const FACTION_DATA = [{
         "blockade_runner",
         "blockade_runner_2",
         "",
-    ],
-    unpackExtra: [
-        {
-            tokenNsid: "token.FACTION:homebrew_discordant-discordant/NAME",
-            tokenCount: 0,
-        },
     ],
 },
 {
@@ -884,7 +872,7 @@ const FACTION_DATA = [{
     ],
     unpackExtra: [
         {
-            tokenNsid: "tile.zelian:homebrew_discordant-discordant/cataclysm",
+            tokenNsid: "tile.system:homebrew.discordant-stars.zelian/cataclysm",
         },
     ],
 }]
