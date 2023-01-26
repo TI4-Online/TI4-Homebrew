@@ -208,7 +208,7 @@ const FACTION_DATA = [{
         infantry: 4,
         space_dock: 1,
     },
-    techs: ["", ""],
+    techs: [],
     units: [
         "man_o_war",
         "corsair",
