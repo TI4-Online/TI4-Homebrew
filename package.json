@@ -6,6 +6,7 @@
     "setup": "node tooling/setup.js",
     "dev": "node tooling/builddev.js",
     "build": "node tooling/buildprod.js",
+    "refresh": "git pull && yarn install && node tooling/clean.js && node tooling/setup.js && node tooling/builddev.js",
     "watch": "node tooling/watch.js",
     "bundle": "node tooling/bundle.js",
     "clean": "node tooling/clean.js",
