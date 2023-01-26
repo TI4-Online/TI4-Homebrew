@@ -61,7 +61,7 @@ const FACTION_DATA = [{
     promissoryNotes: ["trade_alliance"],
     icon: "discordant-stars/faction-icons/celdauri.png",
     source: "homebrew_discordant_stars",
-    startingTech: [""],
+    startingTech: [],
     startingUnits: {
         carrier: 1,
         destroyer: 1,
@@ -304,7 +304,7 @@ const FACTION_DATA = [{
         heroes: ["dorrahn griphyn"],
     },
     promissoryNotes: ["ai_survey"],
-    icon: "discordant-stars/faction-icons/.png",
+    icon: "discordant-stars/faction-icons/kollecc.png",
     source: "homebrew_discordant_stars",
     startingTech: ["scanlink_drone_network"],
     startingUnits: {
@@ -564,7 +564,7 @@ const FACTION_DATA = [{
         heroes: ["kwill_drakkon"],
     },
     promissoryNotes: ["nivyn_guidance"],
-    icon: "discordant-stars/faction-icons/.png",
+    icon: "discordant-stars/faction-icons/nivyn.png",
     source: "homebrew_discordant_stars",
     startingUnits: {
         carrier: 1,
@@ -600,7 +600,7 @@ const FACTION_DATA = [{
         heroes: ["pahn_silverfur"],
     },
     promissoryNotes: ["incite_revolution"],
-    icon: "discordant-stars/faction-icons/.png",
+    icon: "discordant-stars/faction-icons/olradin.png",
     source: "homebrew_discordant_stars",
     startingTech: ["psychoarchaeology", "scanlink_drone_network"],
     startingUnits: {
@@ -641,9 +641,9 @@ const FACTION_DATA = [{
         heroes: ["saint_binal"],
     },
     promissoryNotes: ["favor_of_rhodun"],
-    icon: "discordant-stars/faction-icons/.png",
+    icon: "discordant-stars/faction-icons/rhodun.png",
     source: "homebrew_discordant_stars",
-    startingTech: [""],
+    startingTech: [],
     startingUnits: {
         carrier: 1,
         cruiser: 1,
@@ -673,7 +673,7 @@ const FACTION_DATA = [{
         heroes: ["roh_vhin_dhna_mk4"],
     },
     promissoryNotes: ["automatons"],
-    icon: "discordant-stars/faction-icons/.png",
+    icon: "discordant-stars/faction-icons/rohdhna.png",
     source: "homebrew_discordant_stars",
     startingTech: ["psychoarchaeology", "sarween_tools"],
     startingUnits: {
@@ -713,7 +713,7 @@ const FACTION_DATA = [{
         heroes: ["turra_the_vigh-king_sveyar"],
     },
     promissoryNotes: ["plots_within_plots"],
-    icon: "discordant-stars/faction-icons/.png",
+    icon: "discordant-stars/faction-icons/tnelis.png",
     source: "homebrew_discordant_stars",
     startingTech: [],
     startingUnits: {
