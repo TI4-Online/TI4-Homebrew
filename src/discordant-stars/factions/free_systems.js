@@ -1,8 +1,8 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.freesystems": "Free Systems",
-  "faction.full.freesystems": "The Free Systems Compact",
+  "faction.abbr.free_systems": "Free Systems",
+  "faction.full.free_systems": "The Free Systems Compact",
   "planet.cyrra": "Cyrra",
   "planet.kroll": "Kroll",
   "planet.idyn": "Idyn",
@@ -13,7 +13,7 @@ const localeStrings = {
 };
 
 const factions = [{
-  faction: "freesystems",
+  faction: "free_systems",
   abilities: [
     "rally_to_the_cause",
     "diplomats",
@@ -27,7 +27,7 @@ const factions = [{
     heroes: ["count_otto_pmay"],
   },
   promissoryNotes: [],
-  icon: "discordant-stars/faction-icons/freesystems.png",
+  //icon: "discordant-stars/faction-icons/free_systems.png",
   source: "homebrew.discordant_stars",
   startingTech: ["psychoarchaeology"],
   startingUnits: {
@@ -45,7 +45,7 @@ const factions = [{
   ],
   unpackExtra: [
     {
-      tokenNsid: "token.attachment:homebrew.discordant-stars.heart_of_rebellion/freesystems",
+      tokenNsid: "token.attachment:homebrew.discordant-stars.heart_of_rebellion/free_systems",
       tokenCount: 0,
     },
   ],
@@ -53,28 +53,30 @@ const factions = [{
 }];
 
  const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/freesystems":
+    "sheet.faction:homebrew.discordant_stars/free_systems":
       "9B6DD5614B3AAB4C0BBCEFA2A4F0C374",
     "tile.system:homebrew.discordant_stars/3202":
       "71C6CF8E8326420B9B72B5BD0329A173",
-    "token.command:homebrew.discordant_stars/freesystems":
-      "XXXXXXX",
-    "token.control:homebrew.discordant_stars/freesystems":
-      "XXXXXXX",
+    "token.command:homebrew.discordant_stars/free_systems":
+      "A9D618B64928CDF02005CEA2BC0957D6",
+    "token.control:homebrew.discordant_stars/free_systems":
+      "A00D67E441875C12E94B10BFEB1E6E8C",
+    "token.attachment:homebrew.discordant-stars.heart_of_rebellion/free_systems":
+      "9BDEE4FE4945F8A595C896B6E6843292"
 };
 
 const technologies = [{
   localeName: "technology.name.envoy_network",
   cardNsid:
-      "card.technology.green.freesystems:homebrew.discordant_stars/envoy_network",
+      "card.technology.green.free_systems:homebrew.discordant_stars/envoy_network",
   type: "Green",
   requirements: { Green: 1 },
   source: "homebrew.discordant_stars",
-  faction: "freesystems",
+  faction: "free_systems",
 },{
   localeName: "technology.name.covert_strike_teams",
   cardNsid:
-      "card.technology.yellow.freesystems:homebrew.discordant_stars/covert_strike_teams",
+      "card.technology.yellow.free_systems:homebrew.discordant_stars/covert_strike_teams",
   type: "Yellow",
   requirements: { Yellow: 2 },
   source: "homebrew.discordant_stars",
@@ -101,20 +103,20 @@ const unitAttrs = [
     upgradeLevel: 1,
     localeName: "unit.flagship.vox",
     triggerNsid:
-      "card.technology.unit_upgrade.freesystems:franken.discordant_stars/vox",
+      "card.technology.unit_upgrade.free_systems:franken.discordant_stars/vox",
     spaceCombat: { dice: 2, hit: 7 },
   },
   {
     unit: "mech",
     upgradeLevel: 1,
     localeName: "unit.mech.liberator",
-    triggerNsid: "card.leader.mech.freesystems:homebrew.discordant_stars/liberator",
+    triggerNsid: "card.leader.mech.free_systems:homebrew.discordant_stars/liberator",
   },
 ];
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING FREESYSTEMS");
+console.log("DISCORDANT STARS ADDING FREE SYSTEMS");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

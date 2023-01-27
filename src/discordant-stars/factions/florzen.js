@@ -26,7 +26,7 @@ const factions = [{
     heroes: ["banua_gowen"],
   },
   promissoryNotes: ["blackmail_programs"],
-  icon: "discordant-stars/faction-icons/florzen.png",
+  //icon: "discordant-stars/faction-icons/florzen.png",
   source: "homebrew.discordant_stars",
   startingTech: ["neural_motivator", "scanlink_drone_network"],
   startingUnits: {
@@ -51,9 +51,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3217":
       "C4C4D351119540A7AEC663965FE2837B",
     "token.command:homebrew.discordant_stars/florzen":
-      "XXXXXXX",
+      "7C8EE5D049C2C22A80B92C95BADEBD85",
     "token.control:homebrew.discordant_stars/florzen":
-      "XXXXXXX",
+      "2EC2FB8C4CACEDEDAA52C2888492183B",
 };
 
 const technologies = [{

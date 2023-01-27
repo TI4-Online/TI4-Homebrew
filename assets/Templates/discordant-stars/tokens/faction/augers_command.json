@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
-	"GUID": "9FDC78FC4F42320D12E43FABE28ACFF5",
-	"Name": "Generic",
-	"Metadata": "",
+	"GUID": "F771FF974971D1FD1362E09380F06B0B",
+	"Name": "Augers Command Token",
+	"Metadata": "token.command:homebrew.discordant_stars/augers",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -24,12 +24,12 @@
 	},
 	"Flippable": false,
 	"AutoStraighten": false,
-	"ShouldSnap": true,
+	"ShouldSnap": false,
 	"ScriptName": "",
 	"Blueprint": "",
 	"Models": [
 		{
-			"Model": "tokens/round-msh.obj",
+			"Model": "tokens/player-command.obj",
 			"Offset":
 			{
 				"X": 0,
@@ -48,7 +48,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tokens/faction/celdauri_dock.jpg",
+			"Texture": "discordant-stars/tokens/faction/augers.jpg",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
@@ -59,7 +59,30 @@
 			"SurfaceType": "Plastic"
 		}
 	],
-	"Collision": [],
+	"Collision": [
+		{
+			"Model": "tokens/player-command.obj",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 1,
+				"Y": 1,
+				"Z": 1
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Type": "Convex"
+		}
+	],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
 	"ZoomViewDirection":

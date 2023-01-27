@@ -18,12 +18,12 @@ const factions = [{
   commodities: 3,
   home: 3213,
   leaders: {
-    agents: ["skhot_unit_x-12"],
+    agents: ["skhot_unit_x12"],
     commanders: ["koryl_ferax"],
     heroes: ["the_voice_united"],
   },
   promissoryNotes: ["algorithmic_replication"],
-  icon: "discordant-stars/faction-icons/cymiae.png",
+  //icon: "discordant-stars/faction-icons/cymiae.png",
   source: "homebrew.discordant_stars",
   startingTech: ["neural_motivator", "ai_development_algorithm"],
   startingUnits: {
@@ -46,13 +46,13 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/cymiae":
-      "XXXXXXX",
+      "5D5CE68F4F44045AD16133BA5B024308",
     "tile.system:homebrew.discordant_stars/3213":
       "1CDA602307374660B9D29ABE74274553",
     "token.command:homebrew.discordant_stars/cymiae":
-      "XXXXXXX",
+      "2ADBCE6C4C2330E4A7AD2195FD8ECEE1",
     "token.control:homebrew.discordant_stars/cymiae":
-      "XXXXXXX",
+      "0FCE91884143F9D1CEB0F49C2E507169",
 };
 
 const technologies = [{

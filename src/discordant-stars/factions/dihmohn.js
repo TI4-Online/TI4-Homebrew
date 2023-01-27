@@ -20,7 +20,7 @@ const factions = [{
     heroes: ["verrisus_ypru"],
   },
   promissoryNotes: ["combat_drills"],
-  icon: "discordant-stars/faction-icons/dihmohn.png",
+  //icon: "discordant-stars/faction-icons/dihmohn.png",
   source: "homebrew.discordant_stars",
   startingTech: ["dark-energy_tap", "scanlink_drone_network"],
   startingUnits: {
@@ -47,9 +47,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3218":
       "B1BB3A41C2B845A5BE4CE5DE2F0E7F7D",
     "token.command:homebrew.discordant_stars/dihmohn":
-      "XXXXXXX",
+      "07ED35EA4E3275E07646EEBDCC721A67",
     "token.control:homebrew.discordant_stars/dihmohn":
-      "XXXXXXX",
+      "6F2BA51B4DA77DF5AA72DA97E31FC6C8",
 };
 
 const technologies = [{

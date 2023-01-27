@@ -24,6 +24,13 @@ world.TI4.homebrew.inject({
     },
   });
 
+require("./factions/augers");
 require("./factions/axis");
 require("./factions/celdauri");
+require("./factions/cymiae");
+require("./factions/dihmohn");
+require("./factions/florzen");
+require("./factions/free_systems");
+//require("./factions/ghemina"); // lord card & token missing
+require("./factions/kollecc");
 // ... more requires here ...

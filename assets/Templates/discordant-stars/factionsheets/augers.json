@@ -1,8 +1,8 @@
 {
 	"Type": "Card",
 	"GUID": "657B6BE447C76A7F2AA6019407863E5B",
-	"Name": "Faction Sheet (Ilyxum)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/ilyxum",
+	"Name": "Faction Sheet (Augers)",
+	"Metadata": "sheet.faction:homebrew.discordant-stars/augers",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -149,7 +149,7 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/ilyxum.face.png",
+	"FrontTexture": "discordant-stars/factionsheets/augers.face.png",
 	"BackTexture": "",
 	"HiddenTexture": "",
 	"BackIndex": 0,
@@ -171,11 +171,11 @@
 	"Indices": [ 0 ],
 	"CardNames":
 	{
-		"0": "Faction Sheet (Ilyxum)"
+		"0": "Faction Sheet (Augers)"
 	},
 	"CardMetadata":
 	{
-		"0": "sheet.faction:homebrew/ilyxum"
+		"0": "sheet.faction:homebrew/augers"
 	},
 	"CardTags":
 	{

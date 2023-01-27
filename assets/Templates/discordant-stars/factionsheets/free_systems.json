@@ -1,8 +1,8 @@
 {
 	"Type": "Card",
 	"GUID": "9B6DD5614B3AAB4C0BBCEFA2A4F0C374",
-	"Name": "Faction Sheet (Freesystems)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/freesystems",
+	"Name": "Faction Sheet (Free Systems)",
+	"Metadata": "sheet.faction:homebrew.discordant-stars/free_systems",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -149,7 +149,7 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/freesystems.face.png",
+	"FrontTexture": "discordant-stars/factionsheets/free_systems.face.png",
 	"BackTexture": "",
 	"HiddenTexture": "",
 	"BackIndex": 0,
@@ -171,11 +171,11 @@
 	"Indices": [ 0 ],
 	"CardNames":
 	{
-		"0": "Faction Sheet (Freesystems)"
+		"0": "Faction Sheet (Free Systems)"
 	},
 	"CardMetadata":
 	{
-		"0": "sheet.faction:homebrew/freesystems"
+		"0": "sheet.faction:homebrew/free_systems"
 	},
 	"CardTags":
 	{

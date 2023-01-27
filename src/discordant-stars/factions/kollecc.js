@@ -25,7 +25,7 @@ const factions = [{
     heroes: ["dorrahn griphyn"],
   },
   promissoryNotes: ["ai_survey"],
-  icon: "discordant-stars/faction-icons/kollecc.png",
+  //icon: "discordant-stars/faction-icons/kollecc.png",
   source: "homebrew.discordant_stars",
   startingTech: ["scanlink_drone_network"],
   startingUnits: {
@@ -49,9 +49,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3223":
       "F61083209FB643A395790E821767AE4D",
     "token.command:homebrew.discordant_stars/kollecc":
-      "XXXXXXX",
+      "7FDF1BE74FE79BD6156DD082D25769C8",
     "token.control:homebrew.discordant_stars/kollecc":
-      "XXXXXXX",
+      "F5BDEAD74D6021C2ECE644BEAA32D92E",
 };
 
 const technologies = [{

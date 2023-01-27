@@ -25,7 +25,7 @@ const factions = [{
     heroes: ["korela", "kantrus"],
   },
   promissoryNotes: ["raid_leaders"],
-  icon: "discordant-stars/faction-icons/ghemina.png",
+  //icon: "discordant-stars/faction-icons/ghemina.png",
   source: "homebrew.discordant_stars",
   startingTech: ["psychoarchaelogy, dark_energy_tap"],
   startingUnits: {
@@ -60,9 +60,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3205":
       "47C8E5F3D2A0498E9DBC3FC7EF80E824",
     "token.command:homebrew.discordant_stars/ghemina":
-      "XXXXXXX",
+      "C79F084E4FE255E002FA248C38C21F46",
     "token.control:homebrew.discordant_stars/ghemina":
-      "XXXXXXX",
+      "E0A73FCA45BCAF392ADBA096187B5A2C",
    "token.unit:homebrew.discordant-stars.lord_flagship/ghemina":
        "XXXXXXX",
    "card.unit:homebrew.discordant-stars.lord_flagship/ghemina":
@@ -119,6 +119,8 @@ const unitAttrs = [
     triggerNsid:
         "card.technology.unit_upgrade.ghemina:franken.discordant_stars/the_lady",
     spaceCombat: { dice: 2, hit: 7 },
+    capacity: 7,
+    move: 2,
     cost: 6,
   },
   {
