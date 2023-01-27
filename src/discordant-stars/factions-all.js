@@ -25,5 +25,5 @@ world.TI4.homebrew.inject({
   });
 
 require("./factions/axis");
-//require("./factions/celdauri");
+require("./factions/celdauri");
 // ... more requires here ...

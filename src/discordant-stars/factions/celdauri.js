@@ -6,7 +6,7 @@ const localeStrings = {
   "faction.full.celdauri": "The Celdauri Trade Company",
   "planet.louk": "Louk",
   "planet.auldane": "Auldane",
-  "technology.name.emergency_mobilization_protocols": "Emergency Mobilization Protocols",
+  "technology.name.emergency_mobilization": "Emergency Mobilization Protocols",
   "unit.flagship.supremacy": "Supremacy",
   "unit.mech.minuteman": "Minuteman",
   "unit.trade_port": "Trade Port",
@@ -25,8 +25,8 @@ const factions = [{
     },
     promissoryNotes: ["trade_alliance"],
     packageId: refPackageId,
-    icon: "discordant-stars/faction-icons/celdauri.png",
-    source: "homebrew_discordant_stars",
+    //icon: "discordant-stars/faction-icons/celdauri.png",
+    source: "homebrew.discordant_stars",
     startingTech: [],
     startingUnits: {
         carrier: 1,
@@ -36,7 +36,7 @@ const factions = [{
         pds: 1,
         space_dock: 1,
     },
-    techs: ["emergency_mobilization_protocols"],
+    techs: ["emergency_mobilization"],
     units: [
         "supremacy",
         "trade_port",
@@ -48,11 +48,10 @@ const factions = [{
             tokenNsid: "token.unit:homebrew.discordant-stars.space_dock/celdauri",
         },
     ],
-},
+  },
 ];
 
-
-const nsidToTemplateId = {
+ const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/celdauri":
       "2F90A98E43DF2887FF05DDBB89D11120",
     "tile.system:homebrew.discordant_stars/3219":
@@ -66,9 +65,9 @@ const nsidToTemplateId = {
 };
 
 const technologies = [{
-    localeName: "technology.name.emergency_mobilization_protocols",
+    localeName: "technology.name.emergency_mobilization",
     cardNsid:
-      "card.technology.red.celdauri:homebrew.discordant_stars/emergency_mobilization_protocols",
+      "card.technology.red.celdauri:homebrew.discordant_stars/emergency_mobilization",
     type: "Red",
     requirements: { Red: 2 },
     source: "homebrew.discordant_stars",
@@ -104,6 +103,20 @@ const unitAttrs = [
       "card.technology.unit_upgrade.celdauri:franken.discordant_stars/supremacy",
     spaceCombat: { dice: 2, hit: 7 },
     capacity: 6,
+  },
+  {
+    unit: "space_dock",
+    upgradeLevel: 1,
+    localeName: "unit.space_dock.trade_port",
+    triggerNsid: "card.technology.unit_upgrade.celdauri:franken.discordant_stars/trade_port",
+    antiFighterBarrage: { dice: 2, hit: 6 },
+  },
+  {
+    unit: "space_dock",
+    upgradeLevel: 2,
+    localeName: "unit.space_dock.trade_port_2",
+    triggerNsid: "card.technology.unit_upgrade.celdauri:homebrew.discordant_stars/trade_port_2",
+    antiFighterBarrage: { dice: 2, hit: 6 },
   },
   {
     unit: "mech",
