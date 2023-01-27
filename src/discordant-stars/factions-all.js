@@ -33,4 +33,5 @@ require("./factions/florzen");
 require("./factions/free_systems");
 require("./factions/ghemina");
 require("./factions/kollecc");
+require("./factions/olradin");
 // ... more requires here ...
