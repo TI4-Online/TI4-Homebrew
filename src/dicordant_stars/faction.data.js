@@ -10,7 +10,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["industry_secrets"],
     icon: "discordant-discordant/faction-icons/axis.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["sarween_tools, ai_development_algorithm"],
     startingUnits: {
         carrier: 1,
@@ -60,7 +60,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["trade_alliance"],
     icon: "discordant-stars/faction-icons/celdauri.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: [],
     startingUnits: {
         carrier: 1,
@@ -98,7 +98,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["algorithmic_replication"],
     icon: "discordant-stars/faction-icons/cymiae.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["neural_motivator", "ai_development_algorithm"],
     startingUnits: {
         carrier: 1,
@@ -128,7 +128,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["combat_drills"],
     icon: "discordant-stars/faction-icons/dihmohn.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["dark-energy_tap", "scanlink_drone_network"],
     startingUnits: {
         dreadnought: 2,
@@ -162,7 +162,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: [],
     icon: "discordant-stars/faction-icons/freesystems.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["psychoarchaeology"],
     startingUnits: {
         carrier: 1,
@@ -200,7 +200,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["blackmail_programs"],
     icon: "discordant-stars/faction-icons/florzen.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["neural_motivator", "scanlink_drone_network"],
     startingUnits: {
         carrier: 2,
@@ -231,7 +231,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["raid_leaders"],
     icon: "discordant-stars/faction-icons/ghemina.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["psychoarchaelogy, dark_energy_tap"],
     startingUnits: {
         carrier: 2,
@@ -273,7 +273,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["read_the_fates"],
     icon: "discordant-stars/faction-icons/ilyxum.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["scanlink_drone_network", "ai_development_algorithm"],
     startingUnits: {
         carrier: 1,
@@ -305,7 +305,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["ai_survey"],
     icon: "discordant-stars/faction-icons/kollecc.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["scanlink_drone_network"],
     startingUnits: {
         carrier: 2,
@@ -335,7 +335,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["blessing_of_the_queens"],
     icon: "discordant-stars/faction-icons/kortali.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["psychoarchaeology", "plasma_scoring"],
     startingUnits: {
         carrier: 2,
@@ -366,7 +366,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["trusted_counselor"],
     icon: "discordant-stars/faction-icons/lizho.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["psychoarchaeology", "antimass_deflectors"],
     startingUnits: {
         carrier: 2,
@@ -417,7 +417,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["stone_speakers"],
     icon: "discordant-stars/faction-icons/ltokkkhrask.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["scanlink drone network", "plasma scoring"],
     startingUnits: {
         cruiser: 3,
@@ -449,7 +449,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["rapid_assembly"],
     icon: "discordant-stars/faction-icons/mirveda.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["ai_development_algorithm"],
     startingUnits: {
         carrier: 2,
@@ -482,7 +482,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["secrets_of_the_weave"],
     icon: "discordant-stars/faction-icons/mortheus.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["dark_energy_tap", "sarween_tools"],
     startingUnits: {
         dreadnought: 1,
@@ -514,7 +514,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["gift_of_insight"],
     icon: "discordant-stars/faction-icons/mykomentori.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["predictive_intelligence"],
     startingUnits: {
         carrier: 2,
@@ -565,7 +565,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["nivyn_guidance"],
     icon: "discordant-stars/faction-icons/nivyn.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingUnits: {
         carrier: 1,
         cruiser: 1,
@@ -601,7 +601,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["incite_revolution"],
     icon: "discordant-stars/faction-icons/olradin.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["psychoarchaeology", "scanlink_drone_network"],
     startingUnits: {
         carrier: 2,
@@ -642,7 +642,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["favor_of_rhodun"],
     icon: "discordant-stars/faction-icons/rhodun.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: [],
     startingUnits: {
         carrier: 1,
@@ -674,7 +674,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["automatons"],
     icon: "discordant-stars/faction-icons/rohdhna.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["psychoarchaeology", "sarween_tools"],
     startingUnits: {
         carrier: 1,
@@ -714,7 +714,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["plots_within_plots"],
     icon: "discordant-stars/faction-icons/tnelis.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: [],
     startingUnits: {
         carrier: 1,
@@ -749,7 +749,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: [],
     icon: "discordant-stars/faction-icons/vaden.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: [],
     startingUnits: {
         dreadnought: 1,
@@ -783,7 +783,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["clans_favor"],
     icon: "discordant-stars/faction-icons/vaylerian.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["neural_motivator", "dark_energy_tap"],
     startingUnits: {
         carrier: 1,
@@ -817,7 +817,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["branch_office-tax_haven", "branch_office-broadcast_hub", "branch_office-reserve_bank", "branch_office-orbital_shipyard"],
     icon: "discordant-stars/faction-icons/veldyr.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["dark_energy_tap", "ai_development_algorithm"],
     startingUnits: {
         dreadnought: 1,
@@ -852,7 +852,7 @@ const FACTION_DATA = [{
     },
     promissoryNotes: ["hyperkinetic_ordinance"],
     icon: "discordant-stars/faction-icons/zelian.png",
-    source: "homebrew_discordant_stars",
+    source: "homebrew.discordant_stars",
     startingTech: ["anti-mass_deflectors, ai_development_algorithm"],
     startingUnits: {
         dreadnought: 1,
