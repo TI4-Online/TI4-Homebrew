@@ -1,5 +1,4 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
-const { commonIsidToTemplateId } = require("commonIsidToTemplateId");
 
 const localeStrings = {
   "faction.abbr.celdauri": "Celdauri",
