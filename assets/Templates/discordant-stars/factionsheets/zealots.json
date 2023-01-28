@@ -1,8 +1,8 @@
 {
 	"Type": "Card",
 	"GUID": "60A4F8964A3FC41C03551797DBE57F92",
-	"Name": "Faction Sheet (Rhodun)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/rhodun",
+	"Name": "Faction Sheet (zealots)",
+	"Metadata": "sheet.faction:homebrew.discordant-stars/zealots",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -149,7 +149,7 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/rhodun.face.png",
+	"FrontTexture": "discordant-stars/factionsheets/zealots.face.png",
 	"BackTexture": "",
 	"HiddenTexture": "",
 	"BackIndex": 0,
@@ -171,11 +171,11 @@
 	"Indices": [ 0 ],
 	"CardNames":
 	{
-		"0": "Faction Sheet (Rhodun)"
+		"0": "Faction Sheet (zealots)"
 	},
 	"CardMetadata":
 	{
-		"0": "sheet.faction:homebrew/rhodun"
+		"0": "sheet.faction:homebrew/zealots"
 	},
 	"CardTags":
 	{

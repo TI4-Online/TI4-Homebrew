@@ -20,9 +20,9 @@ const factions = [{
   commodities: 2,
   home: 3205,
   leaders: {
-    agents: ["skarvald_and_torvar"],
-    commanders: ["jarl_vel_and_jarl_jotrun"],
-    heroes: ["korela", "kantrus"],
+    agents: ["skarvald_torvar"],
+    commanders: ["jarl_vel_jarl_jotrun"],
+    heroes: ["korela_the_lady", "kantrus_the_lord"],
   },
   promissoryNotes: ["raid_leaders"],
   //icon: "discordant-stars/faction-icons/ghemina.png",
@@ -64,9 +64,9 @@ const factions = [{
     "token.control:homebrew.discordant_stars/ghemina":
       "E0A73FCA45BCAF392ADBA096187B5A2C",
    "token.unit:homebrew.discordant-stars.lord_flagship/ghemina":
-       "XXXXXXX",
+       "A5E718004224A776862A9EA185C29F55",
    "card.unit:homebrew.discordant-stars.lord_flagship/ghemina":
-       "XXXXXXX",
+       "66B8E2EC495A4572DC2413AF355F3FE4",
 };
 
 const technologies = [{
@@ -126,14 +126,14 @@ const unitAttrs = [
   {
     unit: "carrier",
     upgradeLevel: 1,
-    localeName: "unit.BASE_UNIT.combat_transport",
+    localeName: "unit.carrier.combat_transport",
     triggerNsid: "card.technology.unit_upgrade.ghemina:franken.discordant_stars/combat_transport",
     move: 2,
   },
   {
     unit: "carrier",
     upgradeLevel: 2,
-    localeName: "unit.BASE_UNIT.combat_transport_2",
+    localeName: "unit.carrier.combat_transport_2",
     triggerNsid: "card.technology.unit_upgrade.ghemina:homebrew.discordant_stars/combat_transport_2",
     antiFighterBarrage: { dice: 2, hit: 6 },
   },

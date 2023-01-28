@@ -147,7 +147,7 @@ const FACTION_DATA = [{
     ],
 },
 {
-    faction: "freesystems",
+    faction: "free_systems",
     abilities: [
         "rally_to_the_cause",
         "diplomats",
@@ -161,7 +161,7 @@ const FACTION_DATA = [{
         heroes: ["count_otto_pmay"],
     },
     promissoryNotes: [],
-    icon: "discordant-stars/faction-icons/freesystems.png",
+    icon: "discordant-stars/faction-icons/free_systems.png",
     source: "homebrew.discordant_stars",
     startingTech: ["psychoarchaeology"],
     startingUnits: {
@@ -179,7 +179,7 @@ const FACTION_DATA = [{
     ],
     unpackExtra: [
         {
-            tokenNsid: "token.attachment:homebrew.discordant-stars.heart_of_rebellion/freesystems",
+            tokenNsid: "token.attachment:homebrew.discordant-stars.heart_of_rebellion/free_systems",
             tokenCount: 0,
         },
     ],
@@ -628,7 +628,7 @@ const FACTION_DATA = [{
     ],
 },
 {
-    faction: "rhodun",
+    faction: "zealots",
     abilities: [
         "conspirators",
         "ancient_knowledge",
@@ -641,7 +641,7 @@ const FACTION_DATA = [{
         heroes: ["saint_binal"],
     },
     promissoryNotes: ["favor_of_rhodun"],
-    icon: "discordant-stars/faction-icons/rhodun.png",
+    icon: "discordant-stars/faction-icons/zealots.png",
     source: "homebrew.discordant_stars",
     startingTech: [],
     startingUnits: {

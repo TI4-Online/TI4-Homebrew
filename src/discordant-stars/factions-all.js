@@ -31,6 +31,9 @@ require("./factions/cymiae");
 require("./factions/dihmohn");
 require("./factions/florzen");
 require("./factions/free_systems");
-//require("./factions/ghemina"); // lord card & token missing
+require("./factions/ghemina");
 require("./factions/kollecc");
+require("./factions/olradin");
+require("./factions/rohdhna");
+require("./factions/zealots");
 // ... more requires here ...

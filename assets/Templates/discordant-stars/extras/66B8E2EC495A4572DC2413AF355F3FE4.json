@@ -1,0 +1,70 @@
+{
+	"Type": "Card",
+	"GUID": "66B8E2EC495A4572DC2413AF355F3FE4",
+	"Name": "Ghemina Flagship - The Lord",
+	"Metadata": "card.unit:homebrew.discordant-stars.lord_flagship/ghemina",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "discordant-stars/extras/ghemina_flagship.face.png",
+	"BackTexture": "discordant-stars/extras/ghemina.back.png",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -1,
+	"NumHorizontal": 1,
+	"NumVertical": 1,
+	"Width": 6,
+	"Height": 9,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+	},
+	"CardTags":
+	{
+	}
+}
