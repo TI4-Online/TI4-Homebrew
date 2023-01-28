@@ -34,4 +34,5 @@ require("./factions/free_systems");
 require("./factions/ghemina");
 require("./factions/kollecc");
 require("./factions/olradin");
+require("./factions/zealots");
 // ... more requires here ...
