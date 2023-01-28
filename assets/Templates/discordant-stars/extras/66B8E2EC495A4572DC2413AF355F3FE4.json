@@ -38,8 +38,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/extras/faction/ghemina_flagship.face.png",
-	"BackTexture": "discordant-stars/extras/faction/ghemina.back.png",
+	"FrontTexture": "discordant-stars/extras/ghemina_flagship.face.png",
+	"BackTexture": "discordant-stars/extras/ghemina.back.png",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,
