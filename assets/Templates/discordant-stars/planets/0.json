@@ -65,7 +65,7 @@
 		"2": "Auldane",
 		"3": "Axis",
 		"4": "Beata",
-		"5": "Blaheo"
+		"5": "Biaheo"
 	},
 	"CardMetadata":
 	{
@@ -74,7 +74,7 @@
 		"2": "card.planet:homebrew/auldane",
 		"3": "card.planet:homebrew/axis",
 		"4": "card.planet:homebrew/beata",
-		"5": "card.planet:homebrew/blaheo"
+		"5": "card.planet:homebrew/biaheo"
 	},
 	"CardTags":
 	{

@@ -37,6 +37,7 @@ require("./factions/kollecc");
 require("./factions/kortali");
 require("./factions/lizho");
 require("./factions/mirveda");
+require("./factions/mortheus");
 require("./factions/olradin");
 require("./factions/rohdhna");
 require("./factions/zealots");
