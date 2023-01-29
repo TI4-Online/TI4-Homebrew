@@ -32,6 +32,7 @@ require("./factions/dihmohn");
 require("./factions/florzen");
 require("./factions/free_systems");
 require("./factions/ghemina");
+require("./factions/khrask");
 require("./factions/kollecc");
 require("./factions/kortali");
 require("./factions/lizho");
