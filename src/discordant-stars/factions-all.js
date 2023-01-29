@@ -34,6 +34,7 @@ require("./factions/free_systems");
 require("./factions/ghemina");
 require("./factions/kollecc");
 require("./factions/kortali");
+require("./factions/lizho");
 require("./factions/olradin");
 require("./factions/rohdhna");
 require("./factions/zealots");

@@ -1,0 +1,78 @@
+{
+	"Type": "Card",
+	"GUID": "4171B8E74DDA24EEF67EA1B7E3CBB132",
+	"Name": "Li-Zho Trap Deck",
+	"Metadata": "",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "discordant-stars/extras/lizho_traps.png",
+	"BackTexture": "discordant-stars/extras/lizho_trap_back.png",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -1,
+	"NumHorizontal": 5,
+	"NumVertical": 1,
+	"Width": 6,
+	"Height": 9,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 4, 1, 2, 3, 4 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+		"0": "card.axis:homebrew.discordant_stars/destroyers.1",
+		"1": "card.lizho:homebrew.discordant_stars/account_siphon",
+		"2": "card.lizho:homebrew.discordant_stars/minefields",
+		"3": "card.lizho:homebrew.discordant_stars/gravitic_inhibitor",
+		"4": "card.lizho:homebrew.discordant_stars/interference_grid",
+		"5": "card.axis:homebrew.discordant_stars/carrier.2",
+		"6": "card.axis:homebrew.discordant_stars/dreadnought.1",
+		"7": "card.axis:homebrew.discordant_stars/dreadnought.2"
+	},
+	"CardTags":
+	{
+	}
+}
