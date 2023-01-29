@@ -1,4 +1,5 @@
-const FACTION_DATA = [{
+const FACTION_DATA = [#
+    {
     faction: "axis",
     abilities: ["military_industrial_complex", "arms_dealers"],
     commodities: 5,

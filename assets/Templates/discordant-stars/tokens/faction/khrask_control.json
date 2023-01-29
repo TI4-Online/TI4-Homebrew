@@ -1,7 +1,7 @@
 {
 	"Type": "Generic",
-	"GUID": "A202270546BEF2F45CE81AA7240C5780",
-	"Name": "Zealots Control Token",
+	"GUID": "0C57D53846C48BB6246E818FF50ECAA4",
+	"Name": "Khrask Control Token",
 	"Metadata": "token.control:homebrew.discordant_stars/zealots",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
@@ -48,7 +48,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tokens/faction/zealots.jpg",
+			"Texture": "discordant-stars/tokens/faction/khrask.png",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",

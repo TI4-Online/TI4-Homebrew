@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
-	"GUID": "A202270546BEF2F45CE81AA7240C5780",
-	"Name": "Zealots Control Token",
-	"Metadata": "token.control:homebrew.discordant_stars/zealots",
+	"GUID": "0DA982044426F25BBE321AB3F179F7AE",
+	"Name": "Mirveda Command Token",
+	"Metadata": "token.command:homebrew.discordant_stars/zealots",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -24,12 +24,12 @@
 	},
 	"Flippable": false,
 	"AutoStraighten": false,
-	"ShouldSnap": true,
+	"ShouldSnap": false,
 	"ScriptName": "",
 	"Blueprint": "",
 	"Models": [
 		{
-			"Model": "tokens/player-owner.obj",
+			"Model": "tokens/player-command.obj",
 			"Offset":
 			{
 				"X": 0,
@@ -48,7 +48,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tokens/faction/zealots.jpg",
+			"Texture": "discordant-stars/tokens/faction/mirveda.png",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
@@ -61,7 +61,7 @@
 	],
 	"Collision": [
 		{
-			"Model": "tokens/player-owner.obj",
+			"Model": "tokens/player-command.obj",
 			"Offset":
 			{
 				"X": 0,

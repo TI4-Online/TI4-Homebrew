@@ -1,8 +1,8 @@
 {
 	"Type": "Card",
-	"GUID": "F08EE692CC4397E98DA0FCC9D95250D8",
-	"Name": "Planets (homebrew 1/7)",
-	"Metadata": "card.planet:homebrew/0",
+	"GUID": "4171B8E74DDA24EEF67EA1B7E3CBB132",
+	"Name": "Li-Zho Trap Deck",
+	"Metadata": "",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -38,15 +38,15 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/planets/0.face.jpg",
-	"BackTexture": "discordant-stars/planets/0.back.jpg",
+	"FrontTexture": "discordant-stars/extras/lizho_traps.png",
+	"BackTexture": "discordant-stars/extras/lizho_trap_back.png",
 	"HiddenTexture": "",
-	"BackIndex": -3,
-	"HiddenIndex": -3,
-	"NumHorizontal": 3,
-	"NumVertical": 2,
-	"Width": 4.2,
-	"Height": 6.3,
+	"BackIndex": -2,
+	"HiddenIndex": -1,
+	"NumHorizontal": 5,
+	"NumVertical": 1,
+	"Width": 6,
+	"Height": 9,
 	"Thickness": 0.05,
 	"HiddenInHand": true,
 	"UsedWithCardHolders": true,
@@ -57,24 +57,20 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0, 1, 2, 3, 4, 5 ],
+	"Indices": [ 4, 1, 2, 3, 4 ],
 	"CardNames":
 	{
-		"0": "Abyssus",
-		"1": "Aldra",
-		"2": "Auldane",
-		"3": "Axis",
-		"4": "Beata",
-		"5": "Biaheo"
 	},
 	"CardMetadata":
 	{
-		"0": "card.planet:homebrew/abyssus",
-		"1": "card.planet:homebrew/aldra",
-		"2": "card.planet:homebrew/auldane",
-		"3": "card.planet:homebrew/axis",
-		"4": "card.planet:homebrew/beata",
-		"5": "card.planet:homebrew/biaheo"
+		"0": "card.axis:homebrew.discordant_stars/destroyers.1",
+		"1": "card.lizho:homebrew.discordant_stars/account_siphon",
+		"2": "card.lizho:homebrew.discordant_stars/minefields",
+		"3": "card.lizho:homebrew.discordant_stars/gravitic_inhibitor",
+		"4": "card.lizho:homebrew.discordant_stars/interference_grid",
+		"5": "card.axis:homebrew.discordant_stars/carrier.2",
+		"6": "card.axis:homebrew.discordant_stars/dreadnought.1",
+		"7": "card.axis:homebrew.discordant_stars/dreadnought.2"
 	},
 	"CardTags":
 	{
