@@ -38,7 +38,24 @@ require("./factions/kortali");
 require("./factions/lizho");
 require("./factions/mirveda");
 require("./factions/mortheus");
+require("./factions/mykomentori");
+require("./factions/nivyn");
 require("./factions/olradin");
 require("./factions/rohdhna");
+require("./factions/tnelis");
+require("./factions/vaden");
+require("./factions/vaylerian");
+require("./factions/veldyr");
 require("./factions/zealots");
-// ... more requires here ...
+
+// IMAGES & ASSETS & IDs missing
+//require("./factions/bentor");
+//require("./factions/blex");
+//require("./factions/cheiran");
+//require("./factions/edyn");
+//require("./factions/ghoti");
+//require("./factions/gledge");
+//require("./factions/kjalengrad");
+//require("./factions/kolume");
+//require("./factions/lanefir");
+//require("./factions/nokar");

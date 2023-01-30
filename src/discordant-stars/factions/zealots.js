@@ -28,7 +28,7 @@ const factions = [{
     promissoryNotes: ["favor_of_zealots"],
     //icon: "discordant-stars/faction-icons/zealots.png",
     source: "homebrew.discordant_stars",
-    startingTech: [],
+    startingTech: ["bio_stims"],
     startingUnits: {
         carrier: 1,
         cruiser: 1,
@@ -107,7 +107,7 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING zealots");
+console.log("DISCORDANT STARS ADDING ZEALOTS");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

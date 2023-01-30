@@ -46,7 +46,6 @@ const factions = [{
   unpackExtra: [
     {
       tokenNsid: "token.attachment:homebrew.discordant-stars.heart_of_rebellion/free_systems",
-      tokenCount: 0,
     },
   ],
   packageId: refPackageId,

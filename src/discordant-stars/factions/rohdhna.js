@@ -133,7 +133,7 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING Rohdhna");
+console.log("DISCORDANT STARS ADDING ROHDHNA");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

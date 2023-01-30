@@ -1,0 +1,144 @@
+{
+	"Type": "Dice",
+	"GUID": "D7E5BBBF42888E06B8AF68ADC93E407F",
+	"Name": "Myko-Mentori Omen Die",
+	"Metadata": "",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0.5,
+	"Density": 1,
+	"SurfaceType": "Plastic",
+	"Roughness": 0,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 92,
+		"B": 228
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": false,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [
+		{
+			"Model": "StaticMesh'/Game/Meshes/Dice/Dice_D10.Dice_D10'",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 1,
+				"Y": 1,
+				"Z": 1
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "",
+			"NormalMap": "Texture2D'/Game/Textures/Dice/T_D10_N.T_D10_N'",
+			"ExtraMap": "Texture2D'/Game/Textures/Dice/T_D10.T_D10'",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": false,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
+		}
+	],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"Faces": [
+		{
+			"X": 0.229034,
+			"Y": -0.705103,
+			"Z": -0.671098,
+			"Name": "1",
+			"Metadata": "dice:homebrew.discordant-stars.omen/mykomentori"
+		},
+		{
+			"X": -0.741701,
+			"Y": 0,
+			"Z": 0.67073,
+			"Name": "2",
+			"Metadata": ""
+		},
+		{
+			"X": 0.229034,
+			"Y": 0.705103,
+			"Z": -0.671098,
+			"Name": "3",
+			"Metadata": ""
+		},
+		{
+			"X": 0.599899,
+			"Y": -0.435927,
+			"Z": 0.670887,
+			"Name": "4",
+			"Metadata": ""
+		},
+		{
+			"X": -0.599899,
+			"Y": 0.435927,
+			"Z": -0.670887,
+			"Name": "5",
+			"Metadata": ""
+		},
+		{
+			"X": -0.229034,
+			"Y": -0.705103,
+			"Z": 0.671098,
+			"Name": "6",
+			"Metadata": ""
+		},
+		{
+			"X": 0.741701,
+			"Y": -3.99839e-07,
+			"Z": -0.67073,
+			"Name": "7",
+			"Metadata": ""
+		},
+		{
+			"X": -0.229034,
+			"Y": 0.705103,
+			"Z": 0.671098,
+			"Name": "8",
+			"Metadata": ""
+		},
+		{
+			"X": -0.599899,
+			"Y": -0.435927,
+			"Z": -0.670887,
+			"Name": "9",
+			"Metadata": ""
+		},
+		{
+			"X": 0.599899,
+			"Y": 0.435927,
+			"Z": 0.670887,
+			"Name": "10",
+			"Metadata": ""
+		}
+	]
+}
