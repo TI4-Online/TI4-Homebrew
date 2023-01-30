@@ -41,4 +41,12 @@ require("./factions/mortheus");
 require("./factions/olradin");
 require("./factions/rohdhna");
 require("./factions/zealots");
-// ... more requires here ...
+
+// ASSETS & IDs missing
+//require("./factions/mykomentori");
+//require("./factions/nivyn");
+//require("./factions/tnelis");
+//require("./factions/vaden");
+//require("./factions/vaylerian");
+//require("./factions/Veldyr");
+
