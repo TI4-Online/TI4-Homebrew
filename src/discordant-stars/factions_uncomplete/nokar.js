@@ -54,11 +54,11 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3228":
       "57D1D9BD4C70FBA7F8833C8A475E2206",
     "token.command:homebrew.discordant_stars/nokar":
-      "XXXXXXX",
+      "3A7E08DE4F4A5EC582BECABADF44B6E0",
     "token.control:homebrew.discordant_stars/nokar":
-      "XXXXXXX",
+      "55F19E1C4D6C361B126420AC3A317C09",
    "token.attachment:homebrew.discordant-stars.destroyer/nokar":
-       "XXXXXXX",
+      "XXXXXXX",
 };
 
 const technologies = [{

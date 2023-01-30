@@ -48,9 +48,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3233":
       "9945F0D04D0B1B52F31B108B40DA77BF",
     "token.command:homebrew.discordant_stars/kolume":
-      "XXXXXXX",
+      "7FE3A22F4921130F96BDC9843C23D740",
     "token.control:homebrew.discordant_stars/kolume":
-      "XXXXXXX",
+      "AE6D0B1944B794A7C92884B6AA477384",
 };
 
 const technologies = [{

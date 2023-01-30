@@ -51,9 +51,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3225":
       "A6D5845C4AEB1F0729B7BBB1F2EE1AF3",
     "token.command:homebrew.discordant_stars/edyn":
-      "XXXXXXX",
+      "6F815DD54DC0C07307F5B6AAA053139B",
     "token.control:homebrew.discordant_stars/edyn":
-      "XXXXXXX",
+      "503464A847FB262835C7ACBC3EC40ADF",
     "token.unit:homebrew.discordant-stars.UNITID/edyn":
       "XXXXXXX",
 };

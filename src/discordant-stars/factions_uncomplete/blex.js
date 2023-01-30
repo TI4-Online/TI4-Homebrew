@@ -52,9 +52,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3231":
       "D979798344A89C664EC1E1B464534D21",
     "token.command:homebrew.discordant_stars/blex":
-      "XXXXXXX",
+      "E1D61045492625569AB4BA82E05F4C9D",
     "token.control:homebrew.discordant_stars/blex":
-      "XXXXXXX",
+      "F78A93DE437BF9F76AA260A0F0D8E7F6",
     "token.system:homebrew.discordant-stars.blight/blex":
       "XXXXXXX",
 };

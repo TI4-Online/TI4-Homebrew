@@ -59,9 +59,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3215":
       "0D10F9991C184DBA89140C252A343BD3",
     "token.command:homebrew.discordant_stars/zelian":
-      "XXXXXXX",
+      "65B38E384BE799411C63FB844FBE9CB8",
     "token.control:homebrew.discordant_stars/zelian":
-      "XXXXXXX",
+      "ABAF21054A0DE613B202F5BFDF01A960",
 };
 
 const technologies = [{

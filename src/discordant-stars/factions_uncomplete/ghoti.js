@@ -51,9 +51,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3232":
       "3345D54A43F11698476A1C9489A51CC7",
     "token.command:homebrew.discordant_stars/ghoti":
-      "XXXXXXX",
+      "FC45996647F32A9B68972C9243A379CE",
     "token.control:homebrew.discordant_stars/ghoti":
-      "XXXXXXX",
+      "1A74F12646A5156484F70AA345F4BD7B",
     "card.ghoti:homebrew.discordant-stars/0":
       "XXXXXXX",
 };

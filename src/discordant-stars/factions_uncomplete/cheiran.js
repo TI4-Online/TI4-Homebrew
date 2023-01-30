@@ -58,9 +58,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3234":
       "265F914448215A0673271AB47B2D474D",
     "token.command:homebrew.discordant_stars/cheiran":
-      "XXXXXXX",
+      "9430444C4749D658CCAD40A1A2F4F884",
     "token.control:homebrew.discordant_stars/cheiran":
-      "XXXXXXX",
+      "FA9B682B4E02B8433F29AD9B0349526C",
    "token.attachment:homebrew.discordant-stars.dreadnought/cheiran":
       "XXXXXXX",
    "token.attachment:homebrew.discordant-stars.mech/cheiran":

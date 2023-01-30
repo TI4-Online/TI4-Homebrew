@@ -70,9 +70,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3227":
       "A82C1EEB46CF7606A20E01862231D69D",
     "token.command:homebrew.discordant_stars/bentor":
-      "XXXXXXX",
+      "19C88E534DCD54C9A47717A2E3499473",
     "token.control:homebrew.discordant_stars/bentor":
-      "XXXXXXX",
+      "4321ECD84A0F2D580ED2ADBFC631C260",
     "token.commodity:homebrew.discordant-stars.3_commodities/bentor":
       "XXXXXXX",
     "token.fragment:homebrew.discordant-stars.industrial/bentor":

@@ -49,9 +49,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3230":
       "94978F83444748D6DD0277B463A7CB54",
     "token.command:homebrew.discordant_stars/lanefir":
-      "XXXXXXX",
+      "4828C1B443199FEF1D3CA9A4EDC5FC85",
     "token.control:homebrew.discordant_stars/lanefir":
-      "XXXXXXX",
+      "8C63A7014316A787AD01ECA715770D70",
 };
 
 const technologies = [{
