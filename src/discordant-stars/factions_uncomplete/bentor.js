@@ -66,14 +66,24 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/bentor":
-      "XXXXXXX",
+      "6098F2E247A0F3331D482393C3485A7D",
     "tile.system:homebrew.discordant_stars/3227":
-      "XXXXXXX",
+      "A82C1EEB46CF7606A20E01862231D69D",
     "token.command:homebrew.discordant_stars/bentor":
       "XXXXXXX",
     "token.control:homebrew.discordant_stars/bentor":
       "XXXXXXX",
-    "token.unit:homebrew.discordant-stars.UNITID/bentor":
+    "token.commodity:homebrew.discordant-stars.3_commodities/bentor":
+      "XXXXXXX",
+    "token.fragment:homebrew.discordant-stars.industrial/bentor":
+      "XXXXXXX",
+    "token.fragment:homebrew.discordant-stars.hazardous/bentor":
+      "XXXXXXX",
+    "token.fragment:homebrew.discordant-stars.cultural/bentor":
+      "XXXXXXX",
+    "token.fragment:homebrew.discordant-stars.unknown/bentor":
+      "XXXXXXX",
+    "token.attachment:homebrew.discordant-stars.encryption_key/bentor":
       "XXXXXXX",
 };
 

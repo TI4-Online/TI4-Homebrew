@@ -49,9 +49,9 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/kjalengard":
-      "XXXXXXX",
+      "9E91315D42F16A77008BF0863B45A0AA",
     "tile.system:homebrew.discordant_stars/3226":
-      "XXXXXXX",
+      "41FB56AE483B4411F63FA5A28123AFDB",
     "token.command:homebrew.discordant_stars/kjalengard":
       "XXXXXXX",
     "token.control:homebrew.discordant_stars/kjalengard":
@@ -125,7 +125,7 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING FACTION");
+console.log("DISCORDANT STARS ADDING KJALENGRAD");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

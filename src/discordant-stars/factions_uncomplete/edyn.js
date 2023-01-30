@@ -47,9 +47,9 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/edyn":
-      "XXXXXXX",
+      "AA54CD4F4C77171C2CCE0DA3B5690049",
     "tile.system:homebrew.discordant_stars/3225":
-      "XXXXXXX",
+      "A6D5845C4AEB1F0729B7BBB1F2EE1AF3",
     "token.command:homebrew.discordant_stars/edyn":
       "XXXXXXX",
     "token.control:homebrew.discordant_stars/edyn":

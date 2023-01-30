@@ -54,9 +54,9 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/cheiran":
-      "XXXXXXX",
+      "954D23304C5988F518ECD291EFA0239D",
     "tile.system:homebrew.discordant_stars/3234":
-      "XXXXXXX",
+      "265F914448215A0673271AB47B2D474D",
     "token.command:homebrew.discordant_stars/cheiran":
       "XXXXXXX",
     "token.control:homebrew.discordant_stars/cheiran":

@@ -45,9 +45,9 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/lanefir":
-      "XXXXXXX",
+      "1173091643F3A07342E0FD8BF5FE5798",
     "tile.system:homebrew.discordant_stars/3230":
-      "XXXXXXX",
+      "94978F83444748D6DD0277B463A7CB54",
     "token.command:homebrew.discordant_stars/lanefir":
       "XXXXXXX",
     "token.control:homebrew.discordant_stars/lanefir":

@@ -1,8 +1,8 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.nokar": "FACT",
-  "faction.full.nokar": "FACTION",
+  "faction.abbr.nokar": "Nokar",
+  "faction.full.nokar": "The Nokar Sellships",
   "planet.zarr": "Zarr",
   "planet.nokk": "Nokk",
   "technology.name.local_contracts": "Local Contracts",
@@ -50,9 +50,9 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/nokar":
-      "XXXXXXX",
+      "D2F25CA4444D5A63AF6B44B92655D45C",
     "tile.system:homebrew.discordant_stars/3228":
-      "XXXXXXX",
+      "57D1D9BD4C70FBA7F8833C8A475E2206",
     "token.command:homebrew.discordant_stars/nokar":
       "XXXXXXX",
     "token.control:homebrew.discordant_stars/nokar":
@@ -64,17 +64,17 @@ const factions = [{
 const technologies = [{
     localeName: "technology.name.local_contracts",
     cardNsid:
-      "card.technology.COLOR.nokar:homebrew.discordant_stars/local_contracts",
-    type: "Red",
-    requirements: { Red: 2 },
+      "card.technology.yellow.nokar:homebrew.discordant_stars/local_contracts",
+    type: "Yellow",
+    requirements: { Yellow: 2 },
     source: "homebrew.discordant_stars",
     faction: "nokar",
   }, {
-    localeName: "unit.UNITID",
-    cardNsid: "card.technology.unit_upgrade.nokar:homebrew.discordant_stars/UNITID",
+    localeName: "unit.sabre_2",
+    cardNsid: "card.technology.unit_upgrade.nokar:homebrew.discordant_stars/sabre_2",
     type: "unitUpgrade",
-    requirements: { Yellow: 2 },
-    abbrev: " XX II",
+    requirements: { Red: 2 },
+    abbrev: " SB II",
     faction: "nokar",
     unitPosition: 0,
   },

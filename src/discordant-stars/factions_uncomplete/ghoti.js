@@ -47,9 +47,9 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/ghoti":
-      "XXXXXXX",
+      "B914AC224E9C7D563B8B1DA8B0DACE73",
     "tile.system:homebrew.discordant_stars/3232":
-      "XXXXXXX",
+      "3345D54A43F11698476A1C9489A51CC7",
     "token.command:homebrew.discordant_stars/ghoti":
       "XXXXXXX",
     "token.control:homebrew.discordant_stars/ghoti":
@@ -107,7 +107,7 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING FACTION");
+console.log("DISCORDANT STARS ADDING GHOTI");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

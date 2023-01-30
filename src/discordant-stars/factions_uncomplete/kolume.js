@@ -44,14 +44,12 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/kolume":
-      "XXXXXXX",
+      "FCA7F3274E7875C09A871B83207E494F",
     "tile.system:homebrew.discordant_stars/3233":
-      "XXXXXXX",
+      "9945F0D04D0B1B52F31B108B40DA77BF",
     "token.command:homebrew.discordant_stars/kolume":
       "XXXXXXX",
     "token.control:homebrew.discordant_stars/kolume":
-      "XXXXXXX",
-    "token.unit:homebrew.discordant-stars.UNITID/kolume":
       "XXXXXXX",
 };
 

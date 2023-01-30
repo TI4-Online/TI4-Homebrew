@@ -50,9 +50,9 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/gledge":
-      "XXXXXXX",
+      "9AB953F640599183201E659C6943EBFF",
     "tile.system:homebrew.discordant_stars/3229":
-      "XXXXXXX",
+      "02A3304A43BB9866A22F44B222173427",
     "token.command:homebrew.discordant_stars/gledge":
       "XXXXXXX",
     "token.control:homebrew.discordant_stars/gledge":

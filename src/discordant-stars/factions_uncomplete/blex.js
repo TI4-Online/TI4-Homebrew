@@ -48,9 +48,9 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/blex":
-      "XXXXXXX",
+      "87BBEE704B999E945F806DB0A881ED50",
     "tile.system:homebrew.discordant_stars/3231":
-      "XXXXXXX",
+      "D979798344A89C664EC1E1B464534D21",
     "token.command:homebrew.discordant_stars/blex":
       "XXXXXXX",
     "token.control:homebrew.discordant_stars/blex":
