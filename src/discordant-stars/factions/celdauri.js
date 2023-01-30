@@ -26,7 +26,7 @@ const factions = [{
     packageId: refPackageId,
     //icon: "discordant-stars/faction-icons/celdauri.png",
     source: "homebrew.discordant_stars",
-    startingTech: [],
+    startingTech: ["antimass_deflectors", "sarween_tools", "plasma_scoring"],
     startingUnits: {
         carrier: 1,
         destroyer: 1,
