@@ -1,13 +1,15 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.FACTIONID": "FACT",
-  "faction.full.FACTIONID": "FACTION",
-  "planet.PLANETID": "PLANET",
+  "faction.abbr.edyn": "Edyn",
+  "faction.full.edyn": "The Edyn Mandate",
+  "planet.edyn": "PLANET",
+  "planet.ekko": "Ekko",
+  "planet.okke": "Okke",
   "technology.name.unity_algorithm": "unity_algorithm",
   "technology.name.encrypted_trade_hub": "encrypted_trade_hub",
-  "unit.flagship.FLAGSHIPID": "FLAGSHIP",
-  "unit.mech.MECHID": "MECH",
+  "unit.flagship.kaliburn": "Kaliburn",
+  "unit.mech.runebearer": "runebearer",
 };
 
 
@@ -26,6 +28,8 @@ const factions = [{
     heroes: ["midir"],
   },
   promissoryNotes: ["edyn_diplomatic_support"],
+  promissoryNotes: ["secrets_of_the_weave"],
+  //icon: "discordant-stars/faction-icons/edyn.png",
   source: "discordant_stars",
   startingTech: ["pscyhoarchaeology", "dark_energy_tap", "scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
@@ -34,7 +38,7 @@ const factions = [{
     fighter: 3,
     infantry: 3,
     pds: 1,
-    spacedock: 1,
+    space_dock: 1,
   },
   techs: ["unity_algorithm", "encrypted_trade_hub"],
   units: ["kaliburn", "runebearer"],
@@ -42,15 +46,15 @@ const factions = [{
 }];
 
  const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/FACTIONID":
+    "sheet.faction:homebrew.discordant_stars/edyn":
       "XXXXXXX",
-    "tile.system:homebrew.discordant_stars/32XX":
+    "tile.system:homebrew.discordant_stars/3225":
       "XXXXXXX",
-    "token.command:homebrew.discordant_stars/FACTIONID":
+    "token.command:homebrew.discordant_stars/edyn":
       "XXXXXXX",
-    "token.control:homebrew.discordant_stars/FACTIONID":
+    "token.control:homebrew.discordant_stars/edyn":
       "XXXXXXX",
-    "token.unit:homebrew.discordant-stars.UNITID/FACTIONID":
+    "token.unit:homebrew.discordant-stars.UNITID/edyn":
       "XXXXXXX",
 };
 
@@ -74,11 +78,13 @@ const technologies = [{
 
 const systems = [
   {
-    tile: 3200, // TILEID
+    tile: 3225,
     source: "homebrew.discordant_stars",
     home: true,
     planets: [
-        { localeName: "planet.PLANET", resources: 2, influence: 1 },
+      { localeName: "planet.edyn", resources: 3, influence: 3 },
+      { localeName: "planet.okke", resources: 0, influence: 1 },
+      { localeName: "planet.ekko", resources: 0, influence: 1 },
     ],
   },
 ];
@@ -87,37 +93,22 @@ const unitAttrs = [
   {
     unit: "flagship",
     upgradeLevel: 1,
-    localeName: "unit.flagship.FLAGSHIPID",
+    localeName: "unit.flagship.kaliburn",
     triggerNsid:
-      "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/FLAGSHIPID",
+      "card.technology.unit_upgrade.edyn:franken.discordant_stars/kaliburn",
     spaceCombat: { dice: 2, hit: 7 },
-    capacity: 6,
-  },
-  {
-    unit: "BASE_UNIT",
-    upgradeLevel: 1,
-    localeName: "unit.BASE_UNIT.UNITID",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/UNITID",
-    antiFighterBarrage: { dice: 2, hit: 6 },
-  },
-  {
-    unit: "BASE_UNIT",
-    upgradeLevel: 2,
-    localeName: "unit.BASE_UNIT.UNITID_2",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID_2",
-    antiFighterBarrage: { dice: 2, hit: 6 },
   },
   {
     unit: "mech",
     upgradeLevel: 1,
-    localeName: "unit.mech.MECHID",
-    triggerNsid: "card.leader.mech.FACTIONID:homebrew.discordant_stars/MECHID",
+    localeName: "unit.mech.runebearer",
+    triggerNsid: "card.leader.mech.edyn:homebrew.discordant_stars/runebearer",
   },
 ];
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING FACTION");
+console.log("DISCORDANT STARS ADDING EDYN");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

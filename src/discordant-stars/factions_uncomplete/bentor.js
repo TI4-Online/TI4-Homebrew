@@ -1,12 +1,14 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.FACTIONID": "FACT",
-  "faction.full.FACTIONID": "FACTION",
-  "planet.PLANETID": "PLANET",
-  "technology.name.TECHID": "TECH",
-  "unit.flagship.FLAGSHIPID": "FLAGSHIP",
-  "unit.mech.MECHID": "MECH",
+  "faction.abbr.bentor": "bentor",
+  "faction.full.bentor": "The Bentor Conglomerate",
+  "planet.benc": "Benc",
+  "planet.hau": "Hau",
+  "technology.name.broker_network": "Broker Network",
+  "technology.name.merged_replicators": "Merged Replicators",
+  "unit.flagship.wayfinder": "Wayfinder",
+  "unit.mech.auctioneer": "Auctioneer",
 };
 
 
@@ -25,6 +27,8 @@ const factions = [{
     heroes: ["ceo_ken_tucc"],
   },
   promissoryNotes: ["encryption_key"],
+  promissoryNotes: ["secrets_of_the_weave"],
+  //icon: "discordant-stars/faction-icons/bentor.png",
   source: "discordant_stars",
   startingTech: ["pscyhoarchaeology", "dark_energy_tap", "scanlink_drone_network"],
   startingUnits: {
@@ -33,60 +37,73 @@ const factions = [{
     fighter: 3,
     infantry: 4,
     pds: 1,
-    spacedock: 1,
+    space_dock: 1,
   },
   techs: ["broker_network", "merged_replicators"],
   units: ["wayfinder", "auctioneer"],
   packageId: refPackageId,
+  unpackExtra: [
+    {
+      tokenNsid: "token.commodity:homebrew.discordant-stars.3_commodities/bentor",
+    },
+    {
+      tokenNsid: "token.fragment:homebrew.discordant-stars.industrial/bentor",
+    },
+    {
+      tokenNsid: "token.fragment:homebrew.discordant-stars.hazardous/bentor",
+    },
+    {
+      tokenNsid: "token.fragment:homebrew.discordant-stars.cultural/bentor",
+    },
+    {
+      tokenNsid: "token.fragment:homebrew.discordant-stars.unknown/bentor",
+    },
+    {
+      tokenNsid: "token.attachment:homebrew.discordant-stars.encryption_key/bentor",
+    },
+  ]
 }];
 
  const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/FACTIONID":
+    "sheet.faction:homebrew.discordant_stars/bentor":
       "XXXXXXX",
-    "tile.system:homebrew.discordant_stars/32XX":
+    "tile.system:homebrew.discordant_stars/3227":
       "XXXXXXX",
-    "token.command:homebrew.discordant_stars/FACTIONID":
+    "token.command:homebrew.discordant_stars/bentor":
       "XXXXXXX",
-    "token.control:homebrew.discordant_stars/FACTIONID":
+    "token.control:homebrew.discordant_stars/bentor":
       "XXXXXXX",
-    "token.unit:homebrew.discordant-stars.UNITID/FACTIONID":
+    "token.unit:homebrew.discordant-stars.UNITID/bentor":
       "XXXXXXX",
 };
 
 const technologies = [{
-    localeName: "technology.name.TECHID",
+    localeName: "technology.name.broker_network",
     cardNsid:
-      "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
-    type: "Red",
-    requirements: { Red: 2 },
+      "card.technology.green.bentor:homebrew.discordant_stars/broker_network",
+    type: "Green",
+    requirements: { Green: 1 },
     source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
+    faction: "bentor",
   }, {
-    localeName: "technology.name.TECHID",
+    localeName: "technology.name.merged_replicators",
     cardNsid:
-        "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
-    type: "Red",
-    requirements: { Red: 2 },
-    source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
-  }, {
-    localeName: "unit.UNITID",
-    cardNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID",
-    type: "unitUpgrade",
+        "card.technology.yellow.bentor:homebrew.discordant_stars/merged_replicators",
+    type: "Yellow",
     requirements: { Yellow: 2 },
-    abbrev: " XX II",
-    faction: "FACTIONID",
-    unitPosition: 0,
+    source: "homebrew.discordant_stars",
+    faction: "bentor",
   },
 ];
 
 const systems = [
   {
-    tile: 3200, // TILEID
+    tile: 3227,
     source: "homebrew.discordant_stars",
     home: true,
     planets: [
-        { localeName: "planet.PLANET", resources: 2, influence: 1 },
+      { localeName: "planet.benc", resources: 2, influence: 0 },
+      { localeName: "planet.hau", resources: 1, influence: 2 },
     ],
   },
 ];
@@ -95,37 +112,25 @@ const unitAttrs = [
   {
     unit: "flagship",
     upgradeLevel: 1,
-    localeName: "unit.flagship.FLAGSHIPID",
+    localeName: "unit.flagship.wayfinder",
     triggerNsid:
-      "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/FLAGSHIPID",
-    spaceCombat: { dice: 2, hit: 7 },
-    capacity: 6,
-  },
-  {
-    unit: "BASE_UNIT",
-    upgradeLevel: 1,
-    localeName: "unit.BASE_UNIT.UNITID",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/UNITID",
-    antiFighterBarrage: { dice: 2, hit: 6 },
-  },
-  {
-    unit: "BASE_UNIT",
-    upgradeLevel: 2,
-    localeName: "unit.BASE_UNIT.UNITID_2",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID_2",
-    antiFighterBarrage: { dice: 2, hit: 6 },
+      "card.technology.unit_upgrade.bentor:franken.discordant_stars/wayfinder",
+    spaceCombat: { dice: 2, hit: 9 },
+    bombardment: { dice: 1, hit: 9 },
+    spaceCannon: { dice: 2, hit: 9 },
+    antiFighterBarrage: { dice: 2, hit: 9 },
   },
   {
     unit: "mech",
     upgradeLevel: 1,
-    localeName: "unit.mech.MECHID",
-    triggerNsid: "card.leader.mech.FACTIONID:homebrew.discordant_stars/MECHID",
+    localeName: "unit.mech.auctioneer",
+    triggerNsid: "card.leader.mech.bentor:homebrew.discordant_stars/auctioneer",
   },
 ];
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING FACTION");
+console.log("DISCORDANT STARS ADDING BENTOR");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

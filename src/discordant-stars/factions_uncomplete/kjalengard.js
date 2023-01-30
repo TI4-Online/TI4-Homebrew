@@ -1,12 +1,13 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.FACTIONID": "FACT",
-  "faction.full.FACTIONID": "FACTION",
-  "planet.PLANETID": "PLANET",
-  "technology.name.TECHID": "TECH",
-  "unit.flagship.FLAGSHIPID": "FLAGSHIP",
-  "unit.mech.MECHID": "MECH",
+  "faction.abbr.kjalengard": "Kjalengard",
+  "faction.full.kjalengard": "Berserks of Kjalengard",
+  "planet.kjalengard": "Kjalengard",
+  "planet.hulgade": "Hulgade",
+  "technology.name.zhrgar_stimulants": "Zhrgar Stimulants",
+  "unit.flagship.hulgades_hammer": "Hulgades Hammer",
+  "unit.mech.skald": "Skald",
 };
 
 
@@ -25,6 +26,7 @@ const factions = [{
     heroes: ["ygegnad_the_thunder"],
   },
   promissoryNotes: ["vassalage"],
+  //icon: "discordant-stars/faction-icons/kjalengard.png",
   source: "discordant_stars",
   startingTech: [],
   startingUnits: {
@@ -33,60 +35,58 @@ const factions = [{
     fighter: 4,
     infantry: 4,
     pds: 1,
-    spacedock: 1,
+    space_dock: 1,
   },
-  techs: ["unity_algorithm", "encrypted_trade_hub"],
+  techs: ["zhrgar_stimulants"],
   units: ["hulgades_hammer", "star_dragon", "star_dragon_2", "skald"],
   packageId: refPackageId,
+  unpackExtra: [{
+    tokenNsid: "token.system:homebrew.discordant-stars.glory/kjalengard",
+    tokenCount: 3,
+  }],
 }];
 
+
  const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/FACTIONID":
+    "sheet.faction:homebrew.discordant_stars/kjalengard":
       "XXXXXXX",
-    "tile.system:homebrew.discordant_stars/32XX":
+    "tile.system:homebrew.discordant_stars/3226":
       "XXXXXXX",
-    "token.command:homebrew.discordant_stars/FACTIONID":
+    "token.command:homebrew.discordant_stars/kjalengard":
       "XXXXXXX",
-    "token.control:homebrew.discordant_stars/FACTIONID":
+    "token.control:homebrew.discordant_stars/kjalengard":
       "XXXXXXX",
-    "token.unit:homebrew.discordant-stars.UNITID/FACTIONID":
+    "token.system:homebrew.discordant-stars.glory/kjalengard":
       "XXXXXXX",
 };
 
 const technologies = [{
-    localeName: "technology.name.TECHID",
+    localeName: "technology.name.zhrgar_stimulants",
     cardNsid:
-      "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
-    type: "Red",
-    requirements: { Red: 2 },
+      "card.technology.green.kjalengard:homebrew.discordant_stars/zhrgar_stimulants",
+    type: "Green",
+    requirements: { Green: 1 },
     source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
+    faction: "kjalengard",
   }, {
-    localeName: "technology.name.TECHID",
-    cardNsid:
-        "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
-    type: "Red",
-    requirements: { Red: 2 },
-    source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
-  }, {
-    localeName: "unit.UNITID",
-    cardNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID",
+    localeName: "unit.star_dragon_2",
+    cardNsid: "card.technology.unit_upgrade.kjalengard:homebrew.discordant_stars/star_dragon_2",
     type: "unitUpgrade",
-    requirements: { Yellow: 2 },
-    abbrev: " XX II",
-    faction: "FACTIONID",
+    requirements: { Blue: 2 },
+    abbrev: " SD II",
+    faction: "kjalengard",
     unitPosition: 0,
   },
 ];
 
 const systems = [
   {
-    tile: 3200, // TILEID
+    tile: 3226,
     source: "homebrew.discordant_stars",
     home: true,
     planets: [
-        { localeName: "planet.PLANET", resources: 2, influence: 1 },
+      { localeName: "planet.kjalengard", resources: 3, influence: 2 },
+      { localeName: "planet.hulgade", resources: 1, influence: 0 },
     ],
   },
 ];
@@ -95,31 +95,31 @@ const unitAttrs = [
   {
     unit: "flagship",
     upgradeLevel: 1,
-    localeName: "unit.flagship.FLAGSHIPID",
+    localeName: "unit.flagship.hulgades_hammer",
     triggerNsid:
-      "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/FLAGSHIPID",
+      "card.technology.unit_upgrade.kjalengard:franken.discordant_stars/hulgades_hammer",
     spaceCombat: { dice: 2, hit: 7 },
     capacity: 6,
   },
   {
-    unit: "BASE_UNIT",
+    unit: "carrier",
     upgradeLevel: 1,
-    localeName: "unit.BASE_UNIT.UNITID",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/UNITID",
-    antiFighterBarrage: { dice: 2, hit: 6 },
+    localeName: "unit.carrier.star_dragon",
+    triggerNsid: "card.technology.unit_upgrade.kjalengard:franken.discordant_stars/star_dragon",
+    spaceCombat: { dice: 1, hit: 8 },
   },
   {
-    unit: "BASE_UNIT",
+    unit: "carrier",
     upgradeLevel: 2,
-    localeName: "unit.BASE_UNIT.UNITID_2",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID_2",
-    antiFighterBarrage: { dice: 2, hit: 6 },
+    localeName: "unit.carrier.star_dragon_2",
+    triggerNsid: "card.technology.unit_upgrade.kjalengard:homebrew.discordant_stars/star_dragon_2",
+    spaceCombat: { dice: 1, hit: 7 },
   },
   {
     unit: "mech",
     upgradeLevel: 1,
-    localeName: "unit.mech.MECHID",
-    triggerNsid: "card.leader.mech.FACTIONID:homebrew.discordant_stars/MECHID",
+    localeName: "unit.mech.skald",
+    triggerNsid: "card.leader.mech.kjalengard:homebrew.discordant_stars/skald",
   },
 ];
 

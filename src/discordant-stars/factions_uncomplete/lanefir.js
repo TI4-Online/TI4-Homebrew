@@ -1,12 +1,14 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.FACTIONID": "FACT",
-  "faction.full.FACTIONID": "FACTION",
-  "planet.PLANETID": "PLANET",
-  "technology.name.TECHID": "TECH",
-  "unit.flagship.FLAGSHIPID": "FLAGSHIP",
-  "unit.mech.MECHID": "MECH",
+  "faction.abbr.lanefir": "Lanefir",
+  "faction.full.lanefir": "The Lanefir Remnants",
+  "planet.aysisrest": "aysisrest",
+  "planet.solitude": "solitude",
+  "technology.name.spark_thrusters": "Spark Thrusters",
+  "technology.name.ats_armaments": "ATS Armaments",
+  "unit.flagship.memory_of_dusk": "Memory of Dusk",
+  "unit.mech.troubadour": "Troubadour",
 };
 
 
@@ -25,6 +27,7 @@ const factions = [{
     heroes: ["the_venerable"],
   },
   promissoryNotes: ["spoils_of_war"],
+  //icon: "discordant-stars/faction-icons/lanefir.png",
   source: "discordant_stars",
   startingTech: ["dark_energy_tap", "scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
@@ -33,7 +36,7 @@ const factions = [{
     fighter: 2,
     infantry: 3,
     pds: 1,
-    spacedock: 1,
+    space_dock: 1,
   },
   techs: ["spark_thrusters", "ats_armaments"],
   units: ["memory_of_dusk", "troubadour"],
@@ -41,52 +44,44 @@ const factions = [{
 }];
 
  const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/FACTIONID":
+    "sheet.faction:homebrew.discordant_stars/lanefir":
       "XXXXXXX",
-    "tile.system:homebrew.discordant_stars/32XX":
+    "tile.system:homebrew.discordant_stars/3230":
       "XXXXXXX",
-    "token.command:homebrew.discordant_stars/FACTIONID":
+    "token.command:homebrew.discordant_stars/lanefir":
       "XXXXXXX",
-    "token.control:homebrew.discordant_stars/FACTIONID":
-      "XXXXXXX",
-    "token.unit:homebrew.discordant-stars.UNITID/FACTIONID":
+    "token.control:homebrew.discordant_stars/lanefir":
       "XXXXXXX",
 };
 
 const technologies = [{
-    localeName: "technology.name.TECHID",
+    localeName: "technology.name.spark_thrusters",
     cardNsid:
-      "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
+      "card.technology.COLOR.lanefir:homebrew.discordant_stars/spark_thrusters",
     type: "Red",
     requirements: { Red: 2 },
     source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
+    faction: "lanefir",
   }, {
-    localeName: "technology.name.TECHID",
+    localeName: "technology.name.ats_armaments",
     cardNsid:
-        "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
+        "card.technology.COLOR.lanefir:homebrew.discordant_stars/ats_armaments",
     type: "Red",
     requirements: { Red: 2 },
     source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
-  }, {
-    localeName: "unit.UNITID",
-    cardNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID",
-    type: "unitUpgrade",
-    requirements: { Yellow: 2 },
-    abbrev: " XX II",
-    faction: "FACTIONID",
-    unitPosition: 0,
+    faction: "lanefir",
   },
 ];
 
 const systems = [
   {
-    tile: 3200, // TILEID
+    tile: 3230,
     source: "homebrew.discordant_stars",
     home: true,
     planets: [
-        { localeName: "planet.PLANET", resources: 2, influence: 1 },
+      { localeName: "planet.aysisrest", resources: 4, influence: 3 },
+      { localeName: "planet.solitude", resources: 0, influence: 1 },
+
     ],
   },
 ];
@@ -95,37 +90,22 @@ const unitAttrs = [
   {
     unit: "flagship",
     upgradeLevel: 1,
-    localeName: "unit.flagship.FLAGSHIPID",
+    localeName: "unit.flagship.memory_of_dusk",
     triggerNsid:
-      "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/FLAGSHIPID",
+      "card.technology.unit_upgrade.lanefir:franken.discordant_stars/memory_of_dusk",
     spaceCombat: { dice: 2, hit: 7 },
-    capacity: 6,
-  },
-  {
-    unit: "BASE_UNIT",
-    upgradeLevel: 1,
-    localeName: "unit.BASE_UNIT.UNITID",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/UNITID",
-    antiFighterBarrage: { dice: 2, hit: 6 },
-  },
-  {
-    unit: "BASE_UNIT",
-    upgradeLevel: 2,
-    localeName: "unit.BASE_UNIT.UNITID_2",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID_2",
-    antiFighterBarrage: { dice: 2, hit: 6 },
   },
   {
     unit: "mech",
     upgradeLevel: 1,
-    localeName: "unit.mech.MECHID",
-    triggerNsid: "card.leader.mech.FACTIONID:homebrew.discordant_stars/MECHID",
+    localeName: "unit.mech.troubadour",
+    triggerNsid: "card.leader.mech.lanefir:homebrew.discordant_stars/troubadour",
   },
 ];
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING FACTION");
+console.log("DISCORDANT STARS ADDING LANEFIR");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

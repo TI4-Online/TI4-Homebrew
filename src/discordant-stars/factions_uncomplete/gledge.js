@@ -1,12 +1,12 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.FACTIONID": "FACT",
-  "faction.full.FACTIONID": "FACTION",
-  "planet.PLANETID": "PLANET",
-  "technology.name.TECHID": "TECH",
-  "unit.flagship.FLAGSHIPID": "FLAGSHIP",
-  "unit.mech.MECHID": "MECH",
+  "faction.abbr.gledge": "Gledge",
+  "faction.full.gledge": "The Gledge Union",
+  "planet.laststop": "Last Stop",
+  "technology.name.lightning_drives": "Lightning Drives",
+  "unit.flagship.beg_bersha": "Beg Bersha",
+  "unit.mech.exodriller": "Exodriller",
 };
 
 
@@ -25,6 +25,7 @@ const factions = [{
     heroes: ["gorthrim"],
   },
   promissoryNotes: ["gledge_base"],
+  //icon: "discordant-stars/faction-icons/gledge.png",
   source: "discordant_stars",
   startingTech: ["pscyhoarchaeology", "scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
@@ -34,60 +35,58 @@ const factions = [{
     fighter: 3,
     infantry: 2,
     mech: 1,
-    spacedock: 1,
+    space_dock: 1,
   },
   techs: ["lightning_drives"],
   units: ["beg_bersha", "orion_platform", "orion_platform_2", "exodriller"],
   packageId: refPackageId,
+  unpackExtra: [{
+    tokenNsid: "token.system:homebrew.discordant-stars.core/gledge",
+    tokenCount: 3,
+  },{
+    tokenNsid: "token.attachment:homebrew.discordant-stars.base/gledge",
+  },],
 }];
 
  const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/FACTIONID":
+    "sheet.faction:homebrew.discordant_stars/gledge":
       "XXXXXXX",
-    "tile.system:homebrew.discordant_stars/32XX":
+    "tile.system:homebrew.discordant_stars/3229":
       "XXXXXXX",
-    "token.command:homebrew.discordant_stars/FACTIONID":
+    "token.command:homebrew.discordant_stars/gledge":
       "XXXXXXX",
-    "token.control:homebrew.discordant_stars/FACTIONID":
+    "token.control:homebrew.discordant_stars/gledge":
       "XXXXXXX",
-    "token.unit:homebrew.discordant-stars.UNITID/FACTIONID":
+    "token.unit:homebrew.discordant-stars.UNITID/gledge":
       "XXXXXXX",
 };
 
 const technologies = [{
-    localeName: "technology.name.TECHID",
+    localeName: "technology.name.lightning_drives",
     cardNsid:
-      "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
-    type: "Red",
-    requirements: { Red: 2 },
+      "card.technology.blue.gledge:homebrew.discordant_stars/lightning_drives",
+    type: "Blue",
+    requirements: { Blue: 3 },
     source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
+    faction: "gledge",
   }, {
-    localeName: "technology.name.TECHID",
-    cardNsid:
-        "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
-    type: "Red",
-    requirements: { Red: 2 },
-    source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
-  }, {
-    localeName: "unit.UNITID",
-    cardNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID",
+    localeName: "unit.orion_platform_2",
+    cardNsid: "card.technology.unit_upgrade.gledge:homebrew.discordant_stars/orion_platform_2",
     type: "unitUpgrade",
-    requirements: { Yellow: 2 },
-    abbrev: " XX II",
-    faction: "FACTIONID",
+    requirements: { Red: 1, Yellow: 1 },
+    abbrev: " OP II",
+    faction: "gledge",
     unitPosition: 0,
   },
 ];
 
 const systems = [
   {
-    tile: 3200, // TILEID
+    tile: 3229,
     source: "homebrew.discordant_stars",
     home: true,
     planets: [
-        { localeName: "planet.PLANET", resources: 2, influence: 1 },
+        { localeName: "planet.laststop", resources: 3, influence: 0 },
     ],
   },
 ];
@@ -96,37 +95,35 @@ const unitAttrs = [
   {
     unit: "flagship",
     upgradeLevel: 1,
-    localeName: "unit.flagship.FLAGSHIPID",
+    localeName: "unit.flagship.beg_bersha",
     triggerNsid:
-      "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/FLAGSHIPID",
-    spaceCombat: { dice: 2, hit: 7 },
-    capacity: 6,
+      "card.technology.unit_upgrade.gledge:franken.discordant_stars/beg_bersha",
+    spaceCombat: { dice: 1, hit: 7 },
+    bombardment: { dice: 1, hit: 7 },
   },
   {
-    unit: "BASE_UNIT",
+    unit: "pds",
     upgradeLevel: 1,
-    localeName: "unit.BASE_UNIT.UNITID",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/UNITID",
-    antiFighterBarrage: { dice: 2, hit: 6 },
+    localeName: "unit.pds.orion_platform",
+    triggerNsid: "card.technology.unit_upgrade.gledge:franken.discordant_stars/orion_platform",
   },
   {
-    unit: "BASE_UNIT",
+    unit: "pds",
     upgradeLevel: 2,
-    localeName: "unit.BASE_UNIT.UNITID_2",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID_2",
-    antiFighterBarrage: { dice: 2, hit: 6 },
+    localeName: "unit.pds.orion_platform_2",
+    triggerNsid: "card.technology.unit_upgrade.gledge:homebrew.discordant_stars/orion_platform_2",
   },
   {
     unit: "mech",
     upgradeLevel: 1,
-    localeName: "unit.mech.MECHID",
-    triggerNsid: "card.leader.mech.FACTIONID:homebrew.discordant_stars/MECHID",
+    localeName: "unit.mech.exodriller",
+    triggerNsid: "card.leader.mech.gledge:homebrew.discordant_stars/exodriller",
   },
 ];
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING FACTION");
+console.log("DISCORDANT STARS ADDING GLEDGE");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

@@ -1,9 +1,10 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.cheiran": "FACT",
-  "faction.full.cheiran": "FACTION",
-  "planet.PLANETID": "PLANET",
+  "faction.abbr.cheiran": "Cheiran",
+  "faction.full.cheiran": "The Cheiran Hordes",
+  "planet.arche": "Arche",
+  "planet.gghurntheta": "Gghurn Theta",
   "technology.name.brood_podbrood_pod": "Brood PodBrood Pod",
   "unit.flagship.lithodax": "lithodax",
   "unit.mech.nauplius": "nauplius",
@@ -25,6 +26,8 @@ const factions = [{
     heroes: ["thakt_clqua"],
   },
   promissoryNotes: ["carcinisation"],
+  promissoryNotes: ["secrets_of_the_weave"],
+  //icon: "discordant-stars/faction-icons/cheiran.png",
   source: "discordant_stars",
   startingTech: ["magen_defense_grid", "self_assembly_routines"],
   startingUnits: {
@@ -33,7 +36,7 @@ const factions = [{
     fighter: 3,
     infantry: 3,
     pds: 1,
-    spacedock: 1,
+    space_dock: 1,
   },
   techs: ["brood_pod"],
   units: ["lithodax", "chitin_hulk", "chitin_hulk_2", "nauplius"],
@@ -58,6 +61,10 @@ const factions = [{
       "XXXXXXX",
     "token.control:homebrew.discordant_stars/cheiran":
       "XXXXXXX",
+   "token.attachment:homebrew.discordant-stars.dreadnought/cheiran":
+      "XXXXXXX",
+   "token.attachment:homebrew.discordant-stars.mech/cheiran":
+      "XXXXXXX",
 };
 
 const technologies = [{
@@ -66,14 +73,6 @@ const technologies = [{
       "card.technology.red.cheiran:homebrew.discordant_stars/brood_pod",
     type: "Red",
     requirements: { Red: 2 },
-    source: "homebrew.discordant_stars",
-    faction: "cheiran",
-  }, {
-    localeName: "technology.name.encrypted_trade_hub",
-    cardNsid:
-        "card.technology.yellow.cheiran:homebrew.discordant_stars/encrypted_trade_hub",
-    type: "Yellow",
-    requirements: { Yellow: 2 },
     source: "homebrew.discordant_stars",
     faction: "cheiran",
   }, {
@@ -93,7 +92,8 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     planets: [
-        { localeName: "planet.PLANET", resources: 2, influence: 1 },
+      { localeName: "planet.arche", resources: 2, influence: 2 },
+      { localeName: "planet.gghurntheta", resources: 2, influence: 1 },
     ],
   },
 ];

@@ -1,12 +1,14 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.FACTIONID": "FACT",
-  "faction.full.FACTIONID": "FACTION",
-  "planet.PLANETID": "PLANET",
-  "technology.name.TECHID": "TECH",
-  "unit.flagship.FLAGSHIPID": "FLAGSHIP",
-  "unit.mech.MECHID": "MECH",
+  "faction.abbr.kolume": "Kolume",
+  "faction.full.kolume": "The Monks of Kolume",
+  "planet.azle": "azle",
+  "planet.alesna": "alesna",
+  "technology.name.applied_biothermics": "Applied Biothermics",
+  "technology.name.omniscience_field": "Omniscience Field",
+  "unit.flagship.halberd": "Halberd",
+  "unit.mech.rook": "rook",
 };
 
 
@@ -25,6 +27,7 @@ const factions = [{
     heroes: ["wonell_the_silent"],
   },
   promissoryNotes: ["combinatorial_bypass"],
+  //icon: "discordant-stars/faction-icons/kolume.png",
   source: "discordant_stars",
   startingTech: ["graviton_laser_system", "predictive_intelligence"],
   startingUnits: {
@@ -32,7 +35,7 @@ const factions = [{
     cruiser: 1,
     fighter: 2,
     infantry: 4,
-    spacedock: 1,
+    space_dock: 1,
   },
   techs: ["applied_biothermics", "omniscience_field"],
   units: ["halberd", "rook"],
@@ -40,52 +43,45 @@ const factions = [{
 }];
 
  const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/FACTIONID":
+    "sheet.faction:homebrew.discordant_stars/kolume":
       "XXXXXXX",
-    "tile.system:homebrew.discordant_stars/32XX":
+    "tile.system:homebrew.discordant_stars/3233":
       "XXXXXXX",
-    "token.command:homebrew.discordant_stars/FACTIONID":
+    "token.command:homebrew.discordant_stars/kolume":
       "XXXXXXX",
-    "token.control:homebrew.discordant_stars/FACTIONID":
+    "token.control:homebrew.discordant_stars/kolume":
       "XXXXXXX",
-    "token.unit:homebrew.discordant-stars.UNITID/FACTIONID":
+    "token.unit:homebrew.discordant-stars.UNITID/kolume":
       "XXXXXXX",
 };
 
 const technologies = [{
-    localeName: "technology.name.TECHID",
+    localeName: "technology.name.applied_biothermics",
     cardNsid:
-      "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
-    type: "Red",
-    requirements: { Red: 2 },
+      "card.technology.green.kolume:homebrew.discordant_stars/applied_biothermics",
+    type: "Green",
+    requirements: { Green: 2 },
     source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
+    faction: "kolume",
   }, {
-    localeName: "technology.name.TECHID",
+    localeName: "technology.name.omniscience_field",
     cardNsid:
-        "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
+        "card.technology.red.kolume:homebrew.discordant_stars/omniscience_field",
     type: "Red",
-    requirements: { Red: 2 },
+    requirements: { Red: 3 },
     source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
-  }, {
-    localeName: "unit.UNITID",
-    cardNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID",
-    type: "unitUpgrade",
-    requirements: { Yellow: 2 },
-    abbrev: " XX II",
-    faction: "FACTIONID",
-    unitPosition: 0,
+    faction: "kolume",
   },
 ];
 
 const systems = [
   {
-    tile: 3200, // TILEID
+    tile: 3233,
     source: "homebrew.discordant_stars",
     home: true,
     planets: [
-        { localeName: "planet.PLANET", resources: 2, influence: 1 },
+      { localeName: "planet.azle", resources: 2, influence: 0 },
+      { localeName: "planet.alesna", resources: 2, influence: 0 },
     ],
   },
 ];
@@ -94,37 +90,24 @@ const unitAttrs = [
   {
     unit: "flagship",
     upgradeLevel: 1,
-    localeName: "unit.flagship.FLAGSHIPID",
+    localeName: "unit.flagship.halberd",
     triggerNsid:
-      "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/FLAGSHIPID",
+      "card.technology.unit_upgrade.kolume:franken.discordant_stars/halberd",
     spaceCombat: { dice: 2, hit: 7 },
-    capacity: 6,
-  },
-  {
-    unit: "BASE_UNIT",
-    upgradeLevel: 1,
-    localeName: "unit.BASE_UNIT.UNITID",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/UNITID",
-    antiFighterBarrage: { dice: 2, hit: 6 },
-  },
-  {
-    unit: "BASE_UNIT",
-    upgradeLevel: 2,
-    localeName: "unit.BASE_UNIT.UNITID_2",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID_2",
-    antiFighterBarrage: { dice: 2, hit: 6 },
+    spaceCannon: { dice: 1, hit: 7 },
   },
   {
     unit: "mech",
     upgradeLevel: 1,
-    localeName: "unit.mech.MECHID",
-    triggerNsid: "card.leader.mech.FACTIONID:homebrew.discordant_stars/MECHID",
+    localeName: "unit.mech.rook",
+    triggerNsid: "card.leader.mech.kolume:homebrew.discordant_stars/rook",
+    spaceCannon: { dice: 2, hit: 8 },
   },
 ];
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING FACTION");
+console.log("DISCORDANT STARS ADDING KOLUME");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

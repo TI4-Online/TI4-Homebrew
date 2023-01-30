@@ -1,12 +1,13 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.FACTIONID": "FACT",
-  "faction.full.FACTIONID": "FACTION",
-  "planet.PLANETID": "PLANET",
-  "technology.name.TECHID": "TECH",
-  "unit.flagship.FLAGSHIPID": "FLAGSHIP",
-  "unit.mech.MECHID": "MECH",
+  "faction.abbr.ghoti": "Ghoti",
+  "faction.full.ghoti": "",
+  "planet.ghoti": "ghoti",
+  "technology.name.networked_command": "Networked Command",
+  "technology.name.parallel_production": "Parallel Production",
+  "unit.flagship.all_mother": "All Mother",
+  "unit.mech.tioleombp": "Tioleombp",
 };
 
 
@@ -25,6 +26,8 @@ const factions = [{
     heroes: ["nmenmede"],
   },
   promissoryNotes: ["ghoti_relay"],
+  promissoryNotes: ["secrets_of_the_weave"],
+  //icon: "discordant-stars/faction-icons/ghoti.png",
   source: "discordant_stars",
   startingTech: ["gravity_drive", "sling_relay"],
   startingUnits: {
@@ -36,56 +39,50 @@ const factions = [{
   techs: ["networked_command", "parallel_production"],
   units: ["all_mother", "tioleombp"],
   packageId: refPackageId,
+  unpackExtra: [{
+    // This is a stack of cards (planet & legendary)
+    tokenNsid: "card.ghoti:homebrew.discordant_stars/0"
+  }],
 }];
 
  const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/FACTIONID":
+    "sheet.faction:homebrew.discordant_stars/ghoti":
       "XXXXXXX",
-    "tile.system:homebrew.discordant_stars/32XX":
+    "tile.system:homebrew.discordant_stars/3232":
       "XXXXXXX",
-    "token.command:homebrew.discordant_stars/FACTIONID":
+    "token.command:homebrew.discordant_stars/ghoti":
       "XXXXXXX",
-    "token.control:homebrew.discordant_stars/FACTIONID":
+    "token.control:homebrew.discordant_stars/ghoti":
       "XXXXXXX",
-    "token.unit:homebrew.discordant-stars.UNITID/FACTIONID":
+    "card.ghoti:homebrew.discordant-stars/0":
       "XXXXXXX",
 };
 
 const technologies = [{
-    localeName: "technology.name.TECHID",
+    localeName: "technology.name.networked_command",
     cardNsid:
-      "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
-    type: "Red",
-    requirements: { Red: 2 },
+      "card.technology.green.ghoti:homebrew.discordant_stars/networked_command",
+    type: "Green",
+    requirements: { Green: 1 },
     source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
+    faction: "ghoti",
   }, {
-    localeName: "technology.name.TECHID",
+    localeName: "technology.name.parallel_production",
     cardNsid:
-        "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
-    type: "Red",
-    requirements: { Red: 2 },
+        "card.technology.yellow.ghoti:homebrew.discordant_stars/parallel_production",
+    type: "Yellow",
+    requirements: { Yellow: 1 },
     source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
-  }, {
-    localeName: "unit.UNITID",
-    cardNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID",
-    type: "unitUpgrade",
-    requirements: { Yellow: 2 },
-    abbrev: " XX II",
-    faction: "FACTIONID",
-    unitPosition: 0,
+    faction: "ghoti",
   },
 ];
 
 const systems = [
   {
-    tile: 3200, // TILEID
+    tile: 3232,
     source: "homebrew.discordant_stars",
     home: true,
-    planets: [
-        { localeName: "planet.PLANET", resources: 2, influence: 1 },
-    ],
+    planets: [],
   },
 ];
 
@@ -93,31 +90,18 @@ const unitAttrs = [
   {
     unit: "flagship",
     upgradeLevel: 1,
-    localeName: "unit.flagship.FLAGSHIPID",
+    localeName: "unit.flagship.all_mother",
     triggerNsid:
-      "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/FLAGSHIPID",
+      "card.technology.unit_upgrade.ghoti:franken.discordant_stars/all_mother",
     spaceCombat: { dice: 2, hit: 7 },
-    capacity: 6,
-  },
-  {
-    unit: "BASE_UNIT",
-    upgradeLevel: 1,
-    localeName: "unit.BASE_UNIT.UNITID",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/UNITID",
-    antiFighterBarrage: { dice: 2, hit: 6 },
-  },
-  {
-    unit: "BASE_UNIT",
-    upgradeLevel: 2,
-    localeName: "unit.BASE_UNIT.UNITID_2",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID_2",
-    antiFighterBarrage: { dice: 2, hit: 6 },
+    capacity: 5,
+    production: 3, // TODO: calculate based on the fleet pool
   },
   {
     unit: "mech",
     upgradeLevel: 1,
-    localeName: "unit.mech.MECHID",
-    triggerNsid: "card.leader.mech.FACTIONID:homebrew.discordant_stars/MECHID",
+    localeName: "unit.mech.tioleombp",
+    triggerNsid: "card.leader.mech.ghoti:homebrew.discordant_stars/tioleombp",
   },
 ];
 

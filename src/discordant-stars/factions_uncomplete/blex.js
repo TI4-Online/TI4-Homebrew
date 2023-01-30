@@ -1,12 +1,12 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.FACTIONID": "FACT",
-  "faction.full.FACTIONID": "FACTION",
-  "planet.PLANETID": "PLANET",
-  "technology.name.TECHID": "TECH",
-  "unit.flagship.FLAGSHIPID": "FLAGSHIP",
-  "unit.mech.MECHID": "MECH",
+  "faction.abbr.blex": "Blex",
+  "faction.full.blex": "Blex Pestilence",
+  "planet.avicenna": "Avicenna",
+  "technology.name.biotic_weapons": "Biotic Weapons",
+  "unit.flagship.auriga": "Auriga",
+  "unit.mech.pustule": "Pustule",
 };
 
 
@@ -25,6 +25,8 @@ const factions = [{
     heroes: ["speygh"],
   },
   promissoryNotes: ["blex_agents"],
+  promissoryNotes: ["secrets_of_the_weave"],
+  //icon: "discordant-stars/faction-icons/blex.png",
   source: "discordant_stars",
   startingTech: ["daxcive_animators", "biostims"],
   startingUnits: {
@@ -32,60 +34,57 @@ const factions = [{
     dreadnought: 1,
     destroyer: 1,
     infantry: 3,
-    spacedock: 1,
+    space_dock: 1,
   },
   techs: ["meldships"],
   units: ["auriga", "vector", "vector_2", "pustule"],
   packageId: refPackageId,
+  unpackExtra: [{
+    tokenNsid: "token.system:homebrew.discordant-stars.blight/blex",
+    tokenCount: 4,
+  }]
+
 }];
 
  const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/FACTIONID":
+    "sheet.faction:homebrew.discordant_stars/blex":
       "XXXXXXX",
-    "tile.system:homebrew.discordant_stars/32XX":
+    "tile.system:homebrew.discordant_stars/3231":
       "XXXXXXX",
-    "token.command:homebrew.discordant_stars/FACTIONID":
+    "token.command:homebrew.discordant_stars/blex":
       "XXXXXXX",
-    "token.control:homebrew.discordant_stars/FACTIONID":
+    "token.control:homebrew.discordant_stars/blex":
       "XXXXXXX",
-    "token.unit:homebrew.discordant-stars.UNITID/FACTIONID":
+    "token.system:homebrew.discordant-stars.blight/blex":
       "XXXXXXX",
 };
 
 const technologies = [{
-    localeName: "technology.name.TECHID",
+    localeName: "technology.name.biotic_weapons",
     cardNsid:
-      "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
-    type: "Red",
-    requirements: { Red: 2 },
+      "card.technology.green.blex:homebrew.discordant_stars/biotic_weapons",
+    type: "Green",
+    requirements: { Green: 2 },
     source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
+    faction: "blex",
   }, {
-    localeName: "technology.name.TECHID",
-    cardNsid:
-        "card.technology.COLOR.FACTIONID:homebrew.discordant_stars/TECHID",
-    type: "Red",
-    requirements: { Red: 2 },
-    source: "homebrew.discordant_stars",
-    faction: "FACTIONID",
-  }, {
-    localeName: "unit.UNITID",
-    cardNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID",
+    localeName: "unit.vector_2",
+    cardNsid: "card.technology.unit_upgrade.blex:homebrew.discordant_stars/vector_2",
     type: "unitUpgrade",
-    requirements: { Yellow: 2 },
-    abbrev: " XX II",
-    faction: "FACTIONID",
+    requirements: { Green: 1, Blue: 1 },
+    abbrev: " VE II",
+    faction: "blex",
     unitPosition: 0,
   },
 ];
 
 const systems = [
   {
-    tile: 3200, // TILEID
+    tile: 3231,
     source: "homebrew.discordant_stars",
     home: true,
     planets: [
-        { localeName: "planet.PLANET", resources: 2, influence: 1 },
+        { localeName: "planet.avicenna", resources: 4, influence: 0 },
     ],
   },
 ];
@@ -94,37 +93,37 @@ const unitAttrs = [
   {
     unit: "flagship",
     upgradeLevel: 1,
-    localeName: "unit.flagship.FLAGSHIPID",
+    localeName: "unit.flagship.auriga",
     triggerNsid:
-      "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/FLAGSHIPID",
+      "card.technology.unit_upgrade.blex:franken.discordant_stars/auriga",
     spaceCombat: { dice: 2, hit: 7 },
     capacity: 6,
   },
   {
-    unit: "BASE_UNIT",
+    unit: "fighter",
     upgradeLevel: 1,
-    localeName: "unit.BASE_UNIT.UNITID",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:franken.discordant_stars/UNITID",
-    antiFighterBarrage: { dice: 2, hit: 6 },
+    localeName: "unit.fighter.vector",
+    triggerNsid: "card.technology.unit_upgrade.blex:franken.discordant_stars/vector",
+    move: 2,
   },
   {
-    unit: "BASE_UNIT",
+    unit: "fighter",
     upgradeLevel: 2,
-    localeName: "unit.BASE_UNIT.UNITID_2",
-    triggerNsid: "card.technology.unit_upgrade.FACTIONID:homebrew.discordant_stars/UNITID_2",
-    antiFighterBarrage: { dice: 2, hit: 6 },
+    localeName: "unit.fighter.vector_2",
+    triggerNsid: "card.technology.unit_upgrade.blex:homebrew.discordant_stars/vector_2",
+    move: 3,
   },
   {
     unit: "mech",
     upgradeLevel: 1,
-    localeName: "unit.mech.MECHID",
-    triggerNsid: "card.leader.mech.FACTIONID:homebrew.discordant_stars/MECHID",
+    localeName: "unit.mech.pustule",
+    triggerNsid: "card.leader.mech.blex:homebrew.discordant_stars/pustule",
   },
 ];
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING FACTION");
+console.log("DISCORDANT STARS ADDING BLEX");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
