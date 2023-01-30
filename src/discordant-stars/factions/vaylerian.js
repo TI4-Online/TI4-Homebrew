@@ -1,7 +1,7 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.vaylerian": "vaylerian",
+  "faction.abbr.vaylerian": "Vaylerian",
   "faction.full.vaylerian": "The Vaylerian Scourge",
   "planet.vaylar": "vaylar",
   "technology.name.scavenger_exos": "Scavenger Exos",
@@ -52,9 +52,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3216":
       "072DCEE6DDAB44E3BA26706A31EE0E45",
     "token.command:homebrew.discordant_stars/vaylerian":
-      "XXXXXXX",
+      "68BCD71440443EEB3520649096F77592",
     "token.control:homebrew.discordant_stars/vaylerian":
-      "XXXXXXX",
+      "24491709479ABDAC9F73BF804E6C8B5D",
 };
 
 const technologies = [{
@@ -101,7 +101,7 @@ const unitAttrs = [
     unit: "cruiser",
     upgradeLevel: 1,
     localeName: "unit.cruiser.raider",
-    triggerNsid: "card.technology.unit_upgrade.vaylerian:franken.discordant_stars/raider_2",
+    triggerNsid: "card.technology.unit_upgrade.vaylerian:franken.discordant_stars/raider",
     capacity: 1
   },
   {

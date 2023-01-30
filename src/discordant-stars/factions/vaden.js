@@ -26,10 +26,10 @@ const factions = [{
     commanders: ["komdar_borodin"],
     heroes: ["putriv_sirvonsk"],
   },
-  promissoryNotes: [],
+  promissoryNotes: ["vaden_handshake"],
   //icon: "discordant-stars/faction-icons/vaden.png",
   source: "homebrew.discordant_stars",
-  startingTech: [],
+  startingTech: ["neural_motivator", "antimass_deflectors", "sarween_tools"],
   startingUnits: {
     dreadnought: 1,
     carrier: 1,
@@ -52,9 +52,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3206":
       "9F83BC9B59F1461B96F525398E21C400",
     "token.command:homebrew.discordant_stars/vaden":
-      "XXXXXXX",
+      "11BC808047DC273097A15194C47E941C",
     "token.control:homebrew.discordant_stars/vaden":
-      "XXXXXXX",
+      "EB28C1574C11B816895096BDC8D0B9D6",
 };
 
 const technologies = [{

@@ -25,7 +25,7 @@ const factions = [{
     heroes: ["coprinus_comatus"],
   },
   promissoryNotes: ["gift_of_insight"],
-  icon: "discordant-stars/faction-icons/mykomentori.png",
+  //icon: "discordant-stars/faction-icons/mykomentori.png",
   source: "homebrew.discordant_stars",
   startingTech: ["predictive_intelligence"],
   startingUnits: {
@@ -44,8 +44,7 @@ const factions = [{
   ],
   unpackExtra: [
     {
-      tokenNsid: "dice:homebrew.discordant-stars.omen/mykomentori",
-      tokenCount: 4,
+      tokenNsid: "tile.system:homebrew.discordant-stars.mykomentori/nova_seed",
     },
     {
       tokenNsid: "token.commodity:homebrew.discordant-stars.commodity_2/mykomentori",
@@ -57,7 +56,8 @@ const factions = [{
       tokenNsid: "token.commodity:homebrew.discordant-stars.commodity_4/mykomentori",
     },
     {
-      tokenNsid: "tile.system:homebrew.discordant-stars.mykomentori/nova_seed",
+      tokenNsid: "dice:homebrew.discordant-stars.omen/mykomentori",
+      tokenCount: 4,
     },
   ],
   packageId: refPackageId,
@@ -69,19 +69,19 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3211":
       "330FC1258CCF4E51A7D641FC4218049F",
     "token.command:homebrew.discordant_stars/mykomentori":
-      "XXXXXXX",
+      "A5812829410458551D8EFDAA822B72C5",
     "token.control:homebrew.discordant_stars/mykomentori":
-      "XXXXXXX",
+      "14D5EDF64A2C018BF1FEF584CADEA72F",
    "dice:homebrew.discordant-stars.omen/mykomentori":
-       "XXXXXXX",
+       "D7E5BBBF42888E06B8AF68ADC93E407F",
    "token.commodity:homebrew.discordant-stars.commodity_2/mykomentori":
-       "XXXXXXX",
+       "A1AD4B654EE21C93581D82BAA8909478",
    "token.commodity:homebrew.discordant-stars.commodity_3/mykomentori":
-       "XXXXXXX",
+       "9F714B1B4455E646DB91698184DD1491",
    "token.commodity:homebrew.discordant-stars.commodity_4/mykomentori":
-       "XXXXXXX",
+       "A652D5D8498EA752206C73AEC583A8B2",
    "tile.system:homebrew.discordant-stars.mykomentori/nova_seed":
-       "XXXXXXX",
+       "CFB133FD79F5450AAEED1281FCB25D26",
 };
 
 const technologies = [{
@@ -145,7 +145,7 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING FACTION");
+console.log("DISCORDANT STARS ADDING MYKO-MENTORI");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

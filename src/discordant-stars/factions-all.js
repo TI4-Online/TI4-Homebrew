@@ -38,17 +38,15 @@ require("./factions/kortali");
 require("./factions/lizho");
 require("./factions/mirveda");
 require("./factions/mortheus");
+require("./factions/mykomentori");
+require("./factions/nivyn");
 require("./factions/olradin");
 require("./factions/rohdhna");
+require("./factions/tnelis");
+require("./factions/vaden");
+require("./factions/vaylerian");
+require("./factions/veldyr");
 require("./factions/zealots");
-
-// ASSETS & IDs missing
-//require("./factions/mykomentori");
-//require("./factions/nivyn");
-//require("./factions/tnelis");
-//require("./factions/vaden");
-//require("./factions/vaylerian");
-//require("./factions/Veldyr");
 
 // IMAGES & ASSETS & IDs missing
 //require("./factions/bentor");

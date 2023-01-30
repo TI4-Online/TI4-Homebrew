@@ -24,7 +24,7 @@ const factions = [{
     commanders: ["vera_khage"],
     heroes: ["auberon_elyrin"],
   },
-  promissoryNotes: ["branch_office-tax_haven", "branch_office-broadcast_hub", "branch_office-reserve_bank", "branch_office-orbital_shipyard"],
+  promissoryNotes: ["branch_office_tax_haven", "branch_office_broadcast_hub", "branch_office_reserve_bank", "branch_office_orbital_shipyard"],
   //icon: "discordant-stars/faction-icons/veldyr.png",
   source: "homebrew.discordant_stars",
   startingTech: ["dark_energy_tap", "ai_development_algorithm"],
@@ -40,8 +40,8 @@ const factions = [{
   techs: ["seidr_project"],
   units: [
     "richtyrian",
-    "lancer",
-    "lancer_2",
+    "lancer_dreadnought",
+    "lancer_dreadnought_2",
     "aurora_stormcaller",
   ],
   unpackExtra: [
@@ -62,13 +62,13 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3201":
       "F1E6206B09454402B9A5E52B1934BAD6",
     "token.command:homebrew.discordant_stars/veldyr":
-      "XXXXXXX",
+      "F86B5FE44294E7B974A5F0B9B752EC2C",
     "token.control:homebrew.discordant_stars/veldyr":
-      "XXXXXXX",
+      "4D68C5B6411D49C89B1C178ACAE19722",
    "token.attachment:homebrew.discordant-stars.branch_office_influence/veldyr":
-       "XXXXXXX",
+       "9A6ED58D4B2121E04D9E4090AB9129A1",
    "token.attachment:homebrew.discordant-stars.branch_office_resources/veldyr":
-       "XXXXXXX",
+       "BCB0EEF040954BA45C1074962C4681CB",
 };
 
 const technologies = [{
@@ -80,8 +80,8 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "veldyr",
   }, {
-    localeName: "unit.lancer_2",
-    cardNsid: "card.technology.unit_upgrade.veldyr:homebrew.discordant_stars/lancer_2",
+    localeName: "unit.lancer_dreadnought_2",
+    cardNsid: "card.technology.unit_upgrade.veldyr:homebrew.discordant_stars/lancer_dreadnought_2",
     type: "unitUpgrade",
     requirements: { Blue: 2, Yellow: 1 },
     abbrev: " LD II",
@@ -113,15 +113,15 @@ const unitAttrs = [
   {
     unit: "dreadnought",
     upgradeLevel: 1,
-    localeName: "unit.dreadnought.lancer",
-    triggerNsid: "card.technology.unit_upgrade.veldyr:franken.discordant_stars/lancer",
+    localeName: "unit.dreadnought.lancer_dreadnought",
+    triggerNsid: "card.technology.unit_upgrade.veldyr:franken.discordant_stars/lancer_dreadnought",
     spaceCannon: { dice: 1, hit: 8 },
   },
   {
     unit: "dreadnought",
     upgradeLevel: 2,
-    localeName: "unit.dreadnought.lancer_2",
-    triggerNsid: "card.technology.unit_upgrade.veldyr:homebrew.discordant_stars/lancer_2",
+    localeName: "unit.dreadnought.lancer_dreadnought_2",
+    triggerNsid: "card.technology.unit_upgrade.veldyr:homebrew.discordant_stars/lancer_dreadnought_2",
     spaceCannon: { dice: 1, hit: 5 },
   },
   {

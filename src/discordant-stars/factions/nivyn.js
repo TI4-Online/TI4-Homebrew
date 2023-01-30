@@ -22,11 +22,12 @@ const factions = [{
   leaders: {
     agents: ["suldhan_wraeg"],
     commanders: ["thussad_krath"],
-    heroes: ["kwill_drakkon"],
+    heroes: ["krill_drakkon"],
   },
   promissoryNotes: ["nivyn_guidance"],
   //icon: "discordant-stars/faction-icons/nivyn.png",
   source: "homebrew.discordant_stars",
+  startingTech: ["dark_energy_tap", "plasma_scoring"],
   startingUnits: {
     carrier: 1,
     cruiser: 1,
@@ -42,11 +43,6 @@ const factions = [{
     "voidflare_warden",
     "voidflare_warden_2",
   ],
-  unpackExtra: [
-    {
-      tokenNsid: "token.system:homebrew.discordant-stars.wound/nivyn",
-    },
-  ],
   packageId: refPackageId,
 }];
 
@@ -56,9 +52,11 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3220":
       "FB1B4ACEA6C840DDBB341E553419F7C7",
     "token.command:homebrew.discordant_stars/nivyn":
-      "XXXXXXX",
+      "50AC87214A1A4B687DB454ACF7ED9C7F",
     "token.control:homebrew.discordant_stars/nivyn":
-      "XXXXXXX",
+      "14D5EDF64A2C018BF1FEF584CADEA72F",
+    "token.system:homebrew.discordant-stars.wound/nivyn":
+      "1D1C59194A9083D738A34C8D4AF48167",
 };
 
 const technologies = [{
@@ -106,20 +104,20 @@ const unitAttrs = [
     upgradeLevel: 1,
     localeName: "unit.mech.voidflare_warden",
     triggerNsid: "card.leader.mech.nivyn:homebrew.discordant_stars/voidflare_warden",
-    combat: { dice: 1, hit: 5 },
+    groundCombat: { dice: 1, hit: 5 },
   },
   {
     unit: "mech",
     upgradeLevel: 2,
     localeName: "unit.mech.voidflare_warden_2",
     triggerNsid: "card.technology.unit_upgrade.nivyn:homebrew.discordant_stars/voidflare_warden_2",
-    combat: { dice: 1, hit: 4 },
+    groundCombat: { dice: 1, hit: 4 },
   },
 ];
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING FACTION");
+console.log("DISCORDANT STARS ADDING NIVYN");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

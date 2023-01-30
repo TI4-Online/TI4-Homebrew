@@ -20,14 +20,14 @@ const factions = [{
   commodities: 2,
   home: 3212,
   leaders: {
-    agents: ["davish_the_tixian_s_norri"],
-    commanders: ["fillipo_the_comm-czar_rois"],
-    heroes: ["turra_the_vigh-king_sveyar"],
+    agents: ["davish_snorri"],
+    commanders: ["fillipo_rois"],
+    heroes: ["turra_sveyar"],
   },
   promissoryNotes: ["plots_within_plots"],
   //icon: "discordant-stars/faction-icons/tnelis.png",
   source: "homebrew.discordant_stars",
-  startingTech: [],
+  startingTech: ["neural_motivator", "antimass_deflectors", "plasma_scoring"],
   startingUnits: {
     carrier: 1,
     destroyer: 2,
@@ -52,9 +52,9 @@ const factions = [{
     "tile.system:homebrew.discordant_stars/3212":
       "2EC81B92A6974C8FA215E62235671284",
     "token.command:homebrew.discordant_stars/tnelis":
-      "XXXXXXX",
+      "2C112E1845AD443288D703AC4D773770",
     "token.control:homebrew.discordant_stars/tnelis":
-      "XXXXXXX",
+      "1FF8D16242C17ED0E40B2598C37591E7",
 };
 
 const technologies = [{
@@ -70,7 +70,7 @@ const technologies = [{
     cardNsid: "card.technology.unit_upgrade.tnelis:homebrew.discordant_stars/blockade_runner_2",
     type: "unitUpgrade",
     requirements: { Red: 2 },
-    abbrev: " XX II",
+    abbrev: " BR II",
     faction: "tnelis",
     unitPosition: 0,
   },
