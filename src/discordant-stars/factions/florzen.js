@@ -123,7 +123,7 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING Florzen");
+console.log("DISCORDANT STARS ADDING FLORZEN");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
