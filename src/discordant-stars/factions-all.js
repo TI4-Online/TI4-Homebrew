@@ -50,3 +50,14 @@ require("./factions/zealots");
 //require("./factions/vaylerian");
 //require("./factions/Veldyr");
 
+// IMAGES & ASSETS & IDs missing
+//require("./factions/bentor");
+//require("./factions/blex");
+//require("./factions/cheiran");
+//require("./factions/edyn");
+//require("./factions/ghoti");
+//require("./factions/gledge");
+//require("./factions/kjalengrad");
+//require("./factions/kolume");
+//require("./factions/lanefir");
+//require("./factions/nokar");
