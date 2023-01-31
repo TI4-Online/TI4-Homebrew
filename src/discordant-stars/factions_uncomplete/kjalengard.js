@@ -57,7 +57,7 @@ const factions = [{
     "token.control:homebrew.discordant_stars/kjalengard":
       "3FEC3FA14142C148EE230B8702888604",
     "token.system:homebrew.discordant-stars.glory/kjalengard":
-      "XXXXXXX",
+      "8615515545240877DDCA4D839EC45AFD",
 };
 
 const technologies = [{

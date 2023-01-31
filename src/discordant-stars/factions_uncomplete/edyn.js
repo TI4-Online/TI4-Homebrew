@@ -54,8 +54,6 @@ const factions = [{
       "6F815DD54DC0C07307F5B6AAA053139B",
     "token.control:homebrew.discordant_stars/edyn":
       "503464A847FB262835C7ACBC3EC40ADF",
-    "token.unit:homebrew.discordant-stars.UNITID/edyn":
-      "XXXXXXX",
 };
 
 const technologies = [{

@@ -56,7 +56,7 @@ const factions = [{
     "token.control:homebrew.discordant_stars/blex":
       "F78A93DE437BF9F76AA260A0F0D8E7F6",
     "token.system:homebrew.discordant-stars.blight/blex":
-      "XXXXXXX",
+      "C56C5DF14BCE7358E263808959B7AA91",
 };
 
 const technologies = [{

@@ -43,11 +43,11 @@ const factions = [{
   packageId: refPackageId,
   unpackExtra: [
     {
-      tokenNsid: "token.attachment:homebrew.discordant-stars.dreadnought/cheiran",
+      tokenNsid: "token.unit:homebrew.discordant-stars.dreadnought/cheiran",
       tokenCount: 2,
     },
     {
-      tokenNsid: "token.attachment:homebrew.discordant-stars.mech/cheiran",
+      tokenNsid: "token.unit:homebrew.discordant-stars.mech/cheiran",
     },
   ],
 }];
@@ -61,10 +61,10 @@ const factions = [{
       "9430444C4749D658CCAD40A1A2F4F884",
     "token.control:homebrew.discordant_stars/cheiran":
       "FA9B682B4E02B8433F29AD9B0349526C",
-   "token.attachment:homebrew.discordant-stars.dreadnought/cheiran":
-      "XXXXXXX",
-   "token.attachment:homebrew.discordant-stars.mech/cheiran":
-      "XXXXXXX",
+   "token.unit:homebrew.discordant-stars.dreadnought/cheiran":
+      "D4F66F804EFE54FF069216B86C83795D",
+   "token.unit:homebrew.discordant-stars.mech/cheiran":
+      "95A9A7FA4ED0A59FEC7DB78439B12FD3",
 };
 
 const technologies = [{

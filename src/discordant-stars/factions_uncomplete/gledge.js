@@ -57,8 +57,8 @@ const factions = [{
       "FB6B0915408D5694A2569BBF116E0793",
     "token.control:homebrew.discordant_stars/gledge":
       "769697144BB91D8B28D85FB7BBD22151",
-    "token.unit:homebrew.discordant-stars.UNITID/gledge":
-      "XXXXXXX",
+    "token.system:homebrew.discordant-stars.core/gledge":
+      "8615515545240877DDCA4D839EC45AFD",
 };
 
 const technologies = [{

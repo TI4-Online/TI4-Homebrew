@@ -44,7 +44,7 @@ const factions = [{
   packageId: refPackageId,
   unpackExtra: [
     {
-      tokenNsid: "token.commodity:homebrew.discordant-stars.3_commodities/bentor",
+      tokenNsid: "token.commodity:homebrew.discordant-stars.plus_1_commodities/bentor",
     },
     {
       tokenNsid: "token.fragment:homebrew.discordant-stars.industrial/bentor",
@@ -73,18 +73,18 @@ const factions = [{
       "19C88E534DCD54C9A47717A2E3499473",
     "token.control:homebrew.discordant_stars/bentor":
       "4321ECD84A0F2D580ED2ADBFC631C260",
-    "token.commodity:homebrew.discordant-stars.3_commodities/bentor":
-      "XXXXXXX",
+    "token.commodity:homebrew.discordant-stars.plus_1_commodities/bentor":
+      "D2AC3F394BB428EB57900B9751788209",
     "token.fragment:homebrew.discordant-stars.industrial/bentor":
-      "XXXXXXX",
+      "50B21D3947AAC18D8C75B3963C4995A6",
     "token.fragment:homebrew.discordant-stars.hazardous/bentor":
-      "XXXXXXX",
+      "9F050E634895FDD06C70FFA13F3C391D",
     "token.fragment:homebrew.discordant-stars.cultural/bentor":
-      "XXXXXXX",
+      "C56C5DF14BCE7358E263808959B7AA91",
     "token.fragment:homebrew.discordant-stars.unknown/bentor":
-      "XXXXXXX",
+      "0CC3F8464EE917F7E3791997936A38B0",
     "token.attachment:homebrew.discordant-stars.encryption_key/bentor":
-      "XXXXXXX",
+      "A1DD2E5046E8FB770C6511857B10FF23",
 };
 
 const technologies = [{
