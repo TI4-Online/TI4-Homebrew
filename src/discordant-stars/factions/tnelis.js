@@ -25,7 +25,7 @@ const factions = [{
     heroes: ["turra_sveyar"],
   },
   promissoryNotes: ["plots_within_plots"],
-  //icon: "discordant-stars/faction-icons/tnelis.png",
+  icon: "discordant-stars/faction-icons/tnelis.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["neural_motivator", "antimass_deflectors", "plasma_scoring"],
   startingUnits: {

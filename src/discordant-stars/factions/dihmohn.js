@@ -20,7 +20,7 @@ const factions = [{
     heroes: ["verrisus_ypru"],
   },
   promissoryNotes: ["combat_drills"],
-  //icon: "discordant-stars/faction-icons/dihmohn.png",
+  icon: "discordant-stars/faction-icons/dihmohn.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["dark-energy_tap", "scanlink_drone_network"],
   startingUnits: {

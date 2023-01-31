@@ -25,7 +25,7 @@ const factions = [{
     heroes: ["dyln_harthuul"],
   },
   promissoryNotes: ["clans_favor"],
-  //icon: "discordant-stars/faction-icons/vaylerian.png",
+  icon: "discordant-stars/faction-icons/vaylerian.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["neural_motivator", "dark_energy_tap"],
   startingUnits: {

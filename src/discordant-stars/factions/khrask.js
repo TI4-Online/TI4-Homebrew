@@ -25,7 +25,7 @@ const factions = [{
       heroes: ["vehl_tikar"],
   },
   promissoryNotes: ["stone_speakers"],
-  icon: "discordant-stars/faction-icons/khrask.png",
+  icon: "discordant-stars/faction-icons/khrask.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["scanlink_drone_network", "plasma_scoring"],
   startingUnits: {

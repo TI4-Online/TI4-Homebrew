@@ -26,7 +26,7 @@ const factions = [{
     heroes: ["zelian_r"],
   },
   promissoryNotes: ["hyperkinetic_ordinance"],
-  icon: "discordant-stars/faction-icons/zelian.png",
+  icon: "discordant-stars/faction-icons/zelian.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["anti-mass_deflectors, ai_development_algorithm"],
   startingUnits: {
@@ -62,6 +62,8 @@ const factions = [{
       "65B38E384BE799411C63FB844FBE9CB8",
     "token.control:homebrew.discordant_stars/zelian":
       "ABAF21054A0DE613B202F5BFDF01A960",
+    "tile.system:homebrew.discordant-stars.zelian/cataclysm":
+      "CFB133FD79F5450AAEED1281FCB25D26",
 };
 
 const technologies = [{

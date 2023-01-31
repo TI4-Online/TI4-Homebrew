@@ -25,7 +25,7 @@ const factions = [{
     heroes: ["auberon_elyrin"],
   },
   promissoryNotes: ["branch_office_tax_haven", "branch_office_broadcast_hub", "branch_office_reserve_bank", "branch_office_orbital_shipyard"],
-  //icon: "discordant-stars/faction-icons/veldyr.png",
+  icon: "discordant-stars/faction-icons/veldyr.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["dark_energy_tap", "ai_development_algorithm"],
   startingUnits: {

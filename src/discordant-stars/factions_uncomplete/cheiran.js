@@ -27,7 +27,7 @@ const factions = [{
   },
   promissoryNotes: ["carcinisation"],
   promissoryNotes: ["secrets_of_the_weave"],
-  //icon: "discordant-stars/faction-icons/cheiran.png",
+  icon: "discordant-stars/faction-icons/cheiran.jpg",
   source: "discordant_stars",
   startingTech: ["magen_defense_grid", "self_assembly_routines"],
   startingUnits: {

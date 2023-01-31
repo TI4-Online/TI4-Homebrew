@@ -25,7 +25,7 @@ const factions = [{
       heroes: ["rohvhin_dhna_mk4"],
   },
   promissoryNotes: ["automatons"],
-  //icon: "discordant-stars/faction-icons/rohdhna.png",
+  icon: "discordant-stars/faction-icons/rohdhna.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["psychoarchaeology", "sarween_tools"],
   startingUnits: {

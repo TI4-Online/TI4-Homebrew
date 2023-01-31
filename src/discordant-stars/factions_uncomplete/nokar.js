@@ -26,7 +26,7 @@ const factions = [{
     heroes: ["starsails"],
   },
   promissoryNotes: ["nokar_navigator"],
-  //icon: "discordant-stars/faction-icons/nokar.png",
+  icon: "discordant-stars/faction-icons/nokar.jpg",
   source: "discordant_stars",
   startingTech: ["pscyhoarchaeology", "dark_energy_tap", "ai_development_algorithm"],
   startingUnits: {

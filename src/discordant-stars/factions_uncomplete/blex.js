@@ -26,7 +26,7 @@ const factions = [{
   },
   promissoryNotes: ["blex_agents"],
   promissoryNotes: ["secrets_of_the_weave"],
-  //icon: "discordant-stars/faction-icons/blex.png",
+  icon: "discordant-stars/faction-icons/blex.jpg",
   source: "discordant_stars",
   startingTech: ["daxcive_animators", "biostims"],
   startingUnits: {

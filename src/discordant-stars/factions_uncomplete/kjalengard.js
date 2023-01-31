@@ -26,7 +26,7 @@ const factions = [{
     heroes: ["ygegnad_the_thunder"],
   },
   promissoryNotes: ["vassalage"],
-  //icon: "discordant-stars/faction-icons/kjalengard.png",
+  icon: "discordant-stars/faction-icons/kjalengard.jpg",
   source: "discordant_stars",
   startingTech: [],
   startingUnits: {

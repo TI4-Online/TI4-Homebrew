@@ -26,7 +26,7 @@ const factions = [{
         heroes: ["saint_binal"],
     },
     promissoryNotes: ["favor_of_zealots"],
-    //icon: "discordant-stars/faction-icons/zealots.png",
+    icon: "discordant-stars/faction-icons/zealots.jpg",
     source: "homebrew.discordant_stars",
     startingTech: ["bio_stims"],
     startingUnits: {

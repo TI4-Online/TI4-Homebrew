@@ -28,7 +28,7 @@ const factions = [{
   },
   promissoryNotes: ["encryption_key"],
   promissoryNotes: ["secrets_of_the_weave"],
-  //icon: "discordant-stars/faction-icons/bentor.png",
+  icon: "discordant-stars/faction-icons/bentor.jpg",
   source: "discordant_stars",
   startingTech: ["pscyhoarchaeology", "dark_energy_tap", "scanlink_drone_network"],
   startingUnits: {

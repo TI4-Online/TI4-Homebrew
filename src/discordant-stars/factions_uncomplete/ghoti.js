@@ -27,7 +27,7 @@ const factions = [{
   },
   promissoryNotes: ["ghoti_relay"],
   promissoryNotes: ["secrets_of_the_weave"],
-  //icon: "discordant-stars/faction-icons/ghoti.png",
+  icon: "discordant-stars/faction-icons/ghoti.jpg",
   source: "discordant_stars",
   startingTech: ["gravity_drive", "sling_relay"],
   startingUnits: {

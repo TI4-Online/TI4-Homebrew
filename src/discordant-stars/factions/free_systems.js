@@ -27,7 +27,7 @@ const factions = [{
     heroes: ["count_otto_pmay"],
   },
   promissoryNotes: [],
-  //icon: "discordant-stars/faction-icons/free_systems.png",
+  icon: "discordant-stars/faction-icons/free_systems.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["psychoarchaeology"],
   startingUnits: {

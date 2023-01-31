@@ -25,7 +25,7 @@ const factions = [{
     heroes: ["gorthrim"],
   },
   promissoryNotes: ["gledge_base"],
-  //icon: "discordant-stars/faction-icons/gledge.png",
+  icon: "discordant-stars/faction-icons/gledge.jpg",
   source: "discordant_stars",
   startingTech: ["pscyhoarchaeology", "scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {

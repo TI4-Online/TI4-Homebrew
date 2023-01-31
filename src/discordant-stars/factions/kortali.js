@@ -26,7 +26,7 @@ const factions = [{
       heroes: ["queen_nadalia"],
   },
   promissoryNotes: ["blessing_of_the_queens"],
-  //icon: "discordant-stars/faction-icons/kortali.png",
+  icon: "discordant-stars/faction-icons/kortali.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["psychoarchaeology", "plasma_scoring"],
   startingUnits: {

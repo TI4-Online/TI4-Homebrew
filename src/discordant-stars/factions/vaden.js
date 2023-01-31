@@ -27,7 +27,7 @@ const factions = [{
     heroes: ["putriv_sirvonsk"],
   },
   promissoryNotes: ["vaden_handshake"],
-  //icon: "discordant-stars/faction-icons/vaden.png",
+  icon: "discordant-stars/faction-icons/vaden.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["neural_motivator", "antimass_deflectors", "sarween_tools"],
   startingUnits: {
