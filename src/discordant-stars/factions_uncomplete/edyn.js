@@ -29,7 +29,7 @@ const factions = [{
   },
   promissoryNotes: ["edyn_diplomatic_support"],
   promissoryNotes: ["secrets_of_the_weave"],
-  //icon: "discordant-stars/faction-icons/edyn.png",
+  icon: "discordant-stars/faction-icons/edyn.jpg",
   source: "discordant_stars",
   startingTech: ["pscyhoarchaeology", "dark_energy_tap", "scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
@@ -47,13 +47,13 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/edyn":
-      "XXXXXXX",
+      "AA54CD4F4C77171C2CCE0DA3B5690049",
     "tile.system:homebrew.discordant_stars/3225":
-      "XXXXXXX",
+      "A6D5845C4AEB1F0729B7BBB1F2EE1AF3",
     "token.command:homebrew.discordant_stars/edyn":
-      "XXXXXXX",
+      "6F815DD54DC0C07307F5B6AAA053139B",
     "token.control:homebrew.discordant_stars/edyn":
-      "XXXXXXX",
+      "503464A847FB262835C7ACBC3EC40ADF",
     "token.unit:homebrew.discordant-stars.UNITID/edyn":
       "XXXXXXX",
 };

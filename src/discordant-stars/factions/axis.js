@@ -23,7 +23,7 @@ const factions = [
     },
     packageId: refPackageId,
     promissoryNotes: ["industry_secrets"],
-    //icon: "homebrew.discordant_stars/faction-icons/axis.png",
+    icon: "discordant-stars/faction-icons/axis.jpg",
     source: "homebrew.discordant_stars",
     startingTech: ["sarween_tools, ai_development_algorithm"],
     startingUnits: {

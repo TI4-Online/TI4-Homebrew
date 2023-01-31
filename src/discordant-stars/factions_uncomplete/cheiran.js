@@ -27,7 +27,7 @@ const factions = [{
   },
   promissoryNotes: ["carcinisation"],
   promissoryNotes: ["secrets_of_the_weave"],
-  //icon: "discordant-stars/faction-icons/cheiran.png",
+  icon: "discordant-stars/faction-icons/cheiran.jpg",
   source: "discordant_stars",
   startingTech: ["magen_defense_grid", "self_assembly_routines"],
   startingUnits: {
@@ -54,13 +54,13 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/cheiran":
-      "XXXXXXX",
+      "954D23304C5988F518ECD291EFA0239D",
     "tile.system:homebrew.discordant_stars/3234":
-      "XXXXXXX",
+      "265F914448215A0673271AB47B2D474D",
     "token.command:homebrew.discordant_stars/cheiran":
-      "XXXXXXX",
+      "9430444C4749D658CCAD40A1A2F4F884",
     "token.control:homebrew.discordant_stars/cheiran":
-      "XXXXXXX",
+      "FA9B682B4E02B8433F29AD9B0349526C",
    "token.attachment:homebrew.discordant-stars.dreadnought/cheiran":
       "XXXXXXX",
    "token.attachment:homebrew.discordant-stars.mech/cheiran":

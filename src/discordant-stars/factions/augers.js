@@ -26,7 +26,7 @@ const factions = [{
     heroes: ["atropha"],
   },
   promissoryNotes: ["read_the_fates"],
-  //icon: "discordant-stars/faction-icons/augers.png",
+  icon: "discordant-stars/faction-icons/augers.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {

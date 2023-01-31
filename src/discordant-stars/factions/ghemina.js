@@ -25,7 +25,7 @@ const factions = [{
     heroes: ["korela_the_lady", "kantrus_the_lord"],
   },
   promissoryNotes: ["raid_leaders"],
-  //icon: "discordant-stars/faction-icons/ghemina.png",
+  icon: "discordant-stars/faction-icons/ghemina.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["psychoarchaelogy, dark_energy_tap"],
   startingUnits: {

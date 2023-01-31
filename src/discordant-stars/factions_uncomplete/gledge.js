@@ -25,7 +25,7 @@ const factions = [{
     heroes: ["gorthrim"],
   },
   promissoryNotes: ["gledge_base"],
-  //icon: "discordant-stars/faction-icons/gledge.png",
+  icon: "discordant-stars/faction-icons/gledge.jpg",
   source: "discordant_stars",
   startingTech: ["pscyhoarchaeology", "scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
@@ -50,13 +50,13 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/gledge":
-      "XXXXXXX",
+      "9AB953F640599183201E659C6943EBFF",
     "tile.system:homebrew.discordant_stars/3229":
-      "XXXXXXX",
+      "02A3304A43BB9866A22F44B222173427",
     "token.command:homebrew.discordant_stars/gledge":
-      "XXXXXXX",
+      "FB6B0915408D5694A2569BBF116E0793",
     "token.control:homebrew.discordant_stars/gledge":
-      "XXXXXXX",
+      "769697144BB91D8B28D85FB7BBD22151",
     "token.unit:homebrew.discordant-stars.UNITID/gledge":
       "XXXXXXX",
 };

@@ -25,7 +25,7 @@ const factions = [{
     heroes: ["coprinus_comatus"],
   },
   promissoryNotes: ["gift_of_insight"],
-  //icon: "discordant-stars/faction-icons/mykomentori.png",
+  icon: "discordant-stars/faction-icons/mykomentori.jpg",
   source: "homebrew.discordant_stars",
   startingTech: ["predictive_intelligence"],
   startingUnits: {

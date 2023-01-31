@@ -26,7 +26,7 @@ const factions = [{
   },
   promissoryNotes: ["blex_agents"],
   promissoryNotes: ["secrets_of_the_weave"],
-  //icon: "discordant-stars/faction-icons/blex.png",
+  icon: "discordant-stars/faction-icons/blex.jpg",
   source: "discordant_stars",
   startingTech: ["daxcive_animators", "biostims"],
   startingUnits: {
@@ -48,13 +48,13 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/blex":
-      "XXXXXXX",
+      "87BBEE704B999E945F806DB0A881ED50",
     "tile.system:homebrew.discordant_stars/3231":
-      "XXXXXXX",
+      "D979798344A89C664EC1E1B464534D21",
     "token.command:homebrew.discordant_stars/blex":
-      "XXXXXXX",
+      "E1D61045492625569AB4BA82E05F4C9D",
     "token.control:homebrew.discordant_stars/blex":
-      "XXXXXXX",
+      "F78A93DE437BF9F76AA260A0F0D8E7F6",
     "token.system:homebrew.discordant-stars.blight/blex":
       "XXXXXXX",
 };

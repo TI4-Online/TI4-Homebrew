@@ -27,7 +27,7 @@ const factions = [{
     heroes: ["wonell_the_silent"],
   },
   promissoryNotes: ["combinatorial_bypass"],
-  //icon: "discordant-stars/faction-icons/kolume.png",
+  icon: "discordant-stars/faction-icons/kolume.jpg",
   source: "discordant_stars",
   startingTech: ["graviton_laser_system", "predictive_intelligence"],
   startingUnits: {
@@ -44,15 +44,13 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/kolume":
-      "XXXXXXX",
+      "FCA7F3274E7875C09A871B83207E494F",
     "tile.system:homebrew.discordant_stars/3233":
-      "XXXXXXX",
+      "9945F0D04D0B1B52F31B108B40DA77BF",
     "token.command:homebrew.discordant_stars/kolume":
-      "XXXXXXX",
+      "7FE3A22F4921130F96BDC9843C23D740",
     "token.control:homebrew.discordant_stars/kolume":
-      "XXXXXXX",
-    "token.unit:homebrew.discordant-stars.UNITID/kolume":
-      "XXXXXXX",
+      "AE6D0B1944B794A7C92884B6AA477384",
 };
 
 const technologies = [{

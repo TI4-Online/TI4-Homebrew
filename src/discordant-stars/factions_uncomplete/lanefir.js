@@ -27,7 +27,7 @@ const factions = [{
     heroes: ["the_venerable"],
   },
   promissoryNotes: ["spoils_of_war"],
-  //icon: "discordant-stars/faction-icons/lanefir.png",
+  icon: "discordant-stars/faction-icons/lanefir.jpg",
   source: "discordant_stars",
   startingTech: ["dark_energy_tap", "scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
@@ -45,13 +45,13 @@ const factions = [{
 
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/lanefir":
-      "XXXXXXX",
+      "1173091643F3A07342E0FD8BF5FE5798",
     "tile.system:homebrew.discordant_stars/3230":
-      "XXXXXXX",
+      "94978F83444748D6DD0277B463A7CB54",
     "token.command:homebrew.discordant_stars/lanefir":
-      "XXXXXXX",
+      "4828C1B443199FEF1D3CA9A4EDC5FC85",
     "token.control:homebrew.discordant_stars/lanefir":
-      "XXXXXXX",
+      "8C63A7014316A787AD01ECA715770D70",
 };
 
 const technologies = [{
