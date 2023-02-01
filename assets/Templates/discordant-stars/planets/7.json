@@ -1,0 +1,108 @@
+{
+	"Type": "Card",
+	"GUID": "7D21F071427F9B4BB2BDC183FD4E2BD0",
+	"Name": "Planets (homebrew 8/8)",
+	"Metadata": "card.planet:homebrew/7",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "discordant-stars/planets/7.face.jpg",
+	"BackTexture": "discordant-stars/planets/7.face.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -3,
+	"HiddenIndex": -3,
+	"NumHorizontal": 5,
+	"NumVertical": 4,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+	"CardNames":
+	{
+		"0": "Benc",
+		"1": "Hau",
+		"2": "Zarr",
+		"3": "Nokk",
+		"4": "Laststop",
+		"5": "Aysisrest",
+		"6": "Solitude",
+		"7": "Avicenna",
+		"8": "Ghoti",
+		"9": "Alesna",
+		"10": "Azle",
+		"11": "Gghurntheta",
+		"12": "Arche",
+		"13": "Edyn",
+		"14": "Ekko",
+		"15": "Okke",
+		"16": "Kjalengard",
+		"17": "Hulgade",
+		"18": "Nevermore"
+	},
+	"CardMetadata":
+	{
+		"0": "card.planet:homebrew/benc",
+		"1": "card.planet:homebrew/hau",
+		"2": "card.planet:homebrew/zarr",
+		"3": "card.planet:homebrew/nokk",
+		"4": "card.planet:homebrew/laststop",
+		"5": "card.planet:homebrew/aysisrest",
+		"6": "card.planet:homebrew/solitude",
+		"7": "card.planet:homebrew/avicenna",
+		"8": "card.planet:homebrew/ghoti",
+		"9": "card.planet:homebrew/alesna",
+		"10": "card.planet:homebrew/azle",
+		"11": "card.planet:homebrew/gghurntheta",
+		"12": "card.planet:homebrew/arche",
+		"13": "card.planet:homebrew/edyn",
+		"14": "card.planet:homebrew/ekko",
+		"15": "card.planet:homebrew/okke",
+		"16": "card.planet:homebrew/kjalengard",
+		"17": "card.planet:homebrew/hulgade",
+		"18": "card.planet:homebrew/nevermore"
+	},
+	"CardTags":
+	{
+	}
+}

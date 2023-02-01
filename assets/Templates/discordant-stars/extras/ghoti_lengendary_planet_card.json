@@ -1,0 +1,75 @@
+{
+	"Type": "Card",
+	"GUID": "A01D2D674BABC0EB5FBD96988E88F5F5",
+	"Name": "Ghoti Legendary Planet Card",
+	"Metadata": "card.ghoti:homebrew.discordant_stars/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "discordant-stars/extras/ghoti_legendary_planet.face.png",
+	"BackTexture": "discordant-stars/extras/ghoti_legendary_planet.back.png",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -1,
+	"NumHorizontal": 1,
+	"NumVertical": 1,
+	"Width": 9,
+	"Height": 6,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+		"2": "card.lizho:homebrew.discordant_stars/minefields",
+		"3": "card.lizho:homebrew.discordant_stars/gravitic_inhibitor",
+		"5": "card.axis:homebrew.discordant_stars/carrier.2",
+		"6": "card.axis:homebrew.discordant_stars/dreadnought.1",
+		"7": "card.axis:homebrew.discordant_stars/dreadnought.2"
+	},
+	"CardTags":
+	{
+	}
+}

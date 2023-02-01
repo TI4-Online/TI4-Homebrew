@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
-	"GUID": "8615515545240877DDCA4D839EC45AFD",
+	"GUID": "B7E3699F43976271223BFD911638C6CE",
 	"Name": "Gledge - Core Token",
-	"Metadata": "token.system:homebrew.discordant-stars.core/gledge",
+	"Metadata": "token.attachment:homebrew.discordant-stars.core/gledge",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
