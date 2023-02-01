@@ -26,7 +26,7 @@ const factions = [{
       heroes: ["khazrin_lizho"],
   },
   promissoryNotes: ["trusted_counselor"],
-  icon: "discordant-stars/faction-icons/lizho.jpg",
+  icon: "discordant-stars/faction-icons/lizho.png",
   source: "homebrew.discordant_stars",
   startingTech: ["psychoarchaeology", "antimass_deflectors"],
   startingUnits: {

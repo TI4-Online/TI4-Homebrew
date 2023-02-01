@@ -27,8 +27,8 @@ const factions = [{
     heroes: ["the_venerable"],
   },
   promissoryNotes: ["spoils_of_war"],
-  icon: "discordant-stars/faction-icons/lanefir.jpg",
-  source: "discordant_stars",
+  icon: "discordant-stars/faction-icons/lanefir.png",
+  source: "homebrew.discordant_stars",
   startingTech: ["dark_energy_tap", "scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
     carrier: 2,

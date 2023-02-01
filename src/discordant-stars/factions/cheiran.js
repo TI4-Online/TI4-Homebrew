@@ -22,13 +22,12 @@ const factions = [{
   home: 3234,
   leaders: {
     agents: ["operator_kkavras"],
-    commanders: ["spc_Phquaiset"],
+    commanders: ["spc_phquaiset"],
     heroes: ["thakt_clqua"],
   },
   promissoryNotes: ["carcinisation"],
-  promissoryNotes: ["secrets_of_the_weave"],
-  icon: "discordant-stars/faction-icons/cheiran.jpg",
-  source: "discordant_stars",
+  icon: "discordant-stars/faction-icons/cheiran.png",
+  source: "homebrew.discordant_stars",
   startingTech: ["magen_defense_grid", "self_assembly_routines"],
   startingUnits: {
     carrier: 1,

@@ -27,8 +27,8 @@ const factions = [{
     heroes: ["wonell_the_silent"],
   },
   promissoryNotes: ["combinatorial_bypass"],
-  icon: "discordant-stars/faction-icons/kolume.jpg",
-  source: "discordant_stars",
+  icon: "discordant-stars/faction-icons/kolume.png",
+  source: "homebrew.discordant_stars",
   startingTech: ["graviton_laser_system", "predictive_intelligence"],
   startingUnits: {
     carrier: 2,

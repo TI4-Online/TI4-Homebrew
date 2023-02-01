@@ -27,10 +27,9 @@ const factions = [{
     heroes: ["ceo_ken_tucc"],
   },
   promissoryNotes: ["encryption_key"],
-  promissoryNotes: ["secrets_of_the_weave"],
-  icon: "discordant-stars/faction-icons/bentor.jpg",
-  source: "discordant_stars",
-  startingTech: ["pscyhoarchaeology", "dark_energy_tap", "scanlink_drone_network"],
+  icon: "discordant-stars/faction-icons/bentor.png",
+  source: "homebrew.discordant_stars",
+  startingTech: ["psychoarchaeology", "dark_energy_tap", "scanlink_drone_network"],
   startingUnits: {
     carrier: 1,
     cruiser: 2,

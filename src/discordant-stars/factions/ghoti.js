@@ -26,9 +26,8 @@ const factions = [{
     heroes: ["nmenmede"],
   },
   promissoryNotes: ["ghoti_relay"],
-  promissoryNotes: ["secrets_of_the_weave"],
-  icon: "discordant-stars/faction-icons/ghoti.jpg",
-  source: "discordant_stars",
+  icon: "discordant-stars/faction-icons/ghoti.png",
+  source: "homebrew.discordant_stars",
   startingTech: ["gravity_drive", "sling_relay"],
   startingUnits: {
     flagship: 1,
@@ -40,9 +39,11 @@ const factions = [{
   units: ["all_mother", "tioleombp"],
   packageId: refPackageId,
   unpackExtra: [{
-    // This is a stack of cards (planet & legendary)
     tokenNsid: "card.ghoti:homebrew.discordant_stars/0"
-  }],
+  },{
+    tokenNsid: "card.ghoti:homebrew.discordant_stars/1"
+  },],
+ 
 }];
 
  const nsidToTemplateId = {
@@ -54,8 +55,10 @@ const factions = [{
       "FC45996647F32A9B68972C9243A379CE",
     "token.control:homebrew.discordant_stars/ghoti":
       "1A74F12646A5156484F70AA345F4BD7B",
-    "card.ghoti:homebrew.discordant-stars/0":
-      "XXXXXXX",
+    "card.ghoti:homebrew.discordant_stars/0":
+      "A01D2D674BABC0EB5FBD96988E88F5F5",
+    "card.ghoti:homebrew.discordant_stars/1":
+      "38554059466E2AD0F53CA7B683FFC56D",
 };
 
 const technologies = [{

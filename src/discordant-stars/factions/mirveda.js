@@ -25,7 +25,7 @@ const factions = [{
           heroes: ["wrath_machina"],
       },
       promissoryNotes: ["rapid_assembly"],
-      icon: "discordant-stars/faction-icons/mirveda.jpg",
+      icon: "discordant-stars/faction-icons/mirveda.png",
       source: "homebrew.discordant_stars",
       startingTech: ["ai_development_algorithm"],
       startingUnits: {

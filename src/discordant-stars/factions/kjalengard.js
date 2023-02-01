@@ -26,8 +26,8 @@ const factions = [{
     heroes: ["ygegnad_the_thunder"],
   },
   promissoryNotes: ["vassalage"],
-  icon: "discordant-stars/faction-icons/kjalengard.jpg",
-  source: "discordant_stars",
+  icon: "discordant-stars/faction-icons/kjalengard.png",
+  source: "homebrew.discordant_stars",
   startingTech: [],
   startingUnits: {
     carrier: 2,
@@ -57,7 +57,7 @@ const factions = [{
     "token.control:homebrew.discordant_stars/kjalengard":
       "3FEC3FA14142C148EE230B8702888604",
     "token.system:homebrew.discordant-stars.glory/kjalengard":
-      "8615515545240877DDCA4D839EC45AFD",
+      "A41107CD42ACCEED19FED989804E18E0",
 };
 
 const technologies = [{

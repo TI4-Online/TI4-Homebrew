@@ -23,7 +23,7 @@ const factions = [{
     heroes: ["the_voice_united"],
   },
   promissoryNotes: ["algorithmic_replication"],
-  icon: "discordant-stars/faction-icons/cymiae.jpg",
+  icon: "discordant-stars/faction-icons/cymiae.png",
   source: "homebrew.discordant_stars",
   startingTech: ["neural_motivator", "ai_development_algorithm"],
   startingUnits: {

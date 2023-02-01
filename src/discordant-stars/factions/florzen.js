@@ -26,7 +26,7 @@ const factions = [{
     heroes: ["banua_gowen"],
   },
   promissoryNotes: ["blackmail_programs"],
-  icon: "discordant-stars/faction-icons/florzen.jpg",
+  icon: "discordant-stars/faction-icons/florzen.png",
   source: "homebrew.discordant_stars",
   startingTech: ["neural_motivator", "scanlink_drone_network"],
   startingUnits: {

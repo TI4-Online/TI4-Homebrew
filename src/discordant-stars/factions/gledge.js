@@ -25,9 +25,9 @@ const factions = [{
     heroes: ["gorthrim"],
   },
   promissoryNotes: ["gledge_base"],
-  icon: "discordant-stars/faction-icons/gledge.jpg",
-  source: "discordant_stars",
-  startingTech: ["pscyhoarchaeology", "scanlink_drone_network", "ai_development_algorithm"],
+  icon: "discordant-stars/faction-icons/gledge.png",
+  source: "homebrew.discordant_stars",
+  startingTech: ["psychoarchaeology", "scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
     carrier: 1,
     destroyer: 1,
@@ -41,7 +41,7 @@ const factions = [{
   units: ["beg_bersha", "orion_platform", "orion_platform_2", "exodriller"],
   packageId: refPackageId,
   unpackExtra: [{
-    tokenNsid: "token.system:homebrew.discordant-stars.core/gledge",
+    tokenNsid: "token.attachment:homebrew.discordant-stars.core/gledge",
     tokenCount: 3,
   },{
     tokenNsid: "token.attachment:homebrew.discordant-stars.base/gledge",
@@ -57,8 +57,10 @@ const factions = [{
       "FB6B0915408D5694A2569BBF116E0793",
     "token.control:homebrew.discordant_stars/gledge":
       "769697144BB91D8B28D85FB7BBD22151",
-    "token.system:homebrew.discordant-stars.core/gledge":
-      "8615515545240877DDCA4D839EC45AFD",
+    "token.attachment:homebrew.discordant-stars.core/gledge":
+      "B7E3699F43976271223BFD911638C6CE",
+    "token.attachment:homebrew.discordant-stars.base/gledge":
+      "A260D577422758DC751497BAECE228FA",
 };
 
 const technologies = [{

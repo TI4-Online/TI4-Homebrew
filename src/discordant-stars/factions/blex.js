@@ -24,11 +24,10 @@ const factions = [{
     commanders: ["silas_deriga"],
     heroes: ["speygh"],
   },
-  promissoryNotes: ["blex_agents"],
-  promissoryNotes: ["secrets_of_the_weave"],
-  icon: "discordant-stars/faction-icons/blex.jpg",
-  source: "discordant_stars",
-  startingTech: ["daxcive_animators", "biostims"],
+  promissoryNotes: ["shared_misery"],
+  icon: "discordant-stars/faction-icons/blex.png",
+  source: "homebrew.discordant_stars",
+  startingTech: ["dacxive_animators", "biostims"],
   startingUnits: {
     carrier: 1,
     dreadnought: 1,
@@ -36,7 +35,7 @@ const factions = [{
     infantry: 3,
     space_dock: 1,
   },
-  techs: ["meldships"],
+  techs: ["biotic_weapons"],
   units: ["auriga", "vector", "vector_2", "pustule"],
   packageId: refPackageId,
   unpackExtra: [{
@@ -56,7 +55,7 @@ const factions = [{
     "token.control:homebrew.discordant_stars/blex":
       "F78A93DE437BF9F76AA260A0F0D8E7F6",
     "token.system:homebrew.discordant-stars.blight/blex":
-      "C56C5DF14BCE7358E263808959B7AA91",
+      "F8A85C7B4CE5FD661DC7DA905C80E3DF",
 };
 
 const technologies = [{
@@ -73,6 +72,7 @@ const technologies = [{
     type: "unitUpgrade",
     requirements: { Green: 1, Blue: 1 },
     abbrev: " VE II",
+    source: "homebrew.discordant_stars",
     faction: "blex",
     unitPosition: 0,
   },
