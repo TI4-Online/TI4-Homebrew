@@ -3,7 +3,7 @@ const { world, refPackageId } = require("@tabletop-playground/api");
 const localeStrings = {
   "faction.abbr.edyn": "Edyn",
   "faction.full.edyn": "The Edyn Mandate",
-  "planet.edyn": "PLANET",
+  "planet.edyn": "Edyn",
   "planet.ekko": "Ekko",
   "planet.okke": "Okke",
   "technology.name.unity_algorithm": "unity_algorithm",
