@@ -39,16 +39,10 @@ const factions = [{
       "rallypoint",
       "exemplar",
   ],
-  unpackExtra: [/*
+  unpackExtra: [
       {
-          tokenNsid: "card.ability:homebrew.discordant_stars.olradin/the_people",
+          tokenNsid: "card.olradin:homebrew.discordant_stars/0",
       },
-      {
-          tokenNsid: "card.ability:homebrew.discordant_stars.olradin/the_environment",
-      },
-      {
-          tokenNsid: "card.ability:homebrew.discordant_stars.olradin/the_economy",
-      },*/
       {
           tokenNsid: "token.commodity:homebrew.discordant_stars.2_commodities/olradin",
       },
@@ -65,8 +59,8 @@ const factions = [{
       "D170631C44F10C65E3ADC0B215F48571",
     "token.control:homebrew.discordant_stars/olradin":
       "A5806B064F7CC3CE4350DC811DE380C8",
-/*  card stack    "token.control:homebrew.discordant_stars/olradin":
-      "A5806B064F7CC3CE4350DC811DE380C8", */ 
+    "card.olradin:homebrew.discordant_stars/0":
+      "B35A5E4F4563B06C7FBD0F9330477096",
     "token.commodity:homebrew.discordant_stars.2_commodities/olradin":
       "8177765141DA35F8DA75748E4203C9FE",
 };
