@@ -113,7 +113,7 @@ const unitAttrs = [
     upgradeLevel: 2,
     localeName: "unit.cruiser.raider_2",
     triggerNsid: "card.technology.unit_upgrade.vaylerian:homebrew.discordant_stars/raider_2",
-    antiFighterBarrage: { dice: 2, hit: 6 },
+    spaceCombat: { dice: 1, hit: 6 },
   },
   {
     unit: "mech",
