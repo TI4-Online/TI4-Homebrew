@@ -92,6 +92,8 @@ const systems = [
     tile: 3215,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3215.jpg",
     planets: [
       { localeName: "planet.zelian", resources: 3, influence: 3 },
       { localeName: "planet.gen", resources: 2, influence: 0 },

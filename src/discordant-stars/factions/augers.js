@@ -31,7 +31,7 @@ const factions = [{
   startingTech: ["scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
     carrier: 1,
-    destroyers: 2,
+    destroyer: 2,
     fighter: 2,
     infantry: 4,
     pds: 1,
@@ -80,6 +80,8 @@ const systems = [
     tile: 3208,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3208.jpg",
     planets: [
       { localeName: "planet.demis", resources: 2, influence: 2 },
       { localeName: "planet.chrion", resources: 2, influence: 3 },

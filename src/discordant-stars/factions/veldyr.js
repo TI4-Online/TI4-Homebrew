@@ -48,10 +48,10 @@ const factions = [{
   ],
   unpackExtra: [
     {
-      tokenNsid: "token.attachment:homebrew.discordant-stars.branch_office_influence/veldyr",
+      tokenNsid: "token.attachment:homebrew.discordant_stars.branch_office_influence/veldyr",
       tokenCount: 2,
     },{
-      tokenNsid: "token.attachment:homebrew.discordant-stars.branch_office_resources/veldyr",
+      tokenNsid: "token.attachment:homebrew.discordant_stars.branch_office_resources/veldyr",
       tokenCount: 2,
     },
   ],
@@ -67,9 +67,9 @@ const factions = [{
       "F86B5FE44294E7B974A5F0B9B752EC2C",
     "token.control:homebrew.discordant_stars/veldyr":
       "4D68C5B6411D49C89B1C178ACAE19722",
-   "token.attachment:homebrew.discordant-stars.branch_office_influence/veldyr":
+   "token.attachment:homebrew.discordant_stars.branch_office_influence/veldyr":
        "9A6ED58D4B2121E04D9E4090AB9129A1",
-   "token.attachment:homebrew.discordant-stars.branch_office_resources/veldyr":
+   "token.attachment:homebrew.discordant_stars.branch_office_resources/veldyr":
        "BCB0EEF040954BA45C1074962C4681CB",
 };
 
@@ -97,6 +97,8 @@ const systems = [
     tile: 3201,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3201.jpg",
     planets: [
         { localeName: "planet.rhune", resources: 3, influence: 4 },
     ],

@@ -24,10 +24,10 @@ const factions = [{
   promissoryNotes: ["combat_drills"],
   icon: "discordant-stars/faction-icons/dihmohn.png",
   source: "homebrew.discordant_stars",
-  startingTech: ["dark-energy_tap", "scanlink_drone_network"],
+  startingTech: ["dark_energy_tap", "scanlink_drone_network"],
   startingUnits: {
     dreadnought: 2,
-    destroyers: 2,
+    destroyer: 2,
     fighter: 2,
     mech: 1,
     infantry: 2,
@@ -79,6 +79,8 @@ const systems = [
     tile: 3218,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3218.jpg",
     planets: [
         { localeName: "planet.abyssus", resources: 4, influence: 2 },
     ],
@@ -106,6 +108,7 @@ const unitAttrs = [
     upgradeLevel: 2,
     localeName: "unit.dreadnought.aegis_2",
     triggerNsid: "card.technology.unit_upgrade.dihmohn:homebrew.discordant_stars/aegis_2",
+    spaceCombat: { dice: 1, hit: 4 },
   },
   {
     unit: "mech",

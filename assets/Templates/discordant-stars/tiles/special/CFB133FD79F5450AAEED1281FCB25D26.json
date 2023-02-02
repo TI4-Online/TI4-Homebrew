@@ -48,7 +48,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tiles/special/tile_3225_o.jpg",
+			"Texture": "discordant-stars/tiles/special/tile_3301_face.jpg",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
@@ -78,7 +78,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tiles/special/tile_3225_r.jpg",
+			"Texture": "discordant-stars/tiles/special/tile_3301_rear.jpg",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",

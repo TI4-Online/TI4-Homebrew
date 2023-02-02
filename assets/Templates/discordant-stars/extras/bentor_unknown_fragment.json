@@ -2,7 +2,7 @@
 	"Type": "Generic",
 	"GUID": "0CC3F8464EE917F7E3791997936A38B0",
 	"Name": "Bentor - Unknown Fragment Token",
-	"Metadata": "token.fragment:homebrew.discordant-stars.unknown/bentor",
+	"Metadata": "token.fragment:homebrew.discordant_stars.unknown/bentor",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.35,

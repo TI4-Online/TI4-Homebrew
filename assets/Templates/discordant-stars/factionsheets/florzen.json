@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "74D69937471106DF8BAA21AA78B770ED",
 	"Name": "Faction Sheet (Florzen)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/florzen",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/florzen",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

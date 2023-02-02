@@ -56,7 +56,7 @@ const factions = [{
       "50AC87214A1A4B687DB454ACF7ED9C7F",
     "token.control:homebrew.discordant_stars/nivyn":
       "14D5EDF64A2C018BF1FEF584CADEA72F",
-    "token.system:homebrew.discordant-stars.wound/nivyn":
+    "token.system:homebrew.discordant_stars.wound/nivyn":
       "1D1C59194A9083D738A34C8D4AF48167",
 };
 
@@ -84,6 +84,8 @@ const systems = [
     tile: 3220,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3220.jpg",
     planets: [
         { localeName: "planet.ellas", resources: 3, influence: 3 },
     ],

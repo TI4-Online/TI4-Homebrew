@@ -43,7 +43,7 @@ const factions = [{
   packageId: refPackageId,
   unpackExtra: [
     {
-      tokenNsid: "token.unit:homebrew.discordant-stars.destroyer/nokar",
+      tokenNsid: "token.unit:homebrew.discordant_stars.destroyer/nokar",
       tokenCount: 4,
     },
   ],
@@ -58,7 +58,7 @@ const factions = [{
       "3A7E08DE4F4A5EC582BECABADF44B6E0",
     "token.control:homebrew.discordant_stars/nokar":
       "55F19E1C4D6C361B126420AC3A317C09",
-    "token.unit:homebrew.discordant-stars.destroyer/nokar":
+    "token.unit:homebrew.discordant_stars.destroyer/nokar":
       "8615515545240877DDCA4D839EC45AFD",
 };
 
@@ -86,6 +86,8 @@ const systems = [
     tile: 3228,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3228.jpg",
     planets: [
       { localeName: "planet.zarr", resources: 2, influence: 1 },
       { localeName: "planet.nokk", resources: 1, influence: 1 },

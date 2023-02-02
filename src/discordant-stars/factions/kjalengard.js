@@ -43,7 +43,7 @@ const factions = [{
   units: ["hulgades_hammer", "star_dragon", "star_dragon_2", "skald"],
   packageId: refPackageId,
   unpackExtra: [{
-    tokenNsid: "token.system:homebrew.discordant-stars.glory/kjalengard",
+    tokenNsid: "token.system:homebrew.discordant_stars.glory/kjalengard",
     tokenCount: 3,
   }],
 }];
@@ -58,7 +58,7 @@ const factions = [{
       "9B7F8D3A49A762F7A7065D9D3D766B62",
     "token.control:homebrew.discordant_stars/kjalengard":
       "3FEC3FA14142C148EE230B8702888604",
-    "token.system:homebrew.discordant-stars.glory/kjalengard":
+    "token.system:homebrew.discordant_stars.glory/kjalengard":
       "A41107CD42ACCEED19FED989804E18E0",
 };
 
@@ -86,6 +86,8 @@ const systems = [
     tile: 3226,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3226.jpg",
     planets: [
       { localeName: "planet.kjalengard", resources: 3, influence: 2 },
       { localeName: "planet.hulgade", resources: 1, influence: 0 },

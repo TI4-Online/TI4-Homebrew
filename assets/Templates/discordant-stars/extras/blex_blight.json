@@ -2,7 +2,7 @@
 	"Type": "Generic",
 	"GUID": "F8A85C7B4CE5FD661DC7DA905C80E3DF",
 	"Name": "Blex - Blight Token",
-	"Metadata": "token.system:homebrew.discordant-stars.blight/blex",
+	"Metadata": "token.system:homebrew.discordant_stars.blight/blex",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,

@@ -43,22 +43,22 @@ const factions = [{
   packageId: refPackageId,
   unpackExtra: [
     {
-      tokenNsid: "token.commodity:homebrew.discordant-stars.plus_1_commodities/bentor",
+      tokenNsid: "token.commodity:homebrew.discordant_stars.plus_1_commodities/bentor",
     },
     {
-      tokenNsid: "token.fragment:homebrew.discordant-stars.industrial/bentor",
+      tokenNsid: "token.fragment:homebrew.discordant_stars.industrial/bentor",
     },
     {
-      tokenNsid: "token.fragment:homebrew.discordant-stars.hazardous/bentor",
+      tokenNsid: "token.fragment:homebrew.discordant_stars.hazardous/bentor",
     },
     {
-      tokenNsid: "token.fragment:homebrew.discordant-stars.cultural/bentor",
+      tokenNsid: "token.fragment:homebrew.discordant_stars.cultural/bentor",
     },
     {
-      tokenNsid: "token.fragment:homebrew.discordant-stars.unknown/bentor",
+      tokenNsid: "token.fragment:homebrew.discordant_stars.unknown/bentor",
     },
     {
-      tokenNsid: "token.attachment:homebrew.discordant-stars.encryption_key/bentor",
+      tokenNsid: "token.attachment:homebrew.discordant_stars.encryption_key/bentor",
     },
   ]
 }];
@@ -72,17 +72,17 @@ const factions = [{
       "19C88E534DCD54C9A47717A2E3499473",
     "token.control:homebrew.discordant_stars/bentor":
       "4321ECD84A0F2D580ED2ADBFC631C260",
-    "token.commodity:homebrew.discordant-stars.plus_1_commodities/bentor":
+    "token.commodity:homebrew.discordant_stars.plus_1_commodities/bentor":
       "D2AC3F394BB428EB57900B9751788209",
-    "token.fragment:homebrew.discordant-stars.industrial/bentor":
+    "token.fragment:homebrew.discordant_stars.industrial/bentor":
       "50B21D3947AAC18D8C75B3963C4995A6",
-    "token.fragment:homebrew.discordant-stars.hazardous/bentor":
+    "token.fragment:homebrew.discordant_stars.hazardous/bentor":
       "9F050E634895FDD06C70FFA13F3C391D",
-    "token.fragment:homebrew.discordant-stars.cultural/bentor":
+    "token.fragment:homebrew.discordant_stars.cultural/bentor":
       "C56C5DF14BCE7358E263808959B7AA91",
-    "token.fragment:homebrew.discordant-stars.unknown/bentor":
+    "token.fragment:homebrew.discordant_stars.unknown/bentor":
       "0CC3F8464EE917F7E3791997936A38B0",
-    "token.attachment:homebrew.discordant-stars.encryption_key/bentor":
+    "token.attachment:homebrew.discordant_stars.encryption_key/bentor":
       "A1DD2E5046E8FB770C6511857B10FF23",
 };
 
@@ -110,6 +110,8 @@ const systems = [
     tile: 3227,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3227.jpg",
     planets: [
       { localeName: "planet.benc", resources: 2, influence: 0 },
       { localeName: "planet.hau", resources: 1, influence: 2 },

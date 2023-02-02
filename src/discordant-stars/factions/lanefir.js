@@ -57,15 +57,15 @@ const factions = [{
 const technologies = [{
     localeName: "technology.name.spark_thrusters",
     cardNsid:
-      "card.technology.COLOR.lanefir:homebrew.discordant_stars/spark_thrusters",
-    type: "Red",
-    requirements: { Red: 2 },
+      "card.technology.blue.lanefir:homebrew.discordant_stars/spark_thrusters",
+    type: "Blue",
+    requirements: { Blue: 2 },
     source: "homebrew.discordant_stars",
     faction: "lanefir",
   }, {
     localeName: "technology.name.ats_armaments",
     cardNsid:
-        "card.technology.COLOR.lanefir:homebrew.discordant_stars/ats_armaments",
+        "card.technology.red.lanefir:homebrew.discordant_stars/ats_armaments",
     type: "Red",
     requirements: { Red: 2 },
     source: "homebrew.discordant_stars",
@@ -78,6 +78,8 @@ const systems = [
     tile: 3230,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3230.jpg",
     planets: [
       { localeName: "planet.aysisrest", resources: 4, influence: 3 },
       { localeName: "planet.solitude", resources: 0, influence: 1 },

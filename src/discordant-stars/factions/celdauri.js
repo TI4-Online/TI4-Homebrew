@@ -44,7 +44,7 @@ const factions = [{
     ],
     unpackExtra: [
         {
-            tokenNsid: "token.unit:homebrew.discordant-stars.space_dock/celdauri",
+            tokenNsid: "token.unit:homebrew.discordant_stars.space_dock/celdauri",
         },
     ],
   },
@@ -59,7 +59,7 @@ const factions = [{
       "18B1EF7B473F6FAE935263B53793C660",
     "token.control:homebrew.discordant_stars/celdauri":
       "69D5464546CEC2095C626EAD65B738B6",
-    "token.unit:homebrew.discordant-stars.space_dock/celdauri":
+    "token.unit:homebrew.discordant_stars.space_dock/celdauri":
       "9FDC78FC4F42320D12E43FABE28ACFF5",
 };
 
@@ -88,6 +88,8 @@ const systems = [
     tile: 3219,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3219.jpg",
     planets: [{ localeName: "planet.louk", resources: 2, influence: 1 },
     { localeName: "planet.auldane", resources: 1, influence: 3 }],
   },

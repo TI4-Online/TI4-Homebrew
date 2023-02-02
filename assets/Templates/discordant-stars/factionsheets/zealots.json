@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "60A4F8964A3FC41C03551797DBE57F92",
 	"Name": "Faction Sheet (zealots)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/zealots",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/zealots",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

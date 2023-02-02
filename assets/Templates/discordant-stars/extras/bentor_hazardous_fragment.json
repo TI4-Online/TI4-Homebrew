@@ -2,7 +2,7 @@
 	"Type": "Generic",
 	"GUID": "9F050E634895FDD06C70FFA13F3C391D",
 	"Name": "Bentor - Hazardous Fragment Token",
-	"Metadata": "token.fragment:homebrew.discordant-stars.hazardous/bentor",
+	"Metadata": "token.fragment:homebrew.discordant_stars.hazardous/bentor",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,

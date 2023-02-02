@@ -43,10 +43,10 @@ const factions = [{
   units: ["beg_bersha", "orion_platform", "orion_platform_2", "exodriller"],
   packageId: refPackageId,
   unpackExtra: [{
-    tokenNsid: "token.attachment:homebrew.discordant-stars.core/gledge",
+    tokenNsid: "token.attachment:homebrew.discordant_stars.core/gledge",
     tokenCount: 3,
   },{
-    tokenNsid: "token.attachment:homebrew.discordant-stars.base/gledge",
+    tokenNsid: "token.attachment:homebrew.discordant_stars.base/gledge",
   },],
 }];
 
@@ -59,9 +59,9 @@ const factions = [{
       "FB6B0915408D5694A2569BBF116E0793",
     "token.control:homebrew.discordant_stars/gledge":
       "769697144BB91D8B28D85FB7BBD22151",
-    "token.attachment:homebrew.discordant-stars.core/gledge":
+    "token.attachment:homebrew.discordant_stars.core/gledge":
       "B7E3699F43976271223BFD911638C6CE",
-    "token.attachment:homebrew.discordant-stars.base/gledge":
+    "token.attachment:homebrew.discordant_stars.base/gledge":
       "A260D577422758DC751497BAECE228FA",
 };
 
@@ -89,6 +89,8 @@ const systems = [
     tile: 3229,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3229.jpg",
     planets: [
         { localeName: "planet.laststop", resources: 3, influence: 0 },
     ],

@@ -44,11 +44,11 @@ const factions = [{
   packageId: refPackageId,
   unpackExtra: [
     {
-      tokenNsid: "token.unit:homebrew.discordant-stars.dreadnought/cheiran",
+      tokenNsid: "token.unit:homebrew.discordant_stars.dreadnought/cheiran",
       tokenCount: 2,
     },
     {
-      tokenNsid: "token.unit:homebrew.discordant-stars.mech/cheiran",
+      tokenNsid: "token.unit:homebrew.discordant_stars.mech/cheiran",
     },
   ],
 }];
@@ -62,9 +62,9 @@ const factions = [{
       "9430444C4749D658CCAD40A1A2F4F884",
     "token.control:homebrew.discordant_stars/cheiran":
       "FA9B682B4E02B8433F29AD9B0349526C",
-   "token.unit:homebrew.discordant-stars.dreadnought/cheiran":
+   "token.unit:homebrew.discordant_stars.dreadnought/cheiran":
       "D4F66F804EFE54FF069216B86C83795D",
-   "token.unit:homebrew.discordant-stars.mech/cheiran":
+   "token.unit:homebrew.discordant_stars.mech/cheiran":
       "95A9A7FA4ED0A59FEC7DB78439B12FD3",
 };
 
@@ -92,6 +92,8 @@ const systems = [
     tile: 3234,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3234.jpg",
     planets: [
       { localeName: "planet.arche", resources: 2, influence: 2 },
       { localeName: "planet.gghurntheta", resources: 2, influence: 1 },

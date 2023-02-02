@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "55E4DC2D4D19F0D3F1D537A2718C0216",
 	"Name": "Faction Sheet (Rohdhna)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/rohdhna",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/rohdhna",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

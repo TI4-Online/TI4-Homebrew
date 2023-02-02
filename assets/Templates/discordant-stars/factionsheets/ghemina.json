@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "582DBB14444770F489C3179BF345AF60",
 	"Name": "Faction Sheet (Ghemina)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/ghemina",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/ghemina",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

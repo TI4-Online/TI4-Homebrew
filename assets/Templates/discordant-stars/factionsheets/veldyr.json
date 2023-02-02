@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "B1102612431EBBAC41599296DE4937D3",
 	"Name": "Faction Sheet (Veldyr)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/veldyr",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/veldyr",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "F93124B441A5119AE249F68C1D4B3824",
 	"Name": "Faction Sheet (Vaden)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/vaden",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/vaden",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

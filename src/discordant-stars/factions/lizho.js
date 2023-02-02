@@ -93,6 +93,8 @@ const systems = [
     tile: 3203,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3203.jpg",
     planets: [
       { localeName: "planet.kyr", resources: 2, influence: 0 },
       { localeName: "planet.pax", resources: 1, influence: 2 },

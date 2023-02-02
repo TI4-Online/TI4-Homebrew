@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "F101B69947B1CF5A2D038F8C111E261F",
 	"Name": "Faction Sheet (Lizho)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/lizho",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/lizho",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

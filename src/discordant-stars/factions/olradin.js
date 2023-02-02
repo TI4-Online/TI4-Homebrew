@@ -41,16 +41,16 @@ const factions = [{
   ],
   unpackExtra: [/*
       {
-          tokenNsid: "card.ability:homebrew.discordant-stars.olradin/the_people",
+          tokenNsid: "card.ability:homebrew.discordant_stars.olradin/the_people",
       },
       {
-          tokenNsid: "card.ability:homebrew.discordant-stars.olradin/the_environment",
+          tokenNsid: "card.ability:homebrew.discordant_stars.olradin/the_environment",
       },
       {
-          tokenNsid: "card.ability:homebrew.discordant-stars.olradin/the_economy",
+          tokenNsid: "card.ability:homebrew.discordant_stars.olradin/the_economy",
       },*/
       {
-          tokenNsid: "token.commodity:homebrew.discordant-stars.2_commodities/olradin",
+          tokenNsid: "token.commodity:homebrew.discordant_stars.2_commodities/olradin",
       },
   ],
   packageId: refPackageId,
@@ -67,7 +67,7 @@ const factions = [{
       "A5806B064F7CC3CE4350DC811DE380C8",
 /*  card stack    "token.control:homebrew.discordant_stars/olradin":
       "A5806B064F7CC3CE4350DC811DE380C8", */ 
-    "token.commodity:homebrew.discordant-stars.2_commodities/olradin":
+    "token.commodity:homebrew.discordant_stars.2_commodities/olradin":
       "8177765141DA35F8DA75748E4203C9FE",
 };
 
@@ -95,6 +95,8 @@ const systems = [
     tile: 3210,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3210.jpg",
     planets: [
         { localeName: "planet.sanctuary", resources: 3, influence: 4 },
     ],

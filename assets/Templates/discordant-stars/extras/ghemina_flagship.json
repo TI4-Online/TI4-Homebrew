@@ -2,7 +2,7 @@
 	"Type": "Generic",
 	"GUID": "A5E718004224A776862A9EA185C29F55",
 	"Name": "Ghemina Flagship - The Lord Token",
-	"Metadata": "token.unit:homebrew.discordant-stars.lord_flagship/ghemina",
+	"Metadata": "token.unit:homebrew.discordant_stars.lord_flagship/ghemina",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
