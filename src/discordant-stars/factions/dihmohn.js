@@ -5,6 +5,8 @@ const localeStrings = {
   "faction.full.dihmohn": "The Dih-Mohn Flotilla",
   "planet.abyssus": "Abyssus",
   "technology.name.impressment_programs": "Impressment Programs",
+  "unit.dreadnought.aegis": "Aegis",
+  "unit.dreadnought.aegis_2": "Aegis 2",
   "unit.flagship.maximus": "Maximus",
   "unit.mech.repairitor": "Repairitor",
 };
@@ -62,7 +64,7 @@ const technologies = [{
     faction: "dihmohn",
   },
   {
-    localeName: "unit.aegis_2",
+    localeName: "unit.dreadnought.aegis_2",
     cardNsid: "card.technology.unit_upgrade.dihmohn:homebrew.discordant_stars/aegis_2",
     type: "unitUpgrade",
     requirements: { Blue: 2, Yellow: 1 },

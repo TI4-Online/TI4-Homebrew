@@ -6,7 +6,8 @@ const localeStrings = {
   "planet.delmor": "Delmor",
   "planet.kyd": "Kyd",
   "technology.name.blackmail_programs": "Blackmail Programs",
-  "technology.name.corsair_2": "Corsair II",
+  "unit.fighter.corsair": "Corsair",
+  "unit.fighter.corsair_2": "Corsair 2",
   "unit.flagship.man_o_war": "Man o` War",
   "unit.mech.privateer": "Privateer",
 };
@@ -66,7 +67,7 @@ const technologies = [{
     faction: "florzen",
   },
   {
-    localeName: "unit.corsair_2",
+    localeName: "unit.fighter.corsair_2",
     cardNsid: "card.technology.unit_upgrade.florzen:homebrew.discordant_stars/corsair_2",
     type: "unitUpgrade",
     requirements: { Green: 1, Blue: 1 },

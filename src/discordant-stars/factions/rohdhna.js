@@ -7,6 +7,8 @@ const localeStrings = {
   "technology.name.contractual_obligations": "Contractual Obligations",
   "unit.flagship.ky_vir": "Ky'Vir the Replicator",
   "unit.mech.autofabricator": "autofabricator",
+  "unit.war_sun.terrafactory": "Terrafactory",
+  "unit.war_sun.terrafactory_2": "Terrafactory 2",
 };
 
 
@@ -75,8 +77,8 @@ const technologies = [{
     faction: "rohdhna",
   },
   {
-    localeName: "unit.terrafactory",
-    cardNsid: "card.technology.unit_upgrade.rohdhna:homebrew.discordant_stars/terrafactory",
+    localeName: "unit.war_sun.terrafactory_2",
+    cardNsid: "card.technology.unit_upgrade.rohdhna:homebrew.discordant_stars/terrafactory_2",
     type: "unitUpgrade",
     requirements: { Red: 3, Yellow: 1 },
     abbrev: " TF II",

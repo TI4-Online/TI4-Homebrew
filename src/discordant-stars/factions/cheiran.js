@@ -6,6 +6,8 @@ const localeStrings = {
   "planet.arche": "Arche",
   "planet.gghurntheta": "Gghurn Theta",
   "technology.name.brood_podbrood_pod": "Brood PodBrood Pod",
+  "unit.dreadnought.chitin_hulk": "Chitin Hulk",
+  "unit.dreadnought.chitin_hulk_2": "Chitin Hulk 2",
   "unit.flagship.lithodax": "lithodax",
   "unit.mech.nauplius": "nauplius",
 };
@@ -75,7 +77,7 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "cheiran",
   }, {
-    localeName: "unit.chitin_hulk_2",
+    localeName: "unit.dreadnought.chitin_hulk_2",
     cardNsid: "card.technology.unit_upgrade.cheiran:homebrew.discordant_stars/chitin_hulk_2",
     type: "unitUpgrade",
     requirements: { Blue: 2, Yellow: 1 },

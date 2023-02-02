@@ -7,6 +7,8 @@ const localeStrings = {
   "planet.gen": "Gen",
   "technology.name.shard_volley": "Shard Volley",
   "unit.flagship.world-cracker": "World Cracker",
+  "unit.infantry.impactor": "Impactor",
+  "unit.infantry.impactor_2": "Impactor 2",
   "unit.mech.collider": "Collider",
 };
 
@@ -75,7 +77,7 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "zelian",
   }, {
-    localeName: "unit.impactor_2",
+    localeName: "unit.infantry.impactor_2",
     cardNsid: "card.technology.unit_upgrade.zelian:homebrew.discordant_stars/impactor_2",
     type: "unitUpgrade",
     requirements: { Green: 2 },

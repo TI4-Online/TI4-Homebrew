@@ -7,6 +7,8 @@ const localeStrings = {
   "planet.pax": "Pax",
   "planet.vess": "Vess",
   "technology.name.wraith_engine": "Wraith Engine",
+  "unit.fighter.heavy_bomber": "Heavy Bomber",
+  "unit.fighter.heavy_bomber_2": "Heavy Bomber 2",
   "unit.flagship.silence_of_stars": "Silence of Stars",
   "unit.mech.oro-zhin_elite": "Oro-Zhin Elite",
 };
@@ -76,7 +78,7 @@ const technologies = [{
     faction: "lizho",
   },
   {
-    localeName: "unit.heavy_bomber_2",
+    localeName: "unit.fighter.heavy_bomber_2",
     cardNsid: "card.technology.unit_upgrade.lizho:homebrew.discordant_stars/heavy_bomber_2",
     type: "unitUpgrade",
     requirements: { Blue: 1, Green: 1 },

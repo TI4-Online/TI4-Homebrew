@@ -7,6 +7,8 @@ const localeStrings = {
   "technology.name.lightning_drives": "Lightning Drives",
   "unit.flagship.beg_bersha": "Beg Bersha",
   "unit.mech.exodriller": "Exodriller",
+  "unit.pds.orion_platform": "Orion Platform",
+  "unit.pds.orion_platform_2": "Orion Platform 2",
 };
 
 
@@ -72,7 +74,7 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "gledge",
   }, {
-    localeName: "unit.orion_platform_2",
+    localeName: "unit.pds.orion_platform_2",
     cardNsid: "card.technology.unit_upgrade.gledge:homebrew.discordant_stars/orion_platform_2",
     type: "unitUpgrade",
     requirements: { Red: 1, Yellow: 1 },

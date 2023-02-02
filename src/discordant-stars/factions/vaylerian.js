@@ -5,6 +5,8 @@ const localeStrings = {
   "faction.full.vaylerian": "The Vaylerian Scourge",
   "planet.vaylar": "vaylar",
   "technology.name.scavenger_exos": "Scavenger Exos",
+  "unit.cruiser.raider": "Raider",
+  "unit.cruiser.raider_2": "Raider 2",
   "unit.flagship.lost_cause": "Lost Cause",
   "unit.mech.eclipse": "Eclipse",
 };
@@ -66,7 +68,7 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "vaylerian",
   }, {
-    localeName: "unit.raider_2",
+    localeName: "unit.cruiser.raider_2",
     cardNsid: "card.technology.unit_upgrade.vaylerian:homebrew.discordant_stars/raider_2",
     type: "unitUpgrade",
     requirements: { Red: 1, Yellow: 1, Green: 1 },

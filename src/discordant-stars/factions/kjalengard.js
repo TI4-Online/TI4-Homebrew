@@ -6,6 +6,8 @@ const localeStrings = {
   "planet.kjalengard": "Kjalengard",
   "planet.hulgade": "Hulgade",
   "technology.name.zhrgar_stimulants": "Zhrgar Stimulants",
+  "unit.carrier.star_dragon": "Star Dragon",
+  "unit.carrier.star_dragon_2": "Star Dragon 2",
   "unit.flagship.hulgades_hammer": "Hulgades Hammer",
   "unit.mech.skald": "Skald",
 };
@@ -69,7 +71,7 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "kjalengard",
   }, {
-    localeName: "unit.star_dragon_2",
+    localeName: "unit.carrier.star_dragon_2",
     cardNsid: "card.technology.unit_upgrade.kjalengard:homebrew.discordant_stars/star_dragon_2",
     type: "unitUpgrade",
     requirements: { Blue: 2 },

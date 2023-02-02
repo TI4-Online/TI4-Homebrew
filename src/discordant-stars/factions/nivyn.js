@@ -7,6 +7,7 @@ const localeStrings = {
   "technology.name.voidwake_missiles": "Voidwake Missiles",
   "unit.flagship.eradica": "Eradica",
   "unit.mech.voidflare_warden": "Voidflare Warden",
+  "unit.mech.voidflare_warden_2": "Voidflare Warden 2",
 };
 
 
@@ -68,7 +69,7 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "nivyn",
   }, {
-    localeName: "unit.voidflare_warden_2",
+    localeName: "unit.mech.voidflare_warden_2",
     cardNsid: "card.technology.unit_upgrade.nivyn:homebrew.discordant_stars/voidflare_warden_2",
     type: "unitUpgrade",
     requirements: { Red: 1, Yellow: 1, Blue: 1 },

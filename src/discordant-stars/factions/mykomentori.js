@@ -7,6 +7,8 @@ const localeStrings = {
   "technology.name.psychoactive_armaments": "Psychoactive Armaments",
   "unit.flagship.psyclobea_qarnyx": "Psyclobea Garnyx",
   "unit.mech.amandia_pholdis": "Amandia Pholdis",
+  "unit.space_dock.mycelium_ring": "Mycelium Ring",
+  "unit.space_dock.mycelium_ring_2": "Mycelium Ring 2",
 };
 
 
@@ -93,7 +95,7 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "mykomentori",
   }, {
-    localeName: "unit.mycelium_ring_2",
+    localeName: "unit.space_dock.mycelium_ring_2",
     cardNsid: "card.technology.unit_upgrade.mykomentori:homebrew.discordant_stars/mycelium_ring_2",
     type: "unitUpgrade",
     requirements: { Yellow: 2 },
