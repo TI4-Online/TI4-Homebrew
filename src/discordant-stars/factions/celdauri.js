@@ -24,7 +24,7 @@ const factions = [{
     },
     promissoryNotes: ["trade_alliance"],
     packageId: refPackageId,
-    icon: "discordant-stars/faction-icons/celdauri.jpg",
+    icon: "discordant-stars/faction-icons/celdauri.png",
     source: "homebrew.discordant_stars",
     startingTech: ["antimass_deflectors", "sarween_tools", "plasma_scoring"],
     startingUnits: {

@@ -1,0 +1,92 @@
+{
+	"Type": "Card",
+	"GUID": "99D275DD4C39AE8D6108F6A8A47EE42A",
+	"Name": "Promissory (homebrew.discordant_stars 2/2)",
+	"Metadata": "card.promissory:homebrew.discordant_stars/1",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "discordant-stars/promissory-more.jpg",
+	"BackTexture": "ti4/promissory.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 4,
+	"NumVertical": 3,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
+	"CardNames":
+	{
+		"0": "Encryption Key",
+		"1": "Trade Nokar Navigator",
+		"2": "Gledge Base",
+		"3": "Spoils of War",
+		"4": "Shared Misery",
+		"5": "Ghoti Relay",
+		"6": "Combinatorial Bypass",
+		"7": "Carcinisation",
+		"8": "Edyn Diplomatic Support",
+		"9": "Vassalage",
+		"10": "Network Office"
+	},
+	"CardMetadata":
+	{
+		"0": "card.promissory.bentor:homebrew.discordant_stars/encryption_key",
+		"1": "card.promissory.nokar:homebrew.discordant_stars/nokar_navigator",
+		"2": "card.promissory.gledge:homebrew.discordant_stars/gledge_base",
+		"3": "card.promissory.lanefir:homebrew.discordant_stars/spoils_of_war",
+		"4": "card.promissory.blex:homebrew.discordant_stars/shared_misery",
+		"5": "card.promissory.ghoti:homebrew.discordant_stars/ghoti_relay",
+		"6": "card.promissory.kolume:homebrew.discordant_stars/combinatorial_bypass",
+		"7": "card.promissory.cheiran:homebrew.discordant_stars/carcinisation",
+		"8": "card.promissory.edyn:homebrew.discordant_stars/edyn_diplomatic_support",
+		"9": "card.promissory.kjalengard:homebrew.discordant_stars/vassalage",
+		"10": "card.promissory.drahn:homebrew.discordant_stars/network_office"
+	},
+	"CardTags":
+	{
+	}
+}

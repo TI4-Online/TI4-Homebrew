@@ -26,7 +26,7 @@ const factions = [{
       heroes: ["bayan"],
   },
   promissoryNotes: ["secrets_of_the_weave"],
-  icon: "discordant-stars/faction-icons/mortheus.jpg",
+  icon: "discordant-stars/faction-icons/mortheus.png",
   source: "homebrew.discordant_stars",
   startingTech: ["dark_energy_tap", "sarween_tools"],
   startingUnits: {

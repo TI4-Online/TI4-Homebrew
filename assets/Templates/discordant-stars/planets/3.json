@@ -1,7 +1,7 @@
 {
 	"Type": "Card",
 	"GUID": "B2F40CA93740A58609979F9F29F2B67B",
-	"Name": "Planets (homebrew 4/7)",
+	"Name": "Planets (homebrew 4/8)",
 	"Metadata": "card.planet:homebrew/3",
 	"CollisionType": "Regular",
 	"Friction": 0.7,

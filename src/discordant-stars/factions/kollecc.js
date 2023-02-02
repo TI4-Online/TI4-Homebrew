@@ -25,7 +25,7 @@ const factions = [{
     heroes: ["dorrahn griphyn"],
   },
   promissoryNotes: ["ai_survey"],
-  icon: "discordant-stars/faction-icons/kollecc.jpg",
+  icon: "discordant-stars/faction-icons/kollecc.png",
   source: "homebrew.discordant_stars",
   startingTech: ["scanlink_drone_network"],
   startingUnits: {

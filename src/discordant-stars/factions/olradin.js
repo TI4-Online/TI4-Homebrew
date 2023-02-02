@@ -24,7 +24,7 @@ const factions = [{
       heroes: ["pahn_silverfur"],
   },
   promissoryNotes: ["incite_revolution"],
-  icon: "discordant-stars/faction-icons/olradin.jpg",
+  icon: "discordant-stars/faction-icons/olradin.png",
   source: "homebrew.discordant_stars",
   startingTech: ["psychoarchaeology", "scanlink_drone_network"],
   startingUnits: {

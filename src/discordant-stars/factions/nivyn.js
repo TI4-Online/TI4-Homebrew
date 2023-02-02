@@ -25,7 +25,7 @@ const factions = [{
     heroes: ["krill_drakkon"],
   },
   promissoryNotes: ["nivyn_guidance"],
-  icon: "discordant-stars/faction-icons/nivyn.jpg",
+  icon: "discordant-stars/faction-icons/nivyn.png",
   source: "homebrew.discordant_stars",
   startingTech: ["dark_energy_tap", "plasma_scoring"],
   startingUnits: {
