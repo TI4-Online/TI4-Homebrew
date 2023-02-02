@@ -28,7 +28,7 @@ const factions = [{
   promissoryNotes: ["hyperkinetic_ordinance"],
   icon: "discordant-stars/faction-icons/zelian.png",
   source: "homebrew.discordant_stars",
-  startingTech: ["antimass_deflectors, ai_development_algorithm"],
+  startingTech: ["antimass_deflectors", "ai_development_algorithm"],
   startingUnits: {
     dreadnought: 1,
     carrier: 1,

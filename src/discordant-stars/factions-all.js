@@ -60,6 +60,6 @@ require("./factions/vaden");
 require("./factions/vaylerian");
 require("./factions/veldyr");
 require("./factions/zealots");
+require("./factions/zelian");
 
 //require("./factions/edyn"); // TILE 3225 duplicate
-//require("./factions/zelian"); // 1 tech error
