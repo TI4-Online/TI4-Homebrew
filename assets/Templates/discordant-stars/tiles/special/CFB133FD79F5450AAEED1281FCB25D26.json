@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
 	"GUID": "CFB133FD79F5450AAEED1281FCB25D26",
-	"Name": "Tile 3225",
-	"Metadata": "tile.system:homebrew.discordant_stars/3225",
+	"Name": "Tile 3250",
+	"Metadata": "tile.system:homebrew.discordant_stars/3250",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
