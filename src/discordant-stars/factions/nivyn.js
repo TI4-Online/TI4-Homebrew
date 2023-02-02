@@ -84,6 +84,8 @@ const systems = [
     tile: 3220,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3220.jpg",
     planets: [
         { localeName: "planet.ellas", resources: 3, influence: 3 },
     ],

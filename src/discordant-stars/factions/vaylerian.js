@@ -83,6 +83,8 @@ const systems = [
     tile: 3216,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3216.jpg",
     planets: [
         { localeName: "planet.vaylar", resources: 3, influence: 2 },
     ],

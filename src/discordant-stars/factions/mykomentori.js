@@ -110,6 +110,8 @@ const systems = [
     tile: 3211,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3211.jpg",
     planets: [
         { localeName: "planet.shihalaum", resources: 4, influence: 0 },
     ],

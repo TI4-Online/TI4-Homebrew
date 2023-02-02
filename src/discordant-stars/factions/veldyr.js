@@ -97,6 +97,8 @@ const systems = [
     tile: 3201,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3201.jpg",
     planets: [
         { localeName: "planet.rhune", resources: 3, influence: 4 },
     ],

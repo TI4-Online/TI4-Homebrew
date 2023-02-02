@@ -81,6 +81,8 @@ const systems = [
     tile: 3206,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3206.jpg",
     planets: [
       { localeName: "planet.vadarian", resources: 3, influence: 0 },
       { localeName: "planet.norvus", resources: 1, influence: 2 },

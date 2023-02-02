@@ -78,6 +78,8 @@ const systems = [
     tile: 3230,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3230.jpg",
     planets: [
       { localeName: "planet.aysisrest", resources: 4, influence: 3 },
       { localeName: "planet.solitude", resources: 0, influence: 1 },

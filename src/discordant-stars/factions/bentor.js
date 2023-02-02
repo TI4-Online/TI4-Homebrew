@@ -110,6 +110,8 @@ const systems = [
     tile: 3227,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3227.jpg",
     planets: [
       { localeName: "planet.benc", resources: 2, influence: 0 },
       { localeName: "planet.hau", resources: 1, influence: 2 },

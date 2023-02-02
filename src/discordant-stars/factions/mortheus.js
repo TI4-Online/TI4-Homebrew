@@ -80,6 +80,8 @@ const systems = [
     tile: 3207,
     source: "homebrew.discordant_stars",
     home: true,
+    packageId: refPackageId,
+    img: "discordant-stars/tiles/homeworld/tile_3207.jpg",
     planets: [
       { localeName: "planet.biaheo", resources: 3, influence: 0 },
       { localeName: "planet.empero", resources: 0, influence: 3 },
