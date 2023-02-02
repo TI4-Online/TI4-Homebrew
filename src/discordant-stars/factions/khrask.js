@@ -5,6 +5,8 @@ const localeStrings = {
   "faction.full.khrask": "The L'Tokk Khrask",
   "planet.bohldhur": "Bohl-Dhur",
   "technology.name.stones_embrace": "Stones Embrace",
+  "unit.cruiser.shattered_sky": "Shattered Sky",
+  "unit.cruiser.shattered_sky_2": "Shattered Sky 2",
   "unit.flagship.splintering_gale": "Splintering Gale",
   "unit.mech.megalith": "megalith",
 };
@@ -66,7 +68,7 @@ const technologies = [{
     faction: "khrask",
   },
   {
-    localeName: "unit.shattered_sky_2",
+    localeName: "unit.cruiser.shattered_sky_2",
     cardNsid: "card.technology.unit_upgrade.khrask:homebrew.discordant_stars/shattered_sky_2",
     type: "unitUpgrade",
     requirements: { Red: 1, Yellow: 1, Green: 1 },

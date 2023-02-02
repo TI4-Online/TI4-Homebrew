@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
 	"GUID": "A6D5845C4AEB1F0729B7BBB1F2EE1AF3",
-	"Name": "Tile 3225",
-	"Metadata": "tile.system:homebrew.discordant_stars/3225",
+	"Name": "Tile 3235",
+	"Metadata": "tile.system:homebrew.discordant_stars/3235",
 	"CollisionType": "Regular",
 	"Friction": 0.72,
 	"Restitution": 0.32,
@@ -48,7 +48,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tiles/homeworld/tile_3225.jpg",
+			"Texture": "discordant-stars/tiles/homeworld/tile_3235.jpg",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",

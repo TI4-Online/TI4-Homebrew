@@ -6,6 +6,7 @@ const localeStrings = {
   "planet.zarr": "Zarr",
   "planet.nokk": "Nokk",
   "technology.name.local_contracts": "Local Contracts",
+  "unit.destroyer.sabre_2": "Sabre 2",
   "unit.flagship.annah_regia": "Annah Regia",
   "unit.mech.freelance_outfit": "Freelance Outfit",
 };
@@ -70,7 +71,7 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "nokar",
   }, {
-    localeName: "unit.sabre_2",
+    localeName: "unit.destroyer.sabre_2",
     cardNsid: "card.technology.unit_upgrade.nokar:homebrew.discordant_stars/sabre_2",
     type: "unitUpgrade",
     requirements: { Red: 2 },

@@ -57,6 +57,36 @@
 			"IsTwoSided": true,
 			"UseOverrides": true,
 			"SurfaceType": "Plastic"
+		},
+		{
+			"Model": "tokens/round-msh.obj",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0.2
+			},
+			"Scale":
+			{
+				"X": 1,
+				"Y": 1,
+				"Z": 1
+			},
+			"Rotation":
+			{
+				"X": -180,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "discordant-stars/tokens/faction/free_systems_rebellion_token_back.png",
+			"NormalMap": "",
+			"ExtraMap": "",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": false,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
 		}
 	],
 	"Collision": [],

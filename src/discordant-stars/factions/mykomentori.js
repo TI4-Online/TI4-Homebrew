@@ -7,6 +7,8 @@ const localeStrings = {
   "technology.name.psychoactive_armaments": "Psychoactive Armaments",
   "unit.flagship.psyclobea_qarnyx": "Psyclobea Garnyx",
   "unit.mech.amandia_pholdis": "Amandia Pholdis",
+  "unit.space_dock.mycelium_ring": "Mycelium Ring",
+  "unit.space_dock.mycelium_ring_2": "Mycelium Ring 2",
 };
 
 
@@ -44,7 +46,7 @@ const factions = [{
   ],
   unpackExtra: [
     {
-      tokenNsid: "tile.system:homebrew.discordant-stars.mykomentori/nova_seed",
+      tokenNsid: "tile.system:homebrew.discordant_stars/3301",
     },
     {
       tokenNsid: "token.commodity:homebrew.discordant-stars.commodity_2/mykomentori",
@@ -80,7 +82,7 @@ const factions = [{
        "9F714B1B4455E646DB91698184DD1491",
    "token.commodity:homebrew.discordant-stars.commodity_4/mykomentori":
        "A652D5D8498EA752206C73AEC583A8B2",
-   "tile.system:homebrew.discordant-stars.mykomentori/nova_seed":
+   "tile.system:homebrew.discordant_stars/3301":
        "CFB133FD79F5450AAEED1281FCB25D26",
 };
 
@@ -93,7 +95,7 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "mykomentori",
   }, {
-    localeName: "unit.mycelium_ring_2",
+    localeName: "unit.space_dock.mycelium_ring_2",
     cardNsid: "card.technology.unit_upgrade.mykomentori:homebrew.discordant_stars/mycelium_ring_2",
     type: "unitUpgrade",
     requirements: { Yellow: 2 },

@@ -8,8 +8,8 @@ const localeStrings = {
   "technology.name.emergency_mobilization": "Emergency Mobilization Protocols",
   "unit.flagship.supremacy": "Supremacy",
   "unit.mech.minuteman": "Minuteman",
-  "unit.trade_port": "Trade Port",
-  "unit.trade_port_2": "Trade Port 2",
+  "unit.space_dock.trade_port": "Trade Port",
+  "unit.space_dock.trade_port_2": "Trade Port 2",
 };
 
 const factions = [{
@@ -73,7 +73,7 @@ const technologies = [{
     faction: "celdauri",
   },
   {
-    localeName: "unit.trade_port_2",
+    localeName: "unit.space_dock.trade_port_2",
     cardNsid: "card.technology.unit_upgrade.celdauri:homebrew.discordant_stars/trade_port_2",
     type: "unitUpgrade",
     requirements: { Yellow: 2 },

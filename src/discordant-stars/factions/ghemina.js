@@ -6,6 +6,8 @@ const localeStrings = {
   "planet.drah": "Drah",
   "planet.trykk": "Trykk",
   "technology.name.war_song_implants": "War Song Implants",
+  "unit.carrier.combat_transport": "Combat Transporter",
+  "unit.carrier.combat_transport_2": "Combat Transporter 2",
   "unit.flagship.the_lady": "The Lady",
   "unit.flagship.the_lord": "The Lord",
   "unit.mech.jotun": "Jotun",
@@ -79,7 +81,7 @@ const technologies = [{
     faction: "ghemina",
   },
   {
-    localeName: "unit.combat_transport_2",
+    localeName: "unit.carrier.combat_transport_2",
     cardNsid: "card.technology.unit_upgrade.ghemina:homebrew.discordant_stars/combat_transport_2",
     type: "unitUpgrade",
     requirements: { Blue: 2 },

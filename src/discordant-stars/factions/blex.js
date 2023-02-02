@@ -6,6 +6,8 @@ const localeStrings = {
   "planet.avicenna": "Avicenna",
   "technology.name.biotic_weapons": "Biotic Weapons",
   "unit.flagship.auriga": "Auriga",
+  "unit.fighter.vector": "Vector",
+  "unit.fighter.vector_2": "Vector 2",
   "unit.mech.pustule": "Pustule",
 };
 
@@ -67,7 +69,7 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "blex",
   }, {
-    localeName: "unit.vector_2",
+    localeName: "unit.fighter.vector_2",
     cardNsid: "card.technology.unit_upgrade.blex:homebrew.discordant_stars/vector_2",
     type: "unitUpgrade",
     requirements: { Green: 1, Blue: 1 },

@@ -7,6 +7,8 @@ const localeStrings = {
   "technology.name.recursive_worm": "Recursive Worm",
   "unit.flagship.reprocessor_alphareprocessor_alpha": "Reprocessor Alpha",
   "unit.mech.revenant": "Revenant",
+  "unit.infantry.unholy_abomination": "Unholy Abomination",
+  "unit.infantry.unholy_abomination_2": "Unholy Abomination 2",
 };
 
 const factions = [{
@@ -65,7 +67,7 @@ const technologies = [{
     faction: "cymiae",
   },
   {
-    localeName: "unit.unholy_abomination_2",
+    localeName: "unit.infantry.unholy_abomination_2",
     cardNsid: "card.technology.unit_upgrade.cymiae:homebrew.discordant_stars/unholy_abomination_2",
     type: "unitUpgrade",
     requirements: { Green: 2 },
@@ -101,14 +103,12 @@ const unitAttrs = [
     upgradeLevel: 1,
     localeName: "unit.infantry.unholy_abomination",
     triggerNsid: "card.technology.unit_upgrade.cymiae:franken.discordant_stars/unholy_abomination",
-    antiFighterBarrage: { dice: 1, hit: 5 },
   },
   {
     unit: "infantry",
     upgradeLevel: 2,
     localeName: "unit.infantry.unholy_abomination_2",
     triggerNsid: "card.technology.unit_upgrade.cymiae:homebrew.discordant_stars/unholy_abomination_2",
-    antiFighterBarrage: { dice: 1, hit: 4 },
   },
   {
     unit: "mech",

@@ -5,6 +5,8 @@ const localeStrings = {
   "faction.full.veldyr": "The Veldyr Sovereignty",
   "planet.rhune": "Rhune",
   "technology.name.seidr_project": "Seidr Project",
+  "unit.dreadnought.lancer_dreadnought": "Lancer Dreadnought",
+  "unit.dreadnought.lancer_dreadnought_2": "Lancer Dreadnought 2",
   "unit.flagship.richtyrian": "Richtyrian",
   "unit.mech.aurora_stormcaller": "Aurora Stormcaller",
 };
@@ -80,7 +82,7 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "veldyr",
   }, {
-    localeName: "unit.lancer_dreadnought_2",
+    localeName: "unit.dreadnought.lancer_dreadnought_2",
     cardNsid: "card.technology.unit_upgrade.veldyr:homebrew.discordant_stars/lancer_dreadnought_2",
     type: "unitUpgrade",
     requirements: { Blue: 2, Yellow: 1 },

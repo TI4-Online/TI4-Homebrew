@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "D470A857461BB977E6B56CB33FE00B4D",
 	"Name": "Faction Sheet (Ltokkkhrask)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/ltokkkhrask",
+	"Metadata": "sheet.faction:homebrew.discordant-stars/khrask",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -175,7 +175,7 @@
 	},
 	"CardMetadata":
 	{
-		"0": "sheet.faction:homebrew/ltokkkhrask"
+		"0": "sheet.faction:homebrew/khrask"
 	},
 	"CardTags":
 	{

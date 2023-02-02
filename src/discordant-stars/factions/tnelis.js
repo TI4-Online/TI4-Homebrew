@@ -5,6 +5,8 @@ const localeStrings = {
   "faction.full.tnelis": "The Tnelis Syndicate",
   "planet.discordia": "Discordia",
   "technology.name.daedalon_flight_system": "Daedalon Flight System",
+  "unit.destroyer.blockade_runner": "Blockade Runner",
+  "unit.destroyer.blockade_runner_2": "Blockade Runner 2",
   "unit.flagship.principia_aneris": "Principia Aneris",
   "unit.mech.daedalon": "Daedalon",
 };
@@ -66,7 +68,7 @@ const technologies = [{
     source: "homebrew.discordant_stars",
     faction: "tnelis",
   }, {
-    localeName: "unit.blockade_runner_2",
+    localeName: "unit.destroyer.blockade_runner_2",
     cardNsid: "card.technology.unit_upgrade.tnelis:homebrew.discordant_stars/blockade_runner_2",
     type: "unitUpgrade",
     requirements: { Red: 2 },

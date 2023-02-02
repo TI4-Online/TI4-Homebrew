@@ -8,6 +8,8 @@ const localeStrings = {
   "technology.name.orbital_defense_grid": "Orbital Defense Grid",
   "unit.flagship.nexus": "Nexus",
   "unit.mech.javelin": "Javelin",
+  "unit.pds.gauss_cannon": "Gauss Cannon",
+  "unit.pds.gauss_cannon_2": "Gauss Cannon 2",
 };
 
 
@@ -67,7 +69,7 @@ const technologies = [{
     faction: "mirveda",
   },
   {
-    localeName: "unit.gauss_cannon_2",
+    localeName: "unit.pds.gauss_cannon_2",
     cardNsid: "card.technology.unit_upgrade.mirveda:homebrew.discordant_stars/gauss_cannon_2",
     type: "unitUpgrade",
     requirements: { Red: 1, Yellow: 1 },
