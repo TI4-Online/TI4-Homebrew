@@ -1,0 +1,73 @@
+{
+	"Type": "Card",
+	"GUID": "B35A5E4F4563B06C7FBD0F9330477096",
+	"Name": "Olradin Ability Cards",
+	"Metadata": "card.olradin:homebrew.discordant_stars/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "discordant-stars/extras/olradin_policy.face.png",
+	"BackTexture": "discordant-stars/extras/olradin_policy.back.png",
+	"HiddenTexture": "",
+	"BackIndex": -3,
+	"HiddenIndex": -1,
+	"NumHorizontal": 1,
+	"NumVertical": 3,
+	"Width": 9,
+	"Height": 6,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+		"0": "card.ability:homebrew.discordant_stars.olradin/the_economy",
+		"1": "card.ability:homebrew.discordant_stars.olradin/the_people",
+		"2": "card.ability:homebrew.discordant_stars.olradin/the_environment"
+	},
+	"CardTags":
+	{
+	}
+}

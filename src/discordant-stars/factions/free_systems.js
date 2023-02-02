@@ -91,9 +91,9 @@ const systems = [
     packageId: refPackageId,
     img: "discordant-stars/tiles/homeworld/tile_3202.jpg",
     planets: [
+      { localeName: "planet.idyn", resources: 1, influence: 0 },
       { localeName: "planet.kroll", resources: 1, influence: 1 },
       { localeName: "planet.cyrra", resources: 0, influence: 1 },
-      { localeName: "planet.idyn", resources: 1, influence: 0 },
     ],
   },
 ];

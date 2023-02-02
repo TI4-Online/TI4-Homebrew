@@ -82,8 +82,8 @@ const systems = [
     img: "discordant-stars/tiles/homeworld/tile_3235.jpg",
     planets: [
       { localeName: "planet.edyn", resources: 3, influence: 3 },
-      { localeName: "planet.okke", resources: 0, influence: 1 },
       { localeName: "planet.ekko", resources: 0, influence: 1 },
+      { localeName: "planet.okke", resources: 0, influence: 1 },
     ],
   },
 ];

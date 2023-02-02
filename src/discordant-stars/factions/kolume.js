@@ -80,8 +80,8 @@ const systems = [
     packageId: refPackageId,
     img: "discordant-stars/tiles/homeworld/tile_3233.jpg",
     planets: [
-      { localeName: "planet.azle", resources: 2, influence: 0 },
       { localeName: "planet.alesna", resources: 2, influence: 0 },
+      { localeName: "planet.azle", resources: 2, influence: 0 },
     ],
   },
 ];
