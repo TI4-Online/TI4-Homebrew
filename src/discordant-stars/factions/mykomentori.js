@@ -44,7 +44,7 @@ const factions = [{
   ],
   unpackExtra: [
     {
-      tokenNsid: "tile.system:homebrew.discordant-stars.mykomentori/nova_seed",
+      tokenNsid: "tile.system:homebrew.discordant_stars/3301",
     },
     {
       tokenNsid: "token.commodity:homebrew.discordant-stars.commodity_2/mykomentori",
@@ -80,7 +80,7 @@ const factions = [{
        "9F714B1B4455E646DB91698184DD1491",
    "token.commodity:homebrew.discordant-stars.commodity_4/mykomentori":
        "A652D5D8498EA752206C73AEC583A8B2",
-   "tile.system:homebrew.discordant-stars.mykomentori/nova_seed":
+   "tile.system:homebrew.discordant_stars/3301":
        "CFB133FD79F5450AAEED1281FCB25D26",
 };
 

@@ -1,12 +1,12 @@
 {
 	"Type": "Generic",
-	"GUID": "A6D5845C4AEB1F0729B7BBB1F2EE1AF3",
-	"Name": "Tile 3235",
-	"Metadata": "tile.system:homebrew.discordant_stars/3235",
+	"GUID": "CEFA50AF45066D2881E4589960E438A4",
+	"Name": "Tile 3300",
+	"Metadata": "tile.system:homebrew.discordant_stars/3300",
 	"CollisionType": "Regular",
-	"Friction": 0.72,
-	"Restitution": 0.32,
-	"Density": 1.04,
+	"Friction": 0.7,
+	"Restitution": 0.3,
+	"Density": 1,
 	"SurfaceType": "Plastic",
 	"Roughness": 1,
 	"Metallic": 0,
@@ -48,7 +48,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tiles/homeworld/tile_3235.jpg",
+			"Texture": "discordant-stars/tiles/special/tile 3300.png",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
@@ -74,11 +74,11 @@
 			},
 			"Rotation":
 			{
-				"X": -180,
+				"X": 180,
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "",
+			"Texture": "discordant-stars/tiles/special/tile 3300.png",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
@@ -90,9 +90,9 @@
 			"Metallic": 0,
 			"PrimaryColor":
 			{
-				"R": 145,
-				"G": 251,
-				"B": 133
+				"R": 255,
+				"G": 255,
+				"B": 255
 			},
 			"SecondaryColor":
 			{

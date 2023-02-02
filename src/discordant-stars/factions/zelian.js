@@ -47,7 +47,7 @@ const factions = [{
   ],
   unpackExtra: [
     {
-      tokenNsid: "tile.system:homebrew.discordant-stars.zelian/cataclysm",
+      tokenNsid: "tile.system:homebrew.discordant_stars/3300",
     },
   ],
   packageId: refPackageId,
@@ -62,8 +62,8 @@ const factions = [{
       "65B38E384BE799411C63FB844FBE9CB8",
     "token.control:homebrew.discordant_stars/zelian":
       "ABAF21054A0DE613B202F5BFDF01A960",
-    "tile.system:homebrew.discordant-stars.zelian/cataclysm":
-      "CFB133FD79F5450AAEED1281FCB25D26",
+    "tile.system:homebrew.discordant_stars/3300":
+      "CEFA50AF45066D2881E4589960E438A4",
 };
 
 const technologies = [{
