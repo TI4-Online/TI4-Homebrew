@@ -25,7 +25,7 @@ const factions = [
     promissoryNotes: ["industry_secrets"],
     icon: "discordant-stars/faction-icons/axis.png",
     source: "homebrew.discordant_stars",
-    startingTech: ["sarween_tools, ai_development_algorithm"],
+    startingTech: ["sarween_tools", "ai_development_algorithm"],
     startingUnits: {
       carrier: 1,
       cruiser: 1,
