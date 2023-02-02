@@ -21,7 +21,7 @@ const factions = [{
     "royal_decree",
   ],
   commodities: 3,
-  home: 3225,
+  home: 3235,
   leaders: {
     agents: ["allant"],
     commanders: ["kadryn"],
@@ -30,7 +30,7 @@ const factions = [{
   promissoryNotes: ["edyn_diplomatic_support"],
   icon: "discordant-stars/faction-icons/edyn.png",
   source: "homebrew.discordant_stars",
-  startingTech: ["pscyhoarchaeology", "dark_energy_tap", "scanlink_drone_network", "ai_development_algorithm"],
+  startingTech: ["psychoarchaeology", "dark_energy_tap", "scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
     carrier: 1,
     destroyer: 2,
@@ -47,7 +47,7 @@ const factions = [{
  const nsidToTemplateId = {
     "sheet.faction:homebrew.discordant_stars/edyn":
       "AA54CD4F4C77171C2CCE0DA3B5690049",
-    "tile.system:homebrew.discordant_stars/3225":
+    "tile.system:homebrew.discordant_stars/3235":
       "A6D5845C4AEB1F0729B7BBB1F2EE1AF3",
     "token.command:homebrew.discordant_stars/edyn":
       "6F815DD54DC0C07307F5B6AAA053139B",
@@ -75,7 +75,7 @@ const technologies = [{
 
 const systems = [
   {
-    tile: 3225,
+    tile: 3235,
     source: "homebrew.discordant_stars",
     home: true,
     planets: [

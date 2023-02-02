@@ -36,6 +36,7 @@ require("./factions/celdauri");
 require("./factions/cheiran");
 require("./factions/cymiae");
 require("./factions/dihmohn");
+require("./factions/edyn");
 require("./factions/florzen");
 require("./factions/free_systems");
 require("./factions/ghemina");
@@ -61,5 +62,3 @@ require("./factions/vaylerian");
 require("./factions/veldyr");
 require("./factions/zealots");
 require("./factions/zelian");
-
-//require("./factions/edyn"); // TILE 3225 duplicate
