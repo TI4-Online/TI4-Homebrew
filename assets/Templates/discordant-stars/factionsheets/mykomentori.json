@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "917CCCCD46E79B95814A5F8E78552AA4",
 	"Name": "Faction Sheet (Mykomentori)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/mykomentori",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/mykomentori",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

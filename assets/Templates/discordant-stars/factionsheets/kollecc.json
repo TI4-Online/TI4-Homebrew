@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "48130FE44B136EB72AD74193E401DBF1",
 	"Name": "Faction Sheet (Kollecc)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/kollecc",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/kollecc",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

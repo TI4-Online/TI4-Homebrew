@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "643982334DDC9455D5AC7DBF7A0F1C4D",
 	"Name": "Faction Sheet (Vaylerian)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/vaylerian",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/vaylerian",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

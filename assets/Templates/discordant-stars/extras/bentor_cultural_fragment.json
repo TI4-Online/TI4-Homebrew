@@ -2,7 +2,7 @@
 	"Type": "Generic",
 	"GUID": "C56C5DF14BCE7358E263808959B7AA91",
 	"Name": "Bentor - Cultural Fragment Token",
-	"Metadata": "token.fragment:homebrew.discordant-stars.cultural/bentor",
+	"Metadata": "token.fragment:homebrew.discordant_stars.cultural/bentor",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,

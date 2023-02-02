@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "4A4C72994D754F67E9587E913950D35A",
 	"Name": "Faction Sheet (Mortheus)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/mortheus",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/mortheus",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

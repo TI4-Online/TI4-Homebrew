@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "7F3F98FE429EA7BD97DE65A70B2B2B6C",
 	"Name": "Faction Sheet (Olradin)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/olradin",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/olradin",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

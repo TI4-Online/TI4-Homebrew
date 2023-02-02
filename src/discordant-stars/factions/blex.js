@@ -41,7 +41,7 @@ const factions = [{
   units: ["auriga", "vector", "vector_2", "pustule"],
   packageId: refPackageId,
   unpackExtra: [{
-    tokenNsid: "token.system:homebrew.discordant-stars.blight/blex",
+    tokenNsid: "token.system:homebrew.discordant_stars.blight/blex",
     tokenCount: 4,
   }]
 
@@ -56,7 +56,7 @@ const factions = [{
       "E1D61045492625569AB4BA82E05F4C9D",
     "token.control:homebrew.discordant_stars/blex":
       "F78A93DE437BF9F76AA260A0F0D8E7F6",
-    "token.system:homebrew.discordant-stars.blight/blex":
+    "token.system:homebrew.discordant_stars.blight/blex":
       "F8A85C7B4CE5FD661DC7DA905C80E3DF",
 };
 

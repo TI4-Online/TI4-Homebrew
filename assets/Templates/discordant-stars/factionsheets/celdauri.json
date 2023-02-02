@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "2F90A98E43DF2887FF05DDBB89D11120",
 	"Name": "Faction Sheet (Celdauri)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/celdauri",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/celdauri",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "65CEF4BC4F8B87C1BA2B3FB93F94BC2D",
 	"Name": "Faction Sheet (Nivyn)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/nivyn",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/nivyn",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

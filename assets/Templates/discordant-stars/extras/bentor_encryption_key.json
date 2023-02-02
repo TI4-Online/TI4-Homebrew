@@ -2,7 +2,7 @@
 	"Type": "Generic",
 	"GUID": "A1DD2E5046E8FB770C6511857B10FF23",
 	"Name": "Bentor - Encryption Key Token",
-	"Metadata": "token.attachment:homebrew.discordant-stars.encryption_key/bentor",
+	"Metadata": "token.attachment:homebrew.discordant_stars.encryption_key/bentor",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.35,

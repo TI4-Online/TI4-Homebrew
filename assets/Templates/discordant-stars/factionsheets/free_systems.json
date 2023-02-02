@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "9B6DD5614B3AAB4C0BBCEFA2A4F0C374",
 	"Name": "Faction Sheet (Free Systems)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/free_systems",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/free_systems",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

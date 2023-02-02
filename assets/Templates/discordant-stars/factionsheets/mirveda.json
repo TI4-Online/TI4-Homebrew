@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "0E038BC94612FCCD2EEF38A731C7DD4B",
 	"Name": "Faction Sheet (Mirveda)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/mirveda",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/mirveda",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

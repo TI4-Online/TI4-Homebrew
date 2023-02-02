@@ -49,16 +49,16 @@ const factions = [{
       tokenNsid: "tile.system:homebrew.discordant_stars/3301",
     },
     {
-      tokenNsid: "token.commodity:homebrew.discordant-stars.commodity_2/mykomentori",
+      tokenNsid: "token.commodity:homebrew.discordant_stars.commodity_2/mykomentori",
     },
     {
-      tokenNsid: "token.commodity:homebrew.discordant-stars.commodity_3/mykomentori",
+      tokenNsid: "token.commodity:homebrew.discordant_stars.commodity_3/mykomentori",
     },
     {
-      tokenNsid: "token.commodity:homebrew.discordant-stars.commodity_4/mykomentori",
+      tokenNsid: "token.commodity:homebrew.discordant_stars.commodity_4/mykomentori",
     },
     {
-      tokenNsid: "dice:homebrew.discordant-stars.omen/mykomentori",
+      tokenNsid: "dice:homebrew.discordant_stars.omen/mykomentori",
       tokenCount: 4,
     },
   ],
@@ -74,13 +74,13 @@ const factions = [{
       "A5812829410458551D8EFDAA822B72C5",
     "token.control:homebrew.discordant_stars/mykomentori":
       "14D5EDF64A2C018BF1FEF584CADEA72F",
-   "dice:homebrew.discordant-stars.omen/mykomentori":
+   "dice:homebrew.discordant_stars.omen/mykomentori":
        "D7E5BBBF42888E06B8AF68ADC93E407F",
-   "token.commodity:homebrew.discordant-stars.commodity_2/mykomentori":
+   "token.commodity:homebrew.discordant_stars.commodity_2/mykomentori":
        "A1AD4B654EE21C93581D82BAA8909478",
-   "token.commodity:homebrew.discordant-stars.commodity_3/mykomentori":
+   "token.commodity:homebrew.discordant_stars.commodity_3/mykomentori":
        "9F714B1B4455E646DB91698184DD1491",
-   "token.commodity:homebrew.discordant-stars.commodity_4/mykomentori":
+   "token.commodity:homebrew.discordant_stars.commodity_4/mykomentori":
        "A652D5D8498EA752206C73AEC583A8B2",
    "tile.system:homebrew.discordant_stars/3301":
        "CFB133FD79F5450AAEED1281FCB25D26",

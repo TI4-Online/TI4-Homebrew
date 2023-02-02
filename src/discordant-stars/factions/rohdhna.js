@@ -48,7 +48,7 @@ const factions = [{
   ],
   unpackExtra: [
       {
-          tokenNsid: "token.attachment:homebrew.discordant-stars.automatons/rohdhna",
+          tokenNsid: "token.attachment:homebrew.discordant_stars.automatons/rohdhna",
       },
   ],
   packageId: refPackageId,
@@ -63,7 +63,7 @@ const factions = [{
       "1CD315F0410A9F5F00B658B8265D9474",
     "token.control:homebrew.discordant_stars/rohdhna":
       "0897DEEE4845E5160E043990A59B4403",
-    "token.attachment:homebrew.discordant-stars.automatons/rohdhna":
+    "token.attachment:homebrew.discordant_stars.automatons/rohdhna":
       "227493894C55B220A6DA81B5053F0BE0",
 };
 

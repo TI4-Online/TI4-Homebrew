@@ -2,7 +2,7 @@
 	"Type": "Generic",
 	"GUID": "9FDC78FC4F42320D12E43FABE28ACFF5",
 	"Name": "Celdauri Space Dock Token",
-	"Metadata": "token.unit:homebrew.discordant-stars.space_dock/celdauri",
+	"Metadata": "token.unit:homebrew.discordant_stars.space_dock/celdauri",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,

@@ -47,10 +47,10 @@ const factions = [{
   ],
   unpackExtra: [
     {
-      tokenNsid: "token.unit:homebrew.discordant-stars.lord_flagship/ghemina",
+      tokenNsid: "token.unit:homebrew.discordant_stars.lord_flagship/ghemina",
     },
     {
-      tokenNsid: "card.unit:homebrew.discordant-stars.lord_flagship/ghemina",
+      tokenNsid: "card.unit:homebrew.discordant_stars.lord_flagship/ghemina",
     },
   ],
   packageId: refPackageId,
@@ -65,9 +65,9 @@ const factions = [{
       "C79F084E4FE255E002FA248C38C21F46",
     "token.control:homebrew.discordant_stars/ghemina":
       "E0A73FCA45BCAF392ADBA096187B5A2C",
-   "token.unit:homebrew.discordant-stars.lord_flagship/ghemina":
+   "token.unit:homebrew.discordant_stars.lord_flagship/ghemina":
        "A5E718004224A776862A9EA185C29F55",
-   "card.unit:homebrew.discordant-stars.lord_flagship/ghemina":
+   "card.unit:homebrew.discordant_stars.lord_flagship/ghemina":
        "66B8E2EC495A4572DC2413AF355F3FE4",
 };
 

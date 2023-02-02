@@ -2,7 +2,7 @@
 	"Type": "Generic",
 	"GUID": "1D1C59194A9083D738A34C8D4AF48167",
 	"Name": "Nivyn Wound Token",
-	"Metadata": "token.system:homebrew.discordant-stars.wound/nivyn",
+	"Metadata": "token.system:homebrew.discordant_stars.wound/nivyn",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,

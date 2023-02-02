@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "657B6BE447C76A7F2AA6019407863E5B",
 	"Name": "Faction Sheet (Augers)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/augers",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/augers",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

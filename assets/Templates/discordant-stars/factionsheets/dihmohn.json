@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "6E7C28384077CE7BD08D47B48B367126",
 	"Name": "Faction Sheet (Dihmohn)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/dihmohn",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/dihmohn",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

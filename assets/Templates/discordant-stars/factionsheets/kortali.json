@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "D0DDF6FE4BB58FDB68A083823F8D2505",
 	"Name": "Faction Sheet (Kortali)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/kortali",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/kortali",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

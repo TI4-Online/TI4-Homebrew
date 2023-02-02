@@ -27,7 +27,7 @@ const factions = [{
     heroes: ["count_otto_pmay"],
   },
   promissoryNotes: [],
-  icon: "discordant-stars/faction-icons/free_systems.png",
+  icon: "discordant-stars/faction-icons/freesystems.png",
   source: "homebrew.discordant_stars",
   startingTech: ["psychoarchaeology"],
   startingUnits: {
@@ -45,7 +45,7 @@ const factions = [{
   ],
   unpackExtra: [
     {
-      tokenNsid: "token.attachment:homebrew.discordant-stars.heart_of_rebellion/free_systems",
+      tokenNsid: "token.attachment:homebrew.discordant_stars.heart_of_rebellion/free_systems",
     },
   ],
   packageId: refPackageId,
@@ -60,7 +60,7 @@ const factions = [{
       "A9D618B64928CDF02005CEA2BC0957D6",
     "token.control:homebrew.discordant_stars/free_systems":
       "A00D67E441875C12E94B10BFEB1E6E8C",
-    "token.attachment:homebrew.discordant-stars.heart_of_rebellion/free_systems":
+    "token.attachment:homebrew.discordant_stars.heart_of_rebellion/free_systems":
       "9BDEE4FE4945F8A595C896B6E6843292"
 };
 

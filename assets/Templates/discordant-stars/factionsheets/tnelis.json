@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "8A849C90477BE025EB3DA89FA077CC8B",
 	"Name": "Faction Sheet (Tnelis)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/tnelis",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/tnelis",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

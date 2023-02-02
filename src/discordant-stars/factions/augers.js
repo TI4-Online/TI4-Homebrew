@@ -31,7 +31,7 @@ const factions = [{
   startingTech: ["scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
     carrier: 1,
-    destroyers: 2,
+    destroyer: 2,
     fighter: 2,
     infantry: 4,
     pds: 1,

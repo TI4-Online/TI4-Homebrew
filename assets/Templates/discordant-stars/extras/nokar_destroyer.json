@@ -2,7 +2,7 @@
 	"Type": "Generic",
 	"GUID": "8615515545240877DDCA4D839EC45AFD",
 	"Name": "Nokar - Destroyer",
-	"Metadata": "token.unit:homebrew.discordant-stars.destroyer/nokar",
+	"Metadata": "token.unit:homebrew.discordant_stars.destroyer/nokar",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,

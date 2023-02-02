@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "B9A41EE64A7B15AE07DC3BBA470789EB",
 	"Name": "Faction Sheet (Zelian)",
-	"Metadata": "sheet.faction:homebrew.discordant-stars/zelian",
+	"Metadata": "sheet.faction:homebrew.discordant_stars/zelian",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,

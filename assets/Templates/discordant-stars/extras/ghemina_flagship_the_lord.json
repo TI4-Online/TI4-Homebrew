@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "66B8E2EC495A4572DC2413AF355F3FE4",
 	"Name": "Ghemina Flagship - The Lord",
-	"Metadata": "card.unit:homebrew.discordant-stars.lord_flagship/ghemina",
+	"Metadata": "card.unit:homebrew.discordant_stars.lord_flagship/ghemina",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
