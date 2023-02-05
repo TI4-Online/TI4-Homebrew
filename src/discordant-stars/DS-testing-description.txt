@@ -1,0 +1,66 @@
+You (every player) need
+•	TTPG installed
+•	The TI4 mod subscribed on mod.io
+•	The TI4-Homebrew mod subscribed on mod.io
+•	<the updated version in TTPG – happens automatically if you are in the main menu and logged into mod.io>
+
+How to test dedicated faction
+•	Start a game of Twilight Imperium 4th Edition.
+•	Right click the table, open "Object Library".
+•	Click "Add Packages" at the bottom.
+•	Select "TI4 Homebrew".
+•	Click "Add selected package" at the bottom left.
+•	Click "Return to library" at the bottom right.
+•	Add open the “discordant suns” folder
+•	Add the stack of faction cards
+•	Search for the desired faction and set the card faced up in a player area
+•	Press “setup faction”
+
+How to test drafting
+•	Select in the UI displayed above the table: “maps” > “milty draft” 
+•	Repeat if you did not get any/enough/the desired DS faction
+
+What to expect
+•	The faction will unpack
+	o	home system tile is set
+	o	start fleet is set on the home system tile
+	o	faction sheet is set
+	o	agent(s), commander(s), hero(es) and mech cards are played on the faction sheet
+	o	3/3/2 command tokens are placed on the faction sheet
+	o	Promissory note is placed in the hand
+	o	Starting techs are placed on the hand (if you have some “choose X from the following”, these are also present)
+	o	Extra elements (tokens, cards, dice, tiles, …) are placed in a container above the faction sheet
+	o	You command tokens have the right image
+	o	If you draw a control token form your command token container it has the right image
+	o	The technology stack in the play area contains the two faction techs
+•	In a draft is the faction displayed correct
+	o	The icon is shown
+	o	The abbreviation is correct
+•	If technology is played
+	o	The faction techs are listed as options
+	o	Their requirements are displayed correct
+	o	They have a faction icon
+	o	If you have such a technology in your play area, it is counted as fulfilling a prereq (i.e. if you have a red faction tech, the next time the tech UI opens, a red prereq. Is highlighted & the tech itself is disabled – since you have it already)
+•	(faction specific) Units
+	o	units roll combat correct
+			The #dice is correct
+			The hit value is correct
+			Ships participate in space combat
+			Ground forces participate in ground combat
+			ability rolls work properly (Anti fighter barrage / Space cannon / bombardment)
+•	Home system tiles
+	o	the space area as well as the planets are detected correct (bombardment / ground combat / space cannon defense is rolled for the units on that planet)
+	o	the tile is shown corrct in the auto roller (enlarged tile in the UI)
+
+What to NOT expect (will come later)
+
+•	Magic numbers
+	o	In combat - i.e. if this ship is in a asteroid field add +1 / one ship rolls 1 die less / …
+	o	Otherwise – i.e. PRODUCTION is #tokens in the fleet pool
+	o	For every x-token +1 commodities
+•	leader effects
+	o	any leader which changes mechanics (like rolls etc)
+•	attachments
+	o	the attachment tokens do not stick
+	o	their values are not reflected i.e. +1 resources
+•	other magic
