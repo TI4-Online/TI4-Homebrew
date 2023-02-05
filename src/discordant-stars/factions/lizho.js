@@ -126,6 +126,7 @@ const unitAttrs = [
     localeName: "unit.fighter.heavy_bomber_2",
     triggerNsid: "card.technology.unit_upgrade.lizho:homebrew.discordant_stars/heavy_bomber_2",
     bombardment: { dice: 1, hit: 8 },
+    spaceCombat: { hit: 8 },
   },
   {
     unit: "mech",

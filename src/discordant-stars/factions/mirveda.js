@@ -119,6 +119,7 @@ const unitAttrs = [
     move: 2,
     capacity: 1,
     bombardment: { dice: 1, hit: 5},
+    spaceCannon: { hit: 5 },
   },
   {
     unit: "mech",

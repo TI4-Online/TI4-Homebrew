@@ -117,14 +117,15 @@ const unitAttrs = [
     upgradeLevel: 1,
     localeName: "unit.infantry.impactor",
     triggerNsid: "card.technology.unit_upgrade.zelian:franken.discordant_stars/impactor",
-    bombardment: { dice: 1, hit: 8 },
+    bombardment: { dice: 1, hit: 9 },
   },
   {
     unit: "infantry",
     upgradeLevel: 2,
     localeName: "unit.infantry.impactor_2",
     triggerNsid: "card.technology.unit_upgrade.zelian:homebrew.discordant_stars/impactor_2",
-    bombardment: { dice: 1, hit: 7 },
+    bombardment: { dice: 1, hit: 8 },
+    groundCombat: { hit: 7 }
   },
   {
     unit: "mech",

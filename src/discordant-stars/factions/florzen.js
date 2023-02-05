@@ -107,13 +107,15 @@ const unitAttrs = [
     localeName: "unit.fighter.corsair",
     triggerNsid: "card.technology.unit_upgrade.florzen:franken.discordant_stars/corsair",
     antiFighterBarrage: { dice: 1, hit: 9 },
+    move: 1,
   },
   {
     unit: "fighter",
     upgradeLevel: 2,
     localeName: "unit.fighter.corsair_2",
     triggerNsid: "card.technology.unit_upgrade.florzen:homebrew.discordant_stars/corsair_2",
-    antiFighterBarrage: { dice: 1, hit: 8 },
+    antiFighterBarrage: { hit: 8 },
+    spaceCombat: { hit: 8 },
     move: 3,
   },
   {

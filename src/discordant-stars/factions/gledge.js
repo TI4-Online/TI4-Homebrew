@@ -118,6 +118,7 @@ const unitAttrs = [
     upgradeLevel: 2,
     localeName: "unit.pds.orion_platform_2",
     triggerNsid: "card.technology.unit_upgrade.gledge:homebrew.discordant_stars/orion_platform_2",
+    spaceCannon: { hit: 5 },
   },
   {
     unit: "mech",

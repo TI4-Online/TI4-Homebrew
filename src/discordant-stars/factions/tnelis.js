@@ -113,6 +113,7 @@ const unitAttrs = [
     upgradeLevel: 2,
     localeName: "unit.destroyer.blockade_runner_2",
     triggerNsid: "card.technology.unit_upgrade.tnelis:homebrew.discordant_stars/blockade_runner_2",
+    spaceCombat: { hit: 8 },
     antiFighterBarrage: { dice: 4, hit: 6 },
   },
   {

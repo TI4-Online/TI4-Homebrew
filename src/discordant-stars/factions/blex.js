@@ -115,6 +115,7 @@ const unitAttrs = [
     upgradeLevel: 2,
     localeName: "unit.fighter.vector_2",
     triggerNsid: "card.technology.unit_upgrade.blex:homebrew.discordant_stars/vector_2",
+    spaceCombat: { hit: 8 },
     move: 3,
   },
   {

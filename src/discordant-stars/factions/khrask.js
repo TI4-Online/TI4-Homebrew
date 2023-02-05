@@ -106,7 +106,8 @@ const unitAttrs = [
     upgradeLevel: 1,
     localeName: "unit.cruiser.shattered_sky",
     triggerNsid: "card.technology.unit_upgrade.khrask:franken.discordant_stars/shattered_sky",
-    bombardment: { dice: 1, hit: 7 },
+    capacity: 1,
+    bombardment: { dice: 1, hit: 8 },
   },
   {
     unit: "cruiser",
@@ -114,6 +115,8 @@ const unitAttrs = [
     localeName: "unit.cruiser.shattered_sky_2",
     triggerNsid: "card.technology.unit_upgrade.khrask:homebrew.discordant_stars/shattered_sky_2",
     bombardment: { dice: 1, hit: 6 },
+    spaceCombat: { hit: 6 },
+    capacity: 2
   },
   {
     unit: "mech",

@@ -118,6 +118,8 @@ const unitAttrs = [
     localeName: "unit.destroyer.sabre_2",
     triggerNsid: "card.technology.unit_upgrade.nokar:homebrew.discordant_stars/sabre_2",
     spaceCombat: { dice: 1, hit: 7 },
+    antiFighterBarrage: { dice: 3, hit: 6 },
+    move: 3,
   },
   {
     unit: "mech",
