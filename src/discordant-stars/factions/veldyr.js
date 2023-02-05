@@ -126,6 +126,7 @@ const unitAttrs = [
     upgradeLevel: 2,
     localeName: "unit.dreadnought.lancer_dreadnought_2",
     triggerNsid: "card.technology.unit_upgrade.veldyr:homebrew.discordant_stars/lancer_dreadnought_2",
+    move: 2,
     spaceCannon: { dice: 1, hit: 5 },
   },
   {

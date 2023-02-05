@@ -105,12 +105,14 @@ const unitAttrs = [
     upgradeLevel: 1,
     localeName: "unit.infantry.unholy_abomination",
     triggerNsid: "card.technology.unit_upgrade.cymiae:franken.discordant_stars/unholy_abomination",
+    spaceCombat: { hit: 5 },
   },
   {
     unit: "infantry",
     upgradeLevel: 2,
     localeName: "unit.infantry.unholy_abomination_2",
     triggerNsid: "card.technology.unit_upgrade.cymiae:homebrew.discordant_stars/unholy_abomination_2",
+    spaceCombat: { hit: 4 },
   },
   {
     unit: "mech",

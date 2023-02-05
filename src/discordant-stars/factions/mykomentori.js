@@ -132,12 +132,14 @@ const unitAttrs = [
     upgradeLevel: 1,
     localeName: "unit.space_dock.mycelium_ring",
     triggerNsid: "card.technology.unit_upgrade.mykomentori:franken.discordant_stars/mycelium_ring",
+    planetaryShield: true,
   },
   {
     unit: "space_dock",
     upgradeLevel: 2,
     localeName: "unit.space_dock.mycelium_ring_2",
     triggerNsid: "card.technology.unit_upgrade.mykomentori:homebrew.discordant_stars/mycelium_ring_2",
+    planetaryShield: true,
   },
   {
     unit: "mech",

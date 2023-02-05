@@ -119,13 +119,20 @@ const unitAttrs = [
     production: 5,
     capacity: 4,
     bombardment: { dice: 0, hit: 0 },
+    move: 0,
+    sustainDamage: false,
   },
   {
     unit: "war_sun",
     upgradeLevel: 2,
     localeName: "unit.war_sun.terrafactory_2",
     triggerNsid: "card.technology.unit_upgrade.rohdhna:homebrew.discordant_stars/terrafactory_2",
-    production: 5
+    production: 5,
+    capacity: 6,
+    sustainDamage: true,
+    bombardment: { dice: 3, hit: 3 },
+    move: 2,
+    spaceCombat: { dice: 3, hit: 3 },
   },
   {
     unit: "mech",
