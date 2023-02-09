@@ -149,7 +149,38 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  {
+      isCombat: true,
+      localeName: "unit_modifier.name.rule_of_two",
+      localeDescription: "unit_modifier.desc.rule_of_two",
+      owner: "self",
+      priority: "adjust",
+      triggerFactionAbility: "rule_of_two",
+      filter: (auxData) => {
+        return (
+          auxData.rollType === "spaceCombat"
+        );
+      },
+      applyAll: (unitAttrsSet, auxData) => {
+        debugger;
+
+        const nonFighters = auxData.plastic
+          .filter(plastic => {
+            const unitType = plastic.unit;
+            const isShip = unitAttrsSet.get(plastic.unit).raw.ship;
+            return unitType !== "fighter" && isShip;
+          });
+
+        const unitType = nonFighters[0].unit;
+
+        if (!(nonFighters.length === 2 && unitType === nonFighters[1].unit)) {
+          return; // not two non-fighter units of the same unit type 
+        }
+
+        unitAttrsSet.get(unitType).raw.spaceCombat.hit -= 2;
+      },
+  },];
 
 console.log("DISCORDANT STARS ADDING GHEMINA");
 world.TI4.homebrew.inject({
