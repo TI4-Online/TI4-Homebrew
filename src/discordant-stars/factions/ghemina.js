@@ -158,13 +158,9 @@ const unitModifiers = [
       priority: "adjust",
       triggerFactionAbility: "rule_of_two",
       filter: (auxData) => {
-        return (
-          auxData.rollType === "spaceCombat"
-        );
+        return (auxData.rollType === "spaceCombat");
       },
       applyAll: (unitAttrsSet, auxData) => {
-        debugger;
-
         const nonFighters = auxData.plastic
           .filter(plastic => {
             const unitType = plastic.unit;
