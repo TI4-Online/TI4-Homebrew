@@ -63,11 +63,7 @@
 	},
 	"CardMetadata":
 	{
-		"2": "card.lizho:homebrew.discordant_stars/minefields",
-		"3": "card.lizho:homebrew.discordant_stars/gravitic_inhibitor",
-		"5": "card.axis:homebrew.discordant_stars/carrier.2",
-		"6": "card.axis:homebrew.discordant_stars/dreadnought.1",
-		"7": "card.axis:homebrew.discordant_stars/dreadnought.2"
+		"0": "card.ghoti:homebrew.discordant_stars/ghoti_legendary_planet"
 	},
 	"CardTags":
 	{

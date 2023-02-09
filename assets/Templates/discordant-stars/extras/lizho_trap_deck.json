@@ -57,20 +57,17 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 4, 1, 2, 3, 4 ],
+	"Indices": [ 0, 1, 2, 3, 4 ],
 	"CardNames":
 	{
 	},
 	"CardMetadata":
 	{
-		"0": "card.axis:homebrew.discordant_stars/destroyers.1",
+		"0": "card.lizho:homebrew.discordant_stars/interference_grid",
 		"1": "card.lizho:homebrew.discordant_stars/account_siphon",
 		"2": "card.lizho:homebrew.discordant_stars/minefields",
 		"3": "card.lizho:homebrew.discordant_stars/gravitic_inhibitor",
-		"4": "card.lizho:homebrew.discordant_stars/interference_grid",
-		"5": "card.axis:homebrew.discordant_stars/carrier.2",
-		"6": "card.axis:homebrew.discordant_stars/dreadnought.1",
-		"7": "card.axis:homebrew.discordant_stars/dreadnought.2"
+		"4": "card.lizho:homebrew.discordant_stars/interference_grid"
 	},
 	"CardTags":
 	{
