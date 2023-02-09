@@ -1,7 +1,7 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-  "faction.abbr.bentor": "bentor",
+  "faction.abbr.bentor": "Bentor",
   "faction.full.bentor": "The Bentor Conglomerate",
   "planet.benc": "Benc",
   "planet.hau": "Hau",
