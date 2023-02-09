@@ -74,11 +74,11 @@
 			},
 			"Rotation":
 			{
-				"X": -180,
+				"X": 180,
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tokens/faction/ghemina_flagship_the_lord.back.png",
+			"Texture": "discordant-stars/extras/ghemina_flagship_the_lord.back.png",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
