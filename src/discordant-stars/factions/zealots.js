@@ -9,6 +9,8 @@ const localeStrings = {
   "technology.name.pilgrimage_beacons": "Pilgrimage Beacons",
   "unit.flagship.reckoning": "Reckoning",
   "unit.mech.templar": "Templar",
+  "unit_modifier.desc.reckoning": "+1 to SPACE COMBAT rolls for each unit upgrade technology the opponent owns.",
+  "unit_modifier.desc.templar": "+1 to unit combat rolls for each faction technology the opponent owns.",
 };
 
 
@@ -94,6 +96,7 @@ const unitAttrs = [
     unit: "flagship",
     upgradeLevel: 1,
     localeName: "unit.flagship.reckoning",
+    unitAbility: "unit.flagship.reckoning",
     triggerNsid:
       "card.technology.unit_upgrade.zealots:franken.discordant_stars/reckoning",
     spaceCombat: { dice: 2, hit: 7 },
@@ -107,7 +110,69 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+    {
+        // "+1 to SPACE COMBAT rolls for each enemy unit upgrade",
+        isCombat: true,
+        localeName: "unit.flagship.reckoning",
+        localeDescription: "unit_modifier.desc.reckoning",
+        triggeringUnitAbility: "unit.flagship.reckoning",
+        owner: "self",
+        priority: "adjust",
+        filter: (auxData) => {
+            return (
+                auxData.rollType === "spaceCombat" &&
+                auxData.self.has("flagship")
+            );
+        },
+        applyAll: (unitAttrsSet, auxData) => {
+            let hitModifier = 0;
+            const opponentPlayerSlot = auxData.opponent.playerSlot;
+            if (opponentPlayerSlot) {
+                for (const obj of world.getAllObjects()) {
+                    const nsid = world.TI4.objectNamespace.getNsid(obj);
+                    const owner = obj.getOwningPlayerSlot();
+                    if (owner === opponentPlayerSlot && nsid.startsWith("card.technology.unit.")) {
+                        hitModifier++;
+                    }
+                }
+            }
+
+            unitAttrsSet.get("flagship").raw.spaceCombat.hit -= hitModifier;
+        },
+    },
+    {
+        // "+1 to SPACE COMBAT rolls for each enemy tech ",
+        isCombat: true,
+        localeName: "unit.mech.templar",
+        localeDescription: "unit_modifier.desc.reckoning",
+        triggeringUnitAbility: "unit.mech.templar",
+        owner: "self",
+        priority: "adjust",
+        filter: (auxData) => {
+            return (
+                auxData.rollType === "spaceCombat" &&
+                auxData.self.has("mech")
+            );
+        },
+        applyAll: (unitAttrsSet, auxData) => {
+            let hitModifier = 0;
+            const opponentPlayerSlot = auxData.opponent.playerSlot;
+            const opponentFaction = auxData.opponent.faction;
+            if (opponentPlayerSlot) {
+                for (const obj of world.getAllObjects()) {
+                    const nsid = world.TI4.objectNamespace.getNsid(obj);
+                    const owner = obj.getOwningPlayerSlot();
+                    if (owner === opponentPlayerSlot && nsid.startsWith("card.technology.") && nsid.includes(opponentFaction)) {
+                        hitModifier++;
+                    }
+                }
+            }
+
+            unitAttrsSet.get("mech").raw.spaceCombat.hit -= hitModifier;
+        },
+    },
+];
 
 console.log("DISCORDANT STARS ADDING ZEALOTS");
 world.TI4.homebrew.inject({
