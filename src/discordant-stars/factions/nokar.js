@@ -9,6 +9,7 @@ const localeStrings = {
   "unit.destroyer.sabre_2": "Sabre 2",
   "unit.flagship.annah_regia": "Annah Regia",
   "unit.mech.freelance_outfit": "Freelance Outfit",
+  "unit_modifier.desc.annah_regia": "NOT YET APPLIED!!! +1 to SPACE COMBAT for each 2 destroyers owned",
 };
 
 
@@ -129,7 +130,28 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  {
+    isCombat: true,
+    localeName: "unit.flagship.annah_regia",
+    localeDescription: "unit_modifier.desc.annah_regia",
+    triggerUnitAbility: "unit.flagship.annah_regia",
+    owner: "self",
+    priority: "adjust",
+    filter: (auxData) => {
+      return (
+          auxData.rollType === "spaceCombat" &&
+          auxData.self.has("flagship")
+      );
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      let destroyerCount = 0;
+
+      // find all plastics
+
+      unitAttrsSet.get("flagship").raw.spaceCombat.hit -= Math.floor(destroyerCount/2);
+    },
+  },];
 
 console.log("DISCORDANT STARS ADDING NOKAR");
 world.TI4.homebrew.inject({

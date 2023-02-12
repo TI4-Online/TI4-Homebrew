@@ -10,6 +10,7 @@ const localeStrings = {
   "unit.mech.javelin": "Javelin",
   "unit.pds.gauss_cannon": "Gauss Cannon",
   "unit.pds.gauss_cannon_2": "Gauss Cannon 2",
+  "unit_modifier.desc.javelin": "For every 2 unit upgrade technologies you own, apply +1 to the result of this unit's combat rolls",
 };
 
 
@@ -124,12 +125,43 @@ const unitAttrs = [
   {
     unit: "mech",
     upgradeLevel: 1,
+    unitAbility: "unit.mech.javelin",
     localeName: "unit.mech.javelin",
     triggerNsid: "card.leader.mech.mirveda:homebrew.discordant_stars/javelin",
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+    {
+        isCombat: true,
+        localeName: "unit.mech.javelin",
+        localeDescription: "unit_modifier.desc.javelin",
+        triggerUnitAbility: "unit.mech.javelin",
+        owner: "self",
+        priority: "adjust",
+        filter: (auxData) => {
+            return (
+                auxData.rollType === "spaceCombat" &&
+                auxData.self.has("mech")
+            );
+        },
+        applyAll: (unitAttrsSet, auxData) => {
+          /*
+            let unitUpgradeCount = 0;
+            const selfPlayerSlot = auxData.self.playerSlot;
+            if (selfPlayerSlot) {
+                for (const obj of world.getAllObjects()) {
+                    const nsid = world.TI4.objectNamespace.getNsid(obj);
+                    const owner = obj.getOwningPlayerSlot();
+                    if (owner === selfPlayerSlot && nsid.startsWith("card.technology.unit.")) {
+                        unitUpgradeCount++;
+                    }
+                }
+            }
+
+            unitAttrsSet.get("mech").raw.spaceCombat.hit -= Math.floor(unitUpgradeCount/2);*/
+        },
+    },];
 
 console.log("DISCORDANT STARS ADDING MIRVEDA");
 world.TI4.homebrew.inject({

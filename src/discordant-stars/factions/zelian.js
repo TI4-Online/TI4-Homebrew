@@ -10,6 +10,9 @@ const localeStrings = {
   "unit.infantry.impactor": "Impactor",
   "unit.infantry.impactor_2": "Impactor 2",
   "unit.mech.collider": "Collider",
+  "unit_modifier.desc.world-cracker": "NOT YET APPLIED!!! +1 die for each asteroid field adjacent to this unit",
+  "unit_modifier.name.zelian_b": "Zelian B",
+  "unit_modifier.desc.zelian_b": "Dreadnoughts and War Suns without ANTI-FIGHTER BARRAGE gain ANTI-FIGHTER BARRAGE 5",
 };
 
 
@@ -106,6 +109,7 @@ const unitAttrs = [
     unit: "flagship",
     upgradeLevel: 1,
     localeName: "unit.flagship.world-cracker",
+    unitAbility: "unit.flagship.world-cracker",
     triggerNsid:
       "card.technology.unit_upgrade.zelian:franken.discordant_stars/world-cracker",
     spaceCombat: { dice: 1, hit: 5 },
@@ -135,7 +139,53 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  {
+    // "space combat and abilities roll 1 additional die for each adjacent asteroid field",
+    isCombat: true,
+    localeName: "unit.flagship.world-cracker",
+    localeDescription: "unit_modifier.desc.world-cracker",
+    owner: "self",
+    priority: "adjust",
+    triggerUnitAbility: "unit.flagship.world-cracker",
+    filter: (auxData) => {
+      return auxData.self.has("flagship");
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      debugger;
+      const adjacentSystems = []; // get the adjacent systems somehow
+      const asteroidFields = adjacentSystems.filter(system => {
+        return system.anomalies.includes("asteroid field");
+      });
+      unitAttrsSet.get("flagship").raw.spaceCombat.dice += asteroidFields;
+    },
+  },
+  {
+    // "Dreadnoughts and War Suns without ANTI-FIGHTER BARRAGE gain ANTI-FIGHTER BARRAGE 5",
+    isCombat: true,
+    localeName: "unit_modifier.name.zelian_b",
+    localeDescription: "unit_modifier.desc.zelian_b",
+    owner: "self",
+    priority: "adjust",
+    triggerNsids: [
+      "card.leader.commander.zelian:homebrew.discordant_stars/zelian_b",
+      //"card.alliance:homebrew/zelian_b",
+    ],
+    filter: (auxData) => {
+      return (
+          auxData.rollType === "antiFighterBarrage"
+      );
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      if (unitAttrsSet.get("dreadnought") && !unitAttrsSet.get("dreadnought").raw.antiFighterBarrage) {
+        unitAttrsSet.get("dreadnought").raw.antiFighterBarrage = { dice: 1, hit: 5 };
+      }
+      if (unitAttrsSet.get("war_sun") && !unitAttrsSet.get("war_sun").raw.antiFighterBarrage) {
+        unitAttrsSet.get("war_sun").raw.antiFighterBarrage = { dice: 1, hit: 5 };
+      }
+    },
+  },
+];
 
 console.log("DISCORDANT STARS ADDING ZELIAN");
 world.TI4.homebrew.inject({

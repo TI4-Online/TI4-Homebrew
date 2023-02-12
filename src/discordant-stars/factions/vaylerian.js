@@ -9,6 +9,8 @@ const localeStrings = {
   "unit.cruiser.raider_2": "Raider 2",
   "unit.flagship.lost_cause": "Lost Cause",
   "unit.mech.eclipse": "Eclipse",
+  "unit_modifier.name.dyln_harthuul": "Dyln Harthuul",
+  "unit_modifier.desc.dyln_harthuul": "+1 to the move value of each of your ships and the result of each of your ships’ combat rolls",
 };
 
 
@@ -123,7 +125,36 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  {
+    // "+1 move and +1 SPACE COMBAT for the entire turn",
+    isCombat: true,
+    localeName: "unit_modifier.name.dyln_harthuul",
+    localeDescription: "unit_modifier.desc.dyln_harthuul",
+    owner: "self",
+    priority: "adjust",
+    toggleActive: true,
+    triggerNsids: [
+      "card.leader.hero.vaylerian:homebrew.discordant_stars/dyln_harthuul",
+    ],
+    filter: (auxData) => {
+      return (
+          auxData.rollType === "spaceCombat"
+      );
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      for (const unitAttrs of unitAttrsSet.values()) {
+        if (unitAttrs.raw.ship) {
+          if (unitAttrs.raw.spaceCombat) {
+            unitAttrs.raw.spaceCombat.hit -= 1;
+          }
+          if (unitAttrs.raw.move) {
+            unitAttrs.raw.move += 1;
+          }
+        }
+      }
+    },
+  },];
 
 console.log("DISCORDANT STARS ADDING VAYLERIAN");
 world.TI4.homebrew.inject({

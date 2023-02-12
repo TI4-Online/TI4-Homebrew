@@ -10,6 +10,7 @@ const localeStrings = {
   "technology.name.covert_strike_teams": "Covert Strike Teams",
   "unit.flagship.vox": "Vox",
   "unit.mech.liberator": "Liberator",
+  "unit_modifier.desc.vox": "When this unit makes a combat roll, it rolls 1 additional die for each planet in this system of any single trait.",
 };
 
 const factions = [{
@@ -104,7 +105,8 @@ const unitAttrs = [
     upgradeLevel: 1,
     localeName: "unit.flagship.vox",
     triggerNsid:
-      "card.technology.unit_upgrade.free_systems:franken.discordant_stars/vox",
+    "card.technology.unit_upgrade.free_systems:franken.discordant_stars/vox",
+    unitAbility: "unit.flagship.vox",
     spaceCombat: { dice: 2, hit: 7 },
   },
   {
@@ -115,7 +117,37 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  {  // +1 dice to all COMBAT rolls for #planets of any trait in the system
+    isCombat: true,
+    localeName: "unit.flagship.vox",
+    localeDescription: "unit_modifier.desc.vox",
+    owner: "self",
+    priority: "adjust",
+    triggerUnitAbility: "unit.flagship.vox",
+    filter: (auxData) => {
+      return (
+        auxData.rollType === "spaceCombat" && auxData.self.has("flagship")
+      );
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      let traitCount = {
+        "cultural": 0,
+        "hazardous": 0,
+        "industrial": 0,
+      };
+      debugger;
+      auxData.activeSystem.planets.forEach(function (planet) {
+        planet.traits.forEach(trait => {
+          traitCount[trait] += 1;
+        });
+      });
+
+      const additionalDice = Math.max(traitCount["cultural"], traitCount["hazardous"], traitCount["industrial"]);
+      unitAttrsSet.get("flagship").raw.spaceCombat.dice += additionalDice;
+    },  
+    // TODO (RM/button) covert strike teams - Ambush did it with a button, but there is no registration API yet
+  },];
 
 console.log("DISCORDANT STARS ADDING FREE SYSTEMS");
 world.TI4.homebrew.inject({

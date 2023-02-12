@@ -50,7 +50,7 @@
 			},
 			"Texture": "discordant-stars/tokens/faction/ghemina.jpg",
 			"NormalMap": "",
-			"ExtraMap": "",
+			"ExtraMap": "ti4/faction_x.png",
 			"ExtraMap2": "",
 			"IsTransparent": false,
 			"CastShadow": true,

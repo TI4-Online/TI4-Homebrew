@@ -9,6 +9,7 @@ const localeStrings = {
   "unit.destroyer.blockade_runner_2": "Blockade Runner 2",
   "unit.flagship.principia_aneris": "Principia Aneris",
   "unit.mech.daedalon": "Daedalon",
+  "unit_modifier.desc.principia_aneris": "NOT YET APPLIED!!! 1 ship in this system, during this combat round rolls 1 less combat die",
 };
 
 
@@ -96,9 +97,10 @@ const unitAttrs = [
     unit: "flagship",
     upgradeLevel: 1,
     localeName: "unit.flagship.principia_aneris",
+    unitAbility: "unit.flagship.principia_aneris",
     triggerNsid:
       "card.technology.unit_upgrade.tnelis:franken.discordant_stars/principia_aneris",
-    spaceCombat: { dice: 9, hit: 4 },
+    spaceCombat: { dice: 4, hit: 9 },
     move: 2,
   },
   {
@@ -124,7 +126,40 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  {
+    // "-1 die to a single SPACE COMBAT roll of the opponent",
+    isCombat: true,
+    localeName: "unit.flagship.principia_aneris",
+    localeDescription: "unit_modifier.desc.principia_aneris",
+    triggerUnitAbility: "unit.flagship.principia_aneris",
+    owner: "any",
+    priority: "adjust",
+    filter: (auxData) => {
+      return auxData.rollType === "spaceCombat";
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      /*
+      let best = false;
+      for (const unitAttrs of unitAttrsSet.values()) {
+        if (
+            unitAttrs.raw.spaceCombat &&
+            auxData.self.has(unitAttrs.raw.unit)
+        ) {
+          if (
+              !best ||
+              unitAttrs.raw.spaceCombat.hit < best.raw.spaceCombat.hit
+          ) {
+            best = unitAttrs;
+          }
+        }
+      }
+      if (best && best.raw.spaceCombat.dice > 0) {
+        best.raw.spaceCombat.dice -= 1;
+      }*/
+    },
+  },
+];
 
 console.log("DISCORDANT STARS ADDING TNELIS");
 world.TI4.homebrew.inject({

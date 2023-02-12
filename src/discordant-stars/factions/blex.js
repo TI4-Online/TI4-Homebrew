@@ -9,6 +9,8 @@ const localeStrings = {
   "unit.fighter.vector": "Vector",
   "unit.fighter.vector_2": "Vector 2",
   "unit.mech.pustule": "Pustule",
+  "unit_modifier.name.blight": "Blight",
+  "unit_modifier.desc.blight": "NOT YET APPLIED!!! -1 to the results of other players' combat rolls during the first round of combat in systems that contain Blight tokens" ,
 };
 
 
@@ -126,7 +128,55 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+function containsBlightToken() {
+    // check for blight token   
+    const system = auxData.self.activeSystem;
+    if (!system) {
+      return;
+    }
+    const blightHexes = world.getAllObjects().filter(obj => {
+      const nsid = ObjectNamespace.getNsid(obj);
+      if (nsid !== "token.system:homebrew.discordant_stars.blight/blex") {
+        return false; // no blight token
+      }
+      if (false /* TODO obj.isMech() && obj.getPlayerOwner() === blexPlayer */) {
+        return false; // no pustule mech
+      }
+    }).map(gameObject => {
+      return 0; /* TODO Hex.fromPosition(gameObject.getPosition()); */
+    });
+    return blightHexes.contains(system);
+}
+
+const unitModifiers = [{
+  // "-1 on other players combat rolls in the first round of combat in systems with a blight token",  
+  isCombat: true,
+  localeName: "unit_modifier.name.blight",
+  localeDescription: "unit_modifier.desc.blight",
+  owner: "any",
+  priority: "adjust",
+  triggerFactionAbility: "blight", // ??? remove to not trigger only for the owner?
+  filter: (auxData) => {
+    return auxData.rollType === "spaceCombat";
+  },
+  applyEach: (unitAttrs, auxData) => {
+    if (auxData.self.faction === "blex") {
+      return; // does not affects blex
+    }
+
+    
+    if (false) {
+      return; // check if the active system contains a mech (can be a "netral" party if the mech is on a planet!)
+    }
+    
+    if (false /* only in the first round */ && unitAttrs.raw.spaceCombat) {
+      unitAttrs.raw.spaceCombat.hit += 1;
+    }
+  },
+},
+// TODO: (RM) "biotic weapons": +1 dice for one unit with the token 
+// TODO: (RM) "promissory: shared misery": -1 for opponent on a ground combat
+];
 
 console.log("DISCORDANT STARS ADDING BLEX");
 world.TI4.homebrew.inject({
