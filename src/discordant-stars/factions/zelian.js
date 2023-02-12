@@ -10,9 +10,9 @@ const localeStrings = {
   "unit.infantry.impactor": "Impactor",
   "unit.infantry.impactor_2": "Impactor 2",
   "unit.mech.collider": "Collider",
-  "unit_modifier.desc.world-cracker": "+1 die for each asteroid field adjacent to this unit.",
+  "unit_modifier.desc.world-cracker": "NOT YET APPLIED!!! +1 die for each asteroid field adjacent to this unit",
   "unit_modifier.name.zelian_b": "Zelian B",
-  "unit_modifier.desc.zelian_b": "Dreadnoughts and War Suns without ANTI-FIGHTER BARRAGE gain ANTI-FIGHTER BARRAGE 5.",
+  "unit_modifier.desc.zelian_b": "Dreadnoughts and War Suns without ANTI-FIGHTER BARRAGE gain ANTI-FIGHTER BARRAGE 5",
 };
 
 
@@ -152,6 +152,7 @@ const unitModifiers = [
       return auxData.self.has("flagship");
     },
     applyAll: (unitAttrsSet, auxData) => {
+      debugger;
       const adjacentSystems = []; // get the adjacent systems somehow
       const asteroidFields = adjacentSystems.filter(system => {
         return system.anomalies.includes("asteroid field");

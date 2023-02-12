@@ -9,6 +9,8 @@ const localeStrings = {
   "unit.cruiser.raider_2": "Raider 2",
   "unit.flagship.lost_cause": "Lost Cause",
   "unit.mech.eclipse": "Eclipse",
+  "unit_modifier.name.dyln_harthuul": "Dyln Harthuul",
+  "unit_modifier.desc.dyln_harthuul": "+1 to the move value of each of your ships and the result of each of your ships’ combat rolls",
 };
 
 
@@ -142,8 +144,13 @@ const unitModifiers = [
     },
     applyAll: (unitAttrsSet, auxData) => {
       for (const unitAttrs of unitAttrsSet.values()) {
-        if (unitAttrs.raw.ship && unitAttrs.raw.spaceCombat) {
-          unitAttrsSet.raw.spaceCannon.hit -= 1;
+        if (unitAttrs.raw.ship) {
+          if (unitAttrs.raw.spaceCombat) {
+            unitAttrs.raw.spaceCombat.hit -= 1;
+          }
+          if (unitAttrs.raw.move) {
+            unitAttrs.raw.move += 1;
+          }
         }
       }
     },

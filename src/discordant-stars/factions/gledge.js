@@ -130,7 +130,7 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [{  // +1 dice to all COMBAT rolls for #planets of any trait in the system
+const unitModifiers = [{
   isCombat: true,
   localeName: "unit.flagship.beg_bersha",
   localeDescription: "unit_modifier.desc.beg_bersha",
@@ -138,8 +138,6 @@ const unitModifiers = [{  // +1 dice to all COMBAT rolls for #planets of any tra
   priority: "adjust",
   triggerUnitAbility: "unit.flagship.beg_bersha",
   filter: (auxData) => {
-    console.log("gledge flagship modifier - filter!")
-    debugger;
     return auxData.self.has("flagship");
   },
   applyAll: (unitAttrsSet, auxData) => {

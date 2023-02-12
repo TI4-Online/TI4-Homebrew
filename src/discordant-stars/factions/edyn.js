@@ -10,6 +10,7 @@ const localeStrings = {
   "technology.name.encrypted_trade_hub": "encrypted_trade_hub",
   "unit.flagship.kaliburn": "Kaliburn",
   "unit.mech.runebearer": "runebearer",
+  "unit_modifier.desc.kaliburn": "+1 to all COMBAT rolls for each law in game",
 };
 
 
@@ -120,12 +121,11 @@ const unitModifiers = [
       );
     },
     applyAll: (unitAttrsSet, auxData) => {
-      debugger;
-      const lawCount = world.getAllObjects().filter(obj => {
+      /*const lawCount = world.getAllObjects().filter(obj => {
         const nsid = ObjectNamespace.getNsid(obj); return nsid.startsWith("card.agenda:") && obj.isFaceUp && obj.isFaceUp();
       }).length;
       //TODO check that no single discarded law / other cards are counted
-      unitAttrsSet.get("flagship").raw.spaceCombat.hit -= lawCount;
+      unitAttrsSet.get("flagship").raw.spaceCombat.hit -= lawCount;*/
     },
   },];
 
