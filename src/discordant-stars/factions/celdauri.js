@@ -79,7 +79,7 @@ const technologies = [{
     requirements: { Yellow: 2 },
     abbrev: " TP II",
     faction: "celdauri",
-    unitPosition: 0,
+    unitPosition: 11,
   },
 ];
 

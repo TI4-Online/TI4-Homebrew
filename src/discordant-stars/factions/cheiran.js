@@ -83,7 +83,7 @@ const technologies = [{
     requirements: { Blue: 2, Yellow: 1 },
     abbrev: " CH II",
     faction: "cheiran",
-    unitPosition: 0,
+    unitPosition: 4,
   },
 ];
 

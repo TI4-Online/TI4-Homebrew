@@ -86,7 +86,7 @@ const technologies = [{
     requirements: { Green: 2 },
     abbrev: " IM II",
     faction: "zelian",
-    unitPosition: 0,
+    unitPosition: 10,
   },
 ];
 

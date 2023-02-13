@@ -78,7 +78,7 @@ const technologies = [{
     abbrev: " VE II",
     source: "homebrew.discordant_stars",
     faction: "blex",
-    unitPosition: 0,
+    unitPosition: 9,
   },
 ];
 

@@ -78,7 +78,7 @@ const technologies = [{
     requirements: { Red: 2 },
     abbrev: " SB II",
     faction: "nokar",
-    unitPosition: 0,
+    unitPosition: 5,
   },
 ];
 
