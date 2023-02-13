@@ -10,6 +10,7 @@ const localeStrings = {
   "technology.name.encrypted_trade_hub": "encrypted_trade_hub",
   "unit.flagship.kaliburn": "Kaliburn",
   "unit.mech.runebearer": "runebearer",
+  "unit_modifier.desc.kaliburn": "+1 to all COMBAT rolls for each law in game",
 };
 
 
@@ -95,6 +96,7 @@ const unitAttrs = [
     localeName: "unit.flagship.kaliburn",
     triggerNsid:
       "card.technology.unit_upgrade.edyn:franken.discordant_stars/kaliburn",
+    unitAbility: "unit.flagship.kaliburn",
     spaceCombat: { dice: 2, hit: 7 },
   },
   {
@@ -105,7 +107,27 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  {  // +1 to all COMBAT rolls for each law in game
+    isCombat: true,
+    localeName: "unit.flagship.klaiburn",
+    localeDescription: "unit_modifier.desc.kaliburn",
+    owner: "self",
+    priority: "adjust",
+    triggerUnitAbility: "unit.flagship.kaliburn",
+    filter: (auxData) => {
+      return (
+        auxData.rollType === "spaceCombat"
+      );
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      /*const lawCount = world.getAllObjects().filter(obj => {
+        const nsid = ObjectNamespace.getNsid(obj); return nsid.startsWith("card.agenda:") && obj.isFaceUp && obj.isFaceUp();
+      }).length;
+      //TODO check that no single discarded law / other cards are counted
+      unitAttrsSet.get("flagship").raw.spaceCombat.hit -= lawCount;*/
+    },
+  },];
 
 console.log("DISCORDANT STARS ADDING EDYN");
 world.TI4.homebrew.inject({

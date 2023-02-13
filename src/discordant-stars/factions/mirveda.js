@@ -10,7 +10,7 @@ const localeStrings = {
   "unit.mech.javelin": "Javelin",
   "unit.pds.gauss_cannon": "Gauss Cannon",
   "unit.pds.gauss_cannon_2": "Gauss Cannon 2",
-  "unit_modifier.desc.javelin": "For every 2 unit upgrade technologies you own, apply +1 to the result of this unit's combat rolls.",
+  "unit_modifier.desc.javelin": "For every 2 unit upgrade technologies you own, apply +1 to the result of this unit's combat rolls",
 };
 
 
@@ -133,11 +133,10 @@ const unitAttrs = [
 
 const unitModifiers = [
     {
-        // "+1 to SPACE COMBAT rolls for every 2 own unit upgrades",
         isCombat: true,
         localeName: "unit.mech.javelin",
         localeDescription: "unit_modifier.desc.javelin",
-        triggeringUnitAbility: "unit.mech.javelin",
+        triggerUnitAbility: "unit.mech.javelin",
         owner: "self",
         priority: "adjust",
         filter: (auxData) => {
@@ -147,6 +146,7 @@ const unitModifiers = [
             );
         },
         applyAll: (unitAttrsSet, auxData) => {
+          /*
             let unitUpgradeCount = 0;
             const selfPlayerSlot = auxData.self.playerSlot;
             if (selfPlayerSlot) {
@@ -159,7 +159,7 @@ const unitModifiers = [
                 }
             }
 
-            unitAttrsSet.get("mech").raw.spaceCombat.hit -= Math.floor(unitUpgradeCount/2);
+            unitAttrsSet.get("mech").raw.spaceCombat.hit -= Math.floor(unitUpgradeCount/2);*/
         },
     },];
 

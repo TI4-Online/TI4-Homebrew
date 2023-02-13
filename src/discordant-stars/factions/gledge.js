@@ -9,6 +9,7 @@ const localeStrings = {
   "unit.mech.exodriller": "Exodriller",
   "unit.pds.orion_platform": "Orion Platform",
   "unit.pds.orion_platform_2": "Orion Platform 2",
+  "unit_modifier.desc.beg_bersha": "When this unit makes a combat or ability roll, it rolls 1 additional die for each of your mechs in or adjacent to this system.",
 };
 
 
@@ -102,6 +103,7 @@ const unitAttrs = [
     unit: "flagship",
     upgradeLevel: 1,
     localeName: "unit.flagship.beg_bersha",
+    unitAbility: "unit.flagship.beg_bersha",
     triggerNsid:
       "card.technology.unit_upgrade.gledge:franken.discordant_stars/beg_bersha",
     spaceCombat: { dice: 1, hit: 7 },
@@ -128,7 +130,33 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [{
+  isCombat: true,
+  localeName: "unit.flagship.beg_bersha",
+  localeDescription: "unit_modifier.desc.beg_bersha",
+  owner: "self",
+  priority: "adjust",
+  triggerUnitAbility: "unit.flagship.beg_bersha",
+  filter: (auxData) => {
+    return auxData.self.has("flagship");
+  },
+  applyAll: (unitAttrsSet, auxData) => {
+    const units = [].concat(auxData.plastic, auxData.adjacentPlastic);
+    const ownMechCount = units.filter(unit => (unit.unit === "mech" && unit.owningPlayerSlot === auxData.self.playerSlot));
+
+    const flagshipAttrs = unitAttrsSet.get("flagship");
+    flagshipAttrs.raw.spaceCombat.dice += ownMechCount;
+    flagshipAttrs.raw.bombardment.dice += ownMechCount;
+    if (flagshipAttrs.raw.spaceCannon) {
+      flagshipAttrs.raw.spaceCannon.dice += ownMechCount;
+    }
+    if (flagshipAttrs.raw.antiFighterBarrage) {
+      flagshipAttrs.raw.antiFighterBarrage.dice += ownMechCount;
+    }
+  },
+},
+  // TODO (RM/button) covert strike teams
+];
 
 console.log("DISCORDANT STARS ADDING GLEDGE");
 world.TI4.homebrew.inject({

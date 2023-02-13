@@ -9,6 +9,7 @@ const localeStrings = {
   "unit.destroyer.sabre_2": "Sabre 2",
   "unit.flagship.annah_regia": "Annah Regia",
   "unit.mech.freelance_outfit": "Freelance Outfit",
+  "unit_modifier.desc.annah_regia": "NOT YET APPLIED!!! +1 to SPACE COMBAT for each 2 destroyers owned",
 };
 
 
@@ -131,11 +132,10 @@ const unitAttrs = [
 
 const unitModifiers = [
   {
-    // "+1 to SPACE COMBAT for each 2 destroyers owned",
     isCombat: true,
     localeName: "unit.flagship.annah_regia",
     localeDescription: "unit_modifier.desc.annah_regia",
-    triggeringUnitAbility: "unit.flagship.annah_regia",
+    triggerUnitAbility: "unit.flagship.annah_regia",
     owner: "self",
     priority: "adjust",
     filter: (auxData) => {

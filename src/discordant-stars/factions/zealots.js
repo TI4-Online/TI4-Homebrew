@@ -9,8 +9,8 @@ const localeStrings = {
   "technology.name.pilgrimage_beacons": "Pilgrimage Beacons",
   "unit.flagship.reckoning": "Reckoning",
   "unit.mech.templar": "Templar",
-  "unit_modifier.desc.reckoning": "+1 to SPACE COMBAT rolls for each unit upgrade technology the opponent owns.",
-  "unit_modifier.desc.templar": "+1 to unit combat rolls for each faction technology the opponent owns.",
+  "unit_modifier.desc.reckoning": "NOT YET APPLIED!!! +1 to SPACE COMBAT rolls for each unit upgrade technology the opponent owns.",
+  "unit_modifier.desc.templar": "NOT YET APPLIED!!! +1 to unit combat rolls for each faction technology the opponent owns.",
 };
 
 
@@ -116,7 +116,7 @@ const unitModifiers = [
         isCombat: true,
         localeName: "unit.flagship.reckoning",
         localeDescription: "unit_modifier.desc.reckoning",
-        triggeringUnitAbility: "unit.flagship.reckoning",
+        triggerUnitAbility: "unit.flagship.reckoning",
         owner: "self",
         priority: "adjust",
         filter: (auxData) => {
@@ -126,27 +126,22 @@ const unitModifiers = [
             );
         },
         applyAll: (unitAttrsSet, auxData) => {
+          debugger;
             let hitModifier = 0;
             const opponentPlayerSlot = auxData.opponent.playerSlot;
             if (opponentPlayerSlot) {
-                for (const obj of world.getAllObjects()) {
-                    const nsid = world.TI4.objectNamespace.getNsid(obj);
-                    const owner = obj.getOwningPlayerSlot();
-                    if (owner === opponentPlayerSlot && nsid.startsWith("card.technology.unit.")) {
-                        hitModifier++;
-                    }
-                }
+              //hitModifier = ...; count unit_upgrades (requires TI4.Technology.getOwnedPlayerTechnologies(opponentPlayerSlot))
             }
 
             unitAttrsSet.get("flagship").raw.spaceCombat.hit -= hitModifier;
         },
     },
     {
-        // "+1 to SPACE COMBAT rolls for each enemy tech ",
+        // "+1 to GROUND COMBAT rolls for each enemy tech",
         isCombat: true,
         localeName: "unit.mech.templar",
         localeDescription: "unit_modifier.desc.reckoning",
-        triggeringUnitAbility: "unit.mech.templar",
+        triggerUnitAbility: "unit.mech.templar",
         owner: "self",
         priority: "adjust",
         filter: (auxData) => {
@@ -159,17 +154,12 @@ const unitModifiers = [
             let hitModifier = 0;
             const opponentPlayerSlot = auxData.opponent.playerSlot;
             const opponentFaction = auxData.opponent.faction;
+            debugger;
             if (opponentPlayerSlot) {
-                for (const obj of world.getAllObjects()) {
-                    const nsid = world.TI4.objectNamespace.getNsid(obj);
-                    const owner = obj.getOwningPlayerSlot();
-                    if (owner === opponentPlayerSlot && nsid.startsWith("card.technology.") && nsid.includes(opponentFaction)) {
-                        hitModifier++;
-                    }
-                }
+              //hitModifier = ...; count faction techs (requires TI4.Technology.getOwnedPlayerTechnologies(opponentPlayerSlot))
             }
 
-            unitAttrsSet.get("mech").raw.spaceCombat.hit -= hitModifier;
+            unitAttrsSet.get("mech").raw.groundCombat.hit -= hitModifier;
         },
     },
 ];
