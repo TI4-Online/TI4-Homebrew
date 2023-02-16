@@ -12,6 +12,10 @@ const localeStrings = {
   "unit.mech.pustule": "Pustule",
   "unit_modifier.name.blight": "Blight",
   "unit_modifier.desc.blight": "-1 to the results of non-blex players' combat rolls during the first round of combat in systems that contain Blight tokens" ,
+  "unit_modifier.name.biotic_weapons": "Biotic Weapons",
+  "unit_modifier.desc.biotic_weapons": "1 of your units may roll 1 additional combat die",
+  "unit_modifier.name.shared_misery": "Shared Misery",
+  "unit_modifier.desc.shared_misery": "-1 to COMBAT rolls during this combat",
 };
 
 
@@ -180,9 +184,65 @@ const unitModifiers = [{
       unitAttrs.raw.spaceCombat.hit += 1;
     }
   },
+},{
+  // "+1 dice for one unit with the token",  
+  isCombat: true,
+  localeName: "unit_modifier.name.biotic_weapons",
+  localeDescription: "unit_modifier.desc.biotic_weapons",
+  owner: "self",
+  priority: "adjust",
+  triggerNsids: [
+    "card.technology.green.blex:homebrew.discordant_stars/biotic_weapons",
+  ],
+  filter: (auxData) => {
+    debugger;
+    return (
+      ["groundCombat", "spaceCombat"].includes(auxData.rollType) // only affects combat
+    )
+  },
+  applyAll: (unitAttrsSet, auxData) => {
+    let best = false;
+    for (const unitAttrs of unitAttrsSet.values()) {
+        if (
+            unitAttrs.raw[auxData.rollType] &&
+            auxData.self.has(unitAttrs.raw.unit)
+        ) {
+            if (
+                !best ||
+                unitAttrs.raw[auxData.rollType].hit <
+                    best.raw[auxData.rollType].hit
+            ) {
+                best = unitAttrs;
+            }
+        }
+    }
+    if (best) {
+        best.raw[auxData.rollType].extraDice =
+            (best.raw[auxData.rollType].extraDice || 0) + 1;
+    }
+  },
 },
-// TODO: (RM) "biotic weapons": +1 dice for one unit with the token 
-// TODO: (RM) "promissory: shared misery": -1 for opponent on a ground combat
+{
+    // "-1 for opponent on a ground combat",
+    isCombat: true,
+    localeName: "unit_modifier.name.shared_misery",
+    localeDescription: "unit_modifier.desc.shared_misery",
+    owner: "opponent",
+    priority: "adjust",
+    triggerNsid: "card.promissory.blex:homebrew.discordant_stars/shared_misery",
+    filter: (auxData) => {
+        return (
+            auxData.rollType === "groundCombat" && 
+            auxData.self.faction && // empty seats does not provide a faction
+            auxData.self.faction.nsidName !== "blex" // does not affects blex
+        );
+    },
+    applyEach: (unitAttrs, auxData) => {
+      if (unitAttrs.raw.groundCombat) {
+        unitAttrs.raw.groundCombat.hit += 1;
+      }
+    },
+  },
 ];
 
 console.log("DISCORDANT STARS ADDING BLEX");
