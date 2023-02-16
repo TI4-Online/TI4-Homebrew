@@ -30,7 +30,7 @@ const factions = [{
   promissoryNotes: ["gledge_base"],
   icon: "discordant-stars/faction-icons/gledge.png",
   source: "homebrew.discordant_stars",
-  startingTech: ["psychoarchaeology", "scanlink_drone_network", "ai_development_algorithm"],
+  startingTech: [], //"psychoarchaeology", "scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
     carrier: 1,
     destroyer: 1,
@@ -81,7 +81,7 @@ const technologies = [{
     requirements: { Red: 1, Yellow: 1 },
     abbrev: " OP II",
     faction: "gledge",
-    unitPosition: 0,
+    unitPosition: 6,
   },
 ];
 

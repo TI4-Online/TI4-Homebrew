@@ -84,7 +84,7 @@ const technologies = [{
     requirements: { Blue: 1, Green: 1 },
     abbrev: " HB II",
     faction: "lizho",
-    unitPosition: 0,
+    unitPosition: 9,
   },
 ];
 

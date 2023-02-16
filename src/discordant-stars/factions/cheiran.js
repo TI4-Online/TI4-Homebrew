@@ -30,7 +30,7 @@ const factions = [{
   promissoryNotes: ["carcinisation"],
   icon: "discordant-stars/faction-icons/cheiran.png",
   source: "homebrew.discordant_stars",
-  startingTech: ["magen_defense_grid", "self_assembly_routines"],
+  startingTech: [], //"magen_defense_grid", "self_assembly_routines"],
   startingUnits: {
     carrier: 1,
     destroyer: 2,
@@ -83,7 +83,7 @@ const technologies = [{
     requirements: { Blue: 2, Yellow: 1 },
     abbrev: " CH II",
     faction: "cheiran",
-    unitPosition: 0,
+    unitPosition: 4,
   },
 ];
 

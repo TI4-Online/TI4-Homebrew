@@ -28,7 +28,7 @@ const factions = [{
   promissoryNotes: ["ghoti_relay"],
   icon: "discordant-stars/faction-icons/ghoti.png",
   source: "homebrew.discordant_stars",
-  startingTech: ["gravity_drive", "sling_relay"],
+  startingTech: [], //"gravity_drive", "sling_relay"],
   startingUnits: {
     flagship: 1,
     cruiser: 1,

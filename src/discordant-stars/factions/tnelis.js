@@ -30,7 +30,7 @@ const factions = [{
   promissoryNotes: ["plots_within_plots"],
   icon: "discordant-stars/faction-icons/tnelis.png",
   source: "homebrew.discordant_stars",
-  startingTech: ["neural_motivator", "antimass_deflectors", "plasma_scoring"],
+  startingTech: [], //"neural_motivator", "antimass_deflectors", "plasma_scoring"],
   startingUnits: {
     carrier: 1,
     destroyer: 2,
@@ -75,7 +75,7 @@ const technologies = [{
     requirements: { Red: 2 },
     abbrev: " BR II",
     faction: "tnelis",
-    unitPosition: 0,
+    unitPosition: 5,
   },
 ];
 

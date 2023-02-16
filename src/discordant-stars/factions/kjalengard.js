@@ -77,7 +77,7 @@ const technologies = [{
     requirements: { Blue: 2 },
     abbrev: " SD II",
     faction: "kjalengard",
-    unitPosition: 0,
+    unitPosition: 8,
   },
 ];
 

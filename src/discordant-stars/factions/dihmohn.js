@@ -70,7 +70,7 @@ const technologies = [{
     requirements: { Blue: 2, Yellow: 1 },
     abbrev: " AE II",
     faction: "dihmohn",
-    unitPosition: 0,
+    unitPosition: 4,
   },
 ];
 

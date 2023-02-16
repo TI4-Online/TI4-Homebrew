@@ -6,11 +6,11 @@ const localeStrings = {
   "planet.zelian": "Zelian",
   "planet.gen": "Gen",
   "technology.name.shard_volley": "Shard Volley",
-  "unit.flagship.world-cracker": "World Cracker",
+  "unit.flagship.world_cracker": "World Cracker",
   "unit.infantry.impactor": "Impactor",
   "unit.infantry.impactor_2": "Impactor 2",
   "unit.mech.collider": "Collider",
-  "unit_modifier.desc.world-cracker": "NOT YET APPLIED!!! +1 die for each asteroid field adjacent to this unit",
+  "unit_modifier.desc.world_cracker": "+1 die for each asteroid field adjacent to this unit",
   "unit_modifier.name.zelian_b": "Zelian B",
   "unit_modifier.desc.zelian_b": "Dreadnoughts and War Suns without ANTI-FIGHTER BARRAGE gain ANTI-FIGHTER BARRAGE 5",
 };
@@ -45,7 +45,7 @@ const factions = [{
   },
   techs: ["shard_volley"],
   units: [
-    "world-cracker",
+    "world_cracker",
     "impactor",
     "impactor_2",
     "collider",
@@ -86,7 +86,7 @@ const technologies = [{
     requirements: { Green: 2 },
     abbrev: " IM II",
     faction: "zelian",
-    unitPosition: 0,
+    unitPosition: 10,
   },
 ];
 
@@ -97,6 +97,7 @@ const systems = [
     home: true,
     packageId: refPackageId,
     img: "discordant-stars/tiles/homeworld/tile_3215.jpg",
+    anomalies: ["asteroid field"],
     planets: [
       { localeName: "planet.gen", resources: 2, influence: 0 },
       { localeName: "planet.zelian", resources: 3, influence: 3 },
@@ -108,10 +109,10 @@ const unitAttrs = [
   {
     unit: "flagship",
     upgradeLevel: 1,
-    localeName: "unit.flagship.world-cracker",
-    unitAbility: "unit.flagship.world-cracker",
+    localeName: "unit.flagship.world_cracker",
+    unitAbility: "unit.flagship.world_cracker",
     triggerNsid:
-      "card.technology.unit_upgrade.zelian:franken.discordant_stars/world-cracker",
+      "card.technology.unit_upgrade.zelian:franken.discordant_stars/world_cracker",
     spaceCombat: { dice: 1, hit: 5 },
     antiFighterBarrage: { dice: 1, hit: 5 },
     bombardment: { dice: 1, hit: 5 },
@@ -143,21 +144,33 @@ const unitModifiers = [
   {
     // "space combat and abilities roll 1 additional die for each adjacent asteroid field",
     isCombat: true,
-    localeName: "unit.flagship.world-cracker",
-    localeDescription: "unit_modifier.desc.world-cracker",
+    localeName: "unit.flagship.world_cracker",
+    localeDescription: "unit_modifier.desc.world_cracker",
     owner: "self",
     priority: "adjust",
-    triggerUnitAbility: "unit.flagship.world-cracker",
+    triggerUnitAbility: "unit.flagship.world_cracker",
     filter: (auxData) => {
       return auxData.self.has("flagship");
     },
     applyAll: (unitAttrsSet, auxData) => {
       debugger;
-      const adjacentSystems = []; // get the adjacent systems somehow
-      const asteroidFields = adjacentSystems.filter(system => {
-        return system.anomalies.includes("asteroid field");
-      });
-      unitAttrsSet.get("flagship").raw.spaceCombat.dice += asteroidFields;
+      const adjacentTileNsids = world.TI4.Adjacency.getAdjacent(auxData.hex)
+        .map(hex => world.TI4.Hex.toPosition(hex))
+        .map(pos => world.TI4.getSystemTileObjectByPosition(pos))
+        .filter(tile => !!tile) // filter non-existing tiles (positions outside of the game setup)
+        .map(tile => tile.getTemplateMetadata());
+
+      const adjacentSystems = world.TI4.getAllSystems()
+        .filter(system => adjacentTileNsids.includes(system.tileNsid));
+
+      const asteroidFields = adjacentSystems
+        .filter(system => {
+          return system.anomalies.includes("asteroid field");
+        });
+        
+      unitAttrsSet.get("flagship").raw.antiFighterBarrage.dice += asteroidFields.length;
+      unitAttrsSet.get("flagship").raw.bombardment.dice += asteroidFields.length;
+      unitAttrsSet.get("flagship").raw.spaceCombat.dice += asteroidFields.length;
     },
   },
   {

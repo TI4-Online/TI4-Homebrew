@@ -101,7 +101,7 @@ const technologies = [{
     requirements: { Yellow: 2 },
     abbrev: " MR II",
     faction: "mykomentori",
-    unitPosition: 0,
+    unitPosition: 11,
   },
 ];
 

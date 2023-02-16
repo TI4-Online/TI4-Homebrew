@@ -29,7 +29,7 @@ const factions = [{
   promissoryNotes: ["combinatorial_bypass"],
   icon: "discordant-stars/faction-icons/kolume.png",
   source: "homebrew.discordant_stars",
-  startingTech: ["graviton_laser_system", "predictive_intelligence"],
+  startingTech: [], //"graviton_laser_system", "predictive_intelligence"],
   startingUnits: {
     carrier: 2,
     cruiser: 1,

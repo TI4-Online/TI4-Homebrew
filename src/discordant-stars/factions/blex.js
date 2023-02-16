@@ -31,7 +31,7 @@ const factions = [{
   promissoryNotes: ["shared_misery"],
   icon: "discordant-stars/faction-icons/blex.png",
   source: "homebrew.discordant_stars",
-  startingTech: ["dacxive_animators", "biostims"],
+  startingTech: [], //"dacxive_animators", "biostims"],
   startingUnits: {
     carrier: 1,
     dreadnought: 1,
@@ -78,7 +78,7 @@ const technologies = [{
     abbrev: " VE II",
     source: "homebrew.discordant_stars",
     faction: "blex",
-    unitPosition: 0,
+    unitPosition: 9,
   },
 ];
 

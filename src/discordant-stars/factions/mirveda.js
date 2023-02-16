@@ -76,7 +76,7 @@ const technologies = [{
     requirements: { Red: 1, Yellow: 1 },
     abbrev: " GC II",
     faction: "mirveda",
-    unitPosition: 0,
+    unitPosition: 6,
   },
 ];
 

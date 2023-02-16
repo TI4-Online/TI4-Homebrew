@@ -26,7 +26,7 @@ const factions = [{
     packageId: refPackageId,
     icon: "discordant-stars/faction-icons/celdauri.png",
     source: "homebrew.discordant_stars",
-    startingTech: ["antimass_deflectors", "sarween_tools", "plasma_scoring"],
+    startingTech: [], //"antimass_deflectors", "sarween_tools", "plasma_scoring"],
     startingUnits: {
         carrier: 1,
         destroyer: 1,
@@ -79,7 +79,7 @@ const technologies = [{
     requirements: { Yellow: 2 },
     abbrev: " TP II",
     faction: "celdauri",
-    unitPosition: 0,
+    unitPosition: 11,
   },
 ];
 

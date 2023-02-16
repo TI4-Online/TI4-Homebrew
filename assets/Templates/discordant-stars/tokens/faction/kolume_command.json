@@ -22,7 +22,7 @@
 		"G": 0,
 		"B": 0
 	},
-	"Flippable": false,
+	"Flippable": true,
 	"AutoStraighten": false,
 	"ShouldSnap": false,
 	"ScriptName": "",

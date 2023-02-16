@@ -88,7 +88,7 @@ const technologies = [{
     requirements: { Blue: 2, Yellow: 1 },
     abbrev: " LD II",
     faction: "veldyr",
-    unitPosition: 0,
+    unitPosition: 4,
   },
 ];
 
