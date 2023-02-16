@@ -153,12 +153,11 @@ const unitModifiers = [
       return auxData.self.has("flagship");
     },
     applyAll: (unitAttrsSet, auxData) => {
-      debugger;
       const adjacentTileNsids = world.TI4.Adjacency.getAdjacent(auxData.hex)
         .map(hex => world.TI4.Hex.toPosition(hex))
         .map(pos => world.TI4.getSystemTileObjectByPosition(pos))
-        .filter(tile => !!tile) // filter non-existing tiles (positions outside of the game setup)
-        .map(tile => tile.getTemplateMetadata());
+        .filter(tile => tile) // filter non-existing tiles (positions outside of the game setup)
+        .map(tile => ObjectNamespace.getNsid(tile));
 
       const adjacentSystems = world.TI4.getAllSystems()
         .filter(system => adjacentTileNsids.includes(system.tileNsid));

@@ -1,4 +1,5 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
+const { getBlightStatus } = require("./../scripts/blight_status");
 
 const localeStrings = {
   "faction.abbr.blex": "Blex",
@@ -10,7 +11,11 @@ const localeStrings = {
   "unit.fighter.vector_2": "Vector 2",
   "unit.mech.pustule": "Pustule",
   "unit_modifier.name.blight": "Blight",
-  "unit_modifier.desc.blight": "NOT YET APPLIED!!! -1 to the results of other players' combat rolls during the first round of combat in systems that contain Blight tokens" ,
+  "unit_modifier.desc.blight": "-1 to the results of non-blex players' combat rolls during the first round of combat in systems that contain Blight tokens" ,
+  "unit_modifier.name.biotic_weapons": "Biotic Weapons",
+  "unit_modifier.desc.biotic_weapons": "1 of your units may roll 1 additional combat die",
+  "unit_modifier.name.shared_misery": "Shared Misery",
+  "unit_modifier.desc.shared_misery": "-1 to COMBAT rolls during this combat",
 };
 
 
@@ -45,6 +50,8 @@ const factions = [{
   unpackExtra: [{
     tokenNsid: "token.system:homebrew.discordant_stars.blight/blex",
     tokenCount: 4,
+  }, {
+    tokenNsid: "token.system:homebrew.discordant_stars.blight_controller/blex",
   }]
 
 }];
@@ -60,6 +67,8 @@ const factions = [{
       "F78A93DE437BF9F76AA260A0F0D8E7F6",
     "token.system:homebrew.discordant_stars.blight/blex":
       "F8A85C7B4CE5FD661DC7DA905C80E3DF",
+    "token.system:homebrew.discordant_stars.blight_controller/blex":
+      "7CAACDB94E6E48F148DC2A951875F065"
 };
 
 const technologies = [{
@@ -128,24 +137,20 @@ const unitAttrs = [
   },
 ];
 
-function containsBlightToken() {
-    // check for blight token   
-    const system = auxData.self.activeSystem;
-    if (!system) {
-      return;
-    }
-    const blightHexes = world.getAllObjects().filter(obj => {
-      const nsid = ObjectNamespace.getNsid(obj);
-      if (nsid !== "token.system:homebrew.discordant_stars.blight/blex") {
-        return false; // no blight token
-      }
-      if (false /* TODO obj.isMech() && obj.getPlayerOwner() === blexPlayer */) {
-        return false; // no pustule mech
-      }
-    }).map(gameObject => {
-      return 0; /* TODO Hex.fromPosition(gameObject.getPosition()); */
-    });
-    return blightHexes.contains(system);
+function getFactionBySlot(slot) {
+  return world.TI4.getAllFactions().filter(f=>f.playerSlot).find(f=>Number.parseInt(f.playerSlot) === slot);
+}
+
+function getBlightHexes() {
+  return world.getAllObjects().filter(obj => {
+    const nsid = world.TI4.ObjectNamespace.getNsid(obj);
+    return nsid === "token.system:homebrew.discordant_stars.blight/blex" || nsid === "unit:pok/mech";
+  }).filter(obj => {
+      const owner = obj.getOwningPlayer();
+      return owner && getFactionBySlot(owner.getSlot()).nsidName === "blex";
+  }).map(gameObject => {
+    return world.TI4.Hex.fromPosition(gameObject.getPosition());
+  });
 }
 
 const unitModifiers = [{
@@ -155,27 +160,89 @@ const unitModifiers = [{
   localeDescription: "unit_modifier.desc.blight",
   owner: "any",
   priority: "adjust",
-  triggerFactionAbility: "blight", // ??? remove to not trigger only for the owner?
-  filter: (auxData) => {
-    return auxData.rollType === "spaceCombat";
+  toggleActive: true,
+  triggerNsids: [
+    "sheet.faction:homebrew.discordant_stars/blex",
+    "token.system:homebrew.discordant_stars.blight/blex",
+  ],
+  triggerIf: (auxData) => {
+    debugger;
+    return (
+      getBlightStatus() && // blight is active (aka first combat round)
+      ["groundCombat", "spaceCombat"].includes(auxData.rollType) && // only affects combat
+      auxData.self.faction && // empty seats does not provide a faction
+      auxData.self.faction.nsidName !== "blex" && // does not affects blex
+      getBlightHexes().includes(auxData.hex) // only in blight systems (blight token or blex mech)
+    )
   },
   applyEach: (unitAttrs, auxData) => {
-    if (auxData.self.faction === "blex") {
-      return; // does not affects blex
-    }
-
-    
-    if (false) {
-      return; // check if the active system contains a mech (can be a "netral" party if the mech is on a planet!)
+    if (unitAttrs.raw.groundCombat) {
+      unitAttrs.raw.groundCombat.hit += 1;
     }
     
-    if (false /* only in the first round */ && unitAttrs.raw.spaceCombat) {
+    if (unitAttrs.raw.spaceCombat) {
       unitAttrs.raw.spaceCombat.hit += 1;
     }
   },
+},{
+  // "+1 dice for one unit with the token",  
+  isCombat: true,
+  localeName: "unit_modifier.name.biotic_weapons",
+  localeDescription: "unit_modifier.desc.biotic_weapons",
+  owner: "self",
+  priority: "adjust",
+  triggerNsids: [
+    "card.technology.green.blex:homebrew.discordant_stars/biotic_weapons",
+  ],
+  filter: (auxData) => {
+    debugger;
+    return (
+      ["groundCombat", "spaceCombat"].includes(auxData.rollType) // only affects combat
+    )
+  },
+  applyAll: (unitAttrsSet, auxData) => {
+    let best = false;
+    for (const unitAttrs of unitAttrsSet.values()) {
+        if (
+            unitAttrs.raw[auxData.rollType] &&
+            auxData.self.has(unitAttrs.raw.unit)
+        ) {
+            if (
+                !best ||
+                unitAttrs.raw[auxData.rollType].hit <
+                    best.raw[auxData.rollType].hit
+            ) {
+                best = unitAttrs;
+            }
+        }
+    }
+    if (best) {
+        best.raw[auxData.rollType].extraDice =
+            (best.raw[auxData.rollType].extraDice || 0) + 1;
+    }
+  },
 },
-// TODO: (RM) "biotic weapons": +1 dice for one unit with the token 
-// TODO: (RM) "promissory: shared misery": -1 for opponent on a ground combat
+{
+    // "-1 for opponent on a ground combat",
+    isCombat: true,
+    localeName: "unit_modifier.name.shared_misery",
+    localeDescription: "unit_modifier.desc.shared_misery",
+    owner: "opponent",
+    priority: "adjust",
+    triggerNsid: "card.promissory.blex:homebrew.discordant_stars/shared_misery",
+    filter: (auxData) => {
+        return (
+            auxData.rollType === "groundCombat" && 
+            auxData.self.faction && // empty seats does not provide a faction
+            auxData.self.faction.nsidName !== "blex" // does not affects blex
+        );
+    },
+    applyEach: (unitAttrs, auxData) => {
+      if (unitAttrs.raw.groundCombat) {
+        unitAttrs.raw.groundCombat.hit += 1;
+      }
+    },
+  },
 ];
 
 console.log("DISCORDANT STARS ADDING BLEX");
