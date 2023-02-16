@@ -29,7 +29,7 @@ const factions = [{
   promissoryNotes: ["vaden_handshake"],
   icon: "discordant-stars/faction-icons/vaden.png",
   source: "homebrew.discordant_stars",
-  startingTech: ["neural_motivator", "antimass_deflectors", "sarween_tools"],
+  startingTech: [], //"neural_motivator", "antimass_deflectors", "sarween_tools"],
   startingUnits: {
     dreadnought: 1,
     carrier: 1,

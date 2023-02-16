@@ -30,7 +30,7 @@ const factions = [{
   promissoryNotes: ["nokar_navigator"],
   icon: "discordant-stars/faction-icons/nokar.png",
   source: "homebrew.discordant_stars",
-  startingTech: ["psychoarchaeology", "dark_energy_tap", "ai_development_algorithm"],
+  startingTech: [], //"psychoarchaeology", "dark_energy_tap", "ai_development_algorithm"],
   startingUnits: {
     carrier: 2,
     destroyer: 1,
