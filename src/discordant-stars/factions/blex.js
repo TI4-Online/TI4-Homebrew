@@ -167,7 +167,7 @@ const unitModifiers = [{
       getBlightStatus() && // blight is active (aka first combat round)
       ["groundCombat", "spaceCombat"].includes(auxData.rollType) && // only affects combat
       auxData.self.faction && // empty seats does not provide a faction
-      auxData.self.faction.nsidName !== "blexy" && // does not affects blex
+      auxData.self.faction.nsidName !== "blex" && // does not affects blex
       getBlightHexes().includes(auxData.hex) // only in blight systems (blight token or blex mech)
     )
   },
