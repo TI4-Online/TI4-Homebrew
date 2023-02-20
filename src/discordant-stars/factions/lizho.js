@@ -11,6 +11,8 @@ const localeStrings = {
   "unit.fighter.heavy_bomber_2": "Heavy Bomber 2",
   "unit.flagship.silence_of_stars": "Silence of Stars",
   "unit.mech.oro-zhin_elite": "Oro-Zhin Elite",
+  "unit.unit_modifier.name.interference_grid": "Interference Grid",
+  "unit_modifier.desc.interference_grid": "NOT YET IMPLEMENTED!!! Choose 1 player: -1 to SPACE COMBAT during this combat",
 };
 
 
@@ -136,9 +138,25 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
-
-// TODO: implement interference grid trap
+const unitModifiers = [
+{
+    // "choose 1 player -1 to SPACE COMBAT during this combat",
+    isCombat: true,
+    localeName: "unit.unit_modifier.name.interference_grid",
+    localeDescription: "unit_modifier.desc.interference_grid",
+    owner: "any",
+    priority: "adjust",
+    triggerNsids: [
+        "card.lizho:homebrew.discordant_stars/interference_grid",
+    ],
+    filter: (auxData) => {
+        return auxData.rollType === "spaceCombat";
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+        // TODO: implement
+    },
+},
+];
 
 console.log("DISCORDANT STARS ADDING LIZHO");
 world.TI4.homebrew.inject({

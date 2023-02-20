@@ -9,6 +9,7 @@ const localeStrings = {
   "unit.cruiser.shattered_sky_2": "Shattered Sky 2",
   "unit.flagship.splintering_gale": "Splintering Gale",
   "unit.mech.megalith": "megalith",
+  "unit_modifier.desc.megalith": "NOT YET IMPLEMENTED!!! units other than your mechs do not make combat rolls during the first round of ground combat on this planet"
 };
 
 
@@ -122,15 +123,30 @@ const unitAttrs = [
     unit: "mech",
     upgradeLevel: 1,
     localeName: "unit.mech.megalith",
+    unitAbility: "unit.mech.megalith",
     triggerNsid: "card.leader.mech.khrask:homebrew.discordant_stars/megalith",
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+    {
+        isCombat: true,
+        localeName: "unit.mech.megalith",
+        localeDescription: "unit_modifier.desc.megalith",
+        owner: "any",
+        priority: "adjust",
+        triggerUnitAbility: "unit.mech.megalith",
+        filter: (auxData) => {
+            return auxData.rollType === "groundCombat" // khrask mech is present on planet;
+        },
+        applyAll: (unitAttrsSet, auxData) => {
+            // TODO: implement mech unit modifier
+        },
+    },];
 
 // TODO: implement voting count of lithoids faction ability
 // TODO: implement planet resource count of garden worlds faction ability
-// TODO: implement mech unit modifier
+
 
 console.log("DISCORDANT STARS ADDING KHRASK");
 world.TI4.homebrew.inject({

@@ -10,6 +10,7 @@ const localeStrings = {
   "unit.dreadnought.chitin_hulk_2": "Chitin Hulk 2",
   "unit.flagship.lithodax": "lithodax",
   "unit.mech.nauplius": "nauplius",
+  "unit_modifier.desc.lithodax": "NOT YET IMPLEMENTED!!! +1 die to SPACE COMBAT and ability rolls if this system is adjacent or contains 1 of your structures",
 };
 
 
@@ -106,6 +107,7 @@ const unitAttrs = [
     unit: "flagship",
     upgradeLevel: 1,
     localeName: "unit.flagship.lithodax",
+    unitAbility: "unit.flagship.lithodax",
     triggerNsid:
       "card.technology.unit_upgrade.cheiran:franken.discordant_stars/lithodax",
     antiFighterBarrage: { dice: 2, hit: 7 },
@@ -131,7 +133,21 @@ const unitAttrs = [
 ];
 
 const unitModifiers = [
-  //TODO: implement lithodax modifier
+  {
+    // "space combat and abilities roll 1 additional die for each adjacent asteroid field",
+    isCombat: true,
+    localeName: "unit.flagship.lithodax",
+    localeDescription: "unit_modifier.desc.lithodax",
+    owner: "self",
+    priority: "adjust",
+    triggerUnitAbility: "unit.flagship.lithodax",
+    filter: (auxData) => {
+      return auxData.self.has("flagship");
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      //TODO: implement
+    },
+  },
 ];
 
 console.log("DISCORDANT STARS ADDING CHEIRAN");

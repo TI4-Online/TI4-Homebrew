@@ -9,6 +9,7 @@ const localeStrings = {
   "unit.dreadnought.lancer_dreadnought_2": "Lancer Dreadnought 2",
   "unit.flagship.richtyrian": "Richtyrian",
   "unit.mech.aurora_stormcaller": "Aurora Stormcaller",
+  "unit_modifier.desc.richtyrian": "+1 SPACE COMBAT die per resolved round in this combat",
 };
 
 
@@ -110,6 +111,7 @@ const unitAttrs = [
     unit: "flagship",
     upgradeLevel: 1,
     localeName: "unit.flagship.richtyrian",
+    unitAbility: "unit.flagship.richtyrian",
     triggerNsid:
       "card.technology.unit_upgrade.veldyr:franken.discordant_stars/richtyrian",
     spaceCombat: { dice: 2, hit: 7 },
@@ -138,7 +140,21 @@ const unitAttrs = [
 ];
 
 const unitModifiers = [
-  // TODO: implement flagship mod
+  {
+    // "+1 die per resolved round in this combat",
+    isCombat: true,
+    localeName: "unit.flagship.richtyrian",
+    localeDescription: "unit_modifier.desc.richtyrian",
+    owner: "self",
+    priority: "adjust",
+    triggerUnitAbility: "unit.flagship.richtyrian",
+    filter: (auxData) => {
+      return auxData.self.has("flagship");
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      //TODO: implement
+    },
+  },
 ];
 
 // TODO: implement attachment promissory notes

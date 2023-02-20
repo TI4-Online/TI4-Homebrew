@@ -9,7 +9,7 @@ const localeStrings = {
   "unit.destroyer.sabre_2": "Sabre 2",
   "unit.flagship.annah_regia": "Annah Regia",
   "unit.mech.freelance_outfit": "Freelance Outfit",
-  "unit_modifier.desc.annah_regia": "NOT YET APPLIED!!! +1 to SPACE COMBAT for each 2 destroyers owned",
+  "unit_modifier.desc.annah_regia": "NOT YET IMPLEMENTED!!! +1 to SPACE COMBAT for each 2 destroyers owned",
 };
 
 
