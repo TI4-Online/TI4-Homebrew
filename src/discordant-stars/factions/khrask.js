@@ -128,6 +128,10 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
+// TODO: implement voting count of lithoids faction ability
+// TODO: implement planet resource count of garden worlds faction ability
+// TODO: implement mech unit modifier
+
 console.log("DISCORDANT STARS ADDING KHRASK");
 world.TI4.homebrew.inject({
   localeStrings,

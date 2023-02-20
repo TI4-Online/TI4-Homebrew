@@ -130,7 +130,9 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  //TODO: implement lithodax modifier
+];
 
 console.log("DISCORDANT STARS ADDING CHEIRAN");
 world.TI4.homebrew.inject({

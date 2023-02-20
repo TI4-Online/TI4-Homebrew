@@ -127,7 +127,9 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  // TODO: implement projection of power
+];
 
 console.log("DISCORDANT STARS ADDING CELDAIRI");
 world.TI4.homebrew.inject({

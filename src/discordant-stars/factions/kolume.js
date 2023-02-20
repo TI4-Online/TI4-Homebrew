@@ -107,6 +107,10 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
+// TODO: implement starfall faction ability
+// TODO: implement commander ability
+
+
 console.log("DISCORDANT STARS ADDING KOLUME");
 world.TI4.homebrew.inject({
   localeStrings,

@@ -139,6 +139,7 @@ const unitModifiers = [
       return auxData.rollType === "spaceCombat";
     },
     applyAll: (unitAttrsSet, auxData) => {
+      // TODO: implement
       /*
       let best = false;
       for (const unitAttrs of unitAttrsSet.values()) {
@@ -160,6 +161,9 @@ const unitModifiers = [
     },
   },
 ];
+
+// TODO: implement agent
+
 
 console.log("DISCORDANT STARS ADDING TNELIS");
 world.TI4.homebrew.inject({

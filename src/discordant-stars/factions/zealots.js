@@ -128,7 +128,6 @@ const unitModifiers = [
             );
         },
         applyAll: (unitAttrsSet, auxData) => {
-          debugger;
             let hitModifier = 0;
             if (auxData.opponent) {
               const opponentPlayerSlot = auxData.opponent.playerSlot;

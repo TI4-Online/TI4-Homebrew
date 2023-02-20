@@ -155,8 +155,9 @@ const unitModifiers = [{
     }
   },
 },
-  // TODO (RM/button) covert strike teams
 ];
+
+//TODO: add promissory note attachement logic
 
 console.log("DISCORDANT STARS ADDING GLEDGE");
 world.TI4.homebrew.inject({

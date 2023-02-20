@@ -137,17 +137,13 @@ const unitAttrs = [
   },
 ];
 
-function getFactionBySlot(slot) {
-  return world.TI4.getAllFactions().filter(f=>f.playerSlot).find(f=>Number.parseInt(f.playerSlot) === slot);
-}
-
 function getBlightHexes() {
   return world.getAllObjects().filter(obj => {
     const nsid = world.TI4.ObjectNamespace.getNsid(obj);
     return nsid === "token.system:homebrew.discordant_stars.blight/blex" || nsid === "unit:pok/mech";
   }).filter(obj => {
       const owner = obj.getOwningPlayer();
-      return owner && getFactionBySlot(owner.getSlot()).nsidName === "blex";
+      return owner && world.TI4.getFactionBySlot(owner.getSlot()).nsidName === "blex";
   }).map(gameObject => {
     return world.TI4.Hex.fromPosition(gameObject.getPosition());
   });

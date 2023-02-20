@@ -147,11 +147,13 @@ const unitModifiers = [
     applyAll: (unitAttrsSet, auxData) => {
       let destroyerCount = 0;
 
-      // find all plastics
+      // TODO: find all plastics
 
       unitAttrsSet.get("flagship").raw.spaceCombat.hit -= Math.floor(destroyerCount/2);
     },
   },];
+
+  // TODO: add saber death roll
 
 console.log("DISCORDANT STARS ADDING NOKAR");
 world.TI4.homebrew.inject({

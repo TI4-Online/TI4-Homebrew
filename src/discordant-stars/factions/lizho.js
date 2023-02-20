@@ -138,6 +138,8 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
+// TODO: implement interference grid trap
+
 console.log("DISCORDANT STARS ADDING LIZHO");
 world.TI4.homebrew.inject({
   localeStrings,
