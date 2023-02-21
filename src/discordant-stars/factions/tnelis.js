@@ -32,6 +32,7 @@ const factions = [{
   promissoryNotes: ["plots_within_plots"],
   icon: "discordant-stars/faction-icons/tnelis.png",
   source: "homebrew.discordant_stars",
+  // startingTechChoice: "tnelis",
   startingTech: [], //"neural_motivator", "antimass_deflectors", "plasma_scoring"],
   startingUnits: {
     carrier: 1,

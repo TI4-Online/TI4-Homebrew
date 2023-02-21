@@ -28,6 +28,7 @@ const factions = [{
   promissoryNotes: ["ghoti_relay"],
   icon: "discordant-stars/faction-icons/ghoti.png",
   source: "homebrew.discordant_stars",
+  // startingTechChoice: "ghoti",
   startingTech: [], //"gravity_drive", "sling_relay"],
   startingUnits: {
     flagship: 1,
@@ -43,7 +44,7 @@ const factions = [{
   },{
     tokenNsid: "card.ghoti:homebrew.discordant_stars/1"
   },],
- 
+
 }];
 
  const nsidToTemplateId = {

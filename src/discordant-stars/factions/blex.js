@@ -36,6 +36,7 @@ const factions = [{
   promissoryNotes: ["shared_misery"],
   icon: "discordant-stars/faction-icons/blex.png",
   source: "homebrew.discordant_stars",
+  // startingTechChoice: "blex",
   startingTech: [], //"dacxive_animators", "biostims"],
   startingUnits: {
     carrier: 1,
@@ -150,7 +151,7 @@ function getBlightHexes() {
 }
 
 const unitModifiers = [{
-  // "-1 on other players combat rolls in the first round of combat in systems with a blight token",  
+  // "-1 on other players combat rolls in the first round of combat in systems with a blight token",
   isCombat: true,
   localeName: "unit_modifier.name.blight",
   localeDescription: "unit_modifier.desc.blight",
@@ -175,13 +176,13 @@ const unitModifiers = [{
     if (unitAttrs.raw.groundCombat) {
       unitAttrs.raw.groundCombat.hit += 1;
     }
-    
+
     if (unitAttrs.raw.spaceCombat) {
       unitAttrs.raw.spaceCombat.hit += 1;
     }
   },
 },{
-  // "+1 dice for one unit with the token",  
+  // "+1 dice for one unit with the token",
   isCombat: true,
   localeName: "unit_modifier.name.biotic_weapons",
   localeDescription: "unit_modifier.desc.biotic_weapons",
@@ -228,7 +229,7 @@ const unitModifiers = [{
     triggerNsid: "card.promissory.blex:homebrew.discordant_stars/shared_misery",
     filter: (auxData) => {
         return (
-            auxData.rollType === "groundCombat" && 
+            auxData.rollType === "groundCombat" &&
             auxData.self.faction && // empty seats does not provide a faction
             auxData.self.faction.nsidName !== "blex" // does not affects blex
         );

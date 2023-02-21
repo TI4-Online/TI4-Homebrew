@@ -31,6 +31,7 @@ const factions = [{
   promissoryNotes: ["carcinisation"],
   icon: "discordant-stars/faction-icons/cheiran.png",
   source: "homebrew.discordant_stars",
+  // startingTechChoice: "cheiran",
   startingTech: [], //"magen_defense_grid", "self_assembly_routines"],
   startingUnits: {
     carrier: 1,
