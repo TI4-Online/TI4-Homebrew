@@ -31,6 +31,7 @@ const factions = [{
   icon: "discordant-stars/faction-icons/kjalengard.png",
   source: "homebrew.discordant_stars",
   startingTech: [],
+  startingTechChoice: "kjalengard",
   startingUnits: {
     carrier: 2,
     destroyer: 1,
@@ -129,7 +130,9 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING KJALENGRAD");
+// TODO: implement promissory note
+// TODO: implement commander
+
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

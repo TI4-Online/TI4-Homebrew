@@ -199,7 +199,8 @@ const unitModifiers = [
   },
 ];
 
-console.log("DISCORDANT STARS ADDING ZELIAN");
+// TODO: implement biophobic voting count
+
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

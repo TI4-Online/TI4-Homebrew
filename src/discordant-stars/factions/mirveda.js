@@ -132,38 +132,33 @@ const unitAttrs = [
 ];
 
 const unitModifiers = [
-    {
-        isCombat: true,
-        localeName: "unit.mech.javelin",
-        localeDescription: "unit_modifier.desc.javelin",
-        triggerUnitAbility: "unit.mech.javelin",
-        owner: "self",
-        priority: "adjust",
-        filter: (auxData) => {
-            return (
-                auxData.rollType === "spaceCombat" &&
-                auxData.self.has("mech")
-            );
-        },
-        applyAll: (unitAttrsSet, auxData) => {
-          /*
-            let unitUpgradeCount = 0;
-            const selfPlayerSlot = auxData.self.playerSlot;
-            if (selfPlayerSlot) {
-                for (const obj of world.getAllObjects()) {
-                    const nsid = world.TI4.objectNamespace.getNsid(obj);
-                    const owner = obj.getOwningPlayerSlot();
-                    if (owner === selfPlayerSlot && nsid.startsWith("card.technology.unit.")) {
-                        unitUpgradeCount++;
-                    }
-                }
-            }
+  {
+      isCombat: true,
+      localeName: "unit.mech.javelin",
+      localeDescription: "unit_modifier.desc.javelin",
+      triggerUnitAbility: "unit.mech.javelin",
+      owner: "self",
+      priority: "adjust",
+      filter: (auxData) => {
+          return (
+              auxData.rollType === "spaceCombat" &&
+              auxData.self.has("mech")
+          );
+      },
+      applyAll: (unitAttrsSet, auxData) => {
+        
+        let hitModifier = 0;
+        const playerSlot = auxData.self.playerSlot;
+        const ownedTechnologies = world.TI4.Technology.getOwnedPlayerTechnologies(playerSlot);
+        hitModifier = ownedTechnologies.filter(tech => tech.cardNsid.startsWith("card.technology.unit_upgrade:")).length;
 
-            unitAttrsSet.get("mech").raw.spaceCombat.hit -= Math.floor(unitUpgradeCount/2);*/
-        },
-    },];
+        unitAttrsSet.get("mech").raw.spaceCombat.hit -= Math.floor(hitModifier/2);
+      },
+  },
+];
 
-console.log("DISCORDANT STARS ADDING MIRVEDA");
+//TODO: implement hero ability (fire PDS)
+
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

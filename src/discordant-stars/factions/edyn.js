@@ -10,7 +10,7 @@ const localeStrings = {
   "technology.name.encrypted_trade_hub": "encrypted_trade_hub",
   "unit.flagship.kaliburn": "Kaliburn",
   "unit.mech.runebearer": "runebearer",
-  "unit_modifier.desc.kaliburn": "+1 to all COMBAT rolls for each law in game",
+  "unit_modifier.desc.kaliburn": "NOT YET IMPLEMENTED!!! +1 to all COMBAT rolls for each law in game",
 };
 
 
@@ -129,7 +129,9 @@ const unitModifiers = [
     },
   },];
 
-console.log("DISCORDANT STARS ADDING EDYN");
+
+  //TODO: implement mech vote calculation
+
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

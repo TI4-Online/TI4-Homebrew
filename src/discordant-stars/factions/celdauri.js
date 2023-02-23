@@ -10,6 +10,8 @@ const localeStrings = {
   "unit.mech.minuteman": "Minuteman",
   "unit.space_dock.trade_port": "Trade Port",
   "unit.space_dock.trade_port_2": "Trade Port 2",
+  "unit_modifier.name.projection_of_power": "Projection of Power",
+  "unit_modifier.desc.projection_of_power": "NOT YET IMPLEMENTED!!! At the start of space combat in a system that is adjacent to or contains 1 or more of your space docks, choose up to 1 ship that gains ANTI-FIGHTER-BARRAGE 6(x2) until the end of that combat",
 };
 
 const factions = [{
@@ -26,7 +28,9 @@ const factions = [{
     packageId: refPackageId,
     icon: "discordant-stars/faction-icons/celdauri.png",
     source: "homebrew.discordant_stars",
-    startingTech: [], //"antimass_deflectors", "sarween_tools", "plasma_scoring"],
+    startingTechChoice: "celdauri",
+    startingTechChoices: ["antimass_deflectors", "sarween_tools", "plasma_scoring"],
+    startingTech: [],
     startingUnits: {
         carrier: 1,
         destroyer: 1,
@@ -127,9 +131,33 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+function isSpaceDockPresent() {
+    // TODO: implement
+    return true;
+}
 
-console.log("DISCORDANT STARS ADDING CELDAIRI");
+const unitModifiers = [
+    {
+        // "At the start of a space combat choose 1 ship to gain AFB 6(x2)",
+        localeName: "unit_modifier.name.projection_of_power",
+        localeDescription: "unit_modifier.desc.projection_of_power",
+        owner: "self",
+        priority: "adjust",
+        triggerIf: (auxData) => {
+            debugger;
+            return (
+                //getProjectionOfPowerStatus() && // projection of power is active (aka chosen ship still alive)
+                //auxData.self.faction.name === "celdauri" &&
+                auxData.rollType === "antiFighterBarrage" &&
+                isSpaceDockPresent(auxData.hex) // only in hexes in or adjacent to space dock
+            )
+        },
+        applyAll: (unitAttrsSet, auxData) => {
+            // TODO: implement
+        },
+    },
+];
+
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

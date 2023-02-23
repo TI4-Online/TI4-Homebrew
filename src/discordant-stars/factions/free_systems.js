@@ -149,7 +149,6 @@ const unitModifiers = [
     // TODO (RM/button) covert strike teams - Ambush did it with a button, but there is no registration API yet
   },];
 
-console.log("DISCORDANT STARS ADDING FREE SYSTEMS");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

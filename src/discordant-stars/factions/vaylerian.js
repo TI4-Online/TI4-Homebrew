@@ -11,6 +11,8 @@ const localeStrings = {
   "unit.mech.eclipse": "Eclipse",
   "unit_modifier.name.dyln_harthuul": "Dyln Harthuul",
   "unit_modifier.desc.dyln_harthuul": "+1 to the move value of each of your ships and the result of each of your ships’ combat rolls",
+  "unit_modifier.name.yvin_korduul": "Yvin Korduul",
+  "unit_modifier.desc.yvin_korduul": "+1 movement and +1 to SPACE COMBAT rolls during this activation",
 };
 
 
@@ -98,6 +100,7 @@ const unitAttrs = [
     unit: "flagship",
     upgradeLevel: 1,
     localeName: "unit.flagship.lost_cause",
+    unitAbility: "unit.flagship.lost_cause",
     triggerNsid:
       "card.technology.unit_upgrade.vaylerian:franken.discordant_stars/lost_cause",
     spaceCombat: { dice: 2, hit: 7 },
@@ -127,36 +130,31 @@ const unitAttrs = [
 
 const unitModifiers = [
   {
-    // "+1 move and +1 SPACE COMBAT for the entire turn",
+    // "+1 movement and +1 to ships combat rolls,
     isCombat: true,
-    localeName: "unit_modifier.name.dyln_harthuul",
-    localeDescription: "unit_modifier.desc.dyln_harthuul",
+    localeName: "unit_modifier.name.yvin_korduul",
+    localeDescription: "unit_modifier.desc.yvin_korduul",
+    toggleActive: true,
     owner: "self",
     priority: "adjust",
-    toggleActive: true,
     triggerNsids: [
-      "card.leader.hero.vaylerian:homebrew.discordant_stars/dyln_harthuul",
+      "card.leader.agent.vaylerian:homebrew.discordant_stars/yvin_korduul",
     ],
     filter: (auxData) => {
-      return (
-          auxData.rollType === "spaceCombat"
-      );
+      return auxData.rollType === "spaceCombat";
     },
-    applyAll: (unitAttrsSet, auxData) => {
-      for (const unitAttrs of unitAttrsSet.values()) {
-        if (unitAttrs.raw.ship) {
-          if (unitAttrs.raw.spaceCombat) {
-            unitAttrs.raw.spaceCombat.hit -= 1;
-          }
-          if (unitAttrs.raw.move) {
-            unitAttrs.raw.move += 1;
-          }
-        }
+    applyEach: (unitAttrs, auxData) => {
+      if (
+          unitAttrs.raw.ship &&
+          unitAttrs.raw.spaceCombat
+      ) {
+        unitAttrs.raw.spaceCombat.hit -= 1;
       }
+      // TODO test
     },
-  },];
+  },
+];
 
-console.log("DISCORDANT STARS ADDING VAYLERIAN");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

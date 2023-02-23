@@ -178,7 +178,8 @@ const unitModifiers = [
       },
   },];
 
-console.log("DISCORDANT STARS ADDING GHEMINA");
+  //TODO: add 2x Bombardment to the promissory note
+
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

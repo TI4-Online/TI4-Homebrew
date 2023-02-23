@@ -9,6 +9,10 @@ const localeStrings = {
   "technology.name.omniscience_field": "Omniscience Field",
   "unit.flagship.halberd": "Halberd",
   "unit.mech.rook": "rook",
+  "unit.unit_modifier.name.starfall": "Starfall",
+  "unit_modifier.desc.starfall": "NOT YET IMPLEMENTED!!! not active: only one unit can use SPACE CANNON, active: up to 3 non-fighter ships gain SPACE CANNON 8",
+  "unit.unit_modifier.name.issac_of_sinci": "Issac of Sinci",
+  "unit_modifier.desc.issac_of_sinci": "NOT YET IMPLEMENTED!!! +1 to each unit's ability rolls",
 };
 
 
@@ -29,7 +33,9 @@ const factions = [{
   promissoryNotes: ["combinatorial_bypass"],
   icon: "discordant-stars/faction-icons/kolume.png",
   source: "homebrew.discordant_stars",
-  startingTech: [], //"graviton_laser_system", "predictive_intelligence"],
+  startingTechChoice: "kolume",
+  startingTechChoices: ["graviton_laser_system", "predictive_intelligence"],
+  startingTech: [],
   startingUnits: {
     carrier: 2,
     cruiser: 1,
@@ -105,9 +111,41 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  {
+    // "not active: only one unit can use SPACE CANNON, active: up to 3 non-fighter ships gain SPACE CANNON 8",
+    isCombat: true,
+    localeName: "unit.unit_modifier.name.starfall",
+    localeDescription: "unit_modifier.desc.starfall",
+    owner: "self",
+    priority: "adjust",
+    filter: (auxData) => {
+      return auxData.self.faction.nsidName === "kolume";
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      // TODO: implement
+    },
+  },
+  {
+    // "+1 to all unit ability rolls",
+    isCombat: true,
+    localeName: "unit.unit_modifier.name.issac_of_sinci",
+    localeDescription: "unit_modifier.desc.issac_of_sinci",
+    owner: "self",
+    priority: "adjust",
+    triggerNsids: [
+      "card.leader.commander.kolume:homebrew.discordant_stars/issac_of_sinci",
+      //"card.alliance:homebrew/kolume",
+    ],
+    filter: (auxData) => {
+      return ["spaceCannon", "antiFighterBarrage", "bombardment"].includes(auxData.rollType);
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      // TODO: implement
+    },
+  },
+];
 
-console.log("DISCORDANT STARS ADDING KOLUME");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

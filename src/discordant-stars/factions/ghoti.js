@@ -28,7 +28,9 @@ const factions = [{
   promissoryNotes: ["ghoti_relay"],
   icon: "discordant-stars/faction-icons/ghoti.png",
   source: "homebrew.discordant_stars",
-  startingTech: [], //"gravity_drive", "sling_relay"],
+  startingTechChoice: "ghoti",
+  startingTechChoices: ["gravity_drive", "sling_relay"],
+  startingTech: [],
   startingUnits: {
     flagship: 1,
     cruiser: 1,
@@ -43,7 +45,7 @@ const factions = [{
   },{
     tokenNsid: "card.ghoti:homebrew.discordant_stars/1"
   },],
- 
+
 }];
 
  const nsidToTemplateId = {
@@ -112,7 +114,8 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING GHOTI");
+// TODO: add vote count for the networked command tech
+
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

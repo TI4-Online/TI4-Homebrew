@@ -9,6 +9,7 @@ const localeStrings = {
   "technology.name.sentient_datapool": "Sentient Datapool",
   "unit.flagship.nemsys": "Nemsys",
   "unit.mech.iledrith": "Iledrith",
+  "unit_modifier.desc.nemsys": "NOT YET IMPLEMENTED!!! 1 additional die for each secret objective you have scored",
 };
 
 const factions = [{
@@ -94,6 +95,7 @@ const unitAttrs = [
     unit: "flagship",
     upgradeLevel: 1,
     localeName: "unit.flagship.nemsys",
+    unitAbility: "unit.flagship.nemsys",
     triggerNsid:
       "card.technology.unit_upgrade.augers:franken.discordant_stars/nemsys",
     spaceCombat: { dice: 1, hit: 5 },
@@ -106,9 +108,30 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  {
+      // "+1 die to SPACE COMBAT rolls for each own secret objective scored",
+      isCombat: true,
+      localeName: "unit.flagship.nemsys",
+      localeDescription: "unit_modifier.desc.nemsys",
+      triggerUnitAbility: "unit.flagship.nemsys",
+      owner: "self",
+      priority: "adjust",
+      filter: (auxData) => {
+        console.log(auxData.rollType)
+          return (
+              auxData.rollType === "spaceCombat" &&
+              auxData.self.has("flagship")
+          );
+      },
+      applyAll: (unitAttrsSet, auxData) => {
+        // TODO: implement
+      },
+  },
+];
 
-console.log("DISCORDANT STARS ADDING AUGERS");
+// TODO: implement commander voting count adjustment
+
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

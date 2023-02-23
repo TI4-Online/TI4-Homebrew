@@ -9,7 +9,7 @@ const localeStrings = {
   "unit.destroyer.sabre_2": "Sabre 2",
   "unit.flagship.annah_regia": "Annah Regia",
   "unit.mech.freelance_outfit": "Freelance Outfit",
-  "unit_modifier.desc.annah_regia": "NOT YET APPLIED!!! +1 to SPACE COMBAT for each 2 destroyers owned",
+  "unit_modifier.desc.annah_regia": "NOT YET IMPLEMENTED!!! +1 to SPACE COMBAT for each 2 destroyers owned",
 };
 
 
@@ -30,7 +30,9 @@ const factions = [{
   promissoryNotes: ["nokar_navigator"],
   icon: "discordant-stars/faction-icons/nokar.png",
   source: "homebrew.discordant_stars",
-  startingTech: [], //"psychoarchaeology", "dark_energy_tap", "ai_development_algorithm"],
+  startingTechChoice: "nokar",
+  startingTechChoices: ["psychoarchaeology", "dark_energy_tap", "ai_development_algorithm"],
+  startingTech: [],
   startingUnits: {
     carrier: 2,
     destroyer: 1,
@@ -147,13 +149,14 @@ const unitModifiers = [
     applyAll: (unitAttrsSet, auxData) => {
       let destroyerCount = 0;
 
-      // find all plastics
+      // TODO: find all plastics
 
       unitAttrsSet.get("flagship").raw.spaceCombat.hit -= Math.floor(destroyerCount/2);
     },
   },];
 
-console.log("DISCORDANT STARS ADDING NOKAR");
+  // TODO: add saber death roll
+
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

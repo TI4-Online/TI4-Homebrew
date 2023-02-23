@@ -30,7 +30,9 @@ const factions = [{
   promissoryNotes: ["gledge_base"],
   icon: "discordant-stars/faction-icons/gledge.png",
   source: "homebrew.discordant_stars",
-  startingTech: [], //"psychoarchaeology", "scanlink_drone_network", "ai_development_algorithm"],
+  startingTechChoice: "gledge",
+  startingTechChoices: ["psychoarchaeology", "scanlink_drone_network", "ai_development_algorithm"],
+  startingTech: [],
   startingUnits: {
     carrier: 1,
     destroyer: 1,
@@ -155,10 +157,10 @@ const unitModifiers = [{
     }
   },
 },
-  // TODO (RM/button) covert strike teams
 ];
 
-console.log("DISCORDANT STARS ADDING GLEDGE");
+//TODO: add promissory note attachement logic
+
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

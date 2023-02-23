@@ -128,7 +128,6 @@ const unitModifiers = [
             );
         },
         applyAll: (unitAttrsSet, auxData) => {
-          debugger;
             let hitModifier = 0;
             if (auxData.opponent) {
               const opponentPlayerSlot = auxData.opponent.playerSlot;
@@ -174,7 +173,6 @@ const unitModifiers = [
     },
 ];
 
-console.log("DISCORDANT STARS ADDING ZEALOTS");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

@@ -10,6 +10,8 @@ const localeStrings = {
   "unit.flagship.principia_aneris": "Principia Aneris",
   "unit.mech.daedalon": "Daedalon",
   "unit_modifier.desc.principia_aneris": "NOT YET APPLIED!!! 1 ship in this system, during this combat round rolls 1 less combat die",
+  "unit_modifier.name.davish_snorri": "Davish S'Norri",
+  "unit_modifier.desc.davish_snorri": "NOT YET APPLIED!!! Choose 1 ship during this invasion, that ship may use its ANTI-FIGHTER BARRAGE as if it were BOMBARDMENT",
 };
 
 
@@ -30,7 +32,9 @@ const factions = [{
   promissoryNotes: ["plots_within_plots"],
   icon: "discordant-stars/faction-icons/tnelis.png",
   source: "homebrew.discordant_stars",
-  startingTech: [], //"neural_motivator", "antimass_deflectors", "plasma_scoring"],
+  startingTechChoice: "tnelis",
+  startingTechChoices: ["neural_motivator", "antimass_deflectors", "plasma_scoring"],
+  startingTech: [],
   startingUnits: {
     carrier: 1,
     destroyer: 2,
@@ -133,12 +137,13 @@ const unitModifiers = [
     localeName: "unit.flagship.principia_aneris",
     localeDescription: "unit_modifier.desc.principia_aneris",
     triggerUnitAbility: "unit.flagship.principia_aneris",
-    owner: "any",
+    owner: "opponent",
     priority: "adjust",
     filter: (auxData) => {
       return auxData.rollType === "spaceCombat";
     },
     applyAll: (unitAttrsSet, auxData) => {
+      // TODO: implement
       /*
       let best = false;
       for (const unitAttrs of unitAttrsSet.values()) {
@@ -159,9 +164,26 @@ const unitModifiers = [
       }*/
     },
   },
+  {
+    // "one unit may use its ANTI FIGHTER BARRAGE as BOMBARDMENT",
+    isCombat: true,
+    localeName: "unit_modifier.name.davish_snorri",
+    localeDescription: "unit_modifier.desc.davish_snorri",
+    toggleActive: true,
+    owner: "any",
+    priority: "adjust",
+    triggerNsids: [
+      "card.leader.agent.tnelis:homebrew.discordant_stars/davish_snorri",
+    ],
+    filter: (auxData) => {
+      return auxData.rollType === "bombardment";
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      // TODO: implement
+    },
+  },
 ];
 
-console.log("DISCORDANT STARS ADDING TNELIS");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

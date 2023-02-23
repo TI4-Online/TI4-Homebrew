@@ -9,8 +9,8 @@ const localeStrings = {
   "technology.name.merged_replicators": "Merged Replicators",
   "unit.flagship.wayfinder": "Wayfinder",
   "unit.mech.auctioneer": "Auctioneer",
+  "unit_modifier.desc.wayfinder": "NOT YET IMPLEMENTED!!! +1 to the result of this ship's combat and ability rolls for each Fragment token on your faction sheet",
 };
-
 
 const factions = [{
   faction: "bentor",
@@ -29,7 +29,9 @@ const factions = [{
   promissoryNotes: ["encryption_key"],
   icon: "discordant-stars/faction-icons/bentor.png",
   source: "homebrew.discordant_stars",
-  startingTech: [], //"psychoarchaeology", "dark_energy_tap", "scanlink_drone_network"],
+  startingTechChoice: "bentor",
+  startingTechChoices: ["psychoarchaeology", "dark_energy_tap", "scanlink_drone_network"],
+  startingTech: [],
   startingUnits: {
     carrier: 1,
     cruiser: 2,
@@ -124,6 +126,7 @@ const unitAttrs = [
     unit: "flagship",
     upgradeLevel: 1,
     localeName: "unit.flagship.wayfinder",
+    unitAbility: "unit.flagship.wayfinder",
     triggerNsid:
       "card.technology.unit_upgrade.bentor:franken.discordant_stars/wayfinder",
     spaceCombat: { dice: 2, hit: 9 },
@@ -139,9 +142,30 @@ const unitAttrs = [
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  {
+      // "+1 to SPACE COMBAT rolls for each fragment token",
+      isCombat: true,
+      localeName: "unit.flagship.wayfinder",
+      localeDescription: "unit_modifier.desc.wayfinder",
+      triggerUnitAbility: "unit.flagship.wayfinder",
+      owner: "self",
+      priority: "adjust",
+      filter: (auxData) => {
+        console.log(auxData.rollType)
+          return (
+              auxData.rollType === "spaceCombat" &&
+              auxData.self.has("flagship")
+          );
+      },
+      applyAll: (unitAttrsSet, auxData) => {
+        // TODO: implement
+      },
+  },
+];
 
-console.log("DISCORDANT STARS ADDING BENTOR");
+// TODO: Attachement effect of the Promissory Note
+
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

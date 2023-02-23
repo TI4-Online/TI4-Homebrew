@@ -106,7 +106,6 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING KOLLECC");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

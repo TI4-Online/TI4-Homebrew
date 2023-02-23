@@ -36,7 +36,9 @@ const factions = [{
   promissoryNotes: ["shared_misery"],
   icon: "discordant-stars/faction-icons/blex.png",
   source: "homebrew.discordant_stars",
-  startingTech: [], //"dacxive_animators", "biostims"],
+  startingTechChoice: "blex",
+  startingTechChoices: ["dacxive_animators", "biostims"],
+  startingTech: [],
   startingUnits: {
     carrier: 1,
     dreadnought: 1,
@@ -137,24 +139,20 @@ const unitAttrs = [
   },
 ];
 
-function getFactionBySlot(slot) {
-  return world.TI4.getAllFactions().filter(f=>f.playerSlot).find(f=>Number.parseInt(f.playerSlot) === slot);
-}
-
 function getBlightHexes() {
   return world.getAllObjects().filter(obj => {
     const nsid = world.TI4.ObjectNamespace.getNsid(obj);
     return nsid === "token.system:homebrew.discordant_stars.blight/blex" || nsid === "unit:pok/mech";
   }).filter(obj => {
       const owner = obj.getOwningPlayer();
-      return owner && getFactionBySlot(owner.getSlot()).nsidName === "blex";
+      return owner && world.TI4.getFactionBySlot(owner.getSlot()).nsidName === "blex";
   }).map(gameObject => {
     return world.TI4.Hex.fromPosition(gameObject.getPosition());
   });
 }
 
 const unitModifiers = [{
-  // "-1 on other players combat rolls in the first round of combat in systems with a blight token",  
+  // "-1 on other players combat rolls in the first round of combat in systems with a blight token",
   isCombat: true,
   localeName: "unit_modifier.name.blight",
   localeDescription: "unit_modifier.desc.blight",
@@ -179,13 +177,13 @@ const unitModifiers = [{
     if (unitAttrs.raw.groundCombat) {
       unitAttrs.raw.groundCombat.hit += 1;
     }
-    
+
     if (unitAttrs.raw.spaceCombat) {
       unitAttrs.raw.spaceCombat.hit += 1;
     }
   },
 },{
-  // "+1 dice for one unit with the token",  
+  // "+1 dice for one unit with the token",
   isCombat: true,
   localeName: "unit_modifier.name.biotic_weapons",
   localeDescription: "unit_modifier.desc.biotic_weapons",
@@ -232,7 +230,7 @@ const unitModifiers = [{
     triggerNsid: "card.promissory.blex:homebrew.discordant_stars/shared_misery",
     filter: (auxData) => {
         return (
-            auxData.rollType === "groundCombat" && 
+            auxData.rollType === "groundCombat" &&
             auxData.self.faction && // empty seats does not provide a faction
             auxData.self.faction.nsidName !== "blex" // does not affects blex
         );
@@ -245,7 +243,6 @@ const unitModifiers = [{
   },
 ];
 
-console.log("DISCORDANT STARS ADDING BLEX");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
