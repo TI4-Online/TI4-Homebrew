@@ -159,7 +159,6 @@ const unitModifiers = [
 
 //TODO: implement hero ability (fire PDS)
 
-console.log("DISCORDANT STARS ADDING MIRVEDA");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

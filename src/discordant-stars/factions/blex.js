@@ -37,7 +37,8 @@ const factions = [{
   icon: "discordant-stars/faction-icons/blex.png",
   source: "homebrew.discordant_stars",
   startingTechChoice: "blex",
-  startingTech: [], //"dacxive_animators", "biostims"],
+  startingTechChoices: ["dacxive_animators", "biostims"],
+  startingTech: [],
   startingUnits: {
     carrier: 1,
     dreadnought: 1,
@@ -242,7 +243,6 @@ const unitModifiers = [{
   },
 ];
 
-console.log("DISCORDANT STARS ADDING BLEX");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

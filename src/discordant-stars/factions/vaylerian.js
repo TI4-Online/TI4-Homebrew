@@ -155,7 +155,6 @@ const unitModifiers = [
   },
 ];
 
-console.log("DISCORDANT STARS ADDING VAYLERIAN");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

@@ -29,6 +29,9 @@ world.TI4.homebrew.inject({
     },
   });
 
+  
+console.log("DISCORDANT STARS ADDING FACTIONS");
+
 require("./factions/augers");
 require("./factions/axis");
 require("./factions/blex");

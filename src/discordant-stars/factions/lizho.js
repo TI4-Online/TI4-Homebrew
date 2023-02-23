@@ -158,7 +158,6 @@ const unitModifiers = [
 },
 ];
 
-console.log("DISCORDANT STARS ADDING LIZHO");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

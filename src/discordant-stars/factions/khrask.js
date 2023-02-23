@@ -148,7 +148,6 @@ const unitModifiers = [
 // TODO: implement planet resource count of garden worlds faction ability
 
 
-console.log("DISCORDANT STARS ADDING KHRASK");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

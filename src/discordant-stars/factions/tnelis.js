@@ -33,7 +33,8 @@ const factions = [{
   icon: "discordant-stars/faction-icons/tnelis.png",
   source: "homebrew.discordant_stars",
   startingTechChoice: "tnelis",
-  startingTech: [], //"neural_motivator", "antimass_deflectors", "plasma_scoring"],
+  startingTechChoices: ["neural_motivator", "antimass_deflectors", "plasma_scoring"],
+  startingTech: [],
   startingUnits: {
     carrier: 1,
     destroyer: 2,
@@ -183,9 +184,6 @@ const unitModifiers = [
   },
 ];
 
-
-
-console.log("DISCORDANT STARS ADDING TNELIS");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

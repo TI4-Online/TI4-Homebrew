@@ -29,7 +29,8 @@ const factions = [{
   icon: "discordant-stars/faction-icons/ghoti.png",
   source: "homebrew.discordant_stars",
   startingTechChoice: "ghoti",
-  startingTech: [], //"gravity_drive", "sling_relay"],
+  startingTechChoices: ["gravity_drive", "sling_relay"],
+  startingTech: [],
   startingUnits: {
     flagship: 1,
     cruiser: 1,
@@ -115,7 +116,6 @@ const unitModifiers = [];
 
 // TODO: add vote count for the networked command tech
 
-console.log("DISCORDANT STARS ADDING GHOTI");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

@@ -29,7 +29,8 @@ const factions = [{
     icon: "discordant-stars/faction-icons/celdauri.png",
     source: "homebrew.discordant_stars",
     startingTechChoice: "celdauri",
-    startingTech: [], //"antimass_deflectors", "sarween_tools", "plasma_scoring"],
+    startingTechChoices: ["antimass_deflectors", "sarween_tools", "plasma_scoring"],
+    startingTech: [],
     startingUnits: {
         carrier: 1,
         destroyer: 1,
@@ -146,7 +147,7 @@ const unitModifiers = [
             debugger;
             return (
                 //getProjectionOfPowerStatus() && // projection of power is active (aka chosen ship still alive)
-                auxData.self.faction.name === "celdauri" &&
+                //auxData.self.faction.name === "celdauri" &&
                 auxData.rollType === "antiFighterBarrage" &&
                 isSpaceDockPresent(auxData.hex) // only in hexes in or adjacent to space dock
             )
@@ -157,7 +158,6 @@ const unitModifiers = [
     },
 ];
 
-console.log("DISCORDANT STARS ADDING CELDAIRI");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

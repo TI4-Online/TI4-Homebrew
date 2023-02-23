@@ -130,9 +130,8 @@ const unitModifiers = [
   },
 ];
 
-  // TODO: implement commander voting count adjustment
+// TODO: implement commander voting count adjustment
 
-console.log("DISCORDANT STARS ADDING AUGERS");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

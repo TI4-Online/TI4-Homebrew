@@ -132,7 +132,6 @@ const unitModifiers = [
 
   //TODO: implement mech vote calculation
 
-console.log("DISCORDANT STARS ADDING EDYN");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

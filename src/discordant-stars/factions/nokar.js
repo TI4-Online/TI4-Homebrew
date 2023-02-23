@@ -31,7 +31,8 @@ const factions = [{
   icon: "discordant-stars/faction-icons/nokar.png",
   source: "homebrew.discordant_stars",
   startingTechChoice: "nokar",
-  startingTech: [], //"psychoarchaeology", "dark_energy_tap", "ai_development_algorithm"],
+  startingTechChoices: ["psychoarchaeology", "dark_energy_tap", "ai_development_algorithm"],
+  startingTech: [],
   startingUnits: {
     carrier: 2,
     destroyer: 1,
@@ -156,7 +157,6 @@ const unitModifiers = [
 
   // TODO: add saber death roll
 
-console.log("DISCORDANT STARS ADDING NOKAR");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

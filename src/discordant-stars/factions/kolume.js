@@ -34,7 +34,8 @@ const factions = [{
   icon: "discordant-stars/faction-icons/kolume.png",
   source: "homebrew.discordant_stars",
   startingTechChoice: "kolume",
-  startingTech: [], //"graviton_laser_system", "predictive_intelligence"],
+  startingTechChoices: ["graviton_laser_system", "predictive_intelligence"],
+  startingTech: [],
   startingUnits: {
     carrier: 2,
     cruiser: 1,
@@ -145,10 +146,6 @@ const unitModifiers = [
   },
 ];
 
-
-
-
-console.log("DISCORDANT STARS ADDING KOLUME");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

@@ -153,7 +153,6 @@ const unitModifiers = [];
 
 // TODO: implement dice replacements (not rolling but taking the die result)
 
-console.log("DISCORDANT STARS ADDING MYKO-MENTORI");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

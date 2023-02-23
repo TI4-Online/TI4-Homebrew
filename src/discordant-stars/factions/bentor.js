@@ -30,7 +30,8 @@ const factions = [{
   icon: "discordant-stars/faction-icons/bentor.png",
   source: "homebrew.discordant_stars",
   startingTechChoice: "bentor",
-  startingTech: [], //"psychoarchaeology", "dark_energy_tap", "scanlink_drone_network"],
+  startingTechChoices: ["psychoarchaeology", "dark_energy_tap", "scanlink_drone_network"],
+  startingTech: [],
   startingUnits: {
     carrier: 1,
     cruiser: 2,
@@ -165,7 +166,6 @@ const unitModifiers = [
 
 // TODO: Attachement effect of the Promissory Note
 
-console.log("DISCORDANT STARS ADDING BENTOR");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

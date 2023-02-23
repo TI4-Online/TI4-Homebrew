@@ -119,7 +119,6 @@ const unitModifiers = [];
 //TODO: implement mech resource/influence adjustment
 //TODO: implement policy: the people - vote adjustment
 
-console.log("DISCORDANT STARS ADDING OLRADIN");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

@@ -133,7 +133,6 @@ const unitModifiers = [];
 // TODO: implement promissory note
 // TODO: implement commander
 
-console.log("DISCORDANT STARS ADDING KJALENGRAD");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

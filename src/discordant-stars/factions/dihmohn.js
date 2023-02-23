@@ -122,7 +122,6 @@ const unitModifiers = [];
 
 //TODO: implement commander is red tech skip
 
-console.log("DISCORDANT STARS ADDING DIHMOHN");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

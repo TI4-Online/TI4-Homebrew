@@ -173,7 +173,6 @@ const unitModifiers = [
     },
 ];
 
-console.log("DISCORDANT STARS ADDING ZEALOTS");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

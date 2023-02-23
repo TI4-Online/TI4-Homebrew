@@ -160,7 +160,6 @@ const unitModifiers = [
 // TODO: implement attachment promissory notes
 // TODO: implement SEIDR project tech
 
-console.log("DISCORDANT STARS ADDING VELDYR");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

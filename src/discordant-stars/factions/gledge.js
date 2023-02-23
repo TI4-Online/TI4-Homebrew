@@ -31,7 +31,8 @@ const factions = [{
   icon: "discordant-stars/faction-icons/gledge.png",
   source: "homebrew.discordant_stars",
   startingTechChoice: "gledge",
-  startingTech: [], //"psychoarchaeology", "scanlink_drone_network", "ai_development_algorithm"],
+  startingTechChoices: ["psychoarchaeology", "scanlink_drone_network", "ai_development_algorithm"],
+  startingTech: [],
   startingUnits: {
     carrier: 1,
     destroyer: 1,
@@ -160,7 +161,6 @@ const unitModifiers = [{
 
 //TODO: add promissory note attachement logic
 
-console.log("DISCORDANT STARS ADDING GLEDGE");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

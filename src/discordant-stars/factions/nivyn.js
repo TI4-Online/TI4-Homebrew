@@ -122,7 +122,6 @@ const unitModifiers = [];
 
 // TODO: implement wound token
 
-console.log("DISCORDANT STARS ADDING NIVYN");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

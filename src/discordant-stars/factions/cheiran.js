@@ -32,7 +32,8 @@ const factions = [{
   icon: "discordant-stars/faction-icons/cheiran.png",
   source: "homebrew.discordant_stars",
   startingTechChoice: "cheiran",
-  startingTech: [], //"magen_defense_grid", "self_assembly_routines"],
+  startingTechChoices: ["magen_defense_grid", "self_assembly_routines"],
+  startingTech: [],
   startingUnits: {
     carrier: 1,
     destroyer: 2,
@@ -151,7 +152,6 @@ const unitModifiers = [
   },
 ];
 
-console.log("DISCORDANT STARS ADDING CHEIRAN");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,

@@ -30,7 +30,8 @@ const factions = [{
   icon: "discordant-stars/faction-icons/lanefir.png",
   source: "homebrew.discordant_stars",
   startingTechChoice: "lanefir",
-  startingTech: [], //"dark_energy_tap", "scanlink_drone_network", "ai_development_algorithm"],
+  startingTechChoices: ["dark_energy_tap", "scanlink_drone_network", "ai_development_algorithm"],
+  startingTech: [],
   startingUnits: {
     carrier: 2,
     destroyer: 1,
@@ -108,7 +109,6 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-console.log("DISCORDANT STARS ADDING LANEFIR");
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
