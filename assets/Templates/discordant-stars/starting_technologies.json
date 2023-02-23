@@ -1,0 +1,94 @@
+{
+	"Type": "Card",
+	"GUID": "6A138A5647A921A06E22E79899D49BCD",
+	"Name": "Starting Technologies",
+	"Metadata": "card.starting_technology:discordant_stars/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "discordant-stars/starting_technology.jpg",
+	"BackTexture": "ti4/technology/unknown.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 4,
+	"NumVertical": 3,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
+	"CardNames":
+	{
+		"0": "Lanefir Starting Technology",
+		"1": "Ghoti Starting Technology",
+		"2": "Kolume Starting Technology",
+		"3": "Cheiran Starting Technology",
+		"4": "Kjalengard Starting Technology",
+		"5": "Celdauri Starting Technology",
+		"6": "Gledge Starting Technology",
+		"7": "Blex Starting Technology",
+		"8": "Nokar Starting Technology",
+		"9": "Tnelis Starting Technology",
+		"10": "Vaden Starting Technology",
+		"11": "Bentor Starting Technology"
+	},
+	"CardMetadata":
+	{
+		"0": "card.starting_technology:discordant_stars/lanefir",
+		"1": "card.starting_technology:discordant_stars/ghoti",
+		"2": "card.starting_technology:discordant_stars/kolume",
+		"3": "card.starting_technology:discordant_stars/cheiran",
+		"4": "card.starting_technology:discordant_stars/kjalengard",
+		"5": "card.starting_technology:discordant_stars/celdauri",
+		"6": "card.starting_technology:discordant_stars/gledge",
+		"7": "card.starting_technology:discordant_stars/blex",
+		"8": "card.starting_technology:discordant_stars/nokar",
+		"9": "card.starting_technology:discordant_stars/tnelis",
+		"10": "card.starting_technology:discordant_stars/vaden",
+		"11": "card.starting_technology:discordant_stars/bentor"
+	},
+	"CardTags":
+	{
+	}
+}

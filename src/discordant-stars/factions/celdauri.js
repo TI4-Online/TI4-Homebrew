@@ -28,7 +28,7 @@ const factions = [{
     packageId: refPackageId,
     icon: "discordant-stars/faction-icons/celdauri.png",
     source: "homebrew.discordant_stars",
-    // startingTechChoice: "celdauri",
+    startingTechChoice: "celdauri",
     startingTech: [], //"antimass_deflectors", "sarween_tools", "plasma_scoring"],
     startingUnits: {
         carrier: 1,
@@ -138,7 +138,6 @@ function isSpaceDockPresent() {
 const unitModifiers = [
     {
         // "At the start of a space combat choose 1 ship to gain AFB 6(x2)",
-        isCombat: true,
         localeName: "unit_modifier.name.projection_of_power",
         localeDescription: "unit_modifier.desc.projection_of_power",
         owner: "self",

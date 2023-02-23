@@ -31,6 +31,7 @@ const factions = [{
   icon: "discordant-stars/faction-icons/kjalengard.png",
   source: "homebrew.discordant_stars",
   startingTech: [],
+  startingTechChoice: "kjalengard",
   startingUnits: {
     carrier: 2,
     destroyer: 1,

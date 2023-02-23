@@ -29,7 +29,7 @@ const factions = [{
   promissoryNotes: ["encryption_key"],
   icon: "discordant-stars/faction-icons/bentor.png",
   source: "homebrew.discordant_stars",
-  // startingTechChoice: "bentor",
+  startingTechChoice: "bentor",
   startingTech: [], //"psychoarchaeology", "dark_energy_tap", "scanlink_drone_network"],
   startingUnits: {
     carrier: 1,

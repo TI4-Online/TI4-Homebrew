@@ -19,6 +19,7 @@ world.TI4.homebrew.inject({
         "card.planet:homebrew.discordant_stars/7": "7D21F071427F9B4BB2BDC183FD4E2BD0",
         "card.promissory:homebrew.discordant_stars/0": "8A1A369D814751CB4173B18300170079",
         "card.promissory:homebrew.discordant_stars/1": "99D275DD4C39AE8D6108F6A8A47EE42A",
+        "card.starting_technology:discordant_stars/0": "6A138A5647A921A06E22E79899D49BCD",
         "card.technology.blue:homebrew.discordant_stars/0": "94057D09CAC45C93C2E4D0202B253EC6",
         "card.technology.green:homebrew.discordant_stars/0": "AB665B9F7B0857DAF6194A51F6021322",
         "card.technology.red:homebrew.discordant_stars/0": "2712AC45E5CB3EEEE52260DB4A331251",

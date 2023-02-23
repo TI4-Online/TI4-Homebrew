@@ -30,7 +30,7 @@ const factions = [{
   promissoryNotes: ["gledge_base"],
   icon: "discordant-stars/faction-icons/gledge.png",
   source: "homebrew.discordant_stars",
-  // startingTechChoice: "gledge",
+  startingTechChoice: "gledge",
   startingTech: [], //"psychoarchaeology", "scanlink_drone_network", "ai_development_algorithm"],
   startingUnits: {
     carrier: 1,
