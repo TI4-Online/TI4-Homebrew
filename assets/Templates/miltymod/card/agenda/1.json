@@ -1,0 +1,82 @@
+{
+	"Type": "Card",
+	"GUID": "3A5A08EE4A4B5F3ABE29B99B8079F5E2",
+	"Name": "Agenda (miltymod 2/3)",
+	"Metadata": "card.agenda:homebrew.miltymod/1",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "miltymod/card/agenda/1.face.jpg",
+	"BackTexture": "ti4/agenda.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 3,
+	"NumVertical": 2,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5 ],
+	"CardNames":
+	{
+		"0": "Regulated Conscription",
+		"1": "Research Team: Biotic",
+		"2": "Research Team: Cybernetic",
+		"3": "Research Team: Propulsion",
+		"4": "Research Team: Warfare",
+		"5": "Shard of the Throne"
+	},
+	"CardMetadata":
+	{
+		"0": "card.agenda:homebrew.miltymod/regulated_conscription",
+		"1": "card.agenda:homebrew.miltymod/research_team_biotic",
+		"2": "card.agenda:homebrew.miltymod/research_team_cybernetic",
+		"3": "card.agenda:homebrew.miltymod/research_team_propulsion",
+		"4": "card.agenda:homebrew.miltymod/research_team_warfare",
+		"5": "card.agenda:homebrew.miltymod/shard_of_the_throne"
+	},
+	"CardTags":
+	{
+	}
+}

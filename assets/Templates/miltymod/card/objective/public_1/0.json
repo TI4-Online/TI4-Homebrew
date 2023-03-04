@@ -1,0 +1,82 @@
+{
+	"Type": "Card",
+	"GUID": "46861A47466086241C96319270BDB366",
+	"Name": "Public Objectives I (miltymod 1/1)",
+	"Metadata": "card.objective.public_1:homebrew.miltymod/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "miltymod/card/objective/public_1/0.face.jpg",
+	"BackTexture": "ti4/objective/public_1.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 2,
+	"NumVertical": 1,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1 ],
+	"CardNames":
+	{
+		"0": "Bestow a Keleres Fleet",
+		"1": "Diversify Research",
+		"2": "Diversify Research",
+		"3": "Erect a Monument",
+		"4": "Expand Borders",
+		"5": "Found Research Outposts"
+	},
+	"CardMetadata":
+	{
+		"0": "card.objective.public_1:homebrew.miltymod/bestow_a_keleres_fleet",
+		"1": "card.objective.public_1:homebrew/miltymod/diversify_research",
+		"2": "card.objective.public_1:base/diversify_research",
+		"3": "card.objective.public_1:base/erect_a_monument",
+		"4": "card.objective.public_1:base/expand_borders",
+		"5": "card.objective.public_1:base/found_research_outposts"
+	},
+	"CardTags":
+	{
+	}
+}

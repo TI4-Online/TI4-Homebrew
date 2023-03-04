@@ -1,0 +1,82 @@
+{
+	"Type": "Card",
+	"GUID": "BE15F7214B9E7B6B73AA45AEFB564C2D",
+	"Name": "Technology (Yellow) (miltymod 1/2)",
+	"Metadata": "card.technology.yellow:homebrew.miltymod/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "miltymod/card/technology/yellow/0.face.jpg",
+	"BackTexture": "global/card/technology/yellow.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 2,
+	"NumVertical": 3,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5 ],
+	"CardNames":
+	{
+		"0": "Sarween Tools",
+		"1": "L4 Disruptors",
+		"2": "Graviton Laser System",
+		"3": "E-res Siphons",
+		"4": "Integrated Economy",
+		"5": "Inheritance Systems"
+	},
+	"CardMetadata":
+	{
+		"0": "card.technology.yellow:homebrew.miltymod/sarween_tools",
+		"1": "card.technology.yellow.letnev:homebrew.miltymod/l4_disruptors",
+		"2": "card.technology.yellow:homebrew.miltymod/graviton_laser_system",
+		"3": "card.technology.yellow.jolnar:homebrew.miltymod/eeres_siphons",
+		"4": "card.technology.yellow:homebrew.miltymod/integrated_economy",
+		"5": "card.technology.yellow.l1z1x:homebrew.miltymod/inheritance_systems"
+	},
+	"CardTags":
+	{
+	}
+}

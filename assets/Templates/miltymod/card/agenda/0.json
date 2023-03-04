@@ -1,0 +1,82 @@
+{
+	"Type": "Card",
+	"GUID": "9892C72A46F454B0DC93EEB78A3D32CF",
+	"Name": "Agenda (miltymod 1/3)",
+	"Metadata": "card.agenda:homebrew.miltymod/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "miltymod/card/agenda/0.face.jpg",
+	"BackTexture": "ti4/agenda.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 3,
+	"NumVertical": 2,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5 ],
+	"CardNames":
+	{
+		"0": "Enforced Travel Ban",
+		"1": "Holy Planet of Ixth",
+		"2": "Ixthian Artifact",
+		"3": "Minister of Policy",
+		"4": "New Constitution",
+		"5": "Public Execution"
+	},
+	"CardMetadata":
+	{
+		"0": "card.agenda:homebrew.miltymod/enforced_travel_ban",
+		"1": "card.agenda:homebrew.miltymod/holy_planet_of_ixth",
+		"2": "card.agenda:homebrew.miltymod/ixthian_artifact",
+		"3": "card.agenda:homebrew.miltymod/minister_of_policy",
+		"4": "card.agenda:homebrew.miltymod/new_constitution",
+		"5": "card.agenda:homebrew.miltymod/public_execution"
+	},
+	"CardTags":
+	{
+	}
+}

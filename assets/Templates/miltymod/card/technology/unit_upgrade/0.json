@@ -1,0 +1,82 @@
+{
+	"Type": "Card",
+	"GUID": "C14887A644F2DC65576E269839EE6320",
+	"Name": "Technology (Unit Upgrade) (miltymod 1/3)",
+	"Metadata": "card.technology.unit_upgrade:homebrew.miltymod/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "miltymod/card/technology/unit_upgrade/0.face.jpg",
+	"BackTexture": "global/card/technology/unit_upgrade.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 2,
+	"NumVertical": 3,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5 ],
+	"CardNames":
+	{
+		"0": "Carrier II",
+		"1": "Cruiser II",
+		"2": "Dreadnought II",
+		"3": "Fighter II",
+		"4": "Infantry II",
+		"5": "Space Dock II"
+	},
+	"CardMetadata":
+	{
+		"0": "card.technology.unit_upgrade:homebrew.miltymod/carrier_2",
+		"1": "card.technology.unit_upgrade:homebrew.miltymod/cruiser_2",
+		"2": "card.technology.unit_upgrade:homebrew.miltymod/dreadnought_2",
+		"3": "card.technology.unit_upgrade:homebrew.miltymod/fighter_2",
+		"4": "card.technology.unit_upgrade:homebrew.miltymod/infantry_2",
+		"5": "card.technology.unit_upgrade:homebrew.miltymod/space_dock_2"
+	},
+	"CardTags":
+	{
+	}
+}
