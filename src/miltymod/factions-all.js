@@ -2,15 +2,16 @@ const { world, refPackageId } = require("@tabletop-playground/api");
 // Factions could all be in one giant file.  Splitting them up makes it easier
 // to fix specific factions and add scripted unit modifiers.
 
-const UNIT_ATTRS = [{
-  unit: "cruiser",
-  upgradeLevel: 2,
-  localeName: "unit.cruiser_2",
-  triggerNsid: "card.technology.unit_upgrade:homebrew.miltymod/cruiser_2",
-  spaceCombat: { hit: 6, extraHitsOn: { count: 1, value: 9 }},
-  move: 3,
-  capacity: 1,
-}];
+const UNIT_ATTRS = require("./miltymod-unit-attrs.data");
+// const UNIT_ATTRS = [{
+//   unit: "cruiser",
+//   upgradeLevel: 2,
+//   localeName: "unit.cruiser_2",
+//   triggerNsid: "card.technology.unit_upgrade:homebrew.miltymod/cruiser_2",
+//   spaceCombat: { hit: 6, extraHitsOn: { count: 1, value: 9 }},
+//   move: 3,
+//   capacity: 1,
+// }];
 
 // injecting the basic nsidToTemplateId
 world.TI4.homebrew.inject({
@@ -38,7 +39,7 @@ world.TI4.homebrew.inject({
         "card.technology.unit_upgrade:homebrew.miltymod/0": "C14887A644F2DC65576E269839EE6320",
         "card.technology.unit_upgrade:homebrew.miltymod/1": "62758D0C4A97F23757AC6E810CF2A200",
         "card.technology.unit_upgrade:homebrew.miltymod/2": "B38E6FF44BD9A7FF26A7A4B2ECBDA50D",
-        "tile.strategy:homebrew.miltymod/construction:" : "5C4DF749446C11D225F2DFB6DB069BAE",
+        "tile.strategy:base/construction:" : "5C4DF749446C11D225F2DFB6DB069BAE",
     },
     replace:
     {
@@ -61,27 +62,43 @@ world.TI4.homebrew.inject({
       "card.technology.unit_upgrade:base/infantry_2" : "card.technology.unit_upgrade:homebrew.miltymod/infantry_2",
       "card.technology.unit_upgrade:base/space_dock_2" : "card.technology.unit_upgrade:homebrew.miltymod/space_dock_2",    
       "card.agenda:base/enforced_travel_ban" : "card.agenda:homebrew.miltymod/enforced_travel_ban",
-      "card.agenda:base/holy_planet_of_ixth" : "card.agenda:homebrew.miltymod/holy_planet_of_ixth",
+      "card.agenda:base.only/holy_planet_of_ixth" : "card.agenda:homebrew.miltymod/holy_planet_of_ixth",
       "card.agenda:base/ixthian_artifact" : "card.agenda:homebrew.miltymod/ixthian_artifact",
       "card.agenda:base/minister_of_policy" : "card.agenda:homebrew.miltymod/minister_of_policy",
       "card.agenda:base/new_constitution" : "card.agenda:homebrew.miltymod/new_constitution",
       "card.agenda:base/public_execution" : "card.agenda:homebrew.miltymod/public_execution",
       "card.agenda:base/regulated_conscription" : "card.agenda:homebrew.miltymod/regulated_conscription",
-      "card.agenda:base/research_team_biotic" : "card.agenda:homebrew.miltymod/research_team_biotic",
-      "card.agenda:base/research_team_cybernetic" : "card.agenda:homebrew.miltymod/research_team_cybernetic",
-      "card.agenda:base/research_team_propulsion" : "card.agenda:homebrew.miltymod/research_team_propulsion",
-      "card.agenda:base/research_team_warfare" : "card.agenda:homebrew.miltymod/research_team_warfare",
-      "card.agenda:base/shard_of_the_throne" : "card.agenda:homebrew.miltymod/shard_of_the_throne",
-      "card.agenda:base/the_crown_of_emphidia" : "card.agenda:homebrew.miltymod/the_crown_of_emphidia",
-      "card.agenda:base/the_crown_of_thalnos" : "card.agenda:homebrew.miltymod/the_crown_of_thalnos",
+      "card.agenda:base.only/research_team_biotic" : "card.agenda:homebrew.miltymod/research_team_biotic",
+      "card.agenda:base.only/research_team_cybernetic" : "card.agenda:homebrew.miltymod/research_team_cybernetic",
+      "card.agenda:base.only/research_team_propulsion" : "card.agenda:homebrew.miltymod/research_team_propulsion",
+      "card.agenda:base.only/research_team_warfare" : "card.agenda:homebrew.miltymod/research_team_warfare",
+      "card.agenda:base.only/shard_of_the_throne" : "card.agenda:homebrew.miltymod/shard_of_the_throne",
+      "card.agenda:base.only/the_crown_of_emphidia" : "card.agenda:homebrew.miltymod/the_crown_of_emphidia",
+      "card.agenda:base.only/the_crown_of_thalnos" : "card.agenda:homebrew.miltymod/the_crown_of_thalnos",
       "card.agenda:base/wormhole_research" : "card.agenda:homebrew.miltymod/wormhole_research",
-      "card.objective.public_1:base/diversify_research" : "card.objective.public_1:homebrew.miltymod/diversify_research",
+      "card.objective.public_1:base/diversify_research" : "card.objective.public_1:homebrew/miltymod/diversify_research",
       "card.objective.public_1:base/lead_from_the_front" : "card.objective.public_1:homebrew.miltymod/bestow_a_keleres_fleet",
       "card.objective.public_2:base/master_the_sciences" : "card.objective.public_2:homebrew.miltymod/master_the_sciences",
       "card.objective.public_2:base/galvanize_the_people" : "card.objective.public_2:homebrew.miltymod/establish_imperial_navy",
-      "card.objective.secret:base/become_the_gatekeeper" : "card.objective.public_1:homebrew.miltymod/become_the_gatekeeper",
+      "card.objective.secret:base/become_the_gatekeeper" : "card.objective.secret:homebrew.miltymod/become_the_gatekeeper",
+      "card.action:base/ancient_burial_sites" : "card.action:homebrew.miltymod/ancient_burial_sites",
+      "card.action:base/bribery" : "card.action:homebrew.miltymod/bribery",
+      "card.action:base/construction_rider" : "card.action:homebrew.miltymod/construction_rider",
+      "card.action:base/cripple_defenses" : "card.action:homebrew.miltymod/cripple_defenses",
+      "card.action:base/direct_hit.1" : "card.action:homebrew.miltymod/direct_hit.1",
+      "card.action:base/direct_hit.2" : "card.action:homebrew.miltymod/direct_hit.2",
+      "card.action:base/direct_hit.3" : "card.action:homebrew.miltymod/direct_hit.3",
+      "card.action:base/direct_hit.4" : "card.action:homebrew.miltymod/direct_hit.4",
+      "card.action:base/experimental_battlestation" : "card.action:homebrew.miltymod/experimental_battlestation",
+      "card.action:base/lost_star_chart" : "card.action:homebrew.miltymod/lost_star_chart",
+      "card.action:base/lucky_shot" : "card.action:homebrew.miltymod/lucky_shot",
+      "card.action:base/reactor_meltdown" : "card.action:homebrew.miltymod/reactor_meltdown",
+      "card.action:base/salvage" : "card.action:homebrew.miltymod/salvage",
+      "card.action:base/tactical_bombardment" : "card.action:homebrew.miltymod/tactical_bombardment",
+      "card.action:base/unstable_planet" : "card.action:homebrew.miltymod/unstable_planet",
+      "card.action:base/upgrade" : "card.action:homebrew.miltymod/upgrade",
     },
-    //unitAttrs: UNIT_ATTRS,
+    unitAttrs: UNIT_ATTRS,
   });
 
 console.log("MILTYMOD ADDING FACTIONS");
