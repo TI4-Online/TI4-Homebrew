@@ -1,5 +1,16 @@
+const { world, refPackageId } = require("@tabletop-playground/api");
 // Factions could all be in one giant file.  Splitting them up makes it easier
 // to fix specific factions and add scripted unit modifiers.
+
+const UNIT_ATTRS = [{
+  unit: "cruiser",
+  upgradeLevel: 2,
+  localeName: "unit.cruiser_2",
+  triggerNsid: "card.technology.unit_upgrade:homebrew.miltymod/cruiser_2",
+  spaceCombat: { hit: 6, extraHitsOn: { count: 1, value: 9 }},
+  move: 3,
+  capacity: 1,
+}];
 
 // injecting the basic nsidToTemplateId
 world.TI4.homebrew.inject({
@@ -26,10 +37,53 @@ world.TI4.homebrew.inject({
         "card.technology.yellow:homebrew.miltymod/1": "E49655E84CE484775F2EF8941F41DE0C",
         "card.technology.unit_upgrade:homebrew.miltymod/0": "C14887A644F2DC65576E269839EE6320",
         "card.technology.unit_upgrade:homebrew.miltymod/1": "62758D0C4A97F23757AC6E810CF2A200",
-        "card.technology.unit_upgrade:homebrew.miltymod/2": "B38E6FF44BD9A7FF26A7A4B2ECBDA50D"
+        "card.technology.unit_upgrade:homebrew.miltymod/2": "B38E6FF44BD9A7FF26A7A4B2ECBDA50D",
+        "tile.strategy:homebrew.miltymod/construction:" : "5C4DF749446C11D225F2DFB6DB069BAE",
     },
+    replace:
+    {
+      "card.technology.blue:base/fleet_logistics" : "card.technology.blue:homebrew.miltymod/fleet_logistics",
+      "card.technology.green:base/dacxive_animators" : "card.technology.green:homebrew.miltymod/dacxive_animators",
+      "card.technology.green:base/neural_motivator" : "card.technology.green:homebrew.miltymod/neural_motivator",
+      "card.technology.green:base/hyper_metabolism" : "card.technology.green:homebrew.miltymod/hyper_metabolism",
+      "card.technology.green:base/x89_bacterial_weapon" : "card.technology.green:homebrew.miltymod/x89_bacterial_weapon",
+      "card.technology.red:base/plasma_scoring" : "card.technology.red:homebrew.miltymod/plasma_scoring",
+      "card.technology.red:base/magen_defense_grid" : "card.technology.red:homebrew.miltymod/magen_defense_grid",
+      "card.technology.red:base/duranium_armor" : "card.technology.red:homebrew.miltymod/duranium_armor",
+      "card.technology.yellow:base/sarween_tools" : "card.technology.yellow:homebrew.miltymod/sarween_tools",
+      "card.technology.yellow:base/graviton_laser_system" : "card.technology.yellow:homebrew.miltymod/graviton_laser_system",
+      "card.technology.yellow:base/integrated_economy" : "card.technology.yellow:homebrew.miltymod/integrated_economy",
+      "card.technology.unit_upgrade:base/war_sun" : "card.technology.unit_upgrade:homebrew.miltymod/war_sun",
+      "card.technology.unit_upgrade:base/cruiser_2" : "card.technology.unit_upgrade:homebrew.miltymod/cruiser_2",
+      "card.technology.unit_upgrade:base/dreadnought_2" : "card.technology.unit_upgrade:homebrew.miltymod/dreadnought_2",
+      "card.technology.unit_upgrade:base/carrier_2" : "card.technology.unit_upgrade:homebrew.miltymod/carrier_2",
+      "card.technology.unit_upgrade:base/fighter_2" : "card.technology.unit_upgrade:homebrew.miltymod/fighter_2",
+      "card.technology.unit_upgrade:base/infantry_2" : "card.technology.unit_upgrade:homebrew.miltymod/infantry_2",
+      "card.technology.unit_upgrade:base/space_dock_2" : "card.technology.unit_upgrade:homebrew.miltymod/space_dock_2",    
+      "card.agenda:base/enforced_travel_ban" : "card.agenda:homebrew.miltymod/enforced_travel_ban",
+      "card.agenda:base/holy_planet_of_ixth" : "card.agenda:homebrew.miltymod/holy_planet_of_ixth",
+      "card.agenda:base/ixthian_artifact" : "card.agenda:homebrew.miltymod/ixthian_artifact",
+      "card.agenda:base/minister_of_policy" : "card.agenda:homebrew.miltymod/minister_of_policy",
+      "card.agenda:base/new_constitution" : "card.agenda:homebrew.miltymod/new_constitution",
+      "card.agenda:base/public_execution" : "card.agenda:homebrew.miltymod/public_execution",
+      "card.agenda:base/regulated_conscription" : "card.agenda:homebrew.miltymod/regulated_conscription",
+      "card.agenda:base/research_team_biotic" : "card.agenda:homebrew.miltymod/research_team_biotic",
+      "card.agenda:base/research_team_cybernetic" : "card.agenda:homebrew.miltymod/research_team_cybernetic",
+      "card.agenda:base/research_team_propulsion" : "card.agenda:homebrew.miltymod/research_team_propulsion",
+      "card.agenda:base/research_team_warfare" : "card.agenda:homebrew.miltymod/research_team_warfare",
+      "card.agenda:base/shard_of_the_throne" : "card.agenda:homebrew.miltymod/shard_of_the_throne",
+      "card.agenda:base/the_crown_of_emphidia" : "card.agenda:homebrew.miltymod/the_crown_of_emphidia",
+      "card.agenda:base/the_crown_of_thalnos" : "card.agenda:homebrew.miltymod/the_crown_of_thalnos",
+      "card.agenda:base/wormhole_research" : "card.agenda:homebrew.miltymod/wormhole_research",
+      "card.objective.public_1:base/diversify_research" : "card.objective.public_1:homebrew.miltymod/diversify_research",
+      "card.objective.public_1:base/lead_from_the_front" : "card.objective.public_1:homebrew.miltymod/bestow_a_keleres_fleet",
+      "card.objective.public_2:base/master_the_sciences" : "card.objective.public_2:homebrew.miltymod/master_the_sciences",
+      "card.objective.public_2:base/galvanize_the_people" : "card.objective.public_2:homebrew.miltymod/establish_imperial_navy",
+      "card.objective.secret:base/become_the_gatekeeper" : "card.objective.public_1:homebrew.miltymod/become_the_gatekeeper",
+    },
+    //unitAttrs: UNIT_ATTRS,
   });
 
 console.log("MILTYMOD ADDING FACTIONS");
-
+world.TI4.homebrew.resetOnTableDecks()
 require("./factions/arborec");
