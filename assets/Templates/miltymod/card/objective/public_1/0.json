@@ -61,20 +61,12 @@
 	"CardNames":
 	{
 		"0": "Bestow a Keleres Fleet",
-		"1": "Diversify Research",
-		"2": "Diversify Research",
-		"3": "Erect a Monument",
-		"4": "Expand Borders",
-		"5": "Found Research Outposts"
+		"1": "Diversify Research"
 	},
 	"CardMetadata":
 	{
 		"0": "card.objective.public_1:homebrew.miltymod/bestow_a_keleres_fleet",
-		"1": "card.objective.public_1:homebrew/miltymod/diversify_research",
-		"2": "card.objective.public_1:base/diversify_research",
-		"3": "card.objective.public_1:base/erect_a_monument",
-		"4": "card.objective.public_1:base/expand_borders",
-		"5": "card.objective.public_1:base/found_research_outposts"
+		"1": "card.objective.public_1:homebrew/miltymod/diversify_research"
 	},
 	"CardTags":
 	{

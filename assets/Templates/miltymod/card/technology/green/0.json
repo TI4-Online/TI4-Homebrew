@@ -39,7 +39,7 @@
 	},
 	"Tags": [],
 	"FrontTexture": "miltymod/card/technology/green/0.face.jpg",
-	"BackTexture": "global/card/technology/green.back.jpg",
+	"BackTexture": "ti4/technology/green.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,

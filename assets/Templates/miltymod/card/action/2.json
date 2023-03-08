@@ -72,9 +72,7 @@
 		"0": "card.action:homebrew.miltymod/salvage",
 		"1": "card.action:homebrew.miltymod/tactical_bombardment",
 		"2": "card.action:homebrew.miltymod/unstable_planet",
-		"3": "card.action:homebrew.miltymod/upgrade",
-		"4": "card.action:homebrew.miltymod/lucky_shot",
-		"5": "card.action:homebrew.miltymod/reactor_meltdown"
+		"3": "card.action:homebrew.miltymod/upgrade"
 	},
 	"CardTags":
 	{

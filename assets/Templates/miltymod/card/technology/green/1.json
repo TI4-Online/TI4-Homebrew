@@ -39,7 +39,7 @@
 	},
 	"Tags": [],
 	"FrontTexture": "miltymod/card/technology/green/1.face.jpg",
-	"BackTexture": "global/card/technology/green.back.jpg",
+	"BackTexture": "ti4/technology/green.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
@@ -61,20 +61,12 @@
 	"CardNames":
 	{
 		"0": "Production Biomes",
-		"1": "Yin Spinner",
-		"2": "Hyper Metabolism",
-		"3": "X-89 Bacterial Weapon",
-		"4": "Bioplasmosis",
-		"5": "Instinct Training"
+		"1": "Yin Spinner"
 	},
 	"CardMetadata":
 	{
 		"0": "card.technology.green.hacan:homebrew.miltymod/production_biomes",
-		"1": "card.technology.green.yin:homebrew.miltymod/yin_spinner",
-		"2": "card.technology.green:homebrew.miltymod/hyper_metabolism",
-		"3": "card.technology.green:homebrew.miltymod/x89_bacterial_weapon",
-		"4": "card.technology.green.arborec:homebrew.miltymod/bioplasmosis",
-		"5": "card.technology.green.xxcha:homebrew/instinct_training"
+		"1": "card.technology.green.yin:homebrew.miltymod/yin_spinner"
 	},
 	"CardTags":
 	{

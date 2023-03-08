@@ -61,20 +61,14 @@
 	"CardNames":
 	{
 		"0": "Stymie",
-		"1": "Creuss IFF",
-		"2": "War Funding",
-		"3": "Greyfire Mutagen",
-		"4": "Military Support",
-		"5": "Political Favor"
+		"1": "Tekklar Legion",
+		"2": "War Funding"
 	},
 	"CardMetadata":
 	{
 		"0": "card.promissory.arborec:homebrew.miltymod/stymie",
 		"1": "card.promissory.norr:homebrew.miltymod/tekklar_legion",
-		"2": "card.promissory.letnev:homebrew.miltymod/war_funding",
-		"3": "card.promissory.yin:homebrew.miltymod/greyfire_mutagen",
-		"4": "card.promissory.sol:homebrew.miltymod/military_support",
-		"5": "card.promissory.xxcha:homebrew.miltymod/political_favor"
+		"2": "card.promissory.letnev:homebrew.miltymod/war_funding"
 	},
 	"CardTags":
 	{

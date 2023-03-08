@@ -150,7 +150,7 @@
 	},
 	"Tags": [],
 	"FrontTexture": "miltymod/factionsheets/nekro.face.jpg",
-	"BackTexture": "locale/factionsheets/base/nekro.face.jpg",
+	"BackTexture": "miltymod/factionsheets/nekro.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

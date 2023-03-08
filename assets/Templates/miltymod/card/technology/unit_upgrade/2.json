@@ -39,7 +39,7 @@
 	},
 	"Tags": [],
 	"FrontTexture": "miltymod/card/technology/unit_upgrade/2.face.jpg",
-	"BackTexture": "global/card/technology/unit_upgrade.back.jpg",
+	"BackTexture": "ti4/technology/unit_upgrade.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
@@ -62,19 +62,13 @@
 	{
 		"0": "Spec Ops II",
 		"1": "Super Dreadnought II",
-		"2": "Prototype War Sun II",
-		"3": "Floating Factory II",
-		"4": "Hybrid Crystal Fighter II",
-		"5": "Letani Warrior II"
+		"2": "Prototype War Sun II"
 	},
 	"CardMetadata":
 	{
 		"0": "card.technology.unit_upgrade.sol:homebrew.miltymod/spec_ops_2",
 		"1": "card.technology.unit_upgrade.l1z1x:homebrew.miltymod/super_dreadnought_2",
-		"2": "card.technology.unit_upgrade.muaat:homebrew.miltymod/prototype_war_sun_2",
-		"3": "card.technology.unit_upgrade.saar:homebrew.miltymod/floating_factory_2",
-		"4": "card.technology.unit_upgrade.naalu:homebrew.miltymod/hybrid_crystal_fighter_2",
-		"5": "card.technology.unit_upgrade.arborec:homebrew.miltymod/letani_warrior_2"
+		"2": "card.technology.unit_upgrade.muaat:homebrew.miltymod/prototype_war_sun_2"
 	},
 	"CardTags":
 	{

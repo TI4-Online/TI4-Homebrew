@@ -150,7 +150,7 @@
 	},
 	"Tags": [],
 	"FrontTexture": "miltymod/factionsheets/yin.face.jpg",
-	"BackTexture": "locale/factionsheets/base/yin.face.jpg",
+	"BackTexture": "miltymod/factionsheets/yin.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

@@ -71,10 +71,7 @@
 	{
 		"0": "card.agenda:homebrew.miltymod/the_crown_of_emphidia",
 		"1": "card.agenda:homebrew.miltymod/the_crown_of_thalnos",
-		"2": "card.agenda:homebrew.miltymod/wormhole_research",
-		"3": "card.agenda:homebrew/miltymod/research_team_propulsion",
-		"4": "card.agenda:homebrew/miltymod/research_team_warfare",
-		"5": "card.agenda:homebrew/miltymod/shard_of_the_throne"
+		"2": "card.agenda:homebrew.miltymod/wormhole_research"
 	},
 	"CardTags":
 	{

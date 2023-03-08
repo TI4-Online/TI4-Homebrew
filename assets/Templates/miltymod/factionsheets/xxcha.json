@@ -150,7 +150,7 @@
 	},
 	"Tags": [],
 	"FrontTexture": "miltymod/factionsheets/xxcha.face.jpg",
-	"BackTexture": "locale/factionsheets/base/xxcha.face.jpg",
+	"BackTexture": "miltymod/factionsheets/xxcha.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

@@ -61,20 +61,12 @@
 	"CardNames":
 	{
 		"0": "Establish Imperial Navy",
-		"1": "Master the Sciences",
-		"2": "Form Galactic Brain Trust",
-		"3": "Found a Golden Age",
-		"4": "Galvanize the People",
-		"5": "Manipulate Galactic Law"
+		"1": "Master the Sciences"
 	},
 	"CardMetadata":
 	{
 		"0": "card.objective.public_2:homebrew.miltymod/establish_imperial_navy",
-		"1": "card.objective.public_2:homebrew.miltymod/master_the_sciences",
-		"2": "card.objective.public_2:base/form_galactic_brain_trust",
-		"3": "card.objective.public_2:base/found_a_golden_age",
-		"4": "card.objective.public_2:base/galvanize_the_people",
-		"5": "card.objective.public_2:base/manipulate_galactic_law"
+		"1": "card.objective.public_2:homebrew.miltymod/master_the_sciences"
 	},
 	"CardTags":
 	{

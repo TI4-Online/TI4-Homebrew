@@ -39,7 +39,7 @@
 	},
 	"Tags": [],
 	"FrontTexture": "miltymod/card/technology/yellow/1.face.jpg",
-	"BackTexture": "global/card/technology/yellow.back.jpg",
+	"BackTexture": "ti4/technology/yellow.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
@@ -60,21 +60,13 @@
 	"Indices": [ 0, 1 ],
 	"CardNames":
 	{
-		"0": "Sarween Tools",
-		"1": "L4 Disruptors",
-		"2": "Graviton Laser System",
-		"3": "E-res Siphons",
-		"4": "Integrated Economy",
-		"5": "Inheritance Systems"
+		"0": "Impulse Core",
+		"1": "Hegemonic Trade Policy"
 	},
 	"CardMetadata":
 	{
 		"0": "card.technology.yellow.yin:homebrew.miltymod/impulse_core",
-		"1": "card.technology.yellow.winnu:homebrew.miltymod/hegemonic_trade_policy",
-		"2": "card.technology.yellow:homebrew.miltymod/graviton_laser_system",
-		"3": "card.technology.yellow.jolnar:homebrew.miltymod/eeres_siphons",
-		"4": "card.technology.yellow:homebrew.miltymod/integrated_economy",
-		"5": "card.technology.yellow.l1z1x:homebrew.miltymod/inheritance_systems"
+		"1": "card.technology.yellow.winnu:homebrew.miltymod/hegemonic_trade_policy"
 	},
 	"CardTags":
 	{

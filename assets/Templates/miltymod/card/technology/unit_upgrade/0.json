@@ -39,7 +39,7 @@
 	},
 	"Tags": [],
 	"FrontTexture": "miltymod/card/technology/unit_upgrade/0.face.jpg",
-	"BackTexture": "global/card/technology/unit_upgrade.back.jpg",
+	"BackTexture": "ti4/technology/unit_upgrade.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,

@@ -39,7 +39,7 @@
 	},
 	"Tags": [],
 	"FrontTexture": "miltymod/card/technology/red/0.face.jpg",
-	"BackTexture": "global/card/technology/red.back.jpg",
+	"BackTexture": "ti4/technology/red.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
@@ -63,18 +63,14 @@
 		"0": "Plasma Scoring",
 		"1": "Duranium Armor",
 		"2": "Magen Defense Grid",
-		"3": "Magmus Reactor",
-		"4": "Dimensional Splicer",
-		"5": "Non-Euclidean Shielding"
+		"3": "Magmus Reactor"
 	},
 	"CardMetadata":
 	{
 		"0": "card.technology.red:homebrew.miltymod/plasma_scoring",
 		"1": "card.technology.red:homebrew.miltymod/duranium_armor",
 		"2": "card.technology.red:homebrew.miltymod/magen_defense_grid",
-		"3": "card.technology.red.muaat:homebrew.miltymod/magmus_reactor",
-		"4": "card.technology.red.creuss:base/dimensional_splicer",
-		"5": "card.technology.red.letnev:base/noneuclidean_shielding"
+		"3": "card.technology.red.muaat:homebrew.miltymod/magmus_reactor"
 	},
 	"CardTags":
 	{

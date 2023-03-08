@@ -39,7 +39,7 @@
 	},
 	"Tags": [],
 	"FrontTexture": "miltymod/card/technology/blue/0.face.jpg",
-	"BackTexture": "global/card/technology/blue.back.jpg",
+	"BackTexture": "ti4/technology/blue.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
@@ -63,18 +63,14 @@
 		"0": "Fleet Logistics",
 		"1": "Chaos Mapping",
 		"2": "Lazax Gate Folding",
-		"3": "Wormhole Generator",
-		"4": "Wormhole Generator",
-		"5": "Spacial Conduit Cylinder"
+		"3": "Wormhole Generator"
 	},
 	"CardMetadata":
 	{
 		"0": "card.technology.blue:homebrew.miltymod/fleet_logistics",
 		"1": "card.technology.blue.saar:homebrew.miltymod/chaos_mapping",
 		"2": "card.technology.blue.winnu:homebrew.miltymod/lazax_gate_folding",
-		"3": "card.technology.blue.creuss:homebrew.miltymod/wormhole_generator",
-		"4": "card.technology.blue.creuss:base/wormhole_generator",
-		"5": "card.technology.blue.jolnar:base/spacial_conduit_cylinder"
+		"3": "card.technology.blue.creuss:homebrew.miltymod/wormhole_generator"
 	},
 	"CardTags":
 	{
