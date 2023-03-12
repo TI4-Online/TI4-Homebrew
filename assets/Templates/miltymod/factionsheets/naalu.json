@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "miltymod/factionsheets/naalu.face.jpg",
-	"BackTexture": "miltymod/factionsheets/naalu.back.jpg",
+	"FrontTexture": "miltymod/factionsheets/naalu.back.jpg",
+	"BackTexture": "miltymod/factionsheets/naalu.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,
@@ -175,7 +175,7 @@
 	},
 	"CardMetadata":
 	{
-		"0": "sheet.faction:homebrew.miltymod/naalu"
+		"0": "sheet.faction:base/naalu"
 	},
 	"CardTags":
 	{

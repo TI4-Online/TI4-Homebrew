@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "miltymod/factionsheets/sol.face.jpg",
-	"BackTexture": "miltymod/factionsheets/sol.back.jpg",
+	"FrontTexture": "miltymod/factionsheets/sol.back.jpg",
+	"BackTexture": "miltymod/factionsheets/sol.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,
@@ -175,7 +175,7 @@
 	},
 	"CardMetadata":
 	{
-		"0": "sheet.faction:homebrew.miltymod/sol"
+		"0": "sheet.faction:base/sol"
 	},
 	"CardTags":
 	{

@@ -3,15 +3,7 @@ const { world, refPackageId } = require("@tabletop-playground/api");
 // to fix specific factions and add scripted unit modifiers.
 
 const UNIT_ATTRS = require("./miltymod-unit-attrs.data");
-// const UNIT_ATTRS = [{
-//   unit: "cruiser",
-//   upgradeLevel: 2,
-//   localeName: "unit.cruiser_2",
-//   triggerNsid: "card.technology.unit_upgrade:homebrew.miltymod/cruiser_2",
-//   spaceCombat: { hit: 6, extraHitsOn: { count: 1, value: 9 }},
-//   move: 3,
-//   capacity: 1,
-// }];
+const TECHNOLOGY_DATA = require("./miltymod-technology.data");
 
 // injecting the basic nsidToTemplateId
 world.TI4.homebrew.inject({
@@ -98,9 +90,31 @@ world.TI4.homebrew.inject({
       "card.action:base/unstable_planet" : "card.action:homebrew.miltymod/unstable_planet",
       "card.action:base/upgrade" : "card.action:homebrew.miltymod/upgrade",
     },
+    remove: [
+      "card.technology.red:codex.ordinian/magen_defense_grid.omega",
+      "card.technology.green:codex.ordinian/x89_bacterial_weapon.omega",
+      "card.objective.secret:codex.vigil/fight_with_precision.omega",
+    ],
+    technologies: TECHNOLOGY_DATA,
     unitAttrs: UNIT_ATTRS,
   });
 
 console.log("MILTYMOD ADDING FACTIONS");
 world.TI4.homebrew.resetOnTableDecks()
 require("./factions/arborec");
+require("./factions/creuss");
+require("./factions/hacan");
+require("./factions/jolnar");
+require("./factions/l1z1x");
+require("./factions/letnev");
+require("./factions/mentak");
+require("./factions/muaat");
+require("./factions/naalu");
+require("./factions/nekro");
+require("./factions/norr");
+require("./factions/saar");
+require("./factions/sol");
+require("./factions/winnu");
+require("./factions/xxcha");
+require("./factions/yin");
+require("./factions/yssaril");

@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "miltymod/factionsheets/l1z1x.face.jpg",
-	"BackTexture": "miltymod/factionsheets/l1z1x.back.jpg",
+	"FrontTexture": "miltymod/factionsheets/l1z1x.back.jpg",
+	"BackTexture": "miltymod/factionsheets/l1z1x.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,
@@ -175,7 +175,7 @@
 	},
 	"CardMetadata":
 	{
-		"0": "sheet.faction:homebrew.miltymod/l1z1x"
+		"0": "sheet.faction:base/l1z1x"
 	},
 	"CardTags":
 	{
