@@ -1,5 +1,10 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
+const localeStrings = {
+  "unit_modifier.name.wrath_of_kenara" : "Wrath of Kenara Flagship Ability",
+  "unit_modifier.desc.wrath_of_kenara" : "At the start of a round of space combat, you may spend 1 trade good to apply +1 to the result of each of your combat rolls."
+}
+
 const factions = [{
   faction: "hacan",
   abilities: ["masters_of_trade", "guild_ships", "arbiters"],
@@ -24,11 +29,17 @@ const factions = [{
   },
   techs: ["quantum_datahub_node", "production_biomes"],
   units: ["wrath_of_kenara", "pride_of_kenara"],
+  unpackExtra: [
+    {
+        cardNsid: "card.other.portrait:homebrew.miltymod/wrath_of_kenara",
+        tokenCount: 1,
+    },
+  ],
 }];
 
  const nsidToTemplateId = {
-    "sheet.faction:base/hacan":
-      "76C161AB4320F427D40D13A5B246BA80",
+    "sheet.faction:base/hacan": "76C161AB4320F427D40D13A5B246BA80",
+    "card.other.portrait:homebrew.miltymod/wrath_of_kenara" : "5230F3634D51771D59381CBAE70AE634",
 };
 
 const replace = {
@@ -48,9 +59,29 @@ const technologies = [{
 
 const unitAttrs = [];
 
-const unitModifiers = [];
+const unitModifiers = [
+  {
+    // Reroll space combat misses.
+    isCombat: true,
+    localeName: "unit_modifier.name.wrath_of_kenara",
+    localeDescription: "unit_modifier.desc.wrath_of_kenara",
+    owner: "self",
+    priority: "adjust",
+    toggleActive: true,
+    triggerNsid: "card.other.portrait:homebrew.miltymod/wrath_of_kenara",
+    filter: (auxData) => {
+        return auxData.rollType === "spaceCombat";
+    },
+    applyEach: (unitAttrs, auxData) => {
+      if (unitAttrs.raw.spaceCombat) {
+          unitAttrs.raw.spaceCombat.hit -= 1;
+      }
+    },
+  },
+];
 
 world.TI4.homebrew.inject({
+  localeStrings,
   factions,
   nsidToTemplateId,
   technologies,

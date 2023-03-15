@@ -31,7 +31,8 @@ world.TI4.homebrew.inject({
         "card.technology.unit_upgrade:homebrew.miltymod/0": "C14887A644F2DC65576E269839EE6320",
         "card.technology.unit_upgrade:homebrew.miltymod/1": "62758D0C4A97F23757AC6E810CF2A200",
         "card.technology.unit_upgrade:homebrew.miltymod/2": "B38E6FF44BD9A7FF26A7A4B2ECBDA50D",
-        "tile.strategy:base/construction:" : "5C4DF749446C11D225F2DFB6DB069BAE",
+        //"tile.strategy:homebrew.miltymod/construction" : "5C4DF749446C11D225F2DFB6DB069BAE",
+        "tile.strategy:base/construction.errata" : "5C4DF749446C11D225F2DFB6DB069BAE",
     },
     replace:
     {
@@ -89,6 +90,7 @@ world.TI4.homebrew.inject({
       "card.action:base/tactical_bombardment" : "card.action:homebrew.miltymod/tactical_bombardment",
       "card.action:base/unstable_planet" : "card.action:homebrew.miltymod/unstable_planet",
       "card.action:base/upgrade" : "card.action:homebrew.miltymod/upgrade",
+      "tile.strategy:base/construction.errata" : "tile.strategy:homebrew.miltymod/construction"
     },
     remove: [
       "card.technology.red:codex.ordinian/magen_defense_grid.omega",
@@ -100,7 +102,6 @@ world.TI4.homebrew.inject({
   });
 
 console.log("MILTYMOD ADDING FACTIONS");
-world.TI4.homebrew.resetOnTableDecks()
 require("./factions/arborec");
 require("./factions/creuss");
 require("./factions/hacan");
@@ -118,3 +119,5 @@ require("./factions/winnu");
 require("./factions/xxcha");
 require("./factions/yin");
 require("./factions/yssaril");
+world.TI4.homebrew.resetStrategyCards()
+world.TI4.homebrew.resetOnTableDecks()

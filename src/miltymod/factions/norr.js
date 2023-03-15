@@ -1,5 +1,10 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
+const localeStrings = {
+    "unit_modifier.name.tekklar_legion" : "Tekklar Legion",
+    "unit_modifier.desc.tekklar_legion" : "At the start of a ground combat: Apply +1 to the result of each of your unit's combat rolls during this combat."
+  }
+
 const factions = [{
     faction: "norr",
     abilities: ["unrelenting"],
@@ -73,9 +78,28 @@ const unitAttrs = [
         move: 2,
     },];
 
-const unitModifiers = [];
+const unitModifiers = [
+    {
+        // "+1 to GROUND COMBAT rolls for attacker, -1 to Sardakk if opponent owns",
+        isCombat: true,
+        localeName: "unit_modifier.name.tekklar_legion",
+        localeDescription: "unit_modifier.desc.tekklar_legion",
+        owner: "any",
+        priority: "adjust",
+        triggerNsid: "card.promissory.norr:homebrew.miltymod/tekklar_legion",
+        filter: (auxData) => {
+            return auxData.rollType === "groundCombat";
+        },
+        applyEach: (unitAttrs, auxData) => {
+          if (unitAttrs.raw.spaceCombat) {
+              unitAttrs.raw.spaceCombat.hit -= 1;
+          }
+        },
+    },
+];
 
 world.TI4.homebrew.inject({
+  localeStrings,
   factions,
   nsidToTemplateId,
   technologies,
