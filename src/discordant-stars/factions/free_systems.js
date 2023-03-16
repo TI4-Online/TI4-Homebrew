@@ -11,6 +11,7 @@ const localeStrings = {
   "unit.flagship.vox": "Vox",
   "unit.mech.liberator": "Liberator",
   "unit_modifier.desc.vox": "When this unit makes a combat roll, it rolls 1 additional die for each planet in this system of any single trait.",
+  "attachment:homebrew.discordant_stars.count_otto_pmay/free_systems": "Heart of Rebellion",
 };
 
 const factions = [{
@@ -149,8 +150,22 @@ const unitModifiers = [
     // TODO (RM/button) covert strike teams - Ambush did it with a button, but there is no registration API yet
   },];
 
+
+
+
+  const attachments = [{
+    packageId: refPackageId,
+    localeName: "attachment:homebrew.discordant_stars.count_otto_pmay/free_systems",
+    cardNsid: "card.leader.hero.free_systems:homebrew.discordant_stars/count_otto_pmay",
+    tokenNsid: "token.unit:homebrew.discordant_stars.space_dock/free_systems",
+    faceUp: {
+      image: "discordant-stars/tokens/faction/free_systems_rebellion_token_back.png",
+    },
+  },];
+
 world.TI4.homebrew.inject({
   localeStrings,
+  attachments,
   factions,
   nsidToTemplateId,
   systems,
