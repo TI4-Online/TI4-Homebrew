@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
-	"GUID": "BCB0EEF040954BA45C1074962C4681CB",
-	"Name": "Veldyr - Branch Office Resources Attachment Token",
-	"Metadata": "token.attachment:homebrew.discordant_stars.branch_office_resources/veldyr",
+	"GUID": "9A6ED58D4B2121E04D9E4090AB9129A1",
+	"Name": "Veldyr - Branch Office Tax Haven Attachment Token",
+	"Metadata": "token.attachment:homebrew.discordant_stars.branch_office_tax_haven/veldyr",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -25,7 +25,7 @@
 	"Flippable": false,
 	"AutoStraighten": false,
 	"ShouldSnap": true,
-	"ScriptName": "",
+	"ScriptName": "discordant-stars/scripts/createRegisteredTokenForPlanetAttachment.js",
 	"Blueprint": "",
 	"Models": [
 		{
@@ -48,7 +48,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/extras/veldyr_branch_office_resources.png",
+			"Texture": "discordant-stars/extras/veldyr_branch_office_influence.png",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",

@@ -1,11 +1,11 @@
 {
 	"Type": "Generic",
-	"GUID": "9A6ED58D4B2121E04D9E4090AB9129A1",
-	"Name": "Veldyr - Branch Office Influence Attachment Token",
-	"Metadata": "token.attachment:homebrew.discordant_stars.branch_office_influence/veldyr",
+	"GUID": "B1B7812B4A2946F8D3D7449C67D19904",
+	"Name": "Veldyr - Branch Office Broadcast Hub Attachment Token",
+	"Metadata": "token.attachment:homebrew.discordant_stars.branch_office_broadcast_hub/veldyr",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
-	"Restitution": 0.3,
+	"Restitution": 0.32,
 	"Density": 1,
 	"SurfaceType": "Plastic",
 	"Roughness": 1,
@@ -25,7 +25,7 @@
 	"Flippable": false,
 	"AutoStraighten": false,
 	"ShouldSnap": true,
-	"ScriptName": "",
+	"ScriptName": "discordant-stars/scripts/createRegisteredTokenForPlanetAttachment.js",
 	"Blueprint": "",
 	"Models": [
 		{
