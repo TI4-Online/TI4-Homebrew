@@ -9,7 +9,7 @@ const localeStrings = {
   "technology.name.sentient_datapool": "Sentient Datapool",
   "unit.flagship.nemsys": "Nemsys",
   "unit.mech.iledrith": "Iledrith",
-  "unit_modifier.desc.nemsys": "NOT YET IMPLEMENTED!!! 1 additional die for each secret objective you have scored",
+  "unit_modifier.desc.nemsys": "1 additional die for each secret objective you have scored",
 };
 
 const factions = [{
@@ -125,7 +125,51 @@ const unitModifiers = [
           );
       },
       applyAll: (unitAttrsSet, auxData) => {
-        // TODO: implement
+          /*if (!auxData.self) {
+              return;
+          }
+          const playerSlot = auxData.self.playerSlot;
+          const playerDesk = world.TI4.getPlayerDeskByPlayerSlot(playerSlot);
+          if (!playerDesk) {
+              console.log("Nemsys modifier: no desk");
+              return;
+          }
+          const playerIndex = playerDesk.index;
+
+          let holder = false;
+          for (const obj of world.getAllObjects()) {
+              if (obj.getContainer()) {
+                  continue;
+              }
+              const nsid = ObjectNamespace.getNsid(obj);
+              if (nsid !== "cardholder:base/small") {
+                  continue;
+              }
+              const deskIndex = getIndex(obj);
+              if (deskIndex !== playerIndex) {
+                  continue;
+              }
+              holder = obj;
+              break;
+          }
+
+          if (!holder) {
+              console.log("Nemsys modifier: no holder");
+              return;
+          }
+
+          const cards = holder.getCards();
+
+          const modifier = cards.reduce((card, sum) => {
+              const nsid = ObjectNamespace.getNsid(obj);
+              if (nsid.startsWith("card.objective.secret")) {
+                  sum++;
+              }
+
+              return sum;
+          }, 0);
+
+          unitAttrsSet.get("flagship").raw.spaceCombat.dice += modifier;*/
       },
   },
 ];

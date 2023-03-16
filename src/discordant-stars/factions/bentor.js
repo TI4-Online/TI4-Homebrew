@@ -10,6 +10,7 @@ const localeStrings = {
   "unit.flagship.wayfinder": "Wayfinder",
   "unit.mech.auctioneer": "Auctioneer",
   "unit_modifier.desc.wayfinder": "NOT YET IMPLEMENTED!!! +1 to the result of this ship's combat and ability rolls for each Fragment token on your faction sheet",
+  "attachment:homebrew.discordant_stars.encryption_key/bentor": "Encryption Key",
 };
 
 const factions = [{
@@ -164,9 +165,21 @@ const unitModifiers = [
   },
 ];
 
-// TODO: Attachement effect of the Promissory Note
+const attachments = [{
+    packageId: refPackageId,
+    localeName: "attachment:homebrew.discordant_stars.encryption_key/bentor",
+    cardNsid: "card.promissory.bentor:homebrew.discordant_stars/encryption_key",
+    tokenNsid: "token.attachment:homebrew.discordant_stars.encryption_key/bentor",
+    faceUp: {
+        tech: ["blue", "green", "red", "yellow"],
+        image: "discordant-stars/extras/bentor_encryption_key.png",
+    },
+}];
+
+// TODO: Attachment effect of the Promissory Note
 
 world.TI4.homebrew.inject({
+  attachments,
   localeStrings,
   factions,
   nsidToTemplateId,

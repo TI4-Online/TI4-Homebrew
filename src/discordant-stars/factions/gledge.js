@@ -10,6 +10,8 @@ const localeStrings = {
   "unit.pds.orion_platform": "Orion Platform",
   "unit.pds.orion_platform_2": "Orion Platform 2",
   "unit_modifier.desc.beg_bersha": "When this unit makes a combat or ability roll, it rolls 1 additional die for each of your mechs in or adjacent to this system.",
+  "attachment:homebrew.discordant_stars.gledge_base/gledge": "Gledge Base",
+  "attachment:homebrew.discordant_stars.gledge_core/gledge": "Gledge Core",
 };
 
 
@@ -159,10 +161,33 @@ const unitModifiers = [{
 },
 ];
 
+
+const attachments = [{
+  packageId: refPackageId,
+  localeName: "attachment:homebrew.discordant_stars.gledge_core/gledge",
+  cardNsid: "card.promissory.gledge:homebrew.discordant_stars/gledge_core",
+  tokenNsid: "token.attachment:homebrew.discordant_stars.core/gledge",
+  faceUp: {
+    resources: 2, // TODO: should overwrite the base, not add
+    influence: 0, // TODO: should overwrite the base, not add
+    image: "discordant-stars/extras/Gledge Core.png",
+  },
+},{
+  packageId: refPackageId,
+  localeName: "attachment:homebrew.discordant_stars.gledge_base/gledge",
+  cardNsid: "card.promissory.gledge:homebrew.discordant_stars/gledge_base",
+  tokenNsid: "token.attachment:homebrew.discordant_stars.base/gledge",
+  faceUp: {
+    resources: 2,
+    image: "discordant-stars/extras/Gledge Base.png",
+  },
+},];
+
 //TODO: add promissory note attachement logic
 
 world.TI4.homebrew.inject({
   localeStrings,
+  attachments,
   factions,
   nsidToTemplateId,
   systems,

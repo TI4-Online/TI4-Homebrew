@@ -9,6 +9,7 @@ const localeStrings = {
   "unit.mech.autofabricator": "autofabricator",
   "unit.war_sun.terrafactory": "Terrafactory",
   "unit.war_sun.terrafactory_2": "Terrafactory 2",
+  "attachment:homebrew.discordant_stars.automatons/rohdhna": "Automatons",
 };
 
 
@@ -144,8 +145,20 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
+
+const attachments = [{
+  packageId: refPackageId,
+  localeName: "attachment:homebrew.discordant_stars.automatons/rohdhna",
+  cardNsid: "card.promissory.rohdhna:homebrew.discordant_stars/automatons",
+  tokenNsid: "token.attachment:homebrew.discordant_stars.automatons/rohdhna",
+  faceUp: {
+    image: "discordant-stars/tokens/faction/rohdhna_automatons.face.jpg",
+  },
+},];
+
 world.TI4.homebrew.inject({
   localeStrings,
+  attachments,
   factions,
   nsidToTemplateId,
   systems,
