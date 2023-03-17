@@ -1,4 +1,4 @@
-const { world, refPackageId } = require("@tabletop-playground/api");
+const { world } = require("@tabletop-playground/api");
 
 const factions = [{
   faction: "yin",

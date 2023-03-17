@@ -1,4 +1,4 @@
-const { world, refPackageId } = require("@tabletop-playground/api");
+const { world } = require("@tabletop-playground/api");
 
 const localeStrings = {
   "unit_modifier.name.wrath_of_kenara" : "Wrath of Kenara Flagship Ability",

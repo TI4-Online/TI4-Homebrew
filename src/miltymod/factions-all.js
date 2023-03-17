@@ -1,9 +1,15 @@
-const { world, refPackageId } = require("@tabletop-playground/api");
+const { world } = require("@tabletop-playground/api");
 // Factions could all be in one giant file.  Splitting them up makes it easier
 // to fix specific factions and add scripted unit modifiers.
 
 const UNIT_ATTRS = require("./miltymod-unit-attrs.data");
+const UNIT_MODIFIERS = require("./miltymod-unit-modifiers.data");
 const TECHNOLOGY_DATA = require("./miltymod-technology.data");
+const LOCALE_STRINGS = require("./miltymod-locale-strings.data");
+/* const LOCALE_STRINGS = {
+  "unit_modifier.name.plasma_scoring" : "Plasma Scoring",
+  "unit_modifier.desc.plasma_scoring" : "+1 die to a single unit ability rolls",
+}; */
 
 // injecting the basic nsidToTemplateId
 world.TI4.homebrew.inject({
@@ -99,6 +105,8 @@ world.TI4.homebrew.inject({
     ],
     technologies: TECHNOLOGY_DATA,
     unitAttrs: UNIT_ATTRS,
+    unitModifiers: UNIT_MODIFIERS,
+    localeStrings: LOCALE_STRINGS,
   });
 
 console.log("MILTYMOD ADDING FACTIONS");
