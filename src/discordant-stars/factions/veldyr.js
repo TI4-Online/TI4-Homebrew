@@ -205,7 +205,6 @@ const attachments = [{
   },
 }];
 
-// TODO: implement attachment promissory notes
 // TODO: implement SEIDR project tech
 
 world.TI4.homebrew.inject({

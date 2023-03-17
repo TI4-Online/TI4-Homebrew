@@ -176,8 +176,6 @@ const attachments = [{
     },
 }];
 
-// TODO: Attachment effect of the Promissory Note
-
 world.TI4.homebrew.inject({
   attachments,
   localeStrings,
