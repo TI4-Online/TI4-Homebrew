@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
-	"GUID": "9BDEE4FE4945F8A595C896B6E6843292",
-	"Name": "Free Systems Heart of Rebellion Token",
-	"Metadata": "token.unit:homebrew.discordant_stars.space_dock/free_systems",
+	"GUID": "E9C06252434C8BD1A7D0A8A24007A39A",
+	"Name": "Veldyr - Branch Office Orbital Shipyard Attachment Token",
+	"Metadata": "token.attachment:homebrew.discordant_stars.branch_office_orbital_shipyard/veldyr",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -48,43 +48,13 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tokens/faction/free_systems_rebellion_token_back.png",
+			"Texture": "discordant-stars/extras/veldyr_branch_office_resources.png",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
 			"IsTransparent": false,
 			"CastShadow": true,
 			"IsTwoSided": true,
-			"UseOverrides": true,
-			"SurfaceType": "Plastic"
-		},
-		{
-			"Model": "tokens/round-msh.obj",
-			"Offset":
-			{
-				"X": 0,
-				"Y": 0,
-				"Z": 0.2
-			},
-			"Scale":
-			{
-				"X": 1,
-				"Y": 1,
-				"Z": 1
-			},
-			"Rotation":
-			{
-				"X": 180,
-				"Y": 0,
-				"Z": 0
-			},
-			"Texture": "discordant-stars/tokens/faction/free_systems_rebellion_token_back.png",
-			"NormalMap": "",
-			"ExtraMap": "",
-			"ExtraMap2": "",
-			"IsTransparent": false,
-			"CastShadow": true,
-			"IsTwoSided": false,
 			"UseOverrides": true,
 			"SurfaceType": "Plastic"
 		}

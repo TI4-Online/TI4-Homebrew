@@ -10,6 +10,10 @@ const localeStrings = {
   "unit.flagship.richtyrian": "Richtyrian",
   "unit.mech.aurora_stormcaller": "Aurora Stormcaller",
   "unit_modifier.desc.richtyrian": "+1 SPACE COMBAT die per resolved round in this combat",
+  "attachment:homebrew.discordant_stars.branch_office_tax_haven/veldyr": "Tax Haven",
+  "attachment:homebrew.discordant_stars.branch_office_broadcast_hub/veldyr": "Broadcast Hub",
+  "attachment:homebrew.discordant_stars.branch_office_orbital_shipyard/veldyr": "Orbital Shipyard",
+  "attachment:homebrew.discordant_stars.branch_office_reserve_bank/veldyr": "Reserve Bank",
 };
 
 
@@ -49,11 +53,13 @@ const factions = [{
   ],
   unpackExtra: [
     {
-      tokenNsid: "token.attachment:homebrew.discordant_stars.branch_office_influence/veldyr",
-      tokenCount: 2,
+      tokenNsid: "token.attachment:homebrew.discordant_stars.branch_office_orbital_shipyard/veldyr",
     },{
-      tokenNsid: "token.attachment:homebrew.discordant_stars.branch_office_resources/veldyr",
-      tokenCount: 2,
+      tokenNsid: "token.attachment:homebrew.discordant_stars.branch_office_reserve_bank/veldyr",
+    },{
+      tokenNsid: "token.attachment:homebrew.discordant_stars.branch_office_broadcast_hub/veldyr",
+    },{
+      tokenNsid: "token.attachment:homebrew.discordant_stars.branch_office_tax_haven/veldyr",
     },
   ],
   packageId: refPackageId,
@@ -68,10 +74,14 @@ const factions = [{
       "F86B5FE44294E7B974A5F0B9B752EC2C",
     "token.control:homebrew.discordant_stars/veldyr":
       "4D68C5B6411D49C89B1C178ACAE19722",
-   "token.attachment:homebrew.discordant_stars.branch_office_influence/veldyr":
-       "9A6ED58D4B2121E04D9E4090AB9129A1",
-   "token.attachment:homebrew.discordant_stars.branch_office_resources/veldyr":
-       "BCB0EEF040954BA45C1074962C4681CB",
+   "token.attachment:homebrew.discordant_stars.branch_office_orbital_shipyard/veldyr":
+      "E9C06252434C8BD1A7D0A8A24007A39A",
+    "token.attachment:homebrew.discordant_stars.branch_office_reserve_bank/veldyr":
+      "BCB0EEF040954BA45C1074962C4681CB",
+    "token.attachment:homebrew.discordant_stars.branch_office_broadcast_hub/veldyr":
+      "B1B7812B4A2946F8D3D7449C67D19904",
+    "token.attachment:homebrew.discordant_stars.branch_office_tax_haven/veldyr":
+      "9A6ED58D4B2121E04D9E4090AB9129A1",
 };
 
 const technologies = [{
@@ -157,11 +167,50 @@ const unitModifiers = [
   },
 ];
 
+const attachments = [{
+  packageId: refPackageId,
+  localeName: "attachment:homebrew.discordant_stars.branch_office_tax_haven/veldyr",
+  cardNsid: "card.promissory.veldyr:homebrew.discordant_stars/branch_office_tax_haven",
+  tokenNsid: "token.attachment:homebrew.discordant_stars.branch_office_tax_haven/veldyr",
+  faceUp: {
+    influence: 1,
+    image: "discordant-stars/extras/veldyr_branch_office_influence.png",
+  },
+},{
+  packageId: refPackageId,
+  localeName: "attachment:homebrew.discordant_stars.branch_office_broadcast_hub/veldyr",
+  cardNsid: "card.promissory.veldyr:homebrew.discordant_stars/branch_office_broadcast_hub",
+  tokenNsid: "token.attachment:homebrew.discordant_stars.branch_office_broadcast_hub/veldyr",
+  faceUp: {
+    influence: 1,
+    image: "discordant-stars/extras/veldyr_branch_office_influence.png",
+  },
+},{
+  packageId: refPackageId,
+  localeName: "attachment:homebrew.discordant_stars.branch_office_orbital_shipyard/veldyr",
+  cardNsid: "card.promissory.veldyr:homebrew.discordant_stars/branch_office_orbital_shipyard",
+  tokenNsid: "token.attachment:homebrew.discordant_stars.branch_office_orbital_shipyard/veldyr",
+  faceUp: {
+    resources: 1,
+    image: "discordant-stars/extras/veldyr_branch_office_resources.png",
+  },
+},{
+  packageId: refPackageId,
+  localeName: "attachment:homebrew.discordant_stars.branch_office_reserve_bank/veldyr",
+  cardNsid: "card.promissory.veldyr:homebrew.discordant_stars/branch_office_reserve_bank",
+  tokenNsid: "token.attachment:homebrew.discordant_stars.branch_office_reserve_bank/veldyr",
+  faceUp: {
+    resources: 1,
+    image: "discordant-stars/extras/veldyr_branch_office_resources.png",
+  },
+}];
+
 // TODO: implement attachment promissory notes
 // TODO: implement SEIDR project tech
 
 world.TI4.homebrew.inject({
   localeStrings,
+  attachments,
   factions,
   nsidToTemplateId,
   systems,

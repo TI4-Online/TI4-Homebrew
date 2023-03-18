@@ -140,7 +140,18 @@ const unitModifiers = [
             return auxData.rollType === "groundCombat" // khrask mech is present on planet;
         },
         applyAll: (unitAttrsSet, auxData) => {
-            // TODO: implement mech unit modifier
+            /*for (const unitAttrs of unitAttrsSet.values()) {
+                if (
+                    unitAttrs.raw.groundCombat &&
+                    !(
+                        unitAttrs.raw.unit !== "mech" ||
+                        !auxData.self.faction ||
+                        auxData.self.faction.nsidName !== "khrask"
+                    )
+                ) {
+                    delete unitAttrs.raw.groundCombat; // remove ground combat for this round
+                }
+            }*/
         },
     },];
 
