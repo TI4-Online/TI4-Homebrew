@@ -29,7 +29,7 @@
 	"Blueprint": "",
 	"Models": [
 		{
-			"Model": "utility/stratcard.obj",
+			"Model": "stratcard.obj",
 			"Offset":
 			{
 				"X": 0,
@@ -61,7 +61,7 @@
 	],
 	"Collision": [
 		{
-			"Model": "utility/stratcard.obj",
+			"Model": "stratcard.obj",
 			"Offset":
 			{
 				"X": 0,
