@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "miltymod/factionsheets/saar.face.jpg",
-	"BackTexture": "miltymod/factionsheets/saar.back.jpg",
+	"FrontTexture": "miltymod/factionsheets/saar.back.jpg",
+	"BackTexture": "miltymod/factionsheets/saar.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,
@@ -175,7 +175,7 @@
 	},
 	"CardMetadata":
 	{
-		"0": "sheet.faction:homebrew.miltymod/saar"
+		"0": "sheet.faction:base/saar"
 	},
 	"CardTags":
 	{
