@@ -1,0 +1,74 @@
+{
+	"Type": "Card",
+	"GUID": "DC0AF7254730A7181B110894E4E10BF7",
+	"Name": "Public Objectives II (miltymod 1/1)",
+	"Metadata": "card.objective.public_2:homebrew.miltymod/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "miltymod/card/objective/public_2/0.face.jpg",
+	"BackTexture": "ti4/objective/public_2.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 2,
+	"NumVertical": 1,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1 ],
+	"CardNames":
+	{
+		"0": "Establish Imperial Navy",
+		"1": "Master the Sciences"
+	},
+	"CardMetadata":
+	{
+		"0": "card.objective.public_2:homebrew.miltymod/establish_imperial_navy",
+		"1": "card.objective.public_2:homebrew.miltymod/master_the_sciences"
+	},
+	"CardTags":
+	{
+	}
+}

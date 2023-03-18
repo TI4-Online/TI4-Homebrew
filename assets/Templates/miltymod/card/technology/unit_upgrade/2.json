@@ -1,0 +1,76 @@
+{
+	"Type": "Card",
+	"GUID": "B38E6FF44BD9A7FF26A7A4B2ECBDA50D",
+	"Name": "Technology (Unit Upgrade) (miltymod 3/3)",
+	"Metadata": "card.technology.unit_upgrade:homebrew.miltymod/2",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "miltymod/card/technology/unit_upgrade/2.face.jpg",
+	"BackTexture": "ti4/technology/unit_upgrade.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 1,
+	"NumVertical": 3,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2 ],
+	"CardNames":
+	{
+		"0": "Spec Ops II",
+		"1": "Super Dreadnought II",
+		"2": "Prototype War Sun II"
+	},
+	"CardMetadata":
+	{
+		"0": "card.technology.unit_upgrade.sol:homebrew.miltymod/spec_ops_2",
+		"1": "card.technology.unit_upgrade.l1z1x:homebrew.miltymod/super_dreadnought_2",
+		"2": "card.technology.unit_upgrade.muaat:homebrew.miltymod/prototype_war_sun_2"
+	},
+	"CardTags":
+	{
+	}
+}

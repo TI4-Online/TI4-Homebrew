@@ -1,0 +1,74 @@
+{
+	"Type": "Card",
+	"GUID": "E476715A4921E26316398CBE11AE42D7",
+	"Name": "Technology (Green) (miltymod 2/2)",
+	"Metadata": "card.technology.green:homebrew.miltymod/1",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "miltymod/card/technology/green/1.face.jpg",
+	"BackTexture": "ti4/technology/green.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 2,
+	"NumVertical": 1,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1 ],
+	"CardNames":
+	{
+		"0": "Production Biomes",
+		"1": "Yin Spinner"
+	},
+	"CardMetadata":
+	{
+		"0": "card.technology.green.hacan:homebrew.miltymod/production_biomes",
+		"1": "card.technology.green.yin:homebrew.miltymod/yin_spinner"
+	},
+	"CardTags":
+	{
+	}
+}

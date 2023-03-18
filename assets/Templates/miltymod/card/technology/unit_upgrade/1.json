@@ -1,0 +1,82 @@
+{
+	"Type": "Card",
+	"GUID": "62758D0C4A97F23757AC6E810CF2A200",
+	"Name": "Technology (Unit Upgrade) (miltymod 2/3)",
+	"Metadata": "card.technology.unit_upgrade:homebrew.miltymod/1",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "miltymod/card/technology/unit_upgrade/1.face.jpg",
+	"BackTexture": "ti4/technology/unit_upgrade.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 2,
+	"NumVertical": 3,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5 ],
+	"CardNames":
+	{
+		"0": "War Sun",
+		"1": "Advanced Carrier II",
+		"2": "Exotrireme II",
+		"3": "Floating Factory II",
+		"4": "Hybrid Crystal Fighter II",
+		"5": "Letani Warrior II"
+	},
+	"CardMetadata":
+	{
+		"0": "card.technology.unit_upgrade:homebrew.miltymod/war_sun",
+		"1": "card.technology.unit_upgrade.sol:homebrew.miltymod/advanced_carrier_2",
+		"2": "card.technology.unit_upgrade.norr:homebrew.miltymod/exotrireme_2",
+		"3": "card.technology.unit_upgrade.saar:homebrew.miltymod/floating_factory_2",
+		"4": "card.technology.unit_upgrade.naalu:homebrew.miltymod/hybrid_crystal_fighter_2",
+		"5": "card.technology.unit_upgrade.arborec:homebrew.miltymod/letani_warrior_2"
+	},
+	"CardTags":
+	{
+	}
+}

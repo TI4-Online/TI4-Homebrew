@@ -1,0 +1,74 @@
+{
+	"Type": "Card",
+	"GUID": "E49655E84CE484775F2EF8941F41DE0C",
+	"Name": "Technology (Yellow) (miltymod 2/2)",
+	"Metadata": "card.technology.yellow:homebrew.miltymod/1",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "miltymod/card/technology/yellow/1.face.jpg",
+	"BackTexture": "ti4/technology/yellow.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 2,
+	"NumVertical": 1,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1 ],
+	"CardNames":
+	{
+		"0": "Impulse Core",
+		"1": "Hegemonic Trade Policy"
+	},
+	"CardMetadata":
+	{
+		"0": "card.technology.yellow.yin:homebrew.miltymod/impulse_core",
+		"1": "card.technology.yellow.winnu:homebrew.miltymod/hegemonic_trade_policy"
+	},
+	"CardTags":
+	{
+	}
+}
