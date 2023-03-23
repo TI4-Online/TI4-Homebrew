@@ -144,7 +144,6 @@ const unitModifiers = [
         owner: "self",
         priority: "adjust",
         triggerIf: (auxData) => {
-            debugger;
             return (
                 //getProjectionOfPowerStatus() && // projection of power is active (aka chosen ship still alive)
                 //auxData.self.faction.name === "celdauri" &&

@@ -145,7 +145,7 @@ function getBlightHexes() {
     return nsid === "token.system:homebrew.discordant_stars.blight/blex" || nsid === "unit:pok/mech";
   }).filter(obj => {
       const owner = obj.getOwningPlayer();
-      return owner && world.TI4.getFactionBySlot(owner.getSlot()).nsidName === "blex";
+      return owner && world.TI4.getFactionByPlayerSlot(owner.getSlot()).nsidName === "blex";
   }).map(gameObject => {
     return world.TI4.Hex.fromPosition(gameObject.getPosition());
   });
@@ -164,7 +164,6 @@ const unitModifiers = [{
     "token.system:homebrew.discordant_stars.blight/blex",
   ],
   triggerIf: (auxData) => {
-    debugger;
     return (
       getBlightStatus() && // blight is active (aka first combat round)
       ["groundCombat", "spaceCombat"].includes(auxData.rollType) && // only affects combat
