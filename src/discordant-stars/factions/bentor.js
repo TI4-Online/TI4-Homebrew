@@ -9,7 +9,7 @@ const localeStrings = {
   "technology.name.merged_replicators": "Merged Replicators",
   "unit.flagship.wayfinder": "Wayfinder",
   "unit.mech.auctioneer": "Auctioneer",
-  "unit_modifier.desc.wayfinder": "NOT YET IMPLEMENTED!!! +1 to the result of this ship's combat and ability rolls for each Fragment token on your faction sheet",
+  "unit_modifier.desc.wayfinder": "+1 to the result of this ship's combat and ability rolls for each Fragment token on your faction sheet",
   "attachment:homebrew.discordant_stars.encryption_key/bentor": "Encryption Key",
 };
 
@@ -132,8 +132,9 @@ const unitAttrs = [
       "card.technology.unit_upgrade.bentor:franken.discordant_stars/wayfinder",
     spaceCombat: { dice: 2, hit: 9 },
     bombardment: { dice: 1, hit: 9 },
-    spaceCannon: { dice: 2, hit: 9 },
+    spaceCannon: { dice: 1, hit: 9 },
     antiFighterBarrage: { dice: 2, hit: 9 },
+
   },
   {
     unit: "mech",
@@ -142,6 +143,54 @@ const unitAttrs = [
     triggerNsid: "card.leader.mech.bentor:homebrew.discordant_stars/auctioneer",
   },
 ];
+
+function getHitBonusOfToken(token, sheet) {
+  const tokenPos = token.getPosition();
+  const relativeTokenPos = sheet.worldPositionToLocal(tokenPos);
+  const size = sheet.getSize();
+  const inX = size.x/2 > Math.abs(relativeTokenPos.x);
+  const inY = size.y/2 > Math.abs(relativeTokenPos.y);
+  const inZ = 0.1 > Math.abs(relativeTokenPos.z); // directly above / below
+
+  return inX && inY && inZ ? 1 : 0;
+}
+
+function countToHitBonus() {
+  const tokenNsids = [
+    "token.fragment:homebrew.discordant_stars.industrial/bentor",
+    "token.fragment:homebrew.discordant_stars.hazardous/bentor",
+    "token.fragment:homebrew.discordant_stars.cultural/bentor",
+    "token.fragment:homebrew.discordant_stars.unknown/bentor",
+  ];
+  let factionSheet;
+  let tokens = [];
+  let bonus = 0;
+
+  for (const obj of world.getAllObjects()) {
+    if (obj.getContainer()) {
+        continue; // inside a container
+    }
+
+    const nsid = world.TI4.ObjectNamespace.getNsid(obj);
+
+    if (nsid === "sheet.faction:homebrew.discordant_stars/bentor") {
+        factionSheet = obj;
+    }
+
+    if (tokenNsids.includes(nsid)) {
+      tokens.push(obj);
+    }
+  }
+
+  if (!factionSheet) {
+    return bonus;
+  }
+
+  return tokens
+  .map((token) => getHitBonusOfToken(token, factionSheet))
+  .reduce((bonus, sum) => bonus + sum, 0);
+}
+
 
 const unitModifiers = [
   {
@@ -152,15 +201,19 @@ const unitModifiers = [
       triggerUnitAbility: "unit.flagship.wayfinder",
       owner: "self",
       priority: "adjust",
-      filter: (auxData) => {
-        console.log(auxData.rollType)
+      triggerIf: (auxData) => {
           return (
               auxData.rollType === "spaceCombat" &&
               auxData.self.has("flagship")
           );
       },
       applyAll: (unitAttrsSet, auxData) => {
-        // TODO: implement
+        const bonus = countToHitBonus();
+        ["spaceCombat", "bombardment", "antiFighterBarrage", "spaceCannon"].forEach(
+          attr => unitAttrsSet.get("flagship").raw[attr].hit -= bonus
+        );
+        
+        debugger;
       },
   },
 ];
