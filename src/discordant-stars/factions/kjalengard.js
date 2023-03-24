@@ -163,8 +163,8 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-// TODO: implement promissory note
-// TODO: implement commander
+// TODO: combat: implement promissory note
+// TODO: combat: implement commander
 
 world.TI4.homebrew.inject({
   localeStrings,
