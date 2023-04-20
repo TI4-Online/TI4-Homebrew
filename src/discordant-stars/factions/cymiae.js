@@ -11,53 +11,55 @@ const localeStrings = {
   "unit.infantry.unholy_abomination_2": "Unholy Abomination 2",
 };
 
-const factions = [{
-  faction: "cymiae",
-  abilities: [
-    "autonetic_memory",
-    "cybernetic_madness"
-  ],
-  commodities: 3,
-  home: 3213,
-  leaders: {
-    agents: ["skhot_unit_x12"],
-    commanders: ["koryl_ferax"],
-    heroes: ["the_voice_united"],
+const factions = [
+  {
+    faction: "cymiae",
+    abilities: ["autonetic_memory", "cybernetic_madness"],
+    commodities: 3,
+    home: 3213,
+    leaders: {
+      agents: ["skhot_unit_x12"],
+      commanders: ["koryl_ferax"],
+      heroes: ["the_voice_united"],
+    },
+    promissoryNotes: ["algorithmic_replication"],
+    icon: "discordant-stars/faction-icons/cymiae.png",
+    source: "homebrew.discordant_stars",
+    startingTech: ["neural_motivator", "ai_development_algorithm"],
+    startingUnits: {
+      carrier: 1,
+      destroyer: 1,
+      fighter: 2,
+      infantry: 3,
+      dreadnought: 1,
+      space_dock: 1,
+    },
+    techs: ["recursive_worm"],
+    units: [
+      "reprocessor_alpha",
+      "unholy_abomination",
+      "unholy_abomination_2",
+      "revenant",
+    ],
+    packageId: refPackageId,
   },
-  promissoryNotes: ["algorithmic_replication"],
-  icon: "discordant-stars/faction-icons/cymiae.png",
-  source: "homebrew.discordant_stars",
-  startingTech: ["neural_motivator", "ai_development_algorithm"],
-  startingUnits: {
-    carrier: 1,
-    destroyer: 1,
-    fighter: 2,
-    infantry: 3,
-    dreadnought: 1,
-    space_dock: 1,
-  },
-  techs: ["recursive_worm"],
-  units: [
-    "reprocessor_alpha",
-    "unholy_abomination",
-    "unholy_abomination_2",
-    "revenant"
-  ],
-  packageId: refPackageId,
-}];
+];
 
- const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/cymiae":
-      "5D5CE68F4F44045AD16133BA5B024308",
-    "tile.system:homebrew.discordant_stars/3213":
-      "1CDA602307374660B9D29ABE74274553",
-    "token.command:homebrew.discordant_stars/cymiae":
-      "2ADBCE6C4C2330E4A7AD2195FD8ECEE1",
-    "token.control:homebrew.discordant_stars/cymiae":
-      "0FCE91884143F9D1CEB0F49C2E507169",
+const factionAbilities = [];
+
+const nsidToTemplateId = {
+  "sheet.faction:homebrew.discordant_stars/cymiae":
+    "5D5CE68F4F44045AD16133BA5B024308",
+  "tile.system:homebrew.discordant_stars/3213":
+    "1CDA602307374660B9D29ABE74274553",
+  "token.command:homebrew.discordant_stars/cymiae":
+    "2ADBCE6C4C2330E4A7AD2195FD8ECEE1",
+  "token.control:homebrew.discordant_stars/cymiae":
+    "0FCE91884143F9D1CEB0F49C2E507169",
 };
 
-const technologies = [{
+const technologies = [
+  {
     localeName: "technology.name.recursive_worm",
     cardNsid:
       "card.technology.Yellow.cymiae:homebrew.discordant_stars/recursive_worm",
@@ -68,7 +70,8 @@ const technologies = [{
   },
   {
     localeName: "unit.infantry.unholy_abomination_2",
-    cardNsid: "card.technology.unit_upgrade.cymiae:homebrew.discordant_stars/unholy_abomination_2",
+    cardNsid:
+      "card.technology.unit_upgrade.cymiae:homebrew.discordant_stars/unholy_abomination_2",
     type: "unitUpgrade",
     requirements: { Green: 2 },
     abbrev: " UA II",
@@ -84,9 +87,7 @@ const systems = [
     home: true,
     packageId: refPackageId,
     img: "discordant-stars/tiles/homeworld/tile_3213.jpg",
-    planets: [
-        { localeName: "planet.cymiae", resources: 3, influence: 1 },
-    ],
+    planets: [{ localeName: "planet.cymiae", resources: 3, influence: 1 }],
   },
 ];
 
@@ -104,14 +105,16 @@ const unitAttrs = [
     unit: "infantry",
     upgradeLevel: 1,
     localeName: "unit.infantry.unholy_abomination",
-    triggerNsid: "card.technology.unit_upgrade.cymiae:franken.discordant_stars/unholy_abomination",
+    triggerNsid:
+      "card.technology.unit_upgrade.cymiae:franken.discordant_stars/unholy_abomination",
     spaceCombat: { hit: 5 },
   },
   {
     unit: "infantry",
     upgradeLevel: 2,
     localeName: "unit.infantry.unholy_abomination_2",
-    triggerNsid: "card.technology.unit_upgrade.cymiae:homebrew.discordant_stars/unholy_abomination_2",
+    triggerNsid:
+      "card.technology.unit_upgrade.cymiae:homebrew.discordant_stars/unholy_abomination_2",
     spaceCombat: { hit: 4 },
   },
   {
@@ -127,6 +130,7 @@ const unitModifiers = [];
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
+  factionAbilities,
   nsidToTemplateId,
   systems,
   technologies,

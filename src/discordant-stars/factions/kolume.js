@@ -10,56 +10,58 @@ const localeStrings = {
   "unit.flagship.halberd": "Halberd",
   "unit.mech.rook": "rook",
   "unit.unit_modifier.name.starfall": "Starfall",
-  "unit_modifier.desc.starfall": "NOT YET IMPLEMENTED!!! not active: only one unit can use SPACE CANNON, active: up to 3 non-fighter ships gain SPACE CANNON 8",
+  "unit_modifier.desc.starfall":
+    "NOT YET IMPLEMENTED!!! not active: only one unit can use SPACE CANNON, active: up to 3 non-fighter ships gain SPACE CANNON 8",
   "unit.unit_modifier.name.issac_of_sinci": "Issac of Sinci",
-  "unit_modifier.desc.issac_of_sinci": "NOT YET IMPLEMENTED!!! +1 to each unit's ability rolls",
+  "unit_modifier.desc.issac_of_sinci":
+    "NOT YET IMPLEMENTED!!! +1 to each unit's ability rolls",
 };
 
-
-const factions = [{
-  faction: "kolume",
-  abilities: [
-    "starfall_gunnery",
-    "deliberate_action",
-    "meditation",
-  ],
-  commodities: 3,
-  home: 3233,
-  leaders: {
-    agents: ["disciple_fran"],
-    commanders: ["issac_of_sinci"],
-    heroes: ["wonell_the_silent"],
+const factions = [
+  {
+    faction: "kolume",
+    abilities: ["starfall_gunnery", "deliberate_action", "meditation"],
+    commodities: 3,
+    home: 3233,
+    leaders: {
+      agents: ["disciple_fran"],
+      commanders: ["issac_of_sinci"],
+      heroes: ["wonell_the_silent"],
+    },
+    promissoryNotes: ["combinatorial_bypass"],
+    icon: "discordant-stars/faction-icons/kolume.png",
+    source: "homebrew.discordant_stars",
+    startingTechChoice: "kolume",
+    startingTechChoices: ["graviton_laser_system", "predictive_intelligence"],
+    startingTech: [],
+    startingUnits: {
+      carrier: 2,
+      cruiser: 1,
+      fighter: 2,
+      infantry: 4,
+      space_dock: 1,
+    },
+    techs: ["applied_biothermics", "omniscience_field"],
+    units: ["halberd", "rook"],
+    packageId: refPackageId,
   },
-  promissoryNotes: ["combinatorial_bypass"],
-  icon: "discordant-stars/faction-icons/kolume.png",
-  source: "homebrew.discordant_stars",
-  startingTechChoice: "kolume",
-  startingTechChoices: ["graviton_laser_system", "predictive_intelligence"],
-  startingTech: [],
-  startingUnits: {
-    carrier: 2,
-    cruiser: 1,
-    fighter: 2,
-    infantry: 4,
-    space_dock: 1,
-  },
-  techs: ["applied_biothermics", "omniscience_field"],
-  units: ["halberd", "rook"],
-  packageId: refPackageId,
-}];
+];
 
- const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/kolume":
-      "FCA7F3274E7875C09A871B83207E494F",
-    "tile.system:homebrew.discordant_stars/3233":
-      "9945F0D04D0B1B52F31B108B40DA77BF",
-    "token.command:homebrew.discordant_stars/kolume":
-      "7FE3A22F4921130F96BDC9843C23D740",
-    "token.control:homebrew.discordant_stars/kolume":
-      "AE6D0B1944B794A7C92884B6AA477384",
+const factionAbilities = [];
+
+const nsidToTemplateId = {
+  "sheet.faction:homebrew.discordant_stars/kolume":
+    "FCA7F3274E7875C09A871B83207E494F",
+  "tile.system:homebrew.discordant_stars/3233":
+    "9945F0D04D0B1B52F31B108B40DA77BF",
+  "token.command:homebrew.discordant_stars/kolume":
+    "7FE3A22F4921130F96BDC9843C23D740",
+  "token.control:homebrew.discordant_stars/kolume":
+    "AE6D0B1944B794A7C92884B6AA477384",
 };
 
-const technologies = [{
+const technologies = [
+  {
     localeName: "technology.name.applied_biothermics",
     cardNsid:
       "card.technology.green.kolume:homebrew.discordant_stars/applied_biothermics",
@@ -67,10 +69,11 @@ const technologies = [{
     requirements: { Green: 2 },
     source: "homebrew.discordant_stars",
     faction: "kolume",
-  }, {
+  },
+  {
     localeName: "technology.name.omniscience_field",
     cardNsid:
-        "card.technology.red.kolume:homebrew.discordant_stars/omniscience_field",
+      "card.technology.red.kolume:homebrew.discordant_stars/omniscience_field",
     type: "Red",
     requirements: { Red: 3 },
     source: "homebrew.discordant_stars",
@@ -138,7 +141,9 @@ const unitModifiers = [
       //"card.alliance:homebrew/kolume",
     ],
     filter: (auxData) => {
-      return ["spaceCannon", "antiFighterBarrage", "bombardment"].includes(auxData.rollType);
+      return ["spaceCannon", "antiFighterBarrage", "bombardment"].includes(
+        auxData.rollType
+      );
     },
     applyAll: (unitAttrsSet, auxData) => {
       // TODO: implement
@@ -149,6 +154,7 @@ const unitModifiers = [
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
+  factionAbilities,
   nsidToTemplateId,
   systems,
   technologies,

@@ -12,52 +12,48 @@ const localeStrings = {
   "unit.mech.privateer": "Privateer",
 };
 
-const factions = [{
-  faction: "florzen",
-  abilities: [
-    "mercenaries",
-    "data_leak",
-    "black_markets",
-  ],
-  commodities: 4,
-  home: 3217,
-  leaders: {
-    agents: ["sal_gavda"],
-    commanders: ["quaxdol_junitas"],
-    heroes: ["banua_gowen"],
+const factions = [
+  {
+    faction: "florzen",
+    abilities: ["mercenaries", "data_leak", "black_markets"],
+    commodities: 4,
+    home: 3217,
+    leaders: {
+      agents: ["sal_gavda"],
+      commanders: ["quaxdol_junitas"],
+      heroes: ["banua_gowen"],
+    },
+    promissoryNotes: ["blackmail_programs"],
+    icon: "discordant-stars/faction-icons/florzen.png",
+    source: "homebrew.discordant_stars",
+    startingTech: ["neural_motivator", "scanlink_drone_network"],
+    startingUnits: {
+      carrier: 2,
+      fighter: 4,
+      infantry: 4,
+      space_dock: 1,
+    },
+    techs: ["blackmail_programs"],
+    units: ["man_o_war", "corsair", "corsair_2", "privateer"],
+    packageId: refPackageId,
   },
-  promissoryNotes: ["blackmail_programs"],
-  icon: "discordant-stars/faction-icons/florzen.png",
-  source: "homebrew.discordant_stars",
-  startingTech: ["neural_motivator", "scanlink_drone_network"],
-  startingUnits: {
-    carrier: 2,
-    fighter: 4,
-    infantry: 4,
-    space_dock: 1,
-  },
-  techs: ["blackmail_programs"],
-  units: [
-    "man_o_war",
-    "corsair",
-    "corsair_2",
-    "privateer"
-  ],
-  packageId: refPackageId,
-}];
+];
 
- const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/florzen":
-      "74D69937471106DF8BAA21AA78B770ED",
-    "tile.system:homebrew.discordant_stars/3217":
-      "C4C4D351119540A7AEC663965FE2837B",
-    "token.command:homebrew.discordant_stars/florzen":
-      "7C8EE5D049C2C22A80B92C95BADEBD85",
-    "token.control:homebrew.discordant_stars/florzen":
-      "2EC2FB8C4CACEDEDAA52C2888492183B",
+const factionAbilities = [];
+
+const nsidToTemplateId = {
+  "sheet.faction:homebrew.discordant_stars/florzen":
+    "74D69937471106DF8BAA21AA78B770ED",
+  "tile.system:homebrew.discordant_stars/3217":
+    "C4C4D351119540A7AEC663965FE2837B",
+  "token.command:homebrew.discordant_stars/florzen":
+    "7C8EE5D049C2C22A80B92C95BADEBD85",
+  "token.control:homebrew.discordant_stars/florzen":
+    "2EC2FB8C4CACEDEDAA52C2888492183B",
 };
 
-const technologies = [{
+const technologies = [
+  {
     localeName: "technology.name.blackmail_programs",
     cardNsid:
       "card.technology.green.florzen:homebrew.discordant_stars/blackmail_programs",
@@ -68,7 +64,8 @@ const technologies = [{
   },
   {
     localeName: "unit.fighter.corsair_2",
-    cardNsid: "card.technology.unit_upgrade.florzen:homebrew.discordant_stars/corsair_2",
+    cardNsid:
+      "card.technology.unit_upgrade.florzen:homebrew.discordant_stars/corsair_2",
     type: "unitUpgrade",
     requirements: { Green: 1, Blue: 1 },
     abbrev: " C II",
@@ -105,7 +102,8 @@ const unitAttrs = [
     unit: "fighter",
     upgradeLevel: 1,
     localeName: "unit.fighter.corsair",
-    triggerNsid: "card.technology.unit_upgrade.florzen:franken.discordant_stars/corsair",
+    triggerNsid:
+      "card.technology.unit_upgrade.florzen:franken.discordant_stars/corsair",
     antiFighterBarrage: { dice: 1, hit: 9 },
     move: 1,
   },
@@ -113,7 +111,8 @@ const unitAttrs = [
     unit: "fighter",
     upgradeLevel: 2,
     localeName: "unit.fighter.corsair_2",
-    triggerNsid: "card.technology.unit_upgrade.florzen:homebrew.discordant_stars/corsair_2",
+    triggerNsid:
+      "card.technology.unit_upgrade.florzen:homebrew.discordant_stars/corsair_2",
     antiFighterBarrage: { hit: 8 },
     spaceCombat: { hit: 8 },
     move: 3,
@@ -131,6 +130,7 @@ const unitModifiers = [];
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
+  factionAbilities,
   nsidToTemplateId,
   systems,
   technologies,

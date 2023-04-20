@@ -10,60 +10,60 @@ const localeStrings = {
   "unit.mech.tioleombp": "Tioleombp",
 };
 
-
-const factions = [{
-  faction: "ghoti",
-  abilities: [
-    "mobile_command",
-    "spawning_grounds",
-    "all_mothers_embrace",
-  ],
-  commodities: 4,
-  home: 3232,
-  leaders: {
-    agents: ["becece"],
-    commanders: ["ceie_dolegueaunm"],
-    heroes: ["nmenmede"],
+const factions = [
+  {
+    faction: "ghoti",
+    abilities: ["mobile_command", "spawning_grounds", "all_mothers_embrace"],
+    commodities: 4,
+    home: 3232,
+    leaders: {
+      agents: ["becece"],
+      commanders: ["ceie_dolegueaunm"],
+      heroes: ["nmenmede"],
+    },
+    promissoryNotes: ["ghoti_relay"],
+    icon: "discordant-stars/faction-icons/ghoti.png",
+    source: "homebrew.discordant_stars",
+    startingTechChoice: "ghoti",
+    startingTechChoices: ["gravity_drive", "sling_relay"],
+    startingTech: [],
+    startingUnits: {
+      flagship: 1,
+      cruiser: 1,
+      fighter: 2,
+      infantry: 3,
+    },
+    techs: ["networked_command", "parallel_production"],
+    units: ["all_mother", "tioleombp"],
+    packageId: refPackageId,
+    unpackExtra: [
+      {
+        tokenNsid: "card.ghoti:homebrew.discordant_stars/0",
+      },
+      {
+        tokenNsid: "card.ghoti:homebrew.discordant_stars/1",
+      },
+    ],
   },
-  promissoryNotes: ["ghoti_relay"],
-  icon: "discordant-stars/faction-icons/ghoti.png",
-  source: "homebrew.discordant_stars",
-  startingTechChoice: "ghoti",
-  startingTechChoices: ["gravity_drive", "sling_relay"],
-  startingTech: [],
-  startingUnits: {
-    flagship: 1,
-    cruiser: 1,
-    fighter: 2,
-    infantry: 3,
-  },
-  techs: ["networked_command", "parallel_production"],
-  units: ["all_mother", "tioleombp"],
-  packageId: refPackageId,
-  unpackExtra: [{
-    tokenNsid: "card.ghoti:homebrew.discordant_stars/0"
-  },{
-    tokenNsid: "card.ghoti:homebrew.discordant_stars/1"
-  },],
+];
 
-}];
+const factionAbilities = [];
 
- const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/ghoti":
-      "B914AC224E9C7D563B8B1DA8B0DACE73",
-    "tile.system:homebrew.discordant_stars/3232":
-      "3345D54A43F11698476A1C9489A51CC7",
-    "token.command:homebrew.discordant_stars/ghoti":
-      "FC45996647F32A9B68972C9243A379CE",
-    "token.control:homebrew.discordant_stars/ghoti":
-      "1A74F12646A5156484F70AA345F4BD7B",
-    "card.ghoti:homebrew.discordant_stars/0":
-      "A01D2D674BABC0EB5FBD96988E88F5F5",
-    "card.ghoti:homebrew.discordant_stars/1":
-      "38554059466E2AD0F53CA7B683FFC56D",
+const nsidToTemplateId = {
+  "sheet.faction:homebrew.discordant_stars/ghoti":
+    "B914AC224E9C7D563B8B1DA8B0DACE73",
+  "tile.system:homebrew.discordant_stars/3232":
+    "3345D54A43F11698476A1C9489A51CC7",
+  "token.command:homebrew.discordant_stars/ghoti":
+    "FC45996647F32A9B68972C9243A379CE",
+  "token.control:homebrew.discordant_stars/ghoti":
+    "1A74F12646A5156484F70AA345F4BD7B",
+  "card.ghoti:homebrew.discordant_stars/0": "A01D2D674BABC0EB5FBD96988E88F5F5",
+  "card.ghoti:homebrew.discordant_stars/1": "38554059466E2AD0F53CA7B683FFC56D",
 };
 
-const technologies = [{
+const technologies = [
+  {
     localeName: "technology.name.networked_command",
     cardNsid:
       "card.technology.green.ghoti:homebrew.discordant_stars/networked_command",
@@ -71,10 +71,11 @@ const technologies = [{
     requirements: { Green: 1 },
     source: "homebrew.discordant_stars",
     faction: "ghoti",
-  }, {
+  },
+  {
     localeName: "technology.name.parallel_production",
     cardNsid:
-        "card.technology.yellow.ghoti:homebrew.discordant_stars/parallel_production",
+      "card.technology.yellow.ghoti:homebrew.discordant_stars/parallel_production",
     type: "Yellow",
     requirements: { Yellow: 1 },
     source: "homebrew.discordant_stars",
@@ -119,6 +120,7 @@ const unitModifiers = [];
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
+  factionAbilities,
   nsidToTemplateId,
   systems,
   technologies,

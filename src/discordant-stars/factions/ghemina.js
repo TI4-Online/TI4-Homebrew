@@ -13,65 +13,67 @@ const localeStrings = {
   "unit.mech.jotun": "Jotun",
 };
 
-const factions = [{
-  faction: "ghemina",
-  abilities: [
-    "the_lady_and_the_lord",
-    "rule_of_two",
-  ],
-  commodities: 2,
-  home: 3205,
-  leaders: {
-    agents: ["skarvald_torvar"],
-    commanders: ["jarl_vel_jarl_jotrun"],
-    heroes: ["korela_the_lady", "kantrus_the_lord"],
-  },
-  promissoryNotes: ["raid_leaders"],
-  icon: "discordant-stars/faction-icons/ghemina.png",
-  source: "homebrew.discordant_stars",
-  startingTech: ["psychoarchaelogy, dark_energy_tap"],
-  startingUnits: {
-    carrier: 2,
-    destroyer: 1,
-    fighter: 3,
-    infantry: 3,
-    space_dock: 2,
-  },
-  techs: ["war_song_implants"],
-  units: [
-    "the_lady",
-    "the_lord",
-    "combat_transport",
-    "combat_transport_2",
-    "jotun",
-  ],
-  unpackExtra: [
-    {
-      tokenNsid: "token.unit:homebrew.discordant_stars.lord_flagship/ghemina",
+const factions = [
+  {
+    faction: "ghemina",
+    abilities: ["the_lady_and_the_lord", "rule_of_two"],
+    commodities: 2,
+    home: 3205,
+    leaders: {
+      agents: ["skarvald_torvar"],
+      commanders: ["jarl_vel_jarl_jotrun"],
+      heroes: ["korela_the_lady", "kantrus_the_lord"],
     },
-    {
-      tokenNsid: "card.unit:homebrew.discordant_stars.lord_flagship/ghemina",
+    promissoryNotes: ["raid_leaders"],
+    icon: "discordant-stars/faction-icons/ghemina.png",
+    source: "homebrew.discordant_stars",
+    startingTech: ["psychoarchaelogy, dark_energy_tap"],
+    startingUnits: {
+      carrier: 2,
+      destroyer: 1,
+      fighter: 3,
+      infantry: 3,
+      space_dock: 2,
     },
-  ],
-  packageId: refPackageId,
-}];
+    techs: ["war_song_implants"],
+    units: [
+      "the_lady",
+      "the_lord",
+      "combat_transport",
+      "combat_transport_2",
+      "jotun",
+    ],
+    unpackExtra: [
+      {
+        tokenNsid: "token.unit:homebrew.discordant_stars.lord_flagship/ghemina",
+      },
+      {
+        tokenNsid: "card.unit:homebrew.discordant_stars.lord_flagship/ghemina",
+      },
+    ],
+    packageId: refPackageId,
+  },
+];
 
- const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/ghemina":
-      "582DBB14444770F489C3179BF345AF60",
-    "tile.system:homebrew.discordant_stars/3205":
-      "47C8E5F3D2A0498E9DBC3FC7EF80E824",
-    "token.command:homebrew.discordant_stars/ghemina":
-      "C79F084E4FE255E002FA248C38C21F46",
-    "token.control:homebrew.discordant_stars/ghemina":
-      "E0A73FCA45BCAF392ADBA096187B5A2C",
-   "token.unit:homebrew.discordant_stars.lord_flagship/ghemina":
-       "A5E718004224A776862A9EA185C29F55",
-   "card.unit:homebrew.discordant_stars.lord_flagship/ghemina":
-       "66B8E2EC495A4572DC2413AF355F3FE4",
+const factionAbilities = [];
+
+const nsidToTemplateId = {
+  "sheet.faction:homebrew.discordant_stars/ghemina":
+    "582DBB14444770F489C3179BF345AF60",
+  "tile.system:homebrew.discordant_stars/3205":
+    "47C8E5F3D2A0498E9DBC3FC7EF80E824",
+  "token.command:homebrew.discordant_stars/ghemina":
+    "C79F084E4FE255E002FA248C38C21F46",
+  "token.control:homebrew.discordant_stars/ghemina":
+    "E0A73FCA45BCAF392ADBA096187B5A2C",
+  "token.unit:homebrew.discordant_stars.lord_flagship/ghemina":
+    "A5E718004224A776862A9EA185C29F55",
+  "card.unit:homebrew.discordant_stars.lord_flagship/ghemina":
+    "66B8E2EC495A4572DC2413AF355F3FE4",
 };
 
-const technologies = [{
+const technologies = [
+  {
     localeName: "technology.name.war_song_implants",
     cardNsid:
       "card.technology.green.ghemina:homebrew.discordant_stars/war_song_implants",
@@ -82,7 +84,8 @@ const technologies = [{
   },
   {
     localeName: "unit.carrier.combat_transport_2",
-    cardNsid: "card.technology.unit_upgrade.ghemina:homebrew.discordant_stars/combat_transport_2",
+    cardNsid:
+      "card.technology.unit_upgrade.ghemina:homebrew.discordant_stars/combat_transport_2",
     type: "unitUpgrade",
     requirements: { Blue: 2 },
     abbrev: " CT II",
@@ -111,7 +114,7 @@ const unitAttrs = [
     upgradeLevel: 1,
     localeName: "unit.flagship.the_lord",
     triggerNsid:
-        "card.technology.unit_upgrade.ghemina:franken.discordant_stars/the_lord",
+      "card.technology.unit_upgrade.ghemina:franken.discordant_stars/the_lord",
     spaceCombat: { dice: 2, hit: 7 },
     capacity: 6,
     cost: 6,
@@ -121,7 +124,7 @@ const unitAttrs = [
     upgradeLevel: 1,
     localeName: "unit.flagship.the_lady",
     triggerNsid:
-        "card.technology.unit_upgrade.ghemina:franken.discordant_stars/the_lady",
+      "card.technology.unit_upgrade.ghemina:franken.discordant_stars/the_lady",
     spaceCombat: { dice: 2, hit: 7 },
     capacity: 7,
     move: 2,
@@ -131,14 +134,16 @@ const unitAttrs = [
     unit: "carrier",
     upgradeLevel: 1,
     localeName: "unit.carrier.combat_transport",
-    triggerNsid: "card.technology.unit_upgrade.ghemina:franken.discordant_stars/combat_transport",
+    triggerNsid:
+      "card.technology.unit_upgrade.ghemina:franken.discordant_stars/combat_transport",
     move: 2,
   },
   {
     unit: "carrier",
     upgradeLevel: 2,
     localeName: "unit.carrier.combat_transport_2",
-    triggerNsid: "card.technology.unit_upgrade.ghemina:homebrew.discordant_stars/combat_transport_2",
+    triggerNsid:
+      "card.technology.unit_upgrade.ghemina:homebrew.discordant_stars/combat_transport_2",
     antiFighterBarrage: { dice: 2, hit: 6 },
   },
   {
@@ -151,38 +156,39 @@ const unitAttrs = [
 
 const unitModifiers = [
   {
-      isCombat: true,
-      localeName: "unit_modifier.name.rule_of_two",
-      localeDescription: "unit_modifier.desc.rule_of_two",
-      owner: "self",
-      priority: "adjust",
-      triggerFactionAbility: "rule_of_two",
-      filter: (auxData) => {
-        return (auxData.rollType === "spaceCombat");
-      },
-      applyAll: (unitAttrsSet, auxData) => {
-        const nonFighters = auxData.plastic
-          .filter(plastic => {
-            const unitType = plastic.unit;
-            const isShip = unitAttrsSet.get(plastic.unit).raw.ship;
-            return unitType !== "fighter" && isShip;
-          });
+    isCombat: true,
+    localeName: "unit_modifier.name.rule_of_two",
+    localeDescription: "unit_modifier.desc.rule_of_two",
+    owner: "self",
+    priority: "adjust",
+    triggerFactionAbility: "rule_of_two",
+    filter: (auxData) => {
+      return auxData.rollType === "spaceCombat";
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      const nonFighters = auxData.plastic.filter((plastic) => {
+        const unitType = plastic.unit;
+        const isShip = unitAttrsSet.get(plastic.unit).raw.ship;
+        return unitType !== "fighter" && isShip;
+      });
 
-        const unitType = nonFighters[0].unit;
+      const unitType = nonFighters[0].unit;
 
-        if (!(nonFighters.length === 2 && unitType === nonFighters[1].unit)) {
-          return; // not two non-fighter units of the same unit type 
-        }
+      if (!(nonFighters.length === 2 && unitType === nonFighters[1].unit)) {
+        return; // not two non-fighter units of the same unit type
+      }
 
-        unitAttrsSet.get(unitType).raw.spaceCombat.hit -= 2;
-      },
-  },];
+      unitAttrsSet.get(unitType).raw.spaceCombat.hit -= 2;
+    },
+  },
+];
 
-  //TODO: add 2x Bombardment to the promissory note
+//TODO: add 2x Bombardment to the promissory note
 
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
+  factionAbilities,
   nsidToTemplateId,
   systems,
   technologies,

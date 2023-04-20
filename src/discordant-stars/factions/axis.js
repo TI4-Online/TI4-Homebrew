@@ -47,6 +47,8 @@ const factions = [
   },
 ];
 
+const factionAbilities = [];
+
 const nsidToTemplateId = {
   "card.axis:homebrew.discordant_stars/0": "2012ED3D6A479DFA443063A612E77765",
   "sheet.faction:homebrew.discordant_stars/axis":
@@ -116,6 +118,7 @@ const unitModifiers = [];
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
+  factionAbilities,
   nsidToTemplateId,
   systems,
   technologies,

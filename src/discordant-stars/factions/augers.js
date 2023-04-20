@@ -9,70 +9,70 @@ const localeStrings = {
   "technology.name.sentient_datapool": "Sentient Datapool",
   "unit.flagship.nemsys": "Nemsys",
   "unit.mech.iledrith": "Iledrith",
-  "unit_modifier.desc.nemsys": "1 additional die for each secret objective you have scored",
+  "unit_modifier.desc.nemsys":
+    "1 additional die for each secret objective you have scored",
 };
 
-const factions = [{
-  faction: "augers",
-  abilities: [
-    "oracle_ai",
-    "limited_vision",
-    "probability_algorithms",
-  ],
-  commodities: 3,
-  home: 3208,
-  leaders: {
-    agents: ["clodho"],
-    commanders: ["lachis"],
-    heroes: ["atropha"],
+const factions = [
+  {
+    faction: "augers",
+    abilities: ["oracle_ai", "limited_vision", "probability_algorithms"],
+    commodities: 3,
+    home: 3208,
+    leaders: {
+      agents: ["clodho"],
+      commanders: ["lachis"],
+      heroes: ["atropha"],
+    },
+    promissoryNotes: ["read_the_fates"],
+    icon: "discordant-stars/faction-icons/augers.png",
+    source: "homebrew.discordant_stars",
+    startingTech: ["scanlink_drone_network", "ai_development_algorithm"],
+    startingUnits: {
+      carrier: 1,
+      destroyer: 2,
+      fighter: 2,
+      infantry: 4,
+      pds: 1,
+      space_dock: 1,
+    },
+    techs: ["psychographics", "sentient_datapool"],
+    units: ["nemsys", "iledrith"],
+    packageId: refPackageId,
   },
-  promissoryNotes: ["read_the_fates"],
-  icon: "discordant-stars/faction-icons/augers.png",
-  source: "homebrew.discordant_stars",
-  startingTech: ["scanlink_drone_network", "ai_development_algorithm"],
-  startingUnits: {
-    carrier: 1,
-    destroyer: 2,
-    fighter: 2,
-    infantry: 4,
-    pds: 1,
-    space_dock: 1,
-  },
-  techs: ["psychographics", "sentient_datapool"],
-  units: [
-    "nemsys",
-    "iledrith",
-  ],
-  packageId: refPackageId,
-}];
+];
 
- const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/augers":
-      "657B6BE447C76A7F2AA6019407863E5B",
-    "tile.system:homebrew.discordant_stars/3208":
-      "152C3545E9F246048D0215F7CBA63D6D",
-    "token.command:homebrew.discordant_stars/augers":
-      "F771FF974971D1FD1362E09380F06B0B",
-    "token.control:homebrew.discordant_stars/augers":
-      "E02C123942347B03BD7074B2F481DE99",
+const factionAbilities = [];
+
+const nsidToTemplateId = {
+  "sheet.faction:homebrew.discordant_stars/augers":
+    "657B6BE447C76A7F2AA6019407863E5B",
+  "tile.system:homebrew.discordant_stars/3208":
+    "152C3545E9F246048D0215F7CBA63D6D",
+  "token.command:homebrew.discordant_stars/augers":
+    "F771FF974971D1FD1362E09380F06B0B",
+  "token.control:homebrew.discordant_stars/augers":
+    "E02C123942347B03BD7074B2F481DE99",
 };
 
-const technologies = [{
+const technologies = [
+  {
     localeName: "technology.name.sentient_datapool",
     cardNsid:
-        "card.technology.yellow.augers:homebrew.discordant_stars/sentient_datapool",
+      "card.technology.yellow.augers:homebrew.discordant_stars/sentient_datapool",
     type: "Yellow",
     requirements: { Yellow: 2 },
     source: "homebrew.discordant_stars",
     faction: "augers",
-  }, {
+  },
+  {
     localeName: "technology.name.psychographics",
-      cardNsid:
-  "card.technology.green.augers:homebrew.discordant_stars/psychographics",
-      type: "Green",
-      requirements: { Green: 3 },
-  source: "homebrew.discordant_stars",
-      faction: "augers",
+    cardNsid:
+      "card.technology.green.augers:homebrew.discordant_stars/psychographics",
+    type: "Green",
+    requirements: { Green: 3 },
+    source: "homebrew.discordant_stars",
+    faction: "augers",
   },
 ];
 
@@ -110,22 +110,19 @@ const unitAttrs = [
 
 const unitModifiers = [
   {
-      // "+1 die to SPACE COMBAT rolls for each own secret objective scored",
-      isCombat: true,
-      localeName: "unit.flagship.nemsys",
-      localeDescription: "unit_modifier.desc.nemsys",
-      triggerUnitAbility: "unit.flagship.nemsys",
-      owner: "self",
-      priority: "adjust",
-      filter: (auxData) => {
-        console.log(auxData.rollType)
-          return (
-              auxData.rollType === "spaceCombat" &&
-              auxData.self.has("flagship")
-          );
-      },
-      applyAll: (unitAttrsSet, auxData) => {
-          /*if (!auxData.self) {
+    // "+1 die to SPACE COMBAT rolls for each own secret objective scored",
+    isCombat: true,
+    localeName: "unit.flagship.nemsys",
+    localeDescription: "unit_modifier.desc.nemsys",
+    triggerUnitAbility: "unit.flagship.nemsys",
+    owner: "self",
+    priority: "adjust",
+    filter: (auxData) => {
+      console.log(auxData.rollType);
+      return auxData.rollType === "spaceCombat" && auxData.self.has("flagship");
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      /*if (!auxData.self) {
               return;
           }
           const playerSlot = auxData.self.playerSlot;
@@ -170,7 +167,7 @@ const unitModifiers = [
           }, 0);
 
           unitAttrsSet.get("flagship").raw.spaceCombat.dice += modifier;*/
-      },
+    },
   },
 ];
 
@@ -179,6 +176,7 @@ const unitModifiers = [
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
+  factionAbilities,
   nsidToTemplateId,
   systems,
   technologies,

@@ -9,62 +9,72 @@ const localeStrings = {
   "unit.destroyer.blockade_runner_2": "Blockade Runner 2",
   "unit.flagship.principia_aneris": "Principia Aneris",
   "unit.mech.daedalon": "Daedalon",
-  "unit_modifier.desc.principia_aneris": "NOT YET APPLIED!!! 1 ship in this system, during this combat round rolls 1 less combat die",
+  "unit_modifier.desc.principia_aneris":
+    "NOT YET APPLIED!!! 1 ship in this system, during this combat round rolls 1 less combat die",
   "unit_modifier.name.davish_snorri": "Davish S'Norri",
-  "unit_modifier.desc.davish_snorri": "NOT YET APPLIED!!! Choose 1 ship during this invasion, that ship may use its ANTI-FIGHTER BARRAGE as if it were BOMBARDMENT",
+  "unit_modifier.desc.davish_snorri":
+    "NOT YET APPLIED!!! Choose 1 ship during this invasion, that ship may use its ANTI-FIGHTER BARRAGE as if it were BOMBARDMENT",
 };
 
-
-const factions = [{
-  faction: "tnelis",
-  abilities: [
-    "plausible_deniability",
-    "information_brokers",
-    "stealth_insertion",
-  ],
-  commodities: 2,
-  home: 3212,
-  leaders: {
-    agents: ["davish_snorri"],
-    commanders: ["fillipo_rois"],
-    heroes: ["turra_sveyar"],
+const factions = [
+  {
+    faction: "tnelis",
+    abilities: [
+      "plausible_deniability",
+      "information_brokers",
+      "stealth_insertion",
+    ],
+    commodities: 2,
+    home: 3212,
+    leaders: {
+      agents: ["davish_snorri"],
+      commanders: ["fillipo_rois"],
+      heroes: ["turra_sveyar"],
+    },
+    promissoryNotes: ["plots_within_plots"],
+    icon: "discordant-stars/faction-icons/tnelis.png",
+    source: "homebrew.discordant_stars",
+    startingTechChoice: "tnelis",
+    startingTechChoices: [
+      "neural_motivator",
+      "antimass_deflectors",
+      "plasma_scoring",
+    ],
+    startingTech: [],
+    startingUnits: {
+      carrier: 1,
+      destroyer: 2,
+      fighter: 2,
+      infantry: 4,
+      pds: 1,
+      space_dock: 1,
+    },
+    techs: ["daedalon_flight_system"],
+    units: [
+      "principia_aneris",
+      "daedalon",
+      "blockade_runner",
+      "blockade_runner_2",
+    ],
+    packageId: refPackageId,
   },
-  promissoryNotes: ["plots_within_plots"],
-  icon: "discordant-stars/faction-icons/tnelis.png",
-  source: "homebrew.discordant_stars",
-  startingTechChoice: "tnelis",
-  startingTechChoices: ["neural_motivator", "antimass_deflectors", "plasma_scoring"],
-  startingTech: [],
-  startingUnits: {
-    carrier: 1,
-    destroyer: 2,
-    fighter: 2,
-    infantry: 4,
-    pds: 1,
-    space_dock: 1,
-  },
-  techs: ["daedalon_flight_system"],
-  units: [
-    "principia_aneris",
-    "daedalon",
-    "blockade_runner",
-    "blockade_runner_2",
-  ],
-  packageId: refPackageId,
-}];
+];
 
- const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/tnelis":
-      "8A849C90477BE025EB3DA89FA077CC8B",
-    "tile.system:homebrew.discordant_stars/3212":
-      "2EC81B92A6974C8FA215E62235671284",
-    "token.command:homebrew.discordant_stars/tnelis":
-      "2C112E1845AD443288D703AC4D773770",
-    "token.control:homebrew.discordant_stars/tnelis":
-      "1FF8D16242C17ED0E40B2598C37591E7",
+const factionAbilities = [];
+
+const nsidToTemplateId = {
+  "sheet.faction:homebrew.discordant_stars/tnelis":
+    "8A849C90477BE025EB3DA89FA077CC8B",
+  "tile.system:homebrew.discordant_stars/3212":
+    "2EC81B92A6974C8FA215E62235671284",
+  "token.command:homebrew.discordant_stars/tnelis":
+    "2C112E1845AD443288D703AC4D773770",
+  "token.control:homebrew.discordant_stars/tnelis":
+    "1FF8D16242C17ED0E40B2598C37591E7",
 };
 
-const technologies = [{
+const technologies = [
+  {
     localeName: "technology.name.daedalon_flight_system",
     cardNsid:
       "card.technology.yellow.tnelis:homebrew.discordant_stars/daedalon_flight_system",
@@ -72,9 +82,11 @@ const technologies = [{
     requirements: { Yellow: 1 },
     source: "homebrew.discordant_stars",
     faction: "tnelis",
-  }, {
+  },
+  {
     localeName: "unit.destroyer.blockade_runner_2",
-    cardNsid: "card.technology.unit_upgrade.tnelis:homebrew.discordant_stars/blockade_runner_2",
+    cardNsid:
+      "card.technology.unit_upgrade.tnelis:homebrew.discordant_stars/blockade_runner_2",
     type: "unitUpgrade",
     requirements: { Red: 2 },
     abbrev: " BR II",
@@ -90,9 +102,7 @@ const systems = [
     home: true,
     packageId: refPackageId,
     img: "discordant-stars/tiles/homeworld/tile_3212.jpg",
-    planets: [
-        { localeName: "planet.discordia", resources: 4, influence: 1 },
-    ],
+    planets: [{ localeName: "planet.discordia", resources: 4, influence: 1 }],
   },
 ];
 
@@ -111,14 +121,16 @@ const unitAttrs = [
     unit: "destroyer",
     upgradeLevel: 1,
     localeName: "unit.destroyer.blockade_runner",
-    triggerNsid: "card.technology.unit_upgrade.tnelis:franken.discordant_stars/blockade_runner",
+    triggerNsid:
+      "card.technology.unit_upgrade.tnelis:franken.discordant_stars/blockade_runner",
     antiFighterBarrage: { dice: 3, hit: 9 },
   },
   {
     unit: "destroyer",
     upgradeLevel: 2,
     localeName: "unit.destroyer.blockade_runner_2",
-    triggerNsid: "card.technology.unit_upgrade.tnelis:homebrew.discordant_stars/blockade_runner_2",
+    triggerNsid:
+      "card.technology.unit_upgrade.tnelis:homebrew.discordant_stars/blockade_runner_2",
     spaceCombat: { hit: 8 },
     antiFighterBarrage: { dice: 4, hit: 6 },
   },
@@ -187,6 +199,7 @@ const unitModifiers = [
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
+  factionAbilities,
   nsidToTemplateId,
   systems,
   technologies,

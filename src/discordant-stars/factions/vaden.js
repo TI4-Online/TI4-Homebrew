@@ -11,66 +11,67 @@ const localeStrings = {
   "unit.mech.collector": "Collector",
 };
 
-
-const factions = [{
-  faction: "vaden",
-  abilities: [
-    "fine_print",
-    "collateralized_loans",
-    "binding_debts",
-  ],
-  commodities: 3,
-  home: 3206,
-  leaders: {
-    agents: ["yudri_sukhov"],
-    commanders: ["komdar_borodin"],
-    heroes: ["putriv_sirvonsk"],
+const factions = [
+  {
+    faction: "vaden",
+    abilities: ["fine_print", "collateralized_loans", "binding_debts"],
+    commodities: 3,
+    home: 3206,
+    leaders: {
+      agents: ["yudri_sukhov"],
+      commanders: ["komdar_borodin"],
+      heroes: ["putriv_sirvonsk"],
+    },
+    promissoryNotes: ["vaden_handshake"],
+    icon: "discordant-stars/faction-icons/vaden.png",
+    source: "homebrew.discordant_stars",
+    startingTechChoice: "vaden",
+    startingTechChoices: [
+      "neural_motivator",
+      "antimass_deflectors",
+      "sarween_tools",
+    ],
+    startingTech: [],
+    startingUnits: {
+      dreadnought: 1,
+      carrier: 1,
+      cruiser: 1,
+      fighter: 2,
+      infantry: 3,
+      space_dock: 1,
+    },
+    techs: ["midas_turbine", "krovoz_strike_teams"],
+    units: ["aurum_vadra", "collector"],
+    packageId: refPackageId,
   },
-  promissoryNotes: ["vaden_handshake"],
-  icon: "discordant-stars/faction-icons/vaden.png",
-  source: "homebrew.discordant_stars",
-  startingTechChoice: "vaden",
-  startingTechChoices: ["neural_motivator", "antimass_deflectors", "sarween_tools"],
-  startingTech: [],
-  startingUnits: {
-    dreadnought: 1,
-    carrier: 1,
-    cruiser: 1,
-    fighter: 2,
-    infantry: 3,
-    space_dock: 1,
-  },
-  techs: ["midas_turbine", "krovoz_strike_teams"],
-  units: [
-    "aurum_vadra",
-    "collector",
-  ],
-  packageId: refPackageId,
-}];
+];
 
- const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/vaden":
-      "F93124B441A5119AE249F68C1D4B3824",
-    "tile.system:homebrew.discordant_stars/3206":
-      "9F83BC9B59F1461B96F525398E21C400",
-    "token.command:homebrew.discordant_stars/vaden":
-      "11BC808047DC273097A15194C47E941C",
-    "token.control:homebrew.discordant_stars/vaden":
-      "EB28C1574C11B816895096BDC8D0B9D6",
+const factionAbilities = [];
+
+const nsidToTemplateId = {
+  "sheet.faction:homebrew.discordant_stars/vaden":
+    "F93124B441A5119AE249F68C1D4B3824",
+  "tile.system:homebrew.discordant_stars/3206":
+    "9F83BC9B59F1461B96F525398E21C400",
+  "token.command:homebrew.discordant_stars/vaden":
+    "11BC808047DC273097A15194C47E941C",
+  "token.control:homebrew.discordant_stars/vaden":
+    "EB28C1574C11B816895096BDC8D0B9D6",
 };
 
-const technologies = [{
+const technologies = [
+  {
     localeName: "technology.name.turbine",
-    cardNsid:
-      "card.technology.blue.vaden:homebrew.discordant_stars/turbine",
+    cardNsid: "card.technology.blue.vaden:homebrew.discordant_stars/turbine",
     type: "Blue",
     requirements: { Blue: 1 },
     source: "homebrew.discordant_stars",
     faction: "vaden",
-  }, {
+  },
+  {
     localeName: "technology.name.krovoz_strike_teams",
     cardNsid:
-        "card.technology.yellow.krovoz_strike_teams:homebrew.discordant_stars/krovoz_strike_teams",
+      "card.technology.yellow.krovoz_strike_teams:homebrew.discordant_stars/krovoz_strike_teams",
     type: "Yellow",
     requirements: { Yellow: 2 },
     source: "homebrew.discordant_stars",
@@ -115,6 +116,7 @@ const unitModifiers = [];
 world.TI4.homebrew.inject({
   localeStrings,
   factions,
+  factionAbilities,
   nsidToTemplateId,
   systems,
   technologies,

@@ -12,26 +12,22 @@ const localeStrings = {
   "attachment:homebrew.discordant_stars.automatons/rohdhna": "Automatons",
 };
 
-
-const factions = [{
-  faction: "rohdhna",
-  abilities: [
-      "industrious",
-      "recycled_materials",
-      "orbital_foundries",
-  ],
-  commodities: 4,
-  home: 3214,
-  leaders: {
+const factions = [
+  {
+    faction: "rohdhna",
+    abilities: ["industrious", "recycled_materials", "orbital_foundries"],
+    commodities: 4,
+    home: 3214,
+    leaders: {
       agents: ["rond_briay"],
       commanders: ["bunit_205643a"],
       heroes: ["rohvhin_dhna_mk4"],
-  },
-  promissoryNotes: ["automatons"],
-  icon: "discordant-stars/faction-icons/rohdhna.png",
-  source: "homebrew.discordant_stars",
-  startingTech: ["psychoarchaeology", "sarween_tools"],
-  startingUnits: {
+    },
+    promissoryNotes: ["automatons"],
+    icon: "discordant-stars/faction-icons/rohdhna.png",
+    source: "homebrew.discordant_stars",
+    startingTech: ["psychoarchaeology", "sarween_tools"],
+    startingUnits: {
       carrier: 1,
       cruiser: 1,
       fighter: 2,
@@ -39,36 +35,36 @@ const factions = [{
       dreadnought: 1,
       pds: 1,
       space_dock: 1,
-  },
-  techs: ["contractual_obligations"],
-  units: [
-      "ky_vir",
-      "terrafactory",
-      "terrafactory_2",
-      "autofabricator",
-  ],
-  unpackExtra: [
+    },
+    techs: ["contractual_obligations"],
+    units: ["ky_vir", "terrafactory", "terrafactory_2", "autofabricator"],
+    unpackExtra: [
       {
-          tokenNsid: "token.attachment:homebrew.discordant_stars.automatons/rohdhna",
+        tokenNsid:
+          "token.attachment:homebrew.discordant_stars.automatons/rohdhna",
       },
-  ],
-  packageId: refPackageId,
-}];
+    ],
+    packageId: refPackageId,
+  },
+];
 
- const nsidToTemplateId = {
-    "sheet.faction:homebrew.discordant_stars/rohdhna":
-      "55E4DC2D4D19F0D3F1D537A2718C0216",
-    "tile.system:homebrew.discordant_stars/3214":
-      "3B006A999C5D4340B8346BFB841BADA3",
-    "token.command:homebrew.discordant_stars/rohdhna":
-      "1CD315F0410A9F5F00B658B8265D9474",
-    "token.control:homebrew.discordant_stars/rohdhna":
-      "0897DEEE4845E5160E043990A59B4403",
-    "token.attachment:homebrew.discordant_stars.automatons/rohdhna":
-      "227493894C55B220A6DA81B5053F0BE0",
+const factionAbilities = [];
+
+const nsidToTemplateId = {
+  "sheet.faction:homebrew.discordant_stars/rohdhna":
+    "55E4DC2D4D19F0D3F1D537A2718C0216",
+  "tile.system:homebrew.discordant_stars/3214":
+    "3B006A999C5D4340B8346BFB841BADA3",
+  "token.command:homebrew.discordant_stars/rohdhna":
+    "1CD315F0410A9F5F00B658B8265D9474",
+  "token.control:homebrew.discordant_stars/rohdhna":
+    "0897DEEE4845E5160E043990A59B4403",
+  "token.attachment:homebrew.discordant_stars.automatons/rohdhna":
+    "227493894C55B220A6DA81B5053F0BE0",
 };
 
-const technologies = [{
+const technologies = [
+  {
     localeName: "technology.name.contractual_obligations",
     cardNsid:
       "card.technology.yellow.rohdhna:homebrew.discordant_stars/contractual_obligations",
@@ -79,7 +75,8 @@ const technologies = [{
   },
   {
     localeName: "unit.war_sun.terrafactory_2",
-    cardNsid: "card.technology.unit_upgrade.rohdhna:homebrew.discordant_stars/terrafactory_2",
+    cardNsid:
+      "card.technology.unit_upgrade.rohdhna:homebrew.discordant_stars/terrafactory_2",
     type: "unitUpgrade",
     requirements: { Red: 3, Yellow: 1 },
     abbrev: " TF II",
@@ -95,9 +92,7 @@ const systems = [
     home: true,
     packageId: refPackageId,
     img: "discordant-stars/tiles/homeworld/tile_3214.jpg",
-    planets: [
-        { localeName: "planet.prind", resources: 3, influence: 3 },
-    ],
+    planets: [{ localeName: "planet.prind", resources: 3, influence: 3 }],
   },
 ];
 
@@ -115,7 +110,8 @@ const unitAttrs = [
     unit: "war_sun",
     upgradeLevel: 1,
     localeName: "unit.war_sun.terrafactory",
-    triggerNsid: "card.technology.unit_upgrade.rohdhna:franken.discordant_stars/terrafactory",
+    triggerNsid:
+      "card.technology.unit_upgrade.rohdhna:franken.discordant_stars/terrafactory",
     combat: { dice: 2, hit: 5 },
     production: 5,
     capacity: 4,
@@ -127,7 +123,8 @@ const unitAttrs = [
     unit: "war_sun",
     upgradeLevel: 2,
     localeName: "unit.war_sun.terrafactory_2",
-    triggerNsid: "card.technology.unit_upgrade.rohdhna:homebrew.discordant_stars/terrafactory_2",
+    triggerNsid:
+      "card.technology.unit_upgrade.rohdhna:homebrew.discordant_stars/terrafactory_2",
     production: 5,
     capacity: 6,
     sustainDamage: true,
@@ -139,27 +136,30 @@ const unitAttrs = [
     unit: "mech",
     upgradeLevel: 1,
     localeName: "unit.mech.autofabricator",
-    triggerNsid: "card.leader.mech.rohdhna:homebrew.discordant_stars/autofabricator",
+    triggerNsid:
+      "card.leader.mech.rohdhna:homebrew.discordant_stars/autofabricator",
   },
 ];
 
 const unitModifiers = [];
 
-
-const attachments = [{
-  packageId: refPackageId,
-  localeName: "attachment:homebrew.discordant_stars.automatons/rohdhna",
-  cardNsid: "card.promissory.rohdhna:homebrew.discordant_stars/automatons",
-  tokenNsid: "token.attachment:homebrew.discordant_stars.automatons/rohdhna",
-  faceUp: {
-    image: "discordant-stars/tokens/faction/rohdhna_automatons.face.jpg",
+const attachments = [
+  {
+    packageId: refPackageId,
+    localeName: "attachment:homebrew.discordant_stars.automatons/rohdhna",
+    cardNsid: "card.promissory.rohdhna:homebrew.discordant_stars/automatons",
+    tokenNsid: "token.attachment:homebrew.discordant_stars.automatons/rohdhna",
+    faceUp: {
+      image: "discordant-stars/tokens/faction/rohdhna_automatons.face.jpg",
+    },
   },
-},];
+];
 
 world.TI4.homebrew.inject({
   localeStrings,
   attachments,
   factions,
+  factionAbilities,
   nsidToTemplateId,
   systems,
   technologies,
