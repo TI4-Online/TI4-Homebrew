@@ -55,7 +55,35 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "The Lady and The Lord",
+    description:
+      "During setup, place the Lord flagship token in your reinforcements and place the additional Ghemina Hero next to your faction sheet. The Lord flagship token is a second flagship unit with the abilities and attributes listed on the Lord flagship card. You have 2 Heroes.",
+    source: "Ghemina (DS)",
+  },
+  {
+    name: "Rule of Two",
+    description:
+      "During a round of combat in a system that contains exactly 2 of your non-fighter ships, if those ships have the same unit type, apply +2 to the result of each of those unit’s combat rolls.",
+    source: "Ghemina (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Ghemina extra flagship",
+    nsid: "token.unit:homebrew.discordant_stars.lord_flagship/ghemina",
+    count: 1,
+    triggerAbility: "The Lady and The Lord",
+  },
+  {
+    name: "Ghemina extra flagship",
+    nsid: "card.unit:homebrew.discordant_stars.lord_flagship/ghemina",
+    count: 1,
+    triggerAbility: "The Lady and The Lord",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/ghemina":
@@ -189,6 +217,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

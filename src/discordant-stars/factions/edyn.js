@@ -48,7 +48,26 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Enlightenment",
+    description:
+      "During setup, purge your 'Support for the Throne' promissory note. You may score up to 1 public objective a second time.",
+    source: "Edyn (DS)",
+  },
+  {
+    name: "Grace",
+    description:
+      "Once per action phase, after you resolve the primary ability of a strategy card, you may resolve the secondary ability of 1 unexhausted strategy card with a lower printed initiative number than that strategy card.",
+    source: "Edyn (DS)",
+  },
+  {
+    name: "Arcane Sigils",
+    description:
+      "Ships cannot move through systems that contain 'Sigil' anomalies unless you allow them. Each planet in a Sigil a player exhausts to cast votes provides 1 additional vote.",
+    source: "Edyn (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/edyn":

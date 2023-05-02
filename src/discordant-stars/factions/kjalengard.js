@@ -48,7 +48,35 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Heroic Tales",
+    description:
+      "Capture your infantry and fighters that are destroyed during combat. When you pass, you may place up to 2 of your captured units on a planet you control or the space area of a system that contains 1 or more of your ships.",
+    source: "Kjalengard (DS)",
+  },
+  {
+    name: "For Glory",
+    description:
+      "After you win a combat, you may place a Glory token in the active system; if you were the attacker, you may spend 4 trade goods to research a unit upgrade technology of the same type as 1 of your units in the active system.",
+    source: "Kjalengard (DS)",
+  },
+  {
+    name: "Military Engineers",
+    description:
+      "When you research a unit upgrade technology, each of your unit upgrade technologies may satisfy 1 of its prerequisites of the same color as 1 on the technology you are researching.",
+    source: "Kjalengard (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Kjalengard glory token",
+    nsid: "token.system:homebrew.discordant_stars.glory/kjalengard",
+    count: 1,
+    triggerAbility: "For Glory",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/kjalengard":
@@ -142,6 +170,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

@@ -65,7 +65,54 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Prescient Memories",
+    description:
+      "At the start of the strategy phase, take and roll each of the 4 “Omen” dice, place these dice near your faction sheet. You have 4 Omen Dice.",
+    source: "Myko-Mentori (DS)",
+  },
+  {
+    name: "Divination",
+    description:
+      "Before you would roll a die, you may instead return 1 Omen die near your faction sheet to your reinforcements to resolve that roll as if it had the result of that die.",
+    source: "Myko-Mentori (DS)",
+    mergeAbility: "Prescient Memories",
+  },
+  {
+    name: "Necrophage",
+    description:
+      "Apply +1 to your commodity value for each space dock you control. After the first round of combat, gain 1 commodity or convert 1 of your commodities to a trade good.",
+    source: "Myko-Mentori (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Myko-Mentori omen dice",
+    nsid: "dice:homebrew.discordant_stars.omen/mykomentori",
+    count: 4,
+    triggerAbility: "Prescient Memories",
+  },
+  {
+    name: "Myko-Mentori bonus commodities token",
+    nsid: "token.commodity:homebrew.discordant_stars.commodity_2/mykomentori",
+    count: 1,
+    triggerAbility: "Necrophage",
+  },
+  {
+    name: "Myko-Mentori bonus commodities token",
+    nsid: "token.commodity:homebrew.discordant_stars.commodity_3/mykomentori",
+    count: 1,
+    triggerAbility: "Necrophage",
+  },
+  {
+    name: "Myko-Mentori bonus commodities token",
+    nsid: "token.commodity:homebrew.discordant_stars.commodity_4/mykomentori",
+    count: 1,
+    triggerAbility: "Necrophage",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/mykomentori":
@@ -163,6 +210,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

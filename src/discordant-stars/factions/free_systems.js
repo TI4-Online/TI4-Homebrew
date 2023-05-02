@@ -51,7 +51,37 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Rally to the Cause",
+    description:
+      "Once per action, after you produce 1 or more ships in your home system, you may produce up to 2 ships in a system that contains a cultural, hazardous, or industrial planet and does not contain a legendary planet or another player's units.",
+    source: "Free Systems (DS)",
+  },
+  {
+    name: "Diplomats",
+    description:
+      "Once per action, you may exhaust 1 uncontrolled planet’s planet card that is on the game board to spend its resources or influence.",
+    source: "Free Systems (DS)",
+  },
+  {
+    name: "Free People",
+    description:
+      "During setup, for each non-home planet other than Mecatol Rex on the game board, place that planet’s planet card face up on the game board.",
+    source: "Free Systems (DS)",
+    mergeAbility: "Diplomats",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Free Systems hero token",
+    nsid: "token.attachment:homebrew.discordant_stars.heart_of_rebellion/free_systems",
+    count: 1,
+    triggerNsid:
+      "card.leader.hero.free_systems:homebrew.discordant_stars/count_otto_pmay",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/free_systems":
@@ -176,6 +206,7 @@ world.TI4.homebrew.inject({
   attachments,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

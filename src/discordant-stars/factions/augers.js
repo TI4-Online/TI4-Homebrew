@@ -42,7 +42,28 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Oracle AI",
+    description:
+      "After the speaker reveals an unrevealed public objective, choose and look at 1 unrevealed public objective card; place that objective card on your faction sheet. You may look at the card on your faction sheet at any time.",
+    source: "Augers (DS)",
+  },
+  {
+    name: "Limited Vision",
+    description:
+      "You may not place a stage II objective card on your faction sheet until all stage I objectives have been revealed.",
+    source: "Augers (DS)",
+    mergeAbility: "Oracle AI",
+  },
+  {
+    name: "Probability Algorithms",
+    description:
+      "When the speaker would reveal the next public objective, they instead reveal the objective card on your faction sheet and place that objective card near the public objectives as the next public objective.",
+    source: "Augers (DS)",
+    mergeAbility: "Oracle AI",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/augers":

@@ -47,7 +47,29 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Policies",
+    description:
+      "When you gather your starting components, place the 3 “Policy” cards near your faction sheet, choose which side of each card to place face up. This faction has the abilities and effects listed on the face up side of each Policy card.",
+    source: "Olradin (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Olradin policy cards",
+    nsid: "card.olradin:homebrew.discordant_stars/0",
+    count: 1,
+    triggerAbility: "Policies",
+  },
+  {
+    name: "Olradin commodity token",
+    nsid: "token.commodity:homebrew.discordant_stars.2_commodities/olradin",
+    count: 1,
+    triggerAbility: "Policies",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/olradin":
@@ -122,6 +144,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

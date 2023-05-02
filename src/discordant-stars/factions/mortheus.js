@@ -40,7 +40,20 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Facsimile",
+    description:
+      "At the start of a space combat while you are not the active player, choose 1 of your opponent's ships in the active system, you may produce 1 unit of that type in that system, spending influence instead of resources.",
+    source: "Mortheus (DS)",
+  },
+  {
+    name: "Illusory Presence",
+    description:
+      "During the agenda phase, after another player casts votes, you may exhaust up to 2 planets you control; that player casts an additional number of votes equal to 1 more than the combined influence values of those planets.",
+    source: "Mortheus (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/mortheus":

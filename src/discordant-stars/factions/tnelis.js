@@ -60,7 +60,25 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Plausible Deniability",
+    description:
+      "When you draw 1 or more secret objective cards, draw 1 additional secret objective card. Then, return 1 secret objective card to the secret objective deck; shuffle that deck.",
+    source: "Tnelis (DS)",
+  },
+  {
+    name: "Information Brokers",
+    description: "You may have 1 additional unscored secret objective.",
+    source: "Tnelis (DS)",
+  },
+  {
+    name: "Stealth Insertion",
+    description:
+      "If you place units onto the same planet as another player's units, your units must participate in combat during the 'Ground Combat' step.",
+    source: "Tnelis (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/tnelis":

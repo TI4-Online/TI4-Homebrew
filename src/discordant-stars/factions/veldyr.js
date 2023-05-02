@@ -79,7 +79,53 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Corporate Entity",
+    description:
+      "During setup, take the additional Veldyr faction promissory notes; you have 4 faction promissory notes. Branch Office attachments do not count toward scoring objectives.",
+    source: "Veldyr (DS)",
+  },
+  {
+    name: "Holding Company",
+    description:
+      "At the start of the status phase, for each planet that has a Branch Office attachment, you may gain 1 commodity or convert 1 of your commodities to a trade good.",
+    source: "Veldyr (DS)",
+  },
+  {
+    name: "Targeted Acquisition",
+    description:
+      "At the start of the status phase, you may give 1 of your faction promissory notes in your hand to 1 of your neighbors.",
+    source: "Veldyr (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Veldyr token",
+    nsid: "token.attachment:homebrew.discordant_stars.branch_office_orbital_shipyard/veldyr",
+    count: 1,
+    triggerAbility: "Corporate Entity",
+  },
+  {
+    name: "Veldyr token",
+    nsid: "token.attachment:homebrew.discordant_stars.branch_office_reserve_bank/veldyr",
+    count: 1,
+    triggerAbility: "Corporate Entity",
+  },
+  {
+    name: "Veldyr token",
+    nsid: "token.attachment:homebrew.discordant_stars.branch_office_broadcast_hub/veldyr",
+    count: 1,
+    triggerAbility: "Corporate Entity",
+  },
+  {
+    name: "Veldyr token",
+    nsid: "token.attachment:homebrew.discordant_stars.branch_office_tax_haven/veldyr",
+    count: 1,
+    triggerAbility: "Corporate Entity",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/veldyr":
@@ -249,6 +295,7 @@ world.TI4.homebrew.inject({
   attachments,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

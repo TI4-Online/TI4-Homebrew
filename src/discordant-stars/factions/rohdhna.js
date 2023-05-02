@@ -48,7 +48,35 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Industrious",
+    description:
+      "After you place a space dock on a planet in a system that contains no other players' ships, you may spend 6 resources and remove that space dock to place 1 war sun in that system's space area.",
+    source: "Roh’Dhna (DS)",
+  },
+  {
+    name: "Recycled Materials",
+    description:
+      "After you activate a system, you may return 1 cruiser, carrier, or dreadnought you control in that system to your reinforcements to gain a number of trade goods equal to 1 less than that unit’s cost value.",
+    source: "Roh’Dhna (DS)",
+  },
+  {
+    name: "Orbital Foundries",
+    description:
+      "For the purpose of scoring objectives, you may treat each of your war sun units as though it is a structure on any planet you control.",
+    source: "Roh’Dhna (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Roh’Dhna automatons token",
+    nsid: "token.attachment:homebrew.discordant_stars.automatons/rohdhna",
+    count: 1,
+    triggerNsid: "card.promissory.rohdhna:homebrew.discordant_stars/automatons",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/rohdhna":
@@ -160,6 +188,7 @@ world.TI4.homebrew.inject({
   attachments,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

@@ -60,7 +60,47 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Blight",
+    description:
+      "At the start of the strategy phase, you may place or move 1 'Blight' token into your home system, or adjacent to a system that contains a Blight token. Apply -1 to the results of other players' combat rolls during the first round of combat in systems that contain Blight tokens.",
+    source: "Blex (DS)",
+  },
+  {
+    name: "Contagion",
+    description:
+      "Once per tactical action, when you commit 1 or more infantry to an uncontrolled planet, you may resolve ground combat on that planet.",
+    source: "Blex (DS)",
+  },
+  {
+    name: "Plague Reservoir",
+    description:
+      "You may score public objectives as long as you control all the planets in any home system.",
+    source: "Blex (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Blex blight tokens",
+    nsid: "token.system:homebrew.discordant_stars.blight/blex",
+    count: 4,
+    triggerAbility: "Blight",
+  },
+  {
+    name: "Blex blight controller",
+    nsid: "token.system:homebrew.discordant_stars.blight_controller/blex",
+    count: 1,
+    triggerAbility: "Blight",
+  },
+  {
+    name: "Blex blight controller",
+    nsid: "token.system:homebrew.discordant_stars.blight_controller/blex",
+    count: 1,
+    triggerAbility: "Blight",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/blex":
@@ -261,6 +301,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

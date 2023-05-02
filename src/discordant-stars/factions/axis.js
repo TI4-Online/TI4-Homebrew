@@ -47,7 +47,30 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Military Industrial Complex",
+    description:
+      "You may not give your commodities to other players as part of a transaction. After you gain 1 or more commodities, you may spend a number of commodities equal to the combined cost listed on any number of Axis Order cards in your reinforcements to place those cards in your play area.",
+    source: "Axis (DS)",
+  },
+  {
+    name: "Arms Dealers",
+    description:
+      "When a player negotiates a transaction, they may exchange Axis Order cards in their play area as part of that transaction. You cannot resolve the effects of Axis Order cards.",
+    source: "Axis (DS)",
+    mergeAbility: "Military Industrial Complex",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Axis order cards",
+    nsid: "card.axis:homebrew.discordant_stars/0",
+    count: 1,
+    triggerAbility: "Arms Dealers",
+  },
+];
 
 const nsidToTemplateId = {
   "card.axis:homebrew.discordant_stars/0": "2012ED3D6A479DFA443063A612E77765",
@@ -119,6 +142,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

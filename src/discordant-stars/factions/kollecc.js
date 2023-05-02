@@ -38,7 +38,26 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Cloaked Fleets",
+    description:
+      "After you produce 1 or more ships, you may place up to 2 of those ships on your faction sheet, those ships are captured.",
+    source: "Kollecc (DS)",
+  },
+  {
+    name: "Shroud of Lith",
+    description:
+      "After movement, if the active system contains 1 or more of your non-fighter ships, you may place up to 2 of your captured ships and 2 of your captured ground forces from your faction sheet in that system’s space area.",
+    source: "Kollecc (DS)",
+  },
+  {
+    name: "Treasure Hunters",
+    description:
+      "At the start of your turn, you may look at the top card of the cultural, hazardous, or industrial exploration deck. Then, look at the top card of the relic deck.",
+    source: "Kollecc (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/kollecc":

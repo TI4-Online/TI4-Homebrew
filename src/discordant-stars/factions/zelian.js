@@ -52,7 +52,35 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Obsessive Designs",
+    description:
+      "During the action phase, after you research a unit upgrade technology, you may use the PRODUCTION ability of 1 of your space docks in your home system to produce units of that type, reducing the combined cost of the produced units by 2.",
+    source: "Zelian (DS)",
+  },
+  {
+    name: "Biophobic",
+    description:
+      "During the agenda phase, the number of votes you cast is instead equal to the number of planets you exhaust to cast votes.",
+    source: "Zelian (DS)",
+  },
+  {
+    name: "Paranoia",
+    description:
+      "Game effects other than your command tokens cannot prevent you from activating, or moving ships into, your home system.",
+    source: "Zelian (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Zelian asteroid tile",
+    nsid: "tile.system:homebrew.discordant_stars/3300",
+    count: 1,
+    triggerNsid: "card.leader.hero.zelian:homebrew.discordant_stars/zelian_r",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/zelian":
@@ -219,6 +247,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

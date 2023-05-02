@@ -55,7 +55,29 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Projection of Power",
+    description:
+      "At the start of a space combat in a system that is adjacent to or contains 1 or more of your space docks, choose up to 1 ship in that system to gain ANTI-FIGHTER BARRAGE 6(x2) until the end of that combat.",
+    source: "Celdauri (DS)",
+  },
+  {
+    name: "Industrialists",
+    description:
+      "During setup, place the Celdauri space dock token in your reinforcements, the Celdauri space dock token is a fourth space dock unit.",
+    source: "Celdauri (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Celdauri space dowck token",
+    nsid: "token.unit:homebrew.discordant_stars.space_dock/celdauri",
+    count: 1,
+    triggerAbility: "Industrialists",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/celdauri":
@@ -171,6 +193,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

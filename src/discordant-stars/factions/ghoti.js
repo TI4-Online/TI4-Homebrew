@@ -47,7 +47,35 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Mobile Command",
+    description:
+      "When you create the game board, place the Ghoti Space tile where your home system would normally be placed. The Ghoti Space system is not a home system. The system that contains your flagship is your home system. You may not score public objectives if your flagship is not on the game board.",
+    source: "Ghoti (DS)",
+  },
+  {
+    name: "Spawning Grounds",
+    description:
+      "During setup, gain and ready the Ghoti planet card and its legendary planet ability card; you cannot lose those cards.",
+    source: "Ghoti (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Ghoti spawning grounds cards",
+    nsid: "card.ghoti:homebrew.discordant_stars/0",
+    count: 1,
+    triggerAbility: "Spawning Grounds",
+  },
+  {
+    name: "Ghoti spawning grounds cards",
+    nsid: "card.ghoti:homebrew.discordant_stars/1",
+    count: 1,
+    triggerAbility: "Spawning Grounds",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/ghoti":
@@ -121,6 +149,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

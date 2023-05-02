@@ -54,7 +54,35 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Hired Guns",
+    description:
+      "After a player activates a system, choose up to 3 of your ships. During this tactical action, the active player may control those ships as if they were their own. At the end of this tactical action, that player replaces each ship they moved with their own of the same unit type.",
+    source: "Nokar (DS)",
+  },
+  {
+    name: "Private Fleet",
+    description:
+      "During setup, place the 4 Nokar Destroyer tokens in your reinforcements; the Nokar Destroyer tokens are additional destroyers.",
+    source: "Nokar (DS)",
+  },
+  {
+    name: "Desperados",
+    description:
+      "When you produce 1 or more units, 1 destroyer does not count against your PRODUCTION limit. Apply +1 to your destroyers' move values while you are not the active player.",
+    source: "Nokar (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Nokar destroyer token",
+    nsid: "token.unit:homebrew.discordant_stars.destroyer/nokar",
+    count: 4,
+    triggerAbility: "Private Fleet",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/nokar":
@@ -171,6 +199,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

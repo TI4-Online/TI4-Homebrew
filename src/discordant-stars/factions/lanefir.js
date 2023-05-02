@@ -46,7 +46,26 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "A New Edifice",
+    description:
+      "You may not use technology specialties. When you would gain a relic, instead purge it and explore up to 3 planets you control.",
+    source: "Lanefir (DS)",
+  },
+  {
+    name: "Iconoclasm",
+    description:
+      "When researching a non-unit upgrade technology, you may purge 1 of your relic fragments to ignore 1 prerequisite on the technology you are researching.",
+    source: "Lanefir (DS)",
+  },
+  {
+    name: "War Stories",
+    description:
+      "Once per action, after you win a combat, explore 1 planet you control, or if the active system does not contain any planets, the frontier exploration deck in the active system.",
+    source: "Lanefir (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/lanefir":

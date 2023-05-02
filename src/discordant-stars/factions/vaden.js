@@ -46,7 +46,26 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Fine Print",
+    description:
+      "After a player resolves the secondary ability of 1 of your strategy cards, place up to 1 of their control tokens on your faction sheet.",
+    source: "Vaden (DS)",
+  },
+  {
+    name: "Collateralized Loans",
+    description:
+      "After 1 of your opponent’s ships is destroyed during a round of space combat, you may remove 1 of that player’s control tokens from your faction sheet to place 1 ship of that type from your reinforcements in the active system.",
+    source: "Vaden (DS)",
+  },
+  {
+    name: "Binding Debts",
+    description:
+      "Other players may place their control tokens on your faction sheet at any time. At the start of the status phase, each of your neighbors may give you 1 trade good to remove up to 2 of their control tokens from your faction sheet.",
+    source: "Vaden (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/vaden":

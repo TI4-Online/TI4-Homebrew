@@ -43,7 +43,20 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Privileged Citizenry",
+    description:
+      "Each system can contain a number of your PDS equal to the number of command tokens in your fleet pool. For the purpose of scoring objectives, you may treat each of your PDS units as though it is a structure on any planet you control.",
+    source: "Mirveda (DS)",
+  },
+  {
+    name: "Combat Drones",
+    description:
+      "Your space docks cannot produce infantry. At the start of invasion, you may replace each of your fighters in the active system with 1 infantry unit. During invasion, your infantry in the space area of the active system do not count against your ships’ capacity.",
+    source: "Mirveda (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/mirveda":

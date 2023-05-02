@@ -56,7 +56,30 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Cunning",
+    description:
+      "After you perform a tactical action in a system, you may attach 1 “Trap” card from your reinforcements to a planet in that system that contains 1 or more of your infantry units.",
+    source: "Li-Zho (DS)",
+  },
+  {
+    name: "Subterfuge",
+    description:
+      "Trap attachments are attached face-down and remain hidden until revealed; you may look at Trap attachments at any time. You do not count trap attachments toward fulfilling objectives.",
+    source: "Li-Zho (DS)",
+    mergeAbility: "Cunning",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Li-Zho cards",
+    nsid: "card.lizho:homebrew.discordant_stars/0",
+    count: 1,
+    triggerAbility: "Cunning",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/lizho":
@@ -165,6 +188,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

@@ -40,7 +40,20 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Fervor",
+    description:
+      "When you spend a command token to resolve the secondary ability of the 'Warfare' strategy card, you may resolve the primary ability instead.",
+    source: "Kortali (DS)",
+  },
+  {
+    name: "Ruthless",
+    description:
+      "At the start of a ground combat on an exhausted planet you do not control, you may produce 1 hit and assign it to 1 of your opponent's ground forces on that planet.",
+    source: "Kortali (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/kortali":

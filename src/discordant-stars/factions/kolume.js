@@ -47,7 +47,26 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Starfall Gunnery",
+    description:
+      "During movement, while you are not the active player, you may only use 1 of your unit's SPACE CANNON. During each of your actions, up to 3 of your non-fighter ships gain SPACE CANNON 8.",
+    source: "Kolume (DS)",
+  },
+  {
+    name: "Deliberate Action",
+    description:
+      "You cannot redistribute command tokens during the status phase. When you pass, you may place 1 command token from your reinforcements in 1 pool on your command sheet that contains no command tokens.",
+    source: "Kolume (DS)",
+  },
+  {
+    name: "Meditation",
+    description:
+      "ACTION: Spend 1 command token from your strategy pool to ready 1 of your technologies.",
+    source: "Kolume (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/kolume":

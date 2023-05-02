@@ -44,7 +44,20 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Conspirators",
+    description:
+      "Once per agenda phase, when an agenda is revealed, if you are not the speaker, you may choose to vote after the speaker on that agenda.",
+    source: "Rhodun (DS)",
+  },
+  {
+    name: "Ancient Knowledge",
+    description:
+      "When you use a technology specialty to ignore a prerequisite on a technology card you are researching, you may ignore 1 additional prerequisite of the same color. After you exhaust a planet to use its technology specialty, you may gain 1 commodity.",
+    source: "Rhodun (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/zealots":

@@ -54,7 +54,41 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Teeming",
+    description:
+      "During setup place the 2 Cheiran dreadnought and 1 Cheiran mech tokens in your reinforcements. The Cheiran unit tokens are additional units of their type.",
+    source: "Cheiran (DS)",
+  },
+  {
+    name: "Moult",
+    description:
+      "After you win a space combat, you may place 1 ship from your reinforcements in that system of the same ship type as any of your ships that were destroyed during that combat.",
+    source: "Cheiran (DS)",
+  },
+  {
+    name: "Byssus",
+    description:
+      "Your mechs on planets are treated as structures for all purposes other than scoring objectives.",
+    source: "Cheiran (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Cheiran dreadnought token",
+    nsid: "token.unit:homebrew.discordant_stars.dreadnought/cheiran",
+    count: 2,
+    triggerAbility: "Teeming",
+  },
+  {
+    name: "Cheiran mech token",
+    nsid: "token.unit:homebrew.discordant_stars.mech/cheiran",
+    count: 1,
+    triggerAbility: "Teeming",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/cheiran":
@@ -160,6 +194,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

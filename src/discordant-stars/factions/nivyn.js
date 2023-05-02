@@ -40,7 +40,35 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Celestial Guides",
+    description:
+      "Your units do not roll for gravity rifts. You may ignore the movement effects of anomalies in systems that are adjacent to 1 or more structures you control.",
+    source: "Nivyn (DS)",
+  },
+  {
+    name: "Singularity Point",
+    description:
+      "The system that contains the “Wound” token is a nebula and a gravity rift.",
+    source: "Nivyn (DS)",
+  },
+  {
+    name: "Voidsailors",
+    description:
+      "When you explore a frontier token, you may draw 1 additional card; choose 1 to resolve and return the rest to the frontier exploration deck. Then, shuffle that deck.",
+    source: "Nivyn (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Nivyn mech",
+    nsid: "card.leader.mech.nivyn:homebrew.discordant_stars/voidflare_warden",
+    count: 1,
+    triggerAbility: "Singularity",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/nivyn":
@@ -124,6 +152,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

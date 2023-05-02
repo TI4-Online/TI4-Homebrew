@@ -41,7 +41,26 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Lithoids",
+    description:
+      "During the agenda phase, the number of votes you cast is instead equal to the combined resource value of the planets that you exhaust.",
+    source: "Khrask (DS)",
+  },
+  {
+    name: "Garden Worlds",
+    description:
+      "Apply +1 to the resource values of planets you control that do not contain 1 or more ground forces.",
+    source: "Khrask (DS)",
+  },
+  {
+    name: "Meteor Slings",
+    description:
+      "When a unit you control produces a hit as part of a BOMBARDMENT roll against a planet another player controls, you may instead place 1 infantry from your reinforcements on the planet being bombarded, that infantry unit participates in ground combat, if able.",
+    source: "Khrask (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/khrask":

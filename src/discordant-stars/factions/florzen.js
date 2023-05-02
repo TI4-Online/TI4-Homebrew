@@ -39,7 +39,26 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Mercenaries",
+    description:
+      "At the start of a space combat, you may remove up to 2 fighters you control in a system adjacent to the active system. Then, choose 1 player participating in that combat; that player places the same number of fighters from their reinforcements in the active system.",
+    source: "Florzen (DS)",
+  },
+  {
+    name: "Data Leak",
+    description:
+      "When you would gain a relic, you may draw 1 additional card; choose 1 to gain and return the rest to the relic deck. Then, shuffle the relic deck.",
+    source: "Florzen (DS)",
+  },
+  {
+    name: "Black Markets",
+    description:
+      "When you explore a planet, you may treat that planet as if it had the same trait as another planet you control.",
+    source: "Florzen (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/florzen":

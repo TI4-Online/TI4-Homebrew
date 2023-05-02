@@ -46,7 +46,26 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Cargo Raiders",
+    description:
+      "During the first round of a space combat, you may prevent your opponent from declaring a retreat unless they spend 1 trade good.",
+    source: "Vaylerian (DS)",
+  },
+  {
+    name: "Scour",
+    description:
+      "Once per tactical action, after you gain control of a planet, you may discard 1 action card to ready that planet.",
+    source: "Vaylerian (DS)",
+  },
+  {
+    name: "Raze",
+    description:
+      "After 1 or more of another player's structures are destroyed on a planet that contains your units, you may replenish your commodities.",
+    source: "Vaylerian (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/vaylerian":

@@ -72,7 +72,53 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Secret Maps",
+    description:
+      "At the end of your tactical actions, you may explore 1 planet in the active system that is or contains 1 of your units with PRODUCTION that you did not explore during that tactical action.",
+    source: "Bentor (DS)",
+  },
+  {
+    name: "Fortune Seekers",
+    description:
+      "After you explore a planet or frontier token, you may gain 1 commodity.",
+    source: "Bentor (DS)",
+  },
+  {
+    name: "Ancient Blueprints",
+    description:
+      "The first time you gain a cultural, hazardous, industrial, or unknown relic fragment, place the corresponding “Fragment” token on your faction sheet.",
+    source: "Bentor (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "bentor industrial token",
+    nsid: "token.fragment:homebrew.discordant_stars.industrial/bentor",
+    count: 1,
+    triggerAbility: "Ancient Blueprints",
+  },
+  {
+    name: "bnetor hazardous token",
+    nsid: "token.fragment:homebrew.discordant_stars.hazardous/bentor",
+    count: 1,
+    triggerAbility: "Ancient Blueprints",
+  },
+  {
+    name: "bnetor cultural token",
+    nsid: "token.fragment:homebrew.discordant_stars.cultural/bentor",
+    count: 1,
+    triggerAbility: "Ancient Blueprints",
+  },
+  {
+    name: "bnetor unknown token",
+    nsid: "token.fragment:homebrew.discordant_stars.unknown/bentor",
+    count: 1,
+    triggerAbility: "Ancient Blueprints",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/bentor":
@@ -245,6 +291,7 @@ world.TI4.homebrew.inject({
   localeStrings,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

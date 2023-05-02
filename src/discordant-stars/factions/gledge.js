@@ -60,7 +60,42 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Mantle Cracking",
+    description:
+      "ACTION: Place 1 'Core' token on a non-home planet you control other than Mecatol Rex that does not already contain a Core token to gain a number of trade goods equal to that planet’s combined resource and influence values.",
+    source: "Gledge (DS)",
+  },
+  {
+    name: "Celestial Reclamation",
+    description:
+      "Planets that contain Core tokens have a base resource value of 2 and influence value of 0.",
+    source: "Gledge (DS)",
+    mergeAbility: "Mantle Cracking",
+  },
+  {
+    name: "Deep Mining",
+    description:
+      "When you would explore a planet that contains 1 of your mechs or structures, you may instead gain 1 trade good.",
+    source: "Gledge (DS)",
+  },
+];
+
+const factionUndraftable = [
+  {
+    name: "Gledge core token",
+    nsid: "token.attachment:homebrew.discordant_stars.core/gledge",
+    count: 3,
+    triggerAbility: "Mantle Cracking",
+  },
+  {
+    name: "Gledge base token",
+    nsid: "token.attachment:homebrew.discordant_stars.base/gledge",
+    count: 1,
+    triggerNsid: "card.promissory.gledge:homebrew.discordant_stars/gledge_base",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/gledge":
@@ -207,6 +242,7 @@ world.TI4.homebrew.inject({
   attachments,
   factions,
   factionAbilities,
+  factionUndraftable,
   nsidToTemplateId,
   systems,
   technologies,

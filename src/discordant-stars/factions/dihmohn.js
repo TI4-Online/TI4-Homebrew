@@ -40,7 +40,25 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Capital Fleet",
+    description: "Destroyers count as 1/2 of a ship against your fleet pool.",
+    source: "Dih-Mohn (DS)",
+  },
+  {
+    name: "Migrant Fleet",
+    description:
+      "After you explore a frontier token in a system, you may explore a planet you control that is adjacent to that system.",
+    source: "Dih-Mohn (DS)",
+  },
+  {
+    name: "Flotilla",
+    description:
+      "You cannot have more infantry than non-fighter ships in the space area of a system.",
+    source: "Dih-Mohn (DS)",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/dihmohn":

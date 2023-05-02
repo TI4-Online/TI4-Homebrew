@@ -45,7 +45,21 @@ const factions = [
   },
 ];
 
-const factionAbilities = [];
+const factionAbilities = [
+  {
+    name: "Autonetic Memory",
+    description:
+      "When you would draw 1 or more action cards, you may draw 1 less card to either choose 1 card from the action card discard pile and add it to your hand, or place 1 infantry from your reinforcements on a planet you control.",
+    source: "Cymiae (DS)",
+  },
+  {
+    name: "Cybernetic Madness",
+    description:
+      "After you add an action card from the discard pile to your hand using your AUTONETIC MEMORY faction ability, you must discard 1 action card. After you fully resolve an action card’s ability text, purge that card instead of discarding it.",
+    source: "Cymiae (DS)",
+    mergeAbility: "Autonetic Memory",
+  },
+];
 
 const nsidToTemplateId = {
   "sheet.faction:homebrew.discordant_stars/cymiae":
