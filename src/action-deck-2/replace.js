@@ -1,6 +1,6 @@
 const { world } = require("@tabletop-playground/api");
+const UNIT_MODIFIERS = require("./action-deck-2-unit-modifiers.data");
 
-// injecting the basic nsidToTemplateId
 world.TI4.homebrew.inject({
     nsidToTemplateId:
     {
@@ -48,7 +48,7 @@ world.TI4.homebrew.inject({
       "card.action:base/rise_of_a_messiah": "card.action:homebrew.action_deck_2/garner_tribute",
       "card.action:base/salvage": "card.action:homebrew.action_deck_2/grand_heist",
       "card.action:base/signal_jamming": "card.action:homebrew.action_deck_2/graviton_negator",
-      "card.action:base/spy": "card.action:homebrew.action_deck_2/graviton_shielding_matrix",
+      "card.action:base/spy": "card.action:homebrew.action_deck_2/graviton_shielding",
       "card.action:base/summit": "card.action:homebrew.action_deck_2/hostile_world",
       "card.action:base/tactical_bombardment": "card.action:homebrew.action_deck_2/illusory_duplication",
       "card.action:base/technology_rider": "card.action:homebrew.action_deck_2/impeachment",
@@ -92,7 +92,8 @@ world.TI4.homebrew.inject({
       "card.action:pok/scuttle": "card.action:homebrew.action_deck_2/terraforming_initiative",
       "card.action:pok/seize_artifact": "card.action:homebrew.action_deck_2/transference_protocol",
       "card.action:pok/waylay": "card.action:homebrew.action_deck_2/virulent_gas_canisters"
-    }
+    },
+    unitModifiers: UNIT_MODIFIERS
   });
 
 world.TI4.homebrew.resetOnTableDecks()
