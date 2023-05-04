@@ -1,7 +1,7 @@
 module.exports = [
 	{
-		// Close Quarters
-		// At the start of a combat:
+        // Close Quarters
+        // At the start of a combat:
         // Apply +3 to the result of each unit's combat rolls during this combat.
         isCombat: true,
         localeName: "unit_modifier.name.close_quarters",
@@ -26,8 +26,8 @@ module.exports = [
     },
     {
         // Graviton Shielding
-		// At the start of an invasion:
-		// During this invasion, each planet you control in the active system gains Planetary Shield, as if it were a unit.
+        // At the start of an invasion:
+        // During this invasion, each planet you control in the active system gains Planetary Shield, as if it were a unit.
         isCombat: true,
         localeName: "unit_modifier.name.graviton_shielding",
         localeDescription: "unit_modifier.desc.graviton_shielding",
@@ -57,8 +57,8 @@ module.exports = [
         },
     },
 	{
-		// Shock and Awe
-		// Before you roll dice for Bombardment:
+        // Shock and Awe
+        // Before you roll dice for Bombardment:
         // Choose 1 of your ships with Bombardment in the active system. That ship may roll 2 additional dice.
         isCombat: true,
         localeName: "unit_modifier.name.shock_and_awe",
@@ -96,8 +96,8 @@ module.exports = [
     },
 	{
         // Shrapnel Turrets
-		// Before you roll dice for Anti-Fighter Barrage:
-		// Each of your non-fighter ships in the active system that do not have Anti-Fighter Barrage gain Anti-Fighter Barrage 9 (x2) until the end of the combat.
+        // Before you roll dice for Anti-Fighter Barrage:
+        // Each of your non-fighter ships in the active system that do not have Anti-Fighter Barrage gain Anti-Fighter Barrage 9 (x2) until the end of the combat.
         isCombat: true,
         localeName: "unit_modifier.name.shrapnel_turrets",
         localeDescription: "unit_modifier.desc.shrapnel_turrets",
@@ -119,8 +119,8 @@ module.exports = [
     },
 	{
         // Virulent Gas Canisters
-		// Before your units use Bombardment or Space Cannon against another player's ground forces:
-		// Apply +1 to the result of each die roll; hits produced by these rolls cannot be assigned to mechs.
+        // Before your units use Bombardment or Space Cannon against another player's ground forces:
+        // Apply +1 to the result of each die roll; hits produced by these rolls cannot be assigned to mechs.
         isCombat: true,
         localeName: "unit_modifier.name.virulent_gas_canisters",
         localeDescription: "unit_modifier.desc.virulent_gas_canisters",
