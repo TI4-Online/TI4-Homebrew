@@ -1,5 +1,6 @@
 const { world } = require("@tabletop-playground/api");
-const UNIT_MODIFIERS = require("./action-deck-2-unit-modifiers.data");
+const UNIT_MODIFIERS = require("./unit-modifiers.data");
+const LOCALE_STRINGS = require("./locale-strings.data");
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:
@@ -93,7 +94,8 @@ world.TI4.homebrew.inject({
       "card.action:pok/seize_artifact": "card.action:homebrew.action_deck_2/transference_protocol",
       "card.action:pok/waylay": "card.action:homebrew.action_deck_2/virulent_gas_canisters"
     },
-    unitModifiers: UNIT_MODIFIERS
+    unitModifiers: UNIT_MODIFIERS,
+    localeStrings: LOCALE_STRINGS
   });
 
 world.TI4.homebrew.resetOnTableDecks()
