@@ -128,7 +128,7 @@ module.exports = [
         priority: "adjust",
         triggerNsid: "card.action:homebrew.action_deck_2/virulent_gas_canisters",
         filter: (auxData) => {
-            return (auxData.rollType === "spaceCannon"  && auxData.activePlanet) // planet means space cannon defense
+            return (auxData.rollType === "spaceCannon" && auxData.activePlanet) // planet means space cannon defense
 				|| auxData.rollType === "bombardment"; 
         },
         applyEach: (unitAttrs, auxData) => {
