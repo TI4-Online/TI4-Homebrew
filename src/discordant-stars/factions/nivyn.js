@@ -146,7 +146,7 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-// TODO: implement wound token
+// TODO: combat: implement wound token
 
 world.TI4.homebrew.inject({
   localeStrings,

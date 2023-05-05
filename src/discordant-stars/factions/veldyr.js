@@ -228,7 +228,7 @@ const unitModifiers = [
       return auxData.self.has("flagship");
     },
     applyAll: (unitAttrsSet, auxData) => {
-      //TODO: implement
+      //TODO: combat: implement
     },
   },
 ];
@@ -288,7 +288,7 @@ const attachments = [
   },
 ];
 
-// TODO: implement SEIDR project tech
+// TODO: combat: implement SEIDR project tech
 
 world.TI4.homebrew.inject({
   localeStrings,

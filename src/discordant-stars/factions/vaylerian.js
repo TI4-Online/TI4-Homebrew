@@ -165,7 +165,7 @@ const unitModifiers = [
       if (unitAttrs.raw.ship && unitAttrs.raw.spaceCombat) {
         unitAttrs.raw.spaceCombat.hit -= 1;
       }
-      // TODO test
+      // TODO: combat: test
     },
   },
 ];

@@ -211,7 +211,7 @@ const unitModifiers = [
   },
 ];
 
-//TODO: add 2x Bombardment to the promissory note
+//TODO: combat: add 2x Bombardment to the promissory note
 
 world.TI4.homebrew.inject({
   localeStrings,

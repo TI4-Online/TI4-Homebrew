@@ -185,10 +185,21 @@ const unitModifiers = [
       return auxData.self.has("flagship");
     },
     applyAll: (unitAttrsSet, auxData) => {
-      //TODO: implement
+      //TODO: combat: implement
     },
   },
 ];
+
+function getIndex(obj) {
+  const json = obj.getSavedData() || "";
+  if (json.length > 0) {
+    const parsed = JSON.parse(json);
+    if ("deskIndex" in parsed) {
+      return parsed.deskIndex;
+    }
+  }
+  return -1;
+}
 
 world.TI4.homebrew.inject({
   localeStrings,
