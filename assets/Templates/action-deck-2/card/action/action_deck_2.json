@@ -145,7 +145,7 @@
                 "80": "Terraforming Initiative",
                 "81": "Transference Protocol",
                 "82": "Unidentified Aggressors",
-                "83": "Virulent Gas Canisters",
+                "83": "Virulent Gas Canisters"
 	},
 	"CardMetadata":
 	{
@@ -232,7 +232,7 @@
                 "80": "card.action:homebrew.action_deck_2/terraforming_initiative",
                 "81": "card.action:homebrew.action_deck_2/transference_protocol",
                 "82": "card.action:homebrew.action_deck_2/unidentified_aggressors",
-                "83": "card.action:homebrew.action_deck_2/virulent_gas_canisters",
+                "83": "card.action:homebrew.action_deck_2/virulent_gas_canisters"
 	},
 	"CardTags":
 	{
