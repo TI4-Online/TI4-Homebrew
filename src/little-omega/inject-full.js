@@ -7,7 +7,7 @@ world.TI4.homebrew.inject({
     },
     replace:
     {
-        "card.agenda:base/antiintellectual_revolution": "card.agenda:homebrew.little-omega.agenda/anti-intellectual_revolution",
+        "card.agenda:base/antiintellectual_revolution": "card.agenda:homebrew.little-omega.agenda/antiintellectual_revolution",
         "card.agenda:base/arms_reduction": "card.agenda:homebrew.little-omega.agenda/arms_reduction",
         "card.agenda:pok/articles_of_war": "card.agenda:homebrew.little-omega.agenda/articles_of_war",
         "card.agenda:pok/checks_and_balances": "card.agenda:homebrew.little-omega.agenda/checks_and_balances",
