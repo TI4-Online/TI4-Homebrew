@@ -3,9 +3,18 @@ const { world, refPackageId } = require("@tabletop-playground/api");
 const localeStrings = {
     "attachment:homebrew.ixth_lost_star_charts.terraforming_initiatives/cultural_boom":
         "Cultural Boom",
-    "planet.first": "THE First",
-    "planet.second": "THE Second",
-    "planet.third": "THE Third",
+    "planet.alpert": "Alpert",
+    "planet.desmond": "Desmond",
+    "planet.eko": "Eko",
+    "planet.ethan": "Ethan",
+    "planet.horace": "Horace",
+    "planet.jarrah": "Jarrah",
+    "planet.kwon": "kwon",
+    "planet.lapidus": "Lapidus",
+    "planet.lloyd": "Lloys",
+    "planet.locke": "Locke",
+    "planet.benthham": "Bentham",
+    "planet.windmore": "Windmore",
 };
 
 /* nsidToTemplateId mapping
@@ -20,37 +29,271 @@ const localeStrings = {
 var nsidToTemplateId = {
     "card.planet:homebrew.ixth_lost_star_charts/0": // FIXME: the ID has to be added in the editor
         "<THE CARD STACK GUID>", // FIXME: the GUID will be part of the assets once it was added
-    "tile.system:homebrew.ixth_lost_star_charts/3400": // FIXME: the ID has to be added in the editor
-        "<THE TILE GUID>", // FIXME: the GUID will be part of the assets once it was added
+    "tile.system:homebrew.ixth_lost_star_charts/3401":
+        "3B52D8FF421EA0EAC360BF869BF7CF1A",
+    "tile.system:homebrew.ixth_lost_star_charts/3402":
+        "D44278004E670F3FC3754D8D2672AF70",
+    "tile.system:homebrew.ixth_lost_star_charts/3403":
+        "9AEEFC164607C0E364D6D8AEF91C27C3",
+    "tile.system:homebrew.ixth_lost_star_charts/3404":
+        "3B0A53874A9EA9EB6F53C2A85473E0CF",
+    "tile.system:homebrew.ixth_lost_star_charts/3405":
+        "4AD117854EBE81D68C386181A99117E8",
+    "tile.system:homebrew.ixth_lost_star_charts/3406":
+        "B2A8001940ACD35AB41FF39059601523",
+    "tile.system:homebrew.ixth_lost_star_charts/3407":
+        "BB83F92A4A1EB7F1B51F1886158349B2",
+    "tile.system:homebrew.ixth_lost_star_charts/3408":
+        "67778D3446F43491BC2D23A2B5FAF837",
+    "tile.system:homebrew.ixth_lost_star_charts/3409":
+        "6EE65E904EEEE4C005F5888745C74E6A",
+    "tile.system:homebrew.ixth_lost_star_charts/3410":
+        "C86FB6634351D7583B6D4E9AABD87A44",
+    "tile.system:homebrew.ixth_lost_star_charts/3411":
+        "1742E67D455737D08C9629B1EB01DC9F",
+    "tile.system:homebrew.ixth_lost_star_charts/3412":
+        "B006FD0B4C111E5D94FB1AA071D0373F",
+    "tile.system:homebrew.ixth_lost_star_charts/3413":
+        "5250432C4925720D12402BA47067102C",
+    "tile.system:homebrew.ixth_lost_star_charts/3414":
+        "F72EA28546E2426B9BCF449F1C173698",
+    "tile.system:homebrew.ixth_lost_star_charts/3415":
+        "144B7A254C13368D06CE4DAD3DD99919",
+    "tile.system:homebrew.ixth_lost_star_charts/3416":
+        "41E4B1AC45F2CA2842856781D69AABA3",
 };
 
-// Systems starting with 4000 (since they have to be unique and 4k is not yet taken
-// for system and planet schema see https://github.com/TI4-Online/TI4-TTPG/blob/main/src/lib/system/system.schema.js
+// System IDs are set in the 4k range and are using their printed ID: i.e. Alpert (14F) is 4014
 const systems = [
-    { // FIXME: add real system(s)
-        tile: 4000,
+    {
+        tile: 4001,
         source: "homebrew.ixth_lost_star_charts",
-        home: true,
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4000.jpg",
-        anomalies: [],
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4001.jpg",
         planets: [
             {
-                localeName: "planet.fist",
-                resources: 2,
+                localeName: "planet.desmond",
+                resources: 0,
                 influence: 1,
-            },
-            {
-                localeName: "planet.second",
-                resources: 1,
-                influence: 3
-            },
-            {
-                localeName: "planet.third",
-                resources: 1,
-                influence: 3
+                trait: ["hazardous"],
+                legendary: true,
+                legendaryCard: "", // TODO add card nsid
             },
         ],
+        anomalies: ["supernova"],
+    },
+    {
+        tile: 4002,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4002.jpg",
+        planets: [
+            {
+                localeName: "planet.horace",
+                resources: 2,
+                influence: 1,
+                trait: ["industrial"],
+                legendary: true,
+                legendaryCard: "", // TODO add card nsid
+            },
+        ],
+        wormholes: ["beta"],
+        anomalies: ["nebula"],
+    },
+    {
+        tile: 4003,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4003.jpg",
+        planets: [
+            {
+                localeName: "planet.eko",
+                resources: 1,
+                influence: 2,
+                trait: ["cultural"],
+                legendary: true,
+                legendaryCard: "", // TODO add card nsid
+            },
+        ],
+        wormholes: ["alpha"],
+        anomalies: ["gravity rift"],
+        offMap: true,
+    },
+    {
+        tile: 4004,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4004.jpg",
+        planets: [
+            {
+                localeName: "planet.locke",
+                resources: 2,
+                influence: 1,
+                trait: ["industrial"],
+            }, {
+                localeName: "planet.betham",
+                resource: 1,
+                influence: 2,
+                trait: ["hazardous"],
+            }
+        ],
+        wormholes: ["alpha", "beta"],
+    },
+    {
+        tile: 4005,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4005.jpg",
+        planets: [
+            {
+                localeName: "planet.lapidus",
+                resources: 2,
+                influence: 2,
+                trait: ["industrial"],
+                legendary: true,
+                legendaryCard: "", // TODO add card nsid
+            },
+        ],
+        anomalies: ["asteroid field"],
+    },
+    {
+        tile: 4006,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4006.jpg",
+        wormholes: ["alpha", "beta"],
+        anomalies: ["gravity rift"],
+    },
+    {
+        tile: 4007,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4007.jpg",
+        wormholes: ["beta"],
+        anomalies: ["nebula"],
+    },
+    {
+        tile: 4008,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4008.jpg",
+        wormholes: ["gamma"],
+        anomalies: ["gravity rift"],
+    },
+    {
+        tile: 4009,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4009.jpg",
+        planets: [
+            {
+                localeName: "planet.jarrah",
+                resources: 0,
+                influence: 0,
+                trait: ["hazardous"],
+                legendary: true,
+                legendaryCard: "", // TODO add card nsid
+            },
+        ],
+    },
+    {
+        tile: 4010,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4010.jpg",
+        planets: [
+            {
+                localeName: "planet.kwon",
+                resources: 3,
+                influence: 3,
+                trait: ["cultural"],
+                legendary: true,
+                legendaryCard: "", // TODO add card nsid
+            },
+        ],
+        wormholes: ["alpha", "beta"],
+        offMap: true,
+    },
+    {
+        tile: 4011,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4011.jpg",
+        planets: [
+            {
+                localeName: "planet.lloyd",
+                resources: 0,
+                influence: 0,
+                trait: ["hazardous"],
+                legendary: true,
+                legendaryCard: "", // TODO add card nsid
+            },
+        ],
+    },
+    {
+        tile: 4012,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4012.jpg",
+        planets: [
+            {
+                localeName: "planet.windmore",
+                resources: 3,
+                influence: 2,
+                trait: ["cultural"],
+                legendary: true,
+                legendaryCard: "", // TODO add card nsid
+            },
+        ],
+    },
+    {
+        tile: 4013,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4013.jpg",
+        planets: [
+            {
+                localeName: "planet.ethan",
+                resources: 6,
+                influence: 0,
+                trait: ["hazardous"],
+                legendary: true,
+                legendaryCard: "", // TODO add card nsid
+            },
+        ],
+        wormholes: ["alpha", "beta"],
+        offMap: true,
+    },
+    {
+        tile: 4014,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4014.jpg",
+        planets: [
+            {
+                localeName: "planet.alpert",
+                resources: 3,
+                influence: 0,
+                trait: ["cultural"],
+                legendary: true,
+                legendaryCard: "", // TODO add card nsid
+            },
+        ],
+    },
+    {
+        tile: 4015,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4015.jpg",
+        anomalies: ["asteroid field", "gravity rift"],
+    },
+    {
+        tile: 4016,
+        source: "homebrew.ixth_lost_star_charts",
+        packageId: refPackageId,
+        img: "ixth-expansions/lost-star-charts/tiles/tile_4016.jpg",
+        wormholes: ["alpha", "beta"],
+        offMap: true,
     },
 ];
 
