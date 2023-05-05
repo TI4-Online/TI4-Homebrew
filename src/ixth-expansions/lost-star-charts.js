@@ -27,8 +27,10 @@ const localeStrings = {
  * the GUID can be found in the metadata of the created assets (via ttpg editor).
  */
 var nsidToTemplateId = {
-    "card.planet:homebrew.ixth_lost_star_charts/0": // FIXME: the ID has to be added in the editor
-        "<THE CARD STACK GUID>", // FIXME: the GUID will be part of the assets once it was added
+    "card.planet:homebrew.ixth_lost_star_charts/0":
+        "803F329D455EA6E1323C1982528C7F84",
+    "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_planets":
+        "E1DAC6584B3710A9F5A1859D01F71C62",
     "tile.system:homebrew.ixth_lost_star_charts/3401":
         "3B52D8FF421EA0EAC360BF869BF7CF1A",
     "tile.system:homebrew.ixth_lost_star_charts/3402":
@@ -77,7 +79,7 @@ const systems = [
                 influence: 1,
                 trait: ["hazardous"],
                 legendary: true,
-                legendaryCard: "", // TODO add card nsid
+                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_desmond_planet",
             },
         ],
         anomalies: ["supernova"],
@@ -94,7 +96,7 @@ const systems = [
                 influence: 1,
                 trait: ["industrial"],
                 legendary: true,
-                legendaryCard: "", // TODO add card nsid
+                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_horace_planet",
             },
         ],
         wormholes: ["beta"],
@@ -112,7 +114,7 @@ const systems = [
                 influence: 2,
                 trait: ["cultural"],
                 legendary: true,
-                legendaryCard: "", // TODO add card nsid
+                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_eko_planet",
             },
         ],
         wormholes: ["alpha"],
@@ -151,7 +153,7 @@ const systems = [
                 influence: 2,
                 trait: ["industrial"],
                 legendary: true,
-                legendaryCard: "", // TODO add card nsid
+                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_lapidus_planet",
             },
         ],
         anomalies: ["asteroid field"],
@@ -192,7 +194,7 @@ const systems = [
                 influence: 0,
                 trait: ["hazardous"],
                 legendary: true,
-                legendaryCard: "", // TODO add card nsid
+                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_jarrah_planet",
             },
         ],
     },
@@ -208,7 +210,7 @@ const systems = [
                 influence: 3,
                 trait: ["cultural"],
                 legendary: true,
-                legendaryCard: "", // TODO add card nsid
+                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_kwon_planet",
             },
         ],
         wormholes: ["alpha", "beta"],
@@ -226,7 +228,7 @@ const systems = [
                 influence: 0,
                 trait: ["hazardous"],
                 legendary: true,
-                legendaryCard: "", // TODO add card nsid
+                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_lloyd_planet",
             },
         ],
     },
@@ -242,7 +244,7 @@ const systems = [
                 influence: 2,
                 trait: ["cultural"],
                 legendary: true,
-                legendaryCard: "", // TODO add card nsid
+                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_windmore_planet",
             },
         ],
     },
@@ -258,7 +260,7 @@ const systems = [
                 influence: 0,
                 trait: ["hazardous"],
                 legendary: true,
-                legendaryCard: "", // TODO add card nsid
+                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_ethan_planet",
             },
         ],
         wormholes: ["alpha", "beta"],
@@ -276,7 +278,7 @@ const systems = [
                 influence: 0,
                 trait: ["cultural"],
                 legendary: true,
-                legendaryCard: "", // TODO add card nsid
+                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_alpert_planet",
             },
         ],
     },

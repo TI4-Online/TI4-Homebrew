@@ -1,0 +1,93 @@
+{
+	"Type": "Card",
+	"GUID": "803F329D455EA6E1323C1982528C7F84",
+	"Name": "Planet Cards",
+	"Metadata": "card.planet:homebrew.ixth_lost_star_charts/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "ixth-expansions/lost-star-charts/cards/planets_front.jpg",
+	"BackTexture": "ixth-expansions/lost-star-charts/cards/planets_back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -3,
+	"HiddenIndex": -1,
+	"NumHorizontal": 4,
+	"NumVertical": 3,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
+	"CardNames":
+	{
+		"1": "Alpert",
+		"2": "Desmond",
+		"3": "Eko",
+		"4": "Ethan",
+		"5": "Horace",
+		"6": "Jarrah",
+		"7": "Kwon",
+		"8": "Lapidus",
+		"9": "Lloyd",
+		"10": "Locke",
+		"11": "Widmore"
+	},
+	"CardMetadata":
+	{
+		"0": "card.planet:homebrew/alpert",
+		"1": "card.planet:homebrew/bentham",
+		"2": "card.planet:homebrew/desmond",
+		"3": "card.planet:homebrew/eko",
+		"4": "card.planet:homebrew/ethan",
+		"5": "card.planet:homebrew/horace",
+		"6": "card.planet:homebrew/jarrah",
+		"7": "card.planet:homebrew/kwon",
+		"8": "card.planet:homebrew/lapidus",
+		"9": "card.planet:homebrew/lloyd",
+		"10": "card.planet:homebrew/locke",
+		"11": "card.planet:homebrew/widmore"
+	},
+	"CardTags":
+	{
+	}
+}
