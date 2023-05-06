@@ -3,7 +3,7 @@ const { world } = require("@tabletop-playground/api");
 world.TI4.homebrew.inject({
     nsidToTemplateId:
     {
-        "card.agenda:homebrew.little-omega.agenda/0": "B4317F50842B48A2A732FDA8B7745854",
+        "card.agenda:homebrew.little-omega.agenda/0": "B4317F50842B48A2A732FDA8B7745854"
     },
     replace:
     {
@@ -54,7 +54,7 @@ world.TI4.homebrew.inject({
         "card.agenda:base/swords_to_plowshares": "card.agenda:homebrew.little-omega.agenda/swords_to_plowshares",
         "card.agenda:base/unconventional_measures": "card.agenda:homebrew.little-omega.agenda/unconventional_measures",
         "card.agenda:base/wormhole_reconstruction": "card.agenda:homebrew.little-omega.agenda/wormhole_reconstruction",
-        "card.agenda:base/wormhole_research": "card.agenda:homebrew.little-omega.agenda/wormhole_research",
+        "card.agenda:base/wormhole_research": "card.agenda:homebrew.little-omega.agenda/wormhole_research"
     }
   });
 
