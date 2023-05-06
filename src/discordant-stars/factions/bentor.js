@@ -190,6 +190,7 @@ const unitAttrs = [
     bombardment: { dice: 1, hit: 9 },
     spaceCannon: { dice: 1, hit: 9 },
     antiFighterBarrage: { dice: 2, hit: 9 },
+
   },
   {
     unit: "mech",
@@ -258,7 +259,7 @@ const unitModifiers = [
     triggerIf: (auxData) => {
       return auxData.rollType === "spaceCombat" && auxData.self.has("flagship");
     },
-    applyAll: (unitAttrsSet, auxData) => {
+    applyAll: (unitAttrsSet) => {
       const bonus = countToHitBonus();
       [
         "spaceCombat",

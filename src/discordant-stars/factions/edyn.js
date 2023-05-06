@@ -150,7 +150,7 @@ const unitModifiers = [
       /*const lawCount = world.getAllObjects().filter(obj => {
         const nsid = ObjectNamespace.getNsid(obj); return nsid.startsWith("card.agenda:") && obj.isFaceUp && obj.isFaceUp();
       }).length;
-      //TODO check that no single discarded law / other cards are counted
+      //TODO combat: check that no single discarded law / other cards are counted
       unitAttrsSet.get("flagship").raw.spaceCombat.hit -= lawCount;*/
     },
   },

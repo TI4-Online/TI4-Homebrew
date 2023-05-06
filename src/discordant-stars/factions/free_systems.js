@@ -182,7 +182,7 @@ const unitModifiers = [
       );
       unitAttrsSet.get("flagship").raw.spaceCombat.dice += additionalDice;
     },
-    // TODO (RM/button) covert strike teams - Ambush did it with a button, but there is no registration API yet
+    // TODO: combat: (RM/button) covert strike teams - Ambush did it with a button, but there is no registration API yet
   },
 ];
 
