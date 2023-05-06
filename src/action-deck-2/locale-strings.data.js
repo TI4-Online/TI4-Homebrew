@@ -9,6 +9,6 @@ module.exports = {
     "unit_modifier.desc.shrapnel_turrets" : "Each non-fighter ship without Anti-Fighter Barrage gains Anti-Fighter Barrage 9 (x2)",
     "unit_modifier.name.virulent_gas_canisters" : "Virulent Gas Canisters",
     "unit_modifier.desc.virulent_gas_canisters" : "+1 to the result of each of your Bombardment or Space Cannon rolls against ground forces; hits cannot be assigned to mechs",
-    "unit_modifier.name.shock_troops" : "Virulent Gas Canisters",
+    "unit_modifier.name.shock_troops" : "Shock Troops",
     "unit_modifier.desc.shock_troops" : "Each result of 9 or 10 on your unit's combat rolls, before applying modifiers, produces 1 additional hit",
 }
