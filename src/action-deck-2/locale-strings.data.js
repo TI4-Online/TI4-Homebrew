@@ -2,7 +2,7 @@ module.exports = {
     "unit_modifier.name.close_quarters" : "Close Quarters",
     "unit_modifier.desc.close_quarters" : "+3 to the result of each unit's rolls",
     "unit_modifier.name.graviton_shielding" : "Graviton Shielding",
-    "unit_modifier.desc.graviton_shielding" : "Pslanet you control gain Planetary Shield",
+    "unit_modifier.desc.graviton_shielding" : "Planets you control gain Planetary Shield",
     "unit_modifier.name.shock_and_awe" : "Shock and Awe",
     "unit_modifier.desc.shock_and_awe" : "+2 die to 1 Bombardment roll",
     "unit_modifier.name.shrapnel_turrets" : "Shrapnel Turrets",
