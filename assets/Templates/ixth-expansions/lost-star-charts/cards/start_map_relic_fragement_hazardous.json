@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "6DA8FD774AE357B4A584AB93C153C8BD",
 	"Name": "Star Map Relic Fragment (Hazardous)",
-	"Metadata": "card.exploration.cultural:homebrew.ixth_lost_star_charts/star_map_relic_fragment_hazardous",
+	"Metadata": "card.exploration.hazardous:homebrew.ixth_lost_star_charts/star_map_relic_fragment_hazardous",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -63,16 +63,7 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.exploration.cultural:homebrew.ixth_lost_star_charts/star_map_relic_fragment_hazardous",
-		"1": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_desmond_planet",
-		"2": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_eko_planet",
-		"3": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_ethan_planet",
-		"4": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_horace_planet",
-		"5": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_jarrah_planet",
-		"6": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_kwon_planet",
-		"7": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_lapidus_planet",
-		"8": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_lloyd_planet",
-		"9": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_windmore_planet"
+		"0": "card.exploration.cultural:homebrew.ixth_lost_star_charts/star_map_relic_fragment_hazardous"
 	},
 	"CardTags":
 	{

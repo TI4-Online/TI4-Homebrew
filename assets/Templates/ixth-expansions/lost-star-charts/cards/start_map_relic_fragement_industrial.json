@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "A1F7F46D4C79E98A9BEF0EABAC518775",
 	"Name": "Star Map Relic Fragment (Industrial)",
-	"Metadata": "card.exploration.cultural:homebrew.ixth_lost_star_charts/star_map_relic_fragment_industrial",
+	"Metadata": "card.exploration.industrial:homebrew.ixth_lost_star_charts/star_map_relic_fragment_industrial",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -63,16 +63,7 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.exploration.cultural:homebrew.ixth_lost_star_charts/star_map_relic_fragment_industrial",
-		"1": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_desmond_planet",
-		"2": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_eko_planet",
-		"3": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_ethan_planet",
-		"4": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_horace_planet",
-		"5": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_jarrah_planet",
-		"6": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_kwon_planet",
-		"7": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_lapidus_planet",
-		"8": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_lloyd_planet",
-		"9": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_windmore_planet"
+		"0": "card.exploration.industrial:homebrew.ixth_lost_star_charts/star_map_relic_fragment_industrial"
 	},
 	"CardTags":
 	{

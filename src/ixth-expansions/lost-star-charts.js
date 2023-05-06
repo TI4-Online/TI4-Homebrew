@@ -1,7 +1,7 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
-    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiatives/cultural_boom":
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/cultural_boom":
         "Cultural Boom",
     "planet.alpert": "Alpert",
     "planet.desmond": "Desmond",
@@ -35,9 +35,9 @@ var nsidToTemplateId = {
         "F0BD707740DF3A205984B3A585F5C185",
     "card.exploration.cultural:homebrew.ixth_lost_star_charts/star_map_relic_fragment_cultural":
         "6C9D4F134FD83323FE4397A5E656634C",
-    "card.exploration.cultural:homebrew.ixth_lost_star_charts/star_map_relic_fragment_hazardous":
+    "card.exploration.hazardous:homebrew.ixth_lost_star_charts/star_map_relic_fragment_hazardous":
         "6DA8FD774AE357B4A584AB93C153C8BD",
-    "card.exploration.cultural:homebrew.ixth_lost_star_charts/star_map_relic_fragment_industrial":
+    "card.exploration.industrial:homebrew.ixth_lost_star_charts/star_map_relic_fragment_industrial":
         "A1F7F46D4C79E98A9BEF0EABAC518775",
     "tile.system:homebrew.ixth_lost_star_charts/3401":
         "3B52D8FF421EA0EAC360BF869BF7CF1A",
@@ -168,7 +168,7 @@ const systems = [
                 trait: ["industrial"],
             }, {
                 localeName: "planet.betham",
-                resource: 1,
+                resources: 1,
                 influence: 2,
                 trait: ["hazardous"],
             }
@@ -333,17 +333,19 @@ const systems = [
     },
 ];
 
+
+
 const attachments = [
     {
         packageId: refPackageId,
-        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiatives/cultural_boom",
-        cardNsid: "card.terraforming_initiatives:homebrew.discordant_stars/cultural_boom", // FIXME: add card
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/cultural_boom",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/cultural_boom",
         tokenNsid:
-            "token.attachment:homebrew.ixth_lost_star_charts.terraforming_initiatives/cultural_boom", // FIXME: add token
+            "token.attachment:homebrew.ixth_lost_star_charts/cultural_boom",
         faceUp: {
             influence: 2,
             traits: ["cultural"],
-            image: "discordant-stars/extras/bentor_encryption_key.png",
+            image: "ixth-expansions/lost-star-charts/tokens/cultural_boom.png",
         },
     },
 ];
@@ -352,12 +354,12 @@ const attachments = [
 // TODO: BIOCRYSTAL MELANGE
 // TODO: INTERSTELLAR GATE
 
-world.TI4.homebrew.inject(
+world.TI4.homebrew.inject({
     attachments,
     localeStrings,
     nsidToTemplateId,
     systems,
-);
+});
 
 // rebuild decks with injected cards
 world.TI4.homebrew.resetOnTableDecks();
