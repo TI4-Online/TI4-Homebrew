@@ -63,16 +63,16 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_alpert_planet",
-		"1": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_desmond_planet",
-		"2": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_eko_planet",
-		"3": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_ethan_planet",
-		"4": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_horace_planet",
-		"5": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_jarrah_planet",
-		"6": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_kwon_planet",
-		"7": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_lapidus_planet",
-		"8": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_lloyd_planet",
-		"9": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_windmore_planet"
+		"0": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_alpert_planet",
+		"1": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_desmond_planet",
+		"2": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_eko_planet",
+		"3": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_ethan_planet",
+		"4": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_horace_planet",
+		"5": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_jarrah_planet",
+		"6": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_kwon_planet",
+		"7": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_lapidus_planet",
+		"8": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_lloyd_planet",
+		"9": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_windmore_planet"
 	},
 	"CardTags":
 	{

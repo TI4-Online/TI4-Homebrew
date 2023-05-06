@@ -1,0 +1,80 @@
+{
+	"Type": "Card",
+	"GUID": "F0BD707740DF3A205984B3A585F5C185",
+	"Name": "Terraforming Initiative Cards",
+	"Metadata": "card.terraforming_initiative:homebrew.ixth_lost_star_charts/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "ixth-expansions/lost-star-charts/cards/terraforming_initiative_front.jpg",
+	"BackTexture": "ixth-expansions/lost-star-charts/cards/terraforming_initiative_back.png",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -1,
+	"NumHorizontal": 11,
+	"NumVertical": 1,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+		"0": "card.terraforming_initiative:homebrew.ixth_lost_star_charts/cultural_boom",
+		"1": "card.terraforming_initiative:homebrew.ixth_lost_star_charts/established_trade_route",
+		"2": "card.terraforming_initiative:homebrew.ixth_lost_star_charts/galactic_financial_center",
+		"3": "card.terraforming_initiative:homebrew.ixth_lost_star_charts/geothermal_equilibrium",
+		"4": "card.terraforming_initiative:homebrew.ixth_lost_star_charts/industrial_boom",
+		"5": "card.terraforming_initiative:homebrew.ixth_lost_star_charts/interplanetary_hub",
+		"6": "card.terraforming_initiative:homebrew.ixth_lost_star_charts/orbital_slingshot",
+		"7": "card.terraforming_initiative:homebrew.ixth_lost_star_charts/panetary_arcologies",
+		"8": "card.terraforming_initiative:homebrew.ixth_lost_star_charts/population_growth",
+		"9": "card.terraforming_initiative:homebrew.ixth_lost_star_charts/self-defense_initiative"
+	},
+	"CardTags":
+	{
+	}
+}

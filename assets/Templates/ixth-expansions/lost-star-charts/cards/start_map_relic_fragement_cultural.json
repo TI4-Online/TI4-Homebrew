@@ -1,0 +1,79 @@
+{
+	"Type": "Card",
+	"GUID": "6C9D4F134FD83323FE4397A5E656634C",
+	"Name": "Star Map Relic Fragment (Cultural)",
+	"Metadata": "card.exploration.cultural:homebrew.ixth_lost_star_charts/star_map_relic_fragment_cultural",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "ixth-expansions/lost-star-charts/cards/Star Map Fragment (Cultural).png",
+	"BackTexture": "ti4/exploration/cultural.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -1,
+	"NumHorizontal": 1,
+	"NumVertical": 1,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+		"1": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_desmond_planet",
+		"2": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_eko_planet",
+		"3": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_ethan_planet",
+		"4": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_horace_planet",
+		"5": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_jarrah_planet",
+		"6": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_kwon_planet",
+		"7": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_lapidus_planet",
+		"8": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_lloyd_planet",
+		"9": "card.ghoti:homebrew.ixth_lost_star_charts/legendary_windmore_planet"
+	},
+	"CardTags":
+	{
+	}
+}
