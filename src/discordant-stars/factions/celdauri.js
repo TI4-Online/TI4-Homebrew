@@ -184,7 +184,7 @@ const unitModifiers = [
       );
     },
     applyAll: (unitAttrsSet, auxData) => {
-      // TODO: implement
+      // TODO: combat: implement
     },
   },
 ];

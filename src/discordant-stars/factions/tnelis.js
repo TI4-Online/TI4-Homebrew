@@ -162,6 +162,7 @@ const unitAttrs = [
 
 const unitModifiers = [
   {
+    // TODO: combat: test
     // "-1 die to a single SPACE COMBAT roll of the opponent",
     isCombat: true,
     localeName: "unit.flagship.principia_aneris",
@@ -173,8 +174,6 @@ const unitModifiers = [
       return auxData.rollType === "spaceCombat";
     },
     applyAll: (unitAttrsSet, auxData) => {
-      // TODO: implement
-      /*
       let best = false;
       for (const unitAttrs of unitAttrsSet.values()) {
         if (
@@ -191,16 +190,17 @@ const unitModifiers = [
       }
       if (best && best.raw.spaceCombat.dice > 0) {
         best.raw.spaceCombat.dice -= 1;
-      }*/
+      }
     },
   },
   {
+    // TODO: combat: test
     // "one unit may use its ANTI FIGHTER BARRAGE as BOMBARDMENT",
     isCombat: true,
     localeName: "unit_modifier.name.davish_snorri",
     localeDescription: "unit_modifier.desc.davish_snorri",
     toggleActive: true,
-    owner: "any",
+    owner: "self",
     priority: "adjust",
     triggerNsids: [
       "card.leader.agent.tnelis:homebrew.discordant_stars/davish_snorri",
@@ -209,7 +209,26 @@ const unitModifiers = [
       return auxData.rollType === "bombardment";
     },
     applyAll: (unitAttrsSet, auxData) => {
-      // TODO: implement
+      let best = false;
+      let bestHitCount = 0;
+      for (const unitAttrs of unitAttrsSet.values()) {
+        if (
+            unitAttrs.raw.antiFighterBarrage &&
+            auxData.self.has(unitAttrs.raw.unit)
+        ) {
+          const unitHitCount = unitAttrs.raw.antiFighterBarrage.dice * (11 - unitAttrs.raw.antiFighterBarrage.hit);
+          if (
+              !best ||
+              bestHitCount < unitHitCount
+          ) {
+            best = unitAttrs;
+            bestHitCount = unitHitCount;
+          }
+        }
+      }
+      if (best && best.raw.antiFighterBarrage.dice > 0) {
+        best.raw.bombardment = best.raw.antiFighterBarrage;
+      }
     },
   },
 ];

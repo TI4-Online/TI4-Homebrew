@@ -184,7 +184,7 @@ const unitModifiers = [
     applyAll: (unitAttrsSet, auxData) => {
       let destroyerCount = 0;
 
-      // TODO: find all plastics
+      // TODO: combat: find all plastics
 
       unitAttrsSet.get("flagship").raw.spaceCombat.hit -= Math.floor(
         destroyerCount / 2
@@ -193,7 +193,7 @@ const unitModifiers = [
   },
 ];
 
-// TODO: add saber death roll
+// TODO: combat: add saber death roll
 
 world.TI4.homebrew.inject({
   localeStrings,

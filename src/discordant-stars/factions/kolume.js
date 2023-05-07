@@ -145,7 +145,7 @@ const unitModifiers = [
       return auxData.self.faction.nsidName === "kolume";
     },
     applyAll: (unitAttrsSet, auxData) => {
-      // TODO: implement
+      // TODO: combat: implement
     },
   },
   {
@@ -165,7 +165,7 @@ const unitModifiers = [
       );
     },
     applyAll: (unitAttrsSet, auxData) => {
-      // TODO: implement
+      // TODO: combat: implement
     },
   },
 ];

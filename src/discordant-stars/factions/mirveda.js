@@ -154,13 +154,13 @@ const unitModifiers = [
     priority: "adjust",
     filter: (auxData) => {
       return auxData.rollType === "spaceCombat" && auxData.self.has("mech");
-    },
-    applyAll: (unitAttrsSet, auxData) => {
-      let hitModifier = 0;
-      const playerSlot = auxData.self.playerSlot;
-      const ownedTechnologies =
-        world.TI4.Technology.getOwnedPlayerTechnologies(playerSlot);
-      hitModifier = ownedTechnologies.filter((tech) =>
+      },
+      applyAll: (unitAttrsSet, auxData) => {
+
+        let hitModifier = 0;
+        const playerSlot = auxData.self.playerSlot;
+        const ownedTechnologies = world.TI4.Technology.getOwnedPlayerTechnologies(playerSlot);
+        hitModifier = ownedTechnologies.filter((tech) =>
         tech.cardNsid.startsWith("card.technology.unit_upgrade:")
       ).length;
 
@@ -171,7 +171,7 @@ const unitModifiers = [
   },
 ];
 
-//TODO: implement hero ability (fire PDS)
+//TODO: combat: implement hero ability (fire PDS)
 
 world.TI4.homebrew.inject({
   localeStrings,

@@ -179,7 +179,7 @@ const unitModifiers = [
       return auxData.rollType === "spaceCombat";
     },
     applyAll: (unitAttrsSet, auxData) => {
-      // TODO: implement
+      // TODO: combat: implement
     },
   },
 ];

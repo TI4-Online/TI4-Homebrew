@@ -204,7 +204,7 @@ const unitAttrs = [
 
 const unitModifiers = [];
 
-// TODO: implement dice replacements (not rolling but taking the die result)
+// TODO: combat: implement dice replacements (not rolling but taking the die result)
 
 world.TI4.homebrew.inject({
   localeStrings,
