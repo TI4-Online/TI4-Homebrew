@@ -498,7 +498,7 @@ world.TI4.homebrew.inject({
     //unitModifiers,
 });
 
-// rebuild decks with injected cards
 world.TI4.homebrew.resetOnTableDecks();
+world.TI4.homebrew.resetSystemTilesBox();
 
 console.log("HOMEBREW ADDING LOST STAR CHARTS");
