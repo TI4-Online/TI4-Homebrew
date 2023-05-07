@@ -1,4 +1,5 @@
 const { world } = require("@tabletop-playground/api");
+const UNIT_MODIFIERS = require("./card/action/unit-modifiers.data");
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:
@@ -88,7 +89,8 @@ world.TI4.homebrew.inject({
         "card.action:base/unexpected_action": "card.action:homebrew.little-omega.action/unexpected_action",
         "card.action:base/upgrade": "card.action:homebrew.little-omega.action/upgrade",
         "card.action:base/warfare_rider": "card.action:homebrew.little-omega.action/warfare_rider"
-    }
+    },
+    unitModifiers: UNIT_MODIFIERS
   });
 
 world.TI4.homebrew.resetOnTableDecks()
