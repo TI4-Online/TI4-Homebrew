@@ -113,7 +113,7 @@ const systems = [
                 influence: 1,
                 trait: ["hazardous"],
                 legendary: true,
-                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_desmond_planet",
+                legendaryCard: "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_desmond_planet",
             },
         ],
         anomalies: ["supernova"],
@@ -130,7 +130,7 @@ const systems = [
                 influence: 1,
                 trait: ["industrial"],
                 legendary: true,
-                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_horace_planet",
+                legendaryCard: "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_horace_planet",
             },
         ],
         wormholes: ["beta"],
@@ -148,7 +148,7 @@ const systems = [
                 influence: 2,
                 trait: ["cultural"],
                 legendary: true,
-                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_eko_planet",
+                legendaryCard: "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_eko_planet",
             },
         ],
         wormholes: ["alpha"],
@@ -187,7 +187,7 @@ const systems = [
                 influence: 2,
                 trait: ["industrial"],
                 legendary: true,
-                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_lapidus_planet",
+                legendaryCard: "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_lapidus_planet",
             },
         ],
         anomalies: ["asteroid field"],
@@ -228,7 +228,7 @@ const systems = [
                 influence: 0,
                 trait: ["hazardous"],
                 legendary: true,
-                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_jarrah_planet",
+                legendaryCard: "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_jarrah_planet",
             },
         ],
     },
@@ -244,7 +244,7 @@ const systems = [
                 influence: 3,
                 trait: ["cultural"],
                 legendary: true,
-                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_kwon_planet",
+                legendaryCard: "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_kwon_planet",
             },
         ],
         wormholes: ["alpha", "beta"],
@@ -262,7 +262,7 @@ const systems = [
                 influence: 0,
                 trait: ["hazardous"],
                 legendary: true,
-                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_lloyd_planet",
+                legendaryCard: "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_lloyd_planet",
             },
         ],
     },
@@ -278,7 +278,7 @@ const systems = [
                 influence: 2,
                 trait: ["cultural"],
                 legendary: true,
-                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_windmore_planet",
+                legendaryCard: "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_windmore_planet",
             },
         ],
     },
@@ -294,7 +294,7 @@ const systems = [
                 influence: 0,
                 trait: ["hazardous"],
                 legendary: true,
-                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_ethan_planet",
+                legendaryCard: "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_ethan_planet",
             },
         ],
         wormholes: ["alpha", "beta"],
@@ -312,7 +312,7 @@ const systems = [
                 influence: 0,
                 trait: ["cultural"],
                 legendary: true,
-                legendaryCard: "card.ghoti:homebrew.ixth_lost_star_charts/legendary_alpert_planet",
+                legendaryCard: "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_alpert_planet",
             },
         ],
     },
@@ -350,12 +350,12 @@ const attachments = [
     },
     {
         packageId: refPackageId,
-        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/established_trade_route",
-        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/established_trade_route",
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/established_trade_routes",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/established_trade_routes",
         tokenNsid:
-            "token.attachment:homebrew.ixth_lost_star_charts/established_trade_route",
+            "token.attachment:homebrew.ixth_lost_star_charts/established_trade_routes",
         faceUp: {
-            image: "ixth-expansions/lost-star-charts/tokens/established_trade_route.png",
+            image: "ixth-expansions/lost-star-charts/tokens/established_trade_routes.png",
         },
     },
     {
@@ -370,13 +370,13 @@ const attachments = [
     },
     {
         packageId: refPackageId,
-        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/geothermal_equilibirum",
-        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/geothermal_equilibirum",
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/geothermal_equilibrium",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/geothermal_equilibrium",
         tokenNsid:
-            "token.attachment:homebrew.ixth_lost_star_charts/geothermal_equilibirum",
+            "token.attachment:homebrew.ixth_lost_star_charts/geothermal_equilibrium",
         faceUp: {
             resources: 1,
-            image: "ixth-expansions/lost-star-charts/tokens/geothermal_equilibirum.png",
+            image: "ixth-expansions/lost-star-charts/tokens/geothermal_equilibrium.png",
         },
     },
     {
@@ -409,6 +409,17 @@ const attachments = [
             "token.attachment:homebrew.ixth_lost_star_charts/orbital_slingshot",
         faceUp: {
             image: "ixth-expansions/lost-star-charts/tokens/orbital_slingshot.png",
+        },
+    },
+    {
+        packageId: refPackageId,
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/planetary_archologies",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/planetary_archologies",
+        tokenNsid:
+            "token.attachment:homebrew.ixth_lost_star_charts/planetary_archologies",
+        faceUp: {
+            influence: 1,
+            image: "ixth-expansions/lost-star-charts/tokens/planetary_archologies.png",
         },
     },
     {
@@ -447,7 +458,7 @@ const attachments = [
     },
 ];
 
-const unitAttrs = [
+const unitModifiers = [
     {
         // "SPACE CANNON 6(x2)",
         isCombat: true,
@@ -484,7 +495,7 @@ world.TI4.homebrew.inject({
     localeStrings,
     nsidToTemplateId,
     systems,
-    //unitAttrs,
+    //unitModifiers,
 });
 
 // rebuild decks with injected cards
