@@ -30,6 +30,27 @@ module.exports = [
                 );
                 auxData.self.overrideCount("experimental_battlestation", 1);
             }
+            world.TI4.agenda.Agenda
+        },
+    },
+    {
+        // Tactical Bombardment
+        // At the start of an invasion:
+        // During this invasion, on each planet you use Bombardment against, apply +1 to the result of each of your unit's combat rolls.
+        isCombat: true,
+        localeName: "unit_modifier.name.tactical_bombardment",
+        localeDescription: "unit_modifier.desc.tactical_bombardment",
+        owner: "self",
+        priority: "adjust",
+        toggleActive: true,
+        triggerNsid: "card.action:homebrew.little-omega.action/tactical_bombardment",
+        filter: (auxData) => {
+            return auxData.rollType === "groundCombat";
+        },
+        applyEach: (unitAttrs, auxData) => {
+            if (unitAttrs.raw.groundCombat) {
+                unitAttrs.raw.groundCombat.hit -= 1;
+            }
         },
     }
 ]

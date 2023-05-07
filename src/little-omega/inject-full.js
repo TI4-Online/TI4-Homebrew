@@ -1,5 +1,6 @@
 const { world } = require("@tabletop-playground/api");
 const UNIT_MODIFIERS = require("./card/action/unit-modifiers.data");
+const LOCALE_STRINGS = require("./card/action/locale-strings.data");
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:
@@ -90,7 +91,8 @@ world.TI4.homebrew.inject({
         "card.action:base/upgrade": "card.action:homebrew.little-omega.action/upgrade",
         "card.action:base/warfare_rider": "card.action:homebrew.little-omega.action/warfare_rider"
     },
-    unitModifiers: UNIT_MODIFIERS
+    unitModifiers: UNIT_MODIFIERS,
+    localeStrings: LOCALE_STRINGS
   });
 
 world.TI4.homebrew.resetOnTableDecks()
