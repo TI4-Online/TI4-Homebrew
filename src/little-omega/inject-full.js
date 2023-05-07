@@ -83,7 +83,7 @@ world.TI4.homebrew.inject({
         "card.action:base/maneuvering_jets.4": "card.action:homebrew.little-omega.action/maneuvering_jets.4",
         "card.action:base/reactor_meltdown": "card.action:homebrew.little-omega.action/reactor_meltdown",
         "card.action:base/salvage": "card.action:homebrew.little-omega.action/salvage",
-        "card.action:base/scramble_frequency": "card.action:homebrew.little-omega.action/scramble_frequency",
+        "card.action:codex.ordinian/scramble_frequency": "card.action:homebrew.little-omega.action/scramble_frequency",
         "card.action:base/tactical_bombardment": "card.action:homebrew.little-omega.action/tactical_bombardment",
         "card.action:base/unexpected_action": "card.action:homebrew.little-omega.action/unexpected_action",
         "card.action:base/upgrade": "card.action:homebrew.little-omega.action/upgrade",
