@@ -10,5 +10,5 @@ module.exports = {
     "unit_modifier.name.virulent_gas_canisters" : "Virulent Gas Canisters",
     "unit_modifier.desc.virulent_gas_canisters" : "+1 Bombardment or Space Cannon vs ground forces; hits cannot be assigned to mechs",
     "unit_modifier.name.shock_troops" : "Shock Troops",
-    "unit_modifier.desc.shock_troops" : "Each unodified 9 or 10 produces 1 hit",
+    "unit_modifier.desc.shock_troops" : "Each unodified 9 or 10 produces 1 hit"
 }

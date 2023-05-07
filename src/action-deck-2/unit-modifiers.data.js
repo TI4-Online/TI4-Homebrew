@@ -19,7 +19,7 @@ module.exports = [{
             if (unitAttrs.raw.groundCombat) {
                 unitAttrs.raw.groundCombat.hit -= 3;
             }
-        },
+        }
     },
     {
         // Graviton Shielding
@@ -51,7 +51,7 @@ module.exports = [{
             if (unitAttrs.raw.bombardment) {
                 delete unitAttrs.raw.bombardment;
             }
-        },
+        }
     },
     {
         // Shock and Awe
@@ -137,7 +137,7 @@ module.exports = [{
             if (unitAttrs.raw.bombardment) {
                 unitAttrs.raw.bombardment.hit -= 1;
             }
-        },
+        }
     },
     {
         // Shock Troops
@@ -161,5 +161,4 @@ module.exports = [{
             }
         }
     }
-]
 ]

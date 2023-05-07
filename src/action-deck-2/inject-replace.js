@@ -5,7 +5,7 @@ const LOCALE_STRINGS = require("./locale-strings.data");
 world.TI4.homebrew.inject({
     nsidToTemplateId:
     {
-        "card.action:homebrew.action_deck_2/0": "934D6DF9DCB340AD826E2416C7C78580",
+        "card.action:homebrew.action_deck_2/0": "934D6DF9DCB340AD826E2416C7C78580"
     },
     replace:
     {
