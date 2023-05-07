@@ -1,5 +1,4 @@
-module.exports = [
-	{
+module.exports = [{
         // Close Quarters
         // At the start of a combat:
         // Apply +3 to the result of each unit's combat rolls during this combat.
@@ -10,10 +9,8 @@ module.exports = [
         priority: "adjust",
         triggerNsid: "card.action:homebrew.action_deck_2/close_quarters",
         filter: (auxData) => {
-            return (
-                auxData.rollType === "spaceCombat" ||
-                auxData.rollType === "groundCombat"
-            );
+            return auxData.rollType === "spaceCombat" ||
+                auxData.rollType === "groundCombat";
         },
         applyEach: (unitAttrs, auxData) => {
             if (unitAttrs.raw.spaceCombat) {
@@ -33,7 +30,7 @@ module.exports = [
         localeDescription: "unit_modifier.desc.graviton_shielding",
         owner: "opponent",
         priority: "mutate.late", // after adding bombardment elsewhere
-		triggerNsid: "card.action:homebrew.action_deck_2/graviton_shielding",
+        triggerNsid: "card.action:homebrew.action_deck_2/graviton_shielding",
         filter: (auxData) => {
             return auxData.rollType === "bombardment";
         },
@@ -56,7 +53,7 @@ module.exports = [
             }
         },
     },
-	{
+    {
         // Shock and Awe
         // Before you roll dice for Bombardment:
         // Choose 1 of your ships with Bombardment in the active system. That ship may roll 2 additional dice.
@@ -66,9 +63,9 @@ module.exports = [
         owner: "self",
         priority: "choose",
         triggerNsid: "card.action:homebrew.action_deck_2/shock_and_awe",
-		filter: (auxData) => {
+        filter: (auxData) => {
             if (auxData.rollType === "bombardment") {
-				const isFirst = auxData.isFirstBombardmentPlanet;
+                const isFirst = auxData.isFirstBombardmentPlanet;
                 return isFirst === undefined || isFirst;
             }
         },
@@ -81,8 +78,7 @@ module.exports = [
                     auxData.self.has(unitAttrs.raw.unit)
                 ) {
                     if (
-                        !best ||
-                        unitAttrs.raw.bombardment.hit < best.raw.bombardment.hit
+                        !best || unitAttrs.raw.bombardment.hit < best.raw.bombardment.hit
                     ) {
                         best = unitAttrs;
                     }
@@ -94,7 +90,7 @@ module.exports = [
             }
         }
     },
-	{
+    {
         // Shrapnel Turrets
         // Before you roll dice for Anti-Fighter Barrage:
         // Each of your non-fighter ships in the active system that do not have Anti-Fighter Barrage gain Anti-Fighter Barrage 9 (x2) until the end of the combat.
@@ -113,11 +109,14 @@ module.exports = [
                 unitAttrs.raw.unit !== "fighter" &&
                 !unitAttrs.raw.antiFighterBarrage
             ) {
-                unitAttrs.raw.antiFighterBarrage = { dice: 2, hit: 9 };
+                unitAttrs.raw.antiFighterBarrage = {
+                    dice: 2,
+                    hit: 9
+                };
             }
         }
     },
-	{
+    {
         // Virulent Gas Canisters
         // Before your units use Bombardment or Space Cannon against another player's ground forces:
         // Apply +1 to the result of each die roll; hits produced by these rolls cannot be assigned to mechs.
@@ -129,15 +128,38 @@ module.exports = [
         triggerNsid: "card.action:homebrew.action_deck_2/virulent_gas_canisters",
         filter: (auxData) => {
             return (auxData.rollType === "spaceCannon" && auxData.activePlanet) // planet means space cannon defense
-				|| auxData.rollType === "bombardment"; 
+                || auxData.rollType === "bombardment";
         },
         applyEach: (unitAttrs, auxData) => {
             if (unitAttrs.raw.spaceCannon) {
                 unitAttrs.raw.spaceCannon.hit -= 1;
             }
-			 if (unitAttrs.raw.bombardment) {
+            if (unitAttrs.raw.bombardment) {
                 unitAttrs.raw.bombardment.hit -= 1;
             }
         },
+    },
+    {
+        // Shock Troops
+        // At the start of the first round of a ground combat:
+        // During this combat round, each result of 9 or 10 on your unit's combat rolls, before applying modifiers, produces 1 additional hit.
+        isCombat: true,
+        localeName: "unit_modifier.name.shock_troops",
+        localeDescription: "unit_modifier.desc.shock_troops",
+        owner: "self",
+        priority: "adjust.late", // needs to happen after Matriarch
+        triggerNsid: "card.action:homebrew.action_deck_2/shock_troops",
+        filter: (auxData) => {
+            return auxData.rollType === "groundCombat";
+        },
+        applyEach: (unitAttrs, auxData) => {
+            if (unitAttrs.raw.groundCombat) {
+                unitAttrs.raw.groundCombat.extraHitsOn = {
+                    count: 1,
+                    value: 9
+                };
+            }
+        }
     }
+]
 ]
