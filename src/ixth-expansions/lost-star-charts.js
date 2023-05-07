@@ -105,7 +105,7 @@ const systems = [
         tile: 4001,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4001.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Desmond.png",
         planets: [
             {
                 localeName: "planet.desmond",
@@ -122,7 +122,7 @@ const systems = [
         tile: 4002,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4002.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Horace.png",
         planets: [
             {
                 localeName: "planet.horace",
@@ -140,7 +140,7 @@ const systems = [
         tile: 4003,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4003.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Eko.png",
         planets: [
             {
                 localeName: "planet.eko",
@@ -159,7 +159,7 @@ const systems = [
         tile: 4004,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4004.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Locke-Bentham.png",
         planets: [
             {
                 localeName: "planet.locke",
@@ -179,7 +179,7 @@ const systems = [
         tile: 4005,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4005.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Lapidus.png",
         planets: [
             {
                 localeName: "planet.lapidus",
@@ -196,7 +196,7 @@ const systems = [
         tile: 4006,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4006.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Wormhole Sink.png",
         wormholes: ["alpha", "beta"],
         anomalies: ["gravity rift"],
     },
@@ -204,7 +204,7 @@ const systems = [
         tile: 4007,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4007.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Slow Wormhole.png",
         wormholes: ["beta"],
         anomalies: ["nebula"],
     },
@@ -212,7 +212,7 @@ const systems = [
         tile: 4008,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4008.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Trick or Threat.png",
         wormholes: ["gamma"],
         anomalies: ["gravity rift"],
     },
@@ -220,7 +220,7 @@ const systems = [
         tile: 4009,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4009.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Jarrah.png",
         planets: [
             {
                 localeName: "planet.jarrah",
@@ -236,7 +236,7 @@ const systems = [
         tile: 4010,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4010.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Kwon.png",
         planets: [
             {
                 localeName: "planet.kwon",
@@ -254,7 +254,7 @@ const systems = [
         tile: 4011,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4011.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Lloyd.png",
         planets: [
             {
                 localeName: "planet.lloyd",
@@ -270,7 +270,7 @@ const systems = [
         tile: 4012,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4012.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Widmore.png",
         planets: [
             {
                 localeName: "planet.windmore",
@@ -286,7 +286,7 @@ const systems = [
         tile: 4013,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4013.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Ethan.png",
         planets: [
             {
                 localeName: "planet.ethan",
@@ -304,7 +304,7 @@ const systems = [
         tile: 4014,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4014.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Alpert.png",
         planets: [
             {
                 localeName: "planet.alpert",
@@ -320,14 +320,14 @@ const systems = [
         tile: 4015,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4015.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Rocky Hole.png",
         anomalies: ["asteroid field", "gravity rift"],
     },
     {
         tile: 4016,
         source: "homebrew.ixth_lost_star_charts",
         packageId: refPackageId,
-        img: "ixth-expansions/lost-star-charts/tiles/tile_4016.jpg",
+        img: "ixth-expansions/lost-star-charts/tiles/Nexus Detour.png",
         wormholes: ["alpha", "beta"],
         offMap: true,
     },
@@ -348,9 +348,134 @@ const attachments = [
             image: "ixth-expansions/lost-star-charts/tokens/cultural_boom.png",
         },
     },
+    {
+        packageId: refPackageId,
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/established_trade_route",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/established_trade_route",
+        tokenNsid:
+            "token.attachment:homebrew.ixth_lost_star_charts/established_trade_route",
+        faceUp: {
+            image: "ixth-expansions/lost-star-charts/tokens/established_trade_route.png",
+        },
+    },
+    {
+        packageId: refPackageId,
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/galatic_financial_center",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/galatic_financial_center",
+        tokenNsid:
+            "token.attachment:homebrew.ixth_lost_star_charts/galatic_financial_center",
+        faceUp: {
+            image: "ixth-expansions/lost-star-charts/tokens/galatic_financial_center.png",
+        },
+    },
+    {
+        packageId: refPackageId,
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/geothermal_equilibirum",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/geothermal_equilibirum",
+        tokenNsid:
+            "token.attachment:homebrew.ixth_lost_star_charts/geothermal_equilibirum",
+        faceUp: {
+            resources: 1,
+            image: "ixth-expansions/lost-star-charts/tokens/geothermal_equilibirum.png",
+        },
+    },
+    {
+        packageId: refPackageId,
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/industrial_boom",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/industrial_boom",
+        tokenNsid:
+            "token.attachment:homebrew.ixth_lost_star_charts/industrial_boom",
+        faceUp: {
+            resources: 2,
+            traits: ["industrial"],
+            image: "ixth-expansions/lost-star-charts/tokens/industrial_boom.png",
+        },
+    },
+    {
+        packageId: refPackageId,
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/interplanetary_hub",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/interplanetary_hub",
+        tokenNsid:
+            "token.attachment:homebrew.ixth_lost_star_charts/interplanetary_hub",
+        faceUp: {
+            image: "ixth-expansions/lost-star-charts/tokens/interplanetary_hub.png",
+        },
+    },
+    {
+        packageId: refPackageId,
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/orbital_slingshot",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/orbital_slingshot",
+        tokenNsid:
+            "token.attachment:homebrew.ixth_lost_star_charts/orbital_slingshot",
+        faceUp: {
+            image: "ixth-expansions/lost-star-charts/tokens/orbital_slingshot.png",
+        },
+    },
+    {
+        packageId: refPackageId,
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/population_growth",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/population_growth",
+        tokenNsid:
+            "token.attachment:homebrew.ixth_lost_star_charts/population_growth",
+        faceUp: {
+            influence: 1,
+            resources: 1,
+            image: "ixth-expansions/lost-star-charts/tokens/population_growth.png",
+        },
+    },
+    {
+        packageId: refPackageId,
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/self-defense_initiative",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/elf-defense_initiative",
+        tokenNsid:
+            "token.attachment:homebrew.ixth_lost_star_charts/self-defense_initiative",
+        faceUp: {
+            image: "ixth-expansions/lost-star-charts/tokens/self-defense_initiative.png",
+        },
+    },
+    {
+        packageId: refPackageId,
+        localeName: "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/terraforming_milestone",
+        cardNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/terraforming_milestone",
+        tokenNsid:
+            "token.attachment:homebrew.ixth_lost_star_charts/terraforming_milestone",
+        faceUp: {
+            influence: 2,
+            resources: 2,
+            image: "ixth-expansions/lost-star-charts/tokens/terraforming_milestone.png",
+        },
+    },
 ];
 
-// TODO: explain how to add exploration cards
+const unitAttrs = [
+    {
+        // "SPACE CANNON 6(x2)",
+        isCombat: true,
+        localeName: "unit_modifier.name.self-defense_initiative",
+        localeDescription: "unit_modifier.desc.self-defense_initiative",
+        owner: "self",
+        priority: "mutate",
+        triggerNsid: "<>", // FIXME
+        filter: (auxData) => {
+            if (auxData.rollType !== "spaceCannon") {
+                return false;
+            }
+            // Only applies to system with attached self-defense initiative.
+            return auxData.activeSystem && false //FIXME: check for token;
+        },
+        applyAll: (unitAttrsSet, auxData) => {
+            unitAttrsSet.addSpecialUnit(
+                new UnitAttrs({
+                    unit: "self-defense_initiative",
+                    localeName: "unit_modifier.name.self-defense_initiative",
+                    spaceCannon: { hit: 6, dice: 2 },
+                })
+            );
+            auxData.self.overrideCount("self-defense_initiative", 1);
+        },
+    },
+];
+
 // TODO: BIOCRYSTAL MELANGE
 // TODO: INTERSTELLAR GATE
 
@@ -359,6 +484,7 @@ world.TI4.homebrew.inject({
     localeStrings,
     nsidToTemplateId,
     systems,
+    //unitAttrs,
 });
 
 // rebuild decks with injected cards
