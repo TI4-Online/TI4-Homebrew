@@ -60,7 +60,8 @@
 	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
 	"CardNames":
 	{
-		"1": "Alpert",
+		"0": "Alpert",
+		"1": "Bentham",
 		"2": "Desmond",
 		"3": "Eko",
 		"4": "Ethan",
