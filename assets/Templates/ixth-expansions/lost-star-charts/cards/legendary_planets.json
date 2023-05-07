@@ -1,0 +1,80 @@
+{
+	"Type": "Card",
+	"GUID": "E1DAC6584B3710A9F5A1859D01F71C62",
+	"Name": "Legendary Planet Cards",
+	"Metadata": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_planets",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "ixth-expansions/lost-star-charts/cards/legendary_planets_front.jpg",
+	"BackTexture": "ixth-expansions/lost-star-charts/cards/legendary_planets_back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -3,
+	"HiddenIndex": -1,
+	"NumHorizontal": 2,
+	"NumVertical": 5,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+		"0": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_alpert_planet",
+		"1": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_desmond_planet",
+		"2": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_eko_planet",
+		"3": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_ethan_planet",
+		"4": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_horace_planet",
+		"5": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_jarrah_planet",
+		"6": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_kwon_planet",
+		"7": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_lapidus_planet",
+		"8": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_lloyd_planet",
+		"9": "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_windmore_planet"
+	},
+	"CardTags":
+	{
+	}
+}
