@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "FDF93E9FC74746DC82EBA6DD87DA1BEB",
 	"Name": "Little Omega - Promissory Notes",
-	"Metadata": "card.promissory:homebrew.little-omega.promissory/0",
+	"Metadata": "card.promissory:homebrew.little-omega/0",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -71,14 +71,14 @@
 	},
 	"CardMetadata":
 	{
-            "0": "card.promissory.blue:homebrew.little-omega.promissory/political_secret",
-            "1": "card.promissory.brown:homebrew.little-omega.promissory/political_secret",
-            "2": "card.promissory.red:homebrew.little-omega.promissory/political_secret",
-            "3": "card.promissory.white:homebrew.little-omega.promissory/political_secret",
-            "4": "card.promissory.yellow:homebrew.little-omega.promissory/political_secret",
-            "5": "card.promissory.green:homebrew.little-omega.promissory/political_secret",
-            "6": "card.promissory.purple:homebrew.little-omega.promissory/political_secret",
-            "7": "card.promissory.orange:homebrew.little-omega.promissory/political_secret"
+            "0": "card.promissory.blue:homebrew.little-omega/political_secret",
+            "1": "card.promissory.brown:homebrew.little-omega/political_secret",
+            "2": "card.promissory.red:homebrew.little-omega/political_secret",
+            "3": "card.promissory.white:homebrew.little-omega/political_secret",
+            "4": "card.promissory.yellow:homebrew.little-omega/political_secret",
+            "5": "card.promissory.green:homebrew.little-omega/political_secret",
+            "6": "card.promissory.purple:homebrew.little-omega/political_secret",
+            "7": "card.promissory.orange:homebrew.little-omega/political_secret"
 	},
 	"CardTags":
 	{

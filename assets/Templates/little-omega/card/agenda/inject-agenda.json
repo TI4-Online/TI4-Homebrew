@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "FE5F838F23A24A08874AF4C2FE7E7706",
 	"Name": "Little Omega Loader - Agendas",
-	"Metadata": "tile:homebrew.little-omega/logo",
+	"Metadata": "",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,

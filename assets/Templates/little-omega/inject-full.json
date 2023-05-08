@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "E452BC3E0D1D40279DC31DC428C5F708",
 	"Name": "Little Omega Loader - Full",
-	"Metadata": "tile:homebrew.little-omega/logo",
+	"Metadata": "",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
