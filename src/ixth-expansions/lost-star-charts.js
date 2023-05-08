@@ -5,7 +5,7 @@ const localeStrings = {
         "Cultural Boom",
     "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/established_trade_routes":
         "Established Trade Routes",
-    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/galatic_financial_center"
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/galatic_financial_center":
         "Galatic Financial Center",
     "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/geothermal_equilibrium":
         "Geothermal Equilibrium",
@@ -13,7 +13,7 @@ const localeStrings = {
         "Industrial Boom",
     "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/interplanetary_hub":
         "Interplanetary Hub",
-    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/orbital_slingshot"
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/orbital_slingshot":
         "Orbital Slingshot",
     "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/planetary_archologies":
         "Planetary Archologies",
@@ -540,12 +540,13 @@ const spawnContent = (templateId, offset) => {
 
 const spawnTokenContainer = () => {
     const container = spawnContent("C134C94B496A8D48C79534A5BDBC8A3D", [8.4, 2.2, above]);
+    container.setName("Ixth Tokens");
     container.setType(3); // Queue order on withdraw
     container.setScale([0.5, 0.5, 0.5]);
 
     for (const [nsid, templateId] of Object.entries(nsidToTemplateId)) {
         if (nsid.startsWith("token.")) {
-            const token = spawnContent(templateId, containerPos.add([0, 0, above]));
+            const token = spawnContent(templateId, container.getPosition().add([0, 0, above]));
             container.addObjects([token]);
         }
     };
