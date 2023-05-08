@@ -1,4 +1,4 @@
-const { world, refPackageId } = require("@tabletop-playground/api");
+const { world, refObject, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
   "planet.garbozia": "Garbozia",
@@ -37,3 +37,8 @@ world.TI4.homebrew.inject({
 });
 
 world.TI4.homebrew.resetOnTableDecks();
+
+if (world.TI4.ObjectNamespace.isSystemTile(refObject)) {
+  const scale = world.TI4.Hex.SCALE * 0.995;
+  refObject.setScale([scale, scale, scale]);
+}
