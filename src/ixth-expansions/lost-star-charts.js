@@ -3,6 +3,26 @@ const { Border, Button, Canvas, Text, UIElement, Vector, world, refObject, refPa
 const localeStrings = {
     "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/cultural_boom":
         "Cultural Boom",
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/established_trade_routes":
+        "Established Trade Routes",
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/galatic_financial_center"
+        "Galatic Financial Center",
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/geothermal_equilibrium":
+        "Geothermal Equilibrium",
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/industrial_boom":
+        "Industrial Boom",
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/interplanetary_hub":
+        "Interplanetary Hub",
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/orbital_slingshot"
+        "Orbital Slingshot",
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/planetary_archologies":
+        "Planetary Archologies",
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/population_growth":
+        "Population Growth",
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/self-defense_initiative":
+        "Self-Defense Initiative",
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/terraforming_milestone":
+        "Terraforming Milestone",
     "planet.alpert": "Alpert",
     "planet.desmond": "Desmond",
     "planet.eko": "Eko",
