@@ -1,7 +1,7 @@
 {
 	"Type": "Card",
 	"GUID": "1C24DF4E709944BB940F417D66E67B8C",
-	"Name": "Action Card Deck 2",
+	"Name": "Little Omega - Actions",
 	"Metadata": "card.action:homebrew.little-omega.action/0",
 	"CollisionType": "Regular",
 	"Friction": 0.7,

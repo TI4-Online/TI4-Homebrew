@@ -1,7 +1,7 @@
 {
 	"Type": "Card",
 	"GUID": "B4317F50842B48A2A732FDA8B7745854",
-	"Name": "Action Card Deck 2",
+	"Name": "Little Omega - Agendas",
 	"Metadata": "card.agenda:homebrew.little-omega.agenda/0",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
