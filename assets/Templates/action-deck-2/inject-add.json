@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "D44BC02FA1DB4E2BAF9043669AC5339F",
 	"Name": "Action Deck 2 Loader - combine decks",
-	"Metadata": "tile:homebrew.action_deck_2/logo",
+	"Metadata": "",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,

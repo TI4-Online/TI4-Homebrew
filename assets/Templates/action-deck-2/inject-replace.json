@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "2D711DE9616A4AAFA6DA6466614617DA",
 	"Name": "Action Deck 2 Loader - replace original deck",
-	"Metadata": "tile:homebrew.action_deck_2/logo",
+	"Metadata": "",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
