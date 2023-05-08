@@ -1,4 +1,4 @@
-const { world, refPackageId } = require("@tabletop-playground/api");
+const { Border, Button, Canvas, Text, UIElement, Vector, world, refObject, refPackageId } = require("@tabletop-playground/api");
 
 const localeStrings = {
     "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/cultural_boom":
@@ -490,15 +490,72 @@ const unitModifiers = [
 // TODO: BIOCRYSTAL MELANGE
 // TODO: INTERSTELLAR GATE
 
-world.TI4.homebrew.inject({
-    attachments,
-    localeStrings,
-    nsidToTemplateId,
-    systems,
-    //unitModifiers,
-});
+try {
+    world.TI4.homebrew.inject({
+        attachments,
+        localeStrings,
+        nsidToTemplateId,
+        systems,
+        //unitModifiers,
+    });
 
-world.TI4.homebrew.resetOnTableDecks();
-world.TI4.homebrew.resetSystemTilesBox();
+    world.TI4.homebrew.resetOnTableDecks();
+//world.TI4.homebrew.resetSystemTilesBox();
+} catch (error) {
+    console.error(error);
+}
+
+const above = 5;
+
+const spawnContent = (templateId, offset) => {
+    const rot = refObject.getRotation();
+
+    const spawnPosition =
+        refObject.localPositionToWorld(offset);
+    const spawnedObject = world.createObjectFromTemplate(templateId, spawnPosition);
+    spawnedObject.setRotation(rot);
+
+    return spawnedObject;
+}
+
+const spawnTokenContainer = () => {
+    const container = spawnContent("C134C94B496A8D48C79534A5BDBC8A3D", [8.4, 2.2, above]);
+    container.setType(3); // Queue order on withdraw
+    container.setScale([0.5, 0.5, 0.5]);
+
+    for (const [nsid, templateId] of Object.entries(nsidToTemplateId)) {
+        if (nsid.startsWith("token.")) {
+            const token = spawnContent(templateId, containerPos.add([0, 0, above]));
+            container.addObjects([token]);
+        }
+    };
+}
+
+let canvas = new Canvas();
+let text = new Text()
+.setFontSize(8)
+.setAutoWrap(true)
+.setText("Exploration cards and tiles are already added.");
+canvas.addChild(text, 0, 0, 150, 30);
+
+let spawnTerraformingDeckButton = new Button()
+    .setText("Spawn Terraforming Deck")
+    .setFontSize(8);
+spawnTerraformingDeckButton.onClicked.add(spawnContent.bind(this, "F0BD707740DF3A205984B3A585F5C185", [8.5, 8, above]));
+canvas.addChild(spawnTerraformingDeckButton, 0, 32, 150, 30);
+
+let spawnTokenContainerButton = new Button()
+    .setText("Spawn Tokens")
+    .setFontSize(8);
+spawnTokenContainerButton.onClicked.add(spawnTokenContainer);
+canvas.addChild(spawnTokenContainerButton, 0, 64, 150, 30);
+
+let ui = new UIElement();
+ui.position = new Vector(-19, 0, 0);
+ui.widget = new Border().setChild(canvas);
+ui.width = 152;
+ui.height = 96;
+ui.useWidgetSize = false;
+refObject.addUI(ui);
 
 console.log("HOMEBREW ADDING LOST STAR CHARTS");
