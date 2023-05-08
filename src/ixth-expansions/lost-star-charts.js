@@ -500,7 +500,7 @@ try {
     });
 
     world.TI4.homebrew.resetOnTableDecks();
-//world.TI4.homebrew.resetSystemTilesBox();
+    world.TI4.homebrew.resetSystemTilesBox();
 } catch (error) {
     console.error(error);
 }
