@@ -6,7 +6,7 @@ module.exports = [
         localeDescription: "unit_modifier.desc.experimental_battlestation",
         owner: "self",
         priority: "mutate",
-        triggerNsid: "card.action:homebrew.little-omega.action/experimental_battlestation",
+        triggerNsid: "card.action:homebrew.little-omega/experimental_battlestation",
         filter: (auxData) => {
             return (
                 auxData.rollType === "spaceCannon" &&
@@ -31,7 +31,7 @@ module.exports = [
                 auxData.self.overrideCount("experimental_battlestation", 1);
             }
             world.TI4.agenda.Agenda
-        },
+        }
     },
     {
         // Tactical Bombardment
@@ -43,7 +43,7 @@ module.exports = [
         owner: "self",
         priority: "adjust",
         toggleActive: true,
-        triggerNsid: "card.action:homebrew.little-omega.action/tactical_bombardment",
+        triggerNsid: "card.action:homebrew.little-omega/tactical_bombardment",
         filter: (auxData) => {
             return auxData.rollType === "groundCombat";
         },
@@ -51,6 +51,6 @@ module.exports = [
             if (unitAttrs.raw.groundCombat) {
                 unitAttrs.raw.groundCombat.hit -= 1;
             }
-        },
+        }
     }
 ]

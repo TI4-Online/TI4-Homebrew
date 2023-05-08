@@ -1,0 +1,96 @@
+{
+	"Type": "Card",
+	"GUID": "D36F63FE12634723B697FFB878349422",
+	"Name": "Little Omega - Stage 1 Objectives",
+	"Metadata": "card.objective.public_1:homebrew.little-omega/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "little-omega/card/objective/public_1/face.jpg",
+	"BackTexture": "ti4/objective/public_1.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 5,
+	"NumVertical": 3,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
+	"CardNames":
+	{
+        "0": "Control the Region",
+        "1": "Erect a Monument",
+        "2": "Expand Borders",
+        "3": "Found Research Outposts",
+        "4": "Impose Order",
+        "5": "Intimidate the Council",
+        "6": "Make History",
+        "7": "Monopolize a Trade Route",
+        "8": "Negotiate Trade Routes",
+        "9": "Parade Marvels",
+        "10": "Raise a Fleet",
+        "11": "Study the Unknown",
+        "12": "Sway the Council"
+	},
+	"CardMetadata":
+	{
+        "0": "card.objective.public_1:homebrew.little-omega/control_the_region",
+        "1": "card.objective.public_1:homebrew.little-omega/erect_a_momument",
+        "2": "card.objective.public_1:homebrew.little-omega/expand_borders",
+        "3": "card.objective.public_1:homebrew.little-omega/found_research_outposts",
+        "4": "card.objective.public_1:homebrew.little-omega/impose_order",
+        "5": "card.objective.public_1:homebrew.little-omega/intimidate_the_council",
+        "6": "card.objective.public_1:homebrew.little-omega/make_history",
+        "7": "card.objective.public_1:homebrew.little-omega/monopolize_a_trade_route",
+        "8": "card.objective.public_1:homebrew.little-omega/negotiate_trade_routes",
+        "9": "card.objective.public_1:homebrew.little-omega/parade_marvels",
+        "10": "card.objective.public_1:homebrew.little-omega/raise_a_fleet",
+        "11": "card.objective.public_1:homebrew.little-omega/study_the_unknown",
+        "12": "card.objective.public_1:homebrew.little-omega/sway_the_council"
+	},
+	"CardTags":
+	{
+	}
+}

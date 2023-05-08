@@ -1,7 +1,7 @@
 {
 	"Type": "Card",
-	"GUID": "FE5F838F23A24A08874AF4C2FE7E7706",
-	"Name": "Little Omega Loader - Agendas",
+	"GUID": "C05DEF4081B74A398233864299D67947",
+	"Name": "Little Omega Loader - Promissory Notes",
 	"Metadata": "",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
@@ -25,7 +25,7 @@
 	"Flippable": true,
 	"AutoStraighten": false,
 	"ShouldSnap": true,
-	"ScriptName": "little-omega/card/agenda/inject-agenda.js",
+	"ScriptName": "little-omega/card/promissory/inject-promissory.js",
 	"Blueprint": "",
 	"Models": [],
 	"Collision": [],
@@ -60,7 +60,7 @@
 	"Indices": [ 0 ],
 	"CardNames":
 	{
-		"0": "Little Omega Loader - Agendas"
+		"0": "Little Omega Loader - Promissory Notes"
 	},
 	"CardMetadata":
 	{
