@@ -2,7 +2,7 @@
 	"Type": "Multistate Object",
 	"GUID": "C87C1C3A40818B9AF0AC4AB0DC1B7A51",
 	"Name": "Lost Star Charts of Ixth - Rules",
-	"Metadata": "",
+	"Metadata": "pdf.rulebook:homebrew.ixth_lost_star_charts/0",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
