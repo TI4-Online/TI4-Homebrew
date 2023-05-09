@@ -46,13 +46,54 @@ const localeStrings = {
  * The basic tiles of the game use the printed number.
  * the GUID can be found in the metadata of the created assets (via ttpg editor).
  */
-var nsidToTemplateId = {
+const lloydTerraformingDeckGuid = "F0BD707740DF3A205984B3A585F5C185";
+const lloydTokens = {
+    "token.attachment:homebrew.ixth_lost_star_charts/cultural_boom":
+        "E0C728D640471316384D3392EEEC17B0",
+    "token.attachment:homebrew.ixth_lost_star_charts/established_trade_route":
+        "ED12EBF14E6A95F9BCDC22BADE81F6D1",
+    "token.attachment:homebrew.ixth_lost_star_charts/galatic_financial_center":
+        "0A042A6E46E8C8010DAC72B304890B61",
+    "token.attachment:homebrew.ixth_lost_star_charts/geothermal_equilibirum":
+        "4680B47E49F02C8A3CCD318F395A230A",
+    "token.attachment:homebrew.ixth_lost_star_charts/industrial_boom":
+        "083BB63B485DABF6A8345D967F7CA3DD",
+    "token.attachment:homebrew.ixth_lost_star_charts/interplanetary_hub":
+        "A7E35EAA414203346D515EAB423704E3",
+    "token.attachment:homebrew.ixth_lost_star_charts/orbital_slingshot":
+        "A14476FD492B395C0A12A09E45D5B94A",
+    "token.attachment:homebrew.ixth_lost_star_charts/planetary_archologies":
+        "BB273BE846D50F7285F1F6A8F45E949F",
+    "token.attachment:homebrew.ixth_lost_star_charts/population_growth":
+        "A64EE79F40D722314552669A5BBDFD95",
+    "token.attachment:homebrew.ixth_lost_star_charts/self-defense_initiative":
+        "FD832139487457AC8AAC2A9E9DA1DBA5",
+    "token.attachment:homebrew.ixth_lost_star_charts/terraforming_milestone":
+        "32DBB1A4422E5BA38C28A79C783BE3EB",
+}
+
+const jarrahTokenGuid = "80688203469E96E074957488799C227B";
+const jarrahTokens = {
+    "token.commodity:homebrew.ixth_lost_star_charts/lengendary_planet_jarrah":
+        jarrahTokenGuid,
+}
+
+const kwonTokenGuid = "2D822E6C49C394F11E9815AF1F4A7E5E";
+const kwonTokens = {
+    "token.commodity:homebrew.ixth_lost_star_charts/lengendary_planet_kwon":
+        kwonTokenGuid,
+}
+
+
+const nsidToTemplateId = Object.assign({
     "card.planet:homebrew.ixth_lost_star_charts/0":
         "803F329D455EA6E1323C1982528C7F84",
     "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_planets":
         "E1DAC6584B3710A9F5A1859D01F71C62",
     "card.terraforming_initiative:homebrew.ixth_lost_star_charts/0":
-        "F0BD707740DF3A205984B3A585F5C185",
+        lloydTerraformingDeckGuid,
+    "card.exploration.frontier:homebrew.ixth_lost_star_charts/star_map_relic_fragment_frontier":
+        "", // FIXME: add template ID
     "card.exploration.cultural:homebrew.ixth_lost_star_charts/star_map_relic_fragment_cultural":
         "6C9D4F134FD83323FE4397A5E656634C",
     "card.exploration.hazardous:homebrew.ixth_lost_star_charts/star_map_relic_fragment_hazardous":
@@ -91,33 +132,7 @@ var nsidToTemplateId = {
         "144B7A254C13368D06CE4DAD3DD99919",
     "tile.system:homebrew.ixth_lost_star_charts/3416":
         "41E4B1AC45F2CA2842856781D69AABA3",
-    "token.attachment:homebrew.ixth_lost_star_charts/cultural_boom":
-        "E0C728D640471316384D3392EEEC17B0",
-    "token.attachment:homebrew.ixth_lost_star_charts/established_trade_route": 
-        "ED12EBF14E6A95F9BCDC22BADE81F6D1",
-    "token.attachment:homebrew.ixth_lost_star_charts/galatic_financial_center":
-        "0A042A6E46E8C8010DAC72B304890B61",
-    "token.attachment:homebrew.ixth_lost_star_charts/geothermal_equilibirum":
-        "4680B47E49F02C8A3CCD318F395A230A",
-    "token.attachment:homebrew.ixth_lost_star_charts/industrial_boom":
-        "083BB63B485DABF6A8345D967F7CA3DD",
-    "token.attachment:homebrew.ixth_lost_star_charts/interplanetary_hub":
-        "A7E35EAA414203346D515EAB423704E3",
-    "token.attachment:homebrew.ixth_lost_star_charts/orbital_slingshot":
-        "A14476FD492B395C0A12A09E45D5B94A",
-    "token.attachment:homebrew.ixth_lost_star_charts/planetary_archologies":
-        "BB273BE846D50F7285F1F6A8F45E949F",
-    "token.attachment:homebrew.ixth_lost_star_charts/population_growth":
-        "A64EE79F40D722314552669A5BBDFD95",
-    "token.attachment:homebrew.ixth_lost_star_charts/self-defense_initiative":
-        "FD832139487457AC8AAC2A9E9DA1DBA5",
-    "token.attachment:homebrew.ixth_lost_star_charts/terraforming_milestone":
-        "32DBB1A4422E5BA38C28A79C783BE3EB",
-    "token.commodity:homebrew.ixth_lost_star_charts/lengendary_planet_jarrah":
-        "80688203469E96E074957488799C227B",
-    "token.commodity:homebrew.ixth_lost_star_charts/lengendary_planet_kwon":
-        "2D822E6C49C394F11E9815AF1F4A7E5E",
-};
+}, lloydTokens, jarrahTokens, kwonTokens);
 
 // System IDs are set in the 4k range and are using their printed ID: i.e. Alpert (14F) is 4014
 const systems = [
@@ -507,8 +522,8 @@ const unitModifiers = [
     },
 ];
 
-// TODO: BIOCRYSTAL MELANGE
-// TODO: INTERSTELLAR GATE
+// TODO: BIOCRYSTAL MELANGE commodity adjustment
+// TODO: INTERSTELLAR GATE commodity adjustment
 
 try {
     world.TI4.homebrew.inject({
@@ -516,6 +531,11 @@ try {
         localeStrings,
         nsidToTemplateId,
         systems,
+        replace: {
+            "card.exploration.frontier:pok/unknown_relic_fragment.1": "card.exploration.frontier:homebrew.ixth_lost_star_charts/star_map_relic_fragment_frontier.0",
+            "card.exploration.frontier:pok/unknown_relic_fragment.2": "card.exploration.frontier:homebrew.ixth_lost_star_charts/star_map_relic_fragment_frontier.1",
+            "card.exploration.frontier:pok/unknown_relic_fragment.3": "card.exploration.frontier:homebrew.ixth_lost_star_charts/star_map_relic_fragment_frontier.2"
+        },
         //unitModifiers,
     });
 
@@ -529,27 +549,21 @@ const above = 5;
 
 const spawnContent = (templateId, offset) => {
     const rot = refObject.getRotation();
-
-    const spawnPosition =
-        refObject.localPositionToWorld(offset);
+    const spawnPosition = refObject.localPositionToWorld(offset);
     const spawnedObject = world.createObjectFromTemplate(templateId, spawnPosition);
     spawnedObject.setRotation(rot);
 
     return spawnedObject;
 }
 
-const spawnTokenContainer = () => {
-    const container = spawnContent("C134C94B496A8D48C79534A5BDBC8A3D", [8.4, 2.2, above]);
-    container.setName("Ixth Tokens");
-    container.setType(3); // Queue order on withdraw
-    container.setScale([0.5, 0.5, 0.5]);
+const spawnLloydComponents = () => {
+    spawnContent(lloydTerraformingDeckGuid, [8.5, 2, above]);
+    let offset = 0.5;
 
-    for (const [nsid, templateId] of Object.entries(nsidToTemplateId)) {
-        if (nsid.startsWith("token.")) {
-            const token = spawnContent(templateId, container.getPosition().add([0, 0, above]));
-            container.addObjects([token]);
-        }
-    };
+    for (const [nsid, templateId] of Object.entries(lloydTokens)) {
+        spawnContent(templateId, container.getPosition().add([8.5, 2, above + offset]));
+        offset += 0.5;
+    }
 }
 
 let canvas = new Canvas();
@@ -560,22 +574,28 @@ let text = new Text()
 canvas.addChild(text, 0, 0, 150, 30);
 
 let spawnTerraformingDeckButton = new Button()
-    .setText("Spawn Terraforming Deck")
+    .setText("Spawn Lloyd Components")
     .setFontSize(8);
-spawnTerraformingDeckButton.onClicked.add(spawnContent.bind(this, "F0BD707740DF3A205984B3A585F5C185", [8.5, 8, above]));
+spawnTerraformingDeckButton.onClicked.add(spawnLloydComponents);
 canvas.addChild(spawnTerraformingDeckButton, 0, 32, 150, 30);
 
 let spawnTokenContainerButton = new Button()
-    .setText("Spawn Tokens")
+    .setText("Spawn Jarrah Components")
     .setFontSize(8);
-spawnTokenContainerButton.onClicked.add(spawnTokenContainer);
+spawnTokenContainerButton.onClicked.add(spawnContent.bind(this, jarrahTokenGuid, [8.5, 4, above]));
 canvas.addChild(spawnTokenContainerButton, 0, 64, 150, 30);
+
+let spawnTokenContainerButton = new Button()
+    .setText("Spawn Kwon Components")
+    .setFontSize(8);
+spawnTokenContainerButton.onClicked.add(spawnContent.bind(this, kwonTokenGuid, [8.5, 6, above]));
+canvas.addChild(spawnTokenContainerButton, 0, 96, 150, 30);
 
 let ui = new UIElement();
 ui.position = new Vector(-19, 0, 0);
 ui.widget = new Border().setChild(canvas);
 ui.width = 152;
-ui.height = 96;
+ui.height = 128;
 ui.useWidgetSize = false;
 refObject.addUI(ui);
 
