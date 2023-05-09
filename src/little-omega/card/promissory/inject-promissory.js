@@ -1,4 +1,5 @@
 const { world } = require("@tabletop-playground/api");
+world.__littleOmegaPromissoryLoaded = false;
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:
@@ -19,6 +20,7 @@ world.TI4.homebrew.inject({
     }
 });
 
-if (!world.__littleOmegaLoadingFull) {
+if (!world.__littleOmegaFull && !world.__littleOmegaPromissoryLoaded) {
     world.TI4.homebrew.resetGenericPromissoryNotes();
+    world.__littleOmegaPromissoryLoaded = true;
 }

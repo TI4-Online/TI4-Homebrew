@@ -1,4 +1,5 @@
 const { world } = require("@tabletop-playground/api");
+world.__littleOmegaObjectiveLoaded = false;
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:
@@ -53,6 +54,7 @@ world.TI4.homebrew.inject({
     }
 });
 
-if (!world.__littleOmegaLoadingFull) {
+if (!world.__littleOmegaFull && !world.__littleOmegaObjectiveLoaded) {
     world.TI4.homebrew.resetOnTableDecks();
+    world.__littleOmegaObjectiveLoaded = true;
 }
