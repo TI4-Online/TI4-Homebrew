@@ -43,8 +43,8 @@
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
-	"NumHorizontal": 5,
-	"NumVertical": 8,
+	"NumHorizontal": 3,
+	"NumVertical": 3,
 	"Width": 4.2,
 	"Height": 6.3,
 	"Thickness": 0.05,
@@ -57,28 +57,30 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7 ],
+	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ],
 	"CardNames":
 	{
             "0": "Political Secret (Blue)",
             "1": "Political Secret (Brown)",
-            "2": "Political Secret (Red)",
-            "3": "Political Secret (White)",
-            "4": "Political Secret (Yellow)",
-            "5": "Political Secret (Green)",
-            "6": "Political Secret (Purple)",
-            "7": "Political Secret (Orange)"
+            "2": "Political Secret (Green)",
+            "3": "Political Secret (Orange)",
+            "4": "Political Secret (Pink)",
+            "5": "Political Secret (Purple)",
+            "6": "Political Secret (Red)",
+            "7": "Political Secret (White)",
+            "8": "Political Secret (Yellow)"
 	},
 	"CardMetadata":
 	{
             "0": "card.promissory.blue:homebrew.little-omega/political_secret",
             "1": "card.promissory.brown:homebrew.little-omega/political_secret",
-            "2": "card.promissory.red:homebrew.little-omega/political_secret",
-            "3": "card.promissory.white:homebrew.little-omega/political_secret",
-            "4": "card.promissory.yellow:homebrew.little-omega/political_secret",
-            "5": "card.promissory.green:homebrew.little-omega/political_secret",
-            "6": "card.promissory.purple:homebrew.little-omega/political_secret",
-            "7": "card.promissory.orange:homebrew.little-omega/political_secret"
+            "2": "card.promissory.green:homebrew.little-omega/political_secret",
+            "3": "card.promissory.orange:homebrew.little-omega/political_secret",
+            "4": "card.promissory.pink:homebrew.little-omega/political_secret",
+            "5": "card.promissory.purple:homebrew.little-omega/political_secret",
+            "6": "card.promissory.red:homebrew.little-omega/political_secret",
+            "7": "card.promissory.white:homebrew.little-omega/political_secret",
+            "7": "card.promissory.yellow:homebrew.little-omega/political_secret"
 	},
 	"CardTags":
 	{

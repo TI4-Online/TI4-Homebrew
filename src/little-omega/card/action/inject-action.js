@@ -1,5 +1,6 @@
 const { world } = require("@tabletop-playground/api");
 const UNIT_MODIFIERS = require("./unit-modifiers.data");
+world.__littleOmegaActionLoaded = false;
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:
@@ -44,4 +45,7 @@ world.TI4.homebrew.inject({
     unitModifiers: UNIT_MODIFIERS
 });
 
-world.TI4.homebrew.resetOnTableDecks()
+if (!world.__littleOmegaFull && !world.__littleOmegaActionLoaded) {
+    world.TI4.homebrew.resetOnTableDecks();
+    world.__littleOmegaActionLoaded = true;
+}
