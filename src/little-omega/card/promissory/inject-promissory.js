@@ -3,7 +3,7 @@ const { world } = require("@tabletop-playground/api");
 world.TI4.homebrew.inject({
     nsidToTemplateId:
     {
-        "card.promissory:homebrew.little-omega/0": "C05DEF4081B74A398233864299D67947"
+        "card.promissory:homebrew.little-omega/0": "FDF93E9FC74746DC82EBA6DD87DA1BEB"
     },
     replace:
     {
@@ -14,8 +14,9 @@ world.TI4.homebrew.inject({
         "card.promissory.yellow:base/political_secret": "card.promissory.yellow:homebrew.little-omega/political_secret",
         "card.promissory.green:base/political_secret": "card.promissory.green:homebrew.little-omega/political_secret",
         "card.promissory.purple:base/political_secret": "card.promissory.purple:homebrew.little-omega/political_secret",
-        "card.promissory.orange:base/political_secret": "card.promissory.orange:homebrew.little-omega/political_secret"
+        "card.promissory.orange:base/political_secret": "card.promissory.orange:homebrew.little-omega/political_secret",
+        "card.promissory.pink:base/political_secret": "card.promissory.pink:homebrew.little-omega/political_secret"
     }
 });
 
-world.TI4.homebrew.resetOnTableDecks()
+world.TI4.homebrew.resetGenericPromissoryNotes();
