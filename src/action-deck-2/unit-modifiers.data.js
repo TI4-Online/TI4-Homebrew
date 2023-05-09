@@ -1,4 +1,5 @@
-module.exports = [{
+module.exports = [
+    {
         // Close Quarters
         // At the start of a combat:
         // Apply +3 to the result of each unit's combat rolls during this combat.
