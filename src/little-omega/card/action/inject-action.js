@@ -44,4 +44,6 @@ world.TI4.homebrew.inject({
     unitModifiers: UNIT_MODIFIERS
 });
 
-world.TI4.homebrew.resetOnTableDecks()
+if (!world.__littleOmegaLoadingFull) {
+    world.TI4.homebrew.resetOnTableDecks();
+}

@@ -53,4 +53,6 @@ world.TI4.homebrew.inject({
     }
 });
 
-world.TI4.homebrew.resetOnTableDecks()
+if (!world.__littleOmegaLoadingFull) {
+    world.TI4.homebrew.resetOnTableDecks();
+}

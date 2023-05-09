@@ -19,4 +19,6 @@ world.TI4.homebrew.inject({
     }
 });
 
-world.TI4.homebrew.resetGenericPromissoryNotes();
+if (!world.__littleOmegaLoadingFull) {
+    world.TI4.homebrew.resetGenericPromissoryNotes();
+}
