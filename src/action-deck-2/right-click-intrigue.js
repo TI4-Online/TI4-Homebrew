@@ -6,7 +6,7 @@ const AGENDA_COUNT = "2";
  *    After an agenda is revealed:
  *    Look at the bottom 2 cards of the agenda deck. Place each card on the top or bottom of the deck in any order. Then, if you did not place either card on top of the deck, draw 1 action card.
  */
-class HackElection extends world.TI4.AbstractRightClickCard {
+class IntrigueRightClickCard extends world.TI4.AbstractRightClickCard {
     
     constructor() {
         super();
@@ -34,4 +34,4 @@ class HackElection extends world.TI4.AbstractRightClickCard {
     }
 }
 
-new HackElection();
+new IntrigueRightClickCard();
