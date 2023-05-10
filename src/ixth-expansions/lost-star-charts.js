@@ -5,7 +5,7 @@ const localeStrings = {
         "Cultural Boom",
     "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/established_trade_routes":
         "Established Trade Routes",
-    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/galatic_financial_center"
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/galatic_financial_center":
         "Galatic Financial Center",
     "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/geothermal_equilibrium":
         "Geothermal Equilibrium",
@@ -13,7 +13,7 @@ const localeStrings = {
         "Industrial Boom",
     "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/interplanetary_hub":
         "Interplanetary Hub",
-    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/orbital_slingshot"
+    "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/orbital_slingshot":
         "Orbital Slingshot",
     "attachment:homebrew.ixth_lost_star_charts.terraforming_initiative/planetary_archologies":
         "Planetary Archologies",
@@ -35,6 +35,7 @@ const localeStrings = {
     "planet.locke": "Locke",
     "planet.benthham": "Bentham",
     "planet.windmore": "Windmore",
+    "unit_modifier.name.self-defense_initiative": "Self-Defense Initiative",
 };
 
 /* nsidToTemplateId mapping
@@ -46,54 +47,11 @@ const localeStrings = {
  * The basic tiles of the game use the printed number.
  * the GUID can be found in the metadata of the created assets (via ttpg editor).
  */
-var nsidToTemplateId = {
-    "card.planet:homebrew.ixth_lost_star_charts/0":
-        "803F329D455EA6E1323C1982528C7F84",
-    "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_planets":
-        "E1DAC6584B3710A9F5A1859D01F71C62",
-    "card.terraforming_initiative:homebrew.ixth_lost_star_charts/0":
-        "F0BD707740DF3A205984B3A585F5C185",
-    "card.exploration.cultural:homebrew.ixth_lost_star_charts/star_map_relic_fragment_cultural":
-        "6C9D4F134FD83323FE4397A5E656634C",
-    "card.exploration.hazardous:homebrew.ixth_lost_star_charts/star_map_relic_fragment_hazardous":
-        "6DA8FD774AE357B4A584AB93C153C8BD",
-    "card.exploration.industrial:homebrew.ixth_lost_star_charts/star_map_relic_fragment_industrial":
-        "A1F7F46D4C79E98A9BEF0EABAC518775",
-    "tile.system:homebrew.ixth_lost_star_charts/3401":
-        "3B52D8FF421EA0EAC360BF869BF7CF1A",
-    "tile.system:homebrew.ixth_lost_star_charts/3402":
-        "D44278004E670F3FC3754D8D2672AF70",
-    "tile.system:homebrew.ixth_lost_star_charts/3403":
-        "9AEEFC164607C0E364D6D8AEF91C27C3",
-    "tile.system:homebrew.ixth_lost_star_charts/3404":
-        "3B0A53874A9EA9EB6F53C2A85473E0CF",
-    "tile.system:homebrew.ixth_lost_star_charts/3405":
-        "4AD117854EBE81D68C386181A99117E8",
-    "tile.system:homebrew.ixth_lost_star_charts/3406":
-        "B2A8001940ACD35AB41FF39059601523",
-    "tile.system:homebrew.ixth_lost_star_charts/3407":
-        "BB83F92A4A1EB7F1B51F1886158349B2",
-    "tile.system:homebrew.ixth_lost_star_charts/3408":
-        "67778D3446F43491BC2D23A2B5FAF837",
-    "tile.system:homebrew.ixth_lost_star_charts/3409":
-        "6EE65E904EEEE4C005F5888745C74E6A",
-    "tile.system:homebrew.ixth_lost_star_charts/3410":
-        "C86FB6634351D7583B6D4E9AABD87A44",
-    "tile.system:homebrew.ixth_lost_star_charts/3411":
-        "1742E67D455737D08C9629B1EB01DC9F",
-    "tile.system:homebrew.ixth_lost_star_charts/3412":
-        "B006FD0B4C111E5D94FB1AA071D0373F",
-    "tile.system:homebrew.ixth_lost_star_charts/3413":
-        "5250432C4925720D12402BA47067102C",
-    "tile.system:homebrew.ixth_lost_star_charts/3414":
-        "F72EA28546E2426B9BCF449F1C173698",
-    "tile.system:homebrew.ixth_lost_star_charts/3415":
-        "144B7A254C13368D06CE4DAD3DD99919",
-    "tile.system:homebrew.ixth_lost_star_charts/3416":
-        "41E4B1AC45F2CA2842856781D69AABA3",
+const lloydTerraformingDeckGuid = "F0BD707740DF3A205984B3A585F5C185";
+const lloydTokens = {
     "token.attachment:homebrew.ixth_lost_star_charts/cultural_boom":
         "E0C728D640471316384D3392EEEC17B0",
-    "token.attachment:homebrew.ixth_lost_star_charts/established_trade_route": 
+    "token.attachment:homebrew.ixth_lost_star_charts/established_trade_route":
         "ED12EBF14E6A95F9BCDC22BADE81F6D1",
     "token.attachment:homebrew.ixth_lost_star_charts/galatic_financial_center":
         "0A042A6E46E8C8010DAC72B304890B61",
@@ -113,11 +71,69 @@ var nsidToTemplateId = {
         "FD832139487457AC8AAC2A9E9DA1DBA5",
     "token.attachment:homebrew.ixth_lost_star_charts/terraforming_milestone":
         "32DBB1A4422E5BA38C28A79C783BE3EB",
+}
+
+const jarrahTokenGuid = "80688203469E96E074957488799C227B";
+const jarrahTokens = {
     "token.commodity:homebrew.ixth_lost_star_charts/lengendary_planet_jarrah":
-        "80688203469E96E074957488799C227B",
+        jarrahTokenGuid,
+}
+
+const kwonTokenGuid = "2D822E6C49C394F11E9815AF1F4A7E5E";
+const kwonTokens = {
     "token.commodity:homebrew.ixth_lost_star_charts/lengendary_planet_kwon":
-        "2D822E6C49C394F11E9815AF1F4A7E5E",
-};
+        kwonTokenGuid,
+}
+
+
+const nsidToTemplateId = Object.assign({
+    "card.planet:homebrew.ixth_lost_star_charts/0":
+        "803F329D455EA6E1323C1982528C7F84",
+    "card.legendary_planet:homebrew.ixth_lost_star_charts/legendary_planets":
+        "E1DAC6584B3710A9F5A1859D01F71C62",
+    "card.terraforming_initiative:homebrew.ixth_lost_star_charts/0":
+        lloydTerraformingDeckGuid,
+    "card.exploration.frontier:homebrew.ixth_lost_star_charts/star_map_relic_fragment_frontier":
+        "1EEE699B4A17781783B7EAA9AD0E8DDE",
+    "card.exploration.cultural:homebrew.ixth_lost_star_charts/star_map_relic_fragment_cultural":
+        "6C9D4F134FD83323FE4397A5E656634C",
+    "card.exploration.hazardous:homebrew.ixth_lost_star_charts/star_map_relic_fragment_hazardous":
+        "6DA8FD774AE357B4A584AB93C153C8BD",
+    "card.exploration.industrial:homebrew.ixth_lost_star_charts/star_map_relic_fragment_industrial":
+        "A1F7F46D4C79E98A9BEF0EABAC518775",
+    "tile.system:homebrew.ixth_lost_star_charts/4001":
+        "3B52D8FF421EA0EAC360BF869BF7CF1A",
+    "tile.system:homebrew.ixth_lost_star_charts/4002":
+        "D44278004E670F3FC3754D8D2672AF70",
+    "tile.system:homebrew.ixth_lost_star_charts/4003":
+        "9AEEFC164607C0E364D6D8AEF91C27C3",
+    "tile.system:homebrew.ixth_lost_star_charts/4004":
+        "3B0A53874A9EA9EB6F53C2A85473E0CF",
+    "tile.system:homebrew.ixth_lost_star_charts/4005":
+        "4AD117854EBE81D68C386181A99117E8",
+    "tile.system:homebrew.ixth_lost_star_charts/4006":
+        "B2A8001940ACD35AB41FF39059601523",
+    "tile.system:homebrew.ixth_lost_star_charts/4007":
+        "BB83F92A4A1EB7F1B51F1886158349B2",
+    "tile.system:homebrew.ixth_lost_star_charts/4008":
+        "67778D3446F43491BC2D23A2B5FAF837",
+    "tile.system:homebrew.ixth_lost_star_charts/4009":
+        "6EE65E904EEEE4C005F5888745C74E6A",
+    "tile.system:homebrew.ixth_lost_star_charts/4010":
+        "C86FB6634351D7583B6D4E9AABD87A44",
+    "tile.system:homebrew.ixth_lost_star_charts/4011":
+        "1742E67D455737D08C9629B1EB01DC9F",
+    "tile.system:homebrew.ixth_lost_star_charts/4012":
+        "B006FD0B4C111E5D94FB1AA071D0373F",
+    "tile.system:homebrew.ixth_lost_star_charts/4013":
+        "5250432C4925720D12402BA47067102C",
+    "tile.system:homebrew.ixth_lost_star_charts/4014":
+        "F72EA28546E2426B9BCF449F1C173698",
+    "tile.system:homebrew.ixth_lost_star_charts/4015":
+        "144B7A254C13368D06CE4DAD3DD99919",
+    "tile.system:homebrew.ixth_lost_star_charts/4016":
+        "41E4B1AC45F2CA2842856781D69AABA3",
+}, lloydTokens, jarrahTokens, kwonTokens);
 
 // System IDs are set in the 4k range and are using their printed ID: i.e. Alpert (14F) is 4014
 const systems = [
@@ -478,6 +494,21 @@ const attachments = [
     },
 ];
 
+function getSelfDefenseInitiativeTokenHex() {
+    const selfDefenseTokens = world
+      .getAllObjects()
+      .filter((obj) => {
+        const nsid = world.TI4.ObjectNamespace.getNsid(obj);
+        return nsid === "token.attachment:homebrew.ixth_lost_star_charts/self-defense_initiative";
+      });
+
+      if (selfDefenseTokens.length !== 1) {
+        throw new Error("Only one self-defense Token should be present");
+      }
+
+      return world.TI4.Hex.fromPosition(selfDefenseTokens[0].getPosition());
+  }
+
 const unitModifiers = [
     {
         // "SPACE CANNON 6(x2)",
@@ -486,17 +517,19 @@ const unitModifiers = [
         localeDescription: "unit_modifier.desc.self-defense_initiative",
         owner: "self",
         priority: "mutate",
-        triggerNsid: "<>", // FIXME
+        triggerNsid: "card.terraforming_initiative:homebrew.ixth_lost_star_charts/self-defense_initiative",
         filter: (auxData) => {
             if (auxData.rollType !== "spaceCannon") {
                 return false;
             }
-            // Only applies to system with attached self-defense initiative.
-            return auxData.activeSystem && false //FIXME: check for token;
+
+
+            // Only applies to lloyd system with attached self-defense initiative and for its owner
+            return auxData.activeSystem && auxData.activeSystem.tile === 4011;
         },
         applyAll: (unitAttrsSet, auxData) => {
             unitAttrsSet.addSpecialUnit(
-                new UnitAttrs({
+                new world.TI4.UnitAttrs({
                     unit: "self-defense_initiative",
                     localeName: "unit_modifier.name.self-defense_initiative",
                     spaceCannon: { hit: 6, dice: 2 },
@@ -507,8 +540,8 @@ const unitModifiers = [
     },
 ];
 
-// TODO: BIOCRYSTAL MELANGE
-// TODO: INTERSTELLAR GATE
+// TODO: BIOCRYSTAL MELANGE commodity adjustment
+// TODO: INTERSTELLAR GATE commodity adjustment
 
 try {
     world.TI4.homebrew.inject({
@@ -516,39 +549,46 @@ try {
         localeStrings,
         nsidToTemplateId,
         systems,
-        //unitModifiers,
+        remove: [
+            "card.exploration.frontier:pok/unknown_relic_fragment.1",
+            "card.exploration.frontier:pok/unknown_relic_fragment.2",
+            "card.exploration.frontier:pok/unknown_relic_fragment.3"
+        ],
+        unitModifiers,
     });
 
     world.TI4.homebrew.resetOnTableDecks();
     world.TI4.homebrew.resetSystemTilesBox();
+
+    console.log("HOMEBREW ADDING LOST STAR CHARTS");
 } catch (error) {
     console.error(error);
+}
+
+if (world.TI4.ObjectNamespace.getNsid(refObject) !== "pdf.rulebook:homebrew.ixth_lost_star_charts/0") {
+    // other lost star chart item made a require and refObject is not the rules pdf
+    return;
 }
 
 const above = 5;
 
 const spawnContent = (templateId, offset) => {
     const rot = refObject.getRotation();
-
-    const spawnPosition =
-        refObject.localPositionToWorld(offset);
+    const spawnPosition = refObject.localPositionToWorld(offset);
     const spawnedObject = world.createObjectFromTemplate(templateId, spawnPosition);
     spawnedObject.setRotation(rot);
 
     return spawnedObject;
 }
 
-const spawnTokenContainer = () => {
-    const container = spawnContent("C134C94B496A8D48C79534A5BDBC8A3D", [8.4, 2.2, above]);
-    container.setType(3); // Queue order on withdraw
-    container.setScale([0.5, 0.5, 0.5]);
+const spawnLloydComponents = () => {
+    spawnContent(lloydTerraformingDeckGuid, [8.5, 2, above]);
+    let offset = 0.5;
 
-    for (const [nsid, templateId] of Object.entries(nsidToTemplateId)) {
-        if (nsid.startsWith("token.")) {
-            const token = spawnContent(templateId, containerPos.add([0, 0, above]));
-            container.addObjects([token]);
-        }
-    };
+    for (const [nsid, templateId] of Object.entries(lloydTokens)) {
+        spawnContent(templateId, [8.5, 2, above + offset]);
+        offset += 0.5;
+    }
 }
 
 let canvas = new Canvas();
@@ -558,24 +598,28 @@ let text = new Text()
 .setText("Exploration cards and tiles are already added.");
 canvas.addChild(text, 0, 0, 150, 30);
 
-let spawnTerraformingDeckButton = new Button()
-    .setText("Spawn Terraforming Deck")
+let spawnLloydButton = new Button()
+    .setText("Spawn Lloyd Components")
     .setFontSize(8);
-spawnTerraformingDeckButton.onClicked.add(spawnContent.bind(this, "F0BD707740DF3A205984B3A585F5C185", [8.5, 8, above]));
-canvas.addChild(spawnTerraformingDeckButton, 0, 32, 150, 30);
+spawnLloydButton.onClicked.add(spawnLloydComponents);
+canvas.addChild(spawnLloydButton, 0, 32, 150, 30);
 
-let spawnTokenContainerButton = new Button()
-    .setText("Spawn Tokens")
+let spawnJarrahButton = new Button()
+    .setText("Spawn Jarrah Components")
     .setFontSize(8);
-spawnTokenContainerButton.onClicked.add(spawnTokenContainer);
-canvas.addChild(spawnTokenContainerButton, 0, 64, 150, 30);
+spawnJarrahButton.onClicked.add(spawnContent.bind(this, jarrahTokenGuid, [8.5, 6, above]));
+canvas.addChild(spawnJarrahButton, 0, 64, 150, 30);
+
+let spawnKwonButton = new Button()
+    .setText("Spawn Kwon Components")
+    .setFontSize(8);
+    spawnKwonButton.onClicked.add(spawnContent.bind(this, kwonTokenGuid, [8.5, 9, above]));
+canvas.addChild(spawnKwonButton, 0, 96, 150, 30);
 
 let ui = new UIElement();
-ui.position = new Vector(-19, 0, 0);
+ui.position = new Vector(-20.5, 0, 0);
 ui.widget = new Border().setChild(canvas);
 ui.width = 152;
-ui.height = 96;
+ui.height = 128;
 ui.useWidgetSize = false;
 refObject.addUI(ui);
-
-console.log("HOMEBREW ADDING LOST STAR CHARTS");

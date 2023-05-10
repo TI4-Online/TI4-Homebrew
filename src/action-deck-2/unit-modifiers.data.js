@@ -139,27 +139,5 @@ module.exports = [
                 unitAttrs.raw.bombardment.hit -= 1;
             }
         }
-    },
-    {
-        // Shock Troops
-        // At the start of the first round of a ground combat:
-        // During this combat round, each result of 9 or 10 on your unit's combat rolls, before applying modifiers, produces 1 additional hit.
-        isCombat: true,
-        localeName: "unit_modifier.name.shock_troops",
-        localeDescription: "unit_modifier.desc.shock_troops",
-        owner: "self",
-        priority: "adjust.late", // needs to happen after Matriarch
-        triggerNsid: "card.action:homebrew.action_deck_2/shock_troops",
-        filter: (auxData) => {
-            return auxData.rollType === "groundCombat";
-        },
-        applyEach: (unitAttrs, auxData) => {
-            if (unitAttrs.raw.groundCombat) {
-                unitAttrs.raw.groundCombat.extraHitsOn = {
-                    count: 1,
-                    value: 9
-                };
-            }
-        }
     }
 ]
