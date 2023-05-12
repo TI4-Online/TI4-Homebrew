@@ -1,4 +1,5 @@
 const { world } = require("@tabletop-playground/api");
+require("./right-click-intrigue");
 const UNIT_MODIFIERS = require("./unit-modifiers.data");
 const LOCALE_STRINGS = require("./locale-strings.data");
 
