@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/kortali.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/kortali.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/kortali.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/kortali.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

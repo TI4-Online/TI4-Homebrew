@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/ltokkkhrask.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/ltokkkhrask.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/ltokkkhrask.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/ltokkkhrask.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

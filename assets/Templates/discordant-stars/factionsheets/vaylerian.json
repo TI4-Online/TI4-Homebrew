@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/vaylerian.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/vaylerian.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/vaylerian.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/vaylerian.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

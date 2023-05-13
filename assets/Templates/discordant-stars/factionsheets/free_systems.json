@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/free_systems.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/free_systems.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/free_systems.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/free_systems.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

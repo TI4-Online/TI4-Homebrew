@@ -139,8 +139,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/rohdhna.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/rohdhna.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/rohdhna.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/rohdhna.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

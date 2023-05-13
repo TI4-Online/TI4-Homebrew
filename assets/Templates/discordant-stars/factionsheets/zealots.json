@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/zealots.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/zealots.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/zealots.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/zealots.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

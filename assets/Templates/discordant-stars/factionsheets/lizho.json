@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/lizho.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/lizho.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/lizho.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/lizho.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

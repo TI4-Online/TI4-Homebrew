@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/zelian.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/zelian.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/zelian.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/zelian.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,
