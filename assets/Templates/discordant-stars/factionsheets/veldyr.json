@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/veldyr.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/veldyr.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/veldyr.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/veldyr.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/celdauri.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/celdauri.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/celdauri.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/celdauri.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/ghemina.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/ghemina.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/ghemina.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/ghemina.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

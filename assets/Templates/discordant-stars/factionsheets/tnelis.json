@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/tnelis.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/tnelis.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/tnelis.backs.jpg",
+	"BackTexture": "discordant-stars/factionsheets/tnelis.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

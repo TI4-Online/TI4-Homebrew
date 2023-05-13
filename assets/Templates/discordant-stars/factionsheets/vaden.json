@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/vaden.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/vaden.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/vaden.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/vaden.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

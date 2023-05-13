@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/dihmohn.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/dihmohn.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/dihmohn.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/dihmohn.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

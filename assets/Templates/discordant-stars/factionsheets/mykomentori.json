@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "discordant-stars/factionsheets/mykomentori.face.jpg",
-	"BackTexture": "discordant-stars/factionsheets/mykomentori.back.jpg",
+	"FrontTexture": "discordant-stars/factionsheets/mykomentori.back.jpg",
+	"BackTexture": "discordant-stars/factionsheets/mykomentori.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,
