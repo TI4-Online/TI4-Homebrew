@@ -5,6 +5,7 @@
 world.TI4.homebrew.inject({
     nsidToTemplateId:
     {
+        //"card.alliance:homebrew.discordant_stars/0": "479D41C548DC29E009B3EA801306205F",
         "card.faction_reference:homebrew.discordant_stars/0": "4F22FB07F07E6459B4FCE6D78FC1CBC7",
         "card.leader:homebrew.discordant_stars/0": "8936B49627881B8C765E675D2250AB61",
         "card.leader:homebrew.discordant_stars/1": "E34668B87CBFACBD71B7A0780F47C9CE",
