@@ -57,7 +57,7 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0, 1, 2, 3, 4 ],
+	"Indices": [ 0, 1, 2, 3, 4, 5 ],
 	"CardNames":
 	{
 	},
@@ -67,7 +67,8 @@
 		"1": "card.lizho:homebrew.discordant_stars/account_siphon",
 		"2": "card.lizho:homebrew.discordant_stars/minefields",
 		"3": "card.lizho:homebrew.discordant_stars/gravitic_inhibitor",
-		"4": "card.lizho:homebrew.discordant_stars/interference_grid"
+		"4": "card.lizho:homebrew.discordant_stars/interference_grid",
+		"5": "card.lizho:homebrew.discordant_stars/saboteurs"
 	},
 	"CardTags":
 	{
