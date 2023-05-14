@@ -1,4 +1,6 @@
 const { world } = require("@tabletop-playground/api");
+const UNIT_MODIFIERS = require("./unit-modifiers.data");
+require("./right-click-nano-forge");
 world.__littleOmegaExplorationLoaded = false;
 
 world.TI4.homebrew.inject({
@@ -12,7 +14,8 @@ world.TI4.homebrew.inject({
                 "card.relic:pok/the_crown_of_emphidia": "card.relic:homebrew.little-omega/the_crown_of_emphidia",
                 "card.relic:codex.affinity/nanoforge": "card.relic:homebrew.little-omega/nanoforge",
                 "card.relic:pok/the_crown_of_thalnos": "card.relic:homebrew.little-omega/the_crown_of_thalnos"
-    }
+    },
+    unitModifiers: UNIT_MODIFIERS
 });
 
 if (!world.__littleOmegaFull && !world.__littleOmegaExplorationLoaded) {
