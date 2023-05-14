@@ -1,0 +1,88 @@
+{
+	"Type": "Card",
+	"GUID": "42F130ABD66A407BA8719DFEA66B6225",
+	"Name": "Little Omega - Cultural Exploration",
+	"Metadata": "card.exploration.cultural:homebrew.little-omega.exploration/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "little-omega/card/exploration/cultural/face.jpg",
+	"BackTexture": "ti4/exploration/cultural.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 3,
+	"NumVertical": 3,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ],
+	"CardNames":
+	{
+                "0": "Demilitarized Zone",
+                "1": "Freelancers (1)",
+                "2": "Freelancers (2)",
+                "3": "Freelancers (3)",
+                "4": "Gamma Wormhole",
+                "5": "Mercenary Outfit (1)",
+                "6": "Mercenary Outfit (2)",
+                "7": "Mercenary Outfit (3)",
+                "8": "Tomb of Emphidia"
+	},
+	"CardMetadata":
+	{
+                "0": "card.exploration.cultural:homebrew.little-omega/demilitarized_zone",
+                "1": "card.exploration.cultural:homebrew.little-omega/freelancers.1",
+                "2": "card.exploration.cultural:homebrew.little-omega/freelancers.2",
+                "3": "card.exploration.cultural:homebrew.little-omega/freelancers.3",
+                "4": "card.exploration.cultural:homebrew.little-omega/gamma_wormhole",
+                "5": "card.exploration.cultural:homebrew.little-omega/mercenary_outfit.1",
+                "6": "card.exploration.cultural:homebrew.little-omega/mercenary_outfit.2",
+                "7": "card.exploration.cultural:homebrew.little-omega/mercenary_outfit.3",
+                "8": "card.exploration.cultural:homebrew.little-omega/tomb_of_emphidia"
+	},
+	"CardTags":
+	{
+	}
+}
