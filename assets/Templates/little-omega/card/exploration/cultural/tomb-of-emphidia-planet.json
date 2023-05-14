@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "7041945996E94C8D89158FB7706FAE5C",
 	"Name": "Tomb of Emphidia legendary planet ability",
-	"Metadata": "card.legendary_planet:homebrew.little-omega/tomb-of-emphidia",
+	"Metadata": "card.legendary_planet:homebrew.little-omega/tomb_of_emphidia",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -59,6 +59,6 @@
 		"0": "Revenant System"
 	},
 	"CardMetadata": {
-		"0": "card.legendary_planet:homebrew.little-omega/tomb-of-emphidia"
+		"0": "card.legendary_planet:homebrew.little-omega/tomb_of_emphidia"
 	}
 }

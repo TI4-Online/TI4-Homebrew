@@ -46,7 +46,7 @@ const ATTACHMENTS = [
             image: "little-omega/card/exploration/cultural/exploration_tomb_small.png",
         },
         extraCardNsids: [
-            "card.legendary_planet:homebrew.little-omega/tomb-of-emphidia"
+            "card.legendary_planet:homebrew.little-omega/tomb_of_emphidia"
         ]
     }
 ];

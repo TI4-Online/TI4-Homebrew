@@ -12,9 +12,9 @@
 	"Metallic": 0,
 	"PrimaryColor":
 	{
-		"R": 128,
-		"G": 128,
-		"B": 128
+		"R": 255,
+		"G": 255,
+		"B": 255
 	},
 	"SecondaryColor":
 	{
@@ -45,6 +45,36 @@
 			"Rotation":
 			{
 				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "little-omega/card/exploration/cultural/exploration_tomb.jpg",
+			"NormalMap": "",
+			"ExtraMap": "",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": true,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
+		},
+        		{
+			"Model": "tokens/round-msh.obj",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 1,
+				"Y": 1,
+				"Z": 1
+			},
+			"Rotation":
+			{
+				"X": -180,
 				"Y": 0,
 				"Z": 0
 			},
