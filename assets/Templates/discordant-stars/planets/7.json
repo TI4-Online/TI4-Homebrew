@@ -39,7 +39,7 @@
 	},
 	"Tags": [],
 	"FrontTexture": "discordant-stars/planets/7.face.jpg",
-	"BackTexture": "discordant-stars/planets/7.face.jpg",
+	"BackTexture": "discordant-stars/planets/7.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -3,
 	"HiddenIndex": -3,
