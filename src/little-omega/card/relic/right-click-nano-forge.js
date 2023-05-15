@@ -32,6 +32,15 @@ class LittleOmegaNanoForgeRightClick extends world.TI4.AbstractRightClickCard {
         token.setObjectType(ObjectType.Regular);
         token.setPosition(pos, 1);
         token.setRotation(rot);
+        
+        const cards = world.TI4.CardUtil.gatherCards((nsid) => {
+            return nsid === "card.legendary_planet:homebrew.little-omega/nanoforge";
+        });
+        for (let i = 0; i < cards.length; i++) {
+            const card = cards[i];
+            card.setPosition(pos.add([0, 0, 11 + i]));
+            card.setRotation(rot);
+        }
     }
 
     constructor() {

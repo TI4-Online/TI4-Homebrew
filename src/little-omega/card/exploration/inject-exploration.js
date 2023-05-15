@@ -1,5 +1,4 @@
 const { world, refPackageId } = require("@tabletop-playground/api");
-world.__littleOmegaExplorationLoaded = false;
 
 const ATTACHMENTS = [
     {

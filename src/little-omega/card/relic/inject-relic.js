@@ -1,7 +1,6 @@
 const { world } = require("@tabletop-playground/api");
 const UNIT_MODIFIERS = require("./unit-modifiers.data");
 require("./right-click-nano-forge");
-world.__littleOmegaExplorationLoaded = false;
 
 const OTHER_SCORABLE = ["card.relic:homebrew.little-omega/the_crown_of_emphidia"];
 

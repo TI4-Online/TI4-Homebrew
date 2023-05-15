@@ -1,5 +1,4 @@
 world.__littleOmegaFull = true;
-world.__littleOmegaFullLoaded = false;
 
 require("./card/action/inject-action");
 require("./card/agenda/inject-agenda");
