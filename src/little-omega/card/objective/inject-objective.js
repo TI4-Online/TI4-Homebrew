@@ -1,5 +1,4 @@
 const { world } = require("@tabletop-playground/api");
-world.__littleOmegaObjectiveLoaded = false;
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:
