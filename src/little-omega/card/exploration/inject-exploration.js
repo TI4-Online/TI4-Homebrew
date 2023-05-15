@@ -56,7 +56,7 @@ world.TI4.homebrew.inject({
         "card.exploration.cultural:homebrew.little-omega/0": "42F130ABD66A407BA8719DFEA66B6225",
         "card.exploration.frontier:homebrew.little-omega/0": "78F635145D1B438BAB701F92F8B0A0BB",
         "card.exploration.hazardous:homebrew.little-omega/0": "0408D64FE6D54E53A30B2690CCCC9B8E",
-        "card.legendary_planet:homebrew.little-omega/tomb-of-emphidia": "7041945996E94C8D89158FB7706FAE5C",
+        "card.legendary_planet:homebrew.little-omega/tomb_of_emphidia": "7041945996E94C8D89158FB7706FAE5C",
         "token.attachment.exploration:homebrew.little-omega/tomb_of_emphidia": "F9DCB1DCC87C4453950EEACE997DEC9F"
     },
     replace:
