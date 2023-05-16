@@ -1,7 +1,7 @@
 {
 	"Type": "Card",
 	"GUID": "FCA7F3274E7875C09A871B83207E494F",
-	"Name": "Kolume Faction Sheet",
+	"Name": "Faction Sheet (Kolume)",
 	"Metadata": "",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
@@ -30,7 +30,96 @@
 	"Models": [],
 	"Collision": [],
 	"SnapPointsGlobal": false,
-	"SnapPoints": [],
+	"SnapPoints": [
+		{
+			"X": -7.05,
+			"Y": -10.5,
+			"Z": 0.0999961,
+			"Range": 2.39998,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": -7.05,
+			"Y": -3.5,
+			"Z": 0.0999961,
+			"Range": 2.39998,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": -2.35,
+			"Y": -3.5,
+			"Z": 0.0999961,
+			"Range": 2.39998,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": -7.05,
+			"Y": 3.5,
+			"Z": 0.0999961,
+			"Range": 2.39998,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": -2.35,
+			"Y": 3.5,
+			"Z": 0.0999961,
+			"Range": 2.39998,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": -7.05,
+			"Y": 10.5,
+			"Z": 0.0999961,
+			"Range": 2.39998,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": 2.35,
+			"Y": -10.5,
+			"Z": 0.0999961,
+			"Range": 2.39998,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": -2.35,
+			"Y": -10.5,
+			"Z": 0.0999961,
+			"Range": 2.39998,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": 7.05,
+			"Y": -10.5,
+			"Z": 0.0999961,
+			"Range": 2.39998,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": -2.35,
+			"Y": -10.5,
+			"Z": 0.0999961,
+			"Range": 2.39998,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": 2.35,
+			"Y": -3.5,
+			"Z": 0.0999961,
+			"Range": 2.39998,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		}
+	],
 	"ZoomViewDirection":
 	{
 		"X": 0,

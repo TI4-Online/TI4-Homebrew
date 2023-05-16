@@ -80,7 +80,7 @@ const nsidToTemplateId = {
 
 const technologies = [
   {
-    localeName: "technology.name.turbine",
+    localeName: "technology.name.midas_turbine",
     cardNsid: "card.technology.blue.vaden:homebrew.discordant_stars/turbine",
     type: "Blue",
     requirements: { Blue: 1 },
