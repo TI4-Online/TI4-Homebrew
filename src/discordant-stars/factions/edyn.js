@@ -78,6 +78,8 @@ const nsidToTemplateId = {
     "6F815DD54DC0C07307F5B6AAA053139B",
   "token.control:homebrew.discordant_stars/edyn":
     "503464A847FB262835C7ACBC3EC40ADF",
+  "token.system:homebrew.discordant_stars.sigil/edyn":
+    "3E29B35F47A7E221E65A67A178899C93"
 };
 
 const technologies = [
@@ -98,6 +100,12 @@ const technologies = [
     requirements: { Yellow: 2 },
     source: "homebrew.discordant_stars",
     faction: "cheiran",
+    unpackExtra: [
+      {
+        tokenNsid: "token.system:homebrew.discordant_stars.sigil/edyn",
+        tokenCount: 4,
+      },
+    ],
   },
 ];
 

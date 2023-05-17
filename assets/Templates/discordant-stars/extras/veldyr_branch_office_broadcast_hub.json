@@ -48,7 +48,37 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/extras/veldyr_branch_office_influence.png",
+			"Texture": "discordant-stars/extras/veldyr_branch_office_influence.jpg",
+			"NormalMap": "",
+			"ExtraMap": "",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": true,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
+		},
+		{
+			"Model": "tokens/round-msh.obj",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0.125
+			},
+			"Scale":
+			{
+				"X": 1.001,
+				"Y": 1.001,
+				"Z": 1.001
+			},
+			"Rotation":
+			{
+				"X": 180,
+				"Y": 0,
+				"Z": 180
+			},
+			"Texture": "discordant-stars/extras/veldyr.back.jpg",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",

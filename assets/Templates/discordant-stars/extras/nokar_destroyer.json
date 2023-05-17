@@ -64,19 +64,19 @@
 			{
 				"X": 0,
 				"Y": 0,
-				"Z": 0.12
+				"Z": 0.125
 			},
 			"Scale":
 			{
-				"X": 1,
-				"Y": 1,
-				"Z": 1
+				"X": 1.001,
+				"Y": 1.001,
+				"Z": 1.001
 			},
 			"Rotation":
 			{
 				"X": -180,
 				"Y": 0,
-				"Z": 0
+				"Z": -180
 			},
 			"Texture": "discordant-stars/extras/NokarDestroyerTokenR.png",
 			"NormalMap": "",

@@ -51,7 +51,26 @@ const factions = [
         // This is a deck of cards.
         tokenNsid: "card.lizho:homebrew.discordant_stars/0",
       },
+      {
+        tokenNsid: "token.trap:homebrew.discordant_stars.account_syphon/lizho",
+      },
+      {
+        tokenNsid: "token.trap:homebrew.discordant_stars.feint/lizho",
+      },
+      {
+        tokenNsid: "token.trap:homebrew.discordant_stars.gravitic_inhibitor/lizho",
+      },
+      {
+        tokenNsid: "token.trap:homebrew.discordant_stars.interference_grid/lizho",
+      },
+      {
+        tokenNsid: "token.trap:homebrew.discordant_stars.minefields/lizho",
+      },
+      {
+        tokenNsid: "token.trap:homebrew.discordant_stars.saboteurs/lizho",
+      },
     ],
+    
     packageId: refPackageId,
   },
 ];
@@ -90,7 +109,20 @@ const nsidToTemplateId = {
     "FF9BEF37481DD4AE050D189D54F810F6",
   "token.control:homebrew.discordant_stars/lizho":
     "1A9664A347AF140D90EA29B3ECEEBA00",
-  "card.lizho:homebrew.discordant_stars/0": "4171B8E74DDA24EEF67EA1B7E3CBB132",
+  "card.lizho:homebrew.discordant_stars/0":
+    "4171B8E74DDA24EEF67EA1B7E3CBB132",
+  "token.trap:homebrew.discordant_stars.account_syphon/lizho": 
+    "74B5895C4C92A9B13FDECFAEA6C65B0A",
+  "token.trap:homebrew.discordant_stars.feint/lizho": 
+    "AE31CB1D48A41816A921638D3D490A5F",
+  "token.trap:homebrew.discordant_stars.gravitic_inhibitor/lizho": 
+    "D6397D7E4C81E646F36A208E20F8DEFC",
+  "token.trap:homebrew.discordant_stars.interference_grid/lizho": 
+    "81A512B04D4F8921B4CD62B30D6AF7C0",
+  "token.trap:homebrew.discordant_stars.minefields/lizho": 
+    "393424054BBDC00F273BFDA3A33C5C87",
+  "token.trap:homebrew.discordant_stars.saboteurs/lizho": 
+    "7A09631640F3BA5B2934FEA8A7CBFA81",
 };
 
 const technologies = [
