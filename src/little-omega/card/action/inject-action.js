@@ -1,7 +1,6 @@
 const { world } = require("@tabletop-playground/api");
 const UNIT_MODIFIERS = require("./unit-modifiers.data");
 require("./right-click-hack-election");
-world.__littleOmegaActionLoaded = false;
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:

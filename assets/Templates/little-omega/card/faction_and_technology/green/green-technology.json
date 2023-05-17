@@ -1,0 +1,80 @@
+{
+	"Type": "Card",
+	"GUID": "6F76BC9582C34A4FAA6B86340DD32FBE",
+	"Name": "Little Omega - Green Technology",
+	"Metadata": "card.technology.green:homebrew.little-omega/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "little-omega/card/technology/green/face.jpg",
+	"BackTexture": "ti4/technology/green.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 5,
+	"NumVertical": 1,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4 ],
+	"CardNames":
+	{
+            "0": "Dacxive Animators",
+            "1": "Hypermetabolism",
+            "2": "Neural Motivator",
+            "3": "Psychoarchaeology",
+            "4": "X-89 Bacterial Weapon"
+	},
+	"CardMetadata":
+	{
+            "0": "card.technology.green:homebrew.little-omega/dacxive_animators",
+            "1": "card.technology.green:homebrew.little-omega/hyper_metabolism",
+            "2": "card.technology.green:homebrew.little-omega/neural_motivator",
+            "3": "card.technology.green:homebrew.little-omega/psychoarchaeology",
+            "4": "card.technology.green:homebrew.little-omega/x89_bacterial_weapon"
+	},
+	"CardTags":
+	{
+	}
+}
