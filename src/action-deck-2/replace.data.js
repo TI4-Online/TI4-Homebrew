@@ -12,7 +12,7 @@ module.exports = {
     "card.action:base/distinguished_councilor": "card.action:homebrew.action_deck_2/brilliant_tactician",
     "card.action:base/economic_initiative": "card.action:homebrew.action_deck_2/brutal_occupation",
     "card.action:base/emergency_repairs": "card.action:homebrew.action_deck_2/bureaucracy_rider",
-    "card.action:base/experimental_battlestation": "card.action:homebrew.action_deck_2/call_for_a_crusade",
+    "card.action:base/experimental_battlestation": "card.action:homebrew.action_deck_2/early_voting",
     "card.action:base/fighter_prototype": "card.action:homebrew.action_deck_2/chain_reaction",
     "card.action:base/fire_team": "card.action:homebrew.action_deck_2/close_quarters",
     "card.action:base/focused_research": "card.action:homebrew.action_deck_2/collaborative_planning",
