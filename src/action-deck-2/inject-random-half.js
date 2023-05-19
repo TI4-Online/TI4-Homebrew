@@ -90,11 +90,14 @@ const REPLACE = {
     "card.action:pok/waylay": "card.action:homebrew.action_deck_2/virulent_gas_canisters"
 }
 
+var remove = [];
 var numberOfCards = Object.keys(REPLACE).length;
-for (int i = 0; i < numberOfCards / 2; i++) {
-    var keys = Object.keys(REPLACE);
-    var randomKey = obj[keys[ keys.length * Math.random() << 0]];
-    delete REPLACE[randomKey];
+for (let i = 0; i < numberOfCards / 2; i++) {
+    let originalActionCards = Object.keys(REPLACE);
+    let randomOriginalActionCard = originalActionCards[originalActionCards.length * Math.random() << 0];
+    let homebrewToRemove = REPLACE[randomOriginalActionCard];
+    remove.push(homebrewToRemove);
+    delete REPLACE[randomOriginalActionCard];
 }
 
 world.TI4.homebrew.inject({
@@ -102,6 +105,7 @@ world.TI4.homebrew.inject({
     {
         "card.action:homebrew.action_deck_2/0": "934D6DF9DCB340AD826E2416C7C78580"
     },
+    remove,
     replace: REPLACE,
     unitModifiers: UNIT_MODIFIERS,
     localeStrings: LOCALE_STRINGS
