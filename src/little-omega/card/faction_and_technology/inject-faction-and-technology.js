@@ -17,7 +17,8 @@ world.TI4.homebrew.inject({
         "card.promissory:homebrew.little-omega/1": "E88B029F33C5472296BFB0952E4DDD13",
         "card.leader:homebrew.little-omega/0": "F555351430D64FAF803BAFA4F5738595",
         "card.starting_technology:homebrew.little-omega/0": "F7B14042E88349E8BB082C147565AB08",
-        "card.technology.unit_upgrade:homebrew.little-omega/0": "DF2D1369782444F19671A55965F35429"
+        "card.technology.unit_upgrade:homebrew.little-omega/0": "DF2D1369782444F19671A55965F35429",
+        "card.technology.unit_upgrade:homebrew.little-omega/1": "8EA9588A717B4915A12D200688DCD847"
     },
     replace:
     {
