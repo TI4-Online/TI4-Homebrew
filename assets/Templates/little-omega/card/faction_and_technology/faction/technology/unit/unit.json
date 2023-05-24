@@ -10,14 +10,12 @@
 	"SurfaceType": "Cardboard",
 	"Roughness": 1,
 	"Metallic": 0,
-	"PrimaryColor":
-	{
+	"PrimaryColor": {
 		"R": 255,
 		"G": 255,
 		"B": 255
 	},
-	"SecondaryColor":
-	{
+	"SecondaryColor": {
 		"R": 0,
 		"G": 0,
 		"B": 0
@@ -31,14 +29,13 @@
 	"Collision": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
-	"ZoomViewDirection":
-	{
+	"ZoomViewDirection": {
 		"X": 0,
 		"Y": 0,
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": little-omega/card/faction/technology/unit/face.jpg",
+	"FrontTexture": "little-omega/card/faction/technology/unit/face.jpg ",
 	"BackTexture": "ti4/technology/unit_upgrade.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
@@ -57,13 +54,11 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0 ],
-	"CardNames":
-	{
+	"Indices": [0],
+	"CardNames": {
 		"0": "Dimensional Tear II"
 	},
-	"CardMetadata":
-	{
+	"CardMetadata": {
 		"0": "card.technology.unit_upgrade.vuilraith:homebrew.little-omega/dimensional_tear_2"
 	}
 }

@@ -40,7 +40,7 @@ const factions = [
 ];
 
  const nsidToTemplateId = {
-    "sheet.faction:pok/vuilraith": "FF5B3A27E69141E0A9054EEF318AF808",
+    "sheet.faction:pok/vuilraith": "CFA1A1EE72B7459CB5A94E1B0F80D495",
 };
 
 const replace = {

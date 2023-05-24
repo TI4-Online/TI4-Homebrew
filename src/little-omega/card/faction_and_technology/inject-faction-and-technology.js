@@ -57,6 +57,7 @@ require("./faction/jolnar");
 require("./faction/xxcha");
 require("./faction/mentak");
 require("./faction/yin");
+require("./faction/vuilraith");
 
 if (!world.__littleOmegaFull && !world.__littleOmegaFactionAndTechnologyLoaded) {
     world.TI4.homebrew.resetOnTableDecks();
