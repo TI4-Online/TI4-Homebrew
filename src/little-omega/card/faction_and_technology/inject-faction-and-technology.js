@@ -4,12 +4,16 @@ world.TI4.homebrew.inject({
     nsidToTemplateId:
     {
         "card.technology.blue:homebrew.little-omega/0": "D2446BD708E543EC85712BA54B7BAEB9",
+        "card.technology.blue:homebrew.little-omega/1": "CE84A93A4BFF4386BCF4B6D1C156B9BE",
         "card.technology.green:homebrew.little-omega/0": "6F76BC9582C34A4FAA6B86340DD32FBE",
         "card.technology.green:homebrew.little-omega/1": "66AB03149A95430A8EC8864682E7A8E7",
         "card.technology.red:homebrew.little-omega/0": "B5444DBD508D4B9D8104C986740C9AD3",
+        "card.technology.red:homebrew.little-omega/1": "CA5910712ED9444A896F34B5EF38A142",
         "card.technology.yellow:homebrew.little-omega/0": "120D893371DB41DCB4F7117EA3E94BA9",
-        "card.promissory:homebrew.little-omega/1" : "E88B029F33C5472296BFB0952E4DDD13",
-        "card.leader:homebrew.little-omega/0": "F555351430D64FAF803BAFA4F5738595"
+        "card.technology.yellow:homebrew.little-omega/1": "3593CBE42FA54538AF48639AD3B8EA4B",
+        "card.promissory:homebrew.little-omega/1": "E88B029F33C5472296BFB0952E4DDD13",
+        "card.leader:homebrew.little-omega/0": "F555351430D64FAF803BAFA4F5738595",
+        "card.starting_technology:homebrew.little-omega/0": "F7B14042E88349E8BB082C147565AB08"
     },
     replace:
     {
@@ -34,6 +38,10 @@ world.TI4.homebrew.inject({
 });
 
 require("./faction/hacan");
+require("./faction/jolnar");
+require("./faction/xxcha");
+require("./faction/mentak");
+require("./faction/yin");
 
 if (!world.__littleOmegaFull && !world.__littleOmegaFactionAndTechnologyLoaded) {
     world.TI4.homebrew.resetOnTableDecks();

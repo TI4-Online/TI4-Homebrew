@@ -1,8 +1,8 @@
 {
 	"Type": "Card",
-	"GUID": "48B2C67A425840979254A5FF48C8A6EC",
-	"Name": "Wrath of Kenara",
-	"Metadata": "card.ability:homebrew.little-omega/wrath_of_kenara",
+	"GUID": "3593CBE42FA54538AF48639AD3B8EA4B",
+	"Name": "Little Omega - Yellow Faction Technology",
+	"Metadata": "card.technology.yellow:homebrew.little-omega/1",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -34,12 +34,13 @@
 		"Y": 0,
 		"Z": 0
 	},
-	"FrontTexture": "little-omega/card/faction/ability/wrath_of_kenara_ability.face.jpg",
-	"BackTexture": "ti4/technology/unknown.back.jpg",
+	"Tags": [],
+	"FrontTexture": "little-omega/card/faction/technology/yellow/face.jpg",
+	"BackTexture": "ti4/technology/yellow.back.jpg",
 	"HiddenTexture": "",
-	"BackIndex": -3,
+	"BackIndex": -2,
 	"HiddenIndex": -3,
-	"NumHorizontal": 1,
+	"NumHorizontal": 2,
 	"NumVertical": 1,
 	"Width": 6.3,
 	"Height": 4.2,
@@ -51,17 +52,16 @@
 	"FrontTextureOverrideExposed": false,
 	"AllowFlippedInStack": false,
 	"MirrorBack": true,
+	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0 ],
-	"CardNames":
-	{
-		"0": "Wrath of Kenara"
+	"Indices": [ 0, 1 ],
+	"CardNames": {
+		"0": "E-Res Siphons",
+		"1": "Impulse Core"
 	},
-	"CardMetadata":
-	{
-		"0": "card.ability:homebrew.little-omega/wrath_of_kenara"
+	"CardMetadata": {
+		"0": "card.technology.yellow.jolnar:homebrew.little-omega/eres_siphons",
+		"1": "card.technology.yellow.yin:homebrew.little-omega/impulse_core"
 	},
-	"CardTags":
-	{
-	}
+	"CardTags": {}
 }

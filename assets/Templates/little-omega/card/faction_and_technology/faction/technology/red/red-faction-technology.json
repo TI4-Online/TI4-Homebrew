@@ -1,8 +1,8 @@
 {
 	"Type": "Card",
-	"GUID": "48B2C67A425840979254A5FF48C8A6EC",
-	"Name": "Wrath of Kenara",
-	"Metadata": "card.ability:homebrew.little-omega/wrath_of_kenara",
+	"GUID": "CA5910712ED9444A896F34B5EF38A142",
+	"Name": "Little Omega - Red Faction Technology",
+	"Metadata": "card.technology.red:homebrew.little-omega/1",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -34,12 +34,13 @@
 		"Y": 0,
 		"Z": 0
 	},
-	"FrontTexture": "little-omega/card/faction/ability/wrath_of_kenara_ability.face.jpg",
-	"BackTexture": "ti4/technology/unknown.back.jpg",
+	"Tags": [],
+	"FrontTexture": "little-omega/card/faction/technology/red/face.jpg",
+	"BackTexture": "ti4/technology/red.back.jpg",
 	"HiddenTexture": "",
-	"BackIndex": -3,
+	"BackIndex": -2,
 	"HiddenIndex": -3,
-	"NumHorizontal": 1,
+	"NumHorizontal": 3,
 	"NumVertical": 1,
 	"Width": 6.3,
 	"Height": 4.2,
@@ -51,17 +52,18 @@
 	"FrontTextureOverrideExposed": false,
 	"AllowFlippedInStack": false,
 	"MirrorBack": true,
+	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0 ],
-	"CardNames":
-	{
-		"0": "Wrath of Kenara"
+	"Indices": [0, 1, 2],
+	"CardNames": {
+		"0": "Nullfication Field",
+		"1": "Salvage Operations",
+		"2": "Vortex"
 	},
-	"CardMetadata":
-	{
-		"0": "card.ability:homebrew.little-omega/wrath_of_kenara"
+	"CardMetadata": {
+		"0": "card.technology.red.xxcha:homebrew.little-omega/nullification_field",
+		"1": "card.technology.red.mentak:homebrew.little-omega/salvage_operations",
+		"2": "card.technology.red.vuilraith:homebrew.little-omega/vortex"
 	},
-	"CardTags":
-	{
-	}
+	"CardTags": {}
 }

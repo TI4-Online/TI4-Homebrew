@@ -1,8 +1,8 @@
 {
 	"Type": "Card",
-	"GUID": "48B2C67A425840979254A5FF48C8A6EC",
-	"Name": "Wrath of Kenara",
-	"Metadata": "card.ability:homebrew.little-omega/wrath_of_kenara",
+	"GUID": "F7B14042E88349E8BB082C147565AB08",
+	"Name": "Starting Technologies",
+	"Metadata": "card.starting_technology:homebrew.little-omega/0",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -10,12 +10,14 @@
 	"SurfaceType": "Cardboard",
 	"Roughness": 1,
 	"Metallic": 0,
-	"PrimaryColor": {
+	"PrimaryColor":
+	{
 		"R": 255,
 		"G": 255,
 		"B": 255
 	},
-	"SecondaryColor": {
+	"SecondaryColor":
+	{
 		"R": 0,
 		"G": 0,
 		"B": 0
@@ -29,15 +31,17 @@
 	"Collision": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
-	"ZoomViewDirection": {
+	"ZoomViewDirection":
+	{
 		"X": 0,
 		"Y": 0,
 		"Z": 0
 	},
-	"FrontTexture": "little-omega/card/faction/ability/wrath_of_kenara_ability.face.jpg",
+	"Tags": [],
+	"FrontTexture": "little-omega/card/technology/starting/face.jpg",
 	"BackTexture": "ti4/technology/unknown.back.jpg",
 	"HiddenTexture": "",
-	"BackIndex": -3,
+	"BackIndex": -2,
 	"HiddenIndex": -3,
 	"NumHorizontal": 1,
 	"NumVertical": 1,
@@ -51,17 +55,15 @@
 	"FrontTextureOverrideExposed": false,
 	"AllowFlippedInStack": false,
 	"MirrorBack": true,
+	"EmissiveFront": false,
 	"Model": "Rounded",
 	"Indices": [ 0 ],
 	"CardNames":
 	{
-		"0": "Wrath of Kenara"
+		"0": "Mentak Starting Technology"
 	},
 	"CardMetadata":
 	{
-		"0": "card.ability:homebrew.little-omega/wrath_of_kenara"
-	},
-	"CardTags":
-	{
+		"0": "card.starting_technology:homebrew.little_omega/mentak"
 	}
 }
