@@ -1,4 +1,7 @@
 const { world } = require("@tabletop-playground/api");
+const unitModifiers = require("./unit-modifiers");
+const localeStrings = require("./locale-strings");
+const unitAttrs = require("./unit-attrs");
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:
@@ -13,7 +16,8 @@ world.TI4.homebrew.inject({
         "card.technology.yellow:homebrew.little-omega/1": "3593CBE42FA54538AF48639AD3B8EA4B",
         "card.promissory:homebrew.little-omega/1": "E88B029F33C5472296BFB0952E4DDD13",
         "card.leader:homebrew.little-omega/0": "F555351430D64FAF803BAFA4F5738595",
-        "card.starting_technology:homebrew.little-omega/0": "F7B14042E88349E8BB082C147565AB08"
+        "card.starting_technology:homebrew.little-omega/0": "F7B14042E88349E8BB082C147565AB08",
+        "card.technology.unit_upgrade:homebrew.little-omega/0": "DF2D1369782444F19671A55965F35429"
     },
     replace:
     {
@@ -33,8 +37,18 @@ world.TI4.homebrew.inject({
         "card.technology.yellow:base/integrated_economy": "card.technology.yellow:homebrew.little-omega/integrated_economy",
         "card.technology.yellow:pok/predictive_intelligence": "card.technology.yellow:homebrew.little-omega/predictive_intelligence",
         "card.technology.yellow:base/graviton_laser_system": "card.technology.yellow:homebrew.little-omega/self_assembly_routines",
-        "card.technology.yellow:base/sarween_tools": "card.technology.yellow:homebrew.little-omega/sarween_tools"
-    }
+        "card.technology.yellow:base/sarween_tools": "card.technology.yellow:homebrew.little-omega/sarween_tools",
+        "card.technology.unit_upgrade:base/carrier_2": "card.technology.unit_upgrade:homebrew.little-omega/carrier_2",
+		"card.technology.unit_upgrade:base/cruiser_2": "card.technology.unit_upgrade:homebrew.little-omega/cruiser_2",
+		"card.technology.unit_upgrade:base/dreadnought_2": "card.technology.unit_upgrade:homebrew.little-omega/dreadnought_2",
+		"card.technology.unit_upgrade:base/fighter_2": "card.technology.unit_upgrade:homebrew.little-omega/fighter_2",
+		"card.technology.unit_upgrade:base/infantry_2": "card.technology.unit_upgrade:homebrew.little-omega/infantry_2",
+		"card.technology.unit_upgrade:base/space_dock_2": "card.technology.unit_upgrade:homebrew.little-omega/space_dock_2",
+        "card.technology.unit_upgrade:base/war_sun": "card.technology.unit_upgrade:homebrew.little-omega/war_sun"
+    },
+    unitModifiers,
+    localeStrings,
+    unitAttrs
 });
 
 require("./faction/hacan");
