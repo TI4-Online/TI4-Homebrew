@@ -48,7 +48,8 @@ const replace = {
   "card.leader.mech.hacan:pok/pride_of_kenara" : "card.leader.mech.hacan:homebrew.little-omega/pride_of_kenara"
 };
 
-const technologies = [{
+const technologies = [
+  {
     localeName: "technology.name.production_biomes",
     cardNsid:
         "card.technology.green.hacan:homebrew.little-omega/production_biomes",
