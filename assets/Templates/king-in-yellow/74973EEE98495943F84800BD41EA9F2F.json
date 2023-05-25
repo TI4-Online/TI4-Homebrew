@@ -65,10 +65,10 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.leader.agent.king_in_yellow/homebrew.king_in_yellow/repairer_of_reputations",
-		"1": "card.leader.commander.king_in_yellow/homebrew.king_in_yellow/the_lake_of_hali",
-		"2": "card.leader.hero.king_in_yellow/hoembrew.king_in_yellow/act_iii",
-		"3": "card.leader.mech.king_in_yellow/homebrew.king_in_yellow/byakhee_monolith"
+		"0": "card.leader.agent.king_in_yellow:homebrew.king_in_yellow/repairer_of_reputations",
+		"1": "card.leader.commander.king_in_yellow:homebrew.king_in_yellow/the_lake_of_hali",
+		"2": "card.leader.hero.king_in_yellow:hoembrew.king_in_yellow/act_iii",
+		"3": "card.leader.mech.king_in_yellow:homebrew.king_in_yellow/byakhee_monolith"
 	},
 	"CardTags":
 	{
