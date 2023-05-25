@@ -47,6 +47,11 @@ world.TI4.homebrew.inject({
 		"card.technology.unit_upgrade:base/space_dock_2": "card.technology.unit_upgrade:homebrew.little-omega/space_dock_2",
         "card.technology.unit_upgrade:base/war_sun": "card.technology.unit_upgrade:homebrew.little-omega/war_sun"
     },
+    remove:
+    {
+        "card.technology.green:codex.ordinian/x89_bacterial_weapon.omega",
+        "card.technology.red:codex.ordinian/magen_defense_grid.omega"
+    },
     unitModifiers,
     localeStrings,
     unitAttrs
