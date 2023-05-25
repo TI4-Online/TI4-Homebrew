@@ -190,7 +190,6 @@ const unitAttrs = [
     bombardment: { dice: 1, hit: 9 },
     spaceCannon: { dice: 1, hit: 9 },
     antiFighterBarrage: { dice: 2, hit: 9 },
-
   },
   {
     unit: "mech",
@@ -266,9 +265,12 @@ const unitModifiers = [
         "bombardment",
         "antiFighterBarrage",
         "spaceCannon",
-      ].forEach(
-        (attr) => (unitAttrsSet.get("flagship").raw[attr].hit -= bonus)
-      );
+      ].forEach((attr) => {
+        const value = unitAttrsSet.get("flagship").raw[attr];
+        if (value !== undefined) {
+          unitAttrsSet.get("flagship").raw[attr].hit -= bonus;
+        }
+      });
     },
   },
 ];
