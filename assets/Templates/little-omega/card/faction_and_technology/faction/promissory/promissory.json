@@ -12,15 +12,15 @@
 	"Metallic": 0,
 	"PrimaryColor":
 	{
-        "R": 255,
-        "G": 255,
-        "B": 255
+            "R": 255,
+            "G": 255,
+            "B": 255
 	},
 	"SecondaryColor":
 	{
-        "R": 0,
-        "G": 0,
-        "B": 0
+            "R": 0,
+            "G": 0,
+            "B": 0
 	},
 	"Flippable": true,
 	"AutoStraighten": false,
@@ -33,9 +33,9 @@
 	"SnapPoints": [],
 	"ZoomViewDirection":
 	{
-        "X": 0,
-        "Y": 0,
-        "Z": 0
+            "X": 0,
+            "Y": 0,
+            "Z": 0
 	},
 	"Tags": [],
 	"FrontTexture": "little-omega/card/faction/promissory/face.jpg",
@@ -43,7 +43,7 @@
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
-	"NumHorizontal": 4,
+	"NumHorizontal": 5,
 	"NumVertical": 1,
 	"Width": 4.2,
 	"Height": 6.3,
@@ -57,20 +57,22 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0, 1, 2, 3 ],
+	"Indices": [ 0, 1, 2, 3, 4 ],
 	"CardNames":
 	{
-        "0": "Crucible",
-        "1": "Political Favor",
-        "2": "Promise of Protection",
-        "3": "Trade Convoys"
+            "0": "Crucible",
+            "1": "Political Favor",
+            "2": "Promise of Protection",
+            "3": "Strike Wing Ambuscade",
+            "4": "Trade Convoys"
 	},
 	"CardMetadata":
 	{
             "0": "card.promissory.vuilraith:homebrew.little-omega/crucible",
             "1": "card.promissory.xxcha:homebrew.little-omega/political_favor",
             "2": "card.promissory.mentak:homebrew.little-omega/promise_of_protection",
-            "3": "card.promissory.hacan:homebrew.little-omega/trade_convoys"
+            "3": "card.promissory.argent:homebrew.little-omega/strike_wing_ambuscade",
+            "4": "card.promissory.hacan:homebrew.little-omega/trade_convoys"
 	},
 	"CardTags":
 	{
