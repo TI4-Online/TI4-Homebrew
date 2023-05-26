@@ -1,0 +1,69 @@
+{
+	"Type": "Card",
+	"GUID": "CA5910712ED9444A896F34B5EF38A142",
+	"Name": "Little Omega - Red Faction Technology",
+	"Metadata": "card.technology.red:homebrew.little-omega/1",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor": {
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor": {
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection": {
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "little-omega/card/faction/technology/red/face.jpg",
+	"BackTexture": "ti4/technology/red.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 3,
+	"NumVertical": 1,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [0, 1, 2],
+	"CardNames": {
+		"0": "Nullfication Field",
+		"1": "Salvage Operations",
+		"2": "Vortex"
+	},
+	"CardMetadata": {
+		"0": "card.technology.red.xxcha:homebrew.little-omega/nullification_field",
+		"1": "card.technology.red.mentak:homebrew.little-omega/salvage_operations",
+		"2": "card.technology.red.vuilraith:homebrew.little-omega/vortex"
+	},
+	"CardTags": {}
+}

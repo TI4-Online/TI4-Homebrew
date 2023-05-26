@@ -1,8 +1,8 @@
 {
 	"Type": "Card",
-	"GUID": "120D893371DB41DCB4F7117EA3E94BA9",
-	"Name": "Little Omega - Yellow Technology",
-	"Metadata": "card.technology.yellow:homebrew.little-omega/0",
+	"GUID": "3593CBE42FA54538AF48639AD3B8EA4B",
+	"Name": "Little Omega - Yellow Faction Technology",
+	"Metadata": "card.technology.yellow:homebrew.little-omega/1",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -10,14 +10,12 @@
 	"SurfaceType": "Cardboard",
 	"Roughness": 1,
 	"Metallic": 0,
-	"PrimaryColor":
-	{
+	"PrimaryColor": {
 		"R": 255,
 		"G": 255,
 		"B": 255
 	},
-	"SecondaryColor":
-	{
+	"SecondaryColor": {
 		"R": 0,
 		"G": 0,
 		"B": 0
@@ -31,19 +29,18 @@
 	"Collision": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
-	"ZoomViewDirection":
-	{
+	"ZoomViewDirection": {
 		"X": 0,
 		"Y": 0,
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "little-omega/card/technology/yellow/face.jpg",
+	"FrontTexture": "little-omega/card/faction/technology/yellow/face.jpg",
 	"BackTexture": "ti4/technology/yellow.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
-	"NumHorizontal": 4,
+	"NumHorizontal": 2,
 	"NumVertical": 1,
 	"Width": 6.3,
 	"Height": 4.2,
@@ -57,22 +54,14 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0, 1, 2, 3 ],
-	"CardNames":
-	{
-            "0": "Integrated Economy",
-            "1": "Predictive Intelligence",
-            "2": "Sarween Tools",
-            "3": "Self-Assembly Routines"
+	"Indices": [ 0, 1 ],
+	"CardNames": {
+		"0": "E-Res Siphons",
+		"1": "Impulse Core"
 	},
-	"CardMetadata":
-	{
-            "0": "card.technology.yellow:homebrew.little-omega/integrated_economy",
-            "1": "card.technology.yellow:homebrew.little-omega/predictive_intelligence",
-            "2": "card.technology.yellow:homebrew.little-omega/sarween_tools",
-            "3": "card.technology.yellow:homebrew.little-omega/self_assembly_routines"
+	"CardMetadata": {
+		"0": "card.technology.yellow.jolnar:homebrew.little-omega/eres_siphons",
+		"1": "card.technology.yellow.yin:homebrew.little-omega/impulse_core"
 	},
-	"CardTags":
-	{
-	}
+	"CardTags": {}
 }

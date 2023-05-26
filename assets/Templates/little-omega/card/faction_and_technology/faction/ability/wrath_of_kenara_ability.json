@@ -1,0 +1,67 @@
+{
+	"Type": "Card",
+	"GUID": "48B2C67A425840979254A5FF48C8A6EC",
+	"Name": "Wrath of Kenara",
+	"Metadata": "card.ability:homebrew.little-omega/wrath_of_kenara",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor": {
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor": {
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection": {
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"FrontTexture": "little-omega/card/faction/ability/wrath_of_kenara_ability.face.jpg",
+	"BackTexture": "ti4/technology/unknown.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -3,
+	"HiddenIndex": -3,
+	"NumHorizontal": 1,
+	"NumVertical": 1,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"Model": "Rounded",
+	"Indices": [ 0 ],
+	"CardNames":
+	{
+		"0": "Wrath of Kenara"
+	},
+	"CardMetadata":
+	{
+		"0": "card.ability:homebrew.little-omega/wrath_of_kenara"
+	},
+	"CardTags":
+	{
+	}
+}
