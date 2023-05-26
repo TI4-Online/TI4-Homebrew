@@ -1,4 +1,5 @@
 const { world } = require("@tabletop-playground/api");
+const unitModifiers = require("./unit-modifiers");
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:
@@ -55,7 +56,8 @@ world.TI4.homebrew.inject({
         "card.agenda:base/unconventional_measures": "card.agenda:homebrew.little-omega/unconventional_measures",
         "card.agenda:base/wormhole_reconstruction": "card.agenda:homebrew.little-omega/wormhole_reconstruction",
         "card.agenda:base/wormhole_research": "card.agenda:homebrew.little-omega/wormhole_research"
-    }
+    },
+    unitModifiers
 });
 
 if (!world.__littleOmegaFull && !world.__littleOmegaAgendaLoaded) {
