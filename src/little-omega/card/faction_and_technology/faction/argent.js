@@ -32,7 +32,7 @@ const factions = [{
 }];
 
  const nsidToTemplateId = {
-    "sheet.faction:base/argent": "CB80B541FA97459DA3667E37DB7EC6E3"
+    "sheet.faction:pok/argent": "CB80B541FA97459DA3667E37DB7EC6E3"
 };
 
 const replace = {
