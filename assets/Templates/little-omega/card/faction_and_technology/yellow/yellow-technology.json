@@ -62,15 +62,15 @@
 	{
             "0": "Integrated Economy",
             "1": "Predictive Intelligence",
-            "2": "Self-Assembly Routines",
-            "3": "Sarween Tools"
+            "2": "Sarween Tools",
+            "3": "Self-Assembly Routines"
 	},
 	"CardMetadata":
 	{
             "0": "card.technology.yellow:homebrew.little-omega/integrated_economy",
             "1": "card.technology.yellow:homebrew.little-omega/predictive_intelligence",
-            "2": "card.technology.yellow:homebrew.little-omega/self_assembly_routines",
-            "3": "card.technology.yellow:homebrew.little-omega/sarween_tools"
+            "2": "card.technology.yellow:homebrew.little-omega/sarween_tools",
+            "3": "card.technology.yellow:homebrew.little-omega/self_assembly_routines"
 	},
 	"CardTags":
 	{
