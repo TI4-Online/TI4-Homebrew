@@ -63,6 +63,7 @@ require("./faction/xxcha");
 require("./faction/mentak");
 require("./faction/yin");
 require("./faction/vuilraith");
+require("./faction/argent");
 
 if (!world.__littleOmegaFull && !world.__littleOmegaFactionAndTechnologyLoaded) {
     world.TI4.homebrew.resetOnTableDecks();
