@@ -60,7 +60,7 @@
 	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
 	"CardNames":
 	{
-        "0": "Control the Region",
+        "0": "Bestow a Keleres Fleet",
         "1": "Erect a Monument",
         "2": "Expand Borders",
         "3": "Found Research Outposts",
@@ -76,7 +76,7 @@
 	},
 	"CardMetadata":
 	{
-        "0": "card.objective.public_1:homebrew.little-omega/control_the_region",
+        "0": "card.objective.public_1:homebrew.little-omega/bestow_a_keleres_fleet",
         "1": "card.objective.public_1:homebrew.little-omega/erect_a_momument",
         "2": "card.objective.public_1:homebrew.little-omega/expand_borders",
         "3": "card.objective.public_1:homebrew.little-omega/found_research_outposts",
