@@ -9,7 +9,7 @@ world.TI4.homebrew.inject({
     },
     replace:
     {
-        "card.objective.public_1:pok/discover_lost_outposts": "card.objective.public_1:homebrew.little-omega/control_the_region",
+        "card.objective.public_1:pok/discover_lost_outposts": "card.objective.public_1:homebrew.little-omega/bestow_a_keleres_fleet",
         "card.objective.public_1:base/diversify_research": "card.objective.public_1:homebrew.little-omega/impose_order",
         "card.objective.public_1:base/develop_weaponry": "card.objective.public_1:homebrew.little-omega/monopolize_a_trade_route",
         "card.objective.public_1:base/lead_from_the_front": "card.objective.public_1:homebrew.little-omega/study_the_unknown",
@@ -22,7 +22,7 @@ world.TI4.homebrew.inject({
         "card.objective.public_1:pok/engineer_a_marvel": "card.objective.public_1:homebrew.little-omega/parade_marvels",
         "card.objective.public_1:pok/raise_a_fleet": "card.objective.public_1:homebrew.little-omega/raise_a_fleet",
         "card.objective.public_1:base/sway_the_council": "card.objective.public_1:homebrew.little-omega/sway_the_council",
-        "card.objective.public_2:base/galvanize_the_people": "card.objective.public_2:homebrew.little-omega/command_and_conquer",
+        "card.objective.public_2:base/galvanize_the_people": "card.objective.public_2:homebrew.little-omega/establish_an_imperial_navy",
         "card.objective.public_2:base/master_the_sciences": "card.objective.public_2:homebrew.little-omega/declare_victory",
         "card.objective.public_2:base/revolutionize_warfare": "card.objective.public_2:homebrew.little-omega/dominate_cities",
         "card.objective.public_2:pok/reclaim_ancient_monuments": "card.objective.public_2:homebrew.little-omega/learn_the_secrets_of_the_cosmos",
@@ -46,9 +46,8 @@ world.TI4.homebrew.inject({
         "card.objective.secret:pok/betray_a_friend": "card.objective.secret:homebrew.little-omega/cripple_their_economy",
         "card.objective.secret:pok/drive_the_debate": "card.objective.secret:homebrew.little-omega/disrupt_hostile_logistics",
         "card.objective.secret:base/become_the_gatekeeper": "card.objective.secret:homebrew.little-omega/diversify_fleets",
-        "card.objective.secret:base/control_the_region": "card.objective.secret:homebrew.little-omega/learn_from_others",
         "card.objective.secret:pok/dictate_policy": "card.objective.secret:homebrew.little-omega/reclaim_ancient_monuments",
-        "card.objective.secret:base/learn_the_secrets_of_the_cosmos": "card.objective.secret:homebrew.little-omega/repair_and_recommission",
+        "card.objective.secret:base/learn_the_secrets_of_the_cosmos": "card.objective.secret:homebrew.little-omega/learn_from_others",
         "card.objective.secret:pok/strengthen_bonds": "card.objective.secret:homebrew.little-omega/vertically_integrate"
     }
 });
