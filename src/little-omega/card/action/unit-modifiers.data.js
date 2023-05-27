@@ -30,7 +30,6 @@ module.exports = [
                 );
                 auxData.self.overrideCount("experimental_battlestation", 1);
             }
-            world.TI4.agenda.Agenda
         }
     },
     {
