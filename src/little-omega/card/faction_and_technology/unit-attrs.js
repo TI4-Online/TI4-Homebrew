@@ -23,7 +23,7 @@ module.exports = [
         triggerNsid: "card.technology.unit_upgrade:homebrew.little-omega/dreadnought_2",
         move: 2,
         spaceCombat: { hit : 4 },
-        bombardment: { hit: 4},
+        bombardment: { hit: 4 },
     },
     {
         unit: "fighter",
