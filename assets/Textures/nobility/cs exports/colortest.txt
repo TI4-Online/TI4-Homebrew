@@ -1,0 +1,9 @@
+		R	G	B
+RED		#ff3300
+ORANGE	#ff8000
+YELLOW	#e6f219	
+GREEN	#08ff40	
+BLUE	#0080ff	
+PURPLE	#e64dff	
+WHITE	#ffffff	
+BLACK	#000000	
