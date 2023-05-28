@@ -1,6 +1,30 @@
 const { world } = require("@tabletop-playground/api");
 const unitModifiers = require("./unit-modifiers");
 
+const voteCountModifiers = [
+    (playerDesk, currentVoteCount) => {
+        const checkIsDiscardPile = true;
+        const allowFaceDown = false;
+        for (const obj of world.getAllObjects()) {
+            if (obj === undefined) {
+                continue;
+            }
+            const nsid = world.TI4.ObjectNamespace.getNsid(obj);
+            if (nsid !== "card.agenda:homebrew.little-omega/representative_government") {
+                continue;
+            }
+            if (!world.TI4.CardUtil.isLooseCard(obj, checkIsDiscardPile, allowFaceDown)) {
+                continue;
+            }
+            if (world.TI4.agenda.getAgendaNsid() === nsid) {
+                continue; // currently being voted on
+            }
+            return -currentVoteCount + 1;
+        }
+        return 0;
+    }
+];
+
 world.TI4.homebrew.inject({
     nsidToTemplateId:
     {
@@ -57,7 +81,8 @@ world.TI4.homebrew.inject({
         "card.agenda:base/wormhole_reconstruction": "card.agenda:homebrew.little-omega/wormhole_reconstruction",
         "card.agenda:base/wormhole_research": "card.agenda:homebrew.little-omega/wormhole_research"
     },
-    unitModifiers
+    unitModifiers,
+    voteCountModifiers
 });
 
 if (!world.__littleOmegaFull && !world.__littleOmegaAgendaLoaded) {
