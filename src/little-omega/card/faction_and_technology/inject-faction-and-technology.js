@@ -2,6 +2,7 @@ const { world } = require("@tabletop-playground/api");
 const unitModifiers = require("./unit-modifiers");
 const localeStrings = require("./locale-strings");
 const unitAttrs = require("./unit-attrs");
+const technologies = require("./technology.data");
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:
@@ -54,7 +55,8 @@ world.TI4.homebrew.inject({
     ],
     unitModifiers,
     localeStrings,
-    unitAttrs
+    unitAttrs,
+    technologies
 });
 
 require("./faction/hacan");
