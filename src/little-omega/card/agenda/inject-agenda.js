@@ -6,9 +6,6 @@ const voteCountModifiers = [
         const checkIsDiscardPile = true;
         const allowFaceDown = false;
         for (const obj of world.getAllObjects()) {
-            if (obj === undefined) {
-                continue;
-            }
             const nsid = world.TI4.ObjectNamespace.getNsid(obj);
             if (nsid !== "card.agenda:homebrew.little-omega/representative_government") {
                 continue;
