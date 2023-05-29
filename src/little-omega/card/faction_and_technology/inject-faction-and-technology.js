@@ -4,6 +4,24 @@ const localeStrings = require("./locale-strings");
 const unitAttrs = require("./unit-attrs");
 const technologies = require("./technology.data");
 
+const statusPhaseTokenDealModifiers = [
+    (playerDesk) => {
+        if (world.TI4.CardUtil.hasCard(playerDesk.playerSlot, "card.technology.green:homebrew.little-omega/hyper_metabolism")) {
+            return 1;
+        }
+        return 0;
+    }
+];
+
+const statusPhaseActionDealModifiers = [
+    (playerDesk) => {
+        if (world.TI4.CardUtil.hasCard(playerDesk.playerSlot, "card.technology.green:homebrew.little-omega/neural_motivator")) {
+            return 1;
+        }
+        return 0;
+    }
+];
+
 world.TI4.homebrew.inject({
     nsidToTemplateId:
     {
@@ -56,7 +74,9 @@ world.TI4.homebrew.inject({
     unitModifiers,
     localeStrings,
     unitAttrs,
-    technologies
+    technologies,
+    statusPhaseTokenDealModifiers,
+    statusPhaseActionDealModifiers
 });
 
 require("./faction/hacan");
