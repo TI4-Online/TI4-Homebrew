@@ -43,6 +43,7 @@ const factions = [{
 };
 
 const replace = {
+  "card.leader.agent.hacan:pok/carth_of_golden_sands" : "card.leader.agent.hacan:homebrew.little-omega/carth_of_golden_sands",
   "card.technology.green.hacan:base/production_biomes" : "card.technology.green.hacan:homebrew.little-omega/production_biomes",
   "card.promissory.hacan:base/trade_convoys" : "card.promissory.hacan:homebrew.little-omega/trade_convoys",
   "card.leader.mech.hacan:pok/pride_of_kenara" : "card.leader.mech.hacan:homebrew.little-omega/pride_of_kenara"
