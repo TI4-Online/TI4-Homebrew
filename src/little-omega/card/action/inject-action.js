@@ -1,6 +1,25 @@
 const { world } = require("@tabletop-playground/api");
-const UNIT_MODIFIERS = require("./unit-modifiers.data");
+const unitModifiers = require("./unit-modifiers.data");
 require("./right-click-hack-election");
+
+const wormholeAdjacencyModifiers = [
+    (connected) => {
+        for (const obj of world.getAllObjects()) {
+            const nsid = world.TI4.ObjectNamespace.getNsid(obj);
+            if (nsid !== "card.action:homebrew.little-omega/lost_star_chart") {
+                continue;
+            }
+            if (!world.TI4.CardUtil.isLooseCard(obj, true)) {
+                continue; // not a lone, faceup card on the table
+            }
+            connected.forEach((wormholeConnections, wormhole, _connected) => {
+                if (wormhole !== "delta") {
+                    wormholeConnections.add("non-delta");
+                }
+            });
+        }
+    }
+];
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:
@@ -42,7 +61,8 @@ world.TI4.homebrew.inject({
         "card.action:base/upgrade": "card.action:homebrew.little-omega/upgrade",
         "card.action:base/warfare_rider": "card.action:homebrew.little-omega/warfare_rider"
     },
-    unitModifiers: UNIT_MODIFIERS
+    unitModifiers,
+    wormholeAdjacencyModifiers
 });
 
 if (!world.__littleOmegaFull && !world.__littleOmegaActionLoaded) {
