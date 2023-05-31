@@ -31,7 +31,7 @@ const factions = [
 };
 
 const replace = {
-  "card.technology.blue.yssaril:base/transparasteel_plating" : "card.technology.blue.yssaril:homebrew.little-omega/transparasteel_plating",
+  "card.technology.green.yssaril:base/transparasteel_plating" : "card.technology.blue.yssaril:homebrew.little-omega/transparasteel_plating",
   "card.promissory.yssaril:base/spy_net" : "card.promissory.yssaril:homebrew.little-omega/spy_net"
 };
 

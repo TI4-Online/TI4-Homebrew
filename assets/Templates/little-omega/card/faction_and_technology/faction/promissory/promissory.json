@@ -43,7 +43,7 @@
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
-	"NumHorizontal": 5,
+	"NumHorizontal": 6,
 	"NumVertical": 1,
 	"Width": 4.2,
 	"Height": 6.3,
@@ -57,22 +57,24 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0, 1, 2, 3, 4 ],
+	"Indices": [ 0, 1, 2, 3, 4, 5 ],
 	"CardNames":
 	{
             "0": "Crucible",
             "1": "Political Favor",
             "2": "Promise of Protection",
-            "3": "Strike Wing Ambuscade",
-            "4": "Trade Convoys"
+            "3": "Spy Net",
+            "4": "Strike Wing Ambuscade",
+            "5": "Trade Convoys"
 	},
 	"CardMetadata":
 	{
             "0": "card.promissory.vuilraith:homebrew.little-omega/crucible",
             "1": "card.promissory.xxcha:homebrew.little-omega/political_favor",
             "2": "card.promissory.mentak:homebrew.little-omega/promise_of_protection",
-            "3": "card.promissory.argent:homebrew.little-omega/strike_wing_ambuscade",
-            "4": "card.promissory.hacan:homebrew.little-omega/trade_convoys"
+            "3": "card.promissory.yssaril:homebrew.little-omega/spy_net",
+            "4": "card.promissory.argent:homebrew.little-omega/strike_wing_ambuscade",
+            "5": "card.promissory.hacan:homebrew.little-omega/trade_convoys"
 	},
 	"CardTags":
 	{
