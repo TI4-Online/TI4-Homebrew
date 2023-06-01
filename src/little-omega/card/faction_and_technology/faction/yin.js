@@ -44,7 +44,7 @@ const technologies = [{
     cardNsid:
         "card.technology.red.yin:homebrew.little-omega/impulse_core",
     type: "Red",
-    requirements: { Yellow : 1 },
+    requirements: { Red : 1 },
     source: "homebrew.little-omega",
     faction: "yin"
   },
