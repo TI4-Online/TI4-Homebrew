@@ -30,7 +30,7 @@ const factions = [{
 };
 
 const replace = {
-  "card.technology.yellow.yin:base/impulse_core" : "card.technology.yellow.yin:homebrew.little-omega/impulse_core",
+  "card.technology.yellow.yin:base/impulse_core" : "card.technology.red.yin:homebrew.little-omega/impulse_core",
   "card.technology.green.yin:base/yin_spinner" : "card.technology.green.yin:homebrew.little-omega/yin_spinner",
   "card.technology.green.yin:codex.ordinian/yin_spinner.omega" : "card.technology.green.yin:homebrew.little-omega/yin_spinner",
   "card.leader.agent.yin:pok/brother_milor" : "card.leader.agent.yin:homebrew.little-omega/brother_milor",
@@ -42,9 +42,9 @@ const replace = {
 const technologies = [{
     localeName: "technology.name.impulse_core",
     cardNsid:
-        "card.technology.yellow.yin:homebrew.little-omega/impulse_core",
-    type: "Yellow",
-    requirements: { Yellow : 2 },
+        "card.technology.red.yin:homebrew.little-omega/impulse_core",
+    type: "Red",
+    requirements: { Yellow : 1 },
     source: "homebrew.little-omega",
     faction: "yin"
   },

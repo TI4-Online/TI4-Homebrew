@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "A3603BB2137E49DD836BCAA5BCED2CA2",
 	"Name": "Faction Sheet (Yssaril)",
-	"Metadata": "sheet.faction:pok/yssaril",
+	"Metadata": "sheet.faction:base/yssaril",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -175,7 +175,7 @@
 	},
 	"CardMetadata":
 	{
-		"0": "sheet.faction:pok/yssaril"
+		"0": "sheet.faction:base/yssaril"
 	},
 	"CardTags":
 	{
