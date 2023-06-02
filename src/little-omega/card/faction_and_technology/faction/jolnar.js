@@ -138,7 +138,7 @@ const unitModifiers = [
     // all systems containing your structures are adjacent
     isCombat: true,
     localeName: "unit_modifier.name.spacial_conduit_cylinder",
-    localeDescription: "unit_modifier.name.spacial_conduit_cylinder",
+    localeDescription: "unit_modifier.desc.spacial_conduit_cylinder",
     owner: "self",
     priority: "choose",
     triggerNsid:
