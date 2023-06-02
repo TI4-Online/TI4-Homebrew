@@ -40,7 +40,7 @@
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
-	"NumHorizontal": 2,
+	"NumHorizontal": 1,
 	"NumVertical": 1,
 	"Width": 6.3,
 	"Height": 4.2,
@@ -54,14 +54,12 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0, 1 ],
+	"Indices": [ 0 ],
 	"CardNames": {
-		"0": "E-Res Siphons",
-		"1": "Impulse Core"
+		"0": "E-Res Siphons"
 	},
 	"CardMetadata": {
-		"0": "card.technology.yellow.jolnar:homebrew.little-omega/eres_siphons",
-		"1": "card.technology.yellow.yin:homebrew.little-omega/impulse_core"
+		"0": "card.technology.yellow.jolnar:homebrew.little-omega/eres_siphons"
 	},
 	"CardTags": {}
 }

@@ -1,8 +1,8 @@
 {
 	"Type": "Card",
-	"GUID": "A3603BB2137E49DD836BCAA5BCED2CA2",
-	"Name": "Faction Sheet (Yssaril)",
-	"Metadata": "sheet.faction:base/yssaril",
+	"GUID": "0B750A424CC842A684E1E8D1C2384D18",
+	"Name": "Faction Sheet (Nomad)",
+	"Metadata": "sheet.faction:pok/nomad",
 	"CollisionType": "Ground",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -149,8 +149,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "little-omega/card/faction/sheet/yssaril.back.jpg",
-	"BackTexture": "little-omega/card/faction/sheet/yssaril.face.jpg",
+	"FrontTexture": "little-omega/card/faction/sheet/nomad.back.jpg",
+	"BackTexture": "little-omega/card/faction/sheet/nomad.face.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,
@@ -171,11 +171,11 @@
 	"Indices": [ 0 ],
 	"CardNames":
 	{
-		"0": "Faction Sheet (Yssaril)"
+		"0": "Faction Sheet (Nomad)"
 	},
 	"CardMetadata":
 	{
-		"0": "sheet.faction:base/yssaril"
+		"0": "sheet.faction:pok/nomad"
 	},
 	"CardTags":
 	{

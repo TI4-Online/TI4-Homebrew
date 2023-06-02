@@ -40,7 +40,7 @@
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
-	"NumHorizontal": 3,
+	"NumHorizontal": 4,
 	"NumVertical": 1,
 	"Width": 6.3,
 	"Height": 4.2,
@@ -54,16 +54,18 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [0, 1, 2],
+	"Indices": [ 0, 1, 2, 3 ],
 	"CardNames": {
-		"0": "Nullfication Field",
-		"1": "Salvage Operations",
-		"2": "Vortex"
+        "0": "Impulse Core",
+		"1": "Nullfication Field",
+		"2": "Salvage Operations",
+		"3": "Vortex"
 	},
 	"CardMetadata": {
-		"0": "card.technology.red.xxcha:homebrew.little-omega/nullification_field",
-		"1": "card.technology.red.mentak:homebrew.little-omega/salvage_operations",
-		"2": "card.technology.red.vuilraith:homebrew.little-omega/vortex"
+        "0": "card.technology.red.yin:homebrew.little-omega/impulse_core",
+		"1": "card.technology.red.xxcha:homebrew.little-omega/nullification_field",
+		"2": "card.technology.red.mentak:homebrew.little-omega/salvage_operations",
+		"3": "card.technology.red.vuilraith:homebrew.little-omega/vortex"
 	},
 	"CardTags": {}
 }

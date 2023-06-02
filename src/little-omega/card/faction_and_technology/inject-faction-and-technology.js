@@ -87,6 +87,7 @@ require("./faction/yin");
 require("./faction/vuilraith");
 require("./faction/argent");
 require("./faction/yssaril");
+require("./faction/nomad");
 
 if (!world.__littleOmegaFull && !world.__littleOmegaFactionAndTechnologyLoaded) {
     world.TI4.homebrew.resetOnTableDecks();
