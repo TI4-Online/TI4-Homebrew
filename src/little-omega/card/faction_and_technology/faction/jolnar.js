@@ -46,7 +46,7 @@ const replace = {
 
 const technologies = [
   {
-    localeName: "technology.name.eres_siphons",
+    localeName: "technology.name.e_res_siphons",
     cardNsid:
       "card.technology.yellow.jolnar:homebrew.little-omega/eres_siphons",
     type: "Yellow",
