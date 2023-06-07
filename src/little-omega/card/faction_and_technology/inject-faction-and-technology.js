@@ -131,6 +131,7 @@ require("./faction/vuilraith");
 require("./faction/argent");
 require("./faction/yssaril");
 require("./faction/nomad");
+require("./faction/naazrokha");
 
 if (
   !world.__littleOmegaFull &&
