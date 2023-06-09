@@ -51,37 +51,9 @@ const technologies = [
   },
 ];
 
-const unitModifiers = [
-  {
-    // "+1 to all COMBAT rolls",
-    isCombat: true,
-    localeName: "unit_modifier.name.supercharge",
-    localeDescription: "unit_modifier.desc.supercharge",
-    owner: "self",
-    priority: "adjust",
-    toggleActive: true,
-    triggerNsid: "card.technology.red.naazrokha:homebrew.little-omega/supercharge",
-    filter: (auxData) => {
-      return (
-        auxData.rollType === "spaceCombat" ||
-        auxData.rollType === "groundCombat"
-      );
-    },
-    applyEach: (unitAttrs, auxData) => {
-      if (unitAttrs.raw.spaceCombat) {
-        unitAttrs.raw.spaceCombat.hit -= 1;
-      }
-      if (unitAttrs.raw.groundCombat) {
-        unitAttrs.raw.groundCombat.hit -= 1;
-      }
-    },
-  },
-];
-
 world.TI4.homebrew.inject({
   factions,
   nsidToTemplateId,
   technologies,
-  unitModifiers,
   replace,
 });

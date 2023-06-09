@@ -47,6 +47,7 @@ const replace = {
   "card.promissory.vuilraith:pok/crucible": "card.promissory.vuilraith:homebrew.little-omega/crucible",
   "card.technology.unit_upgrade.vuilraith:pok/dimensional_tear_2" : "card.technology.unit_upgrade.vuilraith:homebrew.little-omega/dimensional_tear_2",
   "card.technology.red.vuilraith:pok/vortex" : "card.technology.red.vuilraith:homebrew.little-omega/vortex",
+  "card.leader.hero.vuilraith:pok/it_feeds_on_carrion" : "card.leader.hero.vuilraith:homebrew.little-omega/it_feeds_on_carrion",
 };
 
 const technologies = [

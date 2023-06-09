@@ -95,6 +95,8 @@ world.TI4.homebrew.inject({
       "card.technology.yellow:homebrew.little-omega/self_assembly_routines",
     "card.technology.yellow:base/sarween_tools":
       "card.technology.yellow:homebrew.little-omega/sarween_tools",
+    "card.technology.yellow:pok/scanlink_drone_network":
+      "card.technology.yellow:homebrew.little-omega/scanlink_drone_network",
     "card.technology.unit_upgrade:base/carrier_2":
       "card.technology.unit_upgrade:homebrew.little-omega/carrier_2",
     "card.technology.unit_upgrade:base/cruiser_2":
@@ -132,6 +134,7 @@ require("./faction/argent");
 require("./faction/yssaril");
 require("./faction/nomad");
 require("./faction/naazrokha");
+require("./faction/empyrean");
 
 if (
   !world.__littleOmegaFull &&
