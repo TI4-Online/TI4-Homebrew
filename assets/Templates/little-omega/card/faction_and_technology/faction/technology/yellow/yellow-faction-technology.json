@@ -40,7 +40,7 @@
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
-	"NumHorizontal": 1,
+	"NumHorizontal": 2,
 	"NumVertical": 1,
 	"Width": 6.3,
 	"Height": 4.2,
@@ -54,12 +54,14 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0 ],
+	"Indices": [ 0, 1 ],
 	"CardNames": {
-		"0": "E-Res Siphons"
+		"0": "E-Res Siphons",
+		"1": "Temporal Command Suite"
 	},
 	"CardMetadata": {
-		"0": "card.technology.yellow.jolnar:homebrew.little-omega/eres_siphons"
+		"0": "card.technology.yellow.jolnar:homebrew.little-omega/eres_siphons",
+		"1": "card.technology.yellow.nomad:homebrew.little-omega/temporal_command_suite"
 	},
 	"CardTags": {}
 }
