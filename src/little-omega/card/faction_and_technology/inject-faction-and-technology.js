@@ -59,6 +59,7 @@ world.TI4.homebrew.inject({
       "DF2D1369782444F19671A55965F35429",
     "card.technology.unit_upgrade:homebrew.little-omega/1":
       "8EA9588A717B4915A12D200688DCD847",
+    "card.alliance:homebrew.little-omega/1": "E8844137E0594357A30F436F50D5CC56",
   },
   replace: {
     "card.technology.blue:base/fleet_logistics":

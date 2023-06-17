@@ -39,8 +39,8 @@
   "HiddenTexture": "",
   "BackIndex": -3,
   "HiddenIndex": -3,
-  "NumHorizontal": 8,
-  "NumVertical": 1,
+  "NumHorizontal": 3,
+  "NumVertical": 3,
   "Width": 6.3,
   "Height": 4.2,
   "Thickness": 0.05,
@@ -52,16 +52,17 @@
   "AllowFlippedInStack": false,
   "MirrorBack": true,
   "Model": "Rounded",
-  "Indices": [0, 1, 2, 3, 4, 5, 6, 7],
+  "Indices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
   "CardNames": {
     "0": "Carth of Golden Sands",
     "1": "Pride of Kenara",
     "2": "Ipswitch Loose Cannon",
     "3": "It Feeds on Carrion",
     "4": "Ggrocuto Rinn",
-    "5": "Xxekir Grom",
-    "6": "Brother Milor",
-    "7": "Dannel of the Tenth"
+    "5": "Elder Qanoj",
+    "6": "Xxekir Grom",
+    "7": "Brother Milor",
+    "8": "Dannel of the Tenth"
   },
   "CardMetadata": {
     "0": "card.leader.agent.hacan:homebrew.little-omega/carth_of_golden_sands",
@@ -69,8 +70,9 @@
     "2": "card.leader.hero.mentak:homebrew.little-omega/ipswitch_loose_cannon",
     "3": "card.leader.hero.vuilraith:homebrew.little-omega/it_feeds_on_carrion",
     "4": "card.leader.agent.xxcha:homebrew.little-omega/ggrocuto_rinn",
-    "5": "card.leader.hero.xxcha:homebrew.little-omega/xxekir_grom",
-    "6": "card.leader.agent.yin:homebrew.little-omega/brother_milor",
-    "7": "card.leader.hero.yin:homebrew.little-omega/dannel_of_the_tenth"
+    "5": "card.leader.commander.xxcha:homebrew.little-omega/elder_qanoj",
+    "6": "card.leader.hero.xxcha:homebrew.little-omega/xxekir_grom",
+    "7": "card.leader.agent.yin:homebrew.little-omega/brother_milor",
+    "8": "card.leader.hero.yin:homebrew.little-omega/dannel_of_the_tenth"
   }
 }
