@@ -136,6 +136,7 @@ require("./faction/yssaril");
 require("./faction/nomad");
 require("./faction/naazrokha");
 require("./faction/empyrean");
+require("./faction/nekro");
 
 if (
   !world.__littleOmegaFull &&
