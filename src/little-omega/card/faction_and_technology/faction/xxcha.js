@@ -41,6 +41,9 @@ const replace = {
     "card.promissory.xxcha:homebrew.little-omega/political_favor",
   "card.leader.agent.xxcha:pok/ggrocuto_rinn":
     "card.leader.agent.xxcha:homebrew.little-omega/ggrocuto_rinn",
+  "card.leader.commander.xxcha:pok/elder_qanoj":
+    "card.leader.commander.xxcha:homebrew.little-omega/elder_qanoj",
+  "card.alliance:pok/xxcha": "card.alliance:homebrew.little-omega/xxcha",
   "card.leader.hero.xxcha:pok/xxekir_grom":
     "card.leader.hero.xxcha:homebrew.little-omega/xxekir_grom",
   "card.leader.hero.xxcha:codex.vigil/xxekir_grom.omega":
@@ -70,9 +73,45 @@ const technologies = [
 
 const voteCountModifiers = [
   (playerDesk, currentVoteCount) => {
-    const nsid = "card.leader.hero.xxcha:homebrew.little-omega/xxekir_grom";
+    const playerSlot = playerDesk.playerSlot;
+    const faction = world.TI4.getFactionByPlayerSlot(playerSlot);
+    if (!faction || faction.raw.faction !== "xxcha") {
+      return 0;
+    }
     const checkIsDiscardPile = false;
     const allowFaceDown = false;
+    let bonus = 0;
+    for (const obj of world.getAllObjects()) {
+      if (obj.getContainer()) {
+        continue;
+      }
+      if (
+        !world.TI4.CardUtil.isLooseCard(obj, checkIsDiscardPile, allowFaceDown)
+      ) {
+        continue;
+      }
+      const planet = world.TI4.getPlanetByCard(obj);
+      if (!planet) {
+        continue;
+      }
+
+      const pos = obj.getPosition();
+      const closestDesk = world.TI4.getClosestPlayerDesk(pos);
+      if (closestDesk !== playerDesk) {
+        continue;
+      }
+
+      bonus += 1;
+    }
+    return bonus;
+  },
+  (playerDesk, currentVoteCount) => {
+    const nsid =
+      "card.leader.commander.xxcha:homebrew.little-omega/elder_qanoj";
+    const nsid2 = "card.alliance:homebrew.little-omega/xxcha";
+    const checkIsDiscardPile = false;
+    const allowFaceDown = false;
+    var found = false;
     for (const obj of world.getAllObjects()) {
       if (obj.getContainer()) {
         continue;
@@ -83,13 +122,17 @@ const voteCountModifiers = [
         continue;
       }
       const thisNsid = world.TI4.ObjectNamespace.getNsid(obj);
-      if (thisNsid === nsid) {
+      if (thisNsid === nsid || thisNsid === nsid2) {
         const pos = obj.getPosition();
         const closestDesk = world.TI4.getClosestPlayerDesk(pos);
-        if (playerDesk !== closestDesk) {
-          return 0;
+        if (playerDesk === closestDesk) {
+          found = true;
         }
       }
+    }
+
+    if (!found) {
+      return 0;
     }
 
     let bonus = 0;
@@ -110,6 +153,20 @@ const voteCountModifiers = [
       const pos = obj.getPosition();
       const closestDesk = world.TI4.getClosestPlayerDesk(pos);
       if (closestDesk !== playerDesk) {
+        continue;
+      }
+
+      const structures = world.TI4.UnitPlastic.getAll().filter(
+        (unit) =>
+          unit.owningPlayerSlot === playerDesk.playerSlot &&
+          (unit.unit === "pds" || unit.unit === "space_dock")
+      );
+      world.TI4.UnitPlastic.assignPlanets(structures);
+      const hasStructure = structures.some((unit) => {
+        return unit.planet.getPlanetNsidName() === planet.getPlanetNsidName();
+      });
+
+      if (!hasStructure) {
         continue;
       }
 

@@ -1,8 +1,8 @@
 {
   "Type": "Card",
-  "GUID": "411467A48A32401BBB5BE8A04023929E",
-  "Name": "Faction Sheet (Empyrean)",
-  "Metadata": "sheet.faction:pok/empyrean",
+  "GUID": "1479ED7CA70E45E6A459D5CA159348CF",
+  "Name": "Faction Sheet (Nekro)",
+  "Metadata": "sheet.faction:base/nekro",
   "CollisionType": "Ground",
   "Friction": 0.7,
   "Restitution": 0.3,
@@ -146,8 +146,8 @@
     "Z": 0
   },
   "Tags": [],
-  "FrontTexture": "little-omega/card/faction/sheet/empyrean.back.jpg",
-  "BackTexture": "little-omega/card/faction/sheet/empyrean.face.jpg",
+  "FrontTexture": "little-omega/card/faction/sheet/nekro.back.jpg",
+  "BackTexture": "little-omega/card/faction/sheet/nekro.face.jpg",
   "HiddenTexture": "",
   "BackIndex": -2,
   "HiddenIndex": -1,
@@ -167,10 +167,10 @@
   "Model": "Square",
   "Indices": [0],
   "CardNames": {
-    "0": "Faction Sheet (Empyrean)"
+    "0": "Faction Sheet (Nekro)"
   },
   "CardMetadata": {
-    "0": "sheet.faction:pok/empyrean"
+    "0": "sheet.faction:base/nekro"
   },
   "CardTags": {}
 }
