@@ -30,7 +30,6 @@ module.exports = [
                 );
                 auxData.self.overrideCount("experimental_battlestation", 1);
             }
-            world.TI4.agenda.Agenda
         }
     },
     {
@@ -42,7 +41,6 @@ module.exports = [
         localeDescription: "unit_modifier.desc.tactical_bombardment",
         owner: "self",
         priority: "adjust",
-        toggleActive: true,
         triggerNsid: "card.action:homebrew.little-omega/tactical_bombardment",
         filter: (auxData) => {
             return auxData.rollType === "groundCombat";
