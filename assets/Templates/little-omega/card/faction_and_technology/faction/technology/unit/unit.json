@@ -40,7 +40,7 @@
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,
-	"NumHorizontal": 1,
+	"NumHorizontal": 2,
 	"NumVertical": 1,
 	"Width": 6.3,
 	"Height": 4.2,
@@ -54,11 +54,13 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [0],
+	"Indices": [ 0, 1 ],
 	"CardNames": {
-		"0": "Dimensional Tear II"
+		"0": "Dimensional Tear II",
+        "1": "Memoria II"
 	},
 	"CardMetadata": {
-		"0": "card.technology.unit_upgrade.vuilraith:homebrew.little-omega/dimensional_tear_2"
+		"0": "card.technology.unit_upgrade.vuilraith:homebrew.little-omega/dimensional_tear_2",
+        "1": "card.technology.unit_upgrade.nomad:homebrew.little-omega/memoria_2"
 	}
 }

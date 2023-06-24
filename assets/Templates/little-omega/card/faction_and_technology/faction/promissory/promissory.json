@@ -1,80 +1,77 @@
 {
-	"Type": "Card",
-	"GUID": "E88B029F33C5472296BFB0952E4DDD13",
-	"Name": "Little Omega - Faction Promissory Notes",
-	"Metadata": "card.promissory:homebrew.little-omega/1",
-	"CollisionType": "Regular",
-	"Friction": 0.7,
-	"Restitution": 0,
-	"Density": 0.5,
-	"SurfaceType": "Cardboard",
-	"Roughness": 1,
-	"Metallic": 0,
-	"PrimaryColor":
-	{
-            "R": 255,
-            "G": 255,
-            "B": 255
-	},
-	"SecondaryColor":
-	{
-            "R": 0,
-            "G": 0,
-            "B": 0
-	},
-	"Flippable": true,
-	"AutoStraighten": false,
-	"ShouldSnap": true,
-	"ScriptName": "",
-	"Blueprint": "",
-	"Models": [],
-	"Collision": [],
-	"SnapPointsGlobal": false,
-	"SnapPoints": [],
-	"ZoomViewDirection":
-	{
-            "X": 0,
-            "Y": 0,
-            "Z": 0
-	},
-	"Tags": [],
-	"FrontTexture": "little-omega/card/faction/promissory/face.jpg",
-	"BackTexture": "ti4/promissory.back.jpg",
-	"HiddenTexture": "",
-	"BackIndex": -2,
-	"HiddenIndex": -3,
-	"NumHorizontal": 5,
-	"NumVertical": 1,
-	"Width": 4.2,
-	"Height": 6.3,
-	"Thickness": 0.05,
-	"HiddenInHand": true,
-	"UsedWithCardHolders": true,
-	"CanStack": true,
-	"UsePrimaryColorForSide": false,
-	"FrontTextureOverrideExposed": false,
-	"AllowFlippedInStack": false,
-	"MirrorBack": true,
-	"EmissiveFront": false,
-	"Model": "Rounded",
-	"Indices": [ 0, 1, 2, 3, 4 ],
-	"CardNames":
-	{
-            "0": "Crucible",
-            "1": "Political Favor",
-            "2": "Promise of Protection",
-            "3": "Strike Wing Ambuscade",
-            "4": "Trade Convoys"
-	},
-	"CardMetadata":
-	{
-            "0": "card.promissory.vuilraith:homebrew.little-omega/crucible",
-            "1": "card.promissory.xxcha:homebrew.little-omega/political_favor",
-            "2": "card.promissory.mentak:homebrew.little-omega/promise_of_protection",
-            "3": "card.promissory.argent:homebrew.little-omega/strike_wing_ambuscade",
-            "4": "card.promissory.hacan:homebrew.little-omega/trade_convoys"
-	},
-	"CardTags":
-	{
-	}
+  "Type": "Card",
+  "GUID": "E88B029F33C5472296BFB0952E4DDD13",
+  "Name": "Little Omega - Faction Promissory Notes",
+  "Metadata": "card.promissory:homebrew.little-omega/1",
+  "CollisionType": "Regular",
+  "Friction": 0.7,
+  "Restitution": 0,
+  "Density": 0.5,
+  "SurfaceType": "Cardboard",
+  "Roughness": 1,
+  "Metallic": 0,
+  "PrimaryColor": {
+    "R": 255,
+    "G": 255,
+    "B": 255
+  },
+  "SecondaryColor": {
+    "R": 0,
+    "G": 0,
+    "B": 0
+  },
+  "Flippable": true,
+  "AutoStraighten": false,
+  "ShouldSnap": true,
+  "ScriptName": "",
+  "Blueprint": "",
+  "Models": [],
+  "Collision": [],
+  "SnapPointsGlobal": false,
+  "SnapPoints": [],
+  "ZoomViewDirection": {
+    "X": 0,
+    "Y": 0,
+    "Z": 0
+  },
+  "Tags": [],
+  "FrontTexture": "little-omega/card/faction/promissory/face.jpg",
+  "BackTexture": "ti4/promissory.back.jpg",
+  "HiddenTexture": "",
+  "BackIndex": -2,
+  "HiddenIndex": -3,
+  "NumHorizontal": 7,
+  "NumVertical": 1,
+  "Width": 4.2,
+  "Height": 6.3,
+  "Thickness": 0.05,
+  "HiddenInHand": true,
+  "UsedWithCardHolders": true,
+  "CanStack": true,
+  "UsePrimaryColorForSide": false,
+  "FrontTextureOverrideExposed": false,
+  "AllowFlippedInStack": false,
+  "MirrorBack": true,
+  "EmissiveFront": false,
+  "Model": "Rounded",
+  "Indices": [0, 1, 2, 3, 4, 5, 6],
+  "CardNames": {
+    "0": "Crucible",
+    "1": "Oracle System",
+    "2": "Political Favor",
+    "3": "Promise of Protection",
+    "4": "Spy Net",
+    "5": "Strike Wing Ambuscade",
+    "6": "Trade Convoys"
+  },
+  "CardMetadata": {
+    "0": "card.promissory.vuilraith:homebrew.little-omega/crucible",
+    "1": "card.promissory.nekro:homebrew.little-omega/oracle_system",
+    "2": "card.promissory.xxcha:homebrew.little-omega/political_favor",
+    "3": "card.promissory.mentak:homebrew.little-omega/promise_of_protection",
+    "4": "card.promissory.yssaril:homebrew.little-omega/spy_net",
+    "5": "card.promissory.argent:homebrew.little-omega/strike_wing_ambuscade",
+    "6": "card.promissory.hacan:homebrew.little-omega/trade_convoys"
+  },
+  "CardTags": {}
 }

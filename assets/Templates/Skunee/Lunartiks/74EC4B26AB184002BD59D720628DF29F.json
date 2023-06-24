@@ -1,0 +1,67 @@
+{
+  "Type": "Card",
+  "GUID": "74EC4B26AB184002BD59D720628DF29F",
+  "Name": "Lunartiks Tech Deck",
+  "Metadata": "",
+  "CollisionType": "Regular",
+  "Friction": 0.7,
+  "Restitution": 0,
+  "Density": 0.5,
+  "SurfaceType": "Cardboard",
+  "Roughness": 1,
+  "Metallic": 0,
+  "PrimaryColor": {
+    "R": 255,
+    "G": 255,
+    "B": 255
+  },
+  "SecondaryColor": {
+    "R": 0,
+    "G": 0,
+    "B": 0
+  },
+  "Flippable": true,
+  "AutoStraighten": false,
+  "ShouldSnap": true,
+  "ScriptName": "",
+  "Blueprint": "",
+  "Models": [],
+  "Collision": [],
+  "SnapPointsGlobal": false,
+  "SnapPoints": [],
+  "ZoomViewDirection": {
+    "X": 0,
+    "Y": 0,
+    "Z": 0
+  },
+  "Tags": [],
+  "FrontTexture": "skunee/lunartiks-tech-face.jpg",
+  "BackTexture": "skunee/lunartiks-tech-back.jpg",
+  "HiddenTexture": "",
+  "BackIndex": -2,
+  "HiddenIndex": -3,
+  "NumHorizontal": 2,
+  "NumVertical": 1,
+  "Width": 6.3,
+  "Height": 4.2,
+  "Thickness": 0.05,
+  "HiddenInHand": true,
+  "UsedWithCardHolders": true,
+  "CanStack": true,
+  "UsePrimaryColorForSide": false,
+  "FrontTextureOverrideExposed": false,
+  "AllowFlippedInStack": false,
+  "MirrorBack": true,
+  "EmissiveFront": false,
+  "Model": "Rounded",
+  "Indices": [0, 1],
+  "CardNames": {
+    "1": "Ares Orbiter II",
+    "0": "Orbital Relay II"
+  },
+  "CardMetadata": {
+    "0": "card.technology.skunee:homebrew.lunartiks/orbital_relay_ii",
+    "1": "card.technology.skunee:homebrew.lunartiks/ares_orbiter_ii"
+  },
+  "CardTags": {}
+}

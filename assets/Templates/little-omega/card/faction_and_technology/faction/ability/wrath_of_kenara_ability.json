@@ -35,7 +35,7 @@
 		"Z": 0
 	},
 	"FrontTexture": "little-omega/card/faction/ability/wrath_of_kenara_ability.face.jpg",
-	"BackTexture": "ti4/technology/unknown.back.jpg",
+	"BackTexture": "little-omega/card/faction/ability/wrath_of_kenara_ability.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -3,
 	"HiddenIndex": -3,
