@@ -68,6 +68,8 @@ world.TI4.homebrew.inject({
       "card.technology.blue:homebrew.little-omega/gravity_drive",
     "card.technology.blue:base/lightwave_deflector":
       "card.technology.blue:homebrew.little-omega/lightwave_deflector",
+    "card.technology.green:pok/biostims":
+      "card.technology.green:homebrew.little-omega/biostims",
     "card.technology.green:base/dacxive_animators":
       "card.technology.green:homebrew.little-omega/dacxive_animators",
     "card.technology.green:base/hyper_metabolism":

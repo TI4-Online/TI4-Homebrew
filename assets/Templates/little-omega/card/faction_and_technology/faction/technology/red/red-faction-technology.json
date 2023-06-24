@@ -40,7 +40,7 @@
   "HiddenTexture": "",
   "BackIndex": -2,
   "HiddenIndex": -3,
-  "NumHorizontal": 5,
+  "NumHorizontal": 4,
   "NumVertical": 1,
   "Width": 6.3,
   "Height": 4.2,
@@ -54,20 +54,18 @@
   "MirrorBack": true,
   "EmissiveFront": false,
   "Model": "Rounded",
-  "Indices": [0, 1, 2, 3, 4],
+  "Indices": [0, 1, 2, 3],
   "CardNames": {
     "0": "Impulse Core",
     "1": "Nullfication Field",
     "2": "Salvage Operations",
-    "3": "Supercharge",
-    "4": "Vortex"
+    "3": "Supercharge"
   },
   "CardMetadata": {
     "0": "card.technology.red.yin:homebrew.little-omega/impulse_core",
     "1": "card.technology.red.xxcha:homebrew.little-omega/nullification_field",
     "2": "card.technology.red.mentak:homebrew.little-omega/salvage_operations",
-    "3": "card.technology.red.naazrokha:homebrew.little-omega/supercharge",
-    "4": "card.technology.red.vuilraith:homebrew.little-omega/vortex"
+    "3": "card.technology.red.naazrokha:homebrew.little-omega/supercharge"
   },
   "CardTags": {}
 }

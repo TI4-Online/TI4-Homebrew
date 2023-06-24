@@ -14,7 +14,7 @@ const factions = [
     promissoryNotes: ["political_favor"],
     icon: "global/factions/xxcha_icon.png",
     source: "base",
-    startingTech: ["graviton_laser_system"],
+    startingTech: ["plasma_scoring", "neural_motivator"],
     startingUnits: {
       carrier: 1,
       cruiser: 2,
