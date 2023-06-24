@@ -1,0 +1,79 @@
+{
+	"Type": "Card",
+	"GUID": "3C70A03F407AF958D8486F992B0EAE8B",
+	"Name": "Exploration (frontier) (homebrew.discordant_stars)",
+	"Metadata": "card.exploration.frontier:homebrew.discordant_stars.exploration/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "discordant-stars/exploration-frontier-plus.face.jpg",
+	"BackTexture": "ti4/exploration/frontier.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -1,
+	"NumHorizontal": 2,
+	"NumVertical": 2,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3 ],
+	"CardNames":
+	{
+		"0": "Dark Visions",
+		"1": "Folded Space",
+		"2": "Star Chart",
+		"3": "Suspicious Wreckage"
+	},
+	"CardMetadata":
+	{
+		"0": "card.exploration.frontier:homebrew.discordant_stars/dark_visions",
+		"1": "card.exploration.frontier:homebrew.discordant_stars/folded_space",
+		"2": "card.exploration.frontier:homebrew.discordant_stars/star_chart",
+		"3": "card.exploration.frontier:homebrew.discordant_stars/suspicious_wreckage"
+	},
+	"CardTags":
+	{
+	}
+}
