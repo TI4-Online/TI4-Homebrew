@@ -35,8 +35,8 @@ const factions = [
     icon: "skunee/lunartiks/lunartiks-faction-icon.png",
     leaders: {
       agents: ["inanis"],
-      commanders: ["mors_desuper"],
-      heroes: ["ganymede_jupiter"],
+      commanders: ["mores_desuper"],
+      heroes: ["collapsing_orbit"],
     },
     packageId: refPackageId,
     promissoryNotes: ["ares_orbiter_prototype"],

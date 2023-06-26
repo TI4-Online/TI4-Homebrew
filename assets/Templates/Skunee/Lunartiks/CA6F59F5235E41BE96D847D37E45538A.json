@@ -68,9 +68,9 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.leader.agent.lunartiks:homebrew.lunartiks/Inanis",
-		"1": "card.leader.commander.lunartiks:homebrew.lunartiks/mors_desuper",
-		"2": "card.leader.hero.lunartiks:hoembrew.lunartiks/ganymede_jupiter",
+		"0": "card.leader.agent.lunartiks:homebrew.lunartiks/inanis",
+		"1": "card.leader.commander.lunartiks:homebrew.lunartiks/mores_desuper",
+		"2": "card.leader.hero.lunartiks:homebrew.lunartiks/collapsing_orbit",
 		"3": "card.leader.mech.lunartiks:homebrew.lunartiks/ares_orbiter"
 	},
 	"CardTags":
