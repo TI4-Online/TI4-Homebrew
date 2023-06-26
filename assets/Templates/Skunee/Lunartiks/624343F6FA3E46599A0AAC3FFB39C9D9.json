@@ -2,7 +2,7 @@
 	"Type": "Generic",
 	"GUID": "624343F6FA3E46599A0AAC3FFB39C9D9",
 	"Name": "Home System",
-	"Metadata": "tile.system:homebrew.lunartiks/998",
+	"Metadata": "tile.system:homebrew.lunartiks/3350",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -48,7 +48,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "lunartiks/lunartiks-homeSystem.jpg",
+			"Texture": "skunee/lunartiks/lunartiks-homeSystem.jpeg",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
@@ -127,6 +127,7 @@
 			"Type": "Convex"
 		}
 	],
+	"Lights": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
 	"ZoomViewDirection":

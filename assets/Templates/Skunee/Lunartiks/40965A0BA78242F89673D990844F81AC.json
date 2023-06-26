@@ -48,7 +48,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "skunee/lunartiks-faction-tokens.jpg",
+			"Texture": "skunee/lunartiks/lunartiks-faction-tokens.jpeg",
 			"NormalMap": "",
 			"ExtraMap": "ti4/faction_x.png",
 			"ExtraMap2": "",
@@ -83,6 +83,7 @@
 			"Type": "Convex"
 		}
 	],
+	"Lights": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
 	"ZoomViewDirection":

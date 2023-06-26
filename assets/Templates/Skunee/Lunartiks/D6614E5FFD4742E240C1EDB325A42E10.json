@@ -1,7 +1,7 @@
 {
 	"Type": "Card",
-	"GUID": "CA6F59F5235E41BE96D847D37E45538A",
-	"Name": "Leaders Deck",
+	"GUID": "D6614E5FFD4742E240C1EDB325A42E10",
+	"Name": "Card",
 	"Metadata": "",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
@@ -39,15 +39,15 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "skunee/lunartiks/lunartiks-leaders-face.jpeg",
-	"BackTexture": "skunee/lunartiks/lunartiks-leaders-back.jpeg",
+	"FrontTexture": "skunee/lunartiks/lunartiks-reference-face.jpeg",
+	"BackTexture": "",
 	"HiddenTexture": "",
-	"BackIndex": -3,
-	"HiddenIndex": -3,
-	"NumHorizontal": 2,
-	"NumVertical": 2,
-	"Width": 6.3,
-	"Height": 4.2,
+	"BackIndex": 0,
+	"HiddenIndex": -1,
+	"NumHorizontal": 1,
+	"NumVertical": 1,
+	"Width": 8.8,
+	"Height": 6.3,
 	"Thickness": 0.05,
 	"HiddenInHand": true,
 	"UsedWithCardHolders": true,
@@ -58,20 +58,13 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0, 1, 2, 3 ],
+	"Indices": [ 0 ],
 	"CardNames":
 	{
-		"0": "Inanis",
-		"1": "Mors Desuper",
-		"2": "Ganymede Jupiter",
-		"3": "Ares Orbiter"
 	},
 	"CardMetadata":
 	{
-		"0": "card.leader.agent.lunartiks:homebrew.lunartiks/Inanis",
-		"1": "card.leader.commander.lunartiks:homebrew.lunartiks/mors_desuper",
-		"2": "card.leader.hero.lunartiks:hoembrew.lunartiks/ganymede_jupiter",
-		"3": "card.leader.mech.lunartiks:homebrew.lunartiks/ares_orbiter"
+		"0": "card.faction_reference:homebrew.skunee/lunartiks"
 	},
 	"CardTags":
 	{

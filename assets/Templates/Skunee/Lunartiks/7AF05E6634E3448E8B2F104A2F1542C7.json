@@ -29,6 +29,7 @@
 	"Blueprint": "",
 	"Models": [],
 	"Collision": [],
+	"Lights": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
 	"ZoomViewDirection":
@@ -38,7 +39,7 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "lunartiks/lunartiks-promissory-front.jpg",
+	"FrontTexture": "skunee/lunartiks/lunartiks-promissory-front.jpeg",
 	"BackTexture": "ti4/promissory.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
@@ -64,7 +65,7 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.promissory.skunee:homebrew.skunee/ares_orbiter_prototype"
+		"0": "card.promissory.lunartiks:homebrew.skunee/ares_orbiter_prototype"
 	},
 	"CardTags":
 	{

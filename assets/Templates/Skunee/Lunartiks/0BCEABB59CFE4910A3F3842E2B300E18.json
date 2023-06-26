@@ -29,6 +29,7 @@
 	"Blueprint": "",
 	"Models": [],
 	"Collision": [],
+	"Lights": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
 	"ZoomViewDirection":
@@ -38,7 +39,7 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "skunee/lunartiks-token.jpg",
+	"FrontTexture": "skunee/lunartiks/lunartiks-token.jpeg",
 	"BackTexture": "",
 	"HiddenTexture": "",
 	"BackIndex": 0,
