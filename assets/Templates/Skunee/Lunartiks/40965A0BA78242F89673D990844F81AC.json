@@ -2,7 +2,7 @@
 	"Type": "Generic",
 	"GUID": "40965A0BA78242F89673D990844F81AC",
 	"Name": "Control Token",
-	"Metadata": "token.control:homebrew.lunartiks/lunartiks",
+	"Metadata": "token.control:homebrew.skunee/lunartiks",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,

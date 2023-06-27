@@ -66,8 +66,8 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.technology.unit_upgrade.lunartiks:homebrew.lunartiks/orbital_relay_2",
-		"1": "card.technology.unit_upgrade.lunartiks:homebrew.lunartiks/ares_orbiter_2"
+		"0": "card.technology.unit_upgrade.lunartiks:homebrew.skunee/orbital_relay_2",
+		"1": "card.technology.unit_upgrade.lunartiks:homebrew.skunee/ares_orbiter_2"
 	},
 	"CardTags":
 	{

@@ -68,10 +68,10 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.leader.agent.lunartiks:homebrew.lunartiks/inanis",
-		"1": "card.leader.commander.lunartiks:homebrew.lunartiks/mores_desuper",
-		"2": "card.leader.hero.lunartiks:homebrew.lunartiks/collapsing_orbit",
-		"3": "card.leader.mech.lunartiks:homebrew.lunartiks/ares_orbiter"
+		"0": "card.leader.agent.lunartiks:homebrew.skunee/inanis",
+		"1": "card.leader.commander.lunartiks:homebrew.skunee/mores_desuper",
+		"2": "card.leader.hero.lunartiks:homebrew.skunee/collapsing_orbit",
+		"3": "card.leader.mech.lunartiks:homebrew.skunee/ares_orbiter"
 	},
 	"CardTags":
 	{

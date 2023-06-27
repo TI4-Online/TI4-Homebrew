@@ -1,8 +1,8 @@
 {
 	"Type": "Card",
-	"GUID": "3FFD7DB333284152BBB64B3F97DF4BBF",
-	"Name": "Planets Deck",
-	"Metadata": "",
+	"GUID": "AC6DFA88094B0BC75A0C329748CCE1BB",
+	"Name": "Tidal Force Token",
+	"Metadata": "token:homebrew.skunee/tidal_force",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -39,35 +39,31 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "skunee/lunartiks/lunartiks-planets-face.jpeg",
-	"BackTexture": "skunee/lunartiks/lunartiks-planets-back.jpeg",
+	"FrontTexture": "skunee/lunartiks/lunartiks-token-tidalforce.jpeg",
+	"BackTexture": "",
 	"HiddenTexture": "",
-	"BackIndex": -3,
-	"HiddenIndex": -3,
-	"NumHorizontal": 2,
+	"BackIndex": 0,
+	"HiddenIndex": -1,
+	"NumHorizontal": 1,
 	"NumVertical": 1,
-	"Width": 4.2,
-	"Height": 6.3,
-	"Thickness": 0.05,
-	"HiddenInHand": true,
-	"UsedWithCardHolders": true,
+	"Width": 4,
+	"Height": 4,
+	"Thickness": 0.2,
+	"HiddenInHand": false,
+	"UsedWithCardHolders": false,
 	"CanStack": true,
 	"UsePrimaryColorForSide": false,
 	"FrontTextureOverrideExposed": false,
 	"AllowFlippedInStack": false,
 	"MirrorBack": true,
 	"EmissiveFront": false,
-	"Model": "Rounded",
-	"Indices": [ 0, 1 ],
+	"Model": "Round",
+	"Indices": [ 0 ],
 	"CardNames":
 	{
-		"0": "H' Tyde",
-		"1": "Lo' Tyde"
 	},
 	"CardMetadata":
 	{
-		"0": "card.planet:homebrew.skunee/htyde",
-		"1": "card.planet:homebrew.skunee/lotyde"
 	},
 	"CardTags":
 	{
