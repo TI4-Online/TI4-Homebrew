@@ -48,6 +48,8 @@ const replace = {
     "card.technology.red.mentak:homebrew.little-omega/salvage_operations",
   "card.promissory.mentak:base/promise_of_protection":
     "card.promissory.mentak:homebrew.little-omega/promise_of_protection",
+  "card.leader.agent.mentak:pok/suffi_an":
+    "card.leader.agent.mentak:homebrew.little-omega/suffi_an",
   "card.leader.hero.mentak:pok/ipswitch_loose_cannon":
     "card.leader.hero.mentak:homebrew.little-omega/ipswitch_loose_cannon",
 };
