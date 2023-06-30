@@ -34,10 +34,6 @@ const nsidToTemplateId = {
 const replace = {
   "card.technology.yellow.yin:base/impulse_core":
     "card.technology.red.yin:homebrew.little-omega/impulse_core",
-  "card.technology.green.yin:base/yin_spinner":
-    "card.technology.green.yin:homebrew.little-omega/yin_spinner",
-  "card.technology.green.yin:codex.ordinian/yin_spinner.omega":
-    "card.technology.green.yin:homebrew.little-omega/yin_spinner",
   "card.leader.agent.yin:pok/brother_milor":
     "card.leader.agent.yin:homebrew.little-omega/brother_milor",
   "card.leader.agent.yin:codex.vigil/brother_milor.omega":
@@ -50,6 +46,9 @@ const replace = {
     "card.leader.hero.yin:homebrew.little-omega/dannel_of_the_tenth",
   "card.leader.hero.yin:codex.vigil/dannel_of_the_tenth.omega":
     "card.leader.hero.yin:homebrew.little-omega/dannel_of_the_tenth",
+  "card.alliance:pok/yin": "card.alliance:homebrew.little-omega/yin",
+  "card.alliance:codex.vigil/yin.omega":
+    "card.alliance:homebrew.little-omega/yin",
 };
 
 const technologies = [
@@ -58,14 +57,6 @@ const technologies = [
     cardNsid: "card.technology.red.yin:homebrew.little-omega/impulse_core",
     type: "Red",
     requirements: { Red: 1 },
-    source: "homebrew.little-omega",
-    faction: "yin",
-  },
-  {
-    localeName: "technology.name.yin_spinner",
-    cardNsid: "card.technology.yellow.yin:homebrew.little-omega/yin_spinner",
-    type: "Green",
-    requirements: { Green: 1 },
     source: "homebrew.little-omega",
     faction: "yin",
   },

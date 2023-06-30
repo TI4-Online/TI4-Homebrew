@@ -39,7 +39,7 @@
   "HiddenTexture": "",
   "BackIndex": -3,
   "HiddenIndex": -3,
-  "NumHorizontal": 1,
+  "NumHorizontal": 2,
   "NumVertical": 1,
   "Width": 6.3,
   "Height": 4.2,
@@ -52,11 +52,13 @@
   "AllowFlippedInStack": false,
   "MirrorBack": true,
   "Model": "Rounded",
-  "Indices": [0],
+  "Indices": [0, 1],
   "CardNames": {
-    "0": "Xxcha Alliance"
+    "0": "Xxcha Alliance",
+    "1": "Yin Alliance"
   },
   "CardMetadata": {
-    "0": "card.alliance:homebrew.little-omega/xxcha"
+    "0": "card.alliance:homebrew.little-omega/xxcha",
+    "1": "card.alliance:homebrew.little-omega/yin"
   }
 }
