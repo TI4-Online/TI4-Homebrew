@@ -1,8 +1,8 @@
 {
   "Type": "Card",
   "GUID": "20FBBD329870425CA21EF61921B28852",
-  "Name": "Faction Sheet (Barony)",
-  "Metadata": "sheet.faction:base/barony",
+  "Name": "Faction Sheet (Letnev)",
+  "Metadata": "sheet.faction:base/letnev",
   "CollisionType": "Ground",
   "Friction": 0.7,
   "Restitution": 0.3,
@@ -34,8 +34,8 @@
     "Z": 0
   },
   "Tags": [],
-  "FrontTexture": "little-omega/card/faction/sheet/barony.back.jpg",
-  "BackTexture": "little-omega/card/faction/sheet/barony.face.jpg",
+  "FrontTexture": "little-omega/card/faction/sheet/letnev.back.jpg",
+  "BackTexture": "little-omega/card/faction/sheet/letnev.face.jpg",
   "HiddenTexture": "",
   "BackIndex": -2,
   "HiddenIndex": -1,
@@ -54,10 +54,10 @@
   "Model": "Square",
   "Indices": [0],
   "CardNames": {
-    "0": "Faction Sheet (Barony)"
+    "0": "Faction Sheet (Letnev)"
   },
   "CardMetadata": {
-    "0": "sheet.faction:base/barony"
+    "0": "sheet.faction:base/letnev"
   },
   "CardTags": {},
   "SnapPoints": [

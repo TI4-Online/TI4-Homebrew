@@ -58,7 +58,7 @@
     "1": "Wrath of Kenara"
   },
   "CardMetadata": {
-    "0": "card.other.portrait:homebrew.little-omega/munitions_reserves",
+    "0": "card.ability:homebrew.little-omega/munitions_reserves",
     "1": "card.ability:homebrew.little-omega/wrath_of_kenara"
   },
   "CardTags": {}

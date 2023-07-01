@@ -27,23 +27,23 @@ const factions = [
     units: ["arc_secundus", "dunlain_reaper"],
     unpackExtra: [
       {
-        cardNsid:
-          "card.other.portrait:homebrew.little-omega/munitions_reserves",
+        cardNsid: "card.ability:homebrew.little-omega/munitions_reserves",
+        tokenCount: 1,
       },
     ],
   },
 ];
 
 const nsidToTemplateId = {
-  "sheet.faction:base/barony": "20FBBD329870425CA21EF61921B28852",
+  "sheet.faction:base/letnev": "20FBBD329870425CA21EF61921B28852",
 };
 
 const replace = {
-  "card.technology.yellow.letnev:pok/l4_disruptors":
+  "card.technology.yellow.letnev:base/l4_disruptors":
     "card.technology.yellow.letnev:homebrew.little-omega/l4_disruptors",
-  "card.promissory.letnev:codex.ordinian/war_funding.omega":
-    "card.promissory.letnev:homebrew.little-omega/war_funding",
   "card.promissory.letnev:base/war_funding":
+    "card.promissory.letnev:homebrew.little-omega/war_funding",
+  "card.promissory.letnev:codex.ordinian/war_funding.omega":
     "card.promissory.letnev:homebrew.little-omega/war_funding",
   "card.leader.agent.letnev:pok/viscount_unlenn":
     "card.leader.agent.letnev:homebrew.little-omega/viscount_unlenn",
@@ -51,7 +51,7 @@ const replace = {
     "card.leader.commander.letnev:homebrew.little-omega/rear_admiral_farran",
   "card.leader.hero.letnev:pok/darktalon_treilla":
     "card.leader.hero.letnev:homebrew.little-omega/darktalon_treilla",
-  "card.alliance:homebrew.little-omega/letnev": "card.alliance:pok/letnev",
+  "card.alliance:pok/letnev": "card.alliance:homebrew.little-omega/letnev",
 };
 
 const technologies = [
@@ -108,7 +108,7 @@ const unitModifiers = [
     owner: "self",
     priority: "adjust",
     toggleActive: true,
-    triggerNsid: "card.other.portrait:homebrew.little-omega/munitions_reserves",
+    triggerNsid: "card.ability:homebrew.little-omega/munitions_reserves",
     filter: (auxData) => {
       return auxData.rollType === "spaceCombat";
     },

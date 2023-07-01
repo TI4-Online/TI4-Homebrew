@@ -42,8 +42,6 @@ const factions = [
 
 const nsidToTemplateId = {
   "sheet.faction:base/hacan": "A61D3D7D2A4B45959A2605A3FFC13667",
-  "card.ability:homebrew.little-omega/wrath_of_kenara":
-    "48B2C67A425840979254A5FF48C8A6EC",
 };
 
 const replace = {

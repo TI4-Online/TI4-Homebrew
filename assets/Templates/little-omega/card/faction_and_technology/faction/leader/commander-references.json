@@ -52,14 +52,14 @@
   "AllowFlippedInStack": false,
   "MirrorBack": true,
   "Model": "Rounded",
-  "Indices": [0, 1,2],
+  "Indices": [0, 1, 2],
   "CardNames": {
     "0": "Letnev Alliance",
     "1": "Xxcha Alliance",
     "2": "Yin Alliance"
   },
   "CardMetadata": {
-    "0" : "card.alliance:homebrew.little-omega/letnev",
+    "0": "card.alliance:homebrew.little-omega/letnev",
     "1": "card.alliance:homebrew.little-omega/xxcha",
     "2": "card.alliance:homebrew.little-omega/yin"
   }

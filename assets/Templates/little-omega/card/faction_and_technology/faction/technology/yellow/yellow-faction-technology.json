@@ -64,7 +64,7 @@
   "CardMetadata": {
     "0": "card.technology.yellow.jolnar:homebrew.little-omega/eres_siphons",
     "1": "card.technology.yellow.argent:homebrew.little-omega/aerie_hololattice",
-    "2": "card.technology.yellow.barony:homebrew.little-omega/l4_disruptors",
+    "2": "card.technology.yellow.letnev:homebrew.little-omega/l4_disruptors",
     "3": "card.technology.yellow.nomad:homebrew.little-omega/temporal_command_suite"
   },
   "CardTags": {}
