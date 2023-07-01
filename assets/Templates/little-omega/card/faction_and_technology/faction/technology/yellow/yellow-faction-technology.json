@@ -40,7 +40,7 @@
   "HiddenTexture": "",
   "BackIndex": -2,
   "HiddenIndex": -3,
-  "NumHorizontal": 3,
+  "NumHorizontal": 4,
   "NumVertical": 1,
   "Width": 6.3,
   "Height": 4.2,
@@ -54,16 +54,18 @@
   "MirrorBack": true,
   "EmissiveFront": false,
   "Model": "Rounded",
-  "Indices": [0, 1, 2],
+  "Indices": [0, 1, 2, 3],
   "CardNames": {
     "0": "E-Res Siphons",
     "1": "Aerie Hololattice",
-    "2": "Temporal Command Suite"
+    "2": "L4 Disruptors",
+    "3": "Temporal Command Suite"
   },
   "CardMetadata": {
     "0": "card.technology.yellow.jolnar:homebrew.little-omega/eres_siphons",
     "1": "card.technology.yellow.argent:homebrew.little-omega/aerie_hololattice",
-    "2": "card.technology.yellow.nomad:homebrew.little-omega/temporal_command_suite"
+    "2": "card.technology.yellow.barony:homebrew.little-omega/l4_disruptors",
+    "3": "card.technology.yellow.nomad:homebrew.little-omega/temporal_command_suite"
   },
   "CardTags": {}
 }

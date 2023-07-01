@@ -40,8 +40,8 @@
   "HiddenTexture": "",
   "BackIndex": -2,
   "HiddenIndex": -3,
-  "NumHorizontal": 7,
-  "NumVertical": 1,
+  "NumHorizontal": 4,
+  "NumVertical": 2,
   "Width": 4.2,
   "Height": 6.3,
   "Thickness": 0.05,
@@ -54,24 +54,26 @@
   "MirrorBack": true,
   "EmissiveFront": false,
   "Model": "Rounded",
-  "Indices": [0, 1, 2, 3, 4, 5, 6],
+  "Indices": [0, 1, 2, 3, 4, 5, 6, 7],
   "CardNames": {
-    "0": "Crucible",
-    "1": "Oracle System",
-    "2": "Political Favor",
-    "3": "Promise of Protection",
-    "4": "Spy Net",
-    "5": "Strike Wing Ambuscade",
-    "6": "Trade Convoys"
+    "0": "War Funding",
+    "1": "Crucible",
+    "2": "Oracle System",
+    "3": "Political Favor",
+    "4": "Promise of Protection",
+    "5": "Spy Net",
+    "6": "Strike Wing Ambuscade",
+    "7": "Trade Convoys"
   },
   "CardMetadata": {
-    "0": "card.promissory.vuilraith:homebrew.little-omega/crucible",
-    "1": "card.promissory.nekro:homebrew.little-omega/oracle_system",
-    "2": "card.promissory.xxcha:homebrew.little-omega/political_favor",
-    "3": "card.promissory.mentak:homebrew.little-omega/promise_of_protection",
-    "4": "card.promissory.yssaril:homebrew.little-omega/spy_net",
-    "5": "card.promissory.argent:homebrew.little-omega/strike_wing_ambuscade",
-    "6": "card.promissory.hacan:homebrew.little-omega/trade_convoys"
+    "0": "card.promissory.barony:homebrew.little-omega/war_funding",
+    "1": "card.promissory.vuilraith:homebrew.little-omega/crucible",
+    "2": "card.promissory.nekro:homebrew.little-omega/oracle_system",
+    "3": "card.promissory.xxcha:homebrew.little-omega/political_favor",
+    "4": "card.promissory.mentak:homebrew.little-omega/promise_of_protection",
+    "5": "card.promissory.yssaril:homebrew.little-omega/spy_net",
+    "6": "card.promissory.argent:homebrew.little-omega/strike_wing_ambuscade",
+    "7": "card.promissory.hacan:homebrew.little-omega/trade_convoys"
   },
   "CardTags": {}
 }
