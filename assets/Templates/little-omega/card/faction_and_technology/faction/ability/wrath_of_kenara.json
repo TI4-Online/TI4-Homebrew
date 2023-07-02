@@ -1,8 +1,8 @@
 {
   "Type": "Card",
-  "GUID": "3593CBE42FA54538AF48639AD3B8EA4B",
-  "Name": "Little Omega - Yellow Faction Technology",
-  "Metadata": "card.technology.yellow:homebrew.little-omega/1",
+  "GUID": "48B2C67A425840979254A5FF48C8A6EC",
+  "Name": "",
+  "Metadata": "card.ability:homebrew.little-omega/0",
   "CollisionType": "Regular",
   "Friction": 0.7,
   "Restitution": 0,
@@ -34,13 +34,12 @@
     "Y": 0,
     "Z": 0
   },
-  "Tags": [],
-  "FrontTexture": "little-omega/card/faction/technology/yellow/face.jpg",
-  "BackTexture": "ti4/technology/yellow.back.jpg",
+  "FrontTexture": "little-omega/card/faction/ability/wrath_of_kenara.face.jpg",
+  "BackTexture": "little-omega/card/faction/ability/wrath_of_kenara.back.jpg",
   "HiddenTexture": "",
-  "BackIndex": -2,
+  "BackIndex": -3,
   "HiddenIndex": -3,
-  "NumHorizontal": 4,
+  "NumHorizontal": 1,
   "NumVertical": 1,
   "Width": 6.3,
   "Height": 4.2,
@@ -52,20 +51,13 @@
   "FrontTextureOverrideExposed": false,
   "AllowFlippedInStack": false,
   "MirrorBack": true,
-  "EmissiveFront": false,
   "Model": "Rounded",
-  "Indices": [0, 1, 2, 3],
+  "Indices": [0],
   "CardNames": {
-    "0": "E-Res Siphons",
-    "1": "Aerie Hololattice",
-    "2": "L4 Disruptors",
-    "3": "Temporal Command Suite"
+    "0": "Wrath of Kenara"
   },
   "CardMetadata": {
-    "0": "card.technology.yellow.jolnar:homebrew.little-omega/eres_siphons",
-    "1": "card.technology.yellow.argent:homebrew.little-omega/aerie_hololattice",
-    "2": "card.technology.yellow.letnev:homebrew.little-omega/l4_disruptors",
-    "3": "card.technology.yellow.nomad:homebrew.little-omega/temporal_command_suite"
+    "0": "card.ability:homebrew.little-omega/wrath_of_kenara"
   },
   "CardTags": {}
 }
