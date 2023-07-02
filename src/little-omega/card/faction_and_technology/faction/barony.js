@@ -18,7 +18,7 @@ const factions = [
     startingUnits: {
       carrier: 1,
       cruiser: 1,
-      destroyer: 2,
+      destroyer: 1,
       dreadnought: 1,
       infantry: 3,
       space_dock: 1,
@@ -36,6 +36,8 @@ const factions = [
 
 const nsidToTemplateId = {
   "sheet.faction:base/letnev": "20FBBD329870425CA21EF61921B28852",
+  "card.ability:homebrew.little-omega/munitions_reserves":
+    "70ACC8E0D7F94AE687E7419345D0EB6E",
 };
 
 const replace = {
@@ -118,7 +120,33 @@ const unitModifiers = [
       }
     },
   },
+  {
+    // Reroll space combat misses.
+    isCombat: true,
+    localeName: "unit_modifier.name.war_funding",
+    localeDescription: "unit_modifier.desc.war_funding",
+    owner: "self",
+    priority: "adjust",
+    triggerNsid: "card.promissory.letnev:homebrew.little-omega/war_funding",
+    filter: (auxData) => {
+      return auxData.rollType === "spaceCombat";
+    },
+    applyEach: (unitAttrs, auxData) => {
+      if (unitAttrs.raw.spaceCombat) {
+        unitAttrs.raw.spaceCombat.rerollMisses = true;
+      }
+    },
+  },
 ];
+
+const localeStrings = {
+  "unit_modifier.name.munitions_reserves": "Munitions Reserves",
+  "unit_modifier.desc.munitions_reserves":
+    "Spend 2 resources to reroll space combat misses.",
+  "unit_modifier.name.war_funding": "War Funding",
+  "unit_modifier.desc.war_funding":
+    "Reroll space combat misses.",
+};
 
 world.TI4.homebrew.inject({
   factions,
@@ -126,4 +154,5 @@ world.TI4.homebrew.inject({
   technologies,
   unitModifiers,
   replace,
+  localeStrings,
 });

@@ -34,12 +34,12 @@
     "Y": 0,
     "Z": 0
   },
-  "FrontTexture": "little-omega/card/faction/ability/face.jpg",
-  "BackTexture": "little-omega/card/faction/ability/back.jpg",
+  "FrontTexture": "little-omega/card/faction/ability/wrath_of_kenara.face.jpg",
+  "BackTexture": "little-omega/card/faction/ability/wrath_of_kenara.back.jpg",
   "HiddenTexture": "",
   "BackIndex": -3,
   "HiddenIndex": -3,
-  "NumHorizontal": 2,
+  "NumHorizontal": 1,
   "NumVertical": 1,
   "Width": 6.3,
   "Height": 4.2,
@@ -52,14 +52,12 @@
   "AllowFlippedInStack": false,
   "MirrorBack": true,
   "Model": "Rounded",
-  "Indices": [0, 1],
+  "Indices": [0],
   "CardNames": {
-    "0": "Munition Reserves",
-    "1": "Wrath of Kenara"
+    "0": "Wrath of Kenara"
   },
   "CardMetadata": {
-    "0": "card.ability:homebrew.little-omega/munitions_reserves",
-    "1": "card.ability:homebrew.little-omega/wrath_of_kenara"
+    "0": "card.ability:homebrew.little-omega/wrath_of_kenara"
   },
   "CardTags": {}
 }

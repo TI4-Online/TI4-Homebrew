@@ -1,11 +1,5 @@
 const { world } = require("@tabletop-playground/api");
 
-const localeStrings = {
-  "unit_modifier.name.wrath_of_kenara": "Wrath of Kenara Flagship Ability",
-  "unit_modifier.desc.wrath_of_kenara":
-    "At the start of a round of space combat, you may spend 1 trade good to apply +1 to the result of each of your combat rolls.",
-};
-
 const factions = [
   {
     faction: "hacan",
@@ -42,6 +36,8 @@ const factions = [
 
 const nsidToTemplateId = {
   "sheet.faction:base/hacan": "A61D3D7D2A4B45959A2605A3FFC13667",
+  "card.ability:homebrew.little-omega/wrath_of_kenara":
+    "48B2C67A425840979254A5FF48C8A6EC",
 };
 
 const replace = {
@@ -101,6 +97,12 @@ const unitModifiers = [
     },
   },
 ];
+
+const localeStrings = {
+  "unit_modifier.name.wrath_of_kenara": "Wrath of Kenara Flagship Ability",
+  "unit_modifier.desc.wrath_of_kenara":
+    "At the start of a round of space combat, you may spend 1 trade good to apply +1 to the result of each of your combat rolls.",
+};
 
 world.TI4.homebrew.inject({
   localeStrings,
