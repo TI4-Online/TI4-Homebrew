@@ -43,7 +43,7 @@
 	"BackTexture": "ti4/exploration/hazardous.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
-	"HiddenIndex": -1,
+	"HiddenIndex": -3,
 	"NumHorizontal": 2,
 	"NumVertical": 2,
 	"Width": 4.2,

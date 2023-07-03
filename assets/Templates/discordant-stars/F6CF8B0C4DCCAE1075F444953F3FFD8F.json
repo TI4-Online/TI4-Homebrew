@@ -43,7 +43,7 @@
 	"BackTexture": "ti4/relic.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
-	"HiddenIndex": -1,
+	"HiddenIndex": -3,
 	"NumHorizontal": 4,
 	"NumVertical": 2,
 	"Width": 4.2,
