@@ -47,7 +47,7 @@ const factions = [
 ];
 
 const nsidToTemplateId = {
-  "sheet.faction:base/ul": "3D86BA5DC85F49FC94D01AD27BB13403",
+  "sheet.faction:pok/ul": "3D86BA5DC85F49FC94D01AD27BB13403",
 };
 
 world.TI4.homebrew.inject({

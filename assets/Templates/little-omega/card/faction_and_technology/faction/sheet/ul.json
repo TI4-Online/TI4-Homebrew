@@ -2,7 +2,7 @@
   "Type": "Card",
   "GUID": "3D86BA5DC85F49FC94D01AD27BB13403",
   "Name": "Faction Sheet (Ul)",
-  "Metadata": "sheet.faction:base/ul",
+  "Metadata": "sheet.faction:pok/ul",
   "CollisionType": "Ground",
   "Friction": 0.7,
   "Restitution": 0.3,
@@ -170,7 +170,7 @@
     "0": "Faction Sheet (Ul)"
   },
   "CardMetadata": {
-    "0": "sheet.faction:base/ul"
+    "0": "sheet.faction:pok/ul"
   },
   "CardTags": {}
 }
