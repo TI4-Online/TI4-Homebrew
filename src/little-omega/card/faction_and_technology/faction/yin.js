@@ -49,6 +49,8 @@ const replace = {
   "card.alliance:pok/yin": "card.alliance:homebrew.little-omega/yin",
   "card.alliance:codex.vigil/yin.omega":
     "card.alliance:homebrew.little-omega/yin",
+  "card.leader.mech.yin:pok/moyins_ashes":
+    "card.leader.mech.yin:homebrew.little-omega/moyins_ashes",
 };
 
 const technologies = [
