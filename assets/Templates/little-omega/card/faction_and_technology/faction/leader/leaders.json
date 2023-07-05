@@ -39,8 +39,8 @@
   "HiddenTexture": "",
   "BackIndex": -3,
   "HiddenIndex": -3,
-  "NumHorizontal": 5,
-  "NumVertical": 3,
+  "NumHorizontal": 8,
+  "NumVertical": 2,
   "Width": 6.3,
   "Height": 4.2,
   "Thickness": 0.05,
@@ -52,7 +52,7 @@
   "AllowFlippedInStack": false,
   "MirrorBack": true,
   "Model": "Rounded",
-  "Indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+  "Indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
   "CardNames": {
     "0": "Viscount Unlenn",
     "1": "Rear Admiral Farran",
@@ -68,7 +68,8 @@
     "11": "Xxekir Grom",
     "12": "Brother Milor",
     "13": "Brother Omar",
-    "14": "Dannel of the Tenth"
+    "14": "Dannel of the Tenth",
+    "15": "Moyins Ashes"
   },
   "CardMetadata": {
     "0": "card.leader.agent.letnev:homebrew.little-omega/viscount_unlenn",
@@ -85,6 +86,7 @@
     "11": "card.leader.hero.xxcha:homebrew.little-omega/xxekir_grom",
     "12": "card.leader.agent.yin:homebrew.little-omega/brother_milor",
     "13": "card.leader.commander.yin:homebrew.little-omega/brother_omar",
-    "14": "card.leader.hero.yin:homebrew.little-omega/dannel_of_the_tenth"
+    "14": "card.leader.hero.yin:homebrew.little-omega/dannel_of_the_tenth",
+    "15": "card.leader.mech.yin:homebrew.little-omega/moyins_ashes"
   }
 }

@@ -18,7 +18,7 @@ const factions = [
     startingUnits: {
       carrier: 1,
       cruiser: 2,
-      fighter: 3,
+      fighter: 2,
       infantry: 4,
       pds: 1,
       space_dock: 1,

@@ -54,18 +54,16 @@
   "MirrorBack": true,
   "EmissiveFront": false,
   "Model": "Rounded",
-  "Indices": [0, 1, 2, 3],
+  "Indices": [0, 1, 2],
   "CardNames": {
     "0": "Instinct Training",
     "1": "Production Biomes",
-    "2": "Yin Spinner",
-    "3": "Voidwatch"
+    "2": "Voidwatch"
   },
   "CardMetadata": {
     "0": "card.technology.green.xxcha:homebrew.little-omega/instinct_training",
     "1": "card.technology.green.hacan:homebrew.little-omega/production_biomes",
-    "2": "card.technology.green.yin:homebrew.little-omega/yin_spinner",
-    "3": "card.technology.green.empyrean:homebrew.little-omega/voidwatch"
+    "2": "card.technology.green.empyrean:homebrew.little-omega/voidwatch"
   },
   "CardTags": {}
 }
