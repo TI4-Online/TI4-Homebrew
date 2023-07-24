@@ -140,7 +140,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3229.jpg",
+    img: "discordant-stars/ui/tiles/tile_3229.png",
     planets: [{ localeName: "planet.laststop", resources: 3, influence: 0 }],
   },
 ];
