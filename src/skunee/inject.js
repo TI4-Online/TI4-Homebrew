@@ -100,7 +100,7 @@ const systems = [
     source: "homebrew.skunee",
     home: true,
     packageId: refPackageId,
-    img: "skunee/lunartiks/lunartiks-homesystem.jpg",
+    img: "skunee/lunartiks/lunartiks-homesystem.jpeg",
     planets: [
       { localeName: "planet.htyde", resources: 4, influence: 0 },
       { localeName: "planet.lotyde", resources: 0, influence: 2 },
@@ -183,7 +183,5 @@ world.TI4.homebrew.inject({
   unitAttrs,
   unitModifiers,
 });
-
-world.TI4.homebrew.resetOnTableDecks();
 
 console.log("loaded lunartiks");
