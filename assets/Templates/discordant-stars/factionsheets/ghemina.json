@@ -148,6 +148,7 @@
 		"Y": 0,
 		"Z": 0
 	},
+        "GroundAccessibility": "Zoom",
 	"Tags": [],
 	"FrontTexture": "discordant-stars/factionsheets/ghemina.back.jpg",
 	"BackTexture": "discordant-stars/factionsheets/ghemina.face.jpg",

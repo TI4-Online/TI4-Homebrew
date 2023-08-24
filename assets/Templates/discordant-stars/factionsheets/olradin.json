@@ -148,6 +148,7 @@
 		"Y": 0,
 		"Z": 0
 	},
+        "GroundAccessibility": "Zoom",
 	"Tags": [],
 	"FrontTexture": "discordant-stars/factionsheets/olradin.back.jpg",
 	"BackTexture": "discordant-stars/factionsheets/olradin.face.jpg",

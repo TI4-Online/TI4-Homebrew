@@ -38,6 +38,7 @@
 		"Y": 0,
 		"Z": 0
 	},
+	"GroundAccessibility": "Zoom",
 	"Tags": [],
 	"FrontTexture": "skunee/lunartiks/lunartiks-faction-sheet-back.jpeg",
 	"BackTexture": "skunee/lunartiks/lunartiks-faction-sheet-face.jpeg",

@@ -148,6 +148,7 @@
 		"Y": 0,
 		"Z": 0
 	},
+        "GroundAccessibility": "Zoom",
 	"Tags": [],
 	"FrontTexture": "discordant-stars/factionsheets/nivyn.back.jpg",
 	"BackTexture": "discordant-stars/factionsheets/nivyn.face.jpg",
