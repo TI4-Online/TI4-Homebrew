@@ -25,6 +25,8 @@ const localeStrings = {
   "technology.name.ares_orbiter_2": "Ares Orbiter II",
   "unit.flagship.unnatural_satellite": "Unnatural Satellite",
   "unit.mech.ares_orbiter": "Ares Orbiter",
+  "unit.mech.ares_orbiter_2": "Ares Orbiter II",
+  "unit.pds.orbital_relay": "Orbital Relay",
 };
 
 const factions = [
@@ -144,15 +146,18 @@ const unitAttrs = [
     localeName: "unit.mech.ares_orbiter",
     triggerNsid: "card.leader.mech.lunartiks:homebrew.skunee/ares_orbiter",
     bombardment: { dice: 1, hit: 7 },
-    groundCombat: { dice: 1, hit: 6 },
+    spaceCombat: { dice: 1, hit: 6 },
+    ship: true,
   },
   {
     unit: "mech",
     upgradeLevel: 2,
     localeName: "unit.mech.ares_orbiter_2",
-    triggerNsid: "card.leader.mech.lunartiks:homebrew.skunee/ares_orbiter_2",
+    triggerNsid:
+      "card.technology.unit_upgrade.lunartiks:homebrew.skunee/ares_orbiter_2",
     bombardment: { dice: 2, hit: 7 },
-    groundCombat: { dice: 2, hit: 6 },
+    spaceCombat: { dice: 2, hit: 6 },
+    ship: true,
   },
   {
     unit: "pds",
@@ -164,14 +169,48 @@ const unitAttrs = [
   {
     unit: "pds",
     upgradeLevel: 2,
-    localeName: "unit.pds.orbital_relay_2",
+    localeName: "technology.name.orbital_relay_2",
     triggerNsid:
-      "card.technology.unit.lunartiks:homebrew.skunee/orbital_relay_2",
+      "card.technology.unit_upgrade.lunartiks:homebrew.skunee/orbital_relay_2",
+    planetaryShield: false,
     spaceCannon: { dice: 2, hit: 5 },
   },
 ];
 
-const unitModifiers = [];
+const unitModifiers = [
+  {
+    isCombat: true,
+    localeName: "unit.mech.ares_orbiter",
+    localeDescription: "unit.mech.ares_orbiter",
+    owner: "self",
+    priority: "mutate",
+    triggerNsid: "card.leader.mech.lunartiks:homebrew.skunee/ares_orbiter",
+    filter: (auxData) => {
+      return auxData.rollType === "groundCombat" && auxData.self.has("mech");
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      const mechAttrs = unitAttrsSet.get("mech");
+      delete mechAttrs.raw.groundCombat;
+    },
+  },
+  {
+    isCombat: true,
+    localeName: "technology.name.orbital_relay_2",
+    localeDescription: "technology.name.orbital_relay_2",
+    owner: "self",
+    priority: "mutate",
+    triggerNsid:
+      "card.technology.unit_upgrade.lunartiks:homebrew.skunee/orbital_relay_2",
+    filter: (auxData) => {
+      return auxData.self.has("pds") || auxData.self.hasAdjacent("pds");
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      const pdsAttrs = unitAttrsSet.get("pds");
+      delete pdsAttrs.raw.planetaryShield;
+      pdsAttrs.raw.spaceCannon.range = 1;
+    },
+  },
+];
 
 world.TI4.homebrew.inject({
   localeStrings,

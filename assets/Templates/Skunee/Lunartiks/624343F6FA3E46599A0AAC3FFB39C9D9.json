@@ -22,7 +22,7 @@
 		"G": 0,
 		"B": 0
 	},
-	"Flippable": false,
+	"Flippable": true,
 	"AutoStraighten": false,
 	"ShouldSnap": true,
 	"ScriptName": "",
@@ -74,7 +74,7 @@
 			},
 			"Rotation":
 			{
-				"X": 180,
+				"X": -180,
 				"Y": 0,
 				"Z": 0
 			},
@@ -136,5 +136,6 @@
 		"Y": 0,
 		"Z": 0
 	},
+	"GroundAccessibility": "Nothing",
 	"Tags": []
 }
