@@ -126,6 +126,7 @@
 		"Y": 0,
 		"Z": 0
 	},
+        "GroundAccessibility": "Zoom",
 	"Tags": [],
 	"FrontTexture": "discordant-stars/factionsheets/axis-sheet.back.jpg",
 	"BackTexture": "discordant-stars/factionsheets/axis-sheet.face.jpg",

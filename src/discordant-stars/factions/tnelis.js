@@ -119,7 +119,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3212.jpg",
+    img: "discordant-stars/ui/tiles/tile_3212.png",
     planets: [{ localeName: "planet.discordia", resources: 4, influence: 1 }],
   },
 ];
@@ -176,13 +176,10 @@ const unitModifiers = [
     applyAll: (unitAttrsSet, auxData) => {
       let best = false;
       for (const unitAttrs of unitAttrsSet.values()) {
-        if (
-            unitAttrs.raw.spaceCombat &&
-            auxData.self.has(unitAttrs.raw.unit)
-        ) {
+        if (unitAttrs.raw.spaceCombat && auxData.self.has(unitAttrs.raw.unit)) {
           if (
-              !best ||
-              unitAttrs.raw.spaceCombat.hit < best.raw.spaceCombat.hit
+            !best ||
+            unitAttrs.raw.spaceCombat.hit < best.raw.spaceCombat.hit
           ) {
             best = unitAttrs;
           }
@@ -213,14 +210,13 @@ const unitModifiers = [
       let bestHitCount = 0;
       for (const unitAttrs of unitAttrsSet.values()) {
         if (
-            unitAttrs.raw.antiFighterBarrage &&
-            auxData.self.has(unitAttrs.raw.unit)
+          unitAttrs.raw.antiFighterBarrage &&
+          auxData.self.has(unitAttrs.raw.unit)
         ) {
-          const unitHitCount = unitAttrs.raw.antiFighterBarrage.dice * (11 - unitAttrs.raw.antiFighterBarrage.hit);
-          if (
-              !best ||
-              bestHitCount < unitHitCount
-          ) {
+          const unitHitCount =
+            unitAttrs.raw.antiFighterBarrage.dice *
+            (11 - unitAttrs.raw.antiFighterBarrage.hit);
+          if (!best || bestHitCount < unitHitCount) {
             best = unitAttrs;
             bestHitCount = unitHitCount;
           }

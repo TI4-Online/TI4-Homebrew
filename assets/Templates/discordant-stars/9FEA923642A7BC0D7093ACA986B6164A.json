@@ -43,7 +43,7 @@
 	"BackTexture": "ti4/action.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
-	"HiddenIndex": -1,
+	"HiddenIndex": -3,
 	"NumHorizontal": 7,
 	"NumVertical": 6,
 	"Width": 4.2,

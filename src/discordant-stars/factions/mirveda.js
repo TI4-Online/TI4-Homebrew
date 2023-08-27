@@ -97,7 +97,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3221.jpg",
+    img: "discordant-stars/ui/tiles/tile_3221.png",
     planets: [
       { localeName: "planet.aldra", resources: 2, influence: 3 },
       { localeName: "planet.beata", resources: 2, influence: 1 },
@@ -154,13 +154,13 @@ const unitModifiers = [
     priority: "adjust",
     filter: (auxData) => {
       return auxData.rollType === "spaceCombat" && auxData.self.has("mech");
-      },
-      applyAll: (unitAttrsSet, auxData) => {
-
-        let hitModifier = 0;
-        const playerSlot = auxData.self.playerSlot;
-        const ownedTechnologies = world.TI4.Technology.getOwnedPlayerTechnologies(playerSlot);
-        hitModifier = ownedTechnologies.filter((tech) =>
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      let hitModifier = 0;
+      const playerSlot = auxData.self.playerSlot;
+      const ownedTechnologies =
+        world.TI4.Technology.getOwnedPlayerTechnologies(playerSlot);
+      hitModifier = ownedTechnologies.filter((tech) =>
         tech.cardNsid.startsWith("card.technology.unit_upgrade:")
       ).length;
 

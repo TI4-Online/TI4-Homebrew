@@ -132,7 +132,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3234.jpg",
+    img: "discordant-stars/ui/tiles/tile_3234.png",
     planets: [
       { localeName: "planet.arche", resources: 2, influence: 2 },
       { localeName: "planet.gghurntheta", resources: 2, influence: 1 },
@@ -189,17 +189,6 @@ const unitModifiers = [
     },
   },
 ];
-
-function getIndex(obj) {
-  const json = obj.getSavedData() || "";
-  if (json.length > 0) {
-    const parsed = JSON.parse(json);
-    if ("deskIndex" in parsed) {
-      return parsed.deskIndex;
-    }
-  }
-  return -1;
-}
 
 world.TI4.homebrew.inject({
   localeStrings,

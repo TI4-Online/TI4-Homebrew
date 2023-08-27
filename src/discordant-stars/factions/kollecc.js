@@ -97,7 +97,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3223.jpg",
+    img: "discordant-stars/ui/tiles/tile_3223.png",
     planets: [{ localeName: "planet.susuros", resources: 4, influence: 4 }],
   },
 ];

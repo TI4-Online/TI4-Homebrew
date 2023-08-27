@@ -148,6 +148,7 @@
 		"Y": 0,
 		"Z": 0
 	},
+        "GroundAccessibility": "Zoom",
 	"Tags": [],
 	"FrontTexture": "discordant-stars/factionsheets/mortheus.back.jpg",
 	"BackTexture": "discordant-stars/factionsheets/mortheus.face.jpg",
