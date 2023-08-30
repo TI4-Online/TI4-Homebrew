@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "B63E1C820B4A4127844CC1A95209070C",
 	"Name": "Absol's Political Secrets",
-	"Metadata": "",
+	"Metadata": "card.promissory.white:homebrew.absol/0",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -73,12 +73,12 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.promissory.black:homebrew.absol/potical_secret",
+		"0": "card.promissory.white:homebrew.absol/potical_secret",
 		"1": "card.promissory.red:homebrew.absol/potical_secret",
 		"2": "card.promissory.orange:homebrew.absol/potical_secret",
 		"3": "card.promissory.yellow:homebrew.absol/potical_secret",
 		"4": "card.promissory.green:homebrew.absol/potical_secret",
-		"5": "card.promissory/blue:homebrew.absol/potical_secret",
+		"5": "card.promissory.blue:homebrew.absol/potical_secret",
 		"6": "card.promissory.purple:homebrew.absol/potical_secret",
 		"7": "card.promissory.pink:homebrew.absol/potical_secret"
 	},
