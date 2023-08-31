@@ -36,7 +36,7 @@ ENTRIES.push({
 // --------------------------------------------------------
 
 ENTRIES.push({
-  name: "Absol",
+  name: "Absol's",
   authors: "Absol",
   description: "Absol's homebrew replacements.",
   packageId: refPackageId,
@@ -76,18 +76,25 @@ ENTRIES.push({
 ENTRIES.push({
   name: "Discordant Stars",
   authors: "Tactic Blue led, many more",
-  description: "34 new factions, as well as 24 new system tiles.",
+  description: "Fan expansion",
   packageId: refPackageId,
   options: [
     {
       id: "ds-fact",
       name: "Factions",
       inject: "discordant-stars/factions-all.js",
+      description: "- 34 factions",
     },
     {
       id: "ds-plus",
-      name: "Extra systems",
+      name: "Bonus content (systems, etc)",
       inject: "discordant-stars/inject-plus.js",
+      description: [
+        "- 24 system tiles",
+        "- 16 exploration cards",
+        "- 7 relics",
+        "- 40 action cards",
+      ].join("\n"),
     },
   ],
 });
