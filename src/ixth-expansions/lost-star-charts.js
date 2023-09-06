@@ -143,6 +143,8 @@ const nsidToTemplateId = Object.assign(
       "144B7A254C13368D06CE4DAD3DD99919",
     "tile.system:homebrew.ixth_lost_star_charts/4016":
       "41E4B1AC45F2CA2842856781D69AABA3",
+    "pdf.rulebook:homebrew.ixth_lost_star_charts/0":
+      "C87C1C3A40818B9AF0AC4AB0DC1B7A51",
   },
   lloydTokens,
   jarrahTokens,
@@ -592,12 +594,43 @@ const unitModifiers = [
   },
 ];
 
+const extraBoxes = [
+  {
+    name: "Lost Star Charts",
+    nsids: [
+      "pdf.rulebook:homebrew.ixth_lost_star_charts/0",
+
+      // Lloyd tokens
+      "token.attachment:homebrew.ixth_lost_star_charts/cultural_boom",
+      "token.attachment:homebrew.ixth_lost_star_charts/established_trade_route",
+      "token.attachment:homebrew.ixth_lost_star_charts/galatic_financial_center",
+      "token.attachment:homebrew.ixth_lost_star_charts/geothermal_equilibirum",
+      "token.attachment:homebrew.ixth_lost_star_charts/industrial_boom",
+      "token.attachment:homebrew.ixth_lost_star_charts/interplanetary_hub",
+      "token.attachment:homebrew.ixth_lost_star_charts/orbital_slingshot",
+      "token.attachment:homebrew.ixth_lost_star_charts/planetary_archologies",
+      "token.attachment:homebrew.ixth_lost_star_charts/population_growth",
+      "token.attachment:homebrew.ixth_lost_star_charts/self-defense_initiative",
+      "token.attachment:homebrew.ixth_lost_star_charts/terraforming_milestone",
+
+      // Jarrah token.
+      "token.commodity:homebrew.ixth_lost_star_charts/lengendary_planet_jarrah",
+
+      // Kwon token.
+      "token.commodity:homebrew.ixth_lost_star_charts/lengendary_planet_kwon",
+    ],
+  },
+];
+
 // TODO: BIOCRYSTAL MELANGE commodity adjustment
 // TODO: INTERSTELLAR GATE commodity adjustment
 
 try {
+  console.log("HOMEBREW ADDING LOST STAR CHARTS");
+
   world.TI4.homebrew.inject({
     attachments,
+    extraBoxes,
     localeStrings,
     nsidToTemplateId,
     systems,
@@ -611,8 +644,6 @@ try {
 
   world.TI4.homebrew.resetOnTableDecks();
   world.TI4.homebrew.resetSystemTilesBox();
-
-  console.log("HOMEBREW ADDING LOST STAR CHARTS");
 } catch (error) {
   console.error(error);
 }
@@ -624,6 +655,8 @@ if (
   // other lost star chart item made a require and refObject is not the rules pdf
   return;
 }
+
+// THE FOLLOWING IS NO LONGER NEEDED WITH EXTRA_BOXES!
 
 const above = 5;
 
