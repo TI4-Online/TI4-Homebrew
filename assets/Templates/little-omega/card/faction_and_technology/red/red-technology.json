@@ -1,80 +1,71 @@
 {
-	"Type": "Card",
-	"GUID": "B5444DBD508D4B9D8104C986740C9AD3",
-	"Name": "Little Omega - Red Technology",
-	"Metadata": "card.technology.red:homebrew.little-omega/0",
-	"CollisionType": "Regular",
-	"Friction": 0.7,
-	"Restitution": 0,
-	"Density": 0.5,
-	"SurfaceType": "Cardboard",
-	"Roughness": 1,
-	"Metallic": 0,
-	"PrimaryColor":
-	{
-		"R": 255,
-		"G": 255,
-		"B": 255
-	},
-	"SecondaryColor":
-	{
-		"R": 0,
-		"G": 0,
-		"B": 0
-	},
-	"Flippable": true,
-	"AutoStraighten": false,
-	"ShouldSnap": true,
-	"ScriptName": "",
-	"Blueprint": "",
-	"Models": [],
-	"Collision": [],
-	"SnapPointsGlobal": false,
-	"SnapPoints": [],
-	"ZoomViewDirection":
-	{
-		"X": 0,
-		"Y": 0,
-		"Z": 0
-	},
-	"Tags": [],
-	"FrontTexture": "little-omega/card/technology/red/face.jpg",
-	"BackTexture": "ti4/technology/red.back.jpg",
-	"HiddenTexture": "",
-	"BackIndex": -2,
-	"HiddenIndex": -3,
-	"NumHorizontal": 5,
-	"NumVertical": 1,
-	"Width": 6.3,
-	"Height": 4.2,
-	"Thickness": 0.05,
-	"HiddenInHand": true,
-	"UsedWithCardHolders": true,
-	"CanStack": true,
-	"UsePrimaryColorForSide": false,
-	"FrontTextureOverrideExposed": false,
-	"AllowFlippedInStack": false,
-	"MirrorBack": true,
-	"EmissiveFront": false,
-	"Model": "Rounded",
-	"Indices": [ 0, 1, 2, 3, 4 ],
-	"CardNames":
-	{
-            "0": "AI Development Algorithm",
-            "1": "Duranium Armor",
-            "2": "Graviton Laser System",
-            "3": "Magen Defense Grid",
-            "4": "Plasma Scoring"
-	},
-	"CardMetadata":
-	{
-            "0": "card.technology.red:homebrew.little-omega/ai_development_algorithm",
-            "1": "card.technology.red:homebrew.little-omega/duranium_armor",
-            "2": "card.technology.red:homebrew.little-omega/graviton_laser_system",
-            "3": "card.technology.red:homebrew.little-omega/magen_defense_grid",
-            "4": "card.technology.red:homebrew.little-omega/plasma_scoring"
-	},
-	"CardTags":
-	{
-	}
+  "Type": "Card",
+  "GUID": "B5444DBD508D4B9D8104C986740C9AD3",
+  "Name": "Little Omega - Red Technology",
+  "Metadata": "card.technology.red:homebrew.little-omega/0",
+  "CollisionType": "Regular",
+  "Friction": 0.7,
+  "Restitution": 0,
+  "Density": 0.5,
+  "SurfaceType": "Cardboard",
+  "Roughness": 1,
+  "Metallic": 0,
+  "PrimaryColor": {
+    "R": 255,
+    "G": 255,
+    "B": 255
+  },
+  "SecondaryColor": {
+    "R": 0,
+    "G": 0,
+    "B": 0
+  },
+  "Flippable": true,
+  "AutoStraighten": false,
+  "ShouldSnap": true,
+  "ScriptName": "",
+  "Blueprint": "",
+  "Models": [],
+  "Collision": [],
+  "SnapPointsGlobal": false,
+  "SnapPoints": [],
+  "ZoomViewDirection": {
+    "X": 0,
+    "Y": 0,
+    "Z": 0
+  },
+  "Tags": [],
+  "FrontTexture": "little-omega/card/technology/red/face.jpg",
+  "BackTexture": "ti4/technology/red.back.jpg",
+  "HiddenTexture": "",
+  "BackIndex": -2,
+  "HiddenIndex": -3,
+  "NumHorizontal": 4,
+  "NumVertical": 1,
+  "Width": 6.3,
+  "Height": 4.2,
+  "Thickness": 0.05,
+  "HiddenInHand": true,
+  "UsedWithCardHolders": true,
+  "CanStack": true,
+  "UsePrimaryColorForSide": false,
+  "FrontTextureOverrideExposed": false,
+  "AllowFlippedInStack": false,
+  "MirrorBack": true,
+  "EmissiveFront": false,
+  "Model": "Rounded",
+  "Indices": [0, 1, 2, 3],
+  "CardNames": {
+    "0": "AI Development Algorithm",
+    "1": "Graviton Laser System",
+    "2": "Magen Defense Grid",
+    "3": "Plasma Scoring"
+  },
+  "CardMetadata": {
+    "0": "card.technology.red:homebrew.little-omega/ai_development_algorithm",
+    "1": "card.technology.red:homebrew.little-omega/graviton_laser_system",
+    "2": "card.technology.red:homebrew.little-omega/magen_defense_grid",
+    "3": "card.technology.red:homebrew.little-omega/plasma_scoring"
+  },
+  "CardTags": {}
 }

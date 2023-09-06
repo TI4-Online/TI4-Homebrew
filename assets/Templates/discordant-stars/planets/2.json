@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "F070B846D649615314D5BF1BB4A727F4",
 	"Name": "Planets (homebrew 3/8)",
-	"Metadata": "card.planet:homebrew/2",
+	"Metadata": "card.planet:homebrew.discordant_stars/2",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -69,12 +69,12 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.planet:homebrew/demis",
-		"1": "card.planet:homebrew/discordia",
-		"2": "card.planet:homebrew/drah",
-		"3": "card.planet:homebrew/ellas",
-		"4": "card.planet:homebrew/empero",
-		"5": "card.planet:homebrew/gen"
+		"0": "card.planet:homebrew.discordant_stars/demis",
+		"1": "card.planet:homebrew.discordant_stars/discordia",
+		"2": "card.planet:homebrew.discordant_stars/drah",
+		"3": "card.planet:homebrew.discordant_stars/ellas",
+		"4": "card.planet:homebrew.discordant_stars/empero",
+		"5": "card.planet:homebrew.discordant_stars/gen"
 	},
 	"CardTags":
 	{

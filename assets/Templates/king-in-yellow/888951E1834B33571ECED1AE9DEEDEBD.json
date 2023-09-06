@@ -1,0 +1,74 @@
+{
+	"Type": "Card",
+	"GUID": "888951E1834B33571ECED1AE9DEEDEBD",
+	"Name": "Tech Green Deck",
+	"Metadata": "",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "king-in-yellow/kiy-tech-green-face.jpg",
+	"BackTexture": "ti4/technology/green.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 2,
+	"NumVertical": 1,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1 ],
+	"CardNames":
+	{
+		"1": "Entropic Escapement",
+		"0": "Leroy Engine"
+	},
+	"CardMetadata":
+	{
+		"0": "card.technology.green.king_in_yellow:homebrew.king_in_yellow/leroy_engine",
+		"1": "card.technology.green.king_in_yellow:homebrew.king_in_yellow/entropic_escapement"
+	},
+	"CardTags":
+	{
+	}
+}

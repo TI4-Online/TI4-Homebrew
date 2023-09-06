@@ -1,0 +1,79 @@
+{
+	"Type": "Card",
+	"GUID": "AF84D07241EEED1C6D27D1AE0872A52A",
+	"Name": "Exploration (industrial) (homebrew.discordant_stars)",
+	"Metadata": "card.exploration.industrial:homebrew.discordant_stars.exploration/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "discordant-stars/exploration-industrial-plus.face.jpg",
+	"BackTexture": "ti4/exploration/industrial.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 2,
+	"NumVertical": 2,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3 ],
+	"CardNames":
+	{
+		"0": "Orbital Foundries",
+		"1": "Ancient Shipyard",
+		"2": "Star Chart",
+		"3": "Hidden Laboratory"
+	},
+	"CardMetadata":
+	{
+		"0": "card.exploration.industrial:homebrew.discordant_stars/orbital_foundries",
+		"1": "card.exploration.industrial:homebrew.discordant_stars/ancient_shipyard",
+		"2": "card.exploration.industrial:homebrew.discordant_stars/star_chart",
+		"3": "card.exploration.industrial:homebrew.discordant_stars/hidden_laboratory"
+	},
+	"CardTags":
+	{
+	}
+}

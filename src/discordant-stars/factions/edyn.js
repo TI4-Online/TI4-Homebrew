@@ -79,7 +79,7 @@ const nsidToTemplateId = {
   "token.control:homebrew.discordant_stars/edyn":
     "503464A847FB262835C7ACBC3EC40ADF",
   "token.system:homebrew.discordant_stars.sigil/edyn":
-    "3E29B35F47A7E221E65A67A178899C93"
+    "3E29B35F47A7E221E65A67A178899C93",
 };
 
 const technologies = [
@@ -115,7 +115,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3235.jpg",
+    img: "discordant-stars/ui/tiles/tile_3235.png",
     planets: [
       { localeName: "planet.edyn", resources: 3, influence: 3 },
       { localeName: "planet.ekko", resources: 0, influence: 1 },

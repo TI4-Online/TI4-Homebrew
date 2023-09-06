@@ -170,7 +170,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3227.jpg",
+    img: "discordant-stars/ui/tiles/tile_3227.png",
     planets: [
       { localeName: "planet.benc", resources: 2, influence: 0 },
       { localeName: "planet.hau", resources: 1, influence: 2 },
@@ -190,7 +190,6 @@ const unitAttrs = [
     bombardment: { dice: 1, hit: 9 },
     spaceCannon: { dice: 1, hit: 9 },
     antiFighterBarrage: { dice: 2, hit: 9 },
-
   },
   {
     unit: "mech",
@@ -266,9 +265,12 @@ const unitModifiers = [
         "bombardment",
         "antiFighterBarrage",
         "spaceCannon",
-      ].forEach(
-        (attr) => (unitAttrsSet.get("flagship").raw[attr].hit -= bonus)
-      );
+      ].forEach((attr) => {
+        const value = unitAttrsSet.get("flagship").raw[attr];
+        if (value !== undefined) {
+          unitAttrsSet.get("flagship").raw[attr].hit -= bonus;
+        }
+      });
     },
   },
 ];

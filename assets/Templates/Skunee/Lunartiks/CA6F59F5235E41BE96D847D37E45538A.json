@@ -1,0 +1,79 @@
+{
+	"Type": "Card",
+	"GUID": "CA6F59F5235E41BE96D847D37E45538A",
+	"Name": "Leaders Deck",
+	"Metadata": "",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"Tags": [],
+	"FrontTexture": "skunee/lunartiks/lunartiks-leaders-face.jpeg",
+	"BackTexture": "skunee/lunartiks/lunartiks-leaders-back.jpeg",
+	"HiddenTexture": "",
+	"BackIndex": -3,
+	"HiddenIndex": -3,
+	"NumHorizontal": 2,
+	"NumVertical": 2,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3 ],
+	"CardNames":
+	{
+		"0": "Inanis",
+		"1": "Mors Desuper",
+		"2": "Ganymede Jupiter",
+		"3": "Ares Orbiter"
+	},
+	"CardMetadata":
+	{
+		"0": "card.leader.agent.lunartiks:homebrew.skunee/inanis",
+		"1": "card.leader.commander.lunartiks:homebrew.skunee/mores_desuper",
+		"2": "card.leader.hero.lunartiks:homebrew.skunee/collapsing_orbit",
+		"3": "card.leader.mech.lunartiks:homebrew.skunee/ares_orbiter"
+	},
+	"CardTags":
+	{
+	}
+}

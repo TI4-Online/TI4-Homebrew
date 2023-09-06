@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "A4921F608196B66A9391B662C5D5A48D",
 	"Name": "Planets (homebrew 6/8)",
-	"Metadata": "card.planet:homebrew/5",
+	"Metadata": "card.planet:homebrew.discordant_stars/5",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -69,12 +69,12 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.planet:homebrew/sanctuary",
-		"1": "card.planet:homebrew/shihalaum",
-		"2": "card.planet:homebrew/susuros",
-		"3": "card.planet:homebrew/trykk",
-		"4": "card.planet:homebrew/vadarian",
-		"5": "card.planet:homebrew/vaylar"
+		"0": "card.planet:homebrew.discordant_stars/sanctuary",
+		"1": "card.planet:homebrew.discordant_stars/shihalaum",
+		"2": "card.planet:homebrew.discordant_stars/susuros",
+		"3": "card.planet:homebrew.discordant_stars/trykk",
+		"4": "card.planet:homebrew.discordant_stars/vadarian",
+		"5": "card.planet:homebrew.discordant_stars/vaylar"
 	},
 	"CardTags":
 	{

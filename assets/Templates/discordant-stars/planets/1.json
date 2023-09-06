@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "992B9253D95387168DE44CA28E840043",
 	"Name": "Planets (homebrew 2/8)",
-	"Metadata": "card.planet:homebrew/1",
+	"Metadata": "card.planet:homebrew.discordant_stars/1",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -69,12 +69,12 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.planet:homebrew/bohldhur",
-		"1": "card.planet:homebrew/brthkul",
-		"2": "card.planet:homebrew/chrion",
-		"3": "card.planet:homebrew/cymiae",
-		"4": "card.planet:homebrew/cyrra",
-		"5": "card.planet:homebrew/delmor"
+		"0": "card.planet:homebrew.discordant_stars/bohldhur",
+		"1": "card.planet:homebrew.discordant_stars/brthkul",
+		"2": "card.planet:homebrew.discordant_stars/chrion",
+		"3": "card.planet:homebrew.discordant_stars/cymiae",
+		"4": "card.planet:homebrew.discordant_stars/cyrra",
+		"5": "card.planet:homebrew.discordant_stars/delmor"
 	},
 	"CardTags":
 	{

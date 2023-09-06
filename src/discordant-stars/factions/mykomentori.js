@@ -122,7 +122,7 @@ const nsidToTemplateId = {
   "token.command:homebrew.discordant_stars/mykomentori":
     "A5812829410458551D8EFDAA822B72C5",
   "token.control:homebrew.discordant_stars/mykomentori":
-    "14D5EDF64A2C018BF1FEF584CADEA72F",
+    "41BE21544D5E154258910E8FC110B9CE",
   "dice:homebrew.discordant_stars.omen/mykomentori":
     "D7E5BBBF42888E06B8AF68ADC93E407F",
   "token.commodity:homebrew.discordant_stars.commodity_2/mykomentori":
@@ -163,7 +163,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3211.jpg",
+    img: "discordant-stars/ui/tiles/tile_3211.png",
     planets: [{ localeName: "planet.shihalaum", resources: 4, influence: 0 }],
   },
 ];

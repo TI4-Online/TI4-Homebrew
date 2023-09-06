@@ -123,7 +123,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3215.jpg",
+    img: "discordant-stars/ui/tiles/tile_3215.png",
     anomalies: ["asteroid field"],
     planets: [
       { localeName: "planet.gen", resources: 2, influence: 0 },
