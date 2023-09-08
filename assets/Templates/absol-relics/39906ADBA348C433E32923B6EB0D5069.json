@@ -1,8 +1,8 @@
 {
 	"Type": "Card",
-	"GUID": "DC73935E44BD71C84B90E9A374A850C0",
-	"Name": "Reconstruction Matrix",
-	"Metadata": "card.legendary_planet:homebrew.absols_relics/0",
+	"GUID": "39906ADBA348C433E32923B6EB0D5069",
+	"Name": "Card",
+	"Metadata": "",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -40,17 +40,17 @@
 	},
 	"GroundAccessibility": "Nothing",
 	"Tags": [],
-	"FrontTexture": "absol-agendas/NanoForgeAbilityCard.jpg",
-	"BackTexture": "absol-agendas/NanoForgeAbilityCardBack.jpg",
+	"FrontTexture": "absol-relics/Reconstruction_Matrix_Front.jpg",
+	"BackTexture": "absol-relics/Reconstruction_Matrix_Back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
-	"HiddenIndex": -3,
+	"HiddenIndex": -1,
 	"NumHorizontal": 1,
 	"NumVertical": 1,
 	"Width": 6.3,
 	"Height": 4.2,
 	"Thickness": 0.05,
-	"HiddenInHand": false,
+	"HiddenInHand": true,
 	"UsedWithCardHolders": true,
 	"CanStack": true,
 	"UsePrimaryColorForSide": false,
@@ -62,11 +62,10 @@
 	"Indices": [ 0 ],
 	"CardNames":
 	{
-		"0": "Reconstruction Matrix"
 	},
 	"CardMetadata":
 	{
-		"0": "card.legendary_planet:homebrew.absols_relics/reconstruction_matrix"
+		"0": "card.legendary_planet:homebrew.absol/reconstruction_matrix"
 	},
 	"CardTags":
 	{

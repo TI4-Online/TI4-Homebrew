@@ -13,13 +13,43 @@ const REMOVE = [
   "card.relic:pok/the_prophets_tears",
 ];
 
+const UNIT_MODIFIERS = [
+  {
+    toggleActive: true,
+    isCombat: true,
+    localeName: "Tyrant's Lament",
+    localeDescription: "Relic ship",
+    owner: "self",
+    priority: "mutate",
+    triggerNsid: "card.relic:homebrew.absol/tyrants_lament",
+    filter: (auxData) => {
+      return true;
+    },
+    applyAll: (unitAttrsSet, auxData) => {
+      unitAttrsSet.addSpecialUnit(
+        new world.TI4.UnitAttrs({
+          unit: "tyrants_lament",
+          localeName: "Tyrant's Lament",
+          antiFighterBarrage: { hit: 5, dice: 3 },
+          spaceCannon: { hit: 5, dice: 3 },
+          spaceCombat: { hit: 5, dice: 3 },
+          sustainDamage: true,
+          move: 2,
+        })
+      );
+      auxData.self.overrideCount("tyrants_lament", 1);
+    },
+  },
+];
+
 world.TI4.homebrew.inject({
   nsidToTemplateId: {
-    "card.relic:homebrew.absol.relic/0": "A5BD5FD14408926324A657A93F08184B",
-    "card.legendary_planet:homebrew.absols_relics/0":
-      "DC73935E44BD71C84B90E9A374A850C0",
+    "card.relic:homebrew.absol/0": "E61C39795F4E24CAF12FF3AA8DA3A162",
+    "card.legendary_planet:homebrew.absol/0":
+      "39906ADBA348C433E32923B6EB0D5069",
   },
   remove: REMOVE,
+  unitModifiers: UNIT_MODIFIERS,
 });
 
 world.TI4.homebrew.resetOnTableDecks();

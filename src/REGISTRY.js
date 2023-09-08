@@ -15,6 +15,21 @@ const { refObject, refPackageId, world } = require("@tabletop-playground/api");
  */
 const ENTRIES = [];
 
+/** setup instructions:
+ 
+Subscribe to both the TI4-TTPG and TI4-Homebrew mods.
+
+- Load the TI4-TTPG mod
+- Right click the table and select "Object Library".
+- Click "Add packages" in the lower left, select "TI4 Homebrew" then click "Add selected package" at the bottom.
+- Click outside the window to close it.
+
+Now the "Load homebrew..." button on the setup panel lets you add homebrew items.
+
+For example, click "Absol's" at left, then "Absol's Relics".  Later when you click "Start game" it will replace the relic deck with Absol's and add the new legendary planet card to that deck.
+
+ */
+
 /* copy/paste template:
 
 // --------------------------------------------------------
