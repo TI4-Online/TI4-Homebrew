@@ -17,7 +17,7 @@ const ENTRIES = [];
 
 /** setup instructions:
  
-Subscribe to both the TI4-TTPG and TI4-Homebrew mods.
+Every player should subscribe to both the TI4-TTPG and TI4-Homebrew mods.  If a player has not, they will be prompted to subscribe/download (which may take a while).
 
 - Load the TI4-TTPG mod
 - Right click the table and select "Object Library".
