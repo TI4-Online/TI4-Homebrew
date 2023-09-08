@@ -23,6 +23,8 @@ const UNIT_MODIFIERS = [
     priority: "mutate",
     triggerNsid: "card.relic:homebrew.absol/tyrants_lament",
     filter: (auxData) => {
+      // To use a unit, check if it is in the active system.
+      // For now, lean on toggleActive.
       return true;
     },
     applyAll: (unitAttrsSet, auxData) => {
