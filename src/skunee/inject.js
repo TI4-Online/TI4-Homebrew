@@ -28,15 +28,15 @@ const factions = [
     faction: "lunartiks",
     abilities: [
       "tidal_forces",
-      "Swap the resource and influence values of non-home planets you control.  Place a Tidal Forces token on planets you control.",
+      "Place a Tidal Forces token on non-home planets you control other than Mecatol Rex.  The resource and influence values of a planet with Tidal Force token are swapped.  Tidal Forces tokens do not count for objectives.",
     ],
     [
       "orbit",
-      "You may activate a system that is adjacent to a supernova and contains 1 of your command tokens.  If you do, you may move all your units in that system’s space area to another system that is adjacent to that supernova and does not contain another player’s ships.",
+      "You may activate a system that is adjacent to an  and contACTION:  Choose a system adjacent to an anomaly that contains 1 of your command tokens.  You may move any of your units in that system to another system adjacent to the same anomaly and does not contain another player’s ships.ains 1 of your command tokens.  If you do, you may move all your units in that system’s space area to another system that is adjacent to that supernova and does not contain another player’s ships.",
     ],
     [
       "eclipse",
-      "After you use your Orbit faction ability, you may redistribute 1 command token in your fleet pool.  If you do, remove a token from your fleet pool.",
+      "After you use your Orbit faction ability, you may redistribute 1 command token on your command sheet.  If you do, remove a token from your fleet pool.",
     ],
     
     commodities: 3,
