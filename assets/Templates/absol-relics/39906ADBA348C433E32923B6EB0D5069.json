@@ -1,7 +1,7 @@
 {
 	"Type": "Card",
 	"GUID": "39906ADBA348C433E32923B6EB0D5069",
-	"Name": "Card",
+	"Name": "Nano Forge Legendary Planet Card",
 	"Metadata": "",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
@@ -44,7 +44,7 @@
 	"BackTexture": "absol-relics/Reconstruction_Matrix_Back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
-	"HiddenIndex": -1,
+	"HiddenIndex": -3,
 	"NumHorizontal": 1,
 	"NumVertical": 1,
 	"Width": 6.3,

@@ -1,7 +1,7 @@
 {
 	"Type": "Card",
 	"GUID": "E61C39795F4E24CAF12FF3AA8DA3A162",
-	"Name": "Absol's Relics",
+	"Name": "Absol's Relics (small)",
 	"Metadata": "",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
@@ -44,7 +44,7 @@
 	"BackTexture": "ti4/relic.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
-	"HiddenIndex": -1,
+	"HiddenIndex": -3,
 	"NumHorizontal": 5,
 	"NumVertical": 4,
 	"Width": 4.2,

@@ -61,12 +61,21 @@ ENTRIES.push({
     {
       id: "ab-ag",
       name: "Absol's Agendas",
+      description: "Replaces the Agenda deck, Political Secret cards",
       inject: "absol/absols-agendas.js",
     },
     {
       id: "ab-rc",
       name: "Absol's Relics",
+      description:
+        "Replaces the Relic deck, adds a few items to the Homebrew box",
       inject: "absol/absols-relics.js",
+    },
+    {
+      id: "ab-tc",
+      name: "Absol's Tech",
+      description: "Replaces faction technology (during faction unpack)",
+      inject: "absol/absols-tech.js",
     },
   ],
 });
