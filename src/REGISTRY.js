@@ -74,7 +74,7 @@ ENTRIES.push({
     {
       id: "ab-tc",
       name: "Absol's Tech",
-      description: "Replaces faction technology (during faction unpack)",
+      description: "Replaces technology decks (including faction tech)",
       inject: "absol/absols-tech.js",
     },
   ],
@@ -253,7 +253,6 @@ ENTRIES.push({
 
 // --------------------------------------------------------
 
-// TODO
 ENTRIES.push({
   name: "Red Tape",
   authors: "",
