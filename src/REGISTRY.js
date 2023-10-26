@@ -100,6 +100,22 @@ ENTRIES.push({
 // --------------------------------------------------------
 
 ENTRIES.push({
+  name: "Cuke",
+  authors: "Andcat",
+  description: "Cucumber anomaly",
+  packageId: refPackageId,
+  options: [
+    {
+      id: "cuke",
+      name: "Cuke",
+      inject: "cuke/inject-cuke.js",
+    },
+  ],
+});
+
+// --------------------------------------------------------
+
+ENTRIES.push({
   name: "Discordant Stars",
   authors: "Tactic Blue led, many more",
   description: "Fan expansion",
