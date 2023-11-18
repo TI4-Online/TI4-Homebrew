@@ -164,9 +164,8 @@ const unitModifiers = [
         tech.cardNsid.startsWith("card.technology.unit_upgrade:")
       ).length;
 
-      unitAttrsSet.get("mech").raw.spaceCombat.hit -= Math.floor(
-        hitModifier / 2
-      );
+      const mechAttrsRaw = unitAttrsSet.get("mech").raw;
+      mechAttrsRaw.groundCombat.hit -= Math.floor(hitModifier / 2);
     },
   },
 ];

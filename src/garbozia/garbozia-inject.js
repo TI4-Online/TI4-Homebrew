@@ -37,6 +37,7 @@ world.TI4.homebrew.inject({
 });
 
 world.TI4.homebrew.resetOnTableDecks();
+world.TI4.homebrew.resetSystemTilesBox();
 
 if (world.TI4.ObjectNamespace.isSystemTile(refObject)) {
   const scale = world.TI4.Hex.SCALE * 0.995;

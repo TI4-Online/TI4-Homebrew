@@ -2,7 +2,7 @@
 	"Type": "Multistate Object",
 	"GUID": "A743CFB5F04A1C0F7280C5B70D174A44",
 	"Name": "Instructions",
-	"Metadata": "",
+	"Metadata": "pdf:homebrew.red_tape/manual",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -29,6 +29,7 @@
 	"Blueprint": "",
 	"Models": [],
 	"Collision": [],
+	"Lights": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
 	"ZoomViewDirection":
@@ -37,6 +38,7 @@
 		"Y": 0,
 		"Z": 1
 	},
+	"GroundAccessibility": "Nothing",
 	"Tags": [],
 	"MultistateModels": [
 		{
