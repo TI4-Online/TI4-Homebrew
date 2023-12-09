@@ -287,6 +287,22 @@ ENTRIES.push({
 // --------------------------------------------------------
 
 ENTRIES.push({
+  name: "SCPT Lazax",
+  authors: "SCPT Homebrew Hub",
+  description: "",
+  packageId: refPackageId,
+  options: [
+    {
+      id: "scpt-lzx",
+      name: "Lazax",
+      inject: "scpt/lazax/inject-lazax.js",
+    },
+  ],
+});
+
+// --------------------------------------------------------
+
+ENTRIES.push({
   name: "Skunee",
   authors: "Skunee",
   description: "",
