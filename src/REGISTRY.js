@@ -125,13 +125,6 @@ ENTRIES.push({
       id: "ds-fact",
       name: "Factions",
       inject: "discordant-stars/factions-all.js",
-      description: "A Fan-Made Expansion",
-  packageId: refPackageId,
-  options: [
-    {
-      id: "ds-fact",
-      name: "Factions",
-      inject: "discordant-stars/factions-all.js",
       description: [
         "Shipwrights of Axis",
         "Bentor Conglomerate",
