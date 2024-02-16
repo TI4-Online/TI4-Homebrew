@@ -45,6 +45,12 @@ const factions = [
     techs: ["unity_algorithm", "encrypted_trade_hub"],
     units: ["kaliburn", "runebearer"],
     packageId: refPackageId,
+    unpackExtra: [
+      {
+        tokenNsid: "token.system:homebrew.discordant_stars.sigil/edyn",
+        tokenCount: 10,
+      },
+    ],
   },
 ];
 

@@ -74,11 +74,11 @@
 			},
 			"Rotation":
 			{
-				"X": -180,
+				"X": 180,
 				"Y": 0,
-				"Z": -180
+				"Z": 180
 			},
-			"Texture": "discordant-stars/extras/nivyn_wound.back.jpg",
+			"Texture": "discordant-stars/extras/nivyn_wound.back.png",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
@@ -90,6 +90,7 @@
 		}
 	],
 	"Collision": [],
+	"Lights": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
 	"ZoomViewDirection":
@@ -98,5 +99,6 @@
 		"Y": 0,
 		"Z": 0
 	},
+	"GroundAccessibility": "Nothing",
 	"Tags": []
 }

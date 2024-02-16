@@ -37,6 +37,12 @@ const factions = [
     techs: ["voidwake_missiles"],
     units: ["eradica", "voidflare_warden", "voidflare_warden_2"],
     packageId: refPackageId,
+    unpackExtra: [
+      {
+        tokenNsid: "token.system:homebrew.discordant_stars.wound/nivyn",
+        tokenCount: 1,
+      },
+    ],
   },
 ];
 
