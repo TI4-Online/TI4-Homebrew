@@ -200,7 +200,7 @@ function getBlightHexes() {
       const owner = obj.getOwningPlayer();
       return (
         owner &&
-        world.TI4.getFactionByPlayerSlot(owner.getSlot()).nsidName === "blex"
+        world.TI4.getFactionByPlayerSlot(owner.getSlot())?.nsidName === "blex"
       );
     })
     .map((gameObject) => {
