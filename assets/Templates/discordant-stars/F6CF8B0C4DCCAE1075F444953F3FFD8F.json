@@ -38,6 +38,7 @@
 		"Y": 0,
 		"Z": 0
 	},
+	"GroundAccessibility": "Nothing",
 	"Tags": [],
 	"FrontTexture": "discordant-stars/relics.face.jpg",
 	"BackTexture": "ti4/relic.back.jpg",
@@ -61,23 +62,23 @@
 	"Indices": [ 0, 1, 2, 3, 4, 5, 6 ],
 	"CardNames":
 	{
-		"0": "Boon of the Cerulean God",
-		"1": "Decrypted Cartoglyph",
-		"2": "E6-G0 Network",
-		"3": "Eye of Vogul",
-		"4": "Starfall Array",
-		"5": "Throne of the False Emperor",
-		"6": "Twilight Mirror"
+		"0": "Starfall Array",
+		"1": "Accretion Engine",
+		"2": "Eye of Vogul",
+		"3": "Azdel's Key",
+		"4": "Twilight Mirror",
+		"5": "E6-Go Network",
+		"6": "Forgotten Throne"
 	},
 	"CardMetadata":
 	{
-		"0": "card.relic:homebrew.discordant_stars/boon_of_the_cerulean_god",
-		"1": "card.relic:homebrew.discordant_stars/decrypted_cartoglyph",
-		"2": "card.relic:homebrew.discordant_stars/e6-g0_network",
-		"3": "card.relic:homebrew.discordant_stars/eye_of_vogul",
-		"6": "card.relic:homebrew.discordant_stars/twilight_mirror",
-		"4": "card.relic:homebrew.discordant_stars/starfall_array",
-		"5": "card.relic:homebrew.discordant_stars/throne_of_the_false_emperor"
+		"0": "card.relic:homebrew.discordant_stars/starfall_array",
+		"1": "card.relic:homebrew.discordant_stars/accretion_engine",
+		"2": "card.relic:homebrew.discordant_stars/eye_of_vogul",
+		"3": "card.relic:homebrew.discordant_stars/azdels_key",
+		"6": "card.relic:homebrew.discordant_stars/forgotten_throne",
+		"4": "card.relic:homebrew.discordant_stars/twilight_mirror",
+		"5": "card.relic:homebrew.discordant_stars/e6_go_network"
 	},
 	"CardTags":
 	{

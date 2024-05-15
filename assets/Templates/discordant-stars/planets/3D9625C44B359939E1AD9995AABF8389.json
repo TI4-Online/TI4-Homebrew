@@ -38,6 +38,7 @@
 		"Y": 0,
 		"Z": 0
 	},
+	"GroundAccessibility": "Nothing",
 	"Tags": [],
 	"FrontTexture": "discordant-stars/planets/legendary.face.jpg",
 	"BackTexture": "discordant-stars/planets/legendary.back.jpg",
@@ -61,19 +62,19 @@
 	"Indices": [ 0, 1, 2, 3, 4 ],
 	"CardNames":
 	{
-		"0": "Council Black Site",
-		"1": "Fractal Gate",
-		"2": "Bi-Phasic Generators",
-		"3": "Mystic Library",
-		"4": "Imperial Salvage Yard"
+		"0": "Fractal Gate",
+		"1": "Bi-Phasic Generators",
+		"2": "Mystic Library",
+		"3": "Imperial Salvage Yard",
+		"4": "Council Black Site"
 	},
 	"CardMetadata":
 	{
-		"0": "card.legendary_planet:homebrew.discordant_stars/legendary_tarrock_planet",
-		"1": "card.legendary_planet:homebrew.discordant_stars/legendary_domna_planet",
-		"2": "card.legendary_planet:homebrew.discordant_stars/legendary_echo_planet",
-		"3": "card.legendary_planet:homebrew.discordant_stars/legendary_prism_planet",
-		"4": "card.legendary_planet:homebrew.discordant_stars/legendary_silence_planet"
+		"0": "card.legendary_planet:homebrew.discordant_stars/legendary_domna_planet",
+		"1": "card.legendary_planet:homebrew.discordant_stars/legendary_echo_planet",
+		"2": "card.legendary_planet:homebrew.discordant_stars/legendary_prism_planet",
+		"3": "card.legendary_planet:homebrew.discordant_stars/legendary_silence_planet",
+		"4": "card.legendary_planet:homebrew.discordant_stars/legendary_tarrock_planet"
 	},
 	"CardTags":
 	{

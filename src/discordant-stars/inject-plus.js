@@ -309,17 +309,17 @@ world.TI4.homebrew.inject({
       planets: [
         {
           localeName: "planet.rysaa",
-          resources: 1,
-          influence: 2,
-          trait: ["industrial"],
-          tech: ["blue"],
-        },
-        {
-          localeName: "planet.moln",
           resources: 2,
           influence: 0,
           trait: ["hazardous"],
           tech: ["green"],
+        },
+        {
+          localeName: "planet.moln",
+          resources: 1,
+          influence: 2,
+          trait: ["industrial"],
+          tech: ["blue"],
         },
       ],
     },
