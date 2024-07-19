@@ -84,62 +84,62 @@ world.TI4.homebrew.inject({
       "324FA3EF4F3C2A4FB8FFD8B7D5ED88CD",
     "token.attachment.exploration:homebrew.discordant_stars/orbital_foundries":
       "D70BA21941A07EB145ECF085AF6FB86F",
-    "tile.system:homebrew.discordant_stars/4237":
-      "096459304673A968D6D31484B82FDDB4",
-    "tile.system:homebrew.discordant_stars/4238":
-      "13AAE9E34BDFF26E3F6B3BA72DA278AB",
-    "tile.system:homebrew.discordant_stars/4239":
-      "768520554B2B1349676E94BA2544EC9F",
-    "tile.system:homebrew.discordant_stars/4240":
-      "2D1EE9D248B8A2357181B78F90B12442",
-    "tile.system:homebrew.discordant_stars/4241":
-      "1FF42D1345A2A25D77005A9DCD810D67",
-    "tile.system:homebrew.discordant_stars/4242":
-      "EDE51E6740C44105C1606FA8C6EBFEEA",
-    "tile.system:homebrew.discordant_stars/4243":
-      "7C3E6ADB46B7FD5E80D7BC8A04043DF9",
-    "tile.system:homebrew.discordant_stars/4244":
-      "F54E30204F5022AEBBBE2E84FB25F695",
-    "tile.system:homebrew.discordant_stars/4245":
-      "ED53CB964ABC597E344DC48FBFC77691",
-    "tile.system:homebrew.discordant_stars/4246":
-      "A8EB6E234CD5C716CF5E6EA8E680A8C2",
-    "tile.system:homebrew.discordant_stars/4247":
-      "54079E2243D0434AF624C48296E2F1F5",
-    "tile.system:homebrew.discordant_stars/4248":
-      "F5FE4C2D4200397AC5EE23B1D5BD74F8",
-    "tile.system:homebrew.discordant_stars/4249":
-      "15690E7F499B96E5C452C88D397257B8",
-    "tile.system:homebrew.discordant_stars/4250":
-      "C3AE1D684280E69B4A09EF90BC761C04",
-    "tile.system:homebrew.discordant_stars/4251":
-      "557271FA4A57A82CE54C619E120F089B",
-    "tile.system:homebrew.discordant_stars/4252":
-      "8F46E1E64CBC8ECB92B139AF4D9DA194",
     "tile.system:homebrew.discordant_stars/4253":
-      "019BB4D7453FA7F55D4E54BC82AAE84F",
+      "096459304673A968D6D31484B82FDDB4",
     "tile.system:homebrew.discordant_stars/4254":
-      "2C2CAAEA4DE5735D30079689B77D00F5",
+      "13AAE9E34BDFF26E3F6B3BA72DA278AB",
     "tile.system:homebrew.discordant_stars/4255":
-      "9C34C2004E2A17FB1F819EAC761E233F",
+      "768520554B2B1349676E94BA2544EC9F",
     "tile.system:homebrew.discordant_stars/4256":
-      "B5C5F5574449E7F53274C4B7B2A5A79D",
+      "2D1EE9D248B8A2357181B78F90B12442",
     "tile.system:homebrew.discordant_stars/4257":
-      "D4342AB8410ED172FDB8BABA01A0FA61",
+      "1FF42D1345A2A25D77005A9DCD810D67",
     "tile.system:homebrew.discordant_stars/4258":
-      "1621B1994BBEA2C7A387248DFA5279A1",
+      "EDE51E6740C44105C1606FA8C6EBFEEA",
     "tile.system:homebrew.discordant_stars/4259":
-      "C50802E1430BCD5D44ED83A91D5F43B9",
+      "7C3E6ADB46B7FD5E80D7BC8A04043DF9",
     "tile.system:homebrew.discordant_stars/4260":
+      "F54E30204F5022AEBBBE2E84FB25F695",
+    "tile.system:homebrew.discordant_stars/4261":
+      "ED53CB964ABC597E344DC48FBFC77691",
+    "tile.system:homebrew.discordant_stars/4262":
+      "A8EB6E234CD5C716CF5E6EA8E680A8C2",
+    "tile.system:homebrew.discordant_stars/4263":
+      "54079E2243D0434AF624C48296E2F1F5",
+    "tile.system:homebrew.discordant_stars/4264":
+      "F5FE4C2D4200397AC5EE23B1D5BD74F8",
+    "tile.system:homebrew.discordant_stars/4265":
+      "15690E7F499B96E5C452C88D397257B8",
+    "tile.system:homebrew.discordant_stars/4266":
+      "C3AE1D684280E69B4A09EF90BC761C04",
+    "tile.system:homebrew.discordant_stars/4267":
+      "557271FA4A57A82CE54C619E120F089B",
+    "tile.system:homebrew.discordant_stars/4268":
+      "8F46E1E64CBC8ECB92B139AF4D9DA194",
+    "tile.system:homebrew.discordant_stars/4269":
+      "019BB4D7453FA7F55D4E54BC82AAE84F",
+    "tile.system:homebrew.discordant_stars/4270":
+      "2C2CAAEA4DE5735D30079689B77D00F5",
+    "tile.system:homebrew.discordant_stars/4271":
+      "9C34C2004E2A17FB1F819EAC761E233F",
+    "tile.system:homebrew.discordant_stars/4272":
+      "B5C5F5574449E7F53274C4B7B2A5A79D",
+    "tile.system:homebrew.discordant_stars/4273":
+      "D4342AB8410ED172FDB8BABA01A0FA61",
+    "tile.system:homebrew.discordant_stars/4274":
+      "1621B1994BBEA2C7A387248DFA5279A1",
+    "tile.system:homebrew.discordant_stars/4275":
+      "C50802E1430BCD5D44ED83A91D5F43B9",
+    "tile.system:homebrew.discordant_stars/4276":
       "58C41A6F4CA9961427C16B995A58D0E2",
   },
 
   systems: [
     {
-      tile: 4237,
+      tile: 4253,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4237.png",
+      img: "discordant-stars/ui/tiles/tile_4253.png",
       planets: [
         {
           localeName: "planet.silence",
@@ -153,10 +153,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4238,
+      tile: 4254,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4238.png",
+      img: "discordant-stars/ui/tiles/tile_4254.png",
       planets: [
         {
           localeName: "planet.echo",
@@ -170,10 +170,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4239,
+      tile: 4255,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4239.png",
+      img: "discordant-stars/ui/tiles/tile_4255.png",
       planets: [
         {
           localeName: "planet.tarrock",
@@ -187,10 +187,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4240,
+      tile: 4256,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4240.png",
+      img: "discordant-stars/ui/tiles/tile_4256.png",
       planets: [
         {
           localeName: "planet.prism",
@@ -204,10 +204,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4241,
+      tile: 4257,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4241.png",
+      img: "discordant-stars/ui/tiles/tile_4257.png",
       planets: [
         {
           localeName: "planet.troac",
@@ -218,10 +218,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4242,
+      tile: 4258,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4242.png",
+      img: "discordant-stars/ui/tiles/tile_4258.png",
       planets: [
         {
           localeName: "planet.eitr_v",
@@ -232,10 +232,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4243,
+      tile: 4259,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4243.png",
+      img: "discordant-stars/ui/tiles/tile_4259.png",
       planets: [
         {
           localeName: "planet.vioss",
@@ -246,10 +246,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4244,
+      tile: 4260,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4244.png",
+      img: "discordant-stars/ui/tiles/tile_4260.png",
       planets: [
         {
           localeName: "planet.fakrenn",
@@ -261,10 +261,10 @@ world.TI4.homebrew.inject({
       wormholes: ["beta"],
     },
     {
-      tile: 4245,
+      tile: 4261,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4245.png",
+      img: "discordant-stars/ui/tiles/tile_4261.png",
       planets: [
         {
           localeName: "planet.san-vit",
@@ -281,10 +281,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4246,
+      tile: 4262,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4246.png",
+      img: "discordant-stars/ui/tiles/tile_4262.png",
       planets: [
         {
           localeName: "planet.dorvok",
@@ -302,10 +302,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4247,
+      tile: 4263,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4247.png",
+      img: "discordant-stars/ui/tiles/tile_4263.png",
       planets: [
         {
           localeName: "planet.rysaa",
@@ -324,10 +324,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4248,
+      tile: 4264,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4248.png",
+      img: "discordant-stars/ui/tiles/tile_4264.png",
       planets: [
         {
           localeName: "planet.salin",
@@ -344,10 +344,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4249,
+      tile: 4265,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4249.png",
+      img: "discordant-stars/ui/tiles/tile_4265.png",
       planets: [
         {
           localeName: "planet.inan",
@@ -364,10 +364,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4250,
+      tile: 4266,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4250.png",
+      img: "discordant-stars/ui/tiles/tile_4266.png",
       planets: [
         {
           localeName: "planet.detic",
@@ -384,10 +384,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4251,
+      tile: 4267,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4251.png",
+      img: "discordant-stars/ui/tiles/tile_4267.png",
       planets: [
         {
           localeName: "planet.larred",
@@ -410,10 +410,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4252,
+      tile: 4268,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4252.png",
+      img: "discordant-stars/ui/tiles/tile_4268.png",
       planets: [
         {
           localeName: "planet.mandle",
@@ -436,10 +436,10 @@ world.TI4.homebrew.inject({
       ],
     },
     {
-      tile: 4253,
+      tile: 4269,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4253.png",
+      img: "discordant-stars/ui/tiles/tile_4269.png",
       planets: [
         {
           localeName: "planet.domna",
@@ -454,52 +454,52 @@ world.TI4.homebrew.inject({
       anomalies: ["nebula"],
     },
     {
-      tile: 4254,
+      tile: 4270,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4254.png",
+      img: "discordant-stars/ui/tiles/tile_4270.png",
     },
     {
-      tile: 4255,
+      tile: 4271,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4255.png",
+      img: "discordant-stars/ui/tiles/tile_4271.png",
     },
     {
-      tile: 4256,
+      tile: 4272,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4256.png",
+      img: "discordant-stars/ui/tiles/tile_4272.png",
       wormholes: ["beta"],
       anomalies: ["nebula"],
     },
     {
-      tile: 4257,
+      tile: 4273,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4257.png",
+      img: "discordant-stars/ui/tiles/tile_4273.png",
       anomalies: ["asteroid field", "nebula"],
     },
     {
-      tile: 4258,
+      tile: 4274,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4258.png",
+      img: "discordant-stars/ui/tiles/tile_4274.png",
       anomalies: ["gravity rift", "asteroid field"],
     },
     {
-      tile: 4259,
+      tile: 4275,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4259.png",
+      img: "discordant-stars/ui/tiles/tile_4275.png",
       wormholes: ["gamma"],
       anomalies: ["gravity rift"],
     },
     {
-      tile: 4260,
+      tile: 4276,
       source: "homebrew.discordant_stars",
       packageId: refPackageId,
-      img: "discordant-stars/ui/tiles/tile_4260.png",
+      img: "discordant-stars/ui/tiles/tile_4276.png",
       wormholes: ["alpha", "beta"],
       anomalies: ["supernova"],
     },
