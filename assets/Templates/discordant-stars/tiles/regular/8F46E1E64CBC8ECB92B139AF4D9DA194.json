@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
 	"GUID": "8F46E1E64CBC8ECB92B139AF4D9DA194",
-	"Name": "Tile 4252",
-	"Metadata": "tile.system:homebrew.discordant_stars/4252",
+	"Name": "4268",
+	"Metadata": "tile.system:homebrew.discordant_stars/4268",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -44,11 +44,11 @@
 			},
 			"Rotation":
 			{
-				"X": 0,
+				"X": -0,
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tiles/regular/tile_4252.jpg",
+			"Texture": "discordant-stars/ui/tiles/tile_4268.jpg",
 			"NormalMap": "",
 			"ExtraMap": "ti4/obverse_x.png",
 			"ExtraMap2": "",
@@ -120,7 +120,7 @@
 			},
 			"Rotation":
 			{
-				"X": 0,
+				"X": -0,
 				"Y": 0,
 				"Z": 0
 			},
@@ -136,5 +136,6 @@
 		"Y": 0,
 		"Z": 1
 	},
+	"GroundAccessibility": "Nothing",
 	"Tags": []
 }

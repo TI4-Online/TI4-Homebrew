@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
 	"GUID": "2D1EE9D248B8A2357181B78F90B12442",
-	"Name": "Tile 4240",
-	"Metadata": "tile.system:homebrew.discordant_stars/4240",
+	"Name": "4256",
+	"Metadata": "tile.system:homebrew.discordant_stars/4256",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -44,11 +44,11 @@
 			},
 			"Rotation":
 			{
-				"X": 0,
+				"X": -0,
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tiles/regular/tile_4240.jpg",
+			"Texture": "discordant-stars/ui/tiles/tile_4256.jpg",
 			"NormalMap": "",
 			"ExtraMap": "ti4/obverse_x.png",
 			"ExtraMap2": "",
@@ -120,7 +120,7 @@
 			},
 			"Rotation":
 			{
-				"X": 0,
+				"X": -0,
 				"Y": 0,
 				"Z": 0
 			},
@@ -136,5 +136,6 @@
 		"Y": 0,
 		"Z": 1
 	},
+	"GroundAccessibility": "Nothing",
 	"Tags": []
 }
