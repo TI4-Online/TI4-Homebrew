@@ -136,6 +136,6 @@
 		"Y": 0,
 		"Z": 1
 	},
-	"GroundAccessibility": "Nothing",
+	"GroundAccessibility": "ZoomAndContext",
 	"Tags": []
 }
