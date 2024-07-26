@@ -1,7 +1,7 @@
 {
 	"Type": "Generic",
 	"GUID": "429EDA1C4F443B9D8C7DCBAF8601BD65",
-	"Name": "Arcane Shield Emitter",
+	"Name": "Arcane Citadel",
 	"Metadata": "token.attachment.exploration:homebrew.discordant_stars/arcane_shield_emitter",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
@@ -38,17 +38,17 @@
 			},
 			"Scale":
 			{
-				"X": 1.001,
-				"Y": 1.001,
-				"Z": 1.001
+				"X": 1.0009999999999999,
+				"Y": 1.0009999999999999,
+				"Z": 1.0009999999999999
 			},
 			"Rotation":
 			{
-				"X": 0,
+				"X": -0,
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tokens/exploration/arcane_shield_emitter.png",
+			"Texture": "discordant-stars/tokens/exploration/arcane_citadel.png",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
@@ -78,7 +78,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "discordant-stars/tokens/exploration/arcane_shield_emitter.png",
+			"Texture": "discordant-stars/tokens/exploration/arcane_citadel.png",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
