@@ -258,7 +258,7 @@ world.TI4.homebrew.inject({
           trait: ["hazardous"],
         },
       ],
-      wormholes: ["beta"],
+      wormholes: ["alpha"],
     },
     {
       tile: 4261,
@@ -277,6 +277,7 @@ world.TI4.homebrew.inject({
           resources: 0,
           influence: 2,
           trait: ["hazardous"],
+		  tech: ["yellow"],
         },
       ],
     },
@@ -308,18 +309,18 @@ world.TI4.homebrew.inject({
       img: "discordant-stars/ui/tiles/tile_4263.png",
       planets: [
         {
-          localeName: "planet.rysaa",
-          resources: 2,
-          influence: 0,
-          trait: ["hazardous"],
-          tech: ["green"],
-        },
-        {
           localeName: "planet.moln",
           resources: 1,
           influence: 2,
           trait: ["industrial"],
           tech: ["blue"],
+        },
+        {
+          localeName: "planet.rysaa",
+          resources: 2,
+          influence: 0,
+          trait: ["hazardous"],
+          tech: ["green"],
         },
       ],
     },
