@@ -212,7 +212,6 @@ ENTRIES.push({
 
 // --------------------------------------------------------
 
-// TODO
 ENTRIES.push({
   name: "Ixth Expansion",
   authors: "Unfulvio",
@@ -221,8 +220,8 @@ ENTRIES.push({
   options: [
     {
       id: "ixth",
-      name: "",
-      inject: "",
+      name: "Lost Star Charts",
+      inject: "ixth-expansions/lost-star-charts.js",
     },
   ],
 });
