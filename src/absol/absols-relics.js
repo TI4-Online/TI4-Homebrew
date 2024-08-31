@@ -11,6 +11,9 @@ const REMOVE = [
   "card.relic:pok/the_crown_of_thalnos",
   "card.relic:pok/the_obsidian",
   "card.relic:pok/the_prophets_tears",
+  "card.relic:codex.affinity/dynamis_core",
+  "card.relic:codex.affinity/jrxs4550",
+  "card.relic:codex.affinity/nanoforge",
 ];
 
 const UNIT_MODIFIERS = [
