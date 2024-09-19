@@ -2,8 +2,8 @@ const { world, refPackageId } = require("@tabletop-playground/api");
 const { getBlightStatus } = require("./../scripts/blight_status");
 
 const localeStrings = {
-  "faction.abbr.blex": "Blex",
-  "faction.full.blex": "Blex Pestilence",
+  "faction.abbr.blex": "Kyro",
+  "faction.full.blex": "Kyro Solidarity",
   "planet.avicenna": "Avicenna",
   "technology.name.biotic_weapons": "Biotic Weapons",
   "unit.flagship.auriga": "Auriga",
