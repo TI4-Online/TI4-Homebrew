@@ -271,8 +271,8 @@ const systems = [
     planets: [
       {
         localeName: "planet.jarrah",
-        resources: 0,
-        influence: 0,
+        resources: 1,
+        influence: 1,
         trait: ["hazardous"],
         legendary: true,
         legendaryCard:
@@ -602,6 +602,9 @@ const extraBoxes = [
       "token.attachment:homebrew.ixth_lost_star_charts/population_growth",
       "token.attachment:homebrew.ixth_lost_star_charts/self-defense_initiative",
       "token.attachment:homebrew.ixth_lost_star_charts/terraforming_milestone",
+
+      // Lloyd deck.
+      "card.terraforming_initiative:homebrew.ixth_lost_star_charts/0",
 
       // Jarrah token.
       "token.commodity:homebrew.ixth_lost_star_charts/lengendary_planet_jarrah",

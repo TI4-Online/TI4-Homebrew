@@ -120,6 +120,20 @@ const systems = [
     img: "discordant-stars/ui/tiles/tile_3232.png",
     planets: [],
   },
+  {
+    // must register planet in a system for detection
+    tile: -3232,
+    source: "homebrew.discordant_stars",
+    packageId: refPackageId,
+    img: "discordant-stars/ui/tiles/tile_-2.png",
+    planets: [
+      {
+        localeName: "planet.ghoti",
+        resources: 3,
+        influence: 3,
+      },
+    ],
+  },
 ];
 
 const unitAttrs = [

@@ -277,7 +277,7 @@ world.TI4.homebrew.inject({
           resources: 0,
           influence: 2,
           trait: ["hazardous"],
-		  tech: ["yellow"],
+          tech: ["yellow"],
         },
       ],
     },
@@ -528,7 +528,7 @@ world.TI4.homebrew.inject({
         "token.attachment.exploration:homebrew.discordant_stars/council_preserve",
       faceUp: {
         //somehow increase votes without influence?
-        influence: 3,
+        influence: 5,
         image: "discordant-stars/tokens/exploration/CouncilPreserveToken.png",
       },
     },
