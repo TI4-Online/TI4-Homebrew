@@ -33,9 +33,9 @@ const factions = [
     startingUnits: {
       carrier: 1,
       cruiser: 1,
+      destroyer: 1,
       fighter: 3,
       infantry: 4,
-      destroyer: 1,
       space_dock: 1,
     },
     techs: ["sanctification_field", "pilgrimage_beacons"],

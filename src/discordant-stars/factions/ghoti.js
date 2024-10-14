@@ -28,9 +28,9 @@ const factions = [
     startingTechChoices: ["gravity_drive", "sling_relay"],
     startingTech: [],
     startingUnits: {
-      flagship: 1,
       cruiser: 1,
       fighter: 2,
+      flagship: 1,
       infantry: 3,
     },
     techs: ["networked_command", "parallel_production"],

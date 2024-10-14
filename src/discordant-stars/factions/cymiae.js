@@ -29,9 +29,9 @@ const factions = [
     startingUnits: {
       carrier: 1,
       destroyer: 1,
+      dreadnought: 1,
       fighter: 2,
       infantry: 3,
-      dreadnought: 1,
       space_dock: 1,
     },
     techs: ["recursive_worm"],
