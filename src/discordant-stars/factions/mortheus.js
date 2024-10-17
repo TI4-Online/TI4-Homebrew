@@ -27,9 +27,9 @@ const factions = [
     source: "homebrew.discordant_stars",
     startingTech: ["dark_energy_tap", "sarween_tools"],
     startingUnits: {
-      dreadnought: 1,
       carrier: 1,
       destroyer: 1,
+      dreadnought: 1,
       fighter: 2,
       infantry: 3,
       space_dock: 1,

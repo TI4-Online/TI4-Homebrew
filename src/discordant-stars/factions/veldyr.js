@@ -42,10 +42,10 @@ const factions = [
     source: "homebrew.discordant_stars",
     startingTech: ["dark_energy_tap", "ai_development_algorithm"],
     startingUnits: {
-      dreadnought: 1,
       carrier: 1,
       destroyer: 1,
-      fighter: 2,
+      dreadnought: 1,
+      fighter: 3,
       infantry: 4,
       space_dock: 1,
       pds: 1,

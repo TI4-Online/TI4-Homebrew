@@ -33,9 +33,9 @@ const factions = [
     ],
     startingTech: [],
     startingUnits: {
-      dreadnought: 1,
       carrier: 1,
       cruiser: 1,
+      dreadnought: 1,
       fighter: 2,
       infantry: 3,
       space_dock: 1,
