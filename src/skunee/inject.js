@@ -33,7 +33,6 @@ const factions = [
   {
     faction: "lunartiks",
     abilities: ["tidal_forces", "orbit", "eclipse"],
-
     commodities: 3,
     home: 3350,
     icon: "skunee/lunartiks/lunartiks-faction-icon.png",
