@@ -86,7 +86,27 @@ ENTRIES.push({
   name: "Action Deck 2",
   authors: "Will",
   description:
-    "84 new, unique, singleton cards to combine with the 36 '4-of' cards in the primary deck. It's largely a compilation of my favorite homebrew cards from all over the community (with some tweaks here and there). I tried to keep a similar composition of card types to the primary deck. Experience all new mechanics and lore (with a few jokes thrown in).",
+      [
+        "This 120-card deck replaces the action card deck, introducing 84 new singleton cards and 4 new cards with four copies each. Flank Speed, War Machine, Skilled Retreat, Direct Hit, and Sabotage remain as staples, but have new lore.",
+        "",
+        "A card spreadsheet, FAQ, and dedicated channel for discussion can be found on the TI4 Homebrew Discord.",
+        "",
+        "This decks goals are to:",
+        "- Provide an interesting variant to the game that doesn't greatly alter it at its core.",
+        "- Have less S and F tier cards, creating a better power curve.",
+        "- Have less component action and agenda phase cards.",
+        "- Shake up some metas, e.g. selling speaker.",
+        "- Solve feel-bad problems, e.g. structure, tech, and secret tempo.",
+        "- Have each card feel like it could have come out of a Codex, by lore and effect.",
+        "",
+        "New timing windows you should usually pause for are:",
+        "- At the start of the strategy phase (x2)",
+        "- After a player activates a system that contains your units",
+        "- After a die is rolled",
+        "",
+        "To avoid major surprises and possibly bad feelings (unless you're into that), I recommend you assume other players have cards that will solve their problems. Also, read aloud the following cards:",
+        "Revolution, Deflection, Renegotiation, Betrayal, Ixthian Gift, Discord, and Heist."
+      ].join("\n"),
   packageId: refPackageId,
   options: [
     {
@@ -244,29 +264,6 @@ ENTRIES.push({
 });
 
 // --------------------------------------------------------
-
-ENTRIES.push({
-  name: "Little Omega",
-  authors: "Will",
-  description:
-    "Overhaul to various components of the game:\n" +
-    [
-      "- Action Cards",
-      "- Agendas",
-      "- Promissory Notes",
-      "- Exploration and Relics",
-      "- Public and Secret Objectives",
-      "- Factions and Technologies",
-    ].join("\n"),
-  packageId: refPackageId,
-  options: [
-    {
-      id: "lit-omg",
-      name: "Little Omega",
-      inject: "little-omega/inject-full.js",
-    },
-  ],
-});
 
 // --------------------------------------------------------
 
