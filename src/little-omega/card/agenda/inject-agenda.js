@@ -1,4 +1,45 @@
 const { world } = require("@tabletop-playground/api");
+const unitModifiers = require("./unit-modifiers");
+
+const voteCountModifiers = [
+    (playerDesk, currentVoteCount) => {
+        const checkIsDiscardPile = true;
+        const allowFaceDown = false;
+        for (const obj of world.getAllObjects()) {
+            const nsid = world.TI4.ObjectNamespace.getNsid(obj);
+            if (nsid !== "card.agenda:homebrew.little-omega/representative_government") {
+                continue;
+            }
+            if (!world.TI4.CardUtil.isLooseCard(obj, checkIsDiscardPile, allowFaceDown)) {
+                continue;
+            }
+            if (world.TI4.agenda.getAgendaNsid() === nsid) {
+                continue; // currently being voted on
+            }
+            return -currentVoteCount + 1;
+        }
+        return 0;
+    }
+];
+
+const wormholeAdjacencyModifiers = [
+    (connected) => {
+        for (const obj of world.getAllObjects()) {
+            const nsid = world.TI4.ObjectNamespace.getNsid(obj);
+            if (nsid !== "card.agenda:homebrew.little-omega/wormhole_reconstruction") {
+                continue;
+            }
+            if (!world.TI4.CardUtil.isLooseCard(obj, true)) {
+                continue; // not a lone, faceup card on the table
+            }
+            connected.forEach((wormholeConnections, wormhole, _connected) => {
+                if (wormhole !== "delta") {
+                    wormholeConnections.add("non-delta");
+                }
+            });
+        }
+    }
+];
 
 world.TI4.homebrew.inject({
     nsidToTemplateId:
@@ -55,7 +96,10 @@ world.TI4.homebrew.inject({
         "card.agenda:base/unconventional_measures": "card.agenda:homebrew.little-omega/unconventional_measures",
         "card.agenda:base/wormhole_reconstruction": "card.agenda:homebrew.little-omega/wormhole_reconstruction",
         "card.agenda:base/wormhole_research": "card.agenda:homebrew.little-omega/wormhole_research"
-    }
+    },
+    unitModifiers,
+    voteCountModifiers,
+    wormholeAdjacencyModifiers
 });
 
 if (!world.__littleOmegaFull && !world.__littleOmegaAgendaLoaded) {

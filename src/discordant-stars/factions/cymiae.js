@@ -29,9 +29,9 @@ const factions = [
     startingUnits: {
       carrier: 1,
       destroyer: 1,
+      dreadnought: 1,
       fighter: 2,
       infantry: 3,
-      dreadnought: 1,
       space_dock: 1,
     },
     techs: ["recursive_worm"],
@@ -100,7 +100,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3213.jpg",
+    img: "discordant-stars/ui/tiles/tile_3213.png",
     planets: [{ localeName: "planet.cymiae", resources: 3, influence: 1 }],
   },
 ];

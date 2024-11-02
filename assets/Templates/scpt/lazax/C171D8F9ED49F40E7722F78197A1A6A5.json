@@ -1,0 +1,73 @@
+{
+	"Type": "Card",
+	"GUID": "C171D8F9ED49F40E7722F78197A1A6A5",
+	"Name": "Faction Sheet",
+	"Metadata": "sheet.faction:homebrew.scpt.lazax/lazax",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": false,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"GroundAccessibility": "ZoomAndContext",
+	"Tags": [],
+	"FrontTexture": "scpt/lazax/lazax-faction-sheet-back.jpg",
+	"BackTexture": "scpt/lazax/lazax-faction-sheet-face.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -1,
+	"NumHorizontal": 1,
+	"NumVertical": 1,
+	"Width": 28,
+	"Height": 19,
+	"Thickness": 0.1,
+	"HiddenInHand": false,
+	"UsedWithCardHolders": false,
+	"CanStack": false,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Square",
+	"Indices": [ 0 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+		"0": "sheet.faction:homebrew.scpt.lazax/lazax"
+	},
+	"CardTags":
+	{
+	}
+}

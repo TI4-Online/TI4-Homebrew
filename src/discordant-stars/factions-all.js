@@ -93,3 +93,5 @@ if (!world.__homebrewDiscordantStarsAdded) {
   require("./factions/zealots");
   require("./factions/zelian");
 }
+
+world.TI4.homebrew.resetOnTableDecks();

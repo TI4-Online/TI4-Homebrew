@@ -27,8 +27,8 @@ const factions = [
     source: "homebrew.discordant_stars",
     startingTech: ["dark_energy_tap", "scanlink_drone_network"],
     startingUnits: {
-      dreadnought: 2,
       destroyer: 2,
+      dreadnought: 2,
       fighter: 2,
       mech: 1,
       infantry: 2,
@@ -99,7 +99,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3218.jpg",
+    img: "discordant-stars/ui/tiles/tile_3218.png",
     planets: [{ localeName: "planet.abyssus", resources: 4, influence: 2 }],
   },
 ];

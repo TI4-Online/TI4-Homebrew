@@ -1,0 +1,76 @@
+{
+	"Type": "Card",
+	"GUID": "648F825DA84585312741359C81D530F1",
+	"Name": "Leaders",
+	"Metadata": "",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"GroundAccessibility": "Nothing",
+	"Tags": [],
+	"FrontTexture": "scpt/lazax/lazax-leaders.face.jpg",
+	"BackTexture": "scpt/lazax/lazax-leaders.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -3,
+	"HiddenIndex": -1,
+	"NumHorizontal": 2,
+	"NumVertical": 2,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+		"0": "card.leader.agent.lazax:homebrew.scpt.lazax/manthom_iq_seerva",
+		"1": "card.leader.commander.lazax:homebrew.scpt.lazax/ibna_vel_syd",
+		"2": "card.leader.hero.lazax:homebrew.scpt.lazax/the_maandu_edict",
+		"3": "card.leader.mech.lazax:homebrew.scpt.lazax/targeting_computer"
+	},
+	"CardTags":
+	{
+	}
+}

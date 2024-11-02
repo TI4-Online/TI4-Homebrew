@@ -148,6 +148,7 @@
 		"Y": 0,
 		"Z": 0
 	},
+        "GroundAccessibility": "Zoom",
 	"Tags": [],
 	"FrontTexture": "discordant-stars/factionsheets/vaylerian.back.jpg",
 	"BackTexture": "discordant-stars/factionsheets/vaylerian.face.jpg",

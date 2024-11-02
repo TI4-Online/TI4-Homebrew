@@ -44,7 +44,7 @@
 			},
 			"Rotation":
 			{
-				"X": 0,
+				"X": -0,
 				"Y": 0,
 				"Z": 0
 			},
@@ -120,13 +120,14 @@
 			},
 			"Rotation":
 			{
-				"X": 0,
+				"X": -0,
 				"Y": 0,
 				"Z": 0
 			},
 			"Type": "Convex"
 		}
 	],
+	"Lights": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
 	"ZoomViewDirection":
@@ -135,5 +136,6 @@
 		"Y": 0,
 		"Z": 1
 	},
+	"GroundAccessibility": "ZoomAndContext",
 	"Tags": []
 }

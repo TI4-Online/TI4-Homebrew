@@ -33,9 +33,9 @@ const factions = [
     startingUnits: {
       carrier: 1,
       cruiser: 1,
+      destroyer: 1,
       fighter: 3,
       infantry: 4,
-      destroyer: 1,
       space_dock: 1,
     },
     techs: ["sanctification_field", "pilgrimage_beacons"],
@@ -97,7 +97,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3224.jpg",
+    img: "discordant-stars/ui/tiles/tile_3224.png",
     planets: [
       { localeName: "planet.poh", resources: 2, influence: 0 },
       { localeName: "planet.orad", resources: 3, influence: 1 },

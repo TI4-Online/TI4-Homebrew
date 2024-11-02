@@ -29,6 +29,7 @@
 	"Blueprint": "",
 	"Models": [],
 	"Collision": [],
+	"Lights": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
 	"ZoomViewDirection":
@@ -37,9 +38,10 @@
 		"Y": 0,
 		"Z": 0
 	},
+	"GroundAccessibility": "Zoom",
 	"Tags": [],
-	"FrontTexture": "lunartiks/lunartiks-faction-sheet-back.jpg",
-	"BackTexture": "lunartiks/lunartiks-faction-sheet-face.jpg",
+	"FrontTexture": "skunee/lunartiks/lunartiks-faction-sheet-back.jpeg",
+	"BackTexture": "skunee/lunartiks/lunartiks-faction-sheet-face.jpeg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -1,

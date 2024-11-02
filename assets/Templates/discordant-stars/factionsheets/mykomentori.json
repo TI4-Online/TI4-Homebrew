@@ -148,6 +148,7 @@
 		"Y": 0,
 		"Z": 0
 	},
+        "GroundAccessibility": "Zoom",
 	"Tags": [],
 	"FrontTexture": "discordant-stars/factionsheets/mykomentori.back.jpg",
 	"BackTexture": "discordant-stars/factionsheets/mykomentori.face.jpg",

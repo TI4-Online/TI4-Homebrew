@@ -28,9 +28,9 @@ const factions = [
     startingTechChoices: ["gravity_drive", "sling_relay"],
     startingTech: [],
     startingUnits: {
-      flagship: 1,
       cruiser: 1,
       fighter: 2,
+      flagship: 1,
       infantry: 3,
     },
     techs: ["networked_command", "parallel_production"],
@@ -117,8 +117,22 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3232.jpg",
+    img: "discordant-stars/ui/tiles/tile_3232.png",
     planets: [],
+  },
+  {
+    // must register planet in a system for detection
+    tile: -3232,
+    source: "homebrew.discordant_stars",
+    packageId: refPackageId,
+    img: "discordant-stars/ui/tiles/tile_-2.png",
+    planets: [
+      {
+        localeName: "planet.ghoti",
+        resources: 3,
+        influence: 3,
+      },
+    ],
   },
 ];
 

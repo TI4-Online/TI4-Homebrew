@@ -1,0 +1,82 @@
+{
+	"Type": "Card",
+	"GUID": "3D9625C44B359939E1AD9995AABF8389",
+	"Name": "Legendary Ability Cards",
+	"Metadata": "card.legendary_planet:homebrew.discordant_stars/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"GroundAccessibility": "Nothing",
+	"Tags": [],
+	"FrontTexture": "discordant-stars/planets/legendary.face.jpg",
+	"BackTexture": "discordant-stars/planets/legendary.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -3,
+	"HiddenIndex": -3,
+	"NumHorizontal": 2,
+	"NumVertical": 3,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4 ],
+	"CardNames":
+	{
+		"0": "Fractal Gate",
+		"1": "Bi-Phasic Generators",
+		"2": "Mystic Library",
+		"3": "Imperial Salvage Yard",
+		"4": "Council Black Site"
+	},
+	"CardMetadata":
+	{
+		"0": "card.legendary_planet:homebrew.discordant_stars/legendary_domna_planet",
+		"1": "card.legendary_planet:homebrew.discordant_stars/legendary_echo_planet",
+		"2": "card.legendary_planet:homebrew.discordant_stars/legendary_prism_planet",
+		"3": "card.legendary_planet:homebrew.discordant_stars/legendary_silence_planet",
+		"4": "card.legendary_planet:homebrew.discordant_stars/legendary_tarrock_planet"
+	},
+	"CardTags":
+	{
+	}
+}

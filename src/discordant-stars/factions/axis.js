@@ -28,11 +28,10 @@ const factions = [
     startingTech: ["sarween_tools", "ai_development_algorithm"],
     startingUnits: {
       carrier: 1,
-      cruiser: 1,
-      fighter: 2,
-      infantry: 4,
+      destroyer: 1,
       dreadnought: 1,
-      pds: 1,
+      fighter: 2,
+      infantry: 3,
       space_dock: 1,
     },
     techs: ["rift_engines", "emergency_deployment"],
@@ -113,7 +112,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3209.jpg",
+    img: "discordant-stars/ui/tiles/tile_3209.png",
     planets: [{ localeName: "planet.axis", resources: 4, influence: 0 }],
   },
 ];

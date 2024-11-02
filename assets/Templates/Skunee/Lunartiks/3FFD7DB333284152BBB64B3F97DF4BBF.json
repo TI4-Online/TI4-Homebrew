@@ -29,6 +29,7 @@
 	"Blueprint": "",
 	"Models": [],
 	"Collision": [],
+	"Lights": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
 	"ZoomViewDirection":
@@ -38,12 +39,12 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "lunartiks/lunartiks-planets-face.jpg",
-	"BackTexture": "lunartiks/lunartiks-planets-back.jpg",
+	"FrontTexture": "skunee/lunartiks/lunartiks-planets-face.jpeg",
+	"BackTexture": "skunee/lunartiks/lunartiks-planets-back.jpeg",
 	"HiddenTexture": "",
 	"BackIndex": -3,
 	"HiddenIndex": -3,
-	"NumHorizontal": 1,
+	"NumHorizontal": 2,
 	"NumVertical": 1,
 	"Width": 4.2,
 	"Height": 6.3,
@@ -57,7 +58,7 @@
 	"MirrorBack": true,
 	"EmissiveFront": false,
 	"Model": "Rounded",
-	"Indices": [ 0 ],
+	"Indices": [ 0, 1 ],
 	"CardNames":
 	{
 		"0": "H' Tyde",
@@ -65,8 +66,8 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.planet:homebrew.lunartiks/h_tyde",
-		"1": "card.planet:homebrew.lunartiks/lo_tyde"
+		"0": "card.planet:homebrew.skunee/htyde",
+		"1": "card.planet:homebrew.skunee/lotyde"
 	},
 	"CardTags":
 	{

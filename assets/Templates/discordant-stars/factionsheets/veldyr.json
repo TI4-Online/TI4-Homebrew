@@ -148,6 +148,7 @@
 		"Y": 0,
 		"Z": 0
 	},
+        "GroundAccessibility": "Zoom",
 	"Tags": [],
 	"FrontTexture": "discordant-stars/factionsheets/veldyr.back.jpg",
 	"BackTexture": "discordant-stars/factionsheets/veldyr.face.jpg",

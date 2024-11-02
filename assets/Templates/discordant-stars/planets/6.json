@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "28D7B55501A75E6DAB7F225A72A3071E",
 	"Name": "Planets (homebrew 7/8)",
-	"Metadata": "card.planet:homebrew/6",
+	"Metadata": "card.planet:homebrew.discordant_stars/6",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -65,8 +65,8 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.planet:homebrew/vess",
-		"1": "card.planet:homebrew/zelian"
+		"0": "card.planet:homebrew.discordant_stars/vess",
+		"1": "card.planet:homebrew.discordant_stars/zelian"
 	},
 	"CardTags":
 	{

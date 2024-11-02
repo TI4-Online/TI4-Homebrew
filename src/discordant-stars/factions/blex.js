@@ -2,8 +2,8 @@ const { world, refPackageId } = require("@tabletop-playground/api");
 const { getBlightStatus } = require("./../scripts/blight_status");
 
 const localeStrings = {
-  "faction.abbr.blex": "Blex",
-  "faction.full.blex": "Blex Pestilence",
+  "faction.abbr.blex": "Kyro",
+  "faction.full.blex": "Kyro Solidarity",
   "planet.avicenna": "Avicenna",
   "technology.name.biotic_weapons": "Biotic Weapons",
   "unit.flagship.auriga": "Auriga",
@@ -146,7 +146,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3231.jpg",
+    img: "discordant-stars/ui/tiles/tile_3231.png",
     planets: [{ localeName: "planet.avicenna", resources: 4, influence: 0 }],
   },
 ];
@@ -200,7 +200,7 @@ function getBlightHexes() {
       const owner = obj.getOwningPlayer();
       return (
         owner &&
-        world.TI4.getFactionByPlayerSlot(owner.getSlot()).nsidName === "blex"
+        world.TI4.getFactionByPlayerSlot(owner.getSlot())?.nsidName === "blex"
       );
     })
     .map((gameObject) => {

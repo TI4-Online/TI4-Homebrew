@@ -2,7 +2,7 @@
 	"Type": "Card",
 	"GUID": "4247DBC0E9772B2245CAA106E42CBE15",
 	"Name": "Planets (homebrew 5/8)",
-	"Metadata": "card.planet:homebrew/4",
+	"Metadata": "card.planet:homebrew.discordant_stars/4",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0,
@@ -69,12 +69,12 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.planet:homebrew/ogdun",
-		"1": "card.planet:homebrew/orad",
-		"2": "card.planet:homebrew/pax",
-		"3": "card.planet:homebrew/poh",
-		"4": "card.planet:homebrew/prind",
-		"5": "card.planet:homebrew/rhune"
+		"0": "card.planet:homebrew.discordant_stars/ogdun",
+		"1": "card.planet:homebrew.discordant_stars/orad",
+		"2": "card.planet:homebrew.discordant_stars/pax",
+		"3": "card.planet:homebrew.discordant_stars/poh",
+		"4": "card.planet:homebrew.discordant_stars/prind",
+		"5": "card.planet:homebrew.discordant_stars/rhune"
 	},
 	"CardTags":
 	{

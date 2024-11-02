@@ -128,7 +128,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3205.jpg",
+    img: "discordant-stars/ui/tiles/tile_3205.png",
     planets: [
       { localeName: "planet.drah", resources: 1, influence: 2 },
       { localeName: "planet.trykk", resources: 2, influence: 1 },

@@ -1,0 +1,92 @@
+{
+	"Type": "Card",
+	"GUID": "E61C39795F4E24CAF12FF3AA8DA3A162",
+	"Name": "Absol's Relics (small)",
+	"Metadata": "",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"GroundAccessibility": "Nothing",
+	"Tags": [],
+	"FrontTexture": "absol-relics/absol-relics-small.face.jpg",
+	"BackTexture": "ti4/relic.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 5,
+	"NumVertical": 4,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+		"0": "card.relic:homebrew.absol/?",
+		"1": "card.relic:homebrew.absol/?",
+		"2": "card.relic:homebrew.absol/?",
+		"3": "card.relic:homebrew.absol/?",
+		"4": "card.relic:homebrew.absol/?",
+		"5": "card.relic:homebrew.absol/?",
+		"6": "card.relic:homebrew.absol/?",
+		"7": "card.relic:homebrew.absol/?",
+		"8": "card.relic:homebrew.absol/?",
+		"9": "card.relic:homebrew.absol/?",
+		"10": "card.relic:homebrew.absol/?",
+		"11": "card.relic:homebrew.absol/?",
+		"12": "card.relic:homebrew.absol/?",
+		"13": "card.relic:homebrew.absol/?",
+		"14": "card.relic:homebrew.absol/?",
+		"15": "card.relic:homebrew.absol/?",
+		"16": "card.relic:homebrew.absol/?",
+		"17": "card.relic:homebrew.absol/?",
+		"18": "card.relic:homebrew.absol/?",
+		"19": "card.relic:homebrew.absol/tyrants_lament"
+	},
+	"CardTags":
+	{
+	}
+}

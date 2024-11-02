@@ -126,6 +126,7 @@
 		"Y": 0,
 		"Z": 0
 	},
+        "GroundAccessibility": "Zoom",
 	"Tags": [],
 	"FrontTexture": "discordant-stars/factionsheets/kjalengard.face.jpg",
 	"BackTexture": "",

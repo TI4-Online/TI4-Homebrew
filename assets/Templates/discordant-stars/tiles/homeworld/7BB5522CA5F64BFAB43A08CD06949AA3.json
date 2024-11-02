@@ -10,12 +10,14 @@
 	"SurfaceType": "Plastic",
 	"Roughness": 1,
 	"Metallic": 0,
-	"PrimaryColor": {
+	"PrimaryColor":
+	{
 		"R": 255,
 		"G": 255,
 		"B": 255
 	},
-	"SecondaryColor": {
+	"SecondaryColor":
+	{
 		"R": 0,
 		"G": 0,
 		"B": 0
@@ -28,42 +30,50 @@
 	"Models": [
 		{
 			"Model": "tiles/basic.obj",
-			"Offset": {
+			"Offset":
+			{
 				"X": 0,
 				"Y": 0,
 				"Z": 0
 			},
-			"Scale": {
+			"Scale":
+			{
 				"X": 1,
 				"Y": 1,
 				"Z": 1
 			},
-			"Rotation": {
-				"X": 0,
+			"Rotation":
+			{
+				"X": -0,
 				"Y": 0,
 				"Z": 0
 			},
 			"Texture": "discordant-stars/tiles/homeworld/tile_3221.jpg",
 			"NormalMap": "",
 			"ExtraMap": "",
+			"ExtraMap2": "",
 			"IsTransparent": false,
 			"CastShadow": true,
+			"IsTwoSided": false,
 			"UseOverrides": true,
 			"SurfaceType": "Plastic"
 		},
 		{
 			"Model": "tiles/basic.obj",
-			"Offset": {
+			"Offset":
+			{
 				"X": 0,
 				"Y": 0,
 				"Z": 0
 			},
-			"Scale": {
+			"Scale":
+			{
 				"X": 1,
 				"Y": 1,
 				"Z": 1
 			},
-			"Rotation": {
+			"Rotation":
+			{
 				"X": 180,
 				"Y": 0,
 				"Z": 0
@@ -71,17 +81,21 @@
 			"Texture": "",
 			"NormalMap": "",
 			"ExtraMap": "",
+			"ExtraMap2": "",
 			"IsTransparent": false,
 			"CastShadow": true,
+			"IsTwoSided": false,
 			"UseOverrides": false,
 			"Roughness": 1,
 			"Metallic": 0,
-			"PrimaryColor": {
+			"PrimaryColor":
+			{
 				"R": 145,
 				"G": 251,
 				"B": 133
 			},
-			"SecondaryColor": {
+			"SecondaryColor":
+			{
 				"R": 0,
 				"G": 0,
 				"B": 0
@@ -92,29 +106,36 @@
 	"Collision": [
 		{
 			"Model": "tiles/collider.obj",
-			"Offset": {
+			"Offset":
+			{
 				"X": 0,
 				"Y": 0,
 				"Z": 0
 			},
-			"Scale": {
+			"Scale":
+			{
 				"X": 1,
 				"Y": 1,
 				"Z": 1
 			},
-			"Rotation": {
-				"X": 0,
+			"Rotation":
+			{
+				"X": -0,
 				"Y": 0,
 				"Z": 0
 			},
 			"Type": "Convex"
 		}
 	],
+	"Lights": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
-	"ZoomViewDirection": {
+	"ZoomViewDirection":
+	{
 		"X": 0,
 		"Y": 0,
 		"Z": 1
-	}
+	},
+	"GroundAccessibility": "ZoomAndContext",
+	"Tags": []
 }

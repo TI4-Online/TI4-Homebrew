@@ -33,9 +33,9 @@ const factions = [
     ],
     startingTech: [],
     startingUnits: {
-      dreadnought: 1,
       carrier: 1,
       cruiser: 1,
+      dreadnought: 1,
       fighter: 2,
       infantry: 3,
       space_dock: 1,
@@ -104,7 +104,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3206.jpg",
+    img: "discordant-stars/ui/tiles/tile_3206.png",
     planets: [
       { localeName: "planet.vadarian", resources: 3, influence: 0 },
       { localeName: "planet.norvus", resources: 1, influence: 2 },

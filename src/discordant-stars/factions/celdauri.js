@@ -38,7 +38,7 @@ const factions = [
     ],
     startingTech: [],
     startingUnits: {
-      carrier: 1,
+      carrier: 2,
       destroyer: 1,
       fighter: 4,
       infantry: 3,
@@ -120,7 +120,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3219.jpg",
+    img: "discordant-stars/ui/tiles/tile_3219.png",
     planets: [
       { localeName: "planet.louk", resources: 2, influence: 1 },
       { localeName: "planet.auldane", resources: 1, influence: 3 },

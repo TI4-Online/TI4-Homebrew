@@ -27,9 +27,9 @@ const factions = [
     source: "homebrew.discordant_stars",
     startingTech: ["dark_energy_tap", "sarween_tools"],
     startingUnits: {
-      dreadnought: 1,
       carrier: 1,
       destroyer: 1,
+      dreadnought: 1,
       fighter: 2,
       infantry: 3,
       space_dock: 1,
@@ -93,7 +93,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3207.jpg",
+    img: "discordant-stars/ui/tiles/tile_3207.png",
     planets: [
       { localeName: "planet.biaheo", resources: 3, influence: 0 },
       { localeName: "planet.empero", resources: 0, influence: 3 },

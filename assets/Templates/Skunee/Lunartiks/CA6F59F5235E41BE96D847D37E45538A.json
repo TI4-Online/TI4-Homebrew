@@ -29,6 +29,7 @@
 	"Blueprint": "",
 	"Models": [],
 	"Collision": [],
+	"Lights": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [],
 	"ZoomViewDirection":
@@ -38,8 +39,8 @@
 		"Z": 0
 	},
 	"Tags": [],
-	"FrontTexture": "skunee/lunartiks-leaders-face.jpg",
-	"BackTexture": "skunee/lunartiks-leaders-back.jpg",
+	"FrontTexture": "skunee/lunartiks/lunartiks-leaders-face.jpeg",
+	"BackTexture": "skunee/lunartiks/lunartiks-leaders-back.jpeg",
 	"HiddenTexture": "",
 	"BackIndex": -3,
 	"HiddenIndex": -3,
@@ -67,10 +68,10 @@
 	},
 	"CardMetadata":
 	{
-		"0": "card.leader.agent.lunartiks:homebrew.lunartiks/Inanis",
-		"1": "card.leader.commander.lunartiks:homebrew.lunartiks/mors_desuper",
-		"2": "card.leader.hero.lunartiks:hoembrew.lunartiks/ganymede_jupiter",
-		"3": "card.leader.mech.lunartiks:homebrew.lunartiks/ares_orbiter"
+		"0": "card.leader.agent.lunartiks:homebrew.skunee/inanis",
+		"1": "card.leader.commander.lunartiks:homebrew.skunee/mores_desuper",
+		"2": "card.leader.hero.lunartiks:homebrew.skunee/collapsing_orbit",
+		"3": "card.leader.mech.lunartiks:homebrew.skunee/ares_orbiter"
 	},
 	"CardTags":
 	{

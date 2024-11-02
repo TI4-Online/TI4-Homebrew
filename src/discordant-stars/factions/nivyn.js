@@ -37,6 +37,12 @@ const factions = [
     techs: ["voidwake_missiles"],
     units: ["eradica", "voidflare_warden", "voidflare_warden_2"],
     packageId: refPackageId,
+    unpackExtra: [
+      {
+        tokenNsid: "token.system:homebrew.discordant_stars.wound/nivyn",
+        tokenCount: 1,
+      },
+    ],
   },
 ];
 
@@ -111,7 +117,7 @@ const systems = [
     source: "homebrew.discordant_stars",
     home: true,
     packageId: refPackageId,
-    img: "discordant-stars/tiles/homeworld/tile_3220.jpg",
+    img: "discordant-stars/ui/tiles/tile_3220.png",
     planets: [{ localeName: "planet.ellas", resources: 3, influence: 3 }],
   },
 ];

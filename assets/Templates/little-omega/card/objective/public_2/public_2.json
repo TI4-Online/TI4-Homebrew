@@ -60,9 +60,9 @@
 	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ],
 	"CardNames":
 	{
-        "0": "Command and Conquer",
-        "1": "Declare Victory",
-        "2": "Dominate Cities",
+        "0": "Declare Victory",
+        "1": "Dominate Cities",
+        "2": "Establish an Imperial Navy",
         "3": "Form a Galactic Brain Trust",
         "4": "Learn the Secrets of the Cosmos",
         "5": "Patrol Vast Territories",
@@ -72,9 +72,9 @@
 	},
 	"CardMetadata":
 	{
-        "0": "card.objective.public_2:homebrew.little-omega/command_and_conquer",
-        "1": "card.objective.public_2:homebrew.little-omega/declare_victory",
-        "2": "card.objective.public_2:homebrew.little-omega/dominate_cities",
+        "0": "card.objective.public_2:homebrew.little-omega/declare_victory",
+        "1": "card.objective.public_2:homebrew.little-omega/dominate_cities",
+        "2": "card.objective.public_2:homebrew.little-omega/establish_an_imperial_navy",
         "3": "card.objective.public_2:homebrew.little-omega/form_a_galactic_brain_trust",
         "4": "card.objective.public_2:homebrew.little-omega/learn_the_secrets_of_the_cosmos",
         "5": "card.objective.public_2:homebrew.little-omega/patrol_vast_territories",

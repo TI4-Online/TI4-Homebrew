@@ -1,0 +1,86 @@
+{
+	"Type": "Card",
+	"GUID": "F6CF8B0C4DCCAE1075F444953F3FFD8F",
+	"Name": "Relics (homebrew.discordant_stars)",
+	"Metadata": "card.relic:homebrew.discordant_stars_plus.relic/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"GroundAccessibility": "Nothing",
+	"Tags": [],
+	"FrontTexture": "discordant-stars/relics.face.jpg",
+	"BackTexture": "ti4/relic.back.jpg",
+	"HiddenTexture": "",
+	"BackIndex": -2,
+	"HiddenIndex": -3,
+	"NumHorizontal": 4,
+	"NumVertical": 2,
+	"Width": 4.2,
+	"Height": 6.3,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4, 5, 6 ],
+	"CardNames":
+	{
+		"0": "Starfall Array",
+		"1": "Accretion Engine",
+		"2": "Eye of Vogul",
+		"3": "Azdel's Key",
+		"4": "Twilight Mirror",
+		"5": "E6-Go Network",
+		"6": "Forgotten Throne"
+	},
+	"CardMetadata":
+	{
+		"0": "card.relic:homebrew.discordant_stars/starfall_array",
+		"1": "card.relic:homebrew.discordant_stars/accretion_engine",
+		"2": "card.relic:homebrew.discordant_stars/eye_of_vogul",
+		"3": "card.relic:homebrew.discordant_stars/azdels_key",
+		"6": "card.relic:homebrew.discordant_stars/forgotten_throne",
+		"4": "card.relic:homebrew.discordant_stars/twilight_mirror",
+		"5": "card.relic:homebrew.discordant_stars/e6_go_network"
+	},
+	"CardTags":
+	{
+	}
+}
