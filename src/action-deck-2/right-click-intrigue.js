@@ -1,4 +1,4 @@
-const ACTION_NAME = "*Draw bottom 2 agendas";
+const ACTION_NAME = "*Draw bottom and top 2 agendas";
 const AGENDA_COUNT = "2";
 
 /**
@@ -29,8 +29,10 @@ class IntrigueRightClickCard extends world.TI4.AbstractRightClickCard {
         const fromFront = true; // from the bottom
         const offset = 0;
         const keep = false; // removes from the deck
-        let agendas = deck.takeCards(AGENDA_COUNT, fromFront, offset, keep);
-        world.TI4.CardUtil.moveCardsToCardHolder(agendas, player.getSlot());
+        let agendasBottom = deck.takeCards(AGENDA_COUNT, fromFront, offset, keep);
+        world.TI4.CardUtil.moveCardsToCardHolder(agendasBottom, player.getSlot());
+        let agendasTop = deck.takeCards(AGENDA_COUNT, !fromFront, offset, keep);
+        world.TI4.CardUtil.moveCardsToCardHolder(agendasTop, player.getSlot());
     }
 }
 
