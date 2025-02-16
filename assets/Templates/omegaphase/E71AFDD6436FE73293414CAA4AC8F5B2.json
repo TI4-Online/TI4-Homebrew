@@ -41,7 +41,7 @@
 	"GroundAccessibility": "ZoomAndContext",
 	"Tags": [],
 	"FrontTexture": "omegaphase/voice-of-the-council.jpg",
-	"BackTexture": "global/card/agenda.back.jpg",
+	"BackTexture": "ti4/agenda.back.jpg",
 	"HiddenTexture": "",
 	"BackIndex": -2,
 	"HiddenIndex": -3,

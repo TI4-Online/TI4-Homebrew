@@ -29,7 +29,7 @@
 	"Blueprint": "",
 	"Models": [
 		{
-			"Model": "prioritytrack.png",
+			"Model": "omegaphase/prioritytrack.png",
 			"ShapeAccuracy": 10,
 			"Offset":
 			{
