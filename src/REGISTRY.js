@@ -265,6 +265,21 @@ ENTRIES.push({
 
 // --------------------------------------------------------
 
+ENTRIES.push({
+  name: "Omega Phase",
+  authors: "Matt",
+  description: "SCPT Matt's Homebrew Projects",
+  packageId: refPackageId,
+  options: [
+    {
+      id: "ome-pha",
+      name: "Omega Phase",
+      description: "New Objectives and Priority Track to be used with Omega Phase variant",
+      inject: "matt/omega_phase.js",
+    },
+  ],
+});
+
 // --------------------------------------------------------
 
 ENTRIES.push({
