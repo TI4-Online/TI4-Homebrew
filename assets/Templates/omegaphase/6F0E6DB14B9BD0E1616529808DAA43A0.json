@@ -8,8 +8,8 @@
 	"Restitution": 0.3,
 	"Density": 1,
 	"SurfaceType": "Cardboard",
-	"Roughness": 1,
-	"Metallic": 1,
+	"Roughness": 0.8,
+	"Metallic": 0.9,
 	"PrimaryColor":
 	{
 		"R": 255,
@@ -39,15 +39,15 @@
 			},
 			"Scale":
 			{
-				"X": 1,
-				"Y": 6.5604300000000002,
-				"Z": 0.10000000000000001
+				"X": 6.2,
+				"Y": 32,
+				"Z": 0.25
 			},
 			"Rotation":
 			{
-				"X": 0,
+				"X": 180,
 				"Y": 0,
-				"Z": 0
+				"Z": -90
 			},
 			"Texture": "omegaphase/prioritytrack.png",
 			"NormalMap": "",
