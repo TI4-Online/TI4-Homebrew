@@ -1,4 +1,4 @@
-const { world } = require("@tabletop-playground/api");
+const { world, Vector, Card } = require("@tabletop-playground/api");
 
 // Cards to be removed from the base decks, by metadata
 const REMOVE = [
@@ -66,7 +66,7 @@ const ADD = {
   "card.objective.public_1:omegaphase/0": 
     "546976534401B8502FDA5A964BF8B538", // Omega Objectives
   "mat:omegaphase/objectives":
-	"8A3D45A6475208E8971108AAB388CB50", // 10 Slot Stage 1 Objective Mat
+	  "8A3D45A6475208E8971108AAB388CB50", // 10 Slot Stage 1 Objective Mat
 }
 
 const extraStuff = [
@@ -79,13 +79,88 @@ const extraStuff = [
   }
 ]
 
+objs = world.getAllObjects();
+
+searchGUIDs = ["8A3D45A6475208E8971108AAB388CB50", "6F0E6DB14B9BD0E1616529808DAA43A0"]
+seenObjs = []
+for(const obj of objs){
+	if(searchGUIDs.includes(obj.getTemplateId())){
+		seenObjs.push(obj.getTemplateId())
+	}
+}
+if(!seenObjs.includes("8A3D45A6475208E8971108AAB388CB50")){
+	objectiveMat = world.createObjectFromTemplate("8A3D45A6475208E8971108AAB388CB50", new Vector(0, 0, world.getTableHeight() + 10));
+	objectiveMat.setName("Objectives")
+	objectiveMat.setRotation(new Rotator(0, 180, 0))
+}
+if(!seenObjs.includes("6F0E6DB14B9BD0E1616529808DAA43A0")){
+	priorityTrack = world.createObjectFromTemplate("6F0E6DB14B9BD0E1616529808DAA43A0", new Vector(0, 0, world.getTableHeight() + 15));
+	priorityTrack.setName("Priority Track")
+}
+
 // Tell the TI4 mod to update it's lists of objects with the above adjustments
 world.TI4.homebrew.inject({
-  extraBoxes: extraStuff,
+  //extraBoxes: extraStuff,
   nsidToTemplateId: ADD,
   remove: REMOVE,
   replace: REPLACE,
+  otherScorable: ["card.agenda:omegaphase/voiceofthecouncil"]
 });
 
 // Reload changed objects (each kind has it's own function)
 world.TI4.homebrew.resetOnTableDecks();
+
+// Function to grab the Voice of the Council card out of the Agenda Deck and put it in the common play area.
+const fetchVoice = () => {
+	objs = world.getAllObjects();
+	result = null;
+	for (const obj of objs) {
+	    if (!(obj instanceof Card)) {
+	        continue; // only scan on-table objects
+	    }
+
+	    if(obj.isInHolder()){
+	    	continue; // skip voice if it is currently scored
+	    }
+
+	    if (obj instanceof Card && obj.getStackSize() > 1) {
+	        // Cards in a deck are not objects, pull them out.
+	        const nsids = obj.getAllCardDetails().map((cardDetails) => cardDetails.metadata);
+	        for (let i = nsids.length - 1; i >= 0; i--) {
+	            const nsid = nsids[i];
+	            if (nsid == "card.agenda:omegaphase/voiceofthecouncil") {
+	                let cardObj;
+	                if (obj.getStackSize() > 1) {
+	                    //console.log(`${nsid}: ${i}/${obj.getStackSize()}`);
+	                    cardObj = obj.takeCards(1, true, i);
+	                } else {
+	                    cardObj = obj; // cannot take final card
+	                }
+	                result = cardObj;
+	                break;
+	            }
+	        }
+	    }
+	    else{
+	    	nsid = obj.getCardDetails().metadata;
+	    	if(nsid == "card.agenda:omegaphase/voiceofthecouncil"){
+	    		result = obj;
+	    		break;
+	    	}
+	    }
+
+	    if(result != null){
+	    	break;
+	    }
+	}
+
+	if(result != null){
+		result.setPosition(new Vector(0, 0, world.getTableHeight() + 20));
+		result.setRotation(new Rotator(0, 0, 180));
+	}
+
+	console.log(result);
+}
+
+// We have to schedule the fetch Voice function delayed to gurantee that it happens after the deck reset called above
+process.nextTick(fetchVoice);
