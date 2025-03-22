@@ -1,0 +1,84 @@
+{
+	"Type": "Card",
+	"GUID": "2B29931B472A100F8548A9909DD5AED1",
+	"Name": "Leaders (SCPT)",
+	"Metadata": "card.leader:scpt/0",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"GroundAccessibility": "ZoomAndContext",
+	"Tags": [],
+	"FrontTexture": "scpt/codex/codexLeaders.png",
+	"BackTexture": "scpt/codex/codexLeaders_back.png",
+	"HiddenTexture": "",
+	"BackIndex": -3,
+	"HiddenIndex": -3,
+	"NumHorizontal": 3,
+	"NumVertical": 2,
+	"Width": 6.3,
+	"Height": 4.2,
+	"Thickness": 0.05,
+	"HiddenInHand": true,
+	"UsedWithCardHolders": true,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Rounded",
+	"Indices": [ 0, 1, 2, 3, 4 ],
+	"CardNames":
+	{
+		"0": "Dirzuga Rophal",
+		"1": "Darktalon Treilla Omega",
+		"2": "Mathis Mathinus",
+		"3": "Letani Miasmiala",
+		"4": "Trilossa Aun Mirik",
+		"5": "Trrakan Aun Zulok"
+	},
+	"CardMetadata":
+	{
+		"0": "card.leader.commander.arborec:scpt/dirzuga_rophal",
+		"1": "card.leader.hero.letnev:scpt/darktalon_treilla",
+		"2": "card.leader.hero.winnu:scpt/mathis_mathinus",
+		"3": "card.leader.hero.arborec:scpt/letani_miasmiala",
+		"4": "card.leader.agent.letnev:scpt/viscount_unlenn",
+		"5": "card.leader.commander.argent:pok/trrakan_aun_zulok"
+	},
+	"CardTags":
+	{
+	}
+}
