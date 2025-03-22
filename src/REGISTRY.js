@@ -334,6 +334,27 @@ ENTRIES.push({
 // --------------------------------------------------------
 
 ENTRIES.push({
+  name: "SCPT Codex",
+  authors: "SCPT Homebrew Hub",
+  description: "The homebrew codex crowd developed by the SCPT Playtester's Hideout",
+  packageId: refPackageId,
+  options: [
+    {
+      id: "scpt-tch",
+      name: "Codex Technology",
+      inject: "scpt/codex/scpt_codex_tech.js",
+    },
+    {
+      id: "scpt-fac",
+      name: "Codex Factions",
+      inject: "scpt/codex/scpt_codex_factions.js",
+    },
+  ],
+});
+
+// --------------------------------------------------------
+
+ENTRIES.push({
   name: "SCPT Lazax",
   authors: "SCPT Homebrew Hub",
   description: "",
