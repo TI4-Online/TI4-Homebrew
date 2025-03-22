@@ -18,7 +18,7 @@ const TECHS = [
   {
     localeName: "technology.name.cerebral_tracers",
     cardNsid:
-      "card.technology:scpt/0",
+      "card.technology:scpt/cerebral_tracers",
     type: "Green",
     requirements: { Green: 2 },
     source: "scpt",
@@ -26,7 +26,7 @@ const TECHS = [
   {
     localeName: "technology.name.mass_efficiency_relay",
     cardNsid:
-      "card.technology:scpt/0",
+      "card.technology:scpt/mass_efficiency_relay",
     type: "Green",
     requirements: { Green: 3 },
     source: "scpt",
@@ -34,7 +34,7 @@ const TECHS = [
   {
     localeName: "technology.name.evac_beacons",
     cardNsid:
-      "card.technology:scpt/0",
+      "card.technology:scpt/evac_beacons",
     type: "Blue",
     requirements: { Blue: 2 },
     source: "scpt",
@@ -42,7 +42,7 @@ const TECHS = [
   {
     localeName: "technology.name.vacuum_transposition",
     cardNsid:
-      "card.technology:scpt/0",
+      "card.technology:scpt/vacuum_transposition",
     type: "Blue",
     requirements: { Blue: 3 },
     source: "scpt",
@@ -50,7 +50,7 @@ const TECHS = [
   {
     localeName: "technology.name.heavy_rifle_hardpoints",
     cardNsid:
-      "card.technology:scpt/0",
+      "card.technology:scpt/heavy_rifle_hardpoints",
     type: "Red",
     requirements: { Red: 2 },
     source: "scpt",
@@ -58,7 +58,7 @@ const TECHS = [
   {
     localeName: "technology.name.solar_magnetic_force_fields",
     cardNsid:
-      "card.technology:scpt/0",
+      "card.technology:scpt/solar_magnetic_force_fields",
     type: "Red",
     requirements: { Red: 3 },
     source: "scpt",
@@ -66,7 +66,7 @@ const TECHS = [
   {
     localeName: "technology.name.modular_satellite_grid",
     cardNsid:
-      "card.technology:scpt/0",
+      "card.technology:scpt/modular_satellite_grid",
     type: "Yellow",
     requirements: { Yellow: 2 },
     source: "scpt",
@@ -74,7 +74,7 @@ const TECHS = [
   {
     localeName: "technology.name.terradesic_dividends",
     cardNsid:
-      "card.technology:scpt/0",
+      "card.technology:scpt/terradesic_dividends",
     type: "Yellow",
     requirements: { Yellow: 3 },
     source: "scpt",
